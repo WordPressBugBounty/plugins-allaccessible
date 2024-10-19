@@ -1,0 +1,27 @@
+.allaccessible-deactivate-dialog
+{
+	text-align: left;
+	width: auto;
+}
+
+.allaccessible-deactivate-dialog-buttons
+{
+	text-align: right;
+}
+
+.allaccessible-deactivate-dialog
+{
+	width: auto !important;
+}
+
+.allaccessible-deactivate-dialog h2
+{
+	color: black;
+	font-size: 1.2em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid lightgray;
+}
+
+.allaccessible-deactivate-comment-input{
+	width: 100%
+}

@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AllAccessible\n"
+"POT-Creation-Date: 2023-05-11 15:26-0400\n"
+"PO-Revision-Date: 2023-05-11 15:26-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: allaccessible.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: allaccessible.php:52
+msgid "Accessibility"
+msgstr "Приступачности"
+
+#: allaccessible.php:291
+msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+msgstr ""
+"Активирајте АллАццессибле Премиум да бисте откључали Аи функције "
+"приступачности."
+
+#: allaccessible.php:291
+msgid "Click Here"
+msgstr "Кликни овде"
+
+#: inc/AllAccessibleDeactivationForm.php:29
+msgid "AllAccessible Deactivation"
+msgstr "АллАццессибле Деактивација"
+
+#: inc/AllAccessibleDeactivationForm.php:30
+msgid ""
+"If you have a moment, please let us know why you are deactivating "
+"AllAccessible. All submissions are anonymous and we only use this feedback "
+"to improve this plugin."
+msgstr ""
+"Ако имате тренутак, реците нам зашто деактивирате АллАццессибле. Све пријаве "
+"су анонимне и користимо само ове повратне информације за побољшање овог "
+"додатка."
+
+#: inc/AllAccessibleDeactivationForm.php:31
+msgid "Do not send my e-mail address with this feedback"
+msgstr "Не шаљите моју е-маил адресу са овим повратним информацијама"
+
+#: inc/AllAccessibleDeactivationForm.php:33
+msgid "Please give us any feedback that could help us improve"
+msgstr ""
+"Молимо да нам дате повратне информације које би нам могле помоћи да побољшамо"
+
+#: inc/AllAccessibleDeactivationForm.php:35
+msgid "Cancel"
+msgstr "Откажи"
+
+#: inc/AllAccessibleDeactivationForm.php:36
+msgid "Skip &amp; Deactivate"
+msgstr "Прескочи &амп; Деактивирај"
+
+#: inc/AllAccessibleDeactivationForm.php:37
+msgid "Submit &amp; Deactivate"
+msgstr "Пошаљи &амп; Деактивирај"
+
+#: inc/AllAccessibleDeactivationForm.php:38
+msgid "Please wait"
+msgstr "Сачекајте"
+
+#: inc/AllAccessibleDeactivationForm.php:39
+msgid "Thank you!"
+msgstr "Хвала вам!"
+
+#: inc/AllAccessibleDeactivationForm.php:48
+msgid "The plugin suddenly stopped working"
+msgstr "Додатак је изненада престао да ради"
+
+#: inc/AllAccessibleDeactivationForm.php:51
+#: inc/AllAccessibleDeactivationForm.php:58
+msgid ""
+"We're sorry to hear that, check <a href=\"https://support.allaccessible."
+"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
+"issue?"
+msgstr ""
+"Жао нам је што то чујемо, проверите <a href=\"https://support.allaccessible."
+"org\" target=\"_blank\">АллАццессибле Суппорт</a> . Можете ли описати "
+"проблем?"
+
+#: inc/AllAccessibleDeactivationForm.php:55
+msgid "The plugin broke my site"
+msgstr "Додатак је покварио мој сајт"
+
+#: inc/AllAccessibleDeactivationForm.php:62
+msgid "I don't need this plugin any more"
+msgstr "Више ми не треба овај додатак"
+
+#: inc/AllAccessibleDeactivationForm.php:66
+msgid "I found a better plugin"
+msgstr "Нашао сам бољи додатак"
+
+#: inc/AllAccessibleDeactivationForm.php:69
+msgid "Can you please share the name of the other plugin?"
+msgstr "Можете ли молим вас да поделите име другог додатка?"
+
+#: inc/AllAccessibleDeactivationForm.php:73
+msgid "It's a temporary deactivation, I'm troubleshooting"
+msgstr "То је привремено деактивирање, решавам проблеме"
+
+#: inc/AllAccessibleDeactivationForm.php:77
+msgid "Other"
+msgstr "Остало"
+
+#: inc/AllAccessibleDeactivationForm.php:80
+msgid "Can you describe the issue?"
+msgstr "Можете ли описати проблем?"
+
+#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
+msgid "Preview Widget"
+msgstr "Преглед виџета"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Widget Status"
+msgstr "Статус виџета"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Active"
+msgstr "Aktivno"
+
+#: inc/AllAccessibleSettings.php:41
+#, php-format
+msgid "AllAccessible's %s widget is visible on the front end of your site."
+msgstr "АллАццессибле-ов %s виџет је видљив на предњој страни вашег сајта."
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Website Accessibility"
+msgstr "Приступачности"
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Audits & Remediation"
+msgstr "Ревизије и санација"
+
+#: inc/AllAccessibleSettings.php:61
+msgid ""
+"View the results of your website scans, accessibility Remediation and more "
+"with AllAccessibile Premium."
+msgstr ""
+"Погледајте резултате скенирања ваше веб странице, поправку приступачности и "
+"још много тога уз АллАццессибиле Премиум."
+
+#: inc/AllAccessibleSettings.php:62
+msgid "Upgrade Now"
+msgstr "Надоградите сада"
+
+#: inc/AllAccessibleSettings.php:64
+msgid ""
+"View the results of your website scans in your AllAccessibile Account "
+"Dashboard."
+msgstr ""
+"Погледајте резултате скенирања ваше веб странице на контролној табли "
+"АллАццессибиле налога."
+
+#: inc/AllAccessibleSettings.php:65
+msgid "Accessibility Dashboard"
+msgstr "Приступачности"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Need"
+msgstr "Потребна помоћ"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Help & Support?"
+msgstr "Помоћ и подршка?"
+
+#: inc/AllAccessibleSettings.php:84
+msgid ""
+"Check our knowledge base for assistance with installation, customization, "
+"and more."
+msgstr ""
+"Проверите нашу базу знања за помоћ при инсталацији, прилагођавању и још "
+"много тога."
+
+#: inc/AllAccessibleSettings.php:85
+msgid "Get Support"
+msgstr "Добити подршку"
+
+#: inc/AllAccessibleSettings.php:109
+msgid "Unlock the Power of AllAccessible Premium"
+msgstr "Откључајте моћ АллАццессибле Премиум"
+
+#: inc/AllAccessibleSettings.php:110
+msgid ""
+"Unlock all the benefits of our Ai accessibility automation with a free trial "
+"by connecting your AllAccessible account to your email below. Already using "
+"the free version? No problem! We'll set you up with a free 7-day trial of "
+"our premium version. After the trial period, upgrade to the premium version "
+"for just $10 a month and enjoy a more accessible digital experience."
+msgstr ""
+"Откључајте све предности наше аутоматизације приступачности Аи бесплатном "
+"пробном верзијом тако што ћете повезати свој АллАццессибле налог са е-поштом "
+"у наставку. Већ користите бесплатну верзију? Нема проблема! Подесићемо вам "
+"бесплатну 7-дневну пробну верзију наше премиум верзије. Након пробног "
+"периода, надоградите на премиум верзију за само 10 УСД месечно и уживајте у "
+"приступачнијем дигиталном искуству."
+
+#: inc/AllAccessibleSettings.php:113
+msgid ""
+"Below are some additional features unlocked with AllAccessible Premium. All "
+"for Only $10/mo."
+msgstr "Испод су неке додатне функције откључане уз АллАццессибле Премиум."
+
+#: inc/AllAccessibleSettings.php:114
+msgid "User Control Panel"
+msgstr "Корисничка контролна табла"
+
+#: inc/AllAccessibleSettings.php:115
+msgid "Accessibility Statement"
+msgstr "Изјава о приступачности"
+
+#: inc/AllAccessibleSettings.php:116
+msgid "Widget Customization (Color, Shape, Placement, etc.)"
+msgstr "Прилагођавање виџета (боја, облик, положај, итд.)"
+
+#: inc/AllAccessibleSettings.php:117
+msgid "Ai Accessibility Fixes"
+msgstr "Исправке приступачности Аи"
+
+#: inc/AllAccessibleSettings.php:118
+msgid "Image Alt Text Generation"
+msgstr "Генерисање алтернативног текста слике"
+
+#: inc/AllAccessibleSettings.php:119
+msgid "Monthly Accessibility Audits"
+msgstr "Месечне ревизије приступачности"
+
+#: inc/AllAccessibleSettings.php:120
+msgid "Accessibility Accommodation Requests"
+msgstr "Приступачност Захтеви за смештај"
+
+#: inc/AllAccessibleSettings.php:127
+msgid "To learn more, visit: https://www.allaccessible.org"
+msgstr "Да бисте сазнали више, посетите: хттпс://ввв.аллаццессибле.орг"
+
+#: inc/AllAccessibleSettings.php:131
+msgid "Your Email"
+msgstr "Ваша е-пошта"
+
+#: inc/AllAccessibleSettings.php:131
+#, php-format
+msgid "(Used to manage your Account on %s)"
+msgstr "(Користи се за управљање вашим налогом на %s)"
+
+#: inc/AllAccessibleSettings.php:135
+msgid "Upgrade to Premium"
+msgstr "Унапредите на Премиум"
+
+#: inc/AllAccessibleSettings.php:138
+msgid "Plugin Configuration"
+msgstr "Конфигурација додатне компоненте"
+
+#: inc/AllAccessibleSettings.php:139
+#, php-format
+msgid "%1$s is connected to %2$s with account ID %3$s"
+msgstr "%1$s је повезан са %2$s са ИД-ом налога %3$s"
+
+#: inc/AllAccessibleSettings.php:161
+msgid "Choose Widget Color"
+msgstr "Одаберите боју виџета"
+
+#: inc/AllAccessibleSettings.php:167
+msgid "Choose Icon"
+msgstr "Одабери икону"
+
+#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
+msgid "Choose Widget Size"
+msgstr "Одаберите величину виџета"
+
+#: inc/AllAccessibleSettings.php:192
+msgid "Small"
+msgstr "Malo"
+
+#: inc/AllAccessibleSettings.php:193
+msgid "Medium (Default)"
+msgstr "Средњи (подразумевани)"
+
+#: inc/AllAccessibleSettings.php:194
+msgid "Large"
+msgstr "Велика"
+
+#: inc/AllAccessibleSettings.php:202
+msgid "Choose Widget Position"
+msgstr "Одаберите позицију виџета"
+
+#: inc/AllAccessibleSettings.php:204
+msgid "Bottom Right"
+msgstr "Dole Desno"
+
+#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
+msgid "Middle Right"
+msgstr "Средњи десни"
+
+#: inc/AllAccessibleSettings.php:207
+msgid "Bottom Center"
+msgstr "Доњи центар"
+
+#: inc/AllAccessibleSettings.php:208
+msgid "Bottom Left"
+msgstr "Dole Ljevo"
+
+#: inc/AllAccessibleSettings.php:209
+msgid "Middle Left"
+msgstr "Средња лева"
+
+#: inc/AllAccessibleSettings.php:210
+msgid "Top Left"
+msgstr "Gore Ljevo"
+
+#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
+msgid "Choose Widget Shape"
+msgstr "Одабери облик виџета"
+
+#: inc/AllAccessibleSettings.php:220
+msgid "Circle"
+msgstr "Кrug"
+
+#: inc/AllAccessibleSettings.php:221
+msgid "Square"
+msgstr "Коцка"
+
+#: inc/AllAccessibleSettings.php:234
+msgid "Hide AllAccessible Branding"
+msgstr "Сакриј све доступно брендирање"
+
+#: inc/AllAccessibleSettings.php:235
+msgid "Remove Branding"
+msgstr "Уклони брендирање"
+
+#: inc/AllAccessibleSettings.php:237
+msgid "Branding Visible"
+msgstr "Брендирање видљиво"
+
+#: inc/AllAccessibleSettings.php:238
+msgid "Branding Removed"
+msgstr "Брендирање је уклоњено"
+
+#: inc/AllAccessibleSettings.php:241
+msgid ""
+"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
+"and logo from the widget."
+msgstr ""
+"Напомена: Сакривање брендирања ће уклонити текст и логотип „Поверед би "
+"АллАццессибле“ из виџета."
+
+#: inc/AllAccessibleSettings.php:246
+msgid "Save Settings"
+msgstr "Сачувај подешавања"
+
+#: inc/AllAccessibleSettings.php:252
+msgid "You may need to reload this page if your widget options are not visible"
+msgstr ""
+"Можда ћете морати поново да учитате ову страницу ако опције виџета нису "
+"видљиве"
+
+#: inc/AllAccessibleSettings.php:259
+msgid "Version"
+msgstr "Верзија"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Need Help"
+msgstr "Потребна помоћ"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Contact Us"
+msgstr "Контактирај нас"
+
+#. Plugin Name of the plugin/theme
+msgid "AllAccessible"
+msgstr "АллАццессибле"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.allaccessible.org/platform/wordpress/"
+msgstr "https://www.allaccessible.org/platform/wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Unlock true digital accessibility with AllAccessible - a comprehensive "
+"WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
+"your users with a fully customizable accessibility widget, and enhance their "
+"experience with our premium AI-powered features."
+msgstr ""
+"Откључајте праву дигиталну приступачност помоћу АллАццессибле – "
+"свеобухватног ВордПресс додатка који води вашу веб локацију ка ВЦАГ/АДА "
+"усаглашености. Оснажите своје кориснике помоћу потпуно прилагодљивог виџета "
+"за приступачност и побољшајте њихово искуство помоћу наших врхунских "
+"функција које покреће вештачка интелигенција."
+
+#. Author of the plugin/theme
+msgid "AllAccessible Team"
+msgstr "АллАццессибле Теам"
+
+#. Author URI of the plugin/theme
+msgid "https://www.allaccessible.org/"
+msgstr "https://www.allaccessible.org/"
+
+#~ msgid "Let's make this WordPress Site Accessible"
+#~ msgstr "Учинимо овај WордПресс сајт приступачним"
+
+#~ msgid "Free Version"
+#~ msgstr "Фрее Версион"
+
+#, php-format
+#~ msgid "Let's make this WordPress Site %s"
+#~ msgstr "Хајде да направимо овај ВордПресс сајт %s"
+
+#~ msgid "Connect"
+#~ msgstr "Повезан"
+
+#~ msgid "AllAccessible Accessibility Plugin"
+#~ msgstr "Додатна компонента за приступачност која се може приступити"
+
+#, php-format
+#~ msgid ""
+#~ "Connect your account with your email in the form below. If you do not "
+#~ "have an existing account, we will create a free 7 day trial for %s."
+#~ msgstr ""
+#~ "Повежите свој налог са вашом е-поштом у обрасцу испод. Ако немате "
+#~ "постојећи налог, направићемо бесплатну пробну верзију од 7 дана за %s."
+
+#~ msgid ""
+#~ "Are you enjoying the AllAccessible Accessibility Plugin for WordPress?"
+#~ msgstr ""
+#~ "Уживате ли у АллАццессибле Додатној компоненти за приступачност за "
+#~ "WордПресс?"
+
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#~ msgid "No"
+#~ msgstr "Не"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Odbaci obaveštenje"
+
+#~ msgid "Would you like to provide more feedback about our plugin?"
+#~ msgstr ""
+#~ "Желите ли да пружите више повратних информација о нашој додатној "
+#~ "компоненти?"
+
+#~ msgid "Yes, I would like to provide feedback"
+#~ msgstr "Да , желео бих да пружим повратне информације"
+
+#~ msgid ""
+#~ "Glad to hear you are enjoying it. Would you consider leaving a positive "
+#~ "review?"
+#~ msgstr ""
+#~ "Драго ми је да иујем да ућивате. Да ли бисте размотрили остављање "
+#~ "позитивне критике?"
+
+#~ msgid ""
+#~ "It really helps to support the plugin and help others to discover it too!"
+#~ msgstr "Заиста помаже да се подржи плугин и помогне другима да га открију!"
+
+#~ msgid "Yes, I will write a positive review."
+#~ msgstr "Да , написаћу позитивну критику."
+
+#~ msgid "Let's make this WordPress Site AllAccessible"
+#~ msgstr "Учинимо овај WордПресс сајт аллАццессибле"
+
+#~ msgid "is connected to"
+#~ msgstr "је повезан са"
+
+#~ msgid "with account ID"
+#~ msgstr "са ИД-ом налога"

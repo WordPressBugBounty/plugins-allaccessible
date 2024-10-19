@@ -1,0 +1,457 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AllAccessible\n"
+"POT-Creation-Date: 2023-05-11 15:21-0400\n"
+"PO-Revision-Date: 2023-05-11 15:22-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: allaccessible.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: allaccessible.php:52
+msgid "Accessibility"
+msgstr "辅助功能"
+
+#: allaccessible.php:291
+msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+msgstr "激活AllAccessible Premium以解锁Ai无障碍功能。"
+
+#: allaccessible.php:291
+msgid "Click Here"
+msgstr "点击这里"
+
+#: inc/AllAccessibleDeactivationForm.php:29
+msgid "AllAccessible Deactivation"
+msgstr "所有可访问的停用"
+
+#: inc/AllAccessibleDeactivationForm.php:30
+msgid ""
+"If you have a moment, please let us know why you are deactivating "
+"AllAccessible. All submissions are anonymous and we only use this feedback "
+"to improve this plugin."
+msgstr ""
+"如果你有时间，请让我们知道你为什么要停用AllAccessible。所有提交的信息都是匿名"
+"的，我们只使用这些反馈来改进这个插件。"
+
+#: inc/AllAccessibleDeactivationForm.php:31
+msgid "Do not send my e-mail address with this feedback"
+msgstr "不要发送我的电子邮件地址与此反馈"
+
+#: inc/AllAccessibleDeactivationForm.php:33
+msgid "Please give us any feedback that could help us improve"
+msgstr "请给我们任何可以帮助我们改进的反馈意见"
+
+#: inc/AllAccessibleDeactivationForm.php:35
+msgid "Cancel"
+msgstr "取消"
+
+#: inc/AllAccessibleDeactivationForm.php:36
+msgid "Skip &amp; Deactivate"
+msgstr "跳过＆amp;停用"
+
+#: inc/AllAccessibleDeactivationForm.php:37
+msgid "Submit &amp; Deactivate"
+msgstr "提交 停用"
+
+#: inc/AllAccessibleDeactivationForm.php:38
+msgid "Please wait"
+msgstr "请稍候"
+
+#: inc/AllAccessibleDeactivationForm.php:39
+msgid "Thank you!"
+msgstr "谢谢！"
+
+#: inc/AllAccessibleDeactivationForm.php:48
+msgid "The plugin suddenly stopped working"
+msgstr "插件突然停止工作"
+
+#: inc/AllAccessibleDeactivationForm.php:51
+#: inc/AllAccessibleDeactivationForm.php:58
+msgid ""
+"We're sorry to hear that, check <a href=\"https://support.allaccessible."
+"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
+"issue?"
+msgstr ""
+"我们对此感到很遗憾，请检查<a href=\"https://support.allaccessible.org\" "
+"target=\"_blank\">AllAccessible支持</a>。你能描述一下这个问题吗？"
+
+#: inc/AllAccessibleDeactivationForm.php:55
+msgid "The plugin broke my site"
+msgstr "该插件破坏了我的网站"
+
+#: inc/AllAccessibleDeactivationForm.php:62
+msgid "I don't need this plugin any more"
+msgstr "我不需要这个插件了"
+
+#: inc/AllAccessibleDeactivationForm.php:66
+msgid "I found a better plugin"
+msgstr "我找到了一个更好的插件"
+
+#: inc/AllAccessibleDeactivationForm.php:69
+msgid "Can you please share the name of the other plugin?"
+msgstr "能否请你分享一下其他插件的名称？"
+
+#: inc/AllAccessibleDeactivationForm.php:73
+msgid "It's a temporary deactivation, I'm troubleshooting"
+msgstr "这是暂时停用，我正在排除故障"
+
+#: inc/AllAccessibleDeactivationForm.php:77
+msgid "Other"
+msgstr "其他"
+
+#: inc/AllAccessibleDeactivationForm.php:80
+msgid "Can you describe the issue?"
+msgstr "你能描述一下这个问题吗？"
+
+#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
+msgid "Preview Widget"
+msgstr "预览小工具"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Widget Status"
+msgstr "小工具状态"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Active"
+msgstr "激活"
+
+#: inc/AllAccessibleSettings.php:41
+#, php-format
+msgid "AllAccessible's %s widget is visible on the front end of your site."
+msgstr "AllAccessible的%s小部件在你网站的前端是可见的。"
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Website Accessibility"
+msgstr "辅助功能"
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Audits & Remediation"
+msgstr "审计和补救"
+
+#: inc/AllAccessibleSettings.php:61
+msgid ""
+"View the results of your website scans, accessibility Remediation and more "
+"with AllAccessibile Premium."
+msgstr "通过AllAccessibile Premium查看你的网站扫描结果，可访问性补救和更多。"
+
+#: inc/AllAccessibleSettings.php:62
+msgid "Upgrade Now"
+msgstr "现在升级"
+
+#: inc/AllAccessibleSettings.php:64
+msgid ""
+"View the results of your website scans in your AllAccessibile Account "
+"Dashboard."
+msgstr "在您的AllAccessibile账户仪表板上查看您的网站扫描结果。"
+
+#: inc/AllAccessibleSettings.php:65
+msgid "Accessibility Dashboard"
+msgstr "辅助功能"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Need"
+msgstr "必须"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Help & Support?"
+msgstr "帮助与支持？"
+
+#: inc/AllAccessibleSettings.php:84
+msgid ""
+"Check our knowledge base for assistance with installation, customization, "
+"and more."
+msgstr "请查看我们的知识库，以获得安装、定制等方面的帮助。"
+
+#: inc/AllAccessibleSettings.php:85
+msgid "Get Support"
+msgstr "获取支持"
+
+#: inc/AllAccessibleSettings.php:109
+msgid "Unlock the Power of AllAccessible Premium"
+msgstr "释放AllAccessible Premium的力量"
+
+#: inc/AllAccessibleSettings.php:110
+msgid ""
+"Unlock all the benefits of our Ai accessibility automation with a free trial "
+"by connecting your AllAccessible account to your email below. Already using "
+"the free version? No problem! We'll set you up with a free 7-day trial of "
+"our premium version. After the trial period, upgrade to the premium version "
+"for just $10 a month and enjoy a more accessible digital experience."
+msgstr ""
+"通过连接你的AllAccessible账户和你的邮箱，可以免费试用我们的Ai无障碍自动化系统"
+"的所有好处。已经在使用免费版本？没问题!我们会给你安排一个免费的高级版本的7天"
+"试用。试用期结束后，升级到高级版本，每月只需10美元，即可享受更多的无障碍数字"
+"体验。"
+
+#: inc/AllAccessibleSettings.php:113
+msgid ""
+"Below are some additional features unlocked with AllAccessible Premium. All "
+"for Only $10/mo."
+msgstr "以下是AllAccessible Premium解锁的一些额外功能。"
+
+#: inc/AllAccessibleSettings.php:114
+msgid "User Control Panel"
+msgstr "用户控制面板"
+
+#: inc/AllAccessibleSettings.php:115
+msgid "Accessibility Statement"
+msgstr "辅助功能声明"
+
+#: inc/AllAccessibleSettings.php:116
+msgid "Widget Customization (Color, Shape, Placement, etc.)"
+msgstr "小工具定制（颜色、形状、位置等）。"
+
+#: inc/AllAccessibleSettings.php:117
+msgid "Ai Accessibility Fixes"
+msgstr "无障碍修复的Ai"
+
+#: inc/AllAccessibleSettings.php:118
+msgid "Image Alt Text Generation"
+msgstr "生成图片ALT文本"
+
+#: inc/AllAccessibleSettings.php:119
+msgid "Monthly Accessibility Audits"
+msgstr "月度无障碍审计"
+
+#: inc/AllAccessibleSettings.php:120
+msgid "Accessibility Accommodation Requests"
+msgstr "无障碍设施请求"
+
+#: inc/AllAccessibleSettings.php:127
+msgid "To learn more, visit: https://www.allaccessible.org"
+msgstr "要了解更多，请访问：https://www.allaccessible.org"
+
+#: inc/AllAccessibleSettings.php:131
+msgid "Your Email"
+msgstr "你的邮箱"
+
+#: inc/AllAccessibleSettings.php:131
+#, php-format
+msgid "(Used to manage your Account on %s)"
+msgstr "(用于管理您在%s上的账户)"
+
+#: inc/AllAccessibleSettings.php:135
+msgid "Upgrade to Premium"
+msgstr "升级到高级版"
+
+#: inc/AllAccessibleSettings.php:138
+msgid "Plugin Configuration"
+msgstr "插件配置"
+
+#: inc/AllAccessibleSettings.php:139
+#, php-format
+msgid "%1$s is connected to %2$s with account ID %3$s"
+msgstr "%1$s被连接到%2$s，账户ID为%3$s"
+
+#: inc/AllAccessibleSettings.php:161
+msgid "Choose Widget Color"
+msgstr "选择小部件颜色"
+
+#: inc/AllAccessibleSettings.php:167
+msgid "Choose Icon"
+msgstr "选择图标"
+
+#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
+msgid "Choose Widget Size"
+msgstr "选择小部件大小"
+
+#: inc/AllAccessibleSettings.php:192
+msgid "Small"
+msgstr "小"
+
+#: inc/AllAccessibleSettings.php:193
+msgid "Medium (Default)"
+msgstr "中（默认）"
+
+#: inc/AllAccessibleSettings.php:194
+#, fuzzy
+msgid "Large"
+msgstr "大"
+
+#: inc/AllAccessibleSettings.php:202
+msgid "Choose Widget Position"
+msgstr "选择小部件位置"
+
+#: inc/AllAccessibleSettings.php:204
+msgid "Bottom Right"
+msgstr "右下"
+
+#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
+msgid "Middle Right"
+msgstr "右中"
+
+#: inc/AllAccessibleSettings.php:207
+msgid "Bottom Center"
+msgstr "底部中心"
+
+#: inc/AllAccessibleSettings.php:208
+msgid "Bottom Left"
+msgstr "左下"
+
+#: inc/AllAccessibleSettings.php:209
+msgid "Middle Left"
+msgstr "左中"
+
+#: inc/AllAccessibleSettings.php:210
+msgid "Top Left"
+msgstr "左上"
+
+#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
+msgid "Choose Widget Shape"
+msgstr "选择小部件形状"
+
+#: inc/AllAccessibleSettings.php:220
+msgid "Circle"
+msgstr "圆形"
+
+#: inc/AllAccessibleSettings.php:221
+msgid "Square"
+msgstr "方形"
+
+#: inc/AllAccessibleSettings.php:234
+msgid "Hide AllAccessible Branding"
+msgstr "隐藏所有可访问的品牌"
+
+#: inc/AllAccessibleSettings.php:235
+msgid "Remove Branding"
+msgstr "删除品牌"
+
+#: inc/AllAccessibleSettings.php:237
+msgid "Branding Visible"
+msgstr "品牌可见"
+
+#: inc/AllAccessibleSettings.php:238
+msgid "Branding Removed"
+msgstr "品牌已删除"
+
+#: inc/AllAccessibleSettings.php:241
+msgid ""
+"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
+"and logo from the widget."
+msgstr ""
+"注意：隐藏品牌将从小组件中移除 \"Powered by AllAccessible \"文本和标识。"
+
+#: inc/AllAccessibleSettings.php:246
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: inc/AllAccessibleSettings.php:252
+msgid "You may need to reload this page if your widget options are not visible"
+msgstr "如果您的小部件选项不可见，您可能需要重新加载此页面"
+
+#: inc/AllAccessibleSettings.php:259
+msgid "Version"
+msgstr "版本"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Need Help"
+msgstr "需要帮助"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Contact Us"
+msgstr "联系我们"
+
+#. Plugin Name of the plugin/theme
+msgid "AllAccessible"
+msgstr "AllAccessible"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.allaccessible.org/platform/wordpress/"
+msgstr "https://www.allaccessible.org/platform/wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Unlock true digital accessibility with AllAccessible - a comprehensive "
+"WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
+"your users with a fully customizable accessibility widget, and enhance their "
+"experience with our premium AI-powered features."
+msgstr ""
+"AllAccessible是一个全面的WordPress插件，它使你的网站符合WCAG/ADA标准，开启真"
+"正的数字无障碍。通过一个完全可定制的无障碍小组件赋予你的用户权力，并通过我们"
+"优质的AI功能增强他们的体验。"
+
+#. Author of the plugin/theme
+msgid "AllAccessible Team"
+msgstr "全通团队"
+
+#. Author URI of the plugin/theme
+msgid "https://www.allaccessible.org/"
+msgstr "https://www.allaccessible.org/"
+
+#~ msgid "Let's make this WordPress Site Accessible"
+#~ msgstr "让我们让这个WordPress网站可访问"
+
+#~ msgid "Free Version"
+#~ msgstr "免费版"
+
+#, php-format
+#~ msgid "Let's make this WordPress Site %s"
+#~ msgstr "让我们来做这个WordPress网站 %s"
+
+#~ msgid "Connect"
+#~ msgstr "连接"
+
+#~ msgid "AllAccessible Accessibility Plugin"
+#~ msgstr "所有可访问的辅助功能插件"
+
+#, php-format
+#~ msgid ""
+#~ "Connect your account with your email in the form below. If you do not "
+#~ "have an existing account, we will create a free 7 day trial for %s."
+#~ msgstr ""
+#~ "在下面的表格中用你的电子邮件连接你的账户。如果你没有一个现有的帐户，我们将"
+#~ "为%s创建一个免费的7天试用。"
+
+#~ msgid ""
+#~ "Are you enjoying the AllAccessible Accessibility Plugin for WordPress?"
+#~ msgstr "您是否喜欢WordPress的AllAccessible Accessibility Plugin？"
+
+#~ msgid "Yes"
+#~ msgstr "是"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "否"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "关闭此通知"
+
+#~ msgid "Would you like to provide more feedback about our plugin?"
+#~ msgstr "您想提供有关我们插件的更多反馈吗？"
+
+#~ msgid "Yes, I would like to provide feedback"
+#~ msgstr "是的，我想提供反馈"
+
+#~ msgid ""
+#~ "Glad to hear you are enjoying it. Would you consider leaving a positive "
+#~ "review?"
+#~ msgstr "很高兴听到你正在享受它。你会考虑留下正面的评价吗？"
+
+#~ msgid ""
+#~ "It really helps to support the plugin and help others to discover it too!"
+#~ msgstr "支持插件并帮助其他人发现它真的很有帮助！"
+
+#~ msgid "Yes, I will write a positive review."
+#~ msgstr "是的，我会写一个积极的评论。"
+
+#~ msgid "Let's make this WordPress Site AllAccessible"
+#~ msgstr "让我们让这个WordPress网站全部可访问"
+
+#~ msgid "is connected to"
+#~ msgstr "已连接到"
+
+#~ msgid "with account ID"
+#~ msgstr "使用帐户 ID"

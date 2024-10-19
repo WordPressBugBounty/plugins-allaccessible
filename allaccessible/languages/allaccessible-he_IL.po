@@ -1,0 +1,462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AllAccessible\n"
+"POT-Creation-Date: 2023-05-11 15:25-0400\n"
+"PO-Revision-Date: 2023-05-11 15:26-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: allaccessible.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: allaccessible.php:52
+msgid "Accessibility"
+msgstr "Ułatwienia"
+
+#: allaccessible.php:291
+msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+msgstr "הפעל את AllAccessible Premium כדי לפתוח את תכונות הנגישות של Ai."
+
+#: allaccessible.php:291
+msgid "Click Here"
+msgstr "לחץ כאן"
+
+#: inc/AllAccessibleDeactivationForm.php:29
+msgid "AllAccessible Deactivation"
+msgstr "ביטול כל נגיש"
+
+#: inc/AllAccessibleDeactivationForm.php:30
+msgid ""
+"If you have a moment, please let us know why you are deactivating "
+"AllAccessible. All submissions are anonymous and we only use this feedback "
+"to improve this plugin."
+msgstr ""
+"אם יש לך רגע, ספר לנו מדוע אתה משבית את AllAccessible. כל ההגשות הן "
+"אנונימיות ואנו משתמשים במשוב זה רק כדי לשפר את התוסף הזה."
+
+#: inc/AllAccessibleDeactivationForm.php:31
+msgid "Do not send my e-mail address with this feedback"
+msgstr "אל תשלח את כתובת הדואר האלקטרוני שלי עם המשוב הזה"
+
+#: inc/AllAccessibleDeactivationForm.php:33
+msgid "Please give us any feedback that could help us improve"
+msgstr "אנא תנו לנו כל משוב שיכול לעזור לנו להשתפר"
+
+#: inc/AllAccessibleDeactivationForm.php:35
+msgid "Cancel"
+msgstr "ביטול"
+
+#: inc/AllAccessibleDeactivationForm.php:36
+msgid "Skip &amp; Deactivate"
+msgstr "דלג &amp; השבת"
+
+#: inc/AllAccessibleDeactivationForm.php:37
+msgid "Submit &amp; Deactivate"
+msgstr "שלח &amp; השבת"
+
+#: inc/AllAccessibleDeactivationForm.php:38
+msgid "Please wait"
+msgstr "אנא המתן"
+
+#: inc/AllAccessibleDeactivationForm.php:39
+msgid "Thank you!"
+msgstr "תודה רבה!"
+
+#: inc/AllAccessibleDeactivationForm.php:48
+msgid "The plugin suddenly stopped working"
+msgstr "הפלאגין הפסיק לפתע לעבוד"
+
+#: inc/AllAccessibleDeactivationForm.php:51
+#: inc/AllAccessibleDeactivationForm.php:58
+msgid ""
+"We're sorry to hear that, check <a href=\"https://support.allaccessible."
+"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
+"issue?"
+msgstr ""
+"אנו מצטערים לשמוע זאת, בדוק את <a href=\"https://support.allaccessible.org\" "
+"target=\"_blank\">התמיכה של AllAccessible</a> . אתה יכול לתאר את הבעיה?"
+
+#: inc/AllAccessibleDeactivationForm.php:55
+msgid "The plugin broke my site"
+msgstr "התוסף שבר את האתר שלי"
+
+#: inc/AllAccessibleDeactivationForm.php:62
+msgid "I don't need this plugin any more"
+msgstr "אני לא צריך את התוסף הזה יותר"
+
+#: inc/AllAccessibleDeactivationForm.php:66
+msgid "I found a better plugin"
+msgstr "מצאתי תוסף טוב יותר"
+
+#: inc/AllAccessibleDeactivationForm.php:69
+msgid "Can you please share the name of the other plugin?"
+msgstr "אתה יכול בבקשה לשתף את השם של התוסף השני?"
+
+#: inc/AllAccessibleDeactivationForm.php:73
+msgid "It's a temporary deactivation, I'm troubleshooting"
+msgstr "זו השבתה זמנית, אני פותר בעיות"
+
+#: inc/AllAccessibleDeactivationForm.php:77
+msgid "Other"
+msgstr "אחר"
+
+#: inc/AllAccessibleDeactivationForm.php:80
+msgid "Can you describe the issue?"
+msgstr "אתה יכול לתאר את הבעיה?"
+
+#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
+msgid "Preview Widget"
+msgstr "ווידג'ט תצוגה מקדימה"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Widget Status"
+msgstr "סטטוס ווידג'ט"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Active"
+msgstr "פעיל"
+
+#: inc/AllAccessibleSettings.php:41
+#, php-format
+msgid "AllAccessible's %s widget is visible on the front end of your site."
+msgstr "הווידג'ט %s של AllAccessible גלוי בקצה הקדמי של האתר שלך."
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Website Accessibility"
+msgstr "‫Ułatwienia"
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Audits & Remediation"
+msgstr "ביקורת ותיקון"
+
+#: inc/AllAccessibleSettings.php:61
+msgid ""
+"View the results of your website scans, accessibility Remediation and more "
+"with AllAccessibile Premium."
+msgstr ""
+"הצג את התוצאות של סריקות האתר שלך, תיקון נגישות ועוד עם AllAccessibile "
+"Premium."
+
+#: inc/AllAccessibleSettings.php:62
+msgid "Upgrade Now"
+msgstr "לשדרג עכשיו"
+
+#: inc/AllAccessibleSettings.php:64
+msgid ""
+"View the results of your website scans in your AllAccessibile Account "
+"Dashboard."
+msgstr ""
+"הצג את התוצאות של סריקות האתר שלך במרכז השליטה של חשבון AllAccessibile שלך."
+
+#: inc/AllAccessibleSettings.php:65
+msgid "Accessibility Dashboard"
+msgstr "‫Ułatwienia"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Need"
+msgstr "צריכה עזרה"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Help & Support?"
+msgstr "עזרה תמיכה?"
+
+#: inc/AllAccessibleSettings.php:84
+msgid ""
+"Check our knowledge base for assistance with installation, customization, "
+"and more."
+msgstr "עיין במאגר הידע שלנו לקבלת סיוע בהתקנה, התאמה אישית ועוד."
+
+#: inc/AllAccessibleSettings.php:85
+msgid "Get Support"
+msgstr "קבל תמיכה"
+
+#: inc/AllAccessibleSettings.php:109
+msgid "Unlock the Power of AllAccessible Premium"
+msgstr "פתח את הכוח של AllAccessible Premium"
+
+#: inc/AllAccessibleSettings.php:110
+msgid ""
+"Unlock all the benefits of our Ai accessibility automation with a free trial "
+"by connecting your AllAccessible account to your email below. Already using "
+"the free version? No problem! We'll set you up with a free 7-day trial of "
+"our premium version. After the trial period, upgrade to the premium version "
+"for just $10 a month and enjoy a more accessible digital experience."
+msgstr ""
+"פתח את כל היתרונות של אוטומציה של נגישות Ai שלנו עם ניסיון חינם על ידי חיבור "
+"חשבון AllAccessible שלך לדוא\"ל שלך למטה. כבר משתמשים בגרסה החינמית? אין "
+"בעיה! אנו נגדיר לך ניסיון חינם למשך 7 ימים של גרסת הפרימיום שלנו. לאחר תקופת "
+"הניסיון, שדרג לגרסת הפרימיום תמורת 10 דולר בלבד לחודש ותיהנה מחוויה דיגיטלית "
+"נגישה יותר."
+
+#: inc/AllAccessibleSettings.php:113
+msgid ""
+"Below are some additional features unlocked with AllAccessible Premium. All "
+"for Only $10/mo."
+msgstr "להלן כמה תכונות נוספות שנפתחו עם AllAccessible Premium."
+
+#: inc/AllAccessibleSettings.php:114
+msgid "User Control Panel"
+msgstr "לוח הבקרה של המשתמש"
+
+#: inc/AllAccessibleSettings.php:115
+msgid "Accessibility Statement"
+msgstr "הצהרת נגישות"
+
+#: inc/AllAccessibleSettings.php:116
+msgid "Widget Customization (Color, Shape, Placement, etc.)"
+msgstr "התאמה אישית של ווידג'ט (צבע, צורה, מיקום וכו')"
+
+#: inc/AllAccessibleSettings.php:117
+msgid "Ai Accessibility Fixes"
+msgstr "תיקוני נגישות Ai"
+
+#: inc/AllAccessibleSettings.php:118
+msgid "Image Alt Text Generation"
+msgstr "יצירת טקסט חלופי של תמונה"
+
+#: inc/AllAccessibleSettings.php:119
+msgid "Monthly Accessibility Audits"
+msgstr "מבדקי נגישות חודשיים"
+
+#: inc/AllAccessibleSettings.php:120
+msgid "Accessibility Accommodation Requests"
+msgstr "בקשות נגישות לינה"
+
+#: inc/AllAccessibleSettings.php:127
+msgid "To learn more, visit: https://www.allaccessible.org"
+msgstr "למידע נוסף, בקר בכתובת: https://www.allaccessible.org"
+
+#: inc/AllAccessibleSettings.php:131
+msgid "Your Email"
+msgstr "האימייל שלך"
+
+#: inc/AllAccessibleSettings.php:131
+#, php-format
+msgid "(Used to manage your Account on %s)"
+msgstr "(משמש לניהול חשבונך ב-%s)"
+
+#: inc/AllAccessibleSettings.php:135
+msgid "Upgrade to Premium"
+msgstr "לשדרג לפרימיום"
+
+#: inc/AllAccessibleSettings.php:138
+msgid "Plugin Configuration"
+msgstr "תצורת תוסף"
+
+#: inc/AllAccessibleSettings.php:139
+#, php-format
+msgid "%1$s is connected to %2$s with account ID %3$s"
+msgstr "%1$s מחובר ל-%2$s עם מזהה חשבון %3$s"
+
+#: inc/AllAccessibleSettings.php:161
+msgid "Choose Widget Color"
+msgstr "בחר צבע וידג'ט"
+
+#: inc/AllAccessibleSettings.php:167
+msgid "Choose Icon"
+msgstr "בחר אייקון"
+
+#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
+msgid "Choose Widget Size"
+msgstr "בחר גודל ווידג'ט"
+
+#: inc/AllAccessibleSettings.php:192
+msgid "Small"
+msgstr "קטן"
+
+#: inc/AllAccessibleSettings.php:193
+msgid "Medium (Default)"
+msgstr "בינוני (ברירת מחדל)"
+
+#: inc/AllAccessibleSettings.php:194
+msgid "Large"
+msgstr "גדול"
+
+#: inc/AllAccessibleSettings.php:202
+msgid "Choose Widget Position"
+msgstr "בחר מיקום וידג'ט"
+
+#: inc/AllAccessibleSettings.php:204
+msgid "Bottom Right"
+msgstr "ימין תחתון"
+
+#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
+msgid "Middle Right"
+msgstr "אמצעי ימין"
+
+#: inc/AllAccessibleSettings.php:207
+msgid "Bottom Center"
+msgstr "מרכז תחתון"
+
+#: inc/AllAccessibleSettings.php:208
+msgid "Bottom Left"
+msgstr "שמאל תחתון"
+
+#: inc/AllAccessibleSettings.php:209
+msgid "Middle Left"
+msgstr "אמצעי שמאל"
+
+#: inc/AllAccessibleSettings.php:210
+msgid "Top Left"
+msgstr "למעלה משמאל"
+
+#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
+msgid "Choose Widget Shape"
+msgstr "בחר צורת וידג'ט"
+
+#: inc/AllAccessibleSettings.php:220
+msgid "Circle"
+msgstr "עיגול"
+
+#: inc/AllAccessibleSettings.php:221
+msgid "Square"
+msgstr "מרובע"
+
+#: inc/AllAccessibleSettings.php:234
+msgid "Hide AllAccessible Branding"
+msgstr "הסתר מיתוג AllAccessible"
+
+#: inc/AllAccessibleSettings.php:235
+msgid "Remove Branding"
+msgstr "הסרת מיתוג"
+
+#: inc/AllAccessibleSettings.php:237
+msgid "Branding Visible"
+msgstr "מיתוג גלוי"
+
+#: inc/AllAccessibleSettings.php:238
+msgid "Branding Removed"
+msgstr "המיתוג הוסר"
+
+#: inc/AllAccessibleSettings.php:241
+msgid ""
+"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
+"and logo from the widget."
+msgstr ""
+"הערה: הסתרת המיתוג תסיר את הטקסט והלוגו \"מופעל על ידי AllAccessible\" "
+"מהווידג'ט."
+
+#: inc/AllAccessibleSettings.php:246
+msgid "Save Settings"
+msgstr "שמור שינויים"
+
+#: inc/AllAccessibleSettings.php:252
+msgid "You may need to reload this page if your widget options are not visible"
+msgstr "ייתכן שיהיה עליך לטעון מחדש דף זה אם אפשרויות הווידג'ט שלך אינן גלויות"
+
+#: inc/AllAccessibleSettings.php:259
+msgid "Version"
+msgstr "גרסה"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Need Help"
+msgstr "צריכה עזרה"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Contact Us"
+msgstr "צרו איתנו קשר"
+
+#. Plugin Name of the plugin/theme
+msgid "AllAccessible"
+msgstr "הכל נגיש"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.allaccessible.org/platform/wordpress/"
+msgstr "https://www.allaccessible.org/platform/wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Unlock true digital accessibility with AllAccessible - a comprehensive "
+"WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
+"your users with a fully customizable accessibility widget, and enhance their "
+"experience with our premium AI-powered features."
+msgstr ""
+"פתח נגישות דיגיטלית אמיתית עם AllAccessible - תוסף WordPress מקיף המניע את "
+"האתר שלך לקראת תאימות ל-WCAG/ADA. העצים את המשתמשים שלך עם ווידג'ט נגישות "
+"הניתן להתאמה אישית מלאה, ושפר את החוויה שלהם עם תכונות הפרימיום המופעלות על "
+"ידי AI."
+
+#. Author of the plugin/theme
+msgid "AllAccessible Team"
+msgstr "צוות הכל נגיש"
+
+#. Author URI of the plugin/theme
+msgid "https://www.allaccessible.org/"
+msgstr "https://www.allaccessible.org/"
+
+#~ msgid "Let's make this WordPress Site Accessible"
+#~ msgstr "בואו נהפוך את אתר הוורדפרס הזה לנגיש"
+
+#~ msgid "Free Version"
+#~ msgstr "גרסה חינמית"
+
+#, php-format
+#~ msgid "Let's make this WordPress Site %s"
+#~ msgstr "בוא נעשה אתר וורדפרס זה %s"
+
+#~ msgid "Connect"
+#~ msgstr "התחבר"
+
+#~ msgid "AllAccessible Accessibility Plugin"
+#~ msgstr "Allתוסף נגישות נגיש"
+
+#, php-format
+#~ msgid ""
+#~ "Connect your account with your email in the form below. If you do not "
+#~ "have an existing account, we will create a free 7 day trial for %s."
+#~ msgstr ""
+#~ "חבר את חשבונך לאימייל שלך בטופס למטה. אם אין לך חשבון קיים, ניצור 7 ימי "
+#~ "ניסיון חינם עבור %s."
+
+#~ msgid ""
+#~ "Are you enjoying the AllAccessible Accessibility Plugin for WordPress?"
+#~ msgstr "האם אתה נהנה מתוסף הנגישות AllAccessible עבור וורדפרס?"
+
+#~ msgid "Yes"
+#~ msgstr "כן"
+
+#~ msgid "No"
+#~ msgstr "לא"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "דחה הודעה זו"
+
+#~ msgid "Would you like to provide more feedback about our plugin?"
+#~ msgstr "האם ברצונך לספק משוב נוסף על התוסף שלנו?"
+
+#~ msgid "Yes, I would like to provide feedback"
+#~ msgstr "כן, אני רוצה לספק משוב"
+
+#~ msgid ""
+#~ "Glad to hear you are enjoying it. Would you consider leaving a positive "
+#~ "review?"
+#~ msgstr "שמחה לשמוע שאתה נהנה מזה. האם תשקלו להשאיר ביקורת חיובית?"
+
+#~ msgid ""
+#~ "It really helps to support the plugin and help others to discover it too!"
+#~ msgstr "זה באמת עוזר לתמוך בתוסף ולעזור לאחרים לגלות אותו גם!"
+
+#~ msgid "Yes, I will write a positive review."
+#~ msgstr "כן, אני אכתוב ביקורת חיובית."
+
+#~ msgid "Let's make this WordPress Site AllAccessible"
+#~ msgstr "בואו נהפוך את אתר הוורדפרס הזה לנגיש"
+
+#~ msgid "is connected to"
+#~ msgstr "מחובר ל-"
+
+#~ msgid "with account ID"
+#~ msgstr "עם מזהה חשבון"

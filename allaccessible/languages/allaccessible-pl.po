@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AllAccessible\n"
+"POT-Creation-Date: 2023-07-24 14:54-0400\n"
+"PO-Revision-Date: 2023-07-24 14:55-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: allaccessible.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: allaccessible.php:49
+msgid "Accessibility"
+msgstr "Dostępność"
+
+#: allaccessible.php:238
+msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+msgstr "Aktywuj AllAccessible Premium, aby odblokować funkcje dostępności Ai."
+
+#: allaccessible.php:238
+msgid "Click Here"
+msgstr "Kliknij tutaj"
+
+#: inc/AllAccessibleDeactivationForm.php:47
+msgid "AllAccessible Deactivation"
+msgstr "WszystkieDostępne Dezaktywacja"
+
+#: inc/AllAccessibleDeactivationForm.php:48
+msgid ""
+"If you have a moment, please let us know why you are deactivating "
+"AllAccessible. All submissions are anonymous and we only use this feedback "
+"to improve this plugin."
+msgstr ""
+"Jeśli masz chwilę, daj nam znać, dlaczego dezaktywujesz AllAccessible. "
+"Wszystkie zgłoszenia są anonimowe i używamy tych opinii tylko po to, aby "
+"ulepszyć tę wtyczkę."
+
+#: inc/AllAccessibleDeactivationForm.php:49
+msgid "Do not send my e-mail address with this feedback"
+msgstr "Nie wysyłaj mojego adresu e-mail z tą informacją zwrotną"
+
+#: inc/AllAccessibleDeactivationForm.php:51
+msgid "Please give us any feedback that could help us improve"
+msgstr ""
+"Prosimy o przekazanie nam wszelkich uwag, które mogą pomóc nam w "
+"udoskonaleniu"
+
+#: inc/AllAccessibleDeactivationForm.php:53
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: inc/AllAccessibleDeactivationForm.php:54
+msgid "Skip &amp; Deactivate"
+msgstr "Pomiń &amp; Dezaktywuj"
+
+#: inc/AllAccessibleDeactivationForm.php:55
+msgid "Submit &amp; Deactivate"
+msgstr "Wyślij &amp; Dezaktywuj"
+
+#: inc/AllAccessibleDeactivationForm.php:56
+msgid "Please wait"
+msgstr "Czekaj"
+
+#: inc/AllAccessibleDeactivationForm.php:57
+msgid "Thank you!"
+msgstr "Dziękuje!"
+
+#: inc/AllAccessibleDeactivationForm.php:64
+msgid "The plugin suddenly stopped working"
+msgstr "Wtyczka nagle przestała działać"
+
+#: inc/AllAccessibleDeactivationForm.php:67
+#: inc/AllAccessibleDeactivationForm.php:74
+msgid ""
+"We're sorry to hear that, check <a href=\"https://support.allaccessible."
+"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
+"issue?"
+msgstr ""
+"Przykro nam to słyszeć, sprawdź <a href=\"https://support.allaccessible."
+"org\" target=\"_blank\">AllAccessible Support</a>. Czy możesz opisać problem?"
+
+#: inc/AllAccessibleDeactivationForm.php:71
+msgid "The plugin broke my site"
+msgstr "Wtyczka uszkodziła moją stronę"
+
+#: inc/AllAccessibleDeactivationForm.php:78
+msgid "I don't need this plugin any more"
+msgstr "Nie potrzebuję już tej wtyczki"
+
+#: inc/AllAccessibleDeactivationForm.php:82
+msgid "I found a better plugin"
+msgstr "Znalazłem lepszą wtyczkę"
+
+#: inc/AllAccessibleDeactivationForm.php:85
+msgid "Can you please share the name of the other plugin?"
+msgstr "Czy możesz podzielić się nazwą innej wtyczki?"
+
+#: inc/AllAccessibleDeactivationForm.php:89
+msgid "It's a temporary deactivation, I'm troubleshooting"
+msgstr "To tymczasowa dezaktywacja, sprawdzam"
+
+#: inc/AllAccessibleDeactivationForm.php:93
+msgid "Other"
+msgstr "Inne"
+
+#: inc/AllAccessibleDeactivationForm.php:96
+msgid "Can you describe the issue?"
+msgstr "Czy możesz opisać ten problem?"
+
+#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
+msgid "Preview Widget"
+msgstr "Widżet podglądu"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Widget Status"
+msgstr "Status widgetu"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Active"
+msgstr "Aktywny"
+
+#: inc/AllAccessibleSettings.php:41
+#, php-format
+msgid "AllAccessible's %s widget is visible on the front end of your site."
+msgstr "Widżet %s AllAccessible jest widoczny na froncie Twojej witryny."
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Website Accessibility"
+msgstr "Dostępność strony internetowej"
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Audits & Remediation"
+msgstr "Audyty i remediacje"
+
+#: inc/AllAccessibleSettings.php:61
+msgid ""
+"View the results of your website scans, accessibility Remediation and more "
+"with AllAccessibile Premium."
+msgstr ""
+"Przeglądaj wyniki skanowania stron internetowych, naprawiania dostępności i "
+"wiele więcej dzięki AllAccessibile Premium."
+
+#: inc/AllAccessibleSettings.php:62
+msgid "Upgrade Now"
+msgstr "Ulepsz teraz"
+
+#: inc/AllAccessibleSettings.php:64
+msgid ""
+"View the results of your website scans in your AllAccessibile Account "
+"Dashboard."
+msgstr ""
+"Zobacz wyniki skanowania witryny w swoim AllAccessibile Account Dashboard."
+
+#: inc/AllAccessibleSettings.php:65
+msgid "Accessibility Dashboard"
+msgstr "Tablica rozdzielcza dostępności"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Need"
+msgstr "Potrzeba"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Help & Support?"
+msgstr "Pomoc i wsparcie?"
+
+#: inc/AllAccessibleSettings.php:84
+msgid ""
+"Check our knowledge base for assistance with installation, customization, "
+"and more."
+msgstr ""
+"Sprawdź naszą bazę wiedzy, aby uzyskać pomoc w zakresie instalacji, "
+"dostosowywania i innych."
+
+#: inc/AllAccessibleSettings.php:85
+msgid "Get Support"
+msgstr "Uzyskaj pomoc"
+
+#: inc/AllAccessibleSettings.php:109
+msgid "Unlock the Power of AllAccessible Premium"
+msgstr "Uwolnij moc AllAccessible Premium"
+
+#: inc/AllAccessibleSettings.php:110
+msgid ""
+"Unlock all the benefits of our Ai accessibility automation with a free trial "
+"by connecting your AllAccessible account to your email below. Already using "
+"the free version? No problem! We'll set you up with a free 7-day trial of "
+"our premium version. After the trial period, upgrade to the premium version "
+"for just $10 a month and enjoy a more accessible digital experience."
+msgstr ""
+"Odblokuj wszystkie korzyści z naszej automatyzacji dostępności Ai dzięki "
+"bezpłatnej wersji próbnej, łącząc swoje konto AllAccessible z adresem e-mail "
+"poniżej. Korzystasz już z darmowej wersji? Nie ma problemu! Otrzymasz 7-"
+"dniowy okres próbny naszej wersji premium. Po okresie próbnym, uaktualnij do "
+"wersji premium za jedyne 10 dolarów miesięcznie i ciesz się bardziej "
+"dostępnym cyfrowym doświadczeniem."
+
+#: inc/AllAccessibleSettings.php:113
+msgid ""
+"Below are some additional features unlocked with AllAccessible Premium. All "
+"for Only $10/mo."
+msgstr ""
+"Poniżej przedstawiamy kilka dodatkowych funkcji odblokowanych dzięki "
+"AllAccessible Premium. Wszystko za jedyne $10/mo."
+
+#: inc/AllAccessibleSettings.php:114
+msgid "User Control Panel"
+msgstr "Panel sterowania użytkownika"
+
+#: inc/AllAccessibleSettings.php:115
+msgid "Accessibility Statement"
+msgstr "Oświadczenie o dostępności"
+
+#: inc/AllAccessibleSettings.php:116
+msgid "Widget Customization (Color, Shape, Placement, etc.)"
+msgstr "Dostosowanie widgetów (kolor, kształt, rozmieszczenie itp.)"
+
+#: inc/AllAccessibleSettings.php:117
+msgid "Ai Accessibility Fixes"
+msgstr "Poprawki dostępności Ai"
+
+#: inc/AllAccessibleSettings.php:118
+msgid "Image Alt Text Generation"
+msgstr "Generowanie tekstu Alt obrazu"
+
+#: inc/AllAccessibleSettings.php:119
+msgid "Monthly Accessibility Audits"
+msgstr "Comiesięczne audyty dostępności"
+
+#: inc/AllAccessibleSettings.php:120
+msgid "Accessibility Accommodation Requests"
+msgstr "Wnioski o przyznanie zakwaterowania"
+
+#: inc/AllAccessibleSettings.php:127
+msgid "To learn more, visit: https://www.allaccessible.org"
+msgstr "Aby dowiedzieć się więcej, odwiedź: https://www.allaccessible.org"
+
+#: inc/AllAccessibleSettings.php:131
+msgid "Your Email"
+msgstr "Twój email"
+
+#: inc/AllAccessibleSettings.php:131
+#, php-format
+msgid "(Used to manage your Account on %s)"
+msgstr "(Służy do zarządzania Kontem na %s)"
+
+#: inc/AllAccessibleSettings.php:135
+msgid "Upgrade to Premium"
+msgstr "Wersja Premium"
+
+#: inc/AllAccessibleSettings.php:138
+msgid "Plugin Configuration"
+msgstr "Konfiguracja wtyczki"
+
+#: inc/AllAccessibleSettings.php:139
+#, php-format
+msgid "%1$s is connected to %2$s with account ID %3$s"
+msgstr "%1$s jest połączony z %2$s z identyfikatorem konta %3$s"
+
+#: inc/AllAccessibleSettings.php:161
+msgid "Choose Widget Color"
+msgstr "Wybierz kolor widgetu"
+
+#: inc/AllAccessibleSettings.php:167
+msgid "Choose Icon"
+msgstr "Wybierz ikonę"
+
+#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
+msgid "Choose Widget Size"
+msgstr "Wybierz rozmiar widgetu"
+
+#: inc/AllAccessibleSettings.php:192
+msgid "Small"
+msgstr "Mały"
+
+#: inc/AllAccessibleSettings.php:193
+msgid "Medium (Default)"
+msgstr "Średni (domyślnie)"
+
+#: inc/AllAccessibleSettings.php:194
+msgid "Large"
+msgstr "Duży"
+
+#: inc/AllAccessibleSettings.php:202
+msgid "Choose Widget Position"
+msgstr "Wybierz pozycję widgetu"
+
+#: inc/AllAccessibleSettings.php:204
+msgid "Bottom Right"
+msgstr "Prawy dolny"
+
+#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
+msgid "Middle Right"
+msgstr "Środkowy prawy"
+
+#: inc/AllAccessibleSettings.php:207
+msgid "Bottom Center"
+msgstr "U dołu wyśrodkowany"
+
+#: inc/AllAccessibleSettings.php:208
+msgid "Bottom Left"
+msgstr "Na dole po lewej"
+
+#: inc/AllAccessibleSettings.php:209
+msgid "Middle Left"
+msgstr "Środkowa lewa"
+
+#: inc/AllAccessibleSettings.php:210
+msgid "Top Left"
+msgstr "U góry po lewej"
+
+#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
+msgid "Choose Widget Shape"
+msgstr "Wybierz kształt widgetu"
+
+#: inc/AllAccessibleSettings.php:220
+msgid "Circle"
+msgstr "Okrąg"
+
+#: inc/AllAccessibleSettings.php:221
+msgid "Square"
+msgstr "Kwadrat"
+
+#: inc/AllAccessibleSettings.php:234
+msgid "Hide AllAccessible Branding"
+msgstr "Ukryj wszystkoDostępny Branding"
+
+#: inc/AllAccessibleSettings.php:235
+msgid "Remove Branding"
+msgstr "Usuń branding"
+
+#: inc/AllAccessibleSettings.php:237
+msgid "Branding Visible"
+msgstr "Branding widoczny"
+
+#: inc/AllAccessibleSettings.php:238
+msgid "Branding Removed"
+msgstr "Branding usunięty"
+
+#: inc/AllAccessibleSettings.php:241
+msgid ""
+"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
+"and logo from the widget."
+msgstr ""
+"Uwaga: Ukrycie brandingu spowoduje usunięcie tekstu i logo \"Powered by "
+"AllAccessible\" z widgetu."
+
+#: inc/AllAccessibleSettings.php:246
+msgid "Save Settings"
+msgstr "Zapisz ustawienia"
+
+#: inc/AllAccessibleSettings.php:252
+msgid "You may need to reload this page if your widget options are not visible"
+msgstr ""
+"Może być konieczne ponowne załadowanie tej strony, jeśli opcje widgetów nie "
+"są widoczne"
+
+#: inc/AllAccessibleSettings.php:259
+msgid "Version"
+msgstr "Wersja"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Need Help"
+msgstr "Pomoc"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Contact Us"
+msgstr "Skontaktuj się z nami"
+
+#. Plugin Name of the plugin/theme
+msgid "AllAccessible"
+msgstr "AllAccessible"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.allaccessible.org/platform/wordpress/"
+msgstr "https://www.allaccessible.org/platform/wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Unlock true digital accessibility with AllAccessible - a comprehensive "
+"WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
+"your users with a fully customizable accessibility widget, and enhance their "
+"experience with our premium AI-powered features."
+msgstr ""
+"Uwolnij prawdziwą cyfrową dostępność dzięki AllAccessible - kompleksowej "
+"wtyczce WordPress prowadzącej Twoją witrynę w kierunku zgodności z WCAG /"
+"ADA. Upoważnij swoich użytkowników dzięki w pełni konfigurowalnemu widgetowi "
+"dostępności i zwiększaj ich doświadczenie dzięki naszym funkcjom napędzanym "
+"przez AI premium."
+
+#. Author of the plugin/theme
+msgid "AllAccessible Team"
+msgstr "Zespół AllAccessible"
+
+#. Author URI of the plugin/theme
+msgid "https://www.allaccessible.org/"
+msgstr "https://www.allaccessible.org/"

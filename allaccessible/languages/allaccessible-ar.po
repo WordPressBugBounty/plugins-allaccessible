@@ -1,0 +1,470 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AllAccessible\n"
+"POT-Creation-Date: 2023-05-11 15:26-0400\n"
+"PO-Revision-Date: 2023-05-11 15:26-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: allaccessible.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: allaccessible.php:52
+msgid "Accessibility"
+msgstr "إمكانية الوصول"
+
+#: allaccessible.php:291
+msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+msgstr ""
+"قم بتنشيط AllAccessible Premium لإلغاء قفل ميزات إمكانية الوصول بتقنية Ai."
+
+#: allaccessible.php:291
+msgid "Click Here"
+msgstr "اضغط هنا"
+
+#: inc/AllAccessibleDeactivationForm.php:29
+msgid "AllAccessible Deactivation"
+msgstr "AllAccessible Deactivation. تعطيل إمكانية الوصول"
+
+#: inc/AllAccessibleDeactivationForm.php:30
+msgid ""
+"If you have a moment, please let us know why you are deactivating "
+"AllAccessible. All submissions are anonymous and we only use this feedback "
+"to improve this plugin."
+msgstr ""
+"إذا كان لديك دقيقة ، فالرجاء إخبارنا بسبب قيامك بإلغاء تنشيط AllAccessible. "
+"جميع عمليات الإرسال مجهولة المصدر ولا نستخدم هذه التعليقات إلا لتحسين هذا "
+"المكون الإضافي."
+
+#: inc/AllAccessibleDeactivationForm.php:31
+msgid "Do not send my e-mail address with this feedback"
+msgstr "لا ترسل عنوان بريدي الإلكتروني مع هذه الملاحظات"
+
+#: inc/AllAccessibleDeactivationForm.php:33
+msgid "Please give us any feedback that could help us improve"
+msgstr "يرجى تزويدنا بأي ملاحظات يمكن أن تساعدنا على التحسين"
+
+#: inc/AllAccessibleDeactivationForm.php:35
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: inc/AllAccessibleDeactivationForm.php:36
+msgid "Skip &amp; Deactivate"
+msgstr "تخطي وأمبير. تعطيل"
+
+#: inc/AllAccessibleDeactivationForm.php:37
+msgid "Submit &amp; Deactivate"
+msgstr "إرسال &amp; تعطيل"
+
+#: inc/AllAccessibleDeactivationForm.php:38
+msgid "Please wait"
+msgstr "يرجى الانتظار"
+
+#: inc/AllAccessibleDeactivationForm.php:39
+msgid "Thank you!"
+msgstr "شكرا لك!"
+
+#: inc/AllAccessibleDeactivationForm.php:48
+msgid "The plugin suddenly stopped working"
+msgstr "توقف البرنامج المساعد فجأة عن العمل"
+
+#: inc/AllAccessibleDeactivationForm.php:51
+#: inc/AllAccessibleDeactivationForm.php:58
+msgid ""
+"We're sorry to hear that, check <a href=\"https://support.allaccessible."
+"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
+"issue?"
+msgstr ""
+"نأسف لسماع ذلك ، تحقق من <a href=\"https://support.allaccessible.org\" "
+"target=\"_blank\">AllAccessible Support</a> . هل يمكنك وصف المشكلة؟"
+
+#: inc/AllAccessibleDeactivationForm.php:55
+msgid "The plugin broke my site"
+msgstr "البرنامج المساعد كسر موقعي"
+
+#: inc/AllAccessibleDeactivationForm.php:62
+msgid "I don't need this plugin any more"
+msgstr "لست بحاجة إلى هذا البرنامج المساعد بعد الآن"
+
+#: inc/AllAccessibleDeactivationForm.php:66
+msgid "I found a better plugin"
+msgstr "لقد وجدت أضافة افضل"
+
+#: inc/AllAccessibleDeactivationForm.php:69
+msgid "Can you please share the name of the other plugin?"
+msgstr "هل يمكنك مشاركة اسم المكون الإضافي الآخر من فضلك؟"
+
+#: inc/AllAccessibleDeactivationForm.php:73
+msgid "It's a temporary deactivation, I'm troubleshooting"
+msgstr "إنه تعطيل مؤقت ، أقوم باستكشاف الأخطاء وإصلاحها"
+
+#: inc/AllAccessibleDeactivationForm.php:77
+msgid "Other"
+msgstr "أخرى"
+
+#: inc/AllAccessibleDeactivationForm.php:80
+msgid "Can you describe the issue?"
+msgstr "هل يمكنك وصف القضية؟"
+
+#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
+msgid "Preview Widget"
+msgstr "أداة المعاينة"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Widget Status"
+msgstr "حالة القطعة"
+
+#: inc/AllAccessibleSettings.php:40
+msgid "Active"
+msgstr "نشط"
+
+#: inc/AllAccessibleSettings.php:41
+#, php-format
+msgid "AllAccessible's %s widget is visible on the front end of your site."
+msgstr "أداة AllAccessible's %s مرئية في الواجهة الأمامية لموقعك."
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Website Accessibility"
+msgstr "إمكانية الوصول"
+
+#: inc/AllAccessibleSettings.php:59
+msgid "Audits & Remediation"
+msgstr "المراجعات والمعالجة"
+
+#: inc/AllAccessibleSettings.php:61
+msgid ""
+"View the results of your website scans, accessibility Remediation and more "
+"with AllAccessibile Premium."
+msgstr ""
+"اعرض نتائج عمليات فحص موقع الويب الخاص بك ، ومعالجة إمكانية الوصول والمزيد "
+"باستخدام AllAccessibile Premium."
+
+#: inc/AllAccessibleSettings.php:62
+msgid "Upgrade Now"
+msgstr "قم بالترقية الآن"
+
+#: inc/AllAccessibleSettings.php:64
+msgid ""
+"View the results of your website scans in your AllAccessibile Account "
+"Dashboard."
+msgstr ""
+"اعرض نتائج عمليات فحص موقع الويب الخاص بك في لوحة معلومات حساب "
+"AllAccessibile."
+
+#: inc/AllAccessibleSettings.php:65
+msgid "Accessibility Dashboard"
+msgstr "إمكانية الوصول"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Need"
+msgstr "بحاجة الى مساعدة"
+
+#: inc/AllAccessibleSettings.php:83
+msgid "Help & Support?"
+msgstr "ساعد لدعم؟"
+
+#: inc/AllAccessibleSettings.php:84
+msgid ""
+"Check our knowledge base for assistance with installation, customization, "
+"and more."
+msgstr "تحقق من قاعدة المعرفة الخاصة بنا للمساعدة في التثبيت والتخصيص والمزيد."
+
+#: inc/AllAccessibleSettings.php:85
+msgid "Get Support"
+msgstr "الحصول على الدعم"
+
+#: inc/AllAccessibleSettings.php:109
+msgid "Unlock the Power of AllAccessible Premium"
+msgstr "أطلق العنان لقوة AllAccessible Premium"
+
+#: inc/AllAccessibleSettings.php:110
+msgid ""
+"Unlock all the benefits of our Ai accessibility automation with a free trial "
+"by connecting your AllAccessible account to your email below. Already using "
+"the free version? No problem! We'll set you up with a free 7-day trial of "
+"our premium version. After the trial period, upgrade to the premium version "
+"for just $10 a month and enjoy a more accessible digital experience."
+msgstr ""
+"افتح جميع مزايا أتمتة إمكانية الوصول إلى Ai من خلال نسخة تجريبية مجانية عن "
+"طريق ربط حساب AllAccessible الخاص بك ببريدك الإلكتروني أدناه. هل تستخدم "
+"النسخة المجانية بالفعل؟ لا مشكلة! سنقوم بإعداد نسخة تجريبية مجانية مدتها 7 "
+"أيام من الإصدار المميز الخاص بنا. بعد الفترة التجريبية ، قم بالترقية إلى "
+"الإصدار المتميز مقابل 10 دولارات فقط شهريًا واستمتع بتجربة رقمية يسهل الوصول "
+"إليها."
+
+#: inc/AllAccessibleSettings.php:113
+msgid ""
+"Below are some additional features unlocked with AllAccessible Premium. All "
+"for Only $10/mo."
+msgstr ""
+"فيما يلي بعض الميزات الإضافية التي تم إلغاء تأمينها باستخدام AllAccessible "
+"Premium."
+
+#: inc/AllAccessibleSettings.php:114
+msgid "User Control Panel"
+msgstr "لوحة تحكم المستخدم"
+
+#: inc/AllAccessibleSettings.php:115
+msgid "Accessibility Statement"
+msgstr "بيان إمكانية الوصول"
+
+#: inc/AllAccessibleSettings.php:116
+msgid "Widget Customization (Color, Shape, Placement, etc.)"
+msgstr "تخصيص عنصر واجهة المستخدم (اللون ، والشكل ، والموضع ، وما إلى ذلك)"
+
+#: inc/AllAccessibleSettings.php:117
+msgid "Ai Accessibility Fixes"
+msgstr "إصلاحات إمكانية الوصول بالذكاء الاصطناعي"
+
+#: inc/AllAccessibleSettings.php:118
+msgid "Image Alt Text Generation"
+msgstr "إنشاء نص بديل للصورة"
+
+#: inc/AllAccessibleSettings.php:119
+msgid "Monthly Accessibility Audits"
+msgstr "عمليات تدقيق الوصول الشهرية"
+
+#: inc/AllAccessibleSettings.php:120
+msgid "Accessibility Accommodation Requests"
+msgstr "طلبات السكن لذوي الاحتياجات الخاصة"
+
+#: inc/AllAccessibleSettings.php:127
+msgid "To learn more, visit: https://www.allaccessible.org"
+msgstr "لمعرفة المزيد ، قم بزيارة: https://www.allaccessible.org"
+
+#: inc/AllAccessibleSettings.php:131
+msgid "Your Email"
+msgstr "بريدك الالكتروني"
+
+#: inc/AllAccessibleSettings.php:131
+#, php-format
+msgid "(Used to manage your Account on %s)"
+msgstr "(تستخدم لإدارة حسابك على %s)"
+
+#: inc/AllAccessibleSettings.php:135
+msgid "Upgrade to Premium"
+msgstr "الترقية إلى النسخة المميزة"
+
+#: inc/AllAccessibleSettings.php:138
+msgid "Plugin Configuration"
+msgstr "تكوين البرنامج المساعد"
+
+#: inc/AllAccessibleSettings.php:139
+#, php-format
+msgid "%1$s is connected to %2$s with account ID %3$s"
+msgstr "%1$s متصل بـ %2$s بمعرف الحساب %3$s"
+
+#: inc/AllAccessibleSettings.php:161
+msgid "Choose Widget Color"
+msgstr "اختر لون عنصر واجهة المستخدم"
+
+#: inc/AllAccessibleSettings.php:167
+msgid "Choose Icon"
+msgstr "اختيار أيقونة"
+
+#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
+msgid "Choose Widget Size"
+msgstr "اختر حجم القطعة"
+
+#: inc/AllAccessibleSettings.php:192
+msgid "Small"
+msgstr "صغير"
+
+#: inc/AllAccessibleSettings.php:193
+msgid "Medium (Default)"
+msgstr "متوسط (افتراضي)"
+
+#: inc/AllAccessibleSettings.php:194
+msgid "Large"
+msgstr "كبير"
+
+#: inc/AllAccessibleSettings.php:202
+msgid "Choose Widget Position"
+msgstr "اختر موضع عنصر واجهة المستخدم"
+
+#: inc/AllAccessibleSettings.php:204
+msgid "Bottom Right"
+msgstr "أسفل اليمين"
+
+#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
+msgid "Middle Right"
+msgstr "منتصف يمين"
+
+#: inc/AllAccessibleSettings.php:207
+msgid "Bottom Center"
+msgstr "أسفل الوسط"
+
+#: inc/AllAccessibleSettings.php:208
+msgid "Bottom Left"
+msgstr "اسفل اليسار"
+
+#: inc/AllAccessibleSettings.php:209
+msgid "Middle Left"
+msgstr "منتصف يسار"
+
+#: inc/AllAccessibleSettings.php:210
+msgid "Top Left"
+msgstr "أعلي يسار"
+
+#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
+msgid "Choose Widget Shape"
+msgstr "اختر شكل عنصر واجهة المستخدم"
+
+#: inc/AllAccessibleSettings.php:220
+msgid "Circle"
+msgstr "دائرة"
+
+#: inc/AllAccessibleSettings.php:221
+msgid "Square"
+msgstr "مربع"
+
+#: inc/AllAccessibleSettings.php:234
+msgid "Hide AllAccessible Branding"
+msgstr "إخفاء الكل"
+
+#: inc/AllAccessibleSettings.php:235
+msgid "Remove Branding"
+msgstr "إزالة العلامة التجارية"
+
+#: inc/AllAccessibleSettings.php:237
+msgid "Branding Visible"
+msgstr "العلامة التجارية مرئية"
+
+#: inc/AllAccessibleSettings.php:238
+msgid "Branding Removed"
+msgstr "تمت إزالة العلامة التجارية"
+
+#: inc/AllAccessibleSettings.php:241
+msgid ""
+"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
+"and logo from the widget."
+msgstr ""
+"ملاحظة: سيؤدي إخفاء العلامة التجارية إلى إزالة نص وشعار \"Powered by "
+"AllAccessible\" من الأداة."
+
+#: inc/AllAccessibleSettings.php:246
+msgid "Save Settings"
+msgstr "حفظ الإعدادات"
+
+#: inc/AllAccessibleSettings.php:252
+msgid "You may need to reload this page if your widget options are not visible"
+msgstr ""
+"قد تحتاج إلى إعادة تحميل هذه الصفحة إذا كانت خيارات عنصر واجهة المستخدم غير "
+"مرئية"
+
+#: inc/AllAccessibleSettings.php:259
+msgid "Version"
+msgstr "الإصدار"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Need Help"
+msgstr "بحاجة الى مساعدة"
+
+#: inc/AllAccessibleSettings.php:260
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#. Plugin Name of the plugin/theme
+msgid "AllAccessible"
+msgstr "الكل"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.allaccessible.org/platform/wordpress/"
+msgstr "https://www.allaccessible.org/platform/wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Unlock true digital accessibility with AllAccessible - a comprehensive "
+"WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
+"your users with a fully customizable accessibility widget, and enhance their "
+"experience with our premium AI-powered features."
+msgstr ""
+"افتح إمكانية الوصول الرقمي الحقيقي باستخدام AllAccessible - وهو مكون إضافي "
+"شامل لبرنامج WordPress يقود موقع الويب الخاص بك نحو الامتثال لـ WCAG / ADA. "
+"قم بتمكين المستخدمين من خلال أداة وصول قابلة للتخصيص بالكامل ، وقم بتحسين "
+"تجربتهم من خلال ميزاتنا المتميزة التي تعمل بالذكاء الاصطناعي."
+
+#. Author of the plugin/theme
+msgid "AllAccessible Team"
+msgstr "فريق AllAccessible"
+
+#. Author URI of the plugin/theme
+msgid "https://www.allaccessible.org/"
+msgstr "https://www.allaccessible.org/"
+
+#~ msgid "Let's make this WordPress Site Accessible"
+#~ msgstr "لنجعل موقع WordPress هذا متاحا"
+
+#~ msgid "Free Version"
+#~ msgstr "نسخة مجانية"
+
+#, php-format
+#~ msgid "Let's make this WordPress Site %s"
+#~ msgstr "لنصنع موقع WordPress هذا %s"
+
+#~ msgid "Connect"
+#~ msgstr "الاتصال"
+
+#~ msgid "AllAccessible Accessibility Plugin"
+#~ msgstr "المكون الإضافي لإمكانية الوصول إلى AllAccessible"
+
+#, php-format
+#~ msgid ""
+#~ "Connect your account with your email in the form below. If you do not "
+#~ "have an existing account, we will create a free 7 day trial for %s."
+#~ msgstr ""
+#~ "اربط حسابك ببريدك الإلكتروني في النموذج أدناه. إذا لم يكن لديك حساب "
+#~ "حالي ، فسننشئ نسخة تجريبية مجانية مدتها 7 أيام لـ %s."
+
+#~ msgid ""
+#~ "Are you enjoying the AllAccessible Accessibility Plugin for WordPress?"
+#~ msgstr "هل تستمتع بالمكون الإضافي AllAccessible Accessibility ل WordPress؟"
+
+#~ msgid "Yes"
+#~ msgstr "نعم"
+
+#~ msgid "No"
+#~ msgstr "لا"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "تجاهل هذا الاشعار"
+
+#~ msgid "Would you like to provide more feedback about our plugin?"
+#~ msgstr "هل ترغب في تقديم المزيد من الملاحظات حول المكون الإضافي الخاص بنا؟"
+
+#~ msgid "Yes, I would like to provide feedback"
+#~ msgstr "نعم ، أود تقديم ملاحظات"
+
+#~ msgid ""
+#~ "Glad to hear you are enjoying it. Would you consider leaving a positive "
+#~ "review?"
+#~ msgstr "سعيد لسماع أنك تستمتع به. هل تفكر في ترك مراجعة إيجابية؟"
+
+#~ msgid ""
+#~ "It really helps to support the plugin and help others to discover it too!"
+#~ msgstr "من المفيد حقا دعم المكون الإضافي ومساعدة الآخرين على اكتشافه أيضا!"
+
+#~ msgid "Yes, I will write a positive review."
+#~ msgstr "نعم ، سأكتب مراجعة إيجابية."
+
+#~ msgid "Let's make this WordPress Site AllAccessible"
+#~ msgstr "دعونا نجعل هذا الموقع وورد Allيمكن الوصول إليها"
+
+#~ msgid "is connected to"
+#~ msgstr "متصل ب"
+
+#~ msgid "with account ID"
+#~ msgstr "مع معرف الحساب"
