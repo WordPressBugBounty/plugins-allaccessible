@@ -5,7 +5,7 @@ Contributors: allaccessible
 Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility
 Requires at least: 5.0
 Tested up to: 6.7.1
-Stable tag: 1.3.5
+Stable tag: 1.3.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -149,6 +149,9 @@ Our goal is to simplify content management between both platforms. Please share 
 6. Verify the plugin is working on the homepage of the website.
 
 == Changelog ==
+
+= 1.3.6 =
+* Improved Efficiency.
 
 = 1.3.5 =
 * Security: Added authorization checks and nonce verification to settings updates. Thanks to 1337_Wannabe for the responsible security disclosure.

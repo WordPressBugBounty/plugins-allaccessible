@@ -3,7 +3,7 @@
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
 Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, and enhance their experience with our premium AI-powered features.
-Version: 1.3.5
+Version: 1.3.6
 Requires PHP: 7
 Author: AllAccessible Team
 Author URI: https://www.allaccessible.org/
@@ -30,7 +30,7 @@ Domain Path: /languages
 
 /**
  * @package     AllAccessible
- * @version     1.3.5
+ * @version     1.3.6
  * @since       1.0
  * @author      AllAccessible Team
  * @copyright   Copyright (c) 2024 AllAccessible
@@ -48,7 +48,7 @@ aacb_define_constants();
 function aacb_define_constants() {
 //    $aacb_siteOptions = aacb_siteOptions();
     define('AACB_NAME', isset($aacb_siteOptions->isWhitelabel) && $aacb_siteOptions->isWhitelabel ? _e( "Accessibility", 'allaccessible' ) : 'AllAccessible');
-    define('AACB_VERSION','1.3.5');
+    define('AACB_VERSION','1.3.6');
     define('AACB_WP_MIN_VERSION','5.0');
     define('AACB_TEXT','allaccessible');
     define('AACB_DIR', dirname( plugin_basename( __FILE__ ) ) );
