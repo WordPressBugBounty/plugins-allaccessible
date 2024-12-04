@@ -3,7 +3,7 @@
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
 Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, and enhance their experience with our premium AI-powered features.
-Version: 1.3.4
+Version: 1.3.5
 Requires PHP: 7
 Author: AllAccessible Team
 Author URI: https://www.allaccessible.org/
@@ -12,7 +12,7 @@ Domain Path: /languages
  */
 
 /**
- * Copyright (C) 2023 AllAccessible.
+ * Copyright (C) 2024 AllAccessible.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,10 +30,10 @@ Domain Path: /languages
 
 /**
  * @package     AllAccessible
- * @version     1.3.4
+ * @version     1.3.5
  * @since       1.0
  * @author      AllAccessible Team
- * @copyright   Copyright (c) 2022 AllAccessible
+ * @copyright   Copyright (c) 2024 AllAccessible
  * @link        https://www.allaccessible.org/
  * @license     http://www.gnu.org/licenses/gpl.html
  */
@@ -48,7 +48,7 @@ aacb_define_constants();
 function aacb_define_constants() {
 //    $aacb_siteOptions = aacb_siteOptions();
     define('AACB_NAME', isset($aacb_siteOptions->isWhitelabel) && $aacb_siteOptions->isWhitelabel ? _e( "Accessibility", 'allaccessible' ) : 'AllAccessible');
-    define('AACB_VERSION','1.3.4');
+    define('AACB_VERSION','1.3.5');
     define('AACB_WP_MIN_VERSION','5.0');
     define('AACB_TEXT','allaccessible');
     define('AACB_DIR', dirname( plugin_basename( __FILE__ ) ) );
@@ -173,8 +173,10 @@ function AllAccessible_LoadScript($hook){
 
     wp_enqueue_style('allaccessible-admin-style', AACB_CSS .'allaccessible-style.css',array(),AACB_VERSION);
     wp_register_script('allaccessible-custom', AACB_JS .'allaccessible-custom.js',array(),AACB_VERSION);
+    $nonce = wp_create_nonce('allaccessible_save_settings');
     $ajax_data = array(
-        'ajax_url' => admin_url('admin-ajax.php')
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'nonce' => $nonce
     );
     wp_localize_script('allaccessible-custom', 'ajax_object', $ajax_data);
     wp_enqueue_script('allaccessible-custom');
@@ -187,6 +189,61 @@ function aacb_dismiss_notice() {
     wp_die();
 }
 add_action('wp_ajax_aacb_dismiss_notice', 'aacb_dismiss_notice');
+
+/**
+ * AllAccessible Setting Saver
+ * Securely saves plugin settings with proper authorization and validation
+ *
+ * @since 1.3.5
+ */
+function AllAccessible_save_settings() {
+    // Verify user has admin capabilities
+    if (!current_user_can('install_plugins')) {
+        wp_send_json_error('Unauthorized access');
+        return;
+    }
+
+    // Verify nonce
+    $nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+    if (empty($nonce) || !wp_verify_nonce($nonce, 'allaccessible_save_settings')) {
+        wp_send_json_error('Invalid security token');
+        return;
+    }
+
+    // Get and sanitize input
+    $opt_name = isset($_POST['opt_name']) ? sanitize_text_field($_POST['opt_name']) : '';
+    $opt_value = isset($_POST['opt_value']) ? sanitize_text_field($_POST['opt_value']) : '';
+
+    // List of allowed options
+    $allowed_options = array(
+        'aacb_accountID',
+        'aacb_siteID',
+        'aacb_options',
+        'aacb_installed'
+    );
+
+    // Validate option name
+    if (!in_array($opt_name, $allowed_options)) {
+        wp_send_json_error('Invalid option name');
+        return;
+    }
+
+    // Update option
+    $result = update_option($opt_name, $opt_value);
+
+    if ($result) {
+        wp_send_json_success(array(
+            'message' => 'Option updated successfully',
+            'option' => $opt_name
+        ));
+    } else {
+        wp_send_json_error(array(
+            'message' => 'Failed to update option',
+            'option' => $opt_name
+        ));
+    }
+}
+add_action('wp_ajax_AllAccessible_save_settings', 'AllAccessible_save_settings');
 
 // ===================================================
 // Setup Core AllAccessible Admin Options and Settings
@@ -242,18 +299,6 @@ function aacb_activated_notice() {
     }
 }
 add_action('admin_notices', 'aacb_activated_notice');
-
-/**
- * AllAccessible Setting Saver
- */
-function AllAccessible_save_settings() {
-
-    $opt_name = isset($_POST['opt_name']) ? sanitize_text_field($_POST['opt_name']) : null;
-    $opt_value = isset($_POST['opt_value']) ? sanitize_text_field($_POST['opt_value']) : null;
-    $update = update_option($opt_name, $opt_value);
-
-}
-add_action('wp_ajax_AllAccessible_save_settings','AllAccessible_save_settings');
 
 /**
  * AllAccessible Deactivation

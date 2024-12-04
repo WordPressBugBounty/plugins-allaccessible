@@ -4,8 +4,8 @@ Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
 Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility
 Requires at least: 5.0
-Tested up to: 6.6.1
-Stable tag: 1.3.4
+Tested up to: 6.7.1
+Stable tag: 1.3.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -87,10 +87,10 @@ Partners can leverage AllAccessible’s technology to create differentiated serv
 *	Remediation Services
 *	And More!
 
-Partners receive additional benefits including: 
+Partners receive additional benefits including:
 
 *	A free AllAccessible License for their website
-*	Discounted Licensing Costs 
+*	Discounted Licensing Costs
 *	A listing  on our partner directory
 *	Access to our partner portal with free resources such as SOWs and marketing material  to help drive revenue
 
@@ -146,9 +146,15 @@ Our goal is to simplify content management between both platforms. Please share 
 
 5. Make adjusts to the widget position, size, icon, color, and other options on the settings screen. Settings are automatically saved.
 
-6. Verify the plugin is working on the homepage of the website. 
+6. Verify the plugin is working on the homepage of the website.
 
 == Changelog ==
+
+= 1.3.5 =
+* Security: Added authorization checks and nonce verification to settings updates. Thanks to 1337_Wannabe for the responsible security disclosure.
+* Security: Restricted option updates to specific plugin settings only.
+* Improved efficiency of settings handling.
+* Tested compatibility with WP 6.7.1
 
 = 1.3.4 =
 * Tested compatibility with WP 6.6.1
