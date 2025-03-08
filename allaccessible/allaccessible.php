@@ -3,7 +3,7 @@
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
 Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, and enhance their experience with our premium AI-powered features.
-Version: 1.3.6
+Version: 1.3.7
 Requires PHP: 7
 Author: AllAccessible Team
 Author URI: https://www.allaccessible.org/
@@ -30,7 +30,7 @@ Domain Path: /languages
 
 /**
  * @package     AllAccessible
- * @version     1.3.6
+ * @version     1.3.7
  * @since       1.0
  * @author      AllAccessible Team
  * @copyright   Copyright (c) 2024 AllAccessible
@@ -41,28 +41,18 @@ Domain Path: /languages
 if(!defined('ABSPATH')) {
     die('You are not allowed to call this page directly.');
 }
-// =============================================
-// Define Global Constants
-// =============================================
-aacb_define_constants();
-function aacb_define_constants() {
-//    $aacb_siteOptions = aacb_siteOptions();
-    define('AACB_NAME', isset($aacb_siteOptions->isWhitelabel) && $aacb_siteOptions->isWhitelabel ? _e( "Accessibility", 'allaccessible' ) : 'AllAccessible');
-    define('AACB_VERSION','1.3.6');
-    define('AACB_WP_MIN_VERSION','5.0');
-    define('AACB_TEXT','allaccessible');
-    define('AACB_DIR', dirname( plugin_basename( __FILE__ ) ) );
-    define('AACB_URL', plugin_dir_url( __FILE__ ) );
-    define('AACB_PATH', plugin_dir_path( __FILE__ ) );
-    define('AACB_JS', AACB_URL . trailingslashit('assets') );
-    define('AACB_CSS', AACB_URL . trailingslashit('assets') );
-    define('AACB_IMG', AACB_URL . trailingslashit('assets') );
-    define('AACB_INC', AACB_PATH . trailingslashit('inc') );
-    define('AACB_SUPPORT','https://support.allaccessible.org/');
-}
+
+// Load Constants
+require_once plugin_dir_path(__FILE__) . 'inc/constants.php';
+
+// Load Version Manager
+require_once plugin_dir_path(__FILE__) . 'inc/VersionManager.php';
+
 function aacb_load_textdomain() {
     load_plugin_textdomain( 'allaccessible', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
+
+// Load text domain for translations
 add_action( 'init', 'aacb_load_textdomain' );
 
 /**
@@ -127,13 +117,21 @@ function AllAccessible_settings() {
 function AllAccessible_loadWidget() {
     if (!is_admin() && empty($_GET['et_fb'])) {
         $account_id = get_option('aacb_accountID') ? esc_attr(get_option('aacb_accountID')) : 'wp_vFtGhKjLm';
-        $script_src = "https://app.allaccessible.org/api/{$account_id}.js";
+
+        // Load local file for default account ID, remote file otherwise
+        $script_src = ($account_id === 'wp_vFtGhKjLm')
+            ? AACB_JS . 'widget.js'
+            : "https://app.allaccessible.org/api/{$account_id}.js";
+
         $aacbPreview = false;
         if(isset($_GET['aacb_preview']) && $_GET['aacb_preview']){
             $aacbPreview = true;
         }
         ?>
-        <script data-accessible-account-id="<?php echo $account_id; ?>" id="allAccessibleWidget" src="<?php echo $script_src; ?>" defer></script>
+        <script data-accessible-account-id="<?php echo esc_attr($account_id); ?>"
+                id="allAccessibleWidget"
+                src="<?php echo esc_url($script_src); ?>"
+                defer></script>
         <?php if($aacbPreview) { ?>
             <script>
                 function previewAllAccessible() {
@@ -279,7 +277,6 @@ function AllAccessible_activation() {
         );
         update_option('aacb_options', $opt );
     }
-
 }
 
 /**
@@ -309,7 +306,9 @@ function AllAccessible_Deactivation() {
     delete_option( 'aacb_siteID' );
     delete_option( 'aacb_accountID');
     delete_option('aacb_hide_premium_notice');
+    delete_option('aacb_version');
 }
+
 /**
  * Deactivation Survey for Dev purposes.
  */

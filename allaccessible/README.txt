@@ -4,8 +4,8 @@ Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
 Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility
 Requires at least: 5.0
-Tested up to: 6.7.1
-Stable tag: 1.3.6
+Tested up to: 6.7.2
+Stable tag: 1.3.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,7 @@ Unveil enhanced capabilities with AllAccessible Premium:
 *   Accessibility Accommodation Requests
 
 == 🤖 AI-Powered Accessibility Remediation 🤖 ==
-AllAccessible Premium employs advanced AI technology to continuously scan your website for accessibility gaps, dynamically applying non-invasive adjustments in real-time.
+AllAccessible Premium employs advanced Artificial Intelligence (Ai) technology to continuously scan your website for accessibility gaps, dynamically applying non-invasive adjustments in real-time.
 
 Our AI does the heavy lifting for you, including:
 
@@ -79,7 +79,7 @@ AllAccessible provides dedicated support, to help answer any questions you may h
 == 🤝 Partner Program 🤝 ==
 AllAccessible offers a profitable, flexible, and simple partner program to help digital agencies build their own branded solutions powered by AllAccessible. These solutions provide your clients with competitive accessibility solutions while generating new sources of revenue for you!
 
-Partners can leverage AllAccessible’s technology to create differentiated services across a wide range of website accessibility use cases such as:
+Partners can leverage AllAccessible's technology to create differentiated services across a wide range of website accessibility use cases such as:
 
 *	White Label and Resell
 *	Implementation & Configuration
@@ -107,7 +107,7 @@ AllAccessible for WordPress included a basic widget that is free. The widget inc
 
 = Do I need to change any code on my site? =
 
-No! This plugin will connect the accessibility widget to your WordPress wesbite with no coding required.
+No! This plugin will connect the accessibility widget to your WordPress website with no coding required.
 
 = Can I damage my site with this plugin? =
 
@@ -120,7 +120,7 @@ We allow for unlimited subdomains, so one license can be applied to all of your 
 == Screenshots ==
 
 1. Frontend accessibility widget allows users to modify their view of the website.
-2. The widget is customizable in the WP Admin area.
+2. The widget is customizable in the WordPress Admin area.
 3. Access to complete website accessibility audits in the AllAccessible dashboard.
 4. Widget and Accessibility engagement stats available in the AllAccessible dashboard.
 5. Manage Ai Remediation elements in the AllAccessible dashboard.
@@ -140,7 +140,7 @@ Our goal is to simplify content management between both platforms. Please share 
 
 2. Activate the plugin through the 'Plugins' menu in WordPress. Verify the free version plugin is working on the homepage of the website.
 
-3. To enable AllAccessible premium, click the AllAccessible menu item in the WP Admin to get to the settings page. The settings page make an API call to our service to retrieve plugin settings. The API call is only made when visiting the settings page.
+3. To enable AllAccessible premium, click the AllAccessible menu item in the WordPress Admin to get to the settings page. The settings page make an API call to our service to retrieve plugin settings. The API call is only made when visiting the settings page.
 
 4. Under the AllAccessible Account Authorization area you'll have two options: If you have an existing account with AllAccessible, please add the account id in the field. If you do not have an account, simply verify your email address and click create account.
 
@@ -150,6 +150,14 @@ Our goal is to simplify content management between both platforms. Please share 
 
 == Changelog ==
 
+
+
+= 1.3.7 =
+* Improved version management system
+* Added proper uninstall procedure
+* Enhanced code organization with centralized constants
+* Improved upgrade routines for smoother updates
+
 = 1.3.6 =
 * Improved Efficiency.
 
@@ -157,10 +165,10 @@ Our goal is to simplify content management between both platforms. Please share 
 * Security: Added authorization checks and nonce verification to settings updates. Thanks to 1337_Wannabe for the responsible security disclosure.
 * Security: Restricted option updates to specific plugin settings only.
 * Improved efficiency of settings handling.
-* Tested compatibility with WP 6.7.1
+* Tested compatibility with WordPress 6.7.1
 
 = 1.3.4 =
-* Tested compatibility with WP 6.6.1
+* Tested compatibility with WordPress 6.6.1
 
 = 1.3.3 =
 * Added Polish Translation
@@ -189,7 +197,7 @@ Our goal is to simplify content management between both platforms. Please share 
 * Translation hotfixes and additional languages
 
 = 1.2.6 =
-* Begin translations of WP plugin
+* Begin translations of WordPress plugin
 
 = 1.2.5 =
 * Delete Settings on Plugin Deactivation and improve compatibility with Divi
@@ -210,7 +218,7 @@ Our goal is to simplify content management between both platforms. Please share 
 * Improved Load Time
 
 = 1.1.6 =
-* WP 6.0 Compatibility
+* WordPress 6.0 Compatibility
 
 = 1.1.5 =
 * Improved Security
