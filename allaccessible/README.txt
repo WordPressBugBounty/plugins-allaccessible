@@ -2,9 +2,9 @@
 Author: AllAccessible
 Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
-Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility
+Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility, eaa, wcag compliance, ada compliance, accessibility widget
 Requires at least: 5.0
-Tested up to: 6.7.2
+Tested up to: 6.8.2
 Stable tag: 1.3.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -16,6 +16,21 @@ Unlock true digital accessibility with AllAccessible - a comprehensive plugin dr
 AllAccessible is a powerful WordPress accessibility plugin engineered to augment your website's accessibility for all users. The free version is a breeze to install and offers a fully customizable accessibility widget, enabling content, orientation, and design control to all visitors. We ensure the plugin's compatibility with the latest WordPress versions and regularly introduce new features to stay abreast of evolving accessibility standards.
 
 Boost your website's accessibility with AllAccessible's extensive features:
+
+== Compliance Standards ==
+
+AllAccessible helps your website meet international accessibility standards including:
+
+• ADA (Americans with Disabilities Act)
+• WCAG 2.0, 2.1, & 2.2 (Level AA/AAA)
+• Section 508 (U.S. Federal Standard)
+• European Accessibility Act (EAA EN 301 549)
+• Ontario AODA & Canada ACA
+• UK Equality Act
+• Australian DDA
+• California Unruh Act
+
+By implementing AllAccessible, you're not only enhancing user experience but also reducing the risk of accessibility-related legal issues.
 
 == ♿ Accessibility Widget ♿ ==
 Empower all visitors to personalize their browsing experience on your website, with our dynamic Accessibility Widget that includes:
@@ -103,7 +118,9 @@ Partners receive additional benefits including:
 
 = Is AllAccessible Free? =
 
-AllAccessible for WordPress included a basic widget that is free. The widget include contrast, color, sizing, and other minor adjustments. We do offer a more comprehensive premium solution that can be activated from within the plugin settings.
+Yes! AllAccessible for WordPress includes a free accessibility widget with essential features like contrast controls, color adjustments, text sizing, and spacing modifications. The free version is perfect for basic accessibility needs. 
+
+For comprehensive compliance, we offer AllAccessible Premium at $10/month which includes AI-powered remediation, compliance scanning, detailed reports, and advanced widget features. Non-profit organizations can apply for a free premium license.
 
 = Do I need to change any code on my site? =
 
