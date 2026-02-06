@@ -206,7 +206,7 @@ msgstr ""
 "AllAccessible al vostro indirizzo e-mail. State già utilizzando la versione "
 "gratuita? Nessun problema! Vi forniremo una prova gratuita di 7 giorni della "
 "nostra versione premium. Dopo il periodo di prova, passate alla versione "
-"premium per soli 10 dollari al mese e godetevi un'esperienza digitale più "
+"premium per soli 15 dollari al mese e godetevi un'esperienza digitale più "
 "accessibile."
 
 #: inc/AllAccessibleSettings.php:113
@@ -479,3 +479,4 @@ msgstr "https://www.allaccessible.org/"
 
 #~ msgid "with account ID"
 #~ msgstr "con ID account"
+

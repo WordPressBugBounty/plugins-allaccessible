@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin Version - THE SINGLE SOURCE OF TRUTH
-define('AACB_VERSION', '1.3.7');
+define('AACB_VERSION', '2.0.4');
 
 // Plugin Information
 define('AACB_NAME', isset($GLOBALS['aacb_siteOptions']->isWhitelabel) && $GLOBALS['aacb_siteOptions']->isWhitelabel ? __("Accessibility", 'allaccessible') : 'AllAccessible');

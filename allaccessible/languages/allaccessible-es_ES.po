@@ -206,7 +206,7 @@ msgstr ""
 "Ai con una prueba gratuita conectando su cuenta AllAccessible a su correo "
 "electrónico a continuación. ¿Ya utiliza la versión gratuita? No se preocupe "
 "Le ofreceremos una prueba gratuita de 7 días de nuestra versión Premium. "
-"Después del periodo de prueba, actualice a la versión premium por sólo 10 $ "
+"Después del periodo de prueba, actualice a la versión premium por sólo 15 $ "
 "al mes y disfrute de una experiencia digital más accesible."
 
 #: inc/AllAccessibleSettings.php:113

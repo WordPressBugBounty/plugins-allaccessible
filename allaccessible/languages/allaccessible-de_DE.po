@@ -37,7 +37,7 @@ msgstr "Hier klicken"
 
 #: inc/AllAccessibleDeactivationForm.php:29
 msgid "AllAccessible Deactivation"
-msgstr "AllAccessible Mannschaft"
+msgstr "AllAccessible Deaktivierung"
 
 #: inc/AllAccessibleDeactivationForm.php:30
 msgid ""
@@ -211,7 +211,7 @@ msgstr ""
 "mit Ihrer E-Mail unten verbinden. Sie benutzen bereits die kostenlose "
 "Version? Kein Problem! Wir stellen Ihnen eine kostenlose 7-Tage-Testversion "
 "unserer Premium-Version zur Verfügung. Nach dem Testzeitraum können Sie für "
-"nur 10 $ pro Monat auf die Premium-Version upgraden und eine zugänglichere "
+"nur 15 $ pro Monat auf die Premium-Version upgraden und eine zugänglichere "
 "digitale Erfahrung genießen."
 
 #: inc/AllAccessibleSettings.php:113
@@ -484,3 +484,4 @@ msgstr "https://www.allaccessible.org/"
 
 #~ msgid "with account ID"
 #~ msgstr "mit Konto-ID"
+

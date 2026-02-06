@@ -208,7 +208,7 @@ msgstr ""
 "akadálymentesítés automatizálásának minden előnyét. Már használja az "
 "ingyenes verziót? Semmi gond! Beállítjuk Önnek a prémium verzió ingyenes 7 "
 "napos próbaverzióját. A próbaidőszak után frissítsen a prémium verzióra "
-"mindössze havi 10 $-ért, és élvezze az akadálymentesebb digitális élményt."
+"mindössze havi 19 $-ért, és élvezze az akadálymentesebb digitális élményt."
 
 #: inc/AllAccessibleSettings.php:113
 msgid ""

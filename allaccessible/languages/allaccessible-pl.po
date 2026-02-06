@@ -204,7 +204,7 @@ msgstr ""
 "bezpłatnej wersji próbnej, łącząc swoje konto AllAccessible z adresem e-mail "
 "poniżej. Korzystasz już z darmowej wersji? Nie ma problemu! Otrzymasz 7-"
 "dniowy okres próbny naszej wersji premium. Po okresie próbnym, uaktualnij do "
-"wersji premium za jedyne 10 dolarów miesięcznie i ciesz się bardziej "
+"wersji premium za jedyne 19 dolarów miesięcznie i ciesz się bardziej "
 "dostępnym cyfrowym doświadczeniem."
 
 #: inc/AllAccessibleSettings.php:113

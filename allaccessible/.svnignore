@@ -1,0 +1,67 @@
+# SVN Ignore for WordPress.org Plugin Repository
+# These files should NOT be uploaded to WordPress.org SVN
+
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+*.zip
+
+# Development files
+.DS_Store
+.idea/
+.vscode/
+.phpunit.result.cache
+composer.lock
+
+# Git files
+.git/
+.gitignore
+.github/
+
+# Documentation (keep README.txt, but exclude dev docs)
+PHASE_*.md
+TEST_RESULTS.md
+DEPLOYMENT_GUIDE.md
+CLAUDE.md
+MODERNIZATION_PLAN.md
+V2_REBUILD.md
+API_ARCHITECTURE.md
+DASHBOARD_REDESIGN.md
+
+# Build scripts (not needed in production)
+build.sh
+build/
+
+# Tests (not needed in production)
+tests/
+phpunit.xml
+.phpcs.xml
+
+# Source maps
+*.map
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*-backup*.php
+debug/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory

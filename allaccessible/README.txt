@@ -5,7 +5,13 @@ Contributors: allaccessible
 Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility, eaa, wcag compliance, ada compliance, accessibility widget
 Requires at least: 5.0
 Tested up to: 6.8.2
-Stable tag: 1.3.7
+<<<<<<< .mine
+Stable tag: 2.0.4
+||||||| .r3402055
+Stable tag: 2.0.2
+=======
+Stable tag: 2.0.3
+>>>>>>> .r3405436
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -167,6 +173,32 @@ Our goal is to simplify content management between both platforms. Please share 
 
 == Changelog ==
 
+= 2.0.4 = 
+* Added button to bust cache to show widget settings.
+
+= 2.0.3 = 
+* Added plugin setting reset without having to remove the plugin.
+
+= 2.0.2 =
+* Bug Fixes
+
+= 2.0.1 =
+* Enhanced onboarding wizard with existing account linking via email
+* Added "Link Existing Account" flow for users with existing AllAccessible accounts
+* Improved button styling throughout wizard with icons and better hover effects
+* Fixed tier management: Tier now always fetched from API instead of stored locally
+* Automatic tier updates when upgrading from free to paid plans
+* Backend automatically handles new account creation or existing account linking
+
+= 2.0.0 =
+* **Major Release**: Complete plugin modernization with 5 phases of enhancements
+* Added comprehensive dashboard widgets showing engagement metrics and accessibility scores
+* Added admin bar accessibility indicator for quick WCAG compliance status
+* Enhanced settings page with modern card-based UI and responsive design
+* Improved overall user experience with modern design and better conversion touchpoints
+* Tested compatibility with WordPress 6.8.3
+* Upcoming Feature - page-specific accessibility scoring
+* Upcoming Feature - detailed issues page with severity categorization and fix recommendations
 
 
 = 1.3.7 =

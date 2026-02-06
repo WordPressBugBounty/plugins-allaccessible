@@ -18,6 +18,9 @@ delete_option('aacb_siteID');
 delete_option('aacb_accountID');
 delete_option('aacb_hide_premium_notice');
 delete_option('aacb_version');
+delete_option('aacb_wizard_completed');
+delete_option('aacb_account_tier');
+delete_option('aacb_setup_notice_dismissed');
 
 // Clean up any transients
 delete_transient('aacb_site_options_cache');
@@ -38,7 +41,10 @@ if (is_multisite()) {
             delete_option('aacb_accountID');
             delete_option('aacb_hide_premium_notice');
             delete_option('aacb_version');
-            
+            delete_option('aacb_wizard_completed');
+            delete_option('aacb_account_tier');
+            delete_option('aacb_setup_notice_dismissed');
+
             // Clean up any transients
             delete_transient('aacb_site_options_cache');
             

@@ -56,7 +56,12 @@ class AllAccessible_VersionManager {
         if (version_compare($from_version, '1.3.7', '<')) {
             self::upgrade_to_1_3_7();
         }
-        
+
+        // Upgrade to 2.0.0 - Handle wizard migration
+        if (version_compare($from_version, '2.0.0', '<')) {
+            self::upgrade_to_2_0_0();
+        }
+
         // Always run this to ensure database is up to date
         self::update_db_check();
     }
@@ -88,7 +93,34 @@ class AllAccessible_VersionManager {
             update_option('aacb_options', $options);
         }
     }
-    
+
+    /**
+     * Upgrade routine for version 2.0.0
+     * Handles migration from 1.x to 2.0 - new wizard system
+     */
+    private static function upgrade_to_2_0_0() {
+        $account_id = get_option('aacb_accountID');
+
+        // If user already has accountID (upgraded from 1.x), mark wizard as completed
+        if (!empty($account_id)) {
+            update_option('aacb_wizard_completed', true);
+
+            // Set tier to 'unknown' since we don't know if they were free or premium in 1.x
+            // They can continue using their existing account
+            if (!get_option('aacb_account_tier')) {
+                update_option('aacb_account_tier', 'legacy');
+            }
+        }
+
+        // Clean up old options that are no longer used in 2.0
+        delete_option('aacb_engagement_score');
+        delete_option('aacb_widget_opens_count');
+        delete_option('aacb_days_since_install');
+        delete_option('aacb_conversion_events');
+        delete_option('aacb_email_capture_shown');
+        delete_option('aacb_email_capture_count');
+    }
+
     /**
      * Update database check
      */
@@ -98,4 +130,4 @@ class AllAccessible_VersionManager {
 }
 
 // Initialize the version manager
-// AllAccessible_VersionManager::init();
+AllAccessible_VersionManager::init();

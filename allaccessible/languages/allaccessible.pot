@@ -185,13 +185,13 @@ msgid ""
 "by connecting your AllAccessible account to your email below. Already using "
 "the free version? No problem! We'll set you up with a free 7-day trial of "
 "our premium version. After the trial period, upgrade to the premium version "
-"for just $10 a month and enjoy a more accessible digital experience."
+"for just $15 a month and enjoy a more accessible digital experience."
 msgstr ""
 
 #: inc/AllAccessibleSettings.php:113
 msgid ""
 "Below are some additional features unlocked with AllAccessible Premium. All "
-"for Only $10/mo."
+"for Only $15/mo."
 msgstr ""
 
 #: inc/AllAccessibleSettings.php:114

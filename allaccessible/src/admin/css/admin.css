@@ -1,0 +1,214 @@
+/**
+ * AllAccessible Admin Styles
+ *
+ * Modern admin interface using Tailwind CSS
+ * All classes prefixed with 'aacx-' to avoid conflicts
+ *
+ * @package AllAccessible
+ * @version 2.0.0
+ */
+
+/* Import Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Component Styles */
+@layer components {
+  /* Buttons */
+  .aacx-btn {
+    @apply aacx-inline-flex aacx-items-center aacx-justify-center aacx-px-4 aacx-py-2 aacx-border aacx-border-transparent aacx-text-sm aacx-font-medium aacx-rounded-md aacx-transition-all aacx-duration-200;
+  }
+
+  .aacx-btn-primary {
+    @apply aacx-bg-aacx-primary aacx-text-white hover:aacx-bg-aacx-primary-700 focus:aacx-outline-none focus:aacx-ring-2 focus:aacx-ring-offset-2 focus:aacx-ring-aacx-primary-500;
+  }
+
+  .aacx-btn-secondary {
+    @apply aacx-bg-aacx-secondary aacx-text-white hover:aacx-bg-aacx-secondary-600 focus:aacx-outline-none focus:aacx-ring-2 focus:aacx-ring-offset-2 focus:aacx-ring-aacx-secondary-500;
+  }
+
+  .aacx-btn-outline {
+    @apply aacx-bg-white aacx-text-aacx-gray-700 aacx-border-aacx-gray-300 hover:aacx-bg-aacx-gray-50 focus:aacx-outline-none focus:aacx-ring-2 focus:aacx-ring-offset-2 focus:aacx-ring-aacx-primary-500;
+  }
+
+  .aacx-btn-danger {
+    @apply aacx-bg-aacx-danger aacx-text-white hover:aacx-bg-aacx-danger-600 focus:aacx-outline-none focus:aacx-ring-2 focus:aacx-ring-offset-2 focus:aacx-ring-aacx-danger-500;
+  }
+
+  .aacx-btn-text {
+    @apply aacx-bg-transparent aacx-text-aacx-primary hover:aacx-bg-aacx-gray-50 aacx-border-transparent;
+  }
+
+  .aacx-btn-sm {
+    @apply aacx-px-3 aacx-py-1.5 aacx-text-xs;
+  }
+
+  .aacx-btn-lg {
+    @apply aacx-px-6 aacx-py-3 aacx-text-base;
+  }
+
+  /* Cards */
+  .aacx-card {
+    @apply aacx-bg-white aacx-overflow-hidden aacx-shadow-aacx aacx-rounded-lg;
+  }
+
+  .aacx-card-header {
+    @apply aacx-px-6 aacx-py-4 aacx-border-b aacx-border-aacx-gray-200 aacx-bg-aacx-gray-50;
+  }
+
+  .aacx-card-body {
+    @apply aacx-px-6 aacx-py-4;
+  }
+
+  .aacx-card-footer {
+    @apply aacx-px-6 aacx-py-4 aacx-border-t aacx-border-aacx-gray-200 aacx-bg-aacx-gray-50;
+  }
+
+  /* Forms */
+  .aacx-input {
+    @apply aacx-block aacx-w-full aacx-px-3 aacx-py-2 aacx-border aacx-border-aacx-gray-300 aacx-rounded-md aacx-shadow-sm focus:aacx-outline-none focus:aacx-ring-aacx-primary-500 focus:aacx-border-aacx-primary-500 aacx-text-sm;
+  }
+
+  .aacx-label {
+    @apply aacx-block aacx-text-sm aacx-font-medium aacx-text-aacx-gray-700 aacx-mb-1;
+  }
+
+  .aacx-select {
+    @apply aacx-block aacx-w-full aacx-px-3 aacx-py-2 aacx-border aacx-border-aacx-gray-300 aacx-rounded-md aacx-shadow-sm focus:aacx-outline-none focus:aacx-ring-aacx-primary-500 focus:aacx-border-aacx-primary-500 aacx-text-sm;
+  }
+
+  .aacx-textarea {
+    @apply aacx-block aacx-w-full aacx-px-3 aacx-py-2 aacx-border aacx-border-aacx-gray-300 aacx-rounded-md aacx-shadow-sm focus:aacx-outline-none focus:aacx-ring-aacx-primary-500 focus:aacx-border-aacx-primary-500 aacx-text-sm;
+  }
+
+  /* Badges */
+  .aacx-badge {
+    @apply aacx-inline-flex aacx-items-center aacx-px-2.5 aacx-py-0.5 aacx-rounded-full aacx-text-xs aacx-font-medium;
+  }
+
+  .aacx-badge-primary {
+    @apply aacx-bg-aacx-primary-100 aacx-text-aacx-primary-800;
+  }
+
+  .aacx-badge-success {
+    @apply aacx-bg-aacx-success-100 aacx-text-aacx-success-800;
+  }
+
+  .aacx-badge-warning {
+    @apply aacx-bg-aacx-warning-100 aacx-text-aacx-warning-800;
+  }
+
+  .aacx-badge-danger {
+    @apply aacx-bg-aacx-danger-100 aacx-text-aacx-danger-800;
+  }
+
+  /* Alerts */
+  .aacx-alert {
+    @apply aacx-p-4 aacx-rounded-md;
+  }
+
+  .aacx-alert-success {
+    @apply aacx-bg-aacx-success-50 aacx-border-aacx-success-200 aacx-text-aacx-success-800;
+  }
+
+  .aacx-alert-warning {
+    @apply aacx-bg-aacx-warning-50 aacx-border-aacx-warning-200 aacx-text-aacx-warning-800;
+  }
+
+  .aacx-alert-danger {
+    @apply aacx-bg-aacx-danger-50 aacx-border-aacx-danger-200 aacx-text-aacx-danger-800;
+  }
+
+  .aacx-alert-info {
+    @apply aacx-bg-blue-50 aacx-border-blue-200 aacx-text-blue-800;
+  }
+
+  /* Loading States */
+  .aacx-loading {
+    @apply aacx-animate-pulse;
+  }
+
+  .aacx-spinner {
+    @apply aacx-animate-spin aacx-h-5 aacx-w-5 aacx-text-aacx-primary;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  /* Gradients */
+  .aacx-bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .aacx-from-blue-600 {
+    --tw-gradient-from: #2563eb;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 99, 235, 0));
+  }
+
+  .aacx-to-purple-600 {
+    --tw-gradient-to: #9333ea;
+  }
+
+  /* Animations */
+  @keyframes aacx-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .aacx-animate-fade-in {
+    animation: aacx-fade-in 0.3s ease-out;
+  }
+
+  @keyframes aacx-slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .aacx-animate-slide-in {
+    animation: aacx-slide-in 0.3s ease-out;
+  }
+}
+
+/* WordPress Admin Compatibility Fixes */
+.allaccessible-admin {
+  /* Ensure our styles don't inherit WordPress admin weirdness */
+  box-sizing: border-box;
+}
+
+.allaccessible-admin *,
+.allaccessible-admin *::before,
+.allaccessible-admin *::after {
+  box-sizing: border-box;
+}
+
+/* Override WordPress button styles for our buttons */
+.allaccessible-admin .aacx-btn {
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.allaccessible-admin .aacx-btn:hover {
+  text-decoration: none !important;
+}
+
+.allaccessible-admin .aacx-btn:focus {
+  box-shadow: 0 0 0 2px rgba(43, 68, 109, 0.5) !important;
+}
+
+/* Ensure proper spacing in WordPress admin context */
+.allaccessible-admin .aacx-card + .aacx-card {
+  margin-top: 1rem;
+}
