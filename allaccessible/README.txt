@@ -3,15 +3,10 @@ Author: AllAccessible
 Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
 Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility, eaa, wcag compliance, ada compliance, accessibility widget
-Requires at least: 5.0
-Tested up to: 6.8.2
-<<<<<<< .mine
-Stable tag: 2.0.4
-||||||| .r3402055
-Stable tag: 2.0.2
-=======
-Stable tag: 2.0.3
->>>>>>> .r3405436
+Requires at least: 6.0
+Tested up to: 6.9.4
+Requires PHP: 7.4
+Stable tag: 2.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,7 +168,12 @@ Our goal is to simplify content management between both platforms. Please share 
 
 == Changelog ==
 
-= 2.0.4 = 
+= 2.0.5 =
+* Compatibility: tested up to WordPress 6.9.4.
+* Bumped minimum WordPress version to 6.0.
+* Bumped minimum PHP version to 7.4.
+
+= 2.0.4 =
 * Added button to bust cache to show widget settings.
 
 = 2.0.3 = 

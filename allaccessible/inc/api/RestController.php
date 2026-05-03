@@ -144,25 +144,28 @@ class AllAccessible_RestController {
             return $score_data;
         }
 
-        // Format response
+        // Format response (removed wcag_level - using "Accessibility Score" instead)
         $response = array(
             'post_id' => $post_id,
             'post_title' => get_the_title($post_id),
             'post_url' => $page_url,
             'overall_score' => $score_data['overall_score'] ?? 0,
-            'wcag_level' => $score_data['wcag_level'] ?? 'None',
             'issues' => array(
                 'critical' => $score_data['issues']['critical'] ?? 0,
                 'serious' => $score_data['issues']['serious'] ?? 0,
                 'moderate' => $score_data['issues']['moderate'] ?? 0,
                 'minor' => $score_data['issues']['minor'] ?? 0,
             ),
-            'total_issues' => ($score_data['issues']['critical'] ?? 0) +
-                            ($score_data['issues']['serious'] ?? 0) +
-                            ($score_data['issues']['moderate'] ?? 0) +
-                            ($score_data['issues']['minor'] ?? 0),
+            'total_issues' => $score_data['total_issues'] ?? (
+                ($score_data['issues']['critical'] ?? 0) +
+                ($score_data['issues']['serious'] ?? 0) +
+                ($score_data['issues']['moderate'] ?? 0) +
+                ($score_data['issues']['minor'] ?? 0)
+            ),
             'last_scan' => $score_data['last_scan'] ?? null,
             'grade' => $this->calculate_grade($score_data['overall_score'] ?? 0),
+            'data_source' => $score_data['data_source'] ?? 'unknown',
+            'cache_info' => $score_data['cache_info'] ?? null,
         );
 
         return rest_ensure_response($response);
@@ -258,7 +261,10 @@ class AllAccessible_RestController {
     }
 
     /**
-     * Fetch page score from Symfony API
+     * Fetch page score from Lambda API
+     *
+     * Uses api.allaccessible.org Lambda endpoint for fast, cached responses.
+     * Falls back to site-level aggregation if no page-specific audit exists.
      *
      * @param string $page_url
      * @return array|WP_Error
@@ -271,7 +277,6 @@ class AllAccessible_RestController {
             // Return mock data for free users or users without API access
             return array(
                 'overall_score' => 0,
-                'wcag_level' => 'None',
                 'issues' => array(
                     'critical' => 0,
                     'serious' => 0,
@@ -279,10 +284,11 @@ class AllAccessible_RestController {
                     'minor' => 0,
                 ),
                 'last_scan' => null,
+                'data_source' => 'none',
             );
         }
 
-        // Check cache first
+        // Check cache first (1 hour WordPress transient)
         $cache_key = 'aacb_page_score_' . md5($page_url);
         $cached = get_transient($cache_key);
 
@@ -290,12 +296,13 @@ class AllAccessible_RestController {
             return $cached;
         }
 
-        // Make API request
+        // Make API request to Lambda endpoint
         $response = wp_remote_request(
-            'https://app.allaccessible.org/api/page-audit',
+            'https://api.allaccessible.org/page-audit',
             array(
                 'method' => 'POST',
                 'timeout' => 15,
+                'sslverify' => true,
                 'headers' => array(
                     'Content-Type' => 'application/json',
                     'User-Agent' => 'AllAccessible-WP-Plugin/' . AACB_VERSION,
@@ -331,7 +338,7 @@ class AllAccessible_RestController {
             );
         }
 
-        // Cache for 1 hour
+        // Cache for 1 hour (Lambda also caches, this reduces API calls)
         set_transient($cache_key, $data, 3600);
 
         return $data;

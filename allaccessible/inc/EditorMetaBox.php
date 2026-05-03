@@ -134,8 +134,8 @@ class AllAccessible_EditorMetaBox {
                             -
                         </div>
                     </div>
-                    <div class="aacb-wcag-level aacx-mt-2 aacx-text-sm" id="aacb-wcag-level">
-                        <strong><?php _e('WCAG Level:', 'allaccessible'); ?></strong> <span id="aacb-wcag-value">--</span>
+                    <div class="aacb-score-label aacx-mt-2 aacx-text-sm aacx-font-semibold" style="color: #333;">
+                        <?php _e('Accessibility Score', 'allaccessible'); ?>
                     </div>
                 </div>
 
@@ -173,13 +173,15 @@ class AllAccessible_EditorMetaBox {
 
                 <!-- Actions -->
                 <div class="aacb-actions">
-                    <button type="button" class="button button-secondary aacx-w-full aacx-mb-2" id="aacb-rescan-btn">
-                        <span class="dashicons dashicons-update"></span>
-                        <?php _e('Rescan Page', 'allaccessible'); ?>
-                    </button>
-                    <a href="<?php echo admin_url('admin.php?page=allaccessible-issues&post_id=' . $post->ID); ?>" class="button button-primary aacx-w-full">
-                        <?php _e('View Detailed Report', 'allaccessible'); ?>
+                    <a href="<?php echo esc_url('https://app.allaccessible.org/dashboard'); ?>" target="_blank" class="button button-primary aacx-w-full">
+                        <?php _e('View Full Report', 'allaccessible'); ?>
                     </a>
+                </div>
+
+                <!-- Update Notice -->
+                <div class="aacb-update-notice aacx-mt-3 aacx-text-xs aacx-text-gray-500" style="text-align: center; border-top: 1px solid #e5e7eb; padding-top: 10px; margin-top: 12px;">
+                    <span class="dashicons dashicons-info" style="font-size: 14px; vertical-align: middle;"></span>
+                    <span id="aacb-data-source-notice"><?php _e('Scores update once daily', 'allaccessible'); ?></span>
                 </div>
             </div>
 

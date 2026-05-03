@@ -13,11 +13,11 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin Version - THE SINGLE SOURCE OF TRUTH
-define('AACB_VERSION', '2.0.4');
+define('AACB_VERSION', '2.0.5');
 
 // Plugin Information
 define('AACB_NAME', isset($GLOBALS['aacb_siteOptions']->isWhitelabel) && $GLOBALS['aacb_siteOptions']->isWhitelabel ? __("Accessibility", 'allaccessible') : 'AllAccessible');
-define('AACB_WP_MIN_VERSION', '5.0');
+define('AACB_WP_MIN_VERSION', '6.0');
 define('AACB_TEXT', 'allaccessible');
 
 // Plugin Paths

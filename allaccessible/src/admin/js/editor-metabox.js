@@ -23,7 +23,6 @@
          * Bind UI events
          */
         bindEvents: function() {
-            $('#aacb-rescan-btn').on('click', this.rescanPage.bind(this));
             $('#aacb-retry-btn').on('click', this.loadScore.bind(this));
         },
 
@@ -67,7 +66,6 @@
             // Update score
             $('#aacb-score-value').text(data.overall_score);
             $('#aacb-score-grade').text('Grade: ' + data.grade);
-            $('#aacb-wcag-value').text(data.wcag_level);
 
             // Update score circle color
             const scoreCircle = $('#aacb-score-circle');
@@ -95,7 +93,16 @@
                 const timeAgo = this.getTimeAgo(lastScan);
                 $('#aacb-last-scan-time').text(timeAgo);
             } else {
-                $('#aacb-last-scan-time').text(aacbEditorMeta.labels.loading);
+                $('#aacb-last-scan-time').text('No scan yet');
+            }
+
+            // Update data source notice
+            if (data.data_source === 'site') {
+                $('#aacb-data-source-notice').text('Showing site-wide score (no page-specific scan yet)');
+            } else if (data.data_source === 'page') {
+                $('#aacb-data-source-notice').text('Page-specific score • Updates daily');
+            } else {
+                $('#aacb-data-source-notice').text('Scores update once daily');
             }
         },
 
@@ -106,51 +113,6 @@
             $('#aacb-metabox-loading').hide();
             $('#aacb-metabox-content').hide();
             $('#aacb-metabox-error').show();
-        },
-
-        /**
-         * Trigger rescan for current page
-         */
-        rescanPage: function() {
-            const postId = aacbEditorMeta.post_id;
-            const button = $('#aacb-rescan-btn');
-
-            // Disable button and show loading
-            button.prop('disabled', true);
-            button.html('<span class="spinner is-active" style="float:none;margin:0 5px 0 0;"></span>' +
-                        aacbEditorMeta.labels.loading);
-
-            // Trigger rescan via REST API
-            $.ajax({
-                url: aacbEditorMeta.rest_url + 'page-score/' + postId + '/rescan',
-                method: 'POST',
-                beforeSend: function(xhr) {
-                    xhr.setRequestHeader('X-WP-Nonce', aacbEditorMeta.nonce);
-                },
-                success: function(data) {
-                    // Show success message
-                    button.html('<span class="dashicons dashicons-yes"></span> ' +
-                               aacbEditorMeta.labels.rescan_success);
-
-                    // Reload score after 3 seconds
-                    setTimeout(function() {
-                        button.prop('disabled', false);
-                        button.html('<span class="dashicons dashicons-update"></span> Rescan Page');
-                        this.loadScore();
-                    }.bind(this), 3000);
-                }.bind(this),
-                error: function() {
-                    // Show error message
-                    button.html('<span class="dashicons dashicons-no"></span> ' +
-                               aacbEditorMeta.labels.rescan_error);
-
-                    // Re-enable button after 2 seconds
-                    setTimeout(function() {
-                        button.prop('disabled', false);
-                        button.html('<span class="dashicons dashicons-update"></span> Rescan Page');
-                    }, 2000);
-                }
-            });
         },
 
         /**

@@ -3,8 +3,10 @@
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
 Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, and enhance their experience with our premium AI-powered features.
-Version: 2.0.4
-Requires PHP: 7
+Version: 2.0.5
+Requires at least: 6.0
+Tested up to: 6.9.4
+Requires PHP: 7.4
 Author: AllAccessible Team
 Author URI: https://www.allaccessible.org/
 Text Domain: allaccessible
