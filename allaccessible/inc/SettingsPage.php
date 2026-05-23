@@ -586,6 +586,15 @@ class AllAccessible_SettingsPage {
                             <p class="aacx-text-aacx-slate-600">
                                 <?php printf(__('Account ID: %s', 'allaccessible'), '<code class="aacx-bg-aacx-gray-100 aacx-px-2 aacx-py-1 aacx-rounded aacx-text-sm">' . esc_html($account_id) . '</code>'); ?>
                             </p>
+                            <?php /* Connectors CTA disabled — see inc/api/ConnectorRegistration.php header.
+                            if (class_exists('AllAccessible_ConnectorRegistration') && AllAccessible_ConnectorRegistration::is_available()) : ?>
+                                <p class="aacx-text-aacx-slate-500 aacx-text-sm aacx-mt-2">
+                                    <a href="<?php echo esc_url(AllAccessible_ConnectorRegistration::get_connections_screen_url()); ?>"
+                                       class="aacx-text-aacx-primary-600 hover:aacx-text-aacx-primary-700 aacx-underline">
+                                        <?php _e('Manage credential in WordPress Connections Screen', 'allaccessible'); ?> &rarr;
+                                    </a>
+                                </p>
+                            <?php endif; */ ?>
                         </div>
 
                         <div class="aacx-mb-6 aacx-pb-6 aacx-border-b aacx-border-aacx-gray-200">

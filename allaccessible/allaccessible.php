@@ -2,10 +2,10 @@
 /**
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
-Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, and enhance their experience with our premium AI-powered features.
-Version: 2.0.5
+Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, plus agentic AI remediation that auto-suggests fixes for your team to approve.
+Version: 2.0.6
 Requires at least: 6.0
-Tested up to: 6.9.4
+Tested up to: 7.0
 Requires PHP: 7.4
 Author: AllAccessible Team
 Author URI: https://www.allaccessible.org/
@@ -60,6 +60,7 @@ require_once plugin_dir_path(__FILE__) . 'inc/DashboardLayout.php';
 
 // API Integration (Premium Features)
 require_once plugin_dir_path(__FILE__) . 'inc/api/ApiClient.php';
+// require_once plugin_dir_path(__FILE__) . 'inc/api/ConnectorRegistration.php'; // DISABLED - WP 7.0 Connectors API spike; email-exchange onboarding model doesn't fit api_key flow. Keep file for future revisit.
 // require_once plugin_dir_path(__FILE__) . 'inc/api/RestController.php'; // Disabled - Page scores feature hidden for now
 // require_once plugin_dir_path(__FILE__) . 'inc/EditorMetaBox.php'; // Disabled - Page scores feature hidden for now
 

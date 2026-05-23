@@ -4,17 +4,17 @@ Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
 Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility, eaa, wcag compliance, ada compliance, accessibility widget
 Requires at least: 6.0
-Tested up to: 6.9.4
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Unlock true digital accessibility with AllAccessible - a comprehensive plugin driving your website towards WCAG/ADA compliance.
+Unlock true digital accessibility with AllAccessible — a comprehensive plugin driving your website towards WCAG/ADA compliance, powered by human-in-the-loop agentic AI remediation.
 
 == Description ==
 
-AllAccessible is a powerful WordPress accessibility plugin engineered to augment your website's accessibility for all users. The free version is a breeze to install and offers a fully customizable accessibility widget, enabling content, orientation, and design control to all visitors. We ensure the plugin's compatibility with the latest WordPress versions and regularly introduce new features to stay abreast of evolving accessibility standards.
+AllAccessible is a powerful WordPress accessibility plugin engineered to augment your website's accessibility for all users. The free version is a breeze to install and offers a fully customizable accessibility widget, enabling content, orientation, and design control to all visitors. Premium plans add AllAccessible AI — agentic AI remediation that auto-suggests accessibility fixes for your team to review and approve. We ensure the plugin's compatibility with the latest WordPress versions and regularly introduce new features to stay abreast of evolving accessibility standards.
 
 Boost your website's accessibility with AllAccessible's extensive features:
 
@@ -61,15 +61,16 @@ Unveil enhanced capabilities with AllAccessible Premium:
 *   Page Link Tree
 *   Accessibility Accommodation Requests
 
-== 🤖 AI-Powered Accessibility Remediation 🤖 ==
-AllAccessible Premium employs advanced Artificial Intelligence (Ai) technology to continuously scan your website for accessibility gaps, dynamically applying non-invasive adjustments in real-time.
+== ✦ Agentic AI Remediation ✦ ==
+AllAccessible Premium includes AllAccessible AI — agentic AI that continuously scans your website for accessibility gaps and auto-suggests non-invasive fixes. Your team reviews and approves each suggestion through a remediation manifest. Human-in-the-loop, every step.
 
-Our AI does the heavy lifting for you, including:
+AllAccessible agents handle the heavy lifting:
 
-*	Automatically adding missing image alt text descriptions
-*	Validating Page Structure and Role definitions
-*	Validating and correcting Link Names
-*	Creating Aria Labels for Screen Reader Optimization
+*	Auto-suggest missing image alt text descriptions
+*	Validate Page Structure and Role definitions
+*	Validate and correct Link Names
+*	Generate ARIA Labels for screen reader optimization
+*	Surface a prioritized fix list right inside your WordPress dashboard
 
 == ✅ Accessibility Scans and Reports ✅ ==
 Run unlimited accessibility scans and receive a corresponding report. AllAccessible Premium's Accessibility reports provide comprehensive and categorized details including:
@@ -79,7 +80,7 @@ Run unlimited accessibility scans and receive a corresponding report. AllAccessi
 *	The Mapping of Accessibility Issues to WCAG, Section 508, ADA, and ACT rules
 
 == 📊 Remediation and Administrative Dashboards 📊 ==
-Our user-friendly dashboard interfaces allow you to make quick and easy adjustments to Ai generated content, and user requests, no coding required!
+Our user-friendly dashboard interfaces allow you to make quick and easy adjustments to agent-generated content, and user requests, no coding required!
 
 The Administrative dashboards give you complete control over your site allowing you to add users, add sites and subdomains, address accommodation requests, and adjust your application settings.
 
@@ -167,6 +168,12 @@ Our goal is to simplify content management between both platforms. Please share 
 6. Verify the plugin is working on the homepage of the website.
 
 == Changelog ==
+
+= 2.0.6 =
+* Compatibility: tested up to WordPress 7.0.
+* Verified rendering under the new Modern admin theme.
+* Brand voice refresh: agentic AI remediation, AllAccessible AI, human-in-the-loop messaging.
+* Preparation for in-dashboard Agentic Fixes preview (issue list).
 
 = 2.0.5 =
 * Compatibility: tested up to WordPress 6.9.4.
