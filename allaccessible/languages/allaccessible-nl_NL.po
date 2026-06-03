@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AllAccessible\n"
-"POT-Creation-Date: 2023-05-11 15:27-0400\n"
-"PO-Revision-Date: 2023-05-11 15:27-0400\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: support@allaccessible.org\n"
+"POT-Creation-Date: 2026-06-03 13:39-0400\n"
+"PO-Revision-Date: 2026-06-03 13:46-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -10,379 +11,3995 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: allaccessible.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: .\n"
 
-#: allaccessible.php:52
-msgid "Accessibility"
-msgstr "Toegankelijkheid"
+#: allaccessible.php:166
+msgid "Account settings saved successfully"
+msgstr "Accountinstellingen succesvol opgeslagen"
 
-#: allaccessible.php:291
-msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+#: allaccessible.php:200
+msgid "Unauthorized access"
+msgstr "Onbevoegde toegang"
+
+#: allaccessible.php:221
+msgid "Plugin data has been reset successfully"
+msgstr "Plugingegevens zijn succesvol gereset"
+
+#: allaccessible.php:235 allaccessible.php:323 allaccessible.php:404
+#: inc/SettingsPage.php:1894
+msgid "Unauthorized"
+msgstr "Niet-geautoriseerd"
+
+#: allaccessible.php:363
+msgid "Still finishing setup — wait a few seconds and try again."
 msgstr ""
-"Activeer AllAccessible Premium om Ai-toegankelijkheidsfuncties te "
-"ontgrendelen."
+"Bezig met het afronden van de installatie — wacht een paar seconden en "
+"probeer het opnieuw."
 
-#: allaccessible.php:291
-msgid "Click Here"
-msgstr "Klik hier"
+#: allaccessible.php:368
+msgid "Scan queued. Results appear in 2-5 minutes."
+msgstr "Scan in wachtrij geplaatst. Resultaten verschijnen binnen 2-5 minuten."
 
-#: inc/AllAccessibleDeactivationForm.php:29
-msgid "AllAccessible Deactivation"
-msgstr "AllAccessible Deactivering"
+#: inc/AdminBar.php:64
+msgid "Scan this page now"
+msgstr "Scan deze pagina nu"
 
-#: inc/AllAccessibleDeactivationForm.php:30
-msgid ""
-"If you have a moment, please let us know why you are deactivating "
-"AllAccessible. All submissions are anonymous and we only use this feedback "
-"to improve this plugin."
-msgstr ""
-"Als je een momentje hebt, laat ons dan weten waarom je AllAccessible "
-"deactiveert. Alle inzendingen zijn anoniem en we gebruiken deze feedback "
-"alleen om deze plugin te verbeteren."
+#: inc/AdminBar.php:77
+msgid "View page report"
+msgstr "Paginerapport bekijken"
 
-#: inc/AllAccessibleDeactivationForm.php:31
-msgid "Do not send my e-mail address with this feedback"
-msgstr "Stuur mijn e-mail adres niet mee met deze feedback"
+#: inc/AdminBar.php:97 inc/SettingsPage.php:48 inc/SettingsPage.php:49
+msgid "Dashboard"
+msgstr "Dashboard"
 
-#: inc/AllAccessibleDeactivationForm.php:33
-msgid "Please give us any feedback that could help us improve"
-msgstr "Geef ons alle feedback die ons kan helpen verbeteren"
+#: inc/AdminBar.php:103
+msgid "Audits & Fixes"
+msgstr "Audits en fixes"
 
-#: inc/AllAccessibleDeactivationForm.php:35
-msgid "Cancel"
-msgstr "Annuleren"
+#: inc/AdminBar.php:109 inc/WidgetCustomizer.php:190
+msgid "Settings"
+msgstr "Instellingen"
 
-#: inc/AllAccessibleDeactivationForm.php:36
-msgid "Skip &amp; Deactivate"
-msgstr "Skip &amp; Deactiveren"
+#: inc/AdminBar.php:116 inc/AgenticFixesPage.php:162
+#: inc/DashboardLayout.php:290 inc/SettingsPage.php:389
+msgid "Open dashboard"
+msgstr "Dashboard openen"
 
-#: inc/AllAccessibleDeactivationForm.php:37
-msgid "Submit &amp; Deactivate"
-msgstr "Versturen & Deactiveren"
+#: inc/AdminBar.php:172 inc/EditorMetaBox.php:440
+msgid "Scanning page…"
+msgstr "Pagina wordt gescand…"
 
-#: inc/AllAccessibleDeactivationForm.php:38
-msgid "Please wait"
-msgstr "Even geduld"
+#: inc/AdminBar.php:173
+#, php-format
+msgid "Scan complete. Score: %d%%"
+msgstr "Scan voltooid. Score: %d%%"
 
-#: inc/AllAccessibleDeactivationForm.php:39
-msgid "Thank you!"
-msgstr "Bedankt!"
+#: inc/AdminBar.php:174
+msgid "Scan complete. Refresh to see updated score."
+msgstr "Scan voltooid. Vernieuw om de bijgewerkte score te zien."
 
-#: inc/AllAccessibleDeactivationForm.php:48
-msgid "The plugin suddenly stopped working"
-msgstr "De plugin is plotseling gestopt met werken"
+#: inc/AdminBar.php:175 inc/EditorMetaBox.php:444
+msgid "Scan failed. Try again or check the dashboard."
+msgstr "Scan mislukt. Probeer het opnieuw of controleer het dashboard."
 
-#: inc/AllAccessibleDeactivationForm.php:51
-#: inc/AllAccessibleDeactivationForm.php:58
-msgid ""
-"We're sorry to hear that, check <a href=\"https://support.allaccessible."
-"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
-"issue?"
-msgstr ""
-"Het spijt ons dat te horen, controleer <a href=\"https://support."
-"allaccessible.org\" target=\"_blank\">AllAccessible Support</a>. Kunt u het "
-"probleem beschrijven?"
+#: inc/AdminBar.php:176
+msgid "Scan is still running — check back in a minute."
+msgstr "De scan wordt nog uitgevoerd — kijk over een minuut nog eens."
 
-#: inc/AllAccessibleDeactivationForm.php:55
-msgid "The plugin broke my site"
-msgstr "De plug-in heeft mijn site gebroken"
+#: inc/AdminBar.php:177
+msgid "Could not start scan: "
+msgstr "Kon scan niet starten: "
 
-#: inc/AllAccessibleDeactivationForm.php:62
-msgid "I don't need this plugin any more"
-msgstr "Ik heb deze plugin niet meer nodig"
+#: inc/AdminBar.php:178 inc/EditorMetaBox.php:446
+msgid "Scan rate limit reached. Try again later."
+msgstr "Scanlimiet bereikt. Probeer het later opnieuw."
 
-#: inc/AllAccessibleDeactivationForm.php:66
-msgid "I found a better plugin"
-msgstr "Ik heb een betere plugin gevonden"
+#: inc/AdminBar.php:341 inc/AdminBar.php:375
+msgid "Permission denied."
+msgstr "Toestemming geweigerd."
 
-#: inc/AllAccessibleDeactivationForm.php:69
-msgid "Can you please share the name of the other plugin?"
-msgstr "Kunt u alstublieft de naam van de andere plugin delen?"
+#: inc/AdminBar.php:347
+msgid "Missing page URL."
+msgstr "Pagina-URL ontbreekt."
 
-#: inc/AllAccessibleDeactivationForm.php:73
-msgid "It's a temporary deactivation, I'm troubleshooting"
-msgstr "Het is een tijdelijke deactivering, ik los het probleem op."
+#: inc/AdminBar.php:382
+msgid "Missing job ID."
+msgstr "Job-ID ontbreekt."
 
-#: inc/AllAccessibleDeactivationForm.php:77
-msgid "Other"
-msgstr "Andere"
+#: inc/AgenticFixes/Labels.php:23
+msgid "Missing image description"
+msgstr "Afbeeldingsbeschrijving ontbreekt"
 
-#: inc/AllAccessibleDeactivationForm.php:80
-msgid "Can you describe the issue?"
-msgstr "Kun je het probleem beschrijven?"
+#: inc/AgenticFixes/Labels.php:24
+msgid "Button without label"
+msgstr "Knop zonder label"
 
-#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
-msgid "Preview Widget"
-msgstr "Voorbeeld Widget"
+#: inc/AgenticFixes/Labels.php:25
+msgid "Form field without label"
+msgstr "Formulierveld zonder label"
 
-#: inc/AllAccessibleSettings.php:40
-msgid "Widget Status"
-msgstr "Widget Status"
+#: inc/AgenticFixes/Labels.php:26
+msgid "Missing page language"
+msgstr "Paginataal ontbreekt"
 
-#: inc/AllAccessibleSettings.php:40
+#: inc/AgenticFixes/Labels.php:27
+msgid "Link without text"
+msgstr "Link zonder tekst"
+
+#: inc/AgenticFixes/Labels.php:28
+msgid "ARIA labeling issue"
+msgstr "Probleem met ARIA-labeling"
+
+#: inc/AgenticFixes/Labels.php:29
+msgid "Heading hierarchy issue"
+msgstr "Probleem met koppenhiërarchie"
+
+#: inc/AgenticFixes/Labels.php:30 inc/AgenticFixes/Labels.php:33
+msgid "Other accessibility issue"
+msgstr "Ander toegankelijkheidsprobleem"
+
+#: inc/AgenticFixes/Labels.php:44 inc/AgenticFixesPage.php:241
+msgid "Pending review"
+msgstr "Wachtend op Beoordeling"
+
+#: inc/AgenticFixes/Labels.php:45
+msgid "Approved"
+msgstr "Goedgekeurd"
+
+#: inc/AgenticFixes/Labels.php:46
 msgid "Active"
 msgstr "Actief"
 
-#: inc/AllAccessibleSettings.php:41
-#, php-format
-msgid "AllAccessible's %s widget is visible on the front end of your site."
-msgstr ""
-"De %s widget van AllAccessible is zichtbaar op de voorkant van uw site."
+#: inc/AgenticFixes/Labels.php:47 inc/AgenticFixesPage.php:249
+msgid "Reverted"
+msgstr "Teruggedraaid"
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Website Accessibility"
-msgstr "Toegankelijkheid"
+#: inc/AgenticFixes/Labels.php:61 inc/AgenticFixes/Labels.php:67
+#: inc/AgenticFixesPage.php:347 inc/AgenticFixesPage.php:452
+msgid "AllAccessible agents"
+msgstr "AllAccessible-agents"
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Audits & Remediation"
-msgstr "Audits en sanering"
+#: inc/AgenticFixes/Labels.php:62
+msgid "Automated rule check"
+msgstr "Geautomatiseerde regelcontrole"
 
-#: inc/AllAccessibleSettings.php:61
+#: inc/AgenticFixes/Labels.php:63
+msgid "Compliance scanner"
+msgstr "Compliance-scanner"
+
+#: inc/AgenticFixes/Labels.php:64
+msgid "Manual review"
+msgstr "Handmatige beoordeling"
+
+#: inc/AgenticFixes/Labels.php:80
+msgid "Suggested alt text for image"
+msgstr "Voorgestelde alt-tekst voor afbeelding"
+
+#: inc/AgenticFixes/Labels.php:81
+msgid "Suggested label for button"
+msgstr "Voorgesteld label voor knop"
+
+#: inc/AgenticFixes/Labels.php:82
+msgid "Suggested label for form field"
+msgstr "Voorgesteld label voor formulierveld"
+
+#: inc/AgenticFixes/Labels.php:83
+msgid "Set page language attribute"
+msgstr "Paginataalattribuut instellen"
+
+#: inc/AgenticFixes/Labels.php:84
+msgid "Suggested text for link"
+msgstr "Voorgestelde tekst voor link"
+
+#: inc/AgenticFixes/Labels.php:85
+msgid "Correct ARIA role assignment"
+msgstr "Correcte toewijzing van ARIA-rol"
+
+#: inc/AgenticFixes/Labels.php:86
+msgid "Fix heading order"
+msgstr "Herstel de koppenvolgorde"
+
+#: inc/AgenticFixes/Labels.php:87 inc/AgenticFixes/Labels.php:90
+msgid "Accessibility fix suggested"
+msgstr "Toegankelijkheidsfix voorgesteld"
+
+#: inc/AgenticFixes/Labels.php:122
+msgid "Non-text Content"
+msgstr "Niet-tekstuele content"
+
+#: inc/AgenticFixes/Labels.php:123
+msgid "Audio-only and Video-only (Prerecorded)"
+msgstr "Alleen audio en alleen video (vooraf opgenomen)"
+
+#: inc/AgenticFixes/Labels.php:124
+msgid "Captions (Prerecorded)"
+msgstr "Ondertiteling (vooraf opgenomen)"
+
+#: inc/AgenticFixes/Labels.php:125
+msgid "Audio Description or Media Alternative (Prerecorded)"
+msgstr "Audiodescriptie of media-alternatief (vooraf opgenomen)"
+
+#: inc/AgenticFixes/Labels.php:126
+msgid "Captions (Live)"
+msgstr "Ondertiteling (live)"
+
+#: inc/AgenticFixes/Labels.php:127
+msgid "Audio Description (Prerecorded)"
+msgstr "Audiodescriptie (vooraf opgenomen)"
+
+#: inc/AgenticFixes/Labels.php:128
+msgid "Sign Language (Prerecorded)"
+msgstr "Gebarentaal (vooraf opgenomen)"
+
+#: inc/AgenticFixes/Labels.php:129
+msgid "Extended Audio Description (Prerecorded)"
+msgstr "Uitgebreide audiodescriptie (vooraf opgenomen)"
+
+#: inc/AgenticFixes/Labels.php:130
+msgid "Media Alternative (Prerecorded)"
+msgstr "Media-alternatief (vooraf opgenomen)"
+
+#: inc/AgenticFixes/Labels.php:131
+msgid "Audio-only (Live)"
+msgstr "Alleen audio (live)"
+
+#: inc/AgenticFixes/Labels.php:132
+msgid "Info and Relationships"
+msgstr "Informatie en relaties"
+
+#: inc/AgenticFixes/Labels.php:133
+msgid "Meaningful Sequence"
+msgstr "Betekenisvolle volgorde"
+
+#: inc/AgenticFixes/Labels.php:134
+msgid "Sensory Characteristics"
+msgstr "Zintuiglijke kenmerken"
+
+#: inc/AgenticFixes/Labels.php:135
+msgid "Orientation"
+msgstr "Oriëntatie"
+
+#: inc/AgenticFixes/Labels.php:136
+msgid "Identify Input Purpose"
+msgstr "Doel van invoer identificeren"
+
+#: inc/AgenticFixes/Labels.php:137
+msgid "Identify Purpose"
+msgstr "Doel identificeren"
+
+#: inc/AgenticFixes/Labels.php:138
+msgid "Use of Color"
+msgstr "Gebruik van kleur"
+
+#: inc/AgenticFixes/Labels.php:139
+msgid "Audio Control"
+msgstr "Audiobediening"
+
+#: inc/AgenticFixes/Labels.php:140
+msgid "Contrast (Minimum)"
+msgstr "Contrast (minimum)"
+
+#: inc/AgenticFixes/Labels.php:141
+msgid "Resize Text"
+msgstr "Tekstgrootte aanpassen"
+
+#: inc/AgenticFixes/Labels.php:142
+msgid "Images of Text"
+msgstr "Afbeeldingen van tekst"
+
+#: inc/AgenticFixes/Labels.php:143
+msgid "Contrast (Enhanced)"
+msgstr "Contrast (verbeterd)"
+
+#: inc/AgenticFixes/Labels.php:144
+msgid "Low or No Background Audio"
+msgstr "Weinig of geen achtergrondgeluid"
+
+#: inc/AgenticFixes/Labels.php:145
+msgid "Visual Presentation"
+msgstr "Visuele presentatie"
+
+#: inc/AgenticFixes/Labels.php:146
+msgid "Images of Text (No Exception)"
+msgstr "Afbeeldingen van tekst (geen uitzondering)"
+
+#: inc/AgenticFixes/Labels.php:147
+msgid "Reflow"
+msgstr "Herschikking"
+
+#: inc/AgenticFixes/Labels.php:148
+msgid "Non-text Contrast"
+msgstr "Contrast van niet-tekst"
+
+#: inc/AgenticFixes/Labels.php:149
+msgid "Text Spacing"
+msgstr "Tekstafstand"
+
+#: inc/AgenticFixes/Labels.php:150
+msgid "Content on Hover or Focus"
+msgstr "Inhoud bij aanwijzen of focus"
+
+#: inc/AgenticFixes/Labels.php:152
+msgid "Keyboard"
+msgstr "Toetsenbord"
+
+#: inc/AgenticFixes/Labels.php:153
+msgid "No Keyboard Trap"
+msgstr "Geen toetsenbordval"
+
+#: inc/AgenticFixes/Labels.php:154
+msgid "Keyboard (No Exception)"
+msgstr "Toetsenbord (geen uitzondering)"
+
+#: inc/AgenticFixes/Labels.php:155
+msgid "Character Key Shortcuts"
+msgstr "Sneltoetsen met tekentoetsen"
+
+#: inc/AgenticFixes/Labels.php:156
+msgid "Timing Adjustable"
+msgstr "Timing aanpasbaar"
+
+#: inc/AgenticFixes/Labels.php:157
+msgid "Pause, Stop, Hide"
+msgstr "Pauzeren, stoppen, verbergen"
+
+#: inc/AgenticFixes/Labels.php:158
+msgid "No Timing"
+msgstr "Geen timing"
+
+#: inc/AgenticFixes/Labels.php:159
+msgid "Interruptions"
+msgstr "Onderbrekingen"
+
+#: inc/AgenticFixes/Labels.php:160
+msgid "Re-authenticating"
+msgstr "Opnieuw authenticeren"
+
+#: inc/AgenticFixes/Labels.php:161
+msgid "Timeouts"
+msgstr "Time-outs"
+
+#: inc/AgenticFixes/Labels.php:162
+msgid "Three Flashes or Below Threshold"
+msgstr "Drie flitsen of onder de drempelwaarde"
+
+#: inc/AgenticFixes/Labels.php:163
+msgid "Three Flashes"
+msgstr "Drie flitsen"
+
+#: inc/AgenticFixes/Labels.php:164
+msgid "Animation from Interactions"
+msgstr "Animatie door interacties"
+
+#: inc/AgenticFixes/Labels.php:165
+msgid "Bypass Blocks"
+msgstr "Blokken omzeilen"
+
+#: inc/AgenticFixes/Labels.php:166
+msgid "Page Titled"
+msgstr "Pagina getiteld"
+
+#: inc/AgenticFixes/Labels.php:167
+msgid "Focus Order"
+msgstr "Focusvolgorde"
+
+#: inc/AgenticFixes/Labels.php:168
+msgid "Link Purpose (In Context)"
+msgstr "Doel van de link (in context)"
+
+#: inc/AgenticFixes/Labels.php:169
+msgid "Multiple Ways"
+msgstr "Meerdere manieren"
+
+#: inc/AgenticFixes/Labels.php:170
+msgid "Headings and Labels"
+msgstr "Koppen en labels"
+
+#: inc/AgenticFixes/Labels.php:171
+msgid "Focus Visible"
+msgstr "Focus zichtbaar"
+
+#: inc/AgenticFixes/Labels.php:172
+msgid "Location"
+msgstr "Locatie"
+
+#: inc/AgenticFixes/Labels.php:173
+msgid "Link Purpose (Link Only)"
+msgstr "Doel van de link (alleen link)"
+
+#: inc/AgenticFixes/Labels.php:174
+msgid "Section Headings"
+msgstr "Sectiekoppen"
+
+#: inc/AgenticFixes/Labels.php:175
+msgid "Focus Not Obscured (Minimum)"
+msgstr "Focus niet verborgen (minimum)"
+
+#: inc/AgenticFixes/Labels.php:176
+msgid "Focus Not Obscured (Enhanced)"
+msgstr "Focus niet verborgen (uitgebreid)"
+
+#: inc/AgenticFixes/Labels.php:177
+msgid "Focus Appearance"
+msgstr "Uiterlijk van focus"
+
+#: inc/AgenticFixes/Labels.php:178
+msgid "Pointer Gestures"
+msgstr "Aanwijzergebaren"
+
+#: inc/AgenticFixes/Labels.php:179
+msgid "Pointer Cancellation"
+msgstr "Annuleren van aanwijzeractie"
+
+#: inc/AgenticFixes/Labels.php:180
+msgid "Label in Name"
+msgstr "Label in naam"
+
+#: inc/AgenticFixes/Labels.php:181
+msgid "Motion Actuation"
+msgstr "Activering door beweging"
+
+#: inc/AgenticFixes/Labels.php:182
+msgid "Target Size (Enhanced)"
+msgstr "Doelgrootte (verbeterd)"
+
+#: inc/AgenticFixes/Labels.php:183
+msgid "Concurrent Input Mechanisms"
+msgstr "Gelijktijdige invoermechanismen"
+
+#: inc/AgenticFixes/Labels.php:184
+msgid "Dragging Movements"
+msgstr "Sleepbewegingen"
+
+#: inc/AgenticFixes/Labels.php:185
+msgid "Target Size (Minimum)"
+msgstr "Doelgrootte (minimum)"
+
+#: inc/AgenticFixes/Labels.php:187
+msgid "Language of Page"
+msgstr "Taal van de pagina"
+
+#: inc/AgenticFixes/Labels.php:188
+msgid "Language of Parts"
+msgstr "Taal van onderdelen"
+
+#: inc/AgenticFixes/Labels.php:189
+msgid "Unusual Words"
+msgstr "Ongebruikelijke woorden"
+
+#: inc/AgenticFixes/Labels.php:190
+msgid "Abbreviations"
+msgstr "Afkortingen"
+
+#: inc/AgenticFixes/Labels.php:191
+msgid "Reading Level"
+msgstr "Leesniveau"
+
+#: inc/AgenticFixes/Labels.php:192
+msgid "Pronunciation"
+msgstr "Uitspraak"
+
+#: inc/AgenticFixes/Labels.php:193
+msgid "On Focus"
+msgstr "Bij focus"
+
+#: inc/AgenticFixes/Labels.php:194
+msgid "On Input"
+msgstr "Bij invoer"
+
+#: inc/AgenticFixes/Labels.php:195
+msgid "Consistent Navigation"
+msgstr "Consistente navigatie"
+
+#: inc/AgenticFixes/Labels.php:196
+msgid "Consistent Identification"
+msgstr "Consistente identificatie"
+
+#: inc/AgenticFixes/Labels.php:197
+msgid "Change on Request"
+msgstr "Wijziging op verzoek"
+
+#: inc/AgenticFixes/Labels.php:198
+msgid "Consistent Help"
+msgstr "Consistente hulp"
+
+#: inc/AgenticFixes/Labels.php:199
+msgid "Error Identification"
+msgstr "Foutidentificatie"
+
+#: inc/AgenticFixes/Labels.php:200
+msgid "Labels or Instructions"
+msgstr "Labels of instructies"
+
+#: inc/AgenticFixes/Labels.php:201
+msgid "Error Suggestion"
+msgstr "Foutsuggestie"
+
+#: inc/AgenticFixes/Labels.php:202
+msgid "Error Prevention (Legal, Financial, Data)"
+msgstr "Foutpreventie (juridisch, financieel, gegevens)"
+
+#: inc/AgenticFixes/Labels.php:203
+msgid "Help"
+msgstr "Hulp"
+
+#: inc/AgenticFixes/Labels.php:204
+msgid "Error Prevention (All)"
+msgstr "Foutpreventie (alles)"
+
+#: inc/AgenticFixes/Labels.php:205
+msgid "Redundant Entry"
+msgstr "Redundante invoer"
+
+#: inc/AgenticFixes/Labels.php:206
+msgid "Accessible Authentication (Minimum)"
+msgstr "Toegankelijke authenticatie (minimum)"
+
+#: inc/AgenticFixes/Labels.php:207
+msgid "Accessible Authentication (Enhanced)"
+msgstr "Toegankelijke authenticatie (uitgebreid)"
+
+#: inc/AgenticFixes/Labels.php:209
+msgid "Parsing"
+msgstr "Parsen"
+
+#: inc/AgenticFixes/Labels.php:210
+msgid "Name, Role, Value"
+msgstr "Naam, rol, waarde"
+
+#: inc/AgenticFixes/Labels.php:211
+msgid "Status Messages"
+msgstr "Statusberichten"
+
+#: inc/AgenticFixes/Labels.php:224
+msgid "Let AllAccessible agents fix these for you"
+msgstr "Laat AllAccessible-agents dit voor je oplossen"
+
+#: inc/AgenticFixes/Labels.php:225
 msgid ""
-"View the results of your website scans, accessibility Remediation and more "
-"with AllAccessibile Premium."
+"Premium plans include human-in-the-loop agentic AI remediation. Your team "
+"approves, agents do the work."
 msgstr ""
-"Bekijk de resultaten van uw website scans, Accessibility Remediation en meer "
-"met AllAccessibile Premium."
+"Premium-abonnementen omvatten agentische AI-remediatie met human-in-the-"
+"loop. Je team keurt goed, agents doen het werk."
 
-#: inc/AllAccessibleSettings.php:62
+#: inc/AgenticFixesDashboardWidget.php:27
+msgid "AllAccessible — Agentic Fixes"
+msgstr "AllAccessible — Agentische fixes"
+
+#: inc/AgenticFixesDashboardWidget.php:34
+msgid "Plugin not fully initialized. Please reload."
+msgstr "Plugin niet volledig geïnitialiseerd. Laad opnieuw."
+
+#: inc/AgenticFixesDashboardWidget.php:63
+msgid "Upgrade to apply fixes"
+msgstr "Upgrade om fixes toe te passen"
+
+#: inc/AgenticFixesDashboardWidget.php:64 inc/DashboardLayout.php:243
+msgid "Review fixes"
+msgstr "Oplossingen controleren"
+
+#: inc/AgenticFixesDashboardWidget.php:70
+msgid "No scans yet. Submit your sitemap from the AllAccessible page to start."
+msgstr ""
+"Nog geen scans. Dien je sitemap in vanaf de AllAccessible-pagina om te "
+"beginnen."
+
+#: inc/AgenticFixesDashboardWidget.php:74
+msgid "Go to AllAccessible"
+msgstr "Ga naar AllAccessible"
+
+#: inc/AgenticFixesDashboardWidget.php:87
+msgid "accessibility issue detected"
+msgid_plural "accessibility issues detected"
+msgstr[0] "toegankelijkheidsprobleem gedetecteerd"
+msgstr[1] "toegankelijkheidsproblemen gedetecteerd"
+
+#. translators: %s: count of pages scanned
+#: inc/AgenticFixesDashboardWidget.php:97
+#, php-format
+msgid "%s page scanned"
+msgid_plural "%s pages scanned"
+msgstr[0] "%s pagina gescand"
+msgstr[1] "%s pagina's gescand"
+
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/AgenticFixesDashboardWidget.php:105
+#, php-format
+msgid "last scan %s ago"
+msgstr "laatste scan %s geleden"
+
+#. translators: %s: count of manifests waiting on approval
+#: inc/AgenticFixesDashboardWidget.php:118
+#, php-format
+msgid "%s manifest pending your approval"
+msgid_plural "%s manifests pending your approval"
+msgstr[0] "%s manifest wacht op je goedkeuring"
+msgstr[1] "%s manifests wachten op je goedkeuring"
+
+#: inc/AgenticFixesDashboardWidget.php:127
+msgid ""
+"AllAccessible agents can auto-fix these. Upgrade to enable agentic AI "
+"remediation."
+msgstr ""
+"AllAccessible-agents kunnen deze automatisch oplossen. Upgrade om agentische "
+"AI-remediatie in te schakelen."
+
+#: inc/AgenticFixesDashboardWidget.php:145
+msgid "Could not load fixes summary right now."
+msgstr "Kan de samenvatting van fixes momenteel niet laden."
+
+#: inc/AgenticFixesPage.php:27 inc/AgenticFixesPage.php:28
+#: inc/AgenticFixesPage.php:140 inc/AgenticFixesPage.php:667
+#: inc/SettingsPage.php:499 inc/SettingsPage.php:603
+msgid "Agentic Fixes"
+msgstr "Agentische fixes"
+
+#: inc/AgenticFixesPage.php:137 inc/AgenticFixesPage.php:142
+#: inc/AgenticFixesPage.php:665 inc/AgenticFixesPage.php:680
+#: inc/AgenticFixesPage.php:857 inc/ConversionCTA.php:119
+#: inc/EditorMetaBox.php:271 inc/ImageManagerPage.php:160
+#: inc/OnboardingWizard.php:288 inc/SettingsPage.php:416
+#: inc/SettingsPage.php:490 inc/SettingsPage.php:574 inc/SettingsPage.php:1969
+#: inc/UsageDashboard.php:142 inc/WidgetCustomizer.php:211
+msgid "AllAccessible AI"
+msgstr "AllAccessible AI"
+
+#: inc/AgenticFixesPage.php:146
+msgid "Beta feature"
+msgstr "Bètafunctie"
+
+#: inc/AgenticFixesPage.php:147 inc/SettingsPage.php:1155
+msgid "Beta"
+msgstr "Beta"
+
+#: inc/AgenticFixesPage.php:152
+msgid ""
+"AllAccessible agents propose accessibility fixes. You review and approve "
+"before anything goes live on your site."
+msgstr ""
+"AllAccessible-agents stellen toegankelijkheidsfixes voor. Jij beoordeelt en "
+"keurt goed voordat er iets live gaat op je site."
+
+#: inc/AgenticFixesPage.php:169 inc/ConnectionStatusCard.php:71
+msgid "Could not reach AllAccessible right now."
+msgstr "AllAccessible is momenteel niet bereikbaar."
+
+#: inc/AgenticFixesPage.php:182
+msgid "score"
+msgstr "score"
+
+#: inc/AgenticFixesPage.php:186
+msgid "pages audited"
+msgstr "gecontroleerde pagina's"
+
+#. translators: %s: human-readable time difference (e.g. "2 hours")
+#. translators: %s: human-readable time diff
+#: inc/AgenticFixesPage.php:194 inc/ScanTriggerPanel.php:86
+#, php-format
+msgid "Last scan %s ago"
+msgstr "Laatste scan %s geleden"
+
+#: inc/AgenticFixesPage.php:245
+msgid "Approved & applied"
+msgstr "Goedgekeurd en toegepast"
+
+#: inc/AgenticFixesPage.php:254
+msgid "Filter Agentic Fixes by status"
+msgstr "Agentic Fixes filteren op status"
+
+#: inc/AgenticFixesPage.php:330
+msgid "How this works"
+msgstr "Hoe dit werkt"
+
+#: inc/AgenticFixesPage.php:332
+msgid ""
+"AllAccessible agents review your site and propose fixes for accessibility "
+"issues. Nothing changes on your site until you approve. You can edit any "
+"suggestion before approving, and you can revert any approved fix at any time."
+msgstr ""
+"AllAccessible-agents beoordelen je site en stellen fixes voor "
+"toegankelijkheidsproblemen voor. Er verandert niets op je site totdat je "
+"goedkeurt. Je kunt elke suggestie bewerken voordat je goedkeurt, en je kunt "
+"elke goedgekeurde fix op elk moment terugdraaien."
+
+#. translators: 1: count of fixes; 2: rule type label (e.g., "Missing image description")
+#: inc/AgenticFixesPage.php:353
+#, php-format
+msgid "%1$s pending fixes for \"%2$s\". Approve them all in one click."
+msgstr ""
+"%1$s fixes in behandeling voor \"%2$s\". Keur ze allemaal goed met één klik."
+
+#. translators: 1: count; 2: rule label
+#: inc/AgenticFixesPage.php:366
+#, php-format
+msgid "Bulk approve %1$s %2$s fixes"
+msgstr "%1$s %2$s fixes in bulk goedkeuren"
+
+#. translators: %s: count of fixes
+#: inc/AgenticFixesPage.php:373
+#, php-format
+msgid "Bulk approve all %s"
+msgstr "Alle %s in bulk goedkeuren"
+
+#. translators: %s: WCAG success criterion number (e.g., "1.1.1")
+#: inc/AgenticFixesPage.php:426
+#, php-format
+msgid "WCAG %s"
+msgstr "WCAG %s"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:439
+#, php-format
+msgid "confidence: %s percent"
+msgstr "vertrouwen: %s procent"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:445
+#, php-format
+msgid "%s%% confidence"
+msgstr "%s%% cvertrouwen"
+
+#: inc/AgenticFixesPage.php:463
+msgid "What's wrong"
+msgstr "Wat is er mis"
+
+#. translators: 1: rationale phrase (e.g., "Suggested alt text for image"); 2: selector
+#: inc/AgenticFixesPage.php:469
+#, php-format
+msgid "%1$s on element %2$s"
+msgstr "%1$s op element %2$s"
+
+#: inc/AgenticFixesPage.php:481
+msgid "Proposed fix"
+msgstr "Voorgestelde fix"
+
+#: inc/AgenticFixesPage.php:487
+msgid "Edit proposed fix value"
+msgstr "Voorgestelde fixwaarde bewerken"
+
+#: inc/AgenticFixesPage.php:500
+msgid "page affected"
+msgid_plural "pages affected"
+msgstr[0] "pagina getroffen"
+msgstr[1] "pagina's getroffen"
+
+#. translators: %s: formatted date (e.g., "2026-05-23")
+#: inc/AgenticFixesPage.php:509
+#, php-format
+msgid "Applied on %s"
+msgstr "Toegepast op %s"
+
+#. translators: %s: count of pages where this fix appears
+#: inc/AgenticFixesPage.php:525
+#, php-format
+msgid "Where it appears (%s)"
+msgstr "Waar het voorkomt (%s)"
+
+#: inc/AgenticFixesPage.php:544
+msgid ""
+"Open this page with the affected element scrolled into view and highlighted"
+msgstr ""
+"Open deze pagina met het betreffende element in beeld gescrold en gemarkeerd"
+
+#: inc/AgenticFixesPage.php:545
+msgid "View on site"
+msgstr "Bekijk op de site"
+
+#: inc/AgenticFixesPage.php:552 inc/ImageManagerPage.php:347
+msgid "Edit"
+msgstr "Bewerken"
+
+#. translators: %s: count of additional pages not listed
+#: inc/AgenticFixesPage.php:562
+#, php-format
+msgid "+%s more"
+msgstr "+%s meer"
+
+#: inc/AgenticFixesPage.php:579
+msgid "Skip"
+msgstr "Overslaan"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:587
+#, php-format
+msgid "Save edit and apply to %2$s pages for %1$s"
+msgstr "Bewerking opslaan en toepassen op %2$s pagina's voor %1$s"
+
+#: inc/AgenticFixesPage.php:591
+msgid "Save edit"
+msgstr "Bewerking opslaan"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:598
+#, php-format
+msgid "Approve %1$s on %2$s pages"
+msgstr "%1$s goedkeuren op %2$s pagina's"
+
+#. translators: %s: count of pages
+#: inc/AgenticFixesPage.php:605
+#, php-format
+msgid "Approve on %s page"
+msgid_plural "Approve on %s pages"
+msgstr[0] "Goedkeuren op %s pagina"
+msgstr[1] "Goedkeuren op %s pagina's"
+
+#: inc/AgenticFixesPage.php:613
+msgid "Live on your site"
+msgstr "Live op je site"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:618
+#, php-format
+msgid "Revert %1$s on %2$s pages"
+msgstr "%1$s terugdraaien op %2$s pagina's"
+
+#: inc/AgenticFixesPage.php:622 inc/AgenticFixesPage.php:902
+msgid "Revert"
+msgstr "Keer terug"
+
+#: inc/AgenticFixesPage.php:626
+msgid "Not applied"
+msgstr "Niet toegepast"
+
+#: inc/AgenticFixesPage.php:668 inc/SettingsPage.php:470
+msgid "Legacy widget"
+msgstr "Verouderde widget"
+
+#: inc/AgenticFixesPage.php:671
+msgid "Agentic AI remediation is not available on your current plan."
+msgstr "Agentic AI-remediatie is niet beschikbaar in je huidige abonnement."
+
+#: inc/AgenticFixesPage.php:682 inc/SettingsPage.php:417
+msgid "Upgrade to unlock Agentic Fixes"
+msgstr "Upgrade om Agentic Fixes te ontgrendelen"
+
+#: inc/AgenticFixesPage.php:687
+msgid ""
+"Your site runs the legacy AllAccessible widget, which predates agentic AI "
+"remediation. The widget keeps working as-is, but upgrading to the current "
+"plan tier unlocks:"
+msgstr ""
+"Je site gebruikt de verouderde AllAccessible-widget, die ouder is dan "
+"agentische AI-remediatie. De widget blijft werken zoals hij is, maar "
+"upgraden naar het huidige planniveau ontgrendelt:"
+
+#: inc/AgenticFixesPage.php:690
+msgid ""
+"Human-in-the-loop agentic AI remediation — agents propose fixes, your team "
+"approves."
+msgstr ""
+"Agentische AI-remediatie met human-in-the-loop — agents stellen oplossingen "
+"voor, jouw team keurt goed."
+
+#: inc/AgenticFixesPage.php:691
+msgid "Continuous accessibility scoring with site-level coverage tracking."
+msgstr ""
+"Continue toegankelijkheidsscore met tracking van dekking op siteniveau."
+
+#: inc/AgenticFixesPage.php:692
+msgid "Higher monthly pageview caps and AllAccessible AI alt text generation."
+msgstr ""
+"Hogere maandelijkse limieten voor paginaweergaven en AllAccessible AI-"
+"generatie van alt-tekst."
+
+#: inc/AgenticFixesPage.php:693
+msgid ""
+"Image AI manager, per-page audit scores in the WordPress editor, and "
+"downloadable WCAG / VPAT reports."
+msgstr ""
+"Image AI-manager, auditscores per pagina in de WordPress-editor en "
+"downloadbare WCAG-/VPAT-rapporten."
+
+#: inc/AgenticFixesPage.php:696 inc/SettingsPage.php:480
+msgid "See upgrade options"
+msgstr "Bekijk upgrade-opties"
+
+#: inc/AgenticFixesPage.php:716 inc/AgenticFixesPage.php:727
+msgid "You're all caught up"
+msgstr "Je bent helemaal bij"
+
+#: inc/AgenticFixesPage.php:717
+msgid ""
+"No fixes are waiting for review. Run a scan and AllAccessible agents will "
+"propose any new fixes they find."
+msgstr ""
+"Er wachten geen reparaties op beoordeling. Voer een scan uit en "
+"AllAccessible-agents zullen alle nieuwe reparaties voorstellen die ze vinden."
+
+#: inc/AgenticFixesPage.php:728
+msgid "No fixes are waiting for review right now."
+msgstr "Er wachten momenteel geen fixes op beoordeling."
+
+#: inc/AgenticFixesPage.php:738
+msgid "No fixes approved yet"
+msgstr "Nog geen fixes goedgekeurd"
+
+#: inc/AgenticFixesPage.php:741
+msgid ""
+"Approved fixes will appear here once you start reviewing the pending queue."
+msgstr ""
+"Goedgekeurde oplossingen verschijnen hier zodra je de wachtrij met "
+"openstaande items gaat beoordelen."
+
+#: inc/AgenticFixesPage.php:751
+msgid "Nothing has been reverted"
+msgstr "Er is niets teruggedraaid"
+
+#: inc/AgenticFixesPage.php:754
+msgid "Any approved fix you revert will be tracked here for reference."
+msgstr ""
+"Elke goedgekeurde oplossing die je terugdraait, wordt hier bijgehouden ter "
+"referentie."
+
+#: inc/AgenticFixesPage.php:772 inc/ImageManagerPage.php:403
+msgid "AllAccessible AI · Free preview"
+msgstr "AllAccessible AI · Gratis voorbeeld"
+
+#: inc/AgenticFixesPage.php:776
+#, php-format
+msgid "You've previewed %1$d of %2$d agentic fix proposals"
+msgstr "Je hebt %1$d van %2$d agentische reparatievoorstellen bekeken"
+
+#: inc/AgenticFixesPage.php:781
+msgid ""
+"Real proposals drafted for the real issues found on your site. Upgrade to "
+"review, approve, and apply the rest — human-in-the-loop, every fix."
+msgstr ""
+"Echte voorstellen opgesteld voor de echte problemen die op je site zijn "
+"gevonden. Upgrade om de rest te bekijken, goed te keuren en toe te passen — "
+"human-in-the-loop, elke fix."
+
+#: inc/AgenticFixesPage.php:785 inc/ImageManagerPage.php:416
+msgid "Unlock unlimited"
+msgstr "Ontgrendel onbeperkt"
+
+#: inc/AgenticFixesPage.php:798
+msgid "Fix proposal preview"
+msgstr "Voorbeeld van fixvoorstel"
+
+#: inc/AgenticFixesPage.php:816
+#, php-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] "%d pagina"
+msgstr[1] "%d pagina's"
+
+#: inc/AgenticFixesPage.php:833
+#, php-format
+msgid "Unlock %d more agentic fix proposals for your site"
+msgstr "Ontgrendel %d extra agentische reparatievoorstellen voor je site"
+
+#: inc/AgenticFixesPage.php:838 inc/ImageManagerPage.php:460
+msgid "Upgrade — starts at $10/month"
+msgstr "Upgrade — vanaf $10/maand"
+
+#: inc/AgenticFixesPage.php:866 inc/SettingsPage.php:134
+#: inc/SettingsPage.php:424 inc/SettingsPage.php:679 inc/SettingsPage.php:990
+#: inc/TierGate.php:105 inc/UsageDashboard.php:42 inc/UsageDashboard.php:234
+msgid "Upgrade plan"
+msgstr "Upgrade pakket"
+
+#: inc/AgenticFixesPage.php:882
+msgid "Edit fix"
+msgstr "Oplossing bewerken"
+
+#: inc/AgenticFixesPage.php:884
+msgid "Update the suggested value before approving. Max 500 characters."
+msgstr "Werk de voorgestelde waarde bij voordat je goedkeurt. Max. 500 tekens."
+
+#: inc/AgenticFixesPage.php:888 inc/ImageManagerPage.php:584
+msgid "Save"
+msgstr "Opslaan"
+
+#: inc/AgenticFixesPage.php:889 inc/AgenticFixesPage.php:903
+#: inc/DeactivationSurvey.php:189 inc/ImageManagerPage.php:581
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: inc/AgenticFixesPage.php:896
+msgid "Revert manifest"
+msgstr "Manifest terugdraaien"
+
+#: inc/AgenticFixesPage.php:898
+msgid ""
+"Why are you reverting? This helps us improve fix quality. Max 500 characters."
+msgstr ""
+"Waarom draai je terug? Dit helpt ons de kwaliteit van oplossingen te "
+"verbeteren. Max. 500 tekens."
+
+#: inc/AgenticFixesPage.php:952
+msgid "Action failed"
+msgstr "Actie mislukt "
+
+#: inc/AgenticFixesPage.php:977
+msgid "Server returned no data"
+msgstr "Server heeft geen gegevens geretourneerd"
+
+#: inc/AgenticFixesPage.php:1024
+msgid "Approve this fix on every page where it appears?"
+msgstr "Deze oplossing goedkeuren op elke pagina waar deze voorkomt?"
+
+#: inc/AgenticFixesPage.php:1034
+msgid "Revert reason (max 500 chars):"
+msgstr "Reden voor terugdraaien (max. 500 tekens):"
+
+#: inc/AgenticFixesPage.php:1046 inc/AgenticFixesPage.php:1136
+msgid "Value cannot be empty"
+msgstr "De waarde mag niet leeg zijn"
+
+#: inc/AgenticFixesPage.php:1047
+msgid "Apply this value to every page in the group?"
+msgstr "Deze waarde toepassen op elke pagina in de groep?"
+
+#: inc/AgenticFixesPage.php:1069
+msgid "Nothing to approve."
+msgstr "Niets om goed te keuren."
+
+#: inc/AgenticFixesPage.php:1070
+msgid "Approve every pending fix of this type?"
+msgstr "Elke openstaande fix van dit type goedkeuren?"
+
+#: inc/AgenticFixesPage.php:1087
+msgid "Bulk approve failed"
+msgstr "Bulkgoedkeuring mislukt"
+
+#: inc/AgenticFixesPage.php:1112
+msgid "Approve this manifest? Fixes will go live immediately."
+msgstr "Dit manifest goedkeuren? Fixes worden onmiddellijk live gezet."
+
+#: inc/ConnectionStatusCard.php:56
+msgid "Connection status"
+msgstr "Verbinding status"
+
+#: inc/ConnectionStatusCard.php:58
+msgid ""
+"Confirm this WordPress install is linked to the correct AllAccessible site."
+msgstr ""
+"Bevestig dat deze WordPress-installatie is gekoppeld aan de juiste "
+"AllAccessible-site."
+
+#: inc/ConnectionStatusCard.php:64
+msgid "Re-verify"
+msgstr "Opnieuw verifiëren"
+
+#: inc/ConnectionStatusCard.php:79
+msgid "WordPress URL"
+msgstr "Wordpress URL"
+
+#: inc/ConnectionStatusCard.php:80 inc/SettingsPage.php:922
+msgid "Account ID"
+msgstr "Account ID"
+
+#: inc/ConnectionStatusCard.php:81
+msgid "Connected to"
+msgstr "Verbonden met"
+
+#: inc/ConnectionStatusCard.php:82
+msgid "Subdomain ID"
+msgstr "Subdomein-ID"
+
+#: inc/ConnectionStatusCard.php:84
+msgid "Plan tier"
+msgstr "Abonnementsniveau"
+
+#: inc/ConnectionStatusCard.php:93
+msgid "WordPress URL matches the connected AllAccessible site."
+msgstr "De WordPress-URL komt overeen met de gekoppelde AllAccessible-site."
+
+#: inc/ConnectionStatusCard.php:98
+msgid "Mismatch detected"
+msgstr "Mismatch gedetecteerd"
+
+#. translators: 1: WP URL host, 2: server host
+#: inc/ConnectionStatusCard.php:103
+#, php-format
+msgid ""
+"WordPress is configured for %1$s but this plugin is linked to %2$s on your "
+"AllAccessible account. The Agentic Fixes page will show fixes for the "
+"connected site, not this WordPress install."
+msgstr ""
+"WordPress is geconfigureerd voor %1$s, maar deze plugin is gekoppeld aan "
+"%2$s in je AllAccessible-account. De pagina Agentic Fixes toont fixes voor "
+"de gekoppelde site, niet voor deze WordPress-installatie."
+
+#: inc/ConnectionStatusCard.php:110
+msgid ""
+"Click \"Re-verify\" to refresh, or contact support if this site needs to be "
+"added to your account."
+msgstr ""
+"Klik op \"Opnieuw verifiëren\" om te vernieuwen, of neem contact op met "
+"support als deze site aan je account moet worden toegevoegd."
+
+#: inc/ConnectionStatusCard.php:116
+msgid ""
+"This site has not been registered with AllAccessible yet. Visit your "
+"WordPress homepage to trigger registration, then click \"Re-verify\"."
+msgstr ""
+"Deze site is nog niet geregistreerd bij AllAccessible. Ga naar je WordPress-"
+"homepage om de registratie te starten en klik daarna op \"Opnieuw "
+"verifiëren\"."
+
+#: inc/ConnectionStatusCard.php:189 inc/FeatureComparison.php:40
+#: inc/SettingsPage.php:1945 inc/SettingsPage.php:1946
+msgid "Free"
+msgstr "Gratis"
+
+#: inc/ConnectionStatusCard.php:190 inc/FeatureComparison.php:43
+#: inc/SettingsPage.php:1927 inc/SettingsPage.php:1928
+msgid "Starter"
+msgstr "Starter"
+
+#: inc/ConnectionStatusCard.php:191 inc/FeatureComparison.php:46
+#: inc/SettingsPage.php:1933 inc/SettingsPage.php:1934
+msgid "Enterprise"
+msgstr "Enterprise"
+
+#: inc/ConnectionStatusCard.php:192 inc/SettingsPage.php:1939
+msgid "Legacy"
+msgstr "Legacy"
+
+#: inc/ConnectionStatusCard.php:193 inc/SettingsPage.php:1921
+msgid "Trial"
+msgstr "Proefperiode"
+
+#: inc/ConnectionStatusCard.php:208
+msgid "Verifying…"
+msgstr "Controleren…"
+
+#: inc/ConversionCTA.php:40
 msgid "Upgrade Now"
 msgstr "Nu Bijwerken"
 
-#: inc/AllAccessibleSettings.php:64
-msgid ""
-"View the results of your website scans in your AllAccessibile Account "
-"Dashboard."
-msgstr ""
-"Bekijk de resultaten van uw website scans in uw AllAccessibile Account "
-"Dashboard."
+#: inc/ConversionCTA.php:46
+msgid "Usage Limit Exceeded!"
+msgstr "Gebruikslimiet overschreden!"
 
-#: inc/AllAccessibleSettings.php:65
-msgid "Accessibility Dashboard"
-msgstr "Toegankelijkheid"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Need"
-msgstr "Hulp nodig"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Help & Support?"
-msgstr "Hulp en ondersteuning?"
-
-#: inc/AllAccessibleSettings.php:84
-msgid ""
-"Check our knowledge base for assistance with installation, customization, "
-"and more."
-msgstr ""
-"Raadpleeg onze kennisbank voor hulp bij installatie, aanpassing en meer."
-
-#: inc/AllAccessibleSettings.php:85
-msgid "Get Support"
-msgstr "Krijg ondersteuning"
-
-#: inc/AllAccessibleSettings.php:109
-msgid "Unlock the Power of AllAccessible Premium"
-msgstr "Ontgrendel de kracht van AllAccessible Premium"
-
-#: inc/AllAccessibleSettings.php:110
-msgid ""
-"Unlock all the benefits of our Ai accessibility automation with a free trial "
-"by connecting your AllAccessible account to your email below. Already using "
-"the free version? No problem! We'll set you up with a free 7-day trial of "
-"our premium version. After the trial period, upgrade to the premium version "
-"for just $10 a month and enjoy a more accessible digital experience."
-msgstr ""
-"Ontgrendel alle voordelen van onze Ai toegankelijkheid automatisering met "
-"een gratis proefversie door uw AllAccessible account te verbinden met uw e-"
-"mail hieronder. Gebruikt u de gratis versie al? Geen probleem! Wij zullen u "
-"een gratis 7-daagse proefversie van onze premium versie aanbieden. Na de "
-"proefperiode kunt u upgraden naar de premium versie voor slechts $10 per "
-"maand en genieten van een meer toegankelijke digitale ervaring."
-
-#: inc/AllAccessibleSettings.php:113
-msgid ""
-"Below are some additional features unlocked with AllAccessible Premium. All "
-"for Only $10/mo."
-msgstr ""
-"Hieronder vindt u enkele extra functies die met AllAccessible Premium worden "
-"ontsloten."
-
-#: inc/AllAccessibleSettings.php:114
-msgid "User Control Panel"
-msgstr "Gebruikerspaneel"
-
-#: inc/AllAccessibleSettings.php:115
-msgid "Accessibility Statement"
-msgstr "Toegankelijkheidsverklaring"
-
-#: inc/AllAccessibleSettings.php:116
-msgid "Widget Customization (Color, Shape, Placement, etc.)"
-msgstr "Widget aanpassen (kleur, vorm, plaatsing, enz.)"
-
-#: inc/AllAccessibleSettings.php:117
-msgid "Ai Accessibility Fixes"
-msgstr "Ai toegankelijkheid fixes"
-
-#: inc/AllAccessibleSettings.php:118
-msgid "Image Alt Text Generation"
-msgstr "Afbeelding Alt-tekst genereren"
-
-#: inc/AllAccessibleSettings.php:119
-msgid "Monthly Accessibility Audits"
-msgstr "Maandelijkse toegankelijkheidscontroles"
-
-#: inc/AllAccessibleSettings.php:120
-msgid "Accessibility Accommodation Requests"
-msgstr "Aanvragen voor toegankelijkheid"
-
-#: inc/AllAccessibleSettings.php:127
-msgid "To learn more, visit: https://www.allaccessible.org"
-msgstr "Ga voor meer informatie naar: https://www.allaccessible.org"
-
-#: inc/AllAccessibleSettings.php:131
-msgid "Your Email"
-msgstr "Uw e-mailadres"
-
-#: inc/AllAccessibleSettings.php:131
+#: inc/ConversionCTA.php:48
 #, php-format
-msgid "(Used to manage your Account on %s)"
-msgstr "(Gebruikt om uw account te beheren op %s)"
+msgid ""
+"Your widget is currently using free features only. Upgrade to %s to restore "
+"premium functionality and increase your limits."
+msgstr ""
+"Je widget gebruikt momenteel alleen gratis functies. Upgrade naar %s om "
+"premiumfunctionaliteit te herstellen en je limieten te verhogen."
 
-#: inc/AllAccessibleSettings.php:135
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Starter"
+msgstr "Upgrade naar Starter"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Enterprise"
+msgstr "Upgrade naar Enterprise"
+
+#: inc/ConversionCTA.php:68
+msgid "Approaching Your Limit"
+msgstr "Je nadert je limiet"
+
+#: inc/ConversionCTA.php:70
+#, php-format
+msgid ""
+"You're using over 80%% of your %s. Upgrade before you hit the limit to avoid "
+"service interruption."
+msgstr ""
+"Je gebruikt meer dan 80%% van je %s. Upgrade voordat je de limiet bereikt om "
+"serviceonderbreking te voorkomen."
+
+#: inc/ConversionCTA.php:73
+msgid "Upgrade Before Limit"
+msgstr "Upgrade vóór de limiet"
+
+#: inc/ConversionCTA.php:78
+msgid "Unlock Premium Features"
+msgstr "Ontgrendel premiumfuncties"
+
+#: inc/ConversionCTA.php:79
+msgid ""
+"Get AI-powered accessibility fixes, monthly compliance audits, custom widget "
+"styling, and priority support."
+msgstr ""
+"Krijg AI-gestuurde toegankelijkheidsfixes, maandelijkse compliance-audits, "
+"aangepaste widget-styling en prioriteitsondersteuning."
+
+#: inc/ConversionCTA.php:80
+msgid "Start 7-Day Trial"
+msgstr "Start proefperiode van 7 dagen"
+
+#: inc/ConversionCTA.php:85
+msgid "Scale with Add-Ons"
+msgstr "Schaal op met add-ons"
+
+#: inc/ConversionCTA.php:86
+msgid ""
+"Need more pageviews, AI fixes, or audits? Add custom limits to your plan or "
+"upgrade to Enterprise for unlimited access."
+msgstr ""
+"Meer pageviews, AI-fixes of audits nodig? Voeg aangepaste limieten toe aan "
+"je abonnement of upgrade naar Enterprise voor onbeperkte toegang."
+
+#: inc/ConversionCTA.php:87
+msgid "Explore Add-Ons"
+msgstr "Ontdek add-ons"
+
+#: inc/DashboardBanner.php:66
+msgid "Get the Most Out of AllAccessible! 🚀"
+msgstr "Haal het meeste uit AllAccessible! 🚀"
+
+#: inc/DashboardBanner.php:69
+msgid ""
+"Complete the quick 2-minute setup to activate your accessibility widget and "
+"unlock premium features."
+msgstr ""
+"Voltooi de snelle installatie van 2 minuten om je toegankelijkheidswidget te "
+"activeren en premiumfuncties te ontgrendelen."
+
+#: inc/DashboardBanner.php:76
+msgid "Start Setup"
+msgstr "Installatie starten"
+
+#. translators: %s: accessibility score 0-100 or em-dash
+#: inc/DashboardLayout.php:75
+#, php-format
+msgid "Accessibility score %s out of 100"
+msgstr "Toegankelijkheidsscore %s van 100"
+
+#: inc/DashboardLayout.php:152
+msgid "Daily"
+msgstr "Dagelijks"
+
+#: inc/DashboardLayout.php:153 inc/FeatureComparison.php:75
+msgid "Weekly"
+msgstr "Wekelijks"
+
+#: inc/DashboardLayout.php:154 inc/FeatureComparison.php:74
+msgid "Monthly"
+msgstr "Maandelijks"
+
+#: inc/DashboardLayout.php:155
+msgid "On-demand"
+msgstr "Op aanvraag"
+
+#. translators: %s: number of days between scans
+#: inc/DashboardLayout.php:162
+#, php-format
+msgid "Every %s days"
+msgstr "Elke %s dagen"
+
+#: inc/DashboardLayout.php:170
+msgid "Scans"
+msgstr "Scans"
+
+#: inc/DashboardLayout.php:171
+msgid "Scheduled scans"
+msgstr "Geplande scans"
+
+#. translators: %s: human time diff, e.g. "2 hours"
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/DashboardLayout.php:176 inc/EditorMetaBox.php:199
+#, php-format
+msgid "%s ago"
+msgstr "%s geleden"
+
+#: inc/DashboardLayout.php:180 inc/ScanTriggerPanel.php:91
+msgid "No scans yet"
+msgstr "Nog geen scans"
+
+#. translators: %s: human time diff
+#: inc/DashboardLayout.php:184
+#, php-format
+msgid "in %s"
+msgstr "over %s"
+
+#: inc/DashboardLayout.php:185
+msgid "due now"
+msgstr "nu verschuldigd"
+
+#: inc/DashboardLayout.php:193 inc/OnboardingWizard.php:451
+#: inc/ScanTriggerPanel.php:29
+msgid "Run your first scan"
+msgstr "Voer je eerste scan uit"
+
+#: inc/DashboardLayout.php:197
+msgid "Excellent — strong accessibility coverage."
+msgstr "Uitstekend — sterke dekking voor toegankelijkheid."
+
+#: inc/DashboardLayout.php:199
+msgid "Good — a few fixes to go."
+msgstr "Goed — nog een paar fixes te gaan."
+
+#: inc/DashboardLayout.php:201
+msgid "Needs attention."
+msgstr "Vereist aandacht."
+
+#: inc/DashboardLayout.php:203
+msgid "Needs work — start with the top issues."
+msgstr "Moet beter — begin met de belangrijkste problemen."
+
+#: inc/DashboardLayout.php:209
+msgid ""
+"Run a scan and AllAccessible agents will check every page for accessibility "
+"issues."
+msgstr ""
+"Voer een scan uit en AllAccessible-agents controleren elke pagina op "
+"toegankelijkheidsproblemen."
+
+#. translators: %s: percentage with <b> wrapper
+#: inc/DashboardLayout.php:215
+#, php-format
+msgid "%s%% of issues remediated"
+msgstr "%s%% of problemen verholpen"
+
+#: inc/DashboardLayout.php:221
+#, php-format
+msgid "%s page audited"
+msgid_plural "%s pages audited"
+msgstr[0] "%s pagina geaudit"
+msgstr[1] "%s pagina's gecontroleerd"
+
+#: inc/DashboardLayout.php:227
+msgid "View pages"
+msgstr "Pagina's bekijken"
+
+#: inc/DashboardLayout.php:239
+#, php-format
+msgid "%s fix is ready for your review"
+msgid_plural "%s fixes are ready for your review"
+msgstr[0] "%s oplossing is klaar voor je beoordeling"
+msgstr[1] "%s oplossingen zijn klaar voor je beoordeling"
+
+#: inc/DashboardLayout.php:247
+#, php-format
+msgid "%s issue needs a manual fix"
+msgid_plural "%s issues need a manual fix"
+msgstr[0] "%s probleem vereist een handmatige oplossing"
+msgstr[1] "%s problemen vereisen een handmatige oplossing"
+
+#: inc/DashboardLayout.php:251
+msgid "View issues"
+msgstr "Problemen bekijken"
+
+#: inc/DashboardLayout.php:254
+msgid "You're all caught up — AllAccessible agents are monitoring your site."
+msgstr ""
+"Je bent helemaal bij — AllAccessible-agents houden je site in de gaten."
+
+#: inc/DashboardLayout.php:257
+msgid "No scan yet — run one to find and fix accessibility issues."
+msgstr ""
+"Nog geen scan — voer er een uit om toegankelijkheidsproblemen te vinden en "
+"op te lossen."
+
+#: inc/DashboardLayout.php:259 inc/OnboardingWizard.php:106
+#: inc/OnboardingWizard.php:236
+msgid "Get started"
+msgstr "Aan de slag"
+
+#: inc/DashboardLayout.php:264
+msgid "AI-resolved"
+msgstr "Door AI opgelost"
+
+#: inc/DashboardLayout.php:265
+msgid "manual"
+msgstr "handmatig"
+
+#: inc/DashboardLayout.php:267
+msgid "images with alt text"
+msgstr "afbeeldingen met alt-tekst"
+
+#: inc/DashboardLayout.php:270
+msgid "pageviews"
+msgstr "paginaweergaven"
+
+#: inc/DashboardLayout.php:276
+msgid "Accessibility status"
+msgstr "Toegankelijkheidsstatus"
+
+#: inc/DashboardLayout.php:282
+msgid "Live · updates nightly"
+msgstr "Live · updates elke nacht"
+
+#: inc/DashboardLayout.php:287 inc/SettingsPage.php:387
+#: inc/SettingsPage.php:645
+msgid "Preview widget"
+msgstr "Widget bekijken"
+
+#: inc/DashboardLayout.php:297
+msgid "Scan schedule"
+msgstr "Scanschema"
+
+#: inc/DashboardLayout.php:303
+msgid ""
+"How often AllAccessible automatically scans your whole site behind the "
+"scenes for a deep accessibility analysis. You can also run on-demand scans "
+"of individual pages anytime — from the WordPress page editor, or on the "
+"front end while logged in."
+msgstr ""
+"Hoe vaak AllAccessible automatisch je hele site op de achtergrond scant voor "
+"een diepgaande toegankelijkheidsanalyse. Je kunt ook op elk moment on-demand "
+"scans van afzonderlijke pagina’s uitvoeren — vanuit de WordPress-pagina-"
+"editor, of aan de voorkant terwijl je bent ingelogd."
+
+#: inc/DashboardLayout.php:306
+msgid "Frequency"
+msgstr "Frequentie"
+
+#: inc/DashboardLayout.php:309
+msgid "Last"
+msgstr "Laatste"
+
+#: inc/DashboardLayout.php:312 inc/ImageManagerPage.php:523
+msgid "Next"
+msgstr "Volgende"
+
+#: inc/DashboardLayout.php:326
+msgid "Remediation activity"
+msgstr "Herstelactiviteit"
+
+#: inc/DeactivationSurvey.php:92
+msgid "Quick Feedback"
+msgstr "Snelle feedback"
+
+#: inc/DeactivationSurvey.php:95
+msgid "Help us improve AllAccessible"
+msgstr "Help ons AllAccessible te verbeteren"
+
+#: inc/DeactivationSurvey.php:100
+msgid ""
+"If you have a moment, please let us know why you're deactivating "
+"AllAccessible. All submissions are anonymous and help us improve."
+msgstr ""
+"Als je even tijd hebt, laat ons dan weten waarom je AllAccessible "
+"deactiveert. Alle inzendingen zijn anoniem en helpen ons te verbeteren."
+
+#: inc/DeactivationSurvey.php:113
+msgid "The plugin stopped working"
+msgstr "De plugin werkt niet meer"
+
+#: inc/DeactivationSurvey.php:116
+#, php-format
+msgid "We're sorry! Please %scontact support%s or describe the issue:"
+msgstr ""
+"Het spijt ons! Neem alsjeblieft %scontact op met support%s of beschrijf het "
+"probleem:"
+
+#: inc/DeactivationSurvey.php:127
+msgid "Missing features I need"
+msgstr "Ontbrekende functies die ik nodig heb"
+
+#: inc/DeactivationSurvey.php:130
+msgid "What features would make you stay?"
+msgstr "Welke functies zouden ervoor zorgen dat je blijft?"
+
+#: inc/DeactivationSurvey.php:141
+#, fuzzy
+msgid "Found a better plugin"
+msgstr "Ik heb een betere plugin gevonden"
+
+#: inc/DeactivationSurvey.php:144
+msgid "Which plugin are you switching to?"
+msgstr "Naar welke plugin stap je over?"
+
+#: inc/DeactivationSurvey.php:155
+msgid "Temporary - troubleshooting an issue"
+msgstr "Tijdelijk - een probleem oplossen"
+
+#: inc/DeactivationSurvey.php:163
+msgid "I don't need accessibility features anymore"
+msgstr "Ik heb geen toegankelijkheidsfuncties meer nodig"
+
+#: inc/DeactivationSurvey.php:171
+msgid "Other"
+msgstr "Andere"
+
+#: inc/DeactivationSurvey.php:173
+msgid "Please tell us more..."
+msgstr "Vertel ons meer..."
+
+#: inc/DeactivationSurvey.php:185
+msgid "Skip & Deactivate"
+msgstr "Overslaan & deactiveren"
+
+#: inc/DeactivationSurvey.php:192
+msgid "Submit & Deactivate"
+msgstr "Inzenden & Deactiveren"
+
+#: inc/DeactivationSurvey.php:238
+msgid "Please select a reason"
+msgstr "Selecteer een reden"
+
+#: inc/DeactivationSurvey.php:253
+msgid "Submitting..."
+msgstr "Versturen..."
+
+#: inc/EditorMetaBox.php:52 inc/EditorMetaBox.php:63
+msgid "Accessibility Score"
+msgstr "Toegankelijkheidsscore"
+
+#: inc/EditorMetaBox.php:98
+msgid "Loading score..."
+msgstr "Score laden..."
+
+#: inc/EditorMetaBox.php:99
+msgid "Error loading score"
+msgstr "Fout bij het laden van de score"
+
+#: inc/EditorMetaBox.php:100
+msgid "Rescan initiated successfully"
+msgstr "Herscan succesvol gestart"
+
+#: inc/EditorMetaBox.php:101
+msgid "Error initiating rescan"
+msgstr "Fout bij het starten van de herscan"
+
+#: inc/EditorMetaBox.php:118
+msgid "Publish this page to see its accessibility score."
+msgstr "Publiceer deze pagina om de toegankelijkheidsscore te zien."
+
+#: inc/EditorMetaBox.php:151
+msgid "Score unavailable"
+msgstr "Score niet beschikbaar"
+
+#: inc/EditorMetaBox.php:153
+msgid ""
+"Could not load this page's accessibility score. Try refreshing the editor."
+msgstr ""
+"Kon de toegankelijkheidsscore van deze pagina niet laden. Probeer de editor "
+"te vernieuwen."
+
+#: inc/EditorMetaBox.php:177
+msgid "Needs attention"
+msgstr "Vereist aandacht"
+
+#: inc/EditorMetaBox.php:180 inc/PostListColumn.php:447
+msgid "Awaiting scan"
+msgstr "Wachten op scan"
+
+#: inc/EditorMetaBox.php:183
+msgid "Excellent"
+msgstr "Uitstekend"
+
+#: inc/EditorMetaBox.php:186
+msgid "Good"
+msgstr "Goed"
+
+#: inc/EditorMetaBox.php:189
+msgid "Needs review"
+msgstr "Moet worden beoordeeld"
+
+#: inc/EditorMetaBox.php:235
+#, php-format
+msgid "Accessibility score %1$d out of 100, %2$s. Open full audit."
+msgstr "Toegankelijkheidsscore %1$d van 100, %2$s. Open de volledige audit."
+
+#: inc/EditorMetaBox.php:236
+msgid "Accessibility score not available yet."
+msgstr "Toegankelijkheidsscore nog niet beschikbaar."
+
+#. translators: 1: raw, 2: current, 3: lift delta
+#: inc/EditorMetaBox.php:265
+#, php-format
+msgid ""
+"Score lifted from %1$d to %2$d by AllAccessible AI, a gain of %3$d points."
+msgstr ""
+"Score verhoogd van %1$d naar %2$d door AllAccessible AI, een winst van %3$d "
+"punten."
+
+#. translators: %s: count of issues AllAccessible auto-resolves at runtime
+#: inc/EditorMetaBox.php:286
+#, php-format
+msgid "%s issue resolved by AllAccessible"
+msgid_plural "%s issues resolved by AllAccessible"
+msgstr[0] "%s probleem opgelost door AllAccessible"
+msgstr[1] "%s problemen opgelost door AllAccessible"
+
+#. translators: %s: count of live agentic AI fixes
+#: inc/EditorMetaBox.php:293
+#, php-format
+msgid "%s agentic AI fix live"
+msgid_plural "%s agentic AI fixes live"
+msgstr[0] "%s agentische AI-fix live"
+msgstr[1] "%s agentische AI-fixes live"
+
+#: inc/EditorMetaBox.php:307
+#, php-format
+msgid ""
+"Review %1$d pending agentic AI fix; approve to reach %2$d%% accessibility "
+"score"
+msgid_plural ""
+"Review %1$d pending agentic AI fixes; approve to reach %2$d%% accessibility "
+"score"
+msgstr[0] ""
+"Beoordeel %1$d openstaande agentische AI-fix; keur goed om een "
+"toegankelijkheidsscore van %2$d%% te bereiken"
+msgstr[1] ""
+"Beoordeel %1$d openstaande agentische AI-oplossingen; keur goed om %2$d%% "
+"toegankelijkheidsscore te bereiken"
+
+#. translators: %s: count of pending fixes
+#: inc/EditorMetaBox.php:323
+#, php-format
+msgid "%s fix ready to review"
+msgid_plural "%s fixes ready to review"
+msgstr[0] "%s fix klaar om te beoordelen"
+msgstr[1] "%s fixes klaar om te beoordelen"
+
+#. translators: %s: potential score
+#: inc/EditorMetaBox.php:330
+#, php-format
+msgid "Approve to reach %s%%"
+msgstr "Keur goed om %s%% te bereiken"
+
+#. translators: %s: total issues
+#: inc/EditorMetaBox.php:344
+#, php-format
+msgid "Issues (%s)"
+msgstr "Problemen (%s)"
+
+#: inc/EditorMetaBox.php:351
+msgid "Critical"
+msgstr "Kritiek"
+
+#: inc/EditorMetaBox.php:352
+msgid "Serious"
+msgstr "Ernstig"
+
+#: inc/EditorMetaBox.php:353
+msgid "Moderate"
+msgstr "Modereren"
+
+#: inc/EditorMetaBox.php:354
+msgid "Minor"
+msgstr "Klein"
+
+#. translators: %s: human-readable time ago
+#: inc/EditorMetaBox.php:378
+#, php-format
+msgid "Last scanned %s"
+msgstr "Laatst gescand %s"
+
+#: inc/EditorMetaBox.php:392
+msgid "View full report"
+msgstr "Volledig rapport bekijken"
+
+#: inc/EditorMetaBox.php:400
+msgid "Rescan this page"
+msgstr "Deze pagina opnieuw scannen"
+
+#: inc/EditorMetaBox.php:441
+msgid "Scan complete. Refreshing…"
+msgstr "Scan voltooid. Vernieuwen…"
+
+#: inc/EditorMetaBox.php:442
+msgid "Scan complete. Save or reload to see the updated score."
+msgstr "Scan voltooid. Sla op of laad opnieuw om de bijgewerkte score te zien."
+
+#: inc/EditorMetaBox.php:443
+msgid "Reload now"
+msgstr "Nu opnieuw laden"
+
+#: inc/EditorMetaBox.php:445
+msgid "Still running — refresh the page in a minute."
+msgstr "Nog bezig — vernieuw de pagina over een minuut."
+
+#: inc/EditorMetaBox.php:447
+msgid "Could not start scan."
+msgstr "Kon scan niet starten."
+
+#: inc/EditorMetaBox.php:448
+msgid "Network error. Check your connection and try again."
+msgstr "Netwerkfout. Controleer je verbinding en probeer het opnieuw."
+
+#: inc/EditorMetaBox.php:587
+msgid "Page-level score"
+msgstr "Score op paginaniveau"
+
+#: inc/EditorMetaBox.php:590
+msgid "Site-level score (page not yet crawled)"
+msgstr "Score op siteniveau (pagina nog niet gecrawld)"
+
+#: inc/EditorMetaBox.php:593 inc/SettingsPage.php:575
+msgid "Awaiting first scan"
+msgstr "Wachten op eerste scan"
+
+#: inc/EditorMetaBox.php:821
+msgid "Premium Feature"
+msgstr "Premiumfunctie"
+
+#: inc/EditorMetaBox.php:824
+msgid "See accessibility scores for each page/post with a premium account."
+msgstr ""
+"Bekijk toegankelijkheidsscores voor elke pagina/bericht met een "
+"premiumaccount."
+
+#: inc/EditorMetaBox.php:827
 msgid "Upgrade to Premium"
 msgstr "Upgrade naar de premium-versie"
 
-#: inc/AllAccessibleSettings.php:138
-msgid "Plugin Configuration"
-msgstr "Plugin Configuratie"
+#: inc/EditorMetaBox.php:830
+msgid "7-day free trial available"
+msgstr "Gratis proefperiode van 7 dagen beschikbaar"
 
-#: inc/AllAccessibleSettings.php:139
+#: inc/FeatureComparison.php:28
+msgid "Compare Plans"
+msgstr "Abonnementen vergelijken"
+
+#: inc/FeatureComparison.php:37
+msgid "Feature"
+msgstr "Eigenschap"
+
+#: inc/FeatureComparison.php:52
+msgid "Accessibility Widget"
+msgstr "Toegankelijkheidswidget"
+
+#: inc/FeatureComparison.php:53 inc/FeatureComparison.php:54
+#: inc/FeatureComparison.php:55 inc/FeatureComparison.php:80
+#: inc/FeatureComparison.php:81 inc/FeatureComparison.php:87
+#: inc/FeatureComparison.php:92
+msgid "Included"
+msgstr "Inbegrepen"
+
+#: inc/FeatureComparison.php:58
+msgid "Monthly Pageviews"
+msgstr "Maandelijkse paginaweergaven"
+
+#: inc/FeatureComparison.php:61 inc/FeatureComparison.php:68
+#: inc/FeatureComparison.php:69
+msgid "Unlimited"
+msgstr "Onbeperkt"
+
+#: inc/FeatureComparison.php:65
+msgid "AI Image Alt Text"
+msgstr "AI-alt-tekst voor afbeeldingen"
+
+#: inc/FeatureComparison.php:67
+msgid "10 preview"
+msgstr "10 voorbeeld"
+
+#: inc/FeatureComparison.php:72
+msgid "Compliance Audits"
+msgstr "Compliance-audits"
+
+#: inc/FeatureComparison.php:73 inc/FeatureComparison.php:79
+#: inc/FeatureComparison.php:85 inc/FeatureComparison.php:86
+#: inc/FeatureComparison.php:91
+msgid "Not included"
+msgstr "Niet inbegrepen"
+
+#: inc/FeatureComparison.php:78
+msgid "Widget Customization"
+msgstr "Widgetaanpassing"
+
+#: inc/FeatureComparison.php:84
+msgid "VPAT Reports"
+msgstr "VPAT-rapporten"
+
+#: inc/FeatureComparison.php:90
+msgid "Priority Support"
+msgstr "Priority-support"
+
+#: inc/FeatureComparison.php:93
+msgid "Dedicated"
+msgstr "Toegewijd"
+
+#: inc/FeatureComparison.php:103
+msgid "Upgrade Plan"
+msgstr "Upgraden pakket"
+
+#: inc/ImageManagerPage.php:28 inc/ImageManagerPage.php:29
+#: inc/SettingsPage.php:608
+msgid "Image AI"
+msgstr "Afbeeldings-AI"
+
+#: inc/ImageManagerPage.php:101
+msgid "Image alt text is available on paid plans"
+msgstr "Alt-tekst voor afbeeldingen is beschikbaar in betaalde abonnementen"
+
+#: inc/ImageManagerPage.php:102
+msgid ""
+"Upgrade to review, refine, and approve every alt text on your site. Includes "
+"inline editing, manual overrides, and full media library coverage."
+msgstr ""
+"Upgrade om alle alt-tekst op je site te beoordelen, te verfijnen en goed te "
+"keuren. Inclusief inline bewerken, handmatige overschrijvingen en volledige "
+"dekking van de mediabibliotheek."
+
+#: inc/ImageManagerPage.php:116
+msgid "Could not load image data right now."
+msgstr "Kan afbeeldingsgegevens momenteel niet laden."
+
+#. translators: %d = number of images on this page
+#: inc/ImageManagerPage.php:132
 #, php-format
-msgid "%1$s is connected to %2$s with account ID %3$s"
-msgstr "%1$s is verbonden met %2$s met account ID %3$s"
+msgid "%d image on this page."
+msgid_plural "%d images on this page."
+msgstr[0] "%d afbeelding op deze pagina."
+msgstr[1] "%d afbeeldingen op deze pagina."
 
-#: inc/AllAccessibleSettings.php:161
-msgid "Choose Widget Color"
-msgstr "Kies widgetkleur"
+#: inc/ImageManagerPage.php:157 inc/PostListColumn.php:264
+#: inc/PostListColumn.php:270 inc/constants.php:19
+msgid "Accessibility"
+msgstr "Toegankelijkheid"
 
-#: inc/AllAccessibleSettings.php:167
-msgid "Choose Icon"
-msgstr "Kies icoon"
+#: inc/ImageManagerPage.php:159
+msgid "Image alt text"
+msgstr "Alt-tekst van afbeelding"
 
-#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
-msgid "Choose Widget Size"
-msgstr "Widgetgrootte kiezen"
+#: inc/ImageManagerPage.php:163
+msgid ""
+"AllAccessible AI suggests descriptive alt text for every image on your site. "
+"Review and approve, or edit before it goes live."
+msgstr ""
+"AllAccessible AI stelt beschrijvende alt-tekst voor voor elke afbeelding op "
+"je site. Controleer en keur goed, of bewerk voordat het live gaat."
 
-#: inc/AllAccessibleSettings.php:192
-msgid "Small"
-msgstr "Klein"
+#: inc/ImageManagerPage.php:167 inc/SettingsPage.php:836
+msgid "Open full dashboard"
+msgstr "Volledig dashboard openen"
 
-#: inc/AllAccessibleSettings.php:193
-msgid "Medium (Default)"
-msgstr "Gemiddeld (standaard)"
+#: inc/ImageManagerPage.php:189
+msgid "images"
+msgstr "afbeeldingen"
 
-#: inc/AllAccessibleSettings.php:194
-msgid "Large"
-msgstr "Groot"
+#: inc/ImageManagerPage.php:193
+msgid "with alt text"
+msgstr "met alt-tekst"
 
-#: inc/AllAccessibleSettings.php:202
-msgid "Choose Widget Position"
-msgstr "Widgetpositie kiezen"
+#. translators: %d = percentage
+#: inc/ImageManagerPage.php:194
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
 
-#: inc/AllAccessibleSettings.php:204
+#: inc/ImageManagerPage.php:200
+msgid "AI-authored"
+msgstr "Door AI geschreven"
+
+#: inc/ImageManagerPage.php:212
+msgid "All images"
+msgstr "Alle afbeeldingen"
+
+#: inc/ImageManagerPage.php:213
+msgid "Missing alt"
+msgstr "Ontbrekende alt-tekst"
+
+#: inc/ImageManagerPage.php:214
+msgid "AI-suggested"
+msgstr "AI-voorgesteld"
+
+#: inc/ImageManagerPage.php:215 inc/SettingsPage.php:450
+msgid "Manual"
+msgstr "Handmatig"
+
+#: inc/ImageManagerPage.php:226
+msgid "Show"
+msgstr "Toon"
+
+#: inc/ImageManagerPage.php:237
+msgid "Search filename or alt text"
+msgstr "Zoek bestandsnaam of alt-tekst"
+
+#: inc/ImageManagerPage.php:240
+msgid "Type to filter visible images…"
+msgstr "Typ om zichtbare afbeeldingen te filteren…"
+
+#: inc/ImageManagerPage.php:245
+msgid "Apply"
+msgstr "Toepassen"
+
+#: inc/ImageManagerPage.php:294
+msgid "AI suggestion"
+msgstr "AI-suggestie"
+
+#: inc/ImageManagerPage.php:320
+msgid "No alt text yet."
+msgstr "Nog geen alt-tekst."
+
+#: inc/ImageManagerPage.php:332
+msgid "Found on:"
+msgstr "Gevonden op:"
+
+#: inc/ImageManagerPage.php:361
+msgid "Needs alt"
+msgstr "Heeft alt-tekst nodig"
+
+#: inc/ImageManagerPage.php:364
+msgid "Set"
+msgstr "Instellen"
+
+#. translators: %d = image ID
+#: inc/ImageManagerPage.php:371 inc/ImageManagerPage.php:379
+#, php-format
+msgid "Image #%d"
+msgstr "Afbeelding #%d"
+
+#: inc/ImageManagerPage.php:407
+#, php-format
+msgid "You've used %1$d of %2$d preview alt-texts on this site"
+msgstr "Je hebt %1$d van %2$d preview-alt-teksten op deze site gebruikt"
+
+#: inc/ImageManagerPage.php:412
+msgid ""
+"Real AI output, drafted for your real images. Upgrade to unlock unlimited "
+"alt-text generation for every image on your site."
+msgstr ""
+"Echte AI-output, opgesteld voor je echte afbeeldingen. Upgrade om onbeperkte "
+"alt-tekstgeneratie voor elke afbeelding op je site te ontgrendelen."
+
+#: inc/ImageManagerPage.php:455
+#, php-format
+msgid "Unlock AI alt text for all %d images on your site"
+msgstr "Ontgrendel AI-alt-tekst voor alle %d afbeeldingen op je site"
+
+#: inc/ImageManagerPage.php:478
+msgid "No images discovered yet"
+msgstr "Nog geen afbeeldingen gevonden"
+
+#: inc/ImageManagerPage.php:480
+msgid ""
+"Scan your site to discover images. AllAccessible AI writes alt text for each "
+"one automatically. You can review or override any entry from this page."
+msgstr ""
+"Scan je site om afbeeldingen te ontdekken. AllAccessible AI schrijft "
+"automatisch alt-tekst voor elke afbeelding. Je kunt elke vermelding vanaf "
+"deze pagina beoordelen of overschrijven."
+
+#: inc/ImageManagerPage.php:483
+msgid "Scan your site to discover images"
+msgstr "Scan je site om afbeeldingen te ontdekken"
+
+#: inc/ImageManagerPage.php:504
+msgid "Image pagination"
+msgstr "Paginering van afbeeldingen"
+
+#. translators: 1: current page, 2: total pages, 3: total items
+#: inc/ImageManagerPage.php:508
+#, php-format
+msgid "Page %1$d of %2$d (%3$s images)"
+msgstr "Pagina %1$d van %2$d (%3$s afbeeldingen)"
+
+#: inc/ImageManagerPage.php:518
+msgid "Previous"
+msgstr "Vorige"
+
+#: inc/ImageManagerPage.php:540
+msgid "Edit alt text"
+msgstr "Alt-tekst bewerken"
+
+#: inc/ImageManagerPage.php:541
+msgid "Close"
+msgstr "Sluiten"
+
+#: inc/ImageManagerPage.php:553
+msgid "AllAccessible AI suggests"
+msgstr "AllAccessible AI stelt voor"
+
+#: inc/ImageManagerPage.php:559
+msgid "Use this suggestion"
+msgstr "Deze suggestie gebruiken"
+
+#: inc/ImageManagerPage.php:564
+msgid "Alt text"
+msgstr "Alternatieve tekst"
+
+#: inc/ImageManagerPage.php:570
+msgid ""
+"Aim for 1–2 sentences describing the image's purpose, not its appearance."
+msgstr ""
+"Streef naar 1–2 zinnen die het doel van de afbeelding beschrijven, niet het "
+"uiterlijk."
+
+#: inc/ImageManagerPage.php:670
+msgid ""
+"Saved. Updates may take up to a minute to appear after refresh as the change "
+"propagates through our system."
+msgstr ""
+"Opgeslagen. Het kan tot een minuut duren voordat updates na het vernieuwen "
+"zichtbaar zijn, omdat de wijziging zich door ons systeem verspreidt."
+
+#: inc/ImageManagerPage.php:707
+msgid "Alt text is required."
+msgstr "Alt-tekst is verplicht."
+
+#: inc/ImageManagerPage.php:711
+msgid "Alt text must be 500 characters or fewer."
+msgstr "Alt-tekst moet 500 tekens of minder zijn."
+
+#: inc/ImageManagerPage.php:716 inc/SettingsPage.php:1218
+msgid "Saving…"
+msgstr "Opslaan…"
+
+#: inc/ImageManagerPage.php:726 inc/SettingsPage.php:1785
+msgid "Save failed"
+msgstr "Opslaan mislukt"
+
+#: inc/ImageManagerPage.php:745
+msgid "Save failed. Please try again."
+msgstr "Bewaren is mislukt. Probeer het opnieuw."
+
+#: inc/ImageManagerPage.php:766
+msgid "Showing all images on this page."
+msgstr "Alle afbeeldingen op deze pagina worden weergegeven."
+
+#: inc/ImageManagerPage.php:768
+#, php-format
+msgid "Showing %d images matching your search."
+msgstr "Toont %d afbeeldingen die overeenkomen met je zoekopdracht."
+
+#: inc/ImageManagerPage.php:787
+msgid "Insufficient permissions"
+msgstr "Onvoldoende machtigingen"
+
+#: inc/ImageManagerPage.php:796 inc/api/ApiClient.php:901
+msgid "Invalid image ID"
+msgstr "Ongeldige afbeeldings-ID"
+
+#: inc/ImageManagerPage.php:799 inc/api/ApiClient.php:905
+msgid "Alt text must be 1–500 characters"
+msgstr "Alt-tekst moet 1–500 tekens zijn"
+
+#: inc/OnboardingWizard.php:43
+msgid "AllAccessible Setup"
+msgstr "AllAccessible-instelling"
+
+#: inc/OnboardingWizard.php:44
+msgid "Setup"
+msgstr "Setup"
+
+#: inc/OnboardingWizard.php:107
+msgid "First scan"
+msgstr "Eerste scan"
+
+#: inc/OnboardingWizard.php:112
+msgid "AllAccessible setup"
+msgstr "AllAccessible-instelling"
+
+#: inc/OnboardingWizard.php:119
+msgid "Setup progress"
+msgstr "Voortgang van de installatie"
+
+#: inc/OnboardingWizard.php:144
+msgid "Step 1 of 2"
+msgstr "Stap 1 van 2"
+
+#: inc/OnboardingWizard.php:146 inc/OnboardingWizard.php:808
+msgid "Welcome to AllAccessible"
+msgstr "Welkom bij AllAccessible"
+
+#: inc/OnboardingWizard.php:149
+msgid ""
+"Make this WordPress site usable for every visitor. Enter your email and pick "
+"a plan to get started."
+msgstr ""
+"Maak deze WordPress-site bruikbaar voor elke bezoeker. Vul je e-mailadres in "
+"en kies een plan om te beginnen."
+
+#: inc/OnboardingWizard.php:155
+msgid "See what an account does for you"
+msgstr "Bekijk wat een account voor je doet"
+
+#: inc/OnboardingWizard.php:165
+msgid "Accessibility scans"
+msgstr "Toegankelijkheidsscans"
+
+#: inc/OnboardingWizard.php:168
+msgid ""
+"Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged."
+msgstr ""
+"Elke gepubliceerde pagina gecontroleerd volgens WCAG 2.2, ADA en EAA. Met "
+"ernstlabels."
+
+#: inc/OnboardingWizard.php:179
+msgid "24 fixed"
+msgstr "24 opgelost"
+
+#: inc/OnboardingWizard.php:180
+msgid "3 to review"
+msgstr "3 te beoordelen"
+
+#: inc/OnboardingWizard.php:190
+msgid "Agentic AI fixes"
+msgstr "Agentische AI-oplossingen"
+
+#: inc/OnboardingWizard.php:193
+msgid "AI drafts the fix; your team approves before anything ships."
+msgstr ""
+"AI stelt de oplossing op; je team keurt goed voordat er iets live gaat."
+
+#: inc/OnboardingWizard.php:196
+msgid "Issue: button missing accessible name"
+msgstr "Probleem: knop mist een toegankelijke naam"
+
+#: inc/OnboardingWizard.php:198
+msgid "AI fix"
+msgstr "AI-oplossing"
+
+#: inc/OnboardingWizard.php:207
+msgid "Smart alt text"
+msgstr "Slimme alt-tekst"
+
+#: inc/OnboardingWizard.php:210
+msgid ""
+"Missing alt generated for every image, in the language your visitors use."
+msgstr ""
+"Ontbrekende alt-tekst wordt voor elke afbeelding gegenereerd, in de taal die "
+"je bezoekers gebruiken."
+
+#: inc/OnboardingWizard.php:218
+msgid "AI generated"
+msgstr "Door AI gegenereerd"
+
+#: inc/OnboardingWizard.php:220
+msgid "A golden retriever sitting in a sunlit park, wearing a pink bandana."
+msgstr ""
+"Een golden retriever die in een zonovergoten park zit en een roze bandana "
+"draagt."
+
+#: inc/OnboardingWizard.php:246
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: inc/OnboardingWizard.php:258 inc/OnboardingWizard.php:811
+msgid ""
+"We'll create a new account or link your existing one — same email, either "
+"way."
+msgstr ""
+"We maken een nieuw account aan of koppelen je bestaande account — in beide "
+"gevallen met hetzelfde e-mailadres."
+
+#: inc/OnboardingWizard.php:265
+msgid "Plan"
+msgstr "Plan"
+
+#: inc/OnboardingWizard.php:271
+msgid "Free forever"
+msgstr "Gratis voor altijd"
+
+#: inc/OnboardingWizard.php:277
+msgid "Widget, contrast + sizing controls, essential accessibility tools."
+msgstr ""
+"Widget, contrast- en groottebediening, essentiële toegankelijkheidstools."
+
+#: inc/OnboardingWizard.php:285
+msgid "Most popular"
+msgstr "Meest populair"
+
+#: inc/OnboardingWizard.php:291
+msgid "7 days free"
+msgstr "7 dagen gratis"
+
+#: inc/OnboardingWizard.php:291
+msgid "then $10/mo"
+msgstr "daarna $10/maand"
+
+#: inc/OnboardingWizard.php:294
+msgid "Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits."
+msgstr "Agentische AI-oplossingen, slimme alt-tekst, WCAG/ADA/EAA-audits."
+
+#: inc/OnboardingWizard.php:307
+msgid "Ready to reconnect"
+msgstr "Klaar om opnieuw te verbinden"
+
+#: inc/OnboardingWizard.php:321
+msgid "Heads up:"
+msgstr "Let op:"
+
+#: inc/OnboardingWizard.php:322
+msgid ""
+"This site is on another AllAccessible account. The plugin will work right "
+"away, but the site only appears in your dashboard once the existing admin "
+"approves your access — they'll get an email automatically."
+msgstr ""
+"Deze site staat op een ander AllAccessible-account. De plugin werkt meteen, "
+"maar de site verschijnt pas in je dashboard zodra de bestaande beheerder je "
+"toegang goedkeurt — diegene ontvangt automatisch een e-mail."
+
+#: inc/OnboardingWizard.php:332 inc/OnboardingWizard.php:670
+#: inc/OnboardingWizard.php:682 inc/OnboardingWizard.php:703
+#: inc/OnboardingWizard.php:734 inc/OnboardingWizard.php:816
+msgid "Continue"
+msgstr "Doorgaan"
+
+#. translators: 1: Terms link, 2: Privacy Policy link
+#: inc/OnboardingWizard.php:340
+#, php-format
+msgid "By continuing you agree to our %1$s and %2$s."
+msgstr "Door verder te gaan ga je akkoord met onze %1$s en %2$s."
+
+#: inc/OnboardingWizard.php:341 inc/SettingsPage.php:1445
+msgid "Terms & Conditions"
+msgstr "Algemene voorwaarden"
+
+#: inc/OnboardingWizard.php:342 inc/SettingsPage.php:1446
+msgid "Privacy Policy"
+msgstr "Privacybeleid"
+
+#: inc/OnboardingWizard.php:351
+msgid "Skip and use just the free widget"
+msgstr "Overslaan en alleen de gratis widget gebruiken"
+
+#: inc/OnboardingWizard.php:377
+msgid "Interactions / month"
+msgstr "Interacties / maand"
+
+#: inc/OnboardingWizard.php:385
+msgid "Visitors served / month"
+msgstr "Bezoekers bediend / maand"
+
+#: inc/OnboardingWizard.php:393
+msgid "Protecting WordPress"
+msgstr "WordPress beschermen"
+
+#: inc/OnboardingWizard.php:398
+msgid "WCAG 2.2"
+msgstr "WCAG 2.2"
+
+#: inc/OnboardingWizard.php:399
+msgid "ADA"
+msgstr "ADA"
+
+#: inc/OnboardingWizard.php:400
+msgid "Section 508"
+msgstr "Section 508"
+
+#: inc/OnboardingWizard.php:401
+msgid "EAA 2025"
+msgstr "EAA 2025"
+
+#: inc/OnboardingWizard.php:422
+msgid "Free to start"
+msgstr "Gratis om te starten"
+
+#: inc/OnboardingWizard.php:426
+msgid "No credit card required"
+msgstr "Geen creditcard vereist"
+
+#: inc/OnboardingWizard.php:430
+msgid "Privacy-first — GDPR / CCPA"
+msgstr "Privacy eerst — AVG / CCPA"
+
+#: inc/OnboardingWizard.php:434
+msgid "Cancel any time on paid plans"
+msgstr "Je kunt op elk moment opzeggen bij betaalde abonnementen"
+
+#: inc/OnboardingWizard.php:438
+msgid "Trusted on thousands of WordPress sites worldwide."
+msgstr "Vertrouwd op duizenden WordPress-sites wereldwijd."
+
+#: inc/OnboardingWizard.php:450
+msgid "Step 2 of 2"
+msgstr "Stap 2 van 2"
+
+#: inc/OnboardingWizard.php:453
+msgid "Account ready"
+msgstr "Account gereed"
+
+#: inc/OnboardingWizard.php:462
+msgid "Your account is set up."
+msgstr "Je account is ingesteld."
+
+#: inc/OnboardingWizard.php:464
+msgid ""
+"The AllAccessible agents are ready to scan this site for accessibility "
+"issues."
+msgstr ""
+"De AllAccessible-agents staan klaar om deze site te scannen op "
+"toegankelijkheidsproblemen."
+
+#: inc/OnboardingWizard.php:474
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; you can re-run it any time from "
+"the Agentic Fixes page."
+msgstr ""
+"AllAccessible vindt automatisch elke gepubliceerde pagina op je site — geen "
+"sitemap nodig. Start hieronder je eerste scan; je kunt die op elk moment "
+"opnieuw uitvoeren vanaf de pagina Agentic Fixes."
+
+#: inc/OnboardingWizard.php:483
+msgid "Skip for now"
+msgstr "Voor nu overslaan"
+
+#: inc/OnboardingWizard.php:486
+msgid "Go to dashboard"
+msgstr "Ga naar dashboard"
+
+#: inc/OnboardingWizard.php:587
+msgid "Skip setup for now? You can finish any time from the settings page."
+msgstr ""
+"Installatie nu overslaan? Je kunt dit op elk moment afronden via de "
+"instellingenpagina."
+
+#: inc/OnboardingWizard.php:619
+msgid "Account created. Provisioning your site…"
+msgstr "Account aangemaakt. Je site wordt ingericht…"
+
+#: inc/OnboardingWizard.php:622
+msgid "Welcome back. We linked this WordPress site to your account."
+msgstr "Welkom terug. We hebben deze WordPress-site aan je account gekoppeld."
+
+#: inc/OnboardingWizard.php:625
+msgid "Welcome back. This site was already on your account."
+msgstr "Welkom terug. Deze site stond al op je account."
+
+#: inc/OnboardingWizard.php:627
+msgid "Connected."
+msgstr "Verbonden."
+
+#: inc/OnboardingWizard.php:639
+msgid "Please enter your email address."
+msgstr "Vul uw mail adres in."
+
+#: inc/OnboardingWizard.php:644
+msgid "Setting things up…"
+msgstr "Bezig met instellen…"
+
+#: inc/OnboardingWizard.php:645
+msgid "Connecting to AllAccessible…"
+msgstr "Bezig met verbinden met AllAccessible…"
+
+#: inc/OnboardingWizard.php:668
+msgid "Something went wrong. Please try again."
+msgstr "Er is iets verkeerd gegaan. Probeer het opnieuw."
+
+#: inc/OnboardingWizard.php:680
+msgid "We received an unexpected response. Please try again."
+msgstr "We hebben een onverwachte reactie ontvangen. Probeer het opnieuw."
+
+#: inc/OnboardingWizard.php:701 inc/OnboardingWizard.php:883
+msgid "We could not save your settings. Please try again."
+msgstr "We konden je instellingen niet opslaan. Probeer het opnieuw."
+
+#: inc/OnboardingWizard.php:728
+msgid "We could not reach AllAccessible. Please try again."
+msgstr "We konden AllAccessible niet bereiken. Probeer het opnieuw."
+
+#: inc/OnboardingWizard.php:753 inc/OnboardingWizard.php:781
+msgid "Welcome back"
+msgstr "Welkom terug"
+
+#: inc/OnboardingWizard.php:763
+msgid "Linking"
+msgstr "Koppelen"
+
+#: inc/OnboardingWizard.php:764
+msgid "to"
+msgstr "naar"
+
+#: inc/OnboardingWizard.php:768
+msgid "Reconnect this site"
+msgstr "Deze site opnieuw verbinden"
+
+#: inc/OnboardingWizard.php:783
+msgid ""
+"We will link this WordPress site to your existing AllAccessible account."
+msgstr ""
+"We koppelen deze WordPress-site aan je bestaande AllAccessible-account."
+
+#: inc/OnboardingWizard.php:788
+msgid "Connect this site"
+msgstr "Deze site verbinden"
+
+#: inc/OnboardingWizard.php:795
+msgid "Request access to this site"
+msgstr "Toegang aanvragen tot deze site"
+
+#: inc/OnboardingWizard.php:797
+msgid ""
+"This site is on another AllAccessible account. Enter your email to request "
+"access."
+msgstr ""
+"Deze site staat op een ander AllAccessible-account. Voer je e-mailadres in "
+"om toegang aan te vragen."
+
+#: inc/OnboardingWizard.php:802
+msgid "Request access"
+msgstr "Toegang aanvragen"
+
+#: inc/OnboardingWizard.php:868
+msgid "Reconnecting…"
+msgstr "Opnieuw verbinden…"
+
+#: inc/OnboardingWizard.php:879
+msgid "Reconnected. Provisioning…"
+msgstr "Opnieuw verbonden. Bezig met inrichten…"
+
+#: inc/OnboardingWizard.php:906
+msgid "Permission denied"
+msgstr "Toegang geweigerd"
+
+#: inc/PostListColumn.php:306
+msgid "Loading accessibility score"
+msgstr "Toegankelijkheidsscore laden"
+
+#: inc/PostListColumn.php:307
+msgid "Loading"
+msgstr "Laden"
+
+#: inc/PostListColumn.php:308
+msgid "Loading…"
+msgstr "Laden…"
+
+#: inc/PostListColumn.php:434
+msgid "Will scan on publish"
+msgstr "Wordt gescand bij publiceren"
+
+#: inc/PostListColumn.php:435
+msgid ""
+"Drafts are not reachable by the public crawler. Publish to scan "
+"automatically, or preview to scan now."
+msgstr ""
+"Concepten zijn niet bereikbaar voor de openbare crawler. Publiceer om "
+"automatisch te scannen, of bekijk een preview om nu te scannen."
+
+#: inc/PostListColumn.php:440
+msgid "Preview & scan"
+msgstr "Voorbeeld bekijken en scannen"
+
+#: inc/PostListColumn.php:445
+msgid "Awaiting scan — AllAccessible will populate this on the next crawl"
+msgstr "Wacht op scan — AllAccessible vult dit bij de volgende crawl in"
+
+#: inc/PostListColumn.php:456
+msgid "Score is stale — page hasn't been scanned recently"
+msgstr "Score is verouderd — pagina is onlangs niet gescand"
+
+#: inc/PostListColumn.php:457
+msgid "Last scan failed"
+msgstr "Laatste scan mislukt"
+
+#: inc/PostListColumn.php:458
+msgid "Accessibility score"
+msgstr "Toegankelijkheidsscore"
+
+#: inc/PostListColumn.php:468
+msgid "Approve pending fixes to reach this score"
+msgstr "Keur openstaande fixes goed om deze score te behalen"
+
+#: inc/ReviewNudge.php:73
+msgid "How's your experience with AllAccessible so far?"
+msgstr "Hoe is je ervaring met AllAccessible tot nu toe?"
+
+#: inc/ReviewNudge.php:77
+msgid "Great 😊"
+msgstr "Geweldig 😊"
+
+#: inc/ReviewNudge.php:80
+msgid "Could be better"
+msgstr "Kan beter"
+
+#: inc/ReviewNudge.php:83
+msgid "Maybe later"
+msgstr "Misschien later"
+
+#: inc/ReviewNudge.php:91
+msgid "That's wonderful to hear!"
+msgstr "Wat fijn om te horen!"
+
+#: inc/ReviewNudge.php:92
+msgid ""
+"A quick review on WordPress.org helps other site owners find us — it takes "
+"about 30 seconds and means a lot."
+msgstr ""
+"Een snelle review op WordPress.org helpt andere site-eigenaren ons te vinden "
+"— het duurt ongeveer 30 seconden en betekent veel voor ons."
+
+#: inc/ReviewNudge.php:97
+msgid "Leave a review"
+msgstr "Schrijf een beoordeling"
+
+#: inc/ReviewNudge.php:100
+msgid "I already did"
+msgstr "Ik heb het al gedaan"
+
+#: inc/ReviewNudge.php:108
+msgid "Sorry to hear that — we'd like to make it right."
+msgstr "Jammer om te horen — we willen het graag goedmaken."
+
+#: inc/ReviewNudge.php:109
+msgid ""
+"Tell us what's not working and we'll follow up. This goes straight to our "
+"team."
+msgstr ""
+"Vertel ons wat niet werkt en we nemen contact met je op. Dit gaat "
+"rechtstreeks naar ons team."
+
+#: inc/ReviewNudge.php:113
+msgid "What could be better?"
+msgstr "Wat kan er beter?"
+
+#: inc/ReviewNudge.php:117
+msgid "Send feedback"
+msgstr "Feedback sturen"
+
+#: inc/ReviewNudge.php:121 inc/SettingsPage.php:1428
+msgid "Contact support"
+msgstr "Contact opnemen met support"
+
+#: inc/ReviewNudge.php:129
+msgid "Thank you — we appreciate you."
+msgstr "Bedankt — we waarderen je."
+
+#: inc/ScanTriggerPanel.php:30
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; future scans then run "
+"automatically based on your plan."
+msgstr ""
+"AllAccessible vindt automatisch elke gepubliceerde pagina op je site — geen "
+"sitemap nodig. Start hieronder je eerste scan; toekomstige scans worden "
+"daarna automatisch uitgevoerd op basis van je abonnement."
+
+#: inc/ScanTriggerPanel.php:43
+msgid "Scan now"
+msgstr "Nu scannen"
+
+#: inc/ScanTriggerPanel.php:44 inc/ScanTriggerPanel.php:257
+#: inc/ScanTriggerPanel.php:311
+msgid "Run scan again"
+msgstr "Scan opnieuw uitvoeren"
+
+#. translators: %s: human-readable time until
+#: inc/ScanTriggerPanel.php:101
+#, php-format
+msgid "Next scan in %s"
+msgstr "Volgende scan over %s"
+
+#: inc/ScanTriggerPanel.php:105
+msgid "Next scan due now"
+msgstr "Volgende scan is nu gepland"
+
+#. translators: %s: human-readable time difference
+#: inc/ScanTriggerPanel.php:117
+#, php-format
+msgid "Last scan triggered %s ago"
+msgstr "Laatste scan %s geleden gestart"
+
+#: inc/ScanTriggerPanel.php:131
+#, php-format
+msgid "%d published page will be scanned. This can take a minute or two."
+msgid_plural ""
+"%d published pages and posts will be scanned. This can take a minute or two."
+msgstr[0] ""
+"%d gepubliceerde pagina wordt gescand. Dit kan een minuut of twee duren."
+msgstr[1] ""
+"%d gepubliceerde pagina's en berichten worden gescand. Dit kan een minuut of "
+"twee duren."
+
+#: inc/ScanTriggerPanel.php:157
+msgid "pages scanned"
+msgstr "pagina's gescand"
+
+#: inc/ScanTriggerPanel.php:166
+msgid ""
+"pages scanned. Accessibility scores appear in your Pages list within a "
+"minute or two as the AI finishes reviewing."
+msgstr ""
+"pagina's gescand. Toegankelijkheidsscores verschijnen binnen een minuut of "
+"twee in je Pagina's-lijst terwijl de AI het beoordelen afrondt."
+
+#: inc/ScanTriggerPanel.php:168
+msgid "Open Pages list"
+msgstr "Paginalijst openen"
+
+#: inc/ScanTriggerPanel.php:182
+msgid "Scan a specific sitemap instead (advanced)"
+msgstr "Scan in plaats daarvan een specifieke sitemap (geavanceerd)"
+
+#: inc/ScanTriggerPanel.php:186
+msgid ""
+"Leave this closed to let AllAccessible auto-discover your pages "
+"(recommended). Open only to point the scan at a specific sitemap."
+msgstr ""
+"Laat dit gesloten om AllAccessible je pagina's automatisch te laten "
+"ontdekken (aanbevolen). Open dit alleen om de scan op een specifieke sitemap "
+"te richten."
+
+#: inc/ScanTriggerPanel.php:189 inc/ScanTriggerPanel.php:345
+msgid "Looking for sitemaps…"
+msgstr "Sitemaps zoeken…"
+
+#: inc/ScanTriggerPanel.php:221
+msgid "Enter your sitemap URL, or close Advanced to auto-discover."
+msgstr ""
+"Voer de URL van je sitemap in, of sluit Geavanceerd om automatisch te laten "
+"ontdekken."
+
+#: inc/ScanTriggerPanel.php:232
+msgid "Starting…"
+msgstr "Starten…"
+
+#: inc/ScanTriggerPanel.php:244
+msgid "Scan failed to start."
+msgstr "Scan kon niet worden gestart."
+
+#: inc/ScanTriggerPanel.php:245 inc/ScanTriggerPanel.php:265
+#: inc/ScanTriggerPanel.php:290
+msgid "Start first scan"
+msgstr "Eerste scan starten"
+
+#: inc/ScanTriggerPanel.php:255
+msgid "Scan started. Results appear on the Agentic Fixes page in 2-5 minutes."
+msgstr ""
+"Scan gestart. Resultaten verschijnen binnen 2-5 minuten op de pagina Agentic "
+"Fixes."
+
+#: inc/ScanTriggerPanel.php:256
+msgid "Scan triggered just now"
+msgstr "Scan zojuist gestart"
+
+#: inc/ScanTriggerPanel.php:264
+msgid "Server did not return a job ID."
+msgstr "De server heeft geen job-ID geretourneerd."
+
+#: inc/ScanTriggerPanel.php:274
+msgid "Finishing setup…"
+msgstr "Installatie afronden…"
+
+#: inc/ScanTriggerPanel.php:279
+msgid "Network error"
+msgstr "Netwerkfout"
+
+#: inc/ScanTriggerPanel.php:285
+msgid "Server timeout while queuing scan. Try again."
+msgstr ""
+"Server-time-out bij het in de wachtrij zetten van de scan. Probeer het "
+"opnieuw."
+
+#: inc/ScanTriggerPanel.php:287
+#, php-format
+msgid "Request failed (HTTP %s)"
+msgstr "Aanvraag mislukt (HTTP %s)"
+
+#: inc/ScanTriggerPanel.php:316
+msgid "Scan failed. Try again."
+msgstr "Scan mislukt. Probeer het opnieuw."
+
+#: inc/ScanTriggerPanel.php:318
+msgid "Retry scan"
+msgstr "Scan opnieuw proberen"
+
+#: inc/ScanTriggerPanel.php:334 inc/ScanTriggerPanel.php:354
+msgid "Detected"
+msgstr "Gedetecteerd"
+
+#: inc/ScanTriggerPanel.php:361
+msgid "Open & verify"
+msgstr "Openen en verifiëren"
+
+#: inc/ScanTriggerPanel.php:365
+msgid ""
+"No reachable sitemap found. Enter one below, or close Advanced to auto-"
+"discover."
+msgstr ""
+"Geen bereikbare sitemap gevonden. Voer er hieronder een in, of sluit "
+"Geavanceerd om automatisch te laten ontdekken."
+
+#: inc/ScanTriggerPanel.php:370
+msgid "Enter my own sitemap URL"
+msgstr "Mijn eigen sitemap-URL invoeren"
+
+#: inc/ScanTriggerPanel.php:376
+msgid "Could not check for sitemaps. Close Advanced to auto-discover instead."
+msgstr ""
+"Kon niet controleren op sitemaps. Sluit Geavanceerd om in plaats daarvan "
+"automatisch te laten ontdekken."
+
+#. Plugin Name of the plugin/theme
+#: inc/SettingsPage.php:36 inc/SettingsPage.php:37 inc/SettingsPage.php:373
+#: inc/SettingsPage.php:820
+msgid "AllAccessible"
+msgstr "AllAccessible"
+
+#: inc/SettingsPage.php:59 inc/SettingsPage.php:822
+msgid "Account & Settings"
+msgstr "Account & instellingen"
+
+#: inc/SettingsPage.php:60
+msgid "Account"
+msgstr "Account"
+
+#: inc/SettingsPage.php:70 inc/SettingsPage.php:71 inc/SettingsPage.php:108
+msgid "Widget Customizer"
+msgstr "Widget-aanpasser"
+
+#: inc/SettingsPage.php:107 inc/SettingsPage.php:881
+msgid "Widget"
+msgstr "Widget"
+
+#: inc/SettingsPage.php:109
+msgid ""
+"Customize the AllAccessible widget that visitors see on your site. Changes "
+"save instantly and clear the visitor cache."
+msgstr ""
+"Pas de AllAccessible-widget aan die bezoekers op je site zien. Wijzigingen "
+"worden direct opgeslagen en de bezoekerscache wordt gewist."
+
+#: inc/SettingsPage.php:119
+msgid "Connect your AllAccessible account"
+msgstr "Koppel je AllAccessible-account"
+
+#: inc/SettingsPage.php:120
+msgid "Finish setup to customize your widget."
+msgstr "Rond de installatie af om je widget aan te passen."
+
+#: inc/SettingsPage.php:122 inc/SettingsPage.php:850
+msgid "Start setup"
+msgstr "Begin setup"
+
+#: inc/SettingsPage.php:131
+msgid "Widget customization is a paid feature"
+msgstr "Widgetaanpassing is een betaalde functie"
+
+#: inc/SettingsPage.php:132
+msgid ""
+"Upgrade your AllAccessible plan to customize the widget color, position, "
+"icon, and shape — plus enable agentic AI remediation."
+msgstr ""
+"Upgrade je AllAccessible-abonnement om de widgetkleur, -positie, -pictogram "
+"en -vorm aan te passen — en schakel bovendien agentic AI-remediatie in."
+
+#: inc/SettingsPage.php:333 inc/SettingsPage.php:345 inc/UsageDashboard.php:69
+msgid "Pageviews"
+msgstr "Paginaweergaves"
+
+#: inc/SettingsPage.php:371 inc/SettingsPage.php:627
+msgid "Site overview"
+msgstr "Site-overzicht"
+
+#: inc/SettingsPage.php:380
+msgid "Widget connected"
+msgstr "Widget gekoppeld"
+
+#: inc/SettingsPage.php:384
+msgid ""
+"Accessibility widget and human-in-the-loop agentic AI remediation for your "
+"site."
+msgstr ""
+"Toegankelijkheidswidget en agentische AI-remediatie met human-in-the-loop "
+"voor je site."
+
+#: inc/SettingsPage.php:420
+msgid ""
+"Your current plan uses the legacy AllAccessible widget, which predates "
+"agentic AI remediation. Upgrade to the current plan tier to unlock auto-"
+"suggested fixes, larger pageview caps, and the full AllAccessible AI feature "
+"set."
+msgstr ""
+"Je huidige abonnement gebruikt de verouderde AllAccessible-widget, die van "
+"vóór agentische AI-remediatie is. Upgrade naar het huidige abonnementsniveau "
+"om automatisch voorgestelde fixes, hogere pageview-limieten en de volledige "
+"AllAccessible AI-functieset te ontgrendelen."
+
+#: inc/SettingsPage.php:449
+msgid "AI Resolved"
+msgstr "Opgelost door AI"
+
+#: inc/SettingsPage.php:451
+msgid "Completed"
+msgstr "Voltooid"
+
+#: inc/SettingsPage.php:452
+msgid "Reopened"
+msgstr "Heropend"
+
+#: inc/SettingsPage.php:453
+msgid "Ignored"
+msgstr "Genegeerd"
+
+#: inc/SettingsPage.php:462
+msgid "Activity and quick actions"
+msgstr "Activiteit en snelle acties"
+
+#: inc/SettingsPage.php:472
+msgid "Agentic Fixes not available on your plan"
+msgstr "Agentische fixes zijn niet beschikbaar in je abonnement"
+
+#: inc/SettingsPage.php:477
+msgid ""
+"The legacy AllAccessible widget keeps running, but the agentic AI "
+"remediation pipeline requires a current plan tier. Upgrade to bring auto-"
+"suggested fixes, larger pageview caps, and continuous accessibility scoring "
+"to this site."
+msgstr ""
+"De verouderde AllAccessible-widget blijft draaien, maar de agentische AI-"
+"remediatiepipeline vereist een huidig abonnementsniveau. Upgrade om "
+"automatisch voorgestelde fixes, hogere pageview-limieten en continue "
+"toegankelijkheidsscores naar deze site te brengen."
+
+#: inc/SettingsPage.php:492
+msgid "Issues from your latest scan"
+msgstr "Problemen uit je meest recente scan"
+
+#: inc/SettingsPage.php:494
+msgid "Grouped by rule, newest scan first."
+msgstr "Gegroepeerd per regel, nieuwste scan eerst."
+
+#: inc/SettingsPage.php:503
+msgid "View all"
+msgstr "Bekijk alles"
+
+#: inc/SettingsPage.php:512
+msgid "Severity"
+msgstr "Ernst"
+
+#: inc/SettingsPage.php:513
+msgid "Rule"
+msgstr "Regel"
+
+#: inc/SettingsPage.php:514
+msgid "Issues"
+msgstr "Problemen"
+
+#: inc/SettingsPage.php:515
+msgid "WCAG"
+msgstr "WCAG"
+
+#: inc/SettingsPage.php:516
+msgid "Status"
+msgstr "Status"
+
+#: inc/SettingsPage.php:559
+#, php-format
+msgid "%s fix manifest ready for your review."
+msgid_plural "%s fix manifests ready for your review."
+msgstr[0] "%s fix-manifest klaar voor je beoordeling."
+msgstr[1] "%s fix-manifesten klaar voor je beoordeling."
+
+#: inc/SettingsPage.php:563
+msgid "Review manifests"
+msgstr "Fix-manifesten beoordelen"
+
+#: inc/SettingsPage.php:580
+msgid ""
+"AllAccessible agents are getting ready to scan your site. Detected "
+"accessibility issues will appear here grouped by rule once your first crawl "
+"completes."
+msgstr ""
+"AllAccessible-agents maken zich klaar om je site te scannen. Gedetecteerde "
+"toegankelijkheidsproblemen verschijnen hier, gegroepeerd per regel, zodra je "
+"eerste crawl is voltooid."
+
+#: inc/SettingsPage.php:583
+msgid "Open coverage"
+msgstr "Open dekking"
+
+#: inc/SettingsPage.php:593
+msgid "Quick actions"
+msgstr "Snelle acties"
+
+#: inc/SettingsPage.php:599
+msgid "In WordPress"
+msgstr "In WordPress"
+
+#: inc/SettingsPage.php:612
+msgid "Widget customizer"
+msgstr "Widget-aanpasser"
+
+#: inc/SettingsPage.php:616
+msgid "Account & settings"
+msgstr "Account en instellingen"
+
+#: inc/SettingsPage.php:624
+msgid "On AllAccessible"
+msgstr "Op AllAccessible"
+
+#: inc/SettingsPage.php:631
+msgid "Audit history"
+msgstr "Auditgeschiedenis"
+
+#: inc/SettingsPage.php:635
+msgid "Tasks"
+msgstr "Taken"
+
+#: inc/SettingsPage.php:640
+msgid "Reports"
+msgstr "Rapporten"
+
+#: inc/SettingsPage.php:661
+msgid "Usage limit exceeded"
+msgstr "Gebruikslimiet overschreden"
+
+#: inc/SettingsPage.php:669
+#, php-format
+msgid ""
+"You have exceeded your %s limit. Your widget has been temporarily downgraded "
+"to free features. Upgrade your plan to restore premium functionality."
+msgid_plural ""
+"You have exceeded the following limits: %s. Your widget has been temporarily "
+"downgraded to free features. Upgrade your plan to restore premium "
+"functionality."
+msgstr[0] ""
+"Je hebt je %s-limiet overschreden. Je widget is tijdelijk teruggezet naar "
+"gratis functies. Upgrade je abonnement om premiumfunctionaliteit te "
+"herstellen."
+msgstr[1] ""
+"Je hebt de volgende limieten overschreden: %s. Je widget is tijdelijk "
+"teruggezet naar gratis functies. Upgrade je abonnement om "
+"premiumfunctionaliteit te herstellen."
+
+#: inc/SettingsPage.php:697
+msgid "Complete setup to get started"
+msgstr "Voltooi de installatie om te beginnen"
+
+#: inc/SettingsPage.php:698
+msgid ""
+"Your accessibility widget is ready to go. Complete the quick setup wizard to "
+"activate your widget."
+msgstr ""
+"Je toegankelijkheidswidget is klaar voor gebruik. Voltooi de snelle "
+"installatiewizard om je widget te activeren."
+
+#: inc/SettingsPage.php:700
+msgid "Start setup wizard"
+msgstr "Installatiewizard starten"
+
+#: inc/SettingsPage.php:830
+msgid ""
+"Manage your AllAccessible account, plan, widget settings, and integrations."
+msgstr ""
+"Beheer je AllAccessible-account, abonnement, widgetinstellingen en "
+"integraties."
+
+#: inc/SettingsPage.php:845
+msgid "No AllAccessible account linked"
+msgstr "Geen AllAccessible-account gekoppeld"
+
+#: inc/SettingsPage.php:846
+msgid "Complete the setup wizard to activate your accessibility widget."
+msgstr ""
+"Voltooi de installatiewizard om je toegankelijkheidswidget te activeren."
+
+#: inc/SettingsPage.php:864
+msgid "Usage limit reached"
+msgstr "Gebruikslimiet bereikt"
+
+#: inc/SettingsPage.php:866
+msgid ""
+"Your widget is running in free mode until usage resets or your plan is "
+"upgraded."
+msgstr ""
+"Je widget draait in de gratis modus totdat het gebruik wordt gereset of je "
+"abonnement wordt geüpgraded."
+
+#: inc/SettingsPage.php:871
+msgid "Manage plan"
+msgstr "Abonnement beheren"
+
+#: inc/SettingsPage.php:876
+msgid "Account settings sections"
+msgstr "Secties voor accountinstellingen"
+
+#: inc/SettingsPage.php:879 inc/SettingsPage.php:909
+msgid "Connection"
+msgstr "Verbinding"
+
+#: inc/SettingsPage.php:880
+msgid "Plan & Usage"
+msgstr "Abonnement & gebruik"
+
+#: inc/SettingsPage.php:882
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: inc/SettingsPage.php:911
+msgid "How this site links to your AllAccessible account."
+msgstr "Hoe deze site is gekoppeld aan je AllAccessible-account."
+
+#: inc/SettingsPage.php:915
+msgid "Connected"
+msgstr "Verbonden"
+
+#: inc/SettingsPage.php:917
+msgid "Action required"
+msgstr "Actie vereist"
+
+#: inc/SettingsPage.php:930
+msgid "Copy account ID"
+msgstr "Account-ID kopiëren"
+
+#: inc/SettingsPage.php:931 inc/SettingsPage.php:950
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: inc/SettingsPage.php:935
+msgid "Identifies your AllAccessible account across every site you own."
+msgstr "Identificeert je AllAccessible-account op elke site die je bezit."
+
+#: inc/SettingsPage.php:941
+msgid "Site ID"
+msgstr "Website ID"
+
+#: inc/SettingsPage.php:949
+msgid "Copy site ID"
+msgstr "Site-ID kopiëren"
+
+#: inc/SettingsPage.php:954
+msgid "Identifies this specific WordPress site within your account."
+msgstr "Identificeert deze specifieke WordPress-site binnen je account."
+
+#: inc/SettingsPage.php:960
+msgid "Site URL"
+msgstr "Site URL"
+
+#: inc/SettingsPage.php:989
+msgid "Manage subscription"
+msgstr "Beheer abonnement"
+
+#: inc/SettingsPage.php:997
+msgid "Current plan"
+msgstr "Huidig pakket"
+
+#: inc/SettingsPage.php:1019
+msgid "Plan changes update immediately across every site on this account."
+msgstr ""
+"Wijzigingen in het abonnement worden onmiddellijk bijgewerkt op elke site in "
+"dit account."
+
+#: inc/SettingsPage.php:1033
+msgid "Pageview usage"
+msgstr "Paginaweergavegebruik"
+
+#: inc/SettingsPage.php:1035
+msgid "Resets at the start of each billing cycle."
+msgstr "Wordt gereset aan het begin van elke factureringscyclus."
+
+#: inc/SettingsPage.php:1055
+msgid "Pageviews used this cycle"
+msgstr "Paginaweergaven gebruikt in deze cyclus"
+
+#. translators: 1: used pageviews, 2: limit
+#: inc/SettingsPage.php:1063
+#, php-format
+msgid "%1$s of %2$s pageviews this cycle."
+msgstr "%1$s van %2$s paginaweergaven deze cyclus."
+
+#: inc/SettingsPage.php:1073
+msgid ""
+"You are close to your monthly limit. Add a pageview pack to keep premium "
+"features active."
+msgstr ""
+"Je zit dicht bij je maandelijkse limiet. Voeg een pageview-pack toe om "
+"premiumfuncties actief te houden."
+
+#: inc/SettingsPage.php:1075
+msgid "Heads up — you are above 75% of your monthly pageviews."
+msgstr "Let op — je zit boven 75% o van je maandelijkse paginaweergaven."
+
+#: inc/SettingsPage.php:1082
+msgid ""
+"Pageview tracking is active. Detailed numbers appear after the first billing "
+"cycle."
+msgstr ""
+"Pageview-tracking is actief. Gedetailleerde cijfers verschijnen na de eerste "
+"factureringscyclus."
+
+#: inc/SettingsPage.php:1099
+msgid "Widget appearance"
+msgstr "Widgetweergave"
+
+#: inc/SettingsPage.php:1101
+msgid "Color, position, icon, and label live in the Widget Customizer."
+msgstr ""
+"Kleur, positie, pictogram en label stel je live in in de Widget Customizer."
+
+#: inc/SettingsPage.php:1106
+msgid "Open customizer"
+msgstr "Customizer openen"
+
+#: inc/SettingsPage.php:1119
+msgid ""
+"Preview your live widget on the front-end to confirm placement and styling."
+msgstr ""
+"Bekijk een voorbeeld van je live widget op de front-end om de plaatsing en "
+"styling te bevestigen."
+
+#: inc/SettingsPage.php:1125
+msgid "Preview on site"
+msgstr "Voorbeeld bekijken op site"
+
+#: inc/SettingsPage.php:1130
+msgid "Advanced settings"
+msgstr "Geavanceerde instellingen"
+
+#: inc/SettingsPage.php:1141
+msgid "Quick toggles"
+msgstr "Snelle schakelaars"
+
+#: inc/SettingsPage.php:1143
+msgid "Local overrides applied before the widget renders."
+msgstr "Lokale overrides worden toegepast voordat de widget wordt gerenderd."
+
+#: inc/SettingsPage.php:1153
+msgid "Headless mode"
+msgstr "Headless-modus"
+
+#: inc/SettingsPage.php:1159
+msgid ""
+"Skip the floating button and trigger the panel from your own UI. Recommended "
+"for custom theme integrations."
+msgstr ""
+"Sla de zwevende knop over en open het paneel vanuit je eigen UI. Aanbevolen "
+"voor integraties met aangepaste thema’s."
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1175
+#, php-format
+msgid ""
+"Available on Enterprise. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"Beschikbaar op Enterprise. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Bekijk abonnementen</a>."
+
+#: inc/SettingsPage.php:1186 inc/SettingsPage.php:1998
+msgid "Hide widget branding"
+msgstr "Widget-branding verbergen"
+
+#: inc/SettingsPage.php:1188
+msgid "Remove the \"Powered by\" footer link inside the widget panel."
+msgstr "Verwijder de voettekstlink \"Powered by\" in het widgetpaneel."
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1204
+#, php-format
+msgid ""
+"Included with paid plans. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"Inbegrepen bij betaalde abonnementen. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Bekijk abonnementen</a>."
+
+#: inc/SettingsPage.php:1217 inc/SettingsPage.php:1220
+msgid "Save changes"
+msgstr "Wijzigingen opslaan"
+
+#: inc/SettingsPage.php:1219
+msgid "Saved"
+msgstr "Opgeslagen"
+
+#: inc/SettingsPage.php:1237
+msgid "Diagnostics"
+msgstr "Diagnostieken"
+
+#: inc/SettingsPage.php:1239
+msgid "Local identifiers and tools for troubleshooting."
+msgstr "Lokale identificatoren en tools voor probleemoplossing."
+
+#: inc/SettingsPage.php:1246
+msgid "Plugin version"
+msgstr "Plugin-versie"
+
+#: inc/SettingsPage.php:1255
+msgid "Debug logging"
+msgstr "Debuglogboekregistratie"
+
+#: inc/SettingsPage.php:1257
+msgid "Write extra diagnostics to the WordPress debug log."
+msgstr ""
+"Schrijf extra diagnostische informatie naar het WordPress-debuglogboek."
+
+#: inc/SettingsPage.php:1280
+msgid "Disable error reporting to AllAccessible"
+msgstr "Foutrapportage naar AllAccessible uitschakelen"
+
+#: inc/SettingsPage.php:1282
+msgid ""
+"AllAccessible records plugin errors (with your account ID + plugin version) "
+"so the team can spot issues affecting your install. Toggle on to stop "
+"sending. No personal data is collected."
+msgstr ""
+"AllAccessible registreert pluginfouten (met je account-ID + pluginversie), "
+"zodat het team problemen kan opsporen die jouw installatie beïnvloeden. Zet "
+"dit uit om te stoppen met verzenden. Er worden geen persoonsgegevens "
+"verzameld."
+
+#: inc/SettingsPage.php:1298
+msgid "Developer tools"
+msgstr "Hulpprogramma's voor ontwikkelaars"
+
+#: inc/SettingsPage.php:1299
+msgid "Diagnose lookup · Sync · Flush caches"
+msgstr "Opzoeking diagnosticeren · Synchroniseren · Caches legen"
+
+#: inc/SettingsPage.php:1304
+msgid "Diagnose page lookup"
+msgstr "Pagina-opzoeking diagnosticeren"
+
+#: inc/SettingsPage.php:1306
+msgid ""
+"Pick a published page or post to inspect the exact URL canonicalization and "
+"API response. Useful when a row shows \"Not scanned\" but you expect a score."
+msgstr ""
+"Kies een gepubliceerde pagina of bericht om de exacte URL-canonicalisatie en "
+"API-respons te inspecteren. Handig wanneer een rij \"Niet gescand\" toont "
+"maar je een score verwacht."
+
+#: inc/SettingsPage.php:1312
+msgid "Post / page ID"
+msgstr "Bericht- / pagina-ID"
+
+#: inc/SettingsPage.php:1320 inc/SettingsPage.php:1322
+msgid "Run diagnosis"
+msgstr "Diagnose uitvoeren"
+
+#: inc/SettingsPage.php:1321
+msgid "Looking up…"
+msgstr "Bezig met opzoeken…"
+
+#: inc/SettingsPage.php:1331
+msgid "Sync post audit links"
+msgstr "Auditlinks voor berichten synchroniseren"
+
+#: inc/SettingsPage.php:1333
+msgid ""
+"Manually run the post → audit linker. The background job runs about once a "
+"week (paid plans only, and only when your site receives traffic). Trigger "
+"here if the All Posts column or Editor box shows missing scores and you "
+"don't want to wait."
+msgstr ""
+"Voer handmatig de post → audit-koppeling uit. De achtergrondtaak draait "
+"ongeveer eens per week (alleen betaalde abonnementen, en alleen wanneer je "
+"site verkeer ontvangt). Start hier als de kolom Alle berichten of het Editor-"
+"vak ontbrekende scores toont en je niet wilt wachten."
+
+#: inc/SettingsPage.php:1341 inc/SettingsPage.php:1343
+msgid "Sync now"
+msgstr "Nu synchroniseren"
+
+#: inc/SettingsPage.php:1342
+msgid "Syncing…"
+msgstr "Aan het synchroniseren..."
+
+#: inc/SettingsPage.php:1350
+msgid "Flush plugin caches"
+msgstr "Plugincaches legen"
+
+#: inc/SettingsPage.php:1352
+msgid ""
+"Wipes every plugin-side API transient (page scores, manifest, validate, "
+"images). Use when the API has been updated and the 2–10 min cache is still "
+"showing old data."
+msgstr ""
+"Wist elke API-transient aan pluginzijde (paginascoren, manifest, valideren, "
+"afbeeldingen). Gebruik dit wanneer de API is bijgewerkt en de cache van 2–10 "
+"min nog oude gegevens toont."
+
+#: inc/SettingsPage.php:1360 inc/SettingsPage.php:1362
+msgid "Flush caches"
+msgstr "Caches legen"
+
+#: inc/SettingsPage.php:1361
+msgid "Flushing…"
+msgstr "Bezig met legen…"
+
+#: inc/SettingsPage.php:1372 inc/SettingsPage.php:1380
+#: inc/SettingsPage.php:1383
+msgid "Clear widget caches"
+msgstr "Widgetcaches wissen"
+
+#: inc/SettingsPage.php:1374
+msgid ""
+"Flush local browser storage and server response cache so the widget reloads "
+"fresh on the next page view."
+msgstr ""
+"Leeg lokale browseropslag en de serverrespons-cache zodat de widget bij de "
+"volgende paginaweergave opnieuw en vers wordt geladen."
+
+#: inc/SettingsPage.php:1381
+msgid "Clearing…"
+msgstr "Bezig met wissen…"
+
+#: inc/SettingsPage.php:1382
+msgid "Caches cleared"
+msgstr "Caches gewist"
+
+#: inc/SettingsPage.php:1393 inc/SettingsPage.php:1409
+msgid "Reset plugin data"
+msgstr "Plugingegevens resetten"
+
+#: inc/SettingsPage.php:1395
+msgid "Disconnect this site and clear local options. Cannot be undone."
+msgstr ""
+"Koppel deze site los en wis lokale opties. Kan niet ongedaan worden gemaakt."
+
+#: inc/SettingsPage.php:1401
+msgid ""
+"Use this if you are moving the plugin to a different account or starting "
+"over from the setup wizard. Uninstalling the plugin also removes these "
+"options automatically."
+msgstr ""
+"Gebruik dit als je de plugin naar een ander account verplaatst of opnieuw "
+"begint vanuit de installatiewizard. Het verwijderen van de plugin verwijdert "
+"deze opties ook automatisch."
+
+#: inc/SettingsPage.php:1421
+#, fuzzy
+#| msgid "Needs alt"
+msgid "Need help?"
+msgstr "Hulp nodig"
+
+#: inc/SettingsPage.php:1423
+msgid "Our team is here for you — get answers fast."
+msgstr "Ons team staat voor je klaar — krijg snel antwoord."
+
+#: inc/SettingsPage.php:1432
+msgid "Knowledge base"
+msgstr "Kennisbank"
+
+#: inc/SettingsPage.php:1444
+msgid "Legal & Trust:"
+msgstr "Juridisch & vertrouwen:"
+
+#: inc/SettingsPage.php:1447
+msgid "GDPR"
+msgstr "AVG"
+
+#: inc/SettingsPage.php:1448
+msgid "Cookies"
+msgstr "Cookies"
+
+#: inc/SettingsPage.php:1449
+msgid "Trust Center"
+msgstr "Vertrouwenscentrum"
+
+#: inc/SettingsPage.php:1450
+msgid "Partner Agreement"
+msgstr "Partnerovereenkomst"
+
+#: inc/SettingsPage.php:1721 inc/SettingsPage.php:1724
+msgid "Copied"
+msgstr "Gekopieerd"
+
+#: inc/SettingsPage.php:1725
+msgid "copied to clipboard"
+msgstr "gekopieerd naar het klembord"
+
+#: inc/SettingsPage.php:1730 inc/SettingsPage.php:1733
+msgid "Copy:"
+msgstr "Kopiëren:"
+
+#: inc/SettingsPage.php:1784
+msgid "Could not save. Try again."
+msgstr "Kon niet opslaan. Probeer het opnieuw."
+
+#: inc/SettingsPage.php:1791 inc/SettingsPage.php:1877
+msgid "Network error. Try again."
+msgstr "Netwerkfout. Probeer het opnieuw."
+
+#: inc/SettingsPage.php:1847
+msgid "Reset all plugin data? This disconnects this site and cannot be undone."
+msgstr ""
+"Alle plugingegevens resetten? Dit koppelt deze site los en kan niet ongedaan "
+"worden gemaakt."
+
+#: inc/SettingsPage.php:1852
+msgid "Resetting…"
+msgstr "Bezig met resetten…"
+
+#: inc/SettingsPage.php:1853
+msgid "Resetting plugin data"
+msgstr "Plugingegevens resetten"
+
+#: inc/SettingsPage.php:1863
+msgid "Plugin data cleared. Reloading…"
+msgstr "Plugingegevens gewist. Opnieuw laden…"
+
+#: inc/SettingsPage.php:1864
+msgid "Plugin data reset. Reloading."
+msgstr "Plugingegevens gereset. Opnieuw laden."
+
+#: inc/SettingsPage.php:1871
+msgid "Could not reset plugin data. Try again."
+msgstr "Kon plugingegevens niet resetten. Probeer het opnieuw."
+
+#: inc/SettingsPage.php:1908
+msgid "Settings saved"
+msgstr "Instellingen zijn opgeslagen"
+
+#: inc/SettingsPage.php:1922
+msgid "Premium Trial — 7 days free"
+msgstr "Premium-proefperiode — 7 dagen gratis"
+
+#: inc/SettingsPage.php:1940
+msgid "Legacy Premium"
+msgstr "Legacy Premium"
+
+#. translators: %s: tier name (e.g., "Enterprise")
+#: inc/SettingsPage.php:1954
+#, php-format
+msgid "%s account"
+msgstr "%s-account"
+
+#. translators: %s: monthly pageview limit (e.g. "10,000")
+#: inc/SettingsPage.php:1974
+#, php-format
+msgid "Up to %s pageviews per month"
+msgstr "Tot %s paginaweergaven per maand"
+
+#: inc/SettingsPage.php:1977
+msgid "Pageview cap based on your plan"
+msgstr "Limiet voor paginaweergaven op basis van je abonnement"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1980
+#, php-format
+msgid ""
+"Unlimited %s interactions — alt text and agentic fix proposals, no monthly "
+"cap"
+msgstr ""
+"Onbeperkte %s-interacties — alt-tekst en agentische fixvoorstellen, geen "
+"maandelijkse limiet"
+
+#: inc/SettingsPage.php:1987
+msgid "Unlimited pageviews and sites"
+msgstr "Onbeperkte paginaweergaven en sites"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1988
+#, php-format
+msgid "Human-in-the-loop agentic remediation powered by %s"
+msgstr "Agentische remediatie met menselijke controle, aangedreven door %s"
+
+#: inc/SettingsPage.php:1989
+msgid "Priority support and dedicated success manager"
+msgstr "Prioritaire ondersteuning en een dedicated success manager"
+
+#: inc/SettingsPage.php:1990
+msgid "Custom branding and white-label widget"
+msgstr "Aangepaste branding en white-label-widget"
+
+#: inc/SettingsPage.php:1991
+msgid "Single sign-on (SSO) and audit log export"
+msgstr "Single sign-on (SSO) en export van auditlog"
+
+#: inc/SettingsPage.php:1997
+msgid "Continuous site scans and accessibility scoring"
+msgstr "Doorlopende sitescans en toegankelijkheidsscore"
+
+#: inc/SettingsPage.php:1999
+msgid "Email support"
+msgstr "Support via e-mail"
+
+#: inc/SettingsPage.php:2003
+msgid "Full premium widget for 7 days"
+msgstr "Volledige premiumwidget gedurende 7 dagen"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2004
+#, php-format
+msgid "Try %s agents on your real site"
+msgstr "Probeer %s agents op je echte site"
+
+#: inc/SettingsPage.php:2005
+msgid "Cancel any time — no card hold"
+msgstr "Altijd opzegbaar — geen kaartgegevens vereist"
+
+#: inc/SettingsPage.php:2009
+msgid "Premium widget on the legacy plan"
+msgstr "Premiumwidget in het legacy-abonnement"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2010
+#, php-format
+msgid "Includes %s agent features"
+msgstr "Inclusief %s agentfuncties"
+
+#: inc/SettingsPage.php:2011
+msgid "Continuous accessibility scoring"
+msgstr "Doorlopende toegankelijkheidsscore"
+
+#: inc/SettingsPage.php:2016
+msgid "Accessibility widget on every page"
+msgstr "Toegankelijkheidswidget op elke pagina"
+
+#: inc/SettingsPage.php:2017
+msgid "Keyboard navigation and screen reader helpers"
+msgstr "Toetsenbordnavigatie en schermlezerhulpmiddelen"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2018
+#, php-format
+msgid "Upgrade for agentic remediation with %s"
+msgstr "Upgrade voor agentische remediatie met %s"
+
+#: inc/TierGate.php:26
+msgid "Approve, edit, and revert agentic fixes"
+msgstr "Agentische fixes goedkeuren, bewerken en terugdraaien"
+
+#: inc/TierGate.php:27
+msgid "Image Descriptions"
+msgstr "Afbeeldingsbeschrijvingen"
+
+#: inc/TierGate.php:28
+msgid "Reports & Statement deep-links"
+msgstr "Deep-links naar rapporten en overzichten"
+
+#: inc/TierGate.php:29
+msgid "Per-page accessibility breakdown in editor"
+msgstr "Toegankelijkheidsuitsplitsing per pagina in de editor"
+
+#: inc/TierGate.php:30
+msgid "Notification center"
+msgstr "Meldingscentrum"
+
+#: inc/TierGate.php:31
+msgid "CSV export of fixes"
+msgstr "CSV-export van fixes"
+
+#: inc/TierGate.php:32
+msgid "PDF report export"
+msgstr "PDF-rapportexport"
+
+#: inc/TierGate.php:33
+msgid "White-label branding"
+msgstr "White-label branding"
+
+#: inc/TierGate.php:34
+msgid "Weekly automatic scans"
+msgstr "Wekelijkse automatische scans"
+
+#: inc/TierGate.php:35
+msgid "Page change detection"
+msgstr "Detectie van paginawijzigingen"
+
+#: inc/TierGate.php:36
+msgid "Accommodation request widget"
+msgstr "Widget voor accommodatieverzoeken"
+
+#. translators: %s: feature label
+#: inc/TierGate.php:84
+#, php-format
+msgid "%s is available on paid plans"
+msgstr "%s is beschikbaar op betaalde abonnementen"
+
+#: inc/TierGate.php:87
+msgid ""
+"Upgrade to unlock this feature plus everything else included in the "
+"AllAccessible AI suite."
+msgstr ""
+"Upgrade om deze functie te ontgrendelen, plus alles wat verder is inbegrepen "
+"in de AllAccessible AI-suite."
+
+#: inc/TierGate.php:98
+msgid "Upgrade required"
+msgstr "Upgrade vereist"
+
+#: inc/UsageDashboard.php:31
+msgid "Usage overview"
+msgstr "Gebruiksoverzicht"
+
+#: inc/UsageDashboard.php:34
+msgid "Usage this month"
+msgstr "Gebruik deze maand"
+
+#: inc/UsageDashboard.php:36
+msgid "Tracks pageviews and AllAccessible AI activity against your plan."
+msgstr ""
+"Houdt paginaweergaven en AllAccessible AI-activiteit bij ten opzichte van je "
+"abonnement."
+
+#: inc/UsageDashboard.php:55
+msgid "No usage to show yet"
+msgstr "Nog geen gebruik om weer te geven"
+
+#: inc/UsageDashboard.php:57
+msgid "Usage appears here once your widget starts serving pageviews."
+msgstr ""
+"Het gebruik verschijnt hier zodra je widget paginaweergaven begint te "
+"bedienen."
+
+#: inc/UsageDashboard.php:61
+msgid "Preview your widget"
+msgstr "Bekijk een voorbeeld van je widget"
+
+#: inc/UsageDashboard.php:70
+msgid "Active visits served by your widget this month."
+msgstr "Actieve bezoeken die deze maand door je widget zijn bediend."
+
+#: inc/UsageDashboard.php:74
+msgid "AI image alt text"
+msgstr "AI-alt-tekst voor afbeeldingen"
+
+#: inc/UsageDashboard.php:75
+msgid "Alt text generated by AllAccessible AI for images on your site."
+msgstr ""
+"Alt-tekst gegenereerd door AllAccessible AI voor afbeeldingen op je site."
+
+#: inc/UsageDashboard.php:79
+msgid "Accessibility audits"
+msgstr "Toegankelijkheidsaudits"
+
+#: inc/UsageDashboard.php:80
+msgid "Automated scans run by AllAccessible agents."
+msgstr "Geautomatiseerde scans uitgevoerd door AllAccessible-agents."
+
+#: inc/UsageDashboard.php:84
+msgid "Compliance reports"
+msgstr "Nalevingsrapporten"
+
+#: inc/UsageDashboard.php:85
+msgid "VPAT and accessibility statement PDFs generated."
+msgstr "VPAT- en toegankelijkheidsverklaring-pdf's gegenereerd."
+
+#: inc/UsageDashboard.php:133
+#, php-format
+msgid "%1$s usage: %2$d percent"
+msgstr "%1$s gebruik: %2$d procent"
+
+#: inc/UsageDashboard.php:150
+msgid "Upgrade to unlock"
+msgstr "Upgrade om te ontgrendelen"
+
+#: inc/UsageDashboard.php:175
+#, php-format
+msgid "%s percent used"
+msgstr "%s procent gebruikt"
+
+#: inc/UsageDashboard.php:183
+msgid "Limit reached — widget temporarily on free features."
+msgstr "Limiet bereikt — widget tijdelijk op gratis functies."
+
+#. translators: %s: count of remaining units this month
+#: inc/UsageDashboard.php:188
+#, php-format
+msgid "%s remaining this month"
+msgstr "%s resterend deze maand"
+
+#: inc/UsageDashboard.php:195
+msgid "Manage"
+msgstr "Beheren"
+
+#: inc/UsageDashboard.php:203
+msgid "Upgrade your plan"
+msgstr "Upgrade je abonnement"
+
+#: inc/UsageDashboard.php:209
+msgid "Manage in dashboard"
+msgstr "Beheren in dashboard"
+
+#: inc/UsageDashboard.php:220
+msgid "No metered features on your plan yet"
+msgstr "Nog geen gemeten functies in je abonnement"
+
+#: inc/UsageDashboard.php:221
+msgid "Usage will appear here once your widget starts serving pages."
+msgstr ""
+"Het gebruik verschijnt hier zodra je widget pagina's begint te bedienen."
+
+#: inc/UsageDashboard.php:230
+msgid "Need more pageviews or AllAccessible AI capacity?"
+msgstr "Meer pageviews of AllAccessible AI-capaciteit nodig?"
+
+#: inc/WidgetCustomizer.php:104
+msgid "Quick Widget Settings"
+msgstr "Snelle widgetinstellingen"
+
+#: inc/WidgetCustomizer.php:105
+msgid "Customize your widget appearance"
+msgstr "Pas het uiterlijk van je widget aan"
+
+#: inc/WidgetCustomizer.php:109
+msgid "Advanced Settings"
+msgstr "Geavanceerde instellingen"
+
+#: inc/WidgetCustomizer.php:122
+msgid "Pro Tip:"
+msgstr "Pro-tip:"
+
+#: inc/WidgetCustomizer.php:123
+msgid ""
+"For more options including accessibility profiles, custom CSS, and advanced "
+"features, visit"
+msgstr ""
+"Voor meer opties, waaronder toegankelijkheidsprofielen, aangepaste CSS en "
+"geavanceerde functies, ga naar"
+
+#: inc/WidgetCustomizer.php:124
+msgid "Advanced Widget Settings"
+msgstr "Geavanceerde widgetinstellingen"
+
+#: inc/WidgetCustomizer.php:142
+msgid "Widget Color"
+msgstr "Widget kleur"
+
+#: inc/WidgetCustomizer.php:147
+msgid "Choose the color for your accessibility widget button."
+msgstr "Kies de kleur voor de knop van je toegankelijkheidswidget."
+
+#: inc/WidgetCustomizer.php:150
+msgid "Widget Position"
+msgstr "Widget positie"
+
+#: inc/WidgetCustomizer.php:152
 msgid "Bottom Right"
 msgstr "Rechtsonder"
 
-#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
-msgid "Middle Right"
-msgstr "Midden rechts"
-
-#: inc/AllAccessibleSettings.php:207
-msgid "Bottom Center"
-msgstr "Midden Onder"
-
-#: inc/AllAccessibleSettings.php:208
+#: inc/WidgetCustomizer.php:153
 msgid "Bottom Left"
 msgstr "Linksonder"
 
-#: inc/AllAccessibleSettings.php:209
+#: inc/WidgetCustomizer.php:154
+msgid "Bottom Center"
+msgstr "Midden Onder"
+
+#: inc/WidgetCustomizer.php:155
+msgid "Middle Right"
+msgstr "Midden rechts"
+
+#: inc/WidgetCustomizer.php:156
 msgid "Middle Left"
 msgstr "Linksmidden"
 
-#: inc/AllAccessibleSettings.php:210
+#: inc/WidgetCustomizer.php:157
+msgid "Top Right"
+msgstr "Rechtsboven"
+
+#: inc/WidgetCustomizer.php:158
 msgid "Top Left"
 msgstr "Linksboven"
 
-#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
-msgid "Choose Widget Shape"
-msgstr "Widgetvorm kiezen"
+#: inc/WidgetCustomizer.php:160
+msgid "Where the widget button appears on your site."
+msgstr "Waar de widgetknop op je site wordt weergegeven."
 
-#: inc/AllAccessibleSettings.php:220
+#: inc/WidgetCustomizer.php:167
+msgid "Widget Size"
+msgstr "Widgetgrootte"
+
+#: inc/WidgetCustomizer.php:169
+msgid "Small"
+msgstr "Klein"
+
+#: inc/WidgetCustomizer.php:170
+msgid "Medium (Default)"
+msgstr "Gemiddeld (standaard)"
+
+#: inc/WidgetCustomizer.php:171
+msgid "Large"
+msgstr "Groot"
+
+#: inc/WidgetCustomizer.php:173
+msgid "Size of the widget button in pixels."
+msgstr "Grootte van de widgetknop in pixels."
+
+#: inc/WidgetCustomizer.php:176
+msgid "Widget Icon"
+msgstr "Widgetpictogram"
+
+#: inc/WidgetCustomizer.php:179
+msgid "Default"
+msgstr "Standaard"
+
+#: inc/WidgetCustomizer.php:180
+msgid "Accessibility Person"
+msgstr "Toegankelijkheidspersoon"
+
+#: inc/WidgetCustomizer.php:181
+msgid "Accessibility Settings"
+msgstr "Toegankelijkheidsinstellingen"
+
+#: inc/WidgetCustomizer.php:182
+msgid "Adjust"
+msgstr "Aanpassen"
+
+#: inc/WidgetCustomizer.php:183
+msgid "Wheelchair 1"
+msgstr "Rolstoel 1"
+
+#: inc/WidgetCustomizer.php:184
+msgid "Heart"
+msgstr "Hart"
+
+#: inc/WidgetCustomizer.php:185
+msgid "Braille"
+msgstr "Brailleschrift"
+
+#: inc/WidgetCustomizer.php:186
+msgid "Blind/Cane"
+msgstr "Blind/stok"
+
+#: inc/WidgetCustomizer.php:187
+msgid "Eye"
+msgstr "Oog"
+
+#: inc/WidgetCustomizer.php:188
+msgid "Globe"
+msgstr "Wereldbol"
+
+#: inc/WidgetCustomizer.php:189
+msgid "Universal Access"
+msgstr "Universele Toegang"
+
+#: inc/WidgetCustomizer.php:191
+msgid "Walking Cane"
+msgstr "Wandelstok"
+
+#: inc/WidgetCustomizer.php:195
+msgid "Icon displayed in the widget button."
+msgstr "Pictogram dat wordt weergegeven in de widgetknop."
+
+#: inc/WidgetCustomizer.php:202
+msgid "Widget Shape"
+msgstr "Widgetvorm"
+
+#: inc/WidgetCustomizer.php:204
 msgid "Circle"
 msgstr "Cirkel"
 
-#: inc/AllAccessibleSettings.php:221
+#: inc/WidgetCustomizer.php:205
 msgid "Square"
 msgstr "Vierkant"
 
-#: inc/AllAccessibleSettings.php:234
-msgid "Hide AllAccessible Branding"
-msgstr "Alles AllAccessible branding"
+#: inc/WidgetCustomizer.php:207
+msgid "Shape of the widget button."
+msgstr "Vorm van de widgetknop."
 
-#: inc/AllAccessibleSettings.php:235
-msgid "Remove Branding"
-msgstr "Branding verwijderen"
+#: inc/WidgetCustomizer.php:212
+msgid "Run without the bubble"
+msgstr "Uitvoeren zonder de bubbel"
 
-#: inc/AllAccessibleSettings.php:237
-msgid "Branding Visible"
-msgstr "Branding zichtbaar"
+#: inc/WidgetCustomizer.php:216
+msgid "Hide widget, keep agentic AI remediation running."
+msgstr "Widget verbergen, agentische AI-remediatie blijft actief."
 
-#: inc/AllAccessibleSettings.php:238
-msgid "Branding Removed"
-msgstr "Branding verwijderd"
-
-#: inc/AllAccessibleSettings.php:241
+#: inc/WidgetCustomizer.php:218
 msgid ""
-"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
-"and logo from the widget."
+"Visitors won't see the accessibility toolbar. AllAccessible agents continue "
+"scanning and applying approved fixes in the background."
 msgstr ""
-"Opmerking: Het verbergen van de branding verwijdert de \"Powered by "
-"AllAccessible\" tekst en het logo van de widget."
+"Bezoekers zien de toegankelijkheidstoolbar niet. AllAccessible-agents "
+"blijven op de achtergrond scannen en goedgekeurde fixes toepassen."
 
-#: inc/AllAccessibleSettings.php:246
+#: inc/WidgetCustomizer.php:230
 msgid "Save Settings"
 msgstr "Instellingen Opslaan"
 
-#: inc/AllAccessibleSettings.php:252
-msgid "You may need to reload this page if your widget options are not visible"
+#: inc/WidgetCustomizer.php:234
+msgid "Having trouble viewing updates?"
+msgstr "Problemen met het bekijken van updates?"
+
+#: inc/WidgetCustomizer.php:238
+msgid "Clear all caches: browser, cookies, and server (full reset)"
+msgstr "Alle caches wissen: browser, cookies en server (volledige reset)"
+
+#: inc/WidgetCustomizer.php:239
+msgid "Clear All Caches"
+msgstr "Alle caches wissen"
+
+#: inc/WidgetCustomizer.php:249
+msgid "Saving..."
+msgstr "Opslaan…"
+
+#: inc/WidgetCustomizer.php:253
+msgid "Settings saved!"
+msgstr "Instellingen opgeslagen!"
+
+#: inc/WidgetCustomizer.php:259
+msgid "Cache cleared! Refresh your site to see changes."
+msgstr "Cache gewist! Vernieuw je site om de wijzigingen te zien."
+
+#: inc/WidgetCustomizer.php:267
+msgid "Clearing all caches..."
+msgstr "Alle caches worden gewist..."
+
+#: inc/WidgetCustomizer.php:271
+msgid "All caches cleared! Refresh your site to see changes."
+msgstr "Alle caches gewist! Vernieuw je site om de wijzigingen te zien."
+
+#: inc/WidgetCustomizer.php:284
+msgid "Live Preview"
+msgstr "Live Voorvertoning"
+
+#: inc/WidgetCustomizer.php:297
+msgid "See how your widget will look on your site."
+msgstr "Bekijk hoe je widget er op je site uit zal zien."
+
+#: inc/WidgetCustomizer.php:576
+msgid "Failed to save settings. Please try again."
+msgstr "Instellingen opslaan mislukt. Probeer het opnieuw."
+
+#: inc/WidgetCustomizer.php:623
+msgid "Error clearing cache. Please check browser console."
+msgstr "Fout bij het wissen van de cache. Controleer de browserconsole."
+
+#: inc/WidgetCustomizer.php:677
+msgid "Server cache invalidation failed. Browser cache was cleared."
+msgstr "Ongeldig maken van de servercache mislukt. De browsercache is gewist."
+
+#: inc/WidgetCustomizer.php:699
+msgid "Error clearing caches. Please check browser console."
+msgstr "Fout bij het wissen van de caches. Controleer de browserconsole."
+
+#: inc/api/ApiClient.php:82
+msgid "Account ID not found"
+msgstr "Account-ID niet gevonden"
+
+#: inc/api/ApiClient.php:125
+msgid "Invalid API response"
+msgstr "Ongeldige API-respons"
+
+#: inc/api/ApiClient.php:371
+msgid "A page URL is required to trigger a scan."
+msgstr "Een pagina-URL is vereist om een scan te starten."
+
+#: inc/api/ApiClient.php:473
+msgid "post_id or page_url required"
+msgstr "post_id of page_url vereist"
+
+#: inc/api/ApiClient.php:568
+msgid "post_id and page_url required"
+msgstr "post_id en page_url vereist"
+
+#: inc/api/ApiClient.php:589
+msgid "pairs required"
+msgstr "paren vereist"
+
+#: inc/api/ApiClient.php:592
+msgid "batch limited to 100 pairs"
+msgstr "batch beperkt tot 100 paren"
+
+#: inc/api/ApiClient.php:641 inc/api/ApiClient.php:700
+#: inc/api/ApiClient.php:967
+msgid "Account not configured"
+msgstr "Account niet geconfigureerd"
+
+#: inc/api/ApiClient.php:753 inc/api/ApiClient.php:768
+#: inc/api/ApiClient.php:788
+msgid "Invalid manifest ID"
+msgstr "Ongeldige manifest-ID"
+
+#: inc/api/ApiClient.php:814
+msgid "Invalid manifest or fix index"
+msgstr "Ongeldig manifest of ongeldige fix-index"
+
+#: inc/api/ApiClient.php:818
+msgid "Value is required"
+msgstr "Waarde is vereist"
+
+#: inc/api/ApiClient.php:821
+msgid "Value too long (max 500 characters)"
+msgstr "Waarde te lang (max. 500 tekens)"
+
+#: inc/api/ApiClient.php:841
+msgid "Invalid site ID"
+msgstr "Ongeldige site ID"
+
+#: inc/api/ApiClient.php:845
+msgid "No manifest IDs supplied"
+msgstr "Geen manifest-ID's opgegeven"
+
+#: inc/api/ApiClient.php:988
+msgid "Server returned invalid plugin secret payload"
+msgstr "Server heeft een ongeldige payload voor het plugingeheim geretourneerd"
+
+#: inc/api/ApiClient.php:1017
+msgid ""
+"No site associated with this account yet. Visit your WordPress homepage once "
+"to register this site, then return here."
 msgstr ""
-"Mogelijk moet u deze pagina opnieuw laden als uw widgetopties niet zichtbaar "
-"zijn"
+"Er is nog geen site aan dit account gekoppeld. Bezoek je WordPress-homepage "
+"één keer om deze site te registreren en kom daarna hier terug."
 
-#: inc/AllAccessibleSettings.php:259
-msgid "Version"
-msgstr "Versie"
+#: inc/api/ApiClient.php:1151
+msgid "Invalid scan job ID"
+msgstr "Ongeldige scanjob-ID"
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Need Help"
-msgstr "Hulp nodig"
+#: inc/api/ApiClient.php:1170
+msgid "Plugin secret unavailable. Re-validate license to refresh credentials."
+msgstr ""
+"Plugingeheim niet beschikbaar. Valideer de licentie opnieuw om de "
+"inloggegevens te vernieuwen."
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Contact Us"
-msgstr "Neem contact met ons op"
+#. translators: %s: error message
+#: inc/api/ApiClient.php:1226
+#, php-format
+msgid "API request failed: %s"
+msgstr "API-aanvraag mislukt: %s"
 
-#. Plugin Name of the plugin/theme
-msgid "AllAccessible"
-msgstr "AllAccessible"
+#: inc/api/ApiClient.php:1249
+msgid "Failed to decode API response"
+msgstr "Kan API-respons niet decoderen"
 
 #. Plugin URI of the plugin/theme
 msgid "https://www.allaccessible.org/platform/wordpress/"
@@ -392,13 +4009,14 @@ msgstr "https://www.allaccessible.org/platform/wordpress/"
 msgid ""
 "Unlock true digital accessibility with AllAccessible - a comprehensive "
 "WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
-"your users with a fully customizable accessibility widget, and enhance their "
-"experience with our premium AI-powered features."
+"your users with a fully customizable accessibility widget, plus agentic AI "
+"remediation that auto-suggests fixes for your team to approve."
 msgstr ""
 "Ontgrendel echte digitale toegankelijkheid met AllAccessible - een "
-"uitgebreide WordPress-plugin die uw website naar WCAG/ADA-naleving leidt. "
-"Geef uw gebruikers een volledig aanpasbare toegankelijkheidswidget en "
-"verbeter hun ervaring met onze hoogwaardige AI-functies."
+"uitgebreide WordPress-plugin die je website richting WCAG/ADA-naleving "
+"stuurt. Geef je gebruikers meer mogelijkheden met een volledig aanpasbare "
+"toegankelijkheidswidget, plus agentische AI-remediatie die automatisch "
+"verbeteringen voorstelt die je team kan goedkeuren."
 
 #. Author of the plugin/theme
 msgid "AllAccessible Team"
@@ -408,71 +4026,509 @@ msgstr "AllAccessible Team"
 msgid "https://www.allaccessible.org/"
 msgstr "https://www.allaccessible.org/"
 
-#~ msgid "Let's make this WordPress Site Accessible"
-#~ msgstr "Laten we deze WordPress-site toegankelijk maken"
+#~ msgid ""
+#~ "Could not start scan — plugin credentials not yet provisioned. Visit "
+#~ "Settings → Re-verify to refresh, then retry."
+#~ msgstr ""
+#~ "Kon scan niet starten — plugin-inloggegevens zijn nog niet ingericht. Ga "
+#~ "naar Instellingen → Opnieuw verifiëren om te vernieuwen en probeer het "
+#~ "daarna opnieuw."
 
-#~ msgid "Free Version"
-#~ msgstr "Gratis Versie"
+#~ msgid "AI alt text · this month"
+#~ msgstr "AI-alt-tekst · deze maand"
+
+#~ msgid "Pages crawled"
+#~ msgstr "Pagina's gecrawld"
 
 #, php-format
-#~ msgid "Let's make this WordPress Site %s"
-#~ msgstr "Laten we deze WordPress Site maken %s"
-
-#~ msgid "AllAccessible Accessibility Plugin"
-#~ msgstr "AllAccessible Toegankelijkheid Plugin"
-
-#~ msgid "Connect"
-#~ msgstr "Verbinden"
+#~ msgid "Grouped by rule. %1$s AI-resolvable · %2$s need manual review."
+#~ msgstr ""
+#~ "Gegroepeerd op regel. %1$s door AI op te lossen · %2$s vereisen "
+#~ "handmatige beoordeling."
 
 #, php-format
+#~ msgid "Agentic alt text by %1$s — up to %2$s images/month"
+#~ msgstr "Agentische alt-tekst door %1$s — tot %2$s afbeeldingen/maand"
+
+#, php-format
+#~ msgid "Agentic alt text and label generation by %s"
+#~ msgstr "Agentische alt-tekst en labelgeneratie door %s"
+
+#~ msgid "Scan started — watching for results…"
+#~ msgstr "Scan gestart — resultaten worden gevolgd…"
+
+#~ msgid "Scan failed. Try again from the dashboard."
+#~ msgstr "Scan mislukt. Probeer het opnieuw vanaf het dashboard."
+
+#~ msgid "Enjoying AllAccessible?"
+#~ msgstr "Geniet je van AllAccessible?"
+
+#~ msgid "No data yet"
+#~ msgstr "Nog geen gegevens"
+
+#~ msgid "Limit reached"
+#~ msgstr "Limiet bereikt"
+
+#~ msgid "Approaching limit"
+#~ msgstr "Nadert de limiet"
+
+#~ msgid "On track"
+#~ msgstr "Op schema"
+
+#~ msgid "Healthy"
+#~ msgstr "Gezond"
+
+#~ msgid "Site overview at a glance"
+#~ msgstr "Site-overzicht in één oogopslag"
+
+#~ msgid "Accessibility Score: not yet measured"
+#~ msgstr "Toegankelijkheidsscore: nog niet gemeten"
+
+#, php-format
+#~ msgid "%1$s of %2$s pages audited"
+#~ msgstr "%1$s van %2$s pagina's gecontroleerd"
+
+#~ msgid "Pages audited: none yet"
+#~ msgstr "Gecontroleerde pagina's: nog geen"
+
+#~ msgid "Across your site"
+#~ msgstr "Op je hele site"
+
+#, php-format
+#~ msgid "%s fix awaiting review"
+#~ msgid_plural "%s fixes awaiting review"
+#~ msgstr[0] "%s fix wacht op beoordeling"
+#~ msgstr[1] "%s fixes wachten op beoordeling"
+
+#~ msgid "Pending Fixes"
+#~ msgstr "Openstaande fixes"
+
+#, php-format
+#~ msgid "%s active on your site"
+#~ msgstr "%s actief op je site"
+
+#~ msgid "Plan usage breakdown"
+#~ msgstr "Overzicht van planverbruik"
+
+#~ msgid "Site Stats"
+#~ msgstr "Statistieken van de site"
+
+#, php-format
+#~ msgid "%s w/ AI alt"
+#~ msgstr "%s met AI-alt"
+
+#, php-format
+#~ msgid "%1$s — %2$d%% used"
+#~ msgstr "%1$s — %2$d%% gebruikt"
+
+#~ msgid "Limit reached — upgrade capacity"
+#~ msgstr "Limiet bereikt — upgrade capaciteit"
+
+#~ msgid "Total images"
+#~ msgstr "Totaal aantal afbeeldingen"
+
+#~ msgid "across all scanned pages"
+#~ msgstr "over alle gescande pagina's"
+
+#, php-format
+#~ msgid "%d%% of total"
+#~ msgstr "%d%% of totaal"
+
+#~ msgid "Authored by AllAccessible AI"
+#~ msgstr "Geschreven door AllAccessible AI"
+
+#~ msgid "Get this site ready for everyone"
+#~ msgstr "Maak deze site klaar voor iedereen"
+
+#~ msgid "Create a new AllAccessible account"
+#~ msgstr "Maak een nieuw AllAccessible-account aan"
+
+#~ msgid "Recommended"
+#~ msgstr "Aanbevolen"
+
+#~ msgid "Create a new account"
+#~ msgstr "Maak een nieuw account aan"
+
 #~ msgid ""
-#~ "Connect your account with your email in the form below. If you do not "
-#~ "have an existing account, we will create a free 7 day trial for %s."
+#~ "Spin up a fresh AllAccessible account with the dashboard, reporting, and "
+#~ "the full agentic AI toolkit."
 #~ msgstr ""
-#~ "Verbind uw account met uw e-mail in het onderstaande formulier. Als u "
-#~ "geen bestaande account heeft, maken we een gratis proefperiode van 7 "
-#~ "dagen aan voor %s."
+#~ "Maak een nieuw AllAccessible-account aan met het dashboard, rapportage en "
+#~ "de volledige agentische AI-toolkit."
+
+#~ msgid "Existing customer"
+#~ msgstr "Bestaande klant"
+
+#~ msgid "Link an existing account"
+#~ msgstr "Koppel een bestaand account"
+
+#~ msgid "Link account"
+#~ msgstr "Link account"
+
+#~ msgid "Just the widget"
+#~ msgstr "Alleen de widget"
 
 #~ msgid ""
-#~ "Are you enjoying the AllAccessible Accessibility Plugin for WordPress?"
-#~ msgstr "Geniet je van de AllAccessible Accessibility Plugin voor WordPress?"
-
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgid "No"
-#~ msgstr "Nee"
-
-#~ msgid "Dismiss this notice"
-#~ msgstr "Negeer deze melding"
-
-#~ msgid "Would you like to provide more feedback about our plugin?"
-#~ msgstr "Wilt u meer feedback geven over onze plugin?"
-
-#~ msgid "Yes, I would like to provide feedback"
-#~ msgstr "Ja, ik wil graag feedback geven"
-
-#~ msgid ""
-#~ "Glad to hear you are enjoying it. Would you consider leaving a positive "
-#~ "review?"
+#~ "The free accessibility widget keeps running on this site. Finish setup "
+#~ "any time to unlock the dashboard and AI fixes."
 #~ msgstr ""
-#~ "Blij om te horen dat je ervan geniet. Zou je overwegen om een positieve "
-#~ "review achter te laten?"
+#~ "De gratis toegankelijkheidswidget blijft op deze site actief. Rond de "
+#~ "installatie op elk moment af om het dashboard en AI-oplossingen te "
+#~ "ontgrendelen."
+
+#~ msgid "Skip setup"
+#~ msgstr "Sla setup ov"
+
+#~ msgid "Choose a plan"
+#~ msgstr "Kies een abonnement"
 
 #~ msgid ""
-#~ "It really helps to support the plugin and help others to discover it too!"
+#~ "Start free and upgrade later, or try the full feature set free for seven "
+#~ "days. No credit card required either way."
 #~ msgstr ""
-#~ "Het helpt echt om de plug-in te ondersteunen en anderen te helpen het ook "
-#~ "te ontdekken!"
+#~ "Begin gratis en upgrade later, of probeer het volledige functieset zeven "
+#~ "dagen gratis. In beide gevallen is geen creditcard vereist."
 
-#~ msgid "Yes, I will write a positive review."
-#~ msgstr "Ja, ik zal een positieve recensie schrijven."
+#~ msgid "month"
+#~ msgstr "maand"
 
-#~ msgid "Let's make this WordPress Site AllAccessible"
-#~ msgstr "Laten we deze WordPress-site allaccessible maken"
+#~ msgid "Accessibility widget"
+#~ msgstr "Toegankelijkheidswidget"
 
-#~ msgid "is connected to"
-#~ msgstr "is verbonden met"
+#~ msgid "Color and contrast controls"
+#~ msgstr "Kleur- en contrastbediening"
 
-#~ msgid "with account ID"
-#~ msgstr "met account-ID"
+#~ msgid "Choose Free"
+#~ msgstr "Kies Gratis"
+
+#~ msgid "Premium trial"
+#~ msgstr "Premium-proefperiode"
+
+#~ msgid "Everything in Free"
+#~ msgstr "Alles in Gratis"
+
+#~ msgid "AI"
+#~ msgstr "AI"
+
+#~ msgid "Human-in-the-loop agentic AI remediation"
+#~ msgstr "Human-in-the-loop agentische AI-remediatie"
+
+#~ msgid "Automatic alt text from AllAccessible agents"
+#~ msgstr "Automatische alt-tekst van AllAccessible-agents"
+
+#~ msgid "WCAG and ADA audits"
+#~ msgstr "WCAG- en ADA-audits"
+
+#~ msgid "Widget customization"
+#~ msgstr "Widgetaanpassing"
+
+#~ msgid "Cancel any time"
+#~ msgstr "Altijd opzegbaar"
+
+#~ msgid "Start trial"
+#~ msgstr "Start proefversie"
+
+#~ msgid "Agentic AI handles the heavy lifting."
+#~ msgstr "Agentische AI doet het zware werk."
+
+#~ msgid ""
+#~ "AllAccessible agents draft alt text, propose code fixes, and suggest "
+#~ "remediations. Your team reviews and approves before anything ships."
+#~ msgstr ""
+#~ "AllAccessible-agents stellen alt-tekst op, doen voorstellen voor "
+#~ "codefixes en suggereren remediaties. Je team beoordeelt en keurt alles "
+#~ "goed voordat er iets live gaat."
+
+#~ msgid "Back"
+#~ msgstr "Terug"
+
+#~ msgid "I already have an account"
+#~ msgstr "Ik heb al een account"
+
+#~ msgid "Step 3 of 4"
+#~ msgstr "Stap 3 van 4"
+
+#~ msgid "Create your account"
+#~ msgstr "Account aanmaken"
+
+#~ msgid "We use this to provision your account and send setup confirmations."
+#~ msgstr ""
+#~ "We gebruiken dit om je account aan te maken en instelbevestigingen te "
+#~ "sturen."
+
+#~ msgid "Create account"
+#~ msgstr "Account aanmaken"
+
+#~ msgid "Free forever plan"
+#~ msgstr "Altijd gratis abonnement"
+
+#~ msgid "No credit card. Upgrade any time."
+#~ msgstr "Geen creditcard. Upgrade op elk moment."
+
+#~ msgid "Includes the accessibility widget and core controls."
+#~ msgstr "Inclusief de toegankelijkheidswidget en kernbedieningselementen."
+
+#~ msgid "Up to 10k pageviews / month covered."
+#~ msgstr "Tot 10k pageviews / maand inbegrepen."
+
+#~ msgid "Seven-day premium trial"
+#~ msgstr "Zevendaagse premium proefperiode"
+
+#~ msgid "No credit card. Cancel any time."
+#~ msgstr "Geen creditcard. Altijd opzegbaar."
+
+#~ msgid "Full access to agentic AI remediation."
+#~ msgstr "Volledige toegang tot agentische AI-remediatie."
+
+#~ msgid "Continuous audits + per-page scoring."
+#~ msgstr "Doorlopende audits + scoring per pagina."
+
+#~ msgid "Widget customization, Image AI, VPAT exports."
+#~ msgstr "Widgetaanpassing, Image AI, VPAT-exporten."
+
+#~ msgid "We never share your email."
+#~ msgstr "We delen je e-mailadres nooit."
+
+#~ msgid "Link your account"
+#~ msgstr "Koppel je account"
+
+#~ msgid ""
+#~ "Enter the email associated with your AllAccessible account and we will "
+#~ "connect this site to it."
+#~ msgstr ""
+#~ "Voer het e-mailadres in dat aan je AllAccessible-account is gekoppeld en "
+#~ "we koppelen deze site eraan."
+
+#~ msgid "Use the email tied to your AllAccessible login."
+#~ msgstr ""
+#~ "Gebruik het e-mailadres dat aan je AllAccessible-login is gekoppeld."
+
+#~ msgid "Linking your account..."
+#~ msgstr "Je account koppelen..."
+
+#~ msgid "What happens next"
+#~ msgstr "Wat er nadien gebeurt"
+
+#~ msgid "This WordPress site is added to your existing account."
+#~ msgstr "Deze WordPress-site is toegevoegd aan je bestaande account."
+
+#~ msgid "Your current plan and settings stay in place."
+#~ msgstr "Je huidige abonnement en instellingen blijven behouden."
+
+#~ msgid "The widget activates with your saved configuration."
+#~ msgstr "De widget wordt geactiveerd met je opgeslagen configuratie."
+
+#~ msgid "Step 4 of 4"
+#~ msgstr "Stap 4 van 4"
+
+#~ msgid "We found your sitemap"
+#~ msgstr "We hebben je sitemap gevonden"
+
+#~ msgid "Start free forever"
+#~ msgstr "Begin gratis, voor altijd"
+
+#~ msgid "Activate free account"
+#~ msgstr "Gratis account activeren"
+
+#~ msgid "Start your seven-day trial"
+#~ msgstr "Start je proefperiode van zeven dagen"
+
+#~ msgid "Activate free trial"
+#~ msgstr "Gratis proefperiode activeren"
+
+#~ msgid "Please fill in all required fields."
+#~ msgstr "Vul de verplichte velden in."
+
+#~ msgid ""
+#~ "We could not find an account with that email. Please check and try again."
+#~ msgstr ""
+#~ "We konden geen account vinden met dat e-mailadres. Controleer het en "
+#~ "probeer het opnieuw."
+
+#~ msgid "Generate fixes now"
+#~ msgstr "Nu fixes genereren"
+
+#~ msgid "Open in app"
+#~ msgstr "Openen in app"
+
+#~ msgid "Submit your sitemap"
+#~ msgstr "Dien je sitemap in"
+
+#~ msgid ""
+#~ "Your sitemap tells AllAccessible which pages to check. Once submitted, "
+#~ "scans run automatically based on your plan."
+#~ msgstr ""
+#~ "Je sitemap vertelt AllAccessible welke pagina's gecontroleerd moeten "
+#~ "worden. Na het indienen worden scans automatisch uitgevoerd op basis van "
+#~ "je abonnement."
+
+#~ msgid "Submit sitemap"
+#~ msgstr "Sitemap indienen"
+
+#~ msgid "Update sitemap"
+#~ msgstr "Sitemap bijwerken"
+
+#~ msgid ""
+#~ "No sitemap detected on this site. Install an SEO plugin (Yoast, RankMath, "
+#~ "All in One SEO) or enable the WordPress core sitemap, then refresh this "
+#~ "page."
+#~ msgstr ""
+#~ "Geen sitemap gedetecteerd op deze site. Installeer een SEO-plugin (Yoast, "
+#~ "RankMath, All in One SEO) of schakel de WordPress-coresitemap in en "
+#~ "vernieuw daarna deze pagina."
+
+#~ msgid "Sitemap URL"
+#~ msgstr "Sitemap-URL"
+
+#, php-format
+#~ msgid "%d candidate found"
+#~ msgid_plural "%d candidates found"
+#~ msgstr[0] "%d kandidaat gevonden"
+#~ msgstr[1] "%d kandidaten gevonden"
+
+#~ msgid "pages scanned. Agentic Fixes ready to review."
+#~ msgstr "pagina's gescand. Agentic Fixes klaar om te beoordelen."
+
+#~ msgid "Pick a sitemap URL first."
+#~ msgstr "Kies eerst een sitemap-URL."
+
+#~ msgid "Yoast SEO"
+#~ msgstr "Yoast SEO"
+
+#~ msgid "Rank Math"
+#~ msgstr "Rank Math"
+
+#~ msgid "All in One SEO"
+#~ msgstr "All in One SEO"
+
+#~ msgid "SEOPress"
+#~ msgstr "Webnemer SEO"
+
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
+
+#~ msgid "—"
+#~ msgstr "—"
+
+#~ msgid "Accessibility resolution overview"
+#~ msgstr "Overzicht van toegankelijkheidsoplossingen"
+
+#~ msgid "Overall score"
+#~ msgstr "Totale score"
+
+#, php-format
+#~ msgid "WCAG %s aligned"
+#~ msgstr "In lijn met WCAG %s"
+
+#~ msgid "Resolution"
+#~ msgstr "Resolutie"
+
+#~ msgid "remaining"
+#~ msgstr "resterend"
+
+#, php-format
+#~ msgid "%s%% resolved by AllAccessible agents"
+#~ msgstr "%s%% ropgelost door AllAccessible-agents"
+
+#, php-format
+#~ msgid "%1$s auto-applied · %2$s approved by your team"
+#~ msgstr "%1$s automatisch toegepast · %2$s goedgekeurd door je team"
+
+#~ msgid ""
+#~ "Resolution numbers will appear after your first scan completes and "
+#~ "AllAccessible agents process your manifest."
+#~ msgstr ""
+#~ "Oplossingsaantallen verschijnen nadat je eerste scan is voltooid en "
+#~ "AllAccessible-agents je manifest hebben verwerkt."
+
+#~ msgid "Coverage"
+#~ msgstr "Dekking"
+
+#, php-format
+#~ msgid "%s%% of estimated site coverage"
+#~ msgstr "%s%% of geschatte site-dekking"
+
+#~ msgid "No pages scanned yet."
+#~ msgstr "Nog geen pagina's gescand."
+
+#, php-format
+#~ msgid "Last scan %s"
+#~ msgstr "Laatste scan %s"
+
+#, php-format
+#~ msgid "Overall accessibility score %s out of 100"
+#~ msgstr "Totale toegankelijkheidsscore %s van 100"
+
+#~ msgid "Run a scan to compute your first score."
+#~ msgstr "Voer een scan uit om je eerste score te berekenen."
+
+#~ msgid "Trending up since your last scan."
+#~ msgstr "Stijgend sinds je laatste scan."
+
+#~ msgid "Down from your last scan — review pending fixes."
+#~ msgstr ""
+#~ "Gedaald ten opzichte van je laatste scan — bekijk de fixes die nog in "
+#~ "behandeling zijn."
+
+#~ msgid "Good. A few high-impact fixes will push you to excellent."
+#~ msgstr "Goed. Een paar fixes met grote impact brengen je naar uitstekend."
+
+#~ msgid "Needs work. Approve the recommended fixes to climb fast."
+#~ msgstr ""
+#~ "Moet worden verbeterd. Keur de aanbevolen oplossingen goed om snel te "
+#~ "stijgen."
+
+#~ msgid "Critical issues detected. Start with the queue below."
+#~ msgstr "Kritieke problemen gedetecteerd. Begin met de wachtrij hieronder."
+
+#~ msgid "Post not found"
+#~ msgstr "Bericht niet gevonden"
+
+#~ msgid "Could not generate permalink for this post"
+#~ msgstr "Kon geen permanente link voor dit bericht genereren"
+
+#~ msgid "Page scan initiated. Results will be available shortly."
+#~ msgstr "Paginascan gestart. Resultaten zijn binnenkort beschikbaar."
+
+#, php-format
+#~ msgid "API returned status code %d"
+#~ msgstr "API retourneerde statuscode %d"
+
+#~ msgid "Failed to parse API response"
+#~ msgstr "Kan API-respons niet parseren"
+
+#~ msgid ""
+#~ "Agentic AI accessibility remediation and the AllAccessible widget. "
+#~ "Connect your AllAccessible account to enable compliance scans, widget "
+#~ "customization, and human-in-the-loop remediation."
+#~ msgstr ""
+#~ "Agentische AI-toegankelijkheidsremediatie en de AllAccessible-widget. "
+#~ "Koppel je AllAccessible-account om compliancescans, widgetaanpassing en "
+#~ "human-in-the-loop-remediatie in te schakelen."
+
+#~ msgid "Site not connected to AllAccessible account."
+#~ msgstr "Site niet gekoppeld aan AllAccessible-account."
+
+#~ msgid "Unknown API error"
+#~ msgstr "Onbekende API-fout"
+
+#, php-format
+#~ msgid "API error (%1$d): %2$s"
+#~ msgstr "API-fout (%1$d): %2$s"
+
+#~ msgid "Not Available"
+#~ msgstr "Niet beschikbaar"
+
+#~ msgid "Needs Work"
+#~ msgstr "Moet worden verbeterd"
+
+#, php-format
+#~ msgid "WCAG %s Compliant"
+#~ msgstr "WCAG %s conform"
+
+#, php-format
+#~ msgid "WCAG %s Non-Compliant"
+#~ msgstr "WCAG %s niet conform"
+
+#~ msgid "Sitemap URL is required"
+#~ msgstr "Sitemap-URL is vereist"

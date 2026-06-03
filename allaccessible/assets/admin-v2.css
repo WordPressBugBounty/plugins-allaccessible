@@ -1,0 +1,1149 @@
+/* ============================================================================
+ * AllAccessible WordPress Plugin
+ * ============================================================================ */
+
+.aacx-v2 {
+  /* ─── Color tokens ───────────────────────────────────────────────────── */
+  /* Primary: Blue (action, links, primary CTAs) */
+  --aacx-primary-50:  #eff6ff;
+  --aacx-primary-100: #dbeafe;
+  --aacx-primary-200: #bfdbfe;
+  --aacx-primary-300: #93c5fd;
+  --aacx-primary-400: #60a5fa;
+  --aacx-primary-500: #3b82f6;
+  --aacx-primary-600: #1d4ed8;  /* main */
+  --aacx-primary-700: #1e40af;
+  --aacx-primary-800: #1e3a8a;
+  --aacx-primary-900: #172554;
+
+  /* AI / Premium: Purple (sparkles, agentic AI features) */
+  --aacx-ai-50:  #faf5ff;
+  --aacx-ai-100: #f3e8ff;
+  --aacx-ai-200: #e9d5ff;
+  --aacx-ai-300: #d8b4fe;
+  --aacx-ai-400: #c084fc;
+  --aacx-ai-500: #a855f7;
+  --aacx-ai-600: #9333ea;
+  --aacx-ai-700: #7c3aed;       /* main */
+  --aacx-ai-800: #6b21a8;
+  --aacx-ai-900: #581c87;
+
+  /* Success: Green (approvals, applied fixes, healthy state) */
+  --aacx-ok-50:  #ecfdf5;
+  --aacx-ok-100: #d1fae5;
+  --aacx-ok-200: #a7f3d0;
+  --aacx-ok-500: #10b981;
+  --aacx-ok-600: #059669;       /* main */
+  --aacx-ok-700: #047857;
+
+  /* Warning: Amber (review needed, threshold approached) */
+  --aacx-warn-50:  #fffbeb;
+  --aacx-warn-100: #fef3c7;
+  --aacx-warn-200: #fde68a;
+  --aacx-warn-500: #f59e0b;
+  --aacx-warn-600: #d97706;
+  --aacx-warn-700: #b45309;
+
+  /* Urgent: Orange (legal exposure trim — used for time-sensitive CTAs only) */
+  --aacx-urgent-500: #f97316;
+  --aacx-urgent-600: #ea580c;
+
+  /* Danger: Red (errors, destructive actions, regressions) */
+  --aacx-danger-50:  #fef2f2;
+  --aacx-danger-100: #fee2e2;
+  --aacx-danger-500: #ef4444;
+  --aacx-danger-600: #dc2626;
+  --aacx-danger-700: #b91c1c;
+
+  /* Neutrals: Slate (AAA-compliant grays) */
+  --aacx-slate-50:  #f8fafc;
+  --aacx-slate-100: #f1f5f9;
+  --aacx-slate-200: #e2e8f0;
+  --aacx-slate-300: #cbd5e1;
+  --aacx-slate-400: #94a3b8;
+  --aacx-slate-500: #64748b;
+  --aacx-slate-600: #475569;    /* body text */
+  --aacx-slate-700: #334155;    /* headings */
+  --aacx-slate-800: #1e293b;
+  --aacx-slate-900: #0f172a;
+
+  /* Semantic aliases */
+  --aacx-bg:           var(--aacx-slate-50);
+  --aacx-surface:      #ffffff;
+  --aacx-surface-alt:  var(--aacx-slate-50);
+  --aacx-border:       var(--aacx-slate-200);
+  --aacx-border-strong: var(--aacx-slate-300);
+  --aacx-text:         var(--aacx-slate-700);
+  --aacx-text-muted:   var(--aacx-slate-500);
+  --aacx-text-strong:  var(--aacx-slate-900);
+  --aacx-link:         var(--aacx-primary-600);
+  --aacx-link-hover:   var(--aacx-primary-700);
+
+  /* ─── Typography tokens ──────────────────────────────────────────────── */
+  --aacx-font-sans: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+  --aacx-font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type scale — modular, 1.250 ratio */
+  --aacx-text-xs:   0.75rem;    /* 12px — labels, captions */
+  --aacx-text-sm:   0.875rem;   /* 14px — body small */
+  --aacx-text-base: 1rem;       /* 16px — body */
+  --aacx-text-lg:   1.125rem;   /* 18px — subhead */
+  --aacx-text-xl:   1.25rem;    /* 20px — card title */
+  --aacx-text-2xl:  1.5rem;     /* 24px — section title */
+  --aacx-text-3xl:  1.875rem;   /* 30px — page title */
+  --aacx-text-4xl:  2.25rem;    /* 36px — hero */
+
+  --aacx-leading-tight: 1.2;
+  --aacx-leading-normal: 1.5;
+  --aacx-leading-relaxed: 1.625;
+
+  --aacx-weight-normal: 400;
+  --aacx-weight-medium: 500;
+  --aacx-weight-semibold: 600;
+  --aacx-weight-bold: 700;
+
+  /* ─── Spacing scale (4px base) ───────────────────────────────────────── */
+  --aacx-space-1:  0.25rem;   /* 4px  */
+  --aacx-space-2:  0.5rem;    /* 8px  */
+  --aacx-space-3:  0.75rem;   /* 12px */
+  --aacx-space-4:  1rem;      /* 16px */
+  --aacx-space-5:  1.25rem;   /* 20px */
+  --aacx-space-6:  1.5rem;    /* 24px */
+  --aacx-space-8:  2rem;      /* 32px */
+  --aacx-space-10: 2.5rem;    /* 40px */
+  --aacx-space-12: 3rem;      /* 48px */
+  --aacx-space-16: 4rem;      /* 64px */
+
+  /* ─── Radii ──────────────────────────────────────────────────────────── */
+  --aacx-radius-sm:  0.25rem;
+  --aacx-radius:     0.5rem;
+  --aacx-radius-md:  0.75rem;
+  --aacx-radius-lg:  1rem;
+  --aacx-radius-xl:  1.5rem;
+  --aacx-radius-pill: 9999px;
+
+  /* ─── Elevation ──────────────────────────────────────────────────────── */
+  --aacx-shadow-sm:  0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --aacx-shadow:     0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.06);
+  --aacx-shadow-md:  0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --aacx-shadow-lg:  0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.06);
+  --aacx-shadow-xl:  0 20px 25px -5px rgba(15, 23, 42, 0.10), 0 8px 10px -6px rgba(15, 23, 42, 0.06);
+
+  /* ─── Focus + interaction ────────────────────────────────────────────── */
+  --aacx-focus-ring: 0 0 0 3px rgba(29, 78, 216, 0.40);
+  --aacx-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ─── Layout ─────────────────────────────────────────────────────────── */
+  --aacx-container-max: 1200px;
+  --aacx-sidebar-width: 240px;
+  --aacx-header-height: 64px;
+
+  /* ============================================================================
+   * Base styles — applied when this class is on a wrapper.
+   * ============================================================================ */
+  font-family: var(--aacx-font-sans);
+  color: var(--aacx-text);
+  font-size: var(--aacx-text-base);
+  line-height: var(--aacx-leading-normal);
+  background: var(--aacx-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================================
+ * Resets within our namespace — wp-admin's defaults get loud
+ * ============================================================================ */
+.aacx-v2 * { box-sizing: border-box; }
+.aacx-v2 h1, .aacx-v2 h2, .aacx-v2 h3, .aacx-v2 h4 {
+  margin: 0;
+  color: var(--aacx-text-strong);
+  font-weight: var(--aacx-weight-semibold);
+  line-height: var(--aacx-leading-tight);
+  letter-spacing: -0.01em;
+}
+.aacx-v2 h1 { font-size: var(--aacx-text-3xl); font-weight: var(--aacx-weight-bold); letter-spacing: -0.02em; }
+.aacx-v2 h2 { font-size: var(--aacx-text-2xl); }
+.aacx-v2 h3 { font-size: var(--aacx-text-xl); }
+.aacx-v2 h4 { font-size: var(--aacx-text-lg); }
+
+.aacx-v2 p {
+  margin: 0;
+  line-height: var(--aacx-leading-relaxed);
+}
+/* Anchor styles wrapped in :where() so the namespace contributes 0 specificity.
+ * Without this, `.aacx-v2 a` (0,1,1) beats `.aacx-v2__btn--primary` (0,1,0)
+ * and turns button text blue-on-blue. */
+:where(.aacx-v2) a {
+  color: var(--aacx-link);
+  text-decoration: none;
+  font-weight: var(--aacx-weight-medium);
+  transition: color var(--aacx-transition);
+}
+:where(.aacx-v2) a:hover { color: var(--aacx-link-hover); text-decoration: underline; }
+:where(.aacx-v2) a:focus-visible {
+  outline: none;
+  box-shadow: var(--aacx-focus-ring);
+  border-radius: var(--aacx-radius-sm);
+}
+/* Buttons-as-anchors must not pick up link underline on hover */
+.aacx-v2 a.aacx-v2__btn:hover { text-decoration: none; }
+
+.aacx-v2 :focus-visible {
+  outline: none;
+  box-shadow: var(--aacx-focus-ring);
+}
+
+/* ============================================================================
+ * Layout primitives
+ * ============================================================================ */
+.aacx-v2__page {
+  max-width: var(--aacx-container-max);
+  margin: 0 auto;
+  padding: var(--aacx-space-8) var(--aacx-space-6);
+}
+
+.aacx-v2__page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--aacx-space-6);
+  margin-bottom: var(--aacx-space-8);
+  padding-bottom: var(--aacx-space-6);
+  border-bottom: 1px solid var(--aacx-border);
+}
+
+.aacx-v2__page-title {
+  display: flex;
+  align-items: center;
+  gap: var(--aacx-space-3);
+}
+
+.aacx-v2__page-eyebrow {
+  font-size: var(--aacx-text-xs);
+  font-weight: var(--aacx-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--aacx-text-muted);
+  margin-bottom: var(--aacx-space-2);
+}
+
+.aacx-v2__page-desc {
+  color: var(--aacx-text-muted);
+  font-size: var(--aacx-text-base);
+  max-width: 60ch;
+  margin-top: var(--aacx-space-2);
+}
+
+.aacx-v2__grid {
+  display: grid;
+  gap: var(--aacx-space-6);
+}
+.aacx-v2__grid--2 { grid-template-columns: repeat(2, 1fr); }
+.aacx-v2__grid--3 { grid-template-columns: repeat(3, 1fr); }
+.aacx-v2__grid--4 { grid-template-columns: repeat(4, 1fr); }
+.aacx-v2__grid--5 { grid-template-columns: repeat(5, 1fr); }
+.aacx-v2__grid--6 { grid-template-columns: repeat(6, 1fr); }
+
+@media (max-width: 900px) {
+  .aacx-v2__grid--2,
+  .aacx-v2__grid--3,
+  .aacx-v2__grid--4,
+  .aacx-v2__grid--5,
+  .aacx-v2__grid--6 { grid-template-columns: 1fr; }
+}
+
+.aacx-v2__stack { display: flex; flex-direction: column; gap: var(--aacx-space-4); }
+.aacx-v2__stack--lg { gap: var(--aacx-space-8); }
+.aacx-v2__row { display: flex; align-items: center; gap: var(--aacx-space-3); }
+.aacx-v2__row--between { justify-content: space-between; }
+
+/* ============================================================================
+ * Card — the workhorse container
+ * ============================================================================ */
+.aacx-v2__card {
+  background: var(--aacx-surface);
+  border: 1px solid var(--aacx-border);
+  border-radius: var(--aacx-radius-md);
+  overflow: hidden;
+  transition: box-shadow var(--aacx-transition), border-color var(--aacx-transition);
+}
+.aacx-v2__card--elevated  { box-shadow: var(--aacx-shadow); }
+.aacx-v2__card--hoverable:hover {
+  border-color: var(--aacx-border-strong);
+  box-shadow: var(--aacx-shadow-md);
+}
+.aacx-v2__card--featured {
+  border-color: var(--aacx-primary-200);
+  background: linear-gradient(180deg, var(--aacx-primary-50) 0%, var(--aacx-surface) 60%);
+}
+.aacx-v2__card--ai {
+  border-color: var(--aacx-ai-200);
+  background: linear-gradient(180deg, var(--aacx-ai-50) 0%, var(--aacx-surface) 60%);
+}
+
+.aacx-v2__card-header {
+  padding: var(--aacx-space-5) var(--aacx-space-6);
+  border-bottom: 1px solid var(--aacx-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--aacx-space-4);
+}
+.aacx-v2__card-body { padding: var(--aacx-space-6); }
+.aacx-v2__card-footer {
+  padding: var(--aacx-space-4) var(--aacx-space-6);
+  border-top: 1px solid var(--aacx-border);
+  background: var(--aacx-surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--aacx-space-3);
+}
+
+/* ============================================================================
+ * Buttons
+ * ============================================================================ */
+.aacx-v2__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aacx-space-2);
+  padding: var(--aacx-space-3) var(--aacx-space-5);
+  font-family: var(--aacx-font-sans);
+  font-size: var(--aacx-text-sm);
+  font-weight: var(--aacx-weight-semibold);
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: var(--aacx-radius);
+  cursor: pointer;
+  transition: background var(--aacx-transition), border-color var(--aacx-transition),
+              color var(--aacx-transition), box-shadow var(--aacx-transition);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.aacx-v2__btn:disabled,
+.aacx-v2__btn[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; }
+
+/* Variants
+ * NOTE: `!important` on `color` is required to win against WordPress admin's
+ * stylesheet, which globally sets `.wp-admin a { color: #2271b1 }` with
+ * specificity that beats our class-based rule. Without this, button anchors
+ * render with WP's blue text on top of our blue button background = invisible.
+ */
+.aacx-v2__btn--primary {
+  background: var(--aacx-primary-600);
+  color: #ffffff !important;
+  border-color: var(--aacx-primary-600);
+}
+.aacx-v2__btn--primary:hover:not(:disabled),
+.aacx-v2__btn--primary:visited {
+  background: var(--aacx-primary-700);
+  border-color: var(--aacx-primary-700);
+  color: #ffffff !important;
+}
+
+.aacx-v2__btn--secondary {
+  background: var(--aacx-surface);
+  color: var(--aacx-text-strong) !important;
+  border-color: var(--aacx-border-strong);
+}
+.aacx-v2__btn--secondary:hover:not(:disabled),
+.aacx-v2__btn--secondary:visited {
+  background: var(--aacx-slate-50);
+  border-color: var(--aacx-slate-400);
+  color: var(--aacx-text-strong) !important;
+}
+
+.aacx-v2__btn--ai {
+  background: var(--aacx-ai-700);
+  color: #ffffff !important;
+  border-color: var(--aacx-ai-700);
+}
+.aacx-v2__btn--ai:hover:not(:disabled),
+.aacx-v2__btn--ai:visited {
+  background: var(--aacx-ai-800);
+  border-color: var(--aacx-ai-800);
+  color: #ffffff !important;
+}
+
+.aacx-v2__btn--ghost {
+  background: transparent;
+  color: var(--aacx-text) !important;
+  border-color: transparent;
+}
+.aacx-v2__btn--ghost:hover:not(:disabled) { background: var(--aacx-slate-100); color: var(--aacx-text) !important; }
+
+.aacx-v2__btn--danger {
+  background: var(--aacx-surface);
+  color: var(--aacx-danger-700) !important;
+  border-color: var(--aacx-danger-200, #fecaca);
+}
+.aacx-v2__btn--danger:hover:not(:disabled) {
+  background: var(--aacx-danger-50);
+  border-color: var(--aacx-danger-500);
+  color: var(--aacx-danger-700) !important;
+}
+
+/* Sizes */
+.aacx-v2__btn--sm  { padding: var(--aacx-space-2) var(--aacx-space-3); font-size: var(--aacx-text-xs); }
+.aacx-v2__btn--lg  { padding: var(--aacx-space-4) var(--aacx-space-6); font-size: var(--aacx-text-base); }
+
+/* ============================================================================
+ * Form controls
+ * ============================================================================ */
+.aacx-v2__field { display: flex; flex-direction: column; gap: var(--aacx-space-2); }
+.aacx-v2__label {
+  font-size: var(--aacx-text-sm);
+  font-weight: var(--aacx-weight-semibold);
+  color: var(--aacx-text-strong);
+}
+.aacx-v2__help {
+  font-size: var(--aacx-text-xs);
+  color: var(--aacx-text-muted);
+  line-height: var(--aacx-leading-normal);
+}
+.aacx-v2__input,
+.aacx-v2__textarea,
+.aacx-v2__select {
+  width: 100%;
+  padding: var(--aacx-space-3) var(--aacx-space-4);
+  background: var(--aacx-surface);
+  border: 1px solid var(--aacx-border-strong);
+  border-radius: var(--aacx-radius);
+  font-family: var(--aacx-font-sans);
+  font-size: var(--aacx-text-sm);
+  color: var(--aacx-text-strong);
+  transition: border-color var(--aacx-transition), box-shadow var(--aacx-transition);
+}
+
+/* Read-only identifier pill — used for Account ID / Site ID / Site URL rows
+ * on the Account → Connection tab. Mono font + neutral chip, theme-aware so
+ * dark mode renders white-on-black with a visible border instead of an
+ * unstyled white code block. */
+.aacx-v2__id {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  padding: var(--aacx-space-2) var(--aacx-space-3);
+  font-family: var(--aacx-font-mono);
+  font-size: var(--aacx-text-sm);
+  color: var(--aacx-text-strong);
+  background: var(--aacx-surface-alt);
+  border: 1px solid var(--aacx-border);
+  border-radius: var(--aacx-radius-sm);
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+.aacx-v2__input:focus,
+.aacx-v2__textarea:focus,
+.aacx-v2__select:focus {
+  outline: none;
+  border-color: var(--aacx-primary-500);
+  box-shadow: var(--aacx-focus-ring);
+}
+
+/* ============================================================================
+ * Badges + status chips
+ * ============================================================================ */
+.aacx-v2__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--aacx-space-1);
+  padding: 0.125rem var(--aacx-space-2);
+  font-size: var(--aacx-text-xs);
+  font-weight: var(--aacx-weight-semibold);
+  border-radius: var(--aacx-radius-pill);
+  background: var(--aacx-slate-100);
+  color: var(--aacx-slate-700);
+  line-height: 1.4;
+}
+.aacx-v2__badge--ok    { background: var(--aacx-ok-100);    color: var(--aacx-ok-700); }
+.aacx-v2__badge--warn  { background: var(--aacx-warn-100);  color: var(--aacx-warn-700); }
+.aacx-v2__badge--danger{ background: var(--aacx-danger-100);color: var(--aacx-danger-700); }
+.aacx-v2__badge--primary { background: var(--aacx-primary-100); color: var(--aacx-primary-700); }
+.aacx-v2__badge--ai    { background: var(--aacx-ai-100);    color: var(--aacx-ai-700); }
+.aacx-v2__badge--beta  {
+  background: var(--aacx-warn-100);
+  color: var(--aacx-warn-700);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.625rem;
+}
+
+/* AI feature pill — sparkles + "AllAccessible AI" branding */
+.aacx-v2__ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--aacx-space-2);
+  padding: var(--aacx-space-1) var(--aacx-space-3);
+  background: linear-gradient(135deg, var(--aacx-ai-100) 0%, var(--aacx-primary-100) 100%);
+  color: var(--aacx-ai-800);
+  font-size: var(--aacx-text-xs);
+  font-weight: var(--aacx-weight-semibold);
+  border-radius: var(--aacx-radius-pill);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.aacx-v2__ai-badge::before { content: "✦"; }
+
+/* ============================================================================
+ * Stat tile — big number + label for dashboard hero metrics
+ * ============================================================================ */
+.aacx-v2__stat {
+  padding: var(--aacx-space-5) var(--aacx-space-6);
+  background: var(--aacx-surface);
+  border: 1px solid var(--aacx-border);
+  border-radius: var(--aacx-radius-md);
+}
+.aacx-v2__stat-label {
+  font-size: var(--aacx-text-xs);
+  font-weight: var(--aacx-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--aacx-text-muted);
+  margin-bottom: var(--aacx-space-2);
+}
+.aacx-v2__stat-value {
+  font-size: var(--aacx-text-3xl);
+  font-weight: var(--aacx-weight-bold);
+  color: var(--aacx-text-strong);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.aacx-v2__stat-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--aacx-space-1);
+  margin-top: var(--aacx-space-2);
+  font-size: var(--aacx-text-xs);
+  font-weight: var(--aacx-weight-semibold);
+}
+.aacx-v2__stat-trend--up { color: var(--aacx-ok-700); }
+.aacx-v2__stat-trend--down { color: var(--aacx-danger-700); }
+
+/* ============================================================================
+ * Empty states
+ * ============================================================================ */
+.aacx-v2__empty {
+  padding: var(--aacx-space-12) var(--aacx-space-6);
+  text-align: center;
+  color: var(--aacx-text-muted);
+}
+.aacx-v2__empty-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--aacx-space-4);
+  color: var(--aacx-slate-400);
+}
+.aacx-v2__empty-title {
+  font-size: var(--aacx-text-lg);
+  font-weight: var(--aacx-weight-semibold);
+  color: var(--aacx-text-strong);
+  margin-bottom: var(--aacx-space-2);
+}
+
+/* ============================================================================
+ * Stepper / progress (onboarding)
+ * ============================================================================ */
+.aacx-v2__stepper {
+  display: flex;
+  align-items: center;
+  gap: var(--aacx-space-2);
+  padding: var(--aacx-space-4) 0;
+}
+.aacx-v2__step {
+  display: flex;
+  align-items: center;
+  gap: var(--aacx-space-2);
+  flex: 1;
+}
+.aacx-v2__step-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--aacx-slate-100);
+  color: var(--aacx-slate-500);
+  font-size: var(--aacx-text-sm);
+  font-weight: var(--aacx-weight-semibold);
+  flex-shrink: 0;
+  border: 2px solid var(--aacx-slate-200);
+  transition: all var(--aacx-transition);
+}
+.aacx-v2__step--active .aacx-v2__step-dot {
+  background: var(--aacx-primary-600);
+  color: #ffffff;
+  border-color: var(--aacx-primary-600);
+  box-shadow: 0 0 0 4px var(--aacx-primary-100);
+}
+.aacx-v2__step--done .aacx-v2__step-dot {
+  background: var(--aacx-ok-600);
+  color: #ffffff;
+  border-color: var(--aacx-ok-600);
+}
+.aacx-v2__step-label {
+  font-size: var(--aacx-text-sm);
+  font-weight: var(--aacx-weight-medium);
+  color: var(--aacx-text-muted);
+}
+.aacx-v2__step--active .aacx-v2__step-label,
+.aacx-v2__step--done .aacx-v2__step-label { color: var(--aacx-text-strong); }
+.aacx-v2__step-line {
+  flex: 1;
+  height: 2px;
+  background: var(--aacx-slate-200);
+  border-radius: 2px;
+}
+.aacx-v2__step--done + .aacx-v2__step-line,
+.aacx-v2__step-line--done { background: var(--aacx-ok-600); }
+
+/* ============================================================================
+ * Tabs
+ * ============================================================================ */
+.aacx-v2__tabs {
+  display: flex;
+  gap: var(--aacx-space-1);
+  border-bottom: 1px solid var(--aacx-border);
+  margin-bottom: var(--aacx-space-6);
+  overflow-x: auto;
+}
+.aacx-v2__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--aacx-space-2);
+  padding: var(--aacx-space-3) var(--aacx-space-4);
+  font-size: var(--aacx-text-sm);
+  font-weight: var(--aacx-weight-semibold);
+  color: var(--aacx-text-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color var(--aacx-transition), border-color var(--aacx-transition);
+  white-space: nowrap;
+}
+.aacx-v2__tab:hover { color: var(--aacx-text-strong); }
+.aacx-v2__tab[aria-selected="true"],
+.aacx-v2__tab--active {
+  color: var(--aacx-primary-600);
+  border-bottom-color: var(--aacx-primary-600);
+}
+
+/* ============================================================================
+ * Banner / inline alert
+ * ============================================================================ */
+.aacx-v2__banner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--aacx-space-3);
+  padding: var(--aacx-space-4) var(--aacx-space-5);
+  border-radius: var(--aacx-radius-md);
+  border: 1px solid;
+}
+/* Honor the HTML `hidden` attribute against our display:flex above.
+ * Without this, hidden-by-attribute banners render as empty colored strips
+ * (the bug in onboarding Link Account where the error placeholder showed
+ * with no text). Also hide truly-empty banners as a defensive fallback. */
+.aacx-v2__banner[hidden],
+.aacx-v2__banner:empty { display: none !important; }
+.aacx-v2__banner--info {
+  background: var(--aacx-primary-50);
+  border-color: var(--aacx-primary-200);
+  color: var(--aacx-primary-900);
+}
+.aacx-v2__banner--ok {
+  background: var(--aacx-ok-50);
+  border-color: var(--aacx-ok-200);
+  color: var(--aacx-ok-700);
+}
+.aacx-v2__banner--warn {
+  background: var(--aacx-warn-50);
+  border-color: var(--aacx-warn-200);
+  color: var(--aacx-warn-700);
+}
+.aacx-v2__banner--danger {
+  background: var(--aacx-danger-50);
+  border-color: var(--aacx-danger-200, #fecaca);
+  color: var(--aacx-danger-700);
+}
+.aacx-v2__banner--ai {
+  background: linear-gradient(135deg, var(--aacx-ai-50) 0%, var(--aacx-primary-50) 100%);
+  border-color: var(--aacx-ai-200);
+  color: var(--aacx-ai-800);
+}
+
+/* ============================================================================
+ * Tables
+ * ============================================================================ */
+.aacx-v2__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--aacx-text-sm);
+}
+.aacx-v2__table thead th {
+  text-align: left;
+  padding: var(--aacx-space-3) var(--aacx-space-4);
+  font-size: var(--aacx-text-xs);
+  font-weight: var(--aacx-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--aacx-text-muted);
+  background: var(--aacx-surface-alt);
+  border-bottom: 1px solid var(--aacx-border);
+}
+.aacx-v2__table tbody td {
+  padding: var(--aacx-space-4);
+  border-bottom: 1px solid var(--aacx-border);
+  color: var(--aacx-text);
+  vertical-align: middle;
+}
+.aacx-v2__table tbody tr:hover { background: var(--aacx-surface-alt); }
+.aacx-v2__table tbody tr:last-child td { border-bottom: none; }
+
+/* ============================================================================
+ * Reduced motion
+ * ============================================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .aacx-v2 *,
+  .aacx-v2 *::before,
+  .aacx-v2 *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================================
+ * Dark mode (matches wp-admin dark themes; opt-in via prefers-color-scheme)
+ * ============================================================================ */
+/* High-contrast dark mode (WCAG AAA).
+ * Pure black canvas + pure white type — accessibility-tool branding demands
+ * we meet the highest contrast bar. No mid-slate gradients; sharp boundary
+ * between surface and text. Light/dark are mirror images.
+ *
+ * Color uses inside this block stay branded (primary/ai/ok/danger) but their
+ * SCALES shift toward the lighter end so contrast against pure black holds.
+ */
+@media (prefers-color-scheme: dark) {
+  /* Use `body` prefix so we outrank WordPress admin's own color-scheme rules
+   * (e.g. `body.wp-admin.admin-color-modern .wrap`) that would otherwise win
+   * on specificity and force WP's navy bg over our high-contrast pure black. */
+  body .aacx-v2 {
+    --aacx-bg:           #000000;
+    --aacx-surface:      #000000;
+    --aacx-surface-alt:  #0a0a0a;
+    --aacx-border:       #ffffff;       /* 1px white outline = clear card edges on black */
+    --aacx-border-strong: #ffffff;
+    --aacx-text:         #ffffff;
+    --aacx-text-muted:   #d4d4d4;       /* 16:1 on black, AAA */
+    --aacx-text-strong:  #ffffff;
+    --aacx-link:         #93c5fd;       /* primary-300 — 8:1 on black, AAA */
+    --aacx-link-hover:   #bfdbfe;       /* primary-200 */
+    background: #000000 !important;
+    color: #ffffff !important;
+
+    /* Brand color shifts — lighter scale steps for AAA contrast on pure black */
+    --aacx-primary-600:  #60a5fa;       /* primary-400 — 7.5:1 on black */
+    --aacx-primary-700:  #93c5fd;
+    --aacx-ai-700:       #c084fc;       /* ai-400 — 7:1 on black */
+    --aacx-ai-800:       #d8b4fe;
+    --aacx-ok-600:       #34d399;       /* ok-400 — 8:1 on black */
+    --aacx-ok-700:       #6ee7b7;
+    --aacx-warn-600:     #fbbf24;       /* warn-400 — 11:1 on black */
+    --aacx-warn-700:     #fcd34d;
+    --aacx-danger-600:   #f87171;       /* danger-400 — 6:1 on black */
+    --aacx-danger-700:   #fca5a5;
+
+    /* Subtle backgrounds (banners, badges) — near-black tint with brand hue */
+    --aacx-primary-50:   #0a0f1a;
+    --aacx-primary-100:  #0f172a;
+    --aacx-primary-200:  #1e293b;
+    --aacx-ai-50:        #0f0a14;
+    --aacx-ai-100:       #1a0f24;
+    --aacx-ai-200:       #2a1745;
+    --aacx-ok-50:        #001a0d;
+    --aacx-ok-100:       #002914;
+    --aacx-ok-200:       #003d1f;
+    --aacx-warn-50:      #1a1100;
+    --aacx-warn-100:     #2a1c00;
+    --aacx-danger-50:    #1a0808;
+    --aacx-danger-100:   #2a0e0e;
+    --aacx-slate-50:     #0a0a0a;
+    --aacx-slate-100:    #141414;
+    --aacx-slate-200:    #1f1f1f;
+    --aacx-slate-300:    #2a2a2a;
+    --aacx-slate-400:    #6b6b6b;
+    --aacx-slate-500:    #a3a3a3;       /* helper text 12:1 on black */
+    --aacx-slate-600:    #d4d4d4;
+    --aacx-slate-700:    #ffffff;
+
+    /* Stronger focus ring on black for visibility */
+    --aacx-focus-ring:   0 0 0 3px #ffffff, 0 0 0 5px #1d4ed8;
+
+    /* Shadows become outlines on black (regular shadows are invisible) */
+    --aacx-shadow-sm:    0 0 0 1px rgba(255, 255, 255, 0.10);
+    --aacx-shadow:       0 0 0 1px rgba(255, 255, 255, 0.15);
+    --aacx-shadow-md:    0 0 0 1px rgba(255, 255, 255, 0.20);
+    --aacx-shadow-lg:    0 0 0 1px rgba(255, 255, 255, 0.25);
+    --aacx-shadow-xl:    0 0 0 1px rgba(255, 255, 255, 0.30);
+  }
+
+  /* Buttons — `body` prefix + `!important` so we outrank wp-admin's blue-link rule.
+   * In dark mode, primary/ai buttons get a LIGHT brand color, so text must be BLACK
+   * for AAA contrast. Secondary stays black-on-white-border. */
+  body .aacx-v2 .aacx-v2__btn--primary {
+    background: var(--aacx-primary-600) !important;
+    color: #000000 !important;
+    border-color: var(--aacx-primary-600) !important;
+  }
+  body .aacx-v2 .aacx-v2__btn--primary:hover:not(:disabled),
+  body .aacx-v2 .aacx-v2__btn--primary:visited {
+    background: var(--aacx-primary-700) !important;
+    color: #000000 !important;
+    border-color: var(--aacx-primary-700) !important;
+  }
+  body .aacx-v2 .aacx-v2__btn--ai {
+    background: var(--aacx-ai-700) !important;
+    color: #000000 !important;
+    border-color: var(--aacx-ai-700) !important;
+  }
+  body .aacx-v2 .aacx-v2__btn--ai:hover:not(:disabled),
+  body .aacx-v2 .aacx-v2__btn--ai:visited {
+    background: var(--aacx-ai-800) !important;
+    color: #000000 !important;
+    border-color: var(--aacx-ai-800) !important;
+  }
+  body .aacx-v2 .aacx-v2__btn--secondary {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  body .aacx-v2 .aacx-v2__btn--secondary:hover:not(:disabled) {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+  }
+  body .aacx-v2 .aacx-v2__btn--ghost {
+    color: #ffffff !important;
+  }
+  body .aacx-v2 .aacx-v2__btn--ghost:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.10) !important;
+    color: #ffffff !important;
+  }
+
+  /* Stepper dots — explicit contrast treatment */
+  body .aacx-v2 .aacx-v2__step-dot { background: #000000; color: #ffffff; border-color: #ffffff; }
+  body .aacx-v2 .aacx-v2__step--active .aacx-v2__step-dot {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
+  }
+  body .aacx-v2 .aacx-v2__step--done .aacx-v2__step-dot {
+    background: var(--aacx-ok-600);
+    color: #000000;
+    border-color: var(--aacx-ok-600);
+  }
+
+  /* Inputs — pure black bg, white border, white text */
+  body .aacx-v2 .aacx-v2__input,
+  body .aacx-v2 .aacx-v2__textarea,
+  body .aacx-v2 .aacx-v2__select {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+
+  /* Tabs */
+  body .aacx-v2 .aacx-v2__tab[aria-selected="true"],
+  body .aacx-v2 .aacx-v2__tab--active {
+    color: var(--aacx-primary-600) !important;
+    border-bottom-color: var(--aacx-primary-600);
+  }
+
+  /* Card gradient variants — flatten white-blue gradients to solid pure black */
+  body .aacx-v2 .aacx-v2__card,
+  body .aacx-v2 .aacx-v2__card--featured,
+  body .aacx-v2 .aacx-v2__card--ai {
+    background: #000000 !important;
+    border-color: #ffffff !important;
+    background-image: none !important;
+  }
+  body .aacx-v2 .aacx-v2__card-header,
+  body .aacx-v2 .aacx-v2__card-body,
+  body .aacx-v2 .aacx-v2__card-footer {
+    background: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+  }
+  body .aacx-v2 .aacx-v2__card h1,
+  body .aacx-v2 .aacx-v2__card h2,
+  body .aacx-v2 .aacx-v2__card h3,
+  body .aacx-v2 .aacx-v2__card h4,
+  body .aacx-v2 .aacx-v2__card p,
+  body .aacx-v2 .aacx-v2__card span,
+  body .aacx-v2 .aacx-v2__card strong { color: #ffffff !important; }
+  body .aacx-v2 .aacx-v2__card .aacx-v2__page-eyebrow,
+  body .aacx-v2 .aacx-v2__card .aacx-v2__help,
+  body .aacx-v2 .aacx-v2__page-eyebrow,
+  body .aacx-v2 .aacx-v2__help { color: #d4d4d4 !important; }
+
+  /* AI badge — ensure visible */
+  .aacx-v2__ai-badge {
+    background: var(--aacx-ai-100);
+    color: var(--aacx-ai-700);
+    border: 1px solid var(--aacx-ai-700);
+  }
+
+  /* Banner text colors override — defaults (primary-900, ok-700, warn-700, etc.)
+   * are dark hex values that vanish on pure-black. Use the lighter brand scale
+   * stops (already remapped above) so banners stay AAA-readable. */
+  .aacx-v2__banner--info   { color: var(--aacx-link); }            /* light blue */
+  .aacx-v2__banner--ok     { color: var(--aacx-ok-700); }          /* remapped to ok-200 lighter */
+  .aacx-v2__banner--warn   { color: var(--aacx-warn-700); }
+  .aacx-v2__banner--danger { color: var(--aacx-danger-700); }
+  .aacx-v2__banner--ai     { color: var(--aacx-ai-800); }          /* remapped to ai-200 (light purple) */
+  .aacx-v2__banner strong  { color: #ffffff; }
+}
+
+/* Explicit high-contrast preference (Windows High Contrast mode users) — pure
+ * black/white regardless of light/dark scheme, system-overridden where supported. */
+@media (prefers-contrast: more) {
+  .aacx-v2 {
+    --aacx-border:        #000000;
+    --aacx-border-strong: #000000;
+    --aacx-focus-ring:    0 0 0 3px #000000;
+  }
+  .aacx-v2 *:focus-visible {
+    outline: 3px solid #000000 !important;
+    outline-offset: 2px;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+ * 2026-06-01: Free-tier AI preview blur teaser (Aikido pattern).
+ * Real cards render normally for the first N items, the rest get
+ * `.aacb-locked-card` wrapper which blurs caption text and disables
+ * interaction. Single upgrade CTA appears below the grid.
+ * ────────────────────────────────────────────────────────────────── */
+.aacb-locked-card {
+  position: relative;
+  filter: blur(4px);
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.85;
+}
+.aacb-locked-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.04) 100%);
+  border-radius: var(--aacx-radius);
+  pointer-events: none;
+}
+.aacb-ai-preview-banner { /* visual anchor for the preview-mode header */ }
+.aacb-locked-cta { /* upgrade-CTA panel below blurred items */ }
+
+/* ── Info tooltip (aacb_info_tip) ─────────────────────────────────────────
+   CSS-only label tooltip: hover OR keyboard focus, no JS. Bubble resets the
+   uppercase / letter-spacing it would inherit from .aacx-v2__stat-label. */
+.aacb-info-tip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  color: #fff;
+  background: var(--aacx-primary-500, #2563eb);
+  cursor: help;
+  vertical-align: middle;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.aacb-info-tip__bubble {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  width: max-content;
+  max-width: 240px;
+  padding: 8px 10px;
+  border-radius: var(--aacx-radius-md, 8px);
+  background: var(--aacx-slate-900, #0f172a);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.45;
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: left;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  z-index: 1000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+.aacb-info-tip__bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--aacx-slate-900, #0f172a);
+}
+.aacb-info-tip:hover .aacb-info-tip__bubble,
+.aacb-info-tip:focus .aacb-info-tip__bubble,
+.aacb-info-tip:focus-visible .aacb-info-tip__bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── Site Overview — verdict hero + action bar + metric strip ──────────────
+   Calm, confident ops console. One verdict (score dial), one smart action,
+   one thin proof strip — replaces the old 4+4 stat-box grid. */
+.aacb-ov { display: grid; gap: var(--aacx-space-4); margin-bottom: var(--aacx-space-8); }
+
+.aacb-ov-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--aacx-space-6);
+  padding: var(--aacx-space-6) var(--aacx-space-8);
+  border: 1px solid var(--aacx-border);
+  border-radius: var(--aacx-radius-lg);
+  background:
+    radial-gradient(130% 150% at 0% 0%, rgba(37, 99, 235, 0.06), transparent 55%),
+    var(--aacx-surface);
+  box-shadow: var(--aacx-shadow-sm);
+  /* No overflow:hidden — the cadence tooltip pops above the card and must not
+     be clipped. The accent rule below floats inset from the corners instead. */
+}
+/* thin accent rule on the leading edge, tinted by score band */
+.aacb-ov-hero::before {
+  content: "";
+  position: absolute;
+  top: var(--aacx-space-5);
+  bottom: var(--aacx-space-5);
+  left: 0;
+  width: 4px;
+  border-radius: 0 var(--aacx-radius-pill) var(--aacx-radius-pill) 0;
+  background: var(--aacb-ov-accent, var(--aacx-primary-500));
+}
+.aacb-ov-hero__dial { flex-shrink: 0; line-height: 0; }
+.aacb-ov-hero__body { min-width: 0; flex: 1; }
+.aacb-ov-hero__verdict {
+  margin: 0 0 4px;
+  font-size: var(--aacx-text-2xl);
+  font-weight: var(--aacx-weight-bold);
+  letter-spacing: -0.01em;
+  color: var(--aacx-text-strong);
+}
+.aacb-ov-hero__sub { margin: 0; font-size: var(--aacx-text-sm); color: var(--aacx-text-muted); }
+.aacb-ov-hero__sub b { color: var(--aacx-text); font-weight: var(--aacx-weight-semibold); }
+.aacb-ov-hero__live {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-left: var(--aacx-space-2); font-size: var(--aacx-text-xs); color: var(--aacx-text-muted);
+}
+.aacb-ov-hero__live i {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--aacx-primary-600); animation: aacb-live-pulse 2s ease-in-out infinite;
+  display: inline-block; font-style: normal;
+}
+
+/* Smart action bar — surfaces the single most important next step. */
+.aacb-ov-action {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--aacx-space-4); flex-wrap: wrap;
+  padding: var(--aacx-space-4) var(--aacx-space-5);
+  border: 1px solid var(--aacx-border);
+  border-radius: var(--aacx-radius-md);
+  background: var(--aacx-surface);
+}
+.aacb-ov-action--attention { border-color: var(--aacx-warn-200); background: var(--aacx-warn-50); }
+.aacb-ov-action--clear { border-color: var(--aacx-ok-200); background: var(--aacx-ok-50); }
+.aacb-ov-action__text {
+  display: flex; align-items: center; gap: var(--aacx-space-3);
+  font-size: var(--aacx-text-sm); font-weight: var(--aacx-weight-medium); color: var(--aacx-text);
+}
+.aacb-ov-action__icon { font-size: var(--aacx-text-lg); line-height: 1; flex-shrink: 0; }
+.aacb-ov-action--attention .aacb-ov-action__icon { color: var(--aacx-warn-700); }
+.aacb-ov-action--clear .aacb-ov-action__icon { color: var(--aacx-ok-600); }
+.aacb-ov-action__text b { font-weight: var(--aacx-weight-bold); color: var(--aacx-text-strong); }
+
+/* Thin proof strip — the supporting metrics, no longer 8 boxes. */
+.aacb-ov-metrics {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: var(--aacx-space-2) var(--aacx-space-5);
+  padding: var(--aacx-space-3) var(--aacx-space-5);
+  font-size: var(--aacx-text-sm); color: var(--aacx-text-muted);
+  border: 1px solid var(--aacx-border); border-radius: var(--aacx-radius-md);
+  background: var(--aacx-surface);
+}
+.aacb-ov-metrics__item { display: inline-flex; align-items: baseline; gap: 6px; }
+.aacb-ov-metrics__item b {
+  font-family: var(--aacx-font-mono); font-weight: var(--aacx-weight-bold);
+  font-size: var(--aacx-text-base); color: var(--aacx-text-strong);
+}
+.aacb-ov-metrics__sep { color: var(--aacx-border); }
+.aacb-ov-metrics__ai b { color: var(--aacx-ai-700); }
+
+/* Hero right side — scan cadence (frequency · last · next). Balances the
+   verdict on the left and reassures the protection is ongoing/automatic. */
+.aacb-ov-hero__cadence {
+  flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--aacx-space-2);
+  min-width: 168px;
+  padding-left: var(--aacx-space-6);
+  border-left: 1px solid var(--aacx-border);
+}
+.aacb-ov-hero__cadence-label {
+  display: flex; align-items: center; gap: 6px;
+  font-size: var(--aacx-text-xs); font-weight: var(--aacx-weight-bold);
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--aacx-text-muted);
+}
+.aacb-ov-hero__cadence-label svg { width: 14px; height: 14px; color: var(--aacx-primary-600); flex-shrink: 0; }
+.aacb-ov-hero__cadence-row {
+  display: flex; justify-content: space-between; gap: var(--aacx-space-4);
+  font-size: var(--aacx-text-sm); color: var(--aacx-text-muted);
+}
+.aacb-ov-hero__cadence-row b { color: var(--aacx-text-strong); font-weight: var(--aacx-weight-semibold); }
+@media (max-width: 900px) {
+  .aacb-ov-hero__cadence {
+    align-self: stretch; min-width: 0;
+    border-left: 0; border-top: 1px solid var(--aacx-border);
+    padding-left: 0; padding-top: var(--aacx-space-4); margin-top: var(--aacx-space-2);
+  }
+}
+
+@media (max-width: 900px) {
+  .aacb-ov-hero { flex-direction: column; align-items: flex-start; text-align: left; }
+}
+
+/* One orchestrated load-in — staggered, respects reduced-motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .aacb-ov > * { animation: aacb-ov-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .aacb-ov > *:nth-child(1) { animation-delay: 0.02s; }
+  .aacb-ov > *:nth-child(2) { animation-delay: 0.09s; }
+  .aacb-ov > *:nth-child(3) { animation-delay: 0.16s; }
+}
+@keyframes aacb-ov-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }

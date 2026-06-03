@@ -62,8 +62,46 @@ class AllAccessible_VersionManager {
             self::upgrade_to_2_0_0();
         }
 
+        // 2.1.0 — consolidated migration for everything between 2.0.x
+        // and the public 2.1.0 release.
+
+        // All four actions are idempotent + cheap. No-op for fresh
+        // installs (only fires when from_version < 2.1.0).
+        if (version_compare($from_version, '2.1.0', '<')) {
+            self::upgrade_to_2_1_0();
+        }
+
         // Always run this to ensure database is up to date
         self::update_db_check();
+    }
+
+    /**
+     * Upgrade routine for version 2.1.0 — see consolidated comment in
+     * run_upgrade_routines() above.
+     */
+    private static function upgrade_to_2_1_0() {
+        if (class_exists('AllAccessible_ApiClient')) {
+            $client = AllAccessible_ApiClient::get_instance();
+            try { $client->invalidate_site_resolution(); } catch (\Throwable $e) { /* swallow */ }
+            if (method_exists($client, 'bust_manifest_caches')) {
+                try { $client->bust_manifest_caches(); } catch (\Throwable $e) { /* swallow */ }
+            }
+        } else {
+            // Defensive: invalidate site resolution directly if ApiClient
+            // hasn't loaded yet at this hook firing.
+            delete_transient('aacb_site_options_cache');
+            delete_option('aacb_siteID');
+        }
+
+        if (class_exists('AllAccessible_PostLinkBackfill')) {
+            try { AllAccessible_PostLinkBackfill::on_activate(); } catch (\Throwable $e) { /* swallow */ }
+        }
+
+        // Image grid cache stamp — bump even if the helpers above didn't
+        // load. Default is 1, increment past it so the version-stamp
+        // cache key changes and next Image Manager render misses cache.
+        $current = (int) get_option('aacb_image_grid_cache_stamp', 1);
+        update_option('aacb_image_grid_cache_stamp', $current + 1, false);
     }
     
     /**

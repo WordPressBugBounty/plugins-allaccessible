@@ -1,11 +1,9 @@
 <?php
 /**
- * Usage Dashboard Component
- *
- * Shows usage metrics, limits, and conversion-focused CTAs
+ * Usage Dashboard
  *
  * @package AllAccessible
- * @since 2.0.0
+ * @since   2.0.0
  */
 
 if (!defined('ABSPATH')) {
@@ -13,233 +11,230 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Render usage dashboard with metrics and progress bars
+ * Render the usage card.
  *
- * @param object $site_options Site options from /validate API
- * @param string $account_tier Current account tier
- * @param string $addon_url URL to addon/billing page
- * @param string $audits_url URL to accessibility audits page
+ * @param object $site_options Response from the validation endpoint (must expose ->usageSummary)
+ * @param string $account_tier free|trial|starter|legacy|enterprise|unknown
+ * @param string $addon_url    URL to plan/addons page on app.allaccessible.org
+ * @param string $audits_url   URL to accessibility audits page on app.allaccessible.org
  */
 function aacb_render_usage_dashboard($site_options, $account_tier, $addon_url, $audits_url) {
-    if (!$site_options || is_wp_error($site_options) || !isset($site_options->usageSummary)) {
-        return;
-    }
-
-    $usage = $site_options->usageSummary;
     $is_free = ($account_tier === 'free');
-    $is_paid = in_array($account_tier, array('starter', 'legacy', 'enterprise'));
-    $site_id = $site_options->siteID ?? get_option('aacb_siteID');
-    $sub_id = $site_options->subID ?? null;
+    $is_paid = in_array($account_tier, array('starter', 'legacy', 'enterprise', 'trial'), true);
+
+    $has_usage = ($site_options && !is_wp_error($site_options) && isset($site_options->usageSummary));
+    $usage     = $has_usage ? $site_options->usageSummary : null;
+    $site_id   = $has_usage && isset($site_options->siteID) ? $site_options->siteID : get_option('aacb_siteID');
+    $sub_id    = $has_usage && isset($site_options->subID)  ? $site_options->subID  : null;
     ?>
 
-    <div class="aacx-bg-white aacx-rounded-xl aacx-shadow-xl aacx-border-2 aacx-border-aacx-gray-200 aacx-overflow-hidden aacx-mb-8">
-
-        <div class="aacx-px-8 aacx-py-6 aacx-border-b-2 aacx-border-aacx-gray-200 aacx-bg-aacx-gray-50">
-            <div class="aacx-flex aacx-items-center aacx-justify-between">
-                <div class="aacx-flex aacx-items-center aacx-gap-4">
-                    <div class="aacx-w-12 aacx-h-12 aacx-bg-aacx-primary-100 aacx-rounded-xl aacx-flex aacx-items-center aacx-justify-center">
-                        <svg class="aacx-w-7 aacx-h-7 aacx-text-aacx-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h2 class="aacx-text-2xl aacx-font-bold aacx-text-aacx-slate-900">
-                            <?php _e('Usage Overview', 'allaccessible'); ?>
-                        </h2>
-                        <p class="aacx-text-xs aacx-text-aacx-slate-600 aacx-mt-1">
-                            <?php _e('Monitor your monthly usage and limits', 'allaccessible'); ?>
-                        </p>
-                    </div>
-                </div>
-                <?php if ($is_free): ?>
-                <a href="<?php echo esc_url($addon_url); ?>"
-                   target="_blank"
-                   class="aacx-inline-flex aacx-items-center aacx-gap-2 aacx-px-5 aacx-py-2.5 aacx-bg-aacx-primary-600 aacx-text-white aacx-rounded-lg aacx-font-semibold aacx-text-sm hover:aacx-bg-aacx-primary-700 aacx-shadow-lg hover:aacx-shadow-xl aacx-transition-all">
-                    <?php _e('Upgrade Plan', 'allaccessible'); ?>
-                    <svg class="aacx-w-4 aacx-h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </a>
-                <?php endif; ?>
-            </div>
-        </div>
-
-        <div class="aacx-p-8">
-            <div class="aacx-grid aacx-grid-cols-1 md:aacx-grid-cols-2 aacx-gap-6">
-
-            <?php
-            // Define which metrics to show
-            $metrics_to_show = array(
-                'pageviews_monthly' => array(
-                    'label' => __('Pageviews This Month', 'allaccessible'),
-                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>',
-                ),
-                'ai_images_monthly' => array(
-                    'label' => __('AI Image Alt Text', 'allaccessible'),
-                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>',
-                ),
-                'audit_runs_monthly' => array(
-                    'label' => __('Accessibility Audits', 'allaccessible'),
-                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>',
-                ),
-                'reports_monthly' => array(
-                    'label' => __('Compliance Reports', 'allaccessible'),
-                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
-                ),
-            );
-
-            foreach ($metrics_to_show as $key => $config) {
-                if (!isset($usage->$key)) continue;
-
-                $metric = $usage->$key;
-                $current = $metric->current;
-                $limit = $metric->limit;
-                $percent = $metric->percent;
-                $exceeded = $metric->exceeded;
-
-                // Determine color based on usage
-                if ($exceeded) {
-                    $bar_color = 'aacx-bg-red-500';
-                    $text_color = 'aacx-text-red-600';
-                    $bg_color = 'aacx-bg-red-50';
-                } elseif ($percent >= 80) {
-                    $bar_color = 'aacx-bg-orange-500';
-                    $text_color = 'aacx-text-orange-600';
-                    $bg_color = 'aacx-bg-orange-50';
-                } elseif ($percent >= 50) {
-                    $bar_color = 'aacx-bg-yellow-500';
-                    $text_color = 'aacx-text-yellow-600';
-                    $bg_color = 'aacx-bg-yellow-50';
-                } else {
-                    $bar_color = 'aacx-bg-aacx-secondary-500';
-                    $text_color = 'aacx-text-aacx-secondary-600';
-                    $bg_color = 'aacx-bg-aacx-secondary-50';
-                }
-
-                // Check if feature is locked (limit = 0)
-                $is_locked = ($limit === 0);
-                ?>
-
-                <div class="aacx-border-2 aacx-border-aacx-gray-200 aacx-rounded-lg aacx-p-6 aacx-transition-all hover:aacx-border-aacx-primary-200 hover:aacx-shadow-md <?php echo $exceeded ? 'aacx-border-red-300 aacx-bg-red-50' : ''; ?>">
-                    <div class="aacx-flex aacx-items-start aacx-justify-between aacx-mb-4">
-                        <div class="aacx-flex aacx-items-center aacx-gap-3">
-                            <div class="aacx-flex-shrink-0 aacx-w-10 aacx-h-10 aacx-rounded-lg aacx-flex aacx-items-center aacx-justify-center <?php echo $exceeded ? 'aacx-bg-red-100' : 'aacx-bg-aacx-gray-100'; ?>">
-                                <svg class="aacx-w-6 aacx-h-6 <?php echo esc_attr($text_color); ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <?php echo $config['icon']; ?>
-                                </svg>
-                            </div>
-                            <h3 class="aacx-font-bold aacx-text-aacx-slate-900 aacx-text-base">
-                                <?php echo esc_html($config['label']); ?>
-                            </h3>
-                        </div>
-                        <?php if ($is_locked && $is_free): ?>
-                        <span class="aacx-px-2 aacx-py-1 aacx-bg-orange-100 aacx-text-orange-700 aacx-rounded aacx-text-xs aacx-font-semibold">
-                            🔒 <?php _e('Upgrade', 'allaccessible'); ?>
-                        </span>
-                        <?php elseif ($is_locked && $is_paid): ?>
-                        <span class="aacx-px-2 aacx-py-1 aacx-bg-aacx-primary-100 aacx-text-aacx-primary-700 aacx-rounded aacx-text-xs aacx-font-semibold">
-                            <?php _e('Manage', 'allaccessible'); ?>
-                        </span>
-                        <?php endif; ?>
-                    </div>
-
-                    <?php if (!$is_locked): ?>
-                    <!-- Progress Bar -->
-                    <div class="aacx-mb-3">
-                        <div class="aacx-flex aacx-justify-between aacx-text-sm aacx-mb-1">
-                            <span class="aacx-font-semibold aacx-text-aacx-slate-700">
-                                <?php echo number_format($current); ?> / <?php echo number_format($limit); ?>
-                            </span>
-                            <span class="<?php echo esc_attr($text_color); ?> aacx-font-semibold">
-                                <?php echo esc_html($percent); ?>%
-                            </span>
-                        </div>
-                        <div class="aacx-w-full aacx-bg-aacx-gray-200 aacx-rounded-full aacx-h-2 aacx-overflow-hidden">
-                            <div class="<?php echo esc_attr($bar_color); ?> aacx-h-2 aacx-rounded-full aacx-transition-all"
-                                 style="width: <?php echo min($percent, 100); ?>%"></div>
-                        </div>
-                    </div>
-
-                    <?php if ($exceeded): ?>
-                    <p class="aacx-text-xs aacx-text-red-600 aacx-font-semibold">
-                        ⚠️ <?php _e('Limit exceeded - Widget using free features', 'allaccessible'); ?>
-                    </p>
-                    <?php elseif ($percent >= 80): ?>
-                    <p class="aacx-text-xs aacx-text-orange-600 aacx-font-semibold">
-                        ⚠️ <?php printf(__('%s remaining', 'allaccessible'), number_format($metric->remaining)); ?>
-                    </p>
-                    <?php else: ?>
-                    <p class="aacx-text-xs aacx-text-aacx-slate-600">
-                        <?php printf(__('%s remaining', 'allaccessible'), number_format($metric->remaining)); ?>
-                    </p>
-                    <?php endif; ?>
-
-                    <?php else: ?>
-                    <!-- Locked Feature -->
-                    <?php if ($is_free): ?>
-                    <!-- Free users: Show upgrade -->
-                    <p class="aacx-text-sm aacx-text-aacx-slate-600 aacx-mb-3">
-                        <?php _e('Upgrade to unlock this feature', 'allaccessible'); ?>
-                    </p>
-                    <a href="<?php echo esc_url($addon_url); ?>"
-                       target="_blank"
-                       class="aacx-text-aacx-primary-600 hover:aacx-text-aacx-primary-700 aacx-font-semibold aacx-text-xs">
-                        <?php _e('Upgrade Plan', 'allaccessible'); ?> →
-                    </a>
-                    <?php else: ?>
-                    <!-- Paid users: Link to dashboard feature -->
-                    <p class="aacx-text-sm aacx-text-aacx-slate-600 aacx-mb-3">
-                        <?php _e('Manage in your dashboard', 'allaccessible'); ?>
-                    </p>
-                    <?php
-                    // Build feature-specific URL
-                    if ($key === 'audit_runs_monthly') {
-                        $feature_url = $audits_url; // Use audits_url from API
-                    } elseif ($site_id && $sub_id) {
-                        // Other features use siteID/subID pattern
-                        if ($key === 'reports_monthly') {
-                            $feature_url = 'https://app.allaccessible.org/site/' . $site_id . '/' . $sub_id . '/reports';
-                        } elseif ($key === 'api_calls_monthly') {
-                            $feature_url = 'https://app.allaccessible.org/site/' . $site_id . '/' . $sub_id . '/api';
-                        } else {
-                            $feature_url = 'https://app.allaccessible.org/site/' . $site_id;
-                        }
-                    } else {
-                        $feature_url = 'https://app.allaccessible.org';
-                    }
-                    ?>
-                    <a href="<?php echo esc_url($feature_url); ?>"
-                       target="_blank"
-                       class="aacx-text-aacx-primary-600 hover:aacx-text-aacx-primary-700 aacx-font-semibold aacx-text-xs">
-                        <?php _e('Open Dashboard', 'allaccessible'); ?> →
-                    </a>
-                    <?php endif; ?>
-                    <?php endif; ?>
-                </div>
-
-                <?php
-            }
-            ?>
-
-            </div>
-
-            <?php if ($is_free): ?>
-            <!-- Upgrade CTA for Free Users -->
-            <div class="aacx-mt-6 aacx-pt-6 aacx-border-t aacx-border-aacx-gray-200 aacx-text-center">
-                <p class="aacx-text-aacx-slate-600 aacx-mb-4">
-                    <?php _e('Need more? Upgrade your plan or add custom limits.', 'allaccessible'); ?>
+    <section class="aacx-v2__card aacx-v2__card--elevated" aria-label="<?php esc_attr_e('Usage overview', 'allaccessible'); ?>">
+        <header class="aacx-v2__card-header">
+            <div>
+                <h2 style="font-size: var(--aacx-text-xl);"><?php esc_html_e('Usage this month', 'allaccessible'); ?></h2>
+                <p style="font-size: var(--aacx-text-sm); color: var(--aacx-text-muted); margin-top: var(--aacx-space-1);">
+                    <?php esc_html_e('Tracks pageviews and AllAccessible AI activity against your plan.', 'allaccessible'); ?>
                 </p>
-                <a href="<?php echo esc_url($addon_url); ?>"
-                   target="_blank"
-                   class="aacx-inline-flex aacx-items-center aacx-px-6 aacx-py-3 aacx-bg-aacx-secondary-600 aacx-text-white aacx-rounded-lg aacx-font-semibold hover:aacx-bg-aacx-secondary-700 aacx-transition-colors">
-                    <?php _e('Upgrade Plan', 'allaccessible'); ?>
-                    <svg class="aacx-w-5 aacx-h-5 aacx-ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                    </svg>
-                </a>
             </div>
+            <?php if ($is_free) : ?>
+                <a href="<?php echo esc_url($addon_url); ?>" target="_blank" rel="noopener"
+                   class="aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--sm">
+                    <?php esc_html_e('Upgrade plan', 'allaccessible'); ?>
+                </a>
+            <?php endif; ?>
+        </header>
+
+        <div class="aacx-v2__card-body">
+            <?php if (!$has_usage) :
+                // Empty state: API didn't return usage yet
+                ?>
+                <div class="aacx-v2__empty">
+                    <svg class="aacx-v2__empty-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    <p class="aacx-v2__empty-title"><?php esc_html_e('No usage to show yet', 'allaccessible'); ?></p>
+                    <p style="margin-bottom: var(--aacx-space-4);">
+                        <?php esc_html_e('Usage appears here once your widget starts serving pageviews.', 'allaccessible'); ?>
+                    </p>
+                    <a href="<?php echo esc_url(get_bloginfo('wpurl') . '/?aacb_preview=true'); ?>" target="_blank" rel="noopener"
+                       class="aacx-v2__btn aacx-v2__btn--secondary aacx-v2__btn--sm">
+                        <?php esc_html_e('Preview your widget', 'allaccessible'); ?>
+                    </a>
+                </div>
+                <?php
+            else :
+                // ── Usage rows ──────────────────────────────────────────
+                $metrics = array(
+                    'pageviews_monthly' => array(
+                        'label' => __('Pageviews', 'allaccessible'),
+                        'help'  => __('Active visits served by your widget this month.', 'allaccessible'),
+                        'ai'    => false,
+                    ),
+                    'ai_images_monthly' => array(
+                        'label' => __('AI image alt text', 'allaccessible'),
+                        'help'  => __('Alt text generated by AllAccessible AI for images on your site.', 'allaccessible'),
+                        'ai'    => true,
+                    ),
+                    'audit_runs_monthly' => array(
+                        'label' => __('Accessibility audits', 'allaccessible'),
+                        'help'  => __('Automated scans run by AllAccessible agents.', 'allaccessible'),
+                        'ai'    => false,
+                    ),
+                    'reports_monthly' => array(
+                        'label' => __('Compliance reports', 'allaccessible'),
+                        'help'  => __('VPAT and accessibility statement PDFs generated.', 'allaccessible'),
+                        'ai'    => false,
+                    ),
+                );
+
+                $rendered = 0;
+                ?>
+                <div class="aacx-v2__stack">
+                    <?php
+                    foreach ($metrics as $key => $meta) :
+                        if (!isset($usage->$key)) {
+                            continue;
+                        }
+                        $rendered++;
+
+                        $row       = $usage->$key;
+                        $current   = isset($row->current) ? (int) $row->current : 0;
+                        $limit     = isset($row->limit)   ? (int) $row->limit   : 0;
+                        $percent   = isset($row->percent) ? (int) $row->percent : 0;
+                        $exceeded  = !empty($row->exceeded);
+                        $remaining = isset($row->remaining) ? (int) $row->remaining : max(0, $limit - $current);
+                        $is_locked = ($limit === 0);
+
+                        // Severity → badge class + bar color (token-based)
+                        if ($exceeded || $percent >= 100) {
+                            $badge_class = 'aacx-v2__badge aacx-v2__badge--danger';
+                            $bar_color   = 'var(--aacx-danger-500)';
+                        } elseif ($percent >= 80) {
+                            $badge_class = 'aacx-v2__badge aacx-v2__badge--warn';
+                            $bar_color   = 'var(--aacx-warn-500)';
+                        } else {
+                            $badge_class = 'aacx-v2__badge aacx-v2__badge--ok';
+                            $bar_color   = 'var(--aacx-ok-500)';
+                        }
+
+                        // Per-feature dashboard URL (paid users)
+                        if ($key === 'audit_runs_monthly') {
+                            $feature_url = $audits_url;
+                        } elseif ($site_id && $sub_id && $key === 'reports_monthly') {
+                            $feature_url = 'https://app.allaccessible.org/site/' . rawurlencode($site_id) . '/' . rawurlencode($sub_id) . '/reports';
+                        } elseif ($site_id) {
+                            $feature_url = 'https://app.allaccessible.org/site/' . rawurlencode($site_id);
+                        } else {
+                            $feature_url = 'https://app.allaccessible.org';
+                        }
+                        ?>
+
+                        <div role="group"
+                             aria-label="<?php echo esc_attr(sprintf(__('%1$s usage: %2$d percent', 'allaccessible'), $meta['label'], $percent)); ?>"
+                             style="padding: var(--aacx-space-4) 0; border-bottom: 1px solid var(--aacx-border);">
+                            <div class="aacx-v2__row aacx-v2__row--between" style="margin-bottom: var(--aacx-space-2);">
+                                <div>
+                                    <div class="aacx-v2__row" style="gap: var(--aacx-space-2);">
+                                        <span style="font-weight: var(--aacx-weight-semibold); color: var(--aacx-text-strong); font-size: var(--aacx-text-sm);">
+                                            <?php echo esc_html($meta['label']); ?>
+                                        </span>
+                                        <?php if ($meta['ai']) : ?>
+                                            <span class="aacx-v2__ai-badge"><?php esc_html_e('AllAccessible AI', 'allaccessible'); ?></span>
+                                        <?php endif; ?>
+                                        <?php if (!$is_locked) : ?>
+                                            <span class="<?php echo esc_attr($badge_class); ?>">
+                                                <?php echo esc_html($percent); ?>%
+                                            </span>
+                                        <?php elseif ($is_free) : ?>
+                                            <span class="aacx-v2__badge aacx-v2__badge--primary">
+                                                <?php esc_html_e('Upgrade to unlock', 'allaccessible'); ?>
+                                            </span>
+                                        <?php endif; ?>
+                                    </div>
+                                    <p class="aacx-v2__help" style="margin-top: var(--aacx-space-1);">
+                                        <?php echo esc_html($meta['help']); ?>
+                                    </p>
+                                </div>
+
+                                <?php if (!$is_locked) : ?>
+                                    <span style="font-variant-numeric: tabular-nums; font-size: var(--aacx-text-sm); font-weight: var(--aacx-weight-semibold); color: var(--aacx-text-strong); white-space: nowrap;">
+                                        <?php echo esc_html(number_format_i18n($current)); ?>
+                                        <span style="color: var(--aacx-text-muted); font-weight: var(--aacx-weight-normal);">
+                                            / <?php echo esc_html(number_format_i18n($limit)); ?>
+                                        </span>
+                                    </span>
+                                <?php endif; ?>
+                            </div>
+
+                            <?php if (!$is_locked) : ?>
+                                <!-- CSS-only progress bar (no external chart lib) -->
+                                <div role="progressbar"
+                                     aria-valuenow="<?php echo esc_attr($percent); ?>"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100"
+                                     aria-label="<?php echo esc_attr(sprintf(__('%s percent used', 'allaccessible'), $percent)); ?>"
+                                     style="height: 6px; background: var(--aacx-slate-100); border-radius: var(--aacx-radius-pill); overflow: hidden;">
+                                    <div style="height: 100%; width: <?php echo esc_attr(min(100, max(0, $percent))); ?>%; background: <?php echo esc_attr($bar_color); ?>; transition: width 300ms ease-out;"></div>
+                                </div>
+
+                                <p style="margin-top: var(--aacx-space-2); font-size: var(--aacx-text-xs); color: var(--aacx-text-muted);">
+                                    <?php if ($exceeded) : ?>
+                                        <strong style="color: var(--aacx-danger-700);">
+                                            <?php esc_html_e('Limit reached — widget temporarily on free features.', 'allaccessible'); ?>
+                                        </strong>
+                                    <?php else :
+                                        printf(
+                                            /* translators: %s: count of remaining units this month */
+                                            esc_html__('%s remaining this month', 'allaccessible'),
+                                            esc_html(number_format_i18n($remaining))
+                                        );
+                                    endif; ?>
+                                    <?php if ($is_paid) : ?>
+                                        &nbsp;·&nbsp;
+                                        <a href="<?php echo esc_url($feature_url); ?>" target="_blank" rel="noopener">
+                                            <?php esc_html_e('Manage', 'allaccessible'); ?> →
+                                        </a>
+                                    <?php endif; ?>
+                                </p>
+                            <?php else : ?>
+                                <?php if ($is_free) : ?>
+                                    <p style="font-size: var(--aacx-text-xs); color: var(--aacx-text-muted);">
+                                        <a href="<?php echo esc_url($addon_url); ?>" target="_blank" rel="noopener">
+                                            <?php esc_html_e('Upgrade your plan', 'allaccessible'); ?> →
+                                        </a>
+                                    </p>
+                                <?php else : ?>
+                                    <p style="font-size: var(--aacx-text-xs); color: var(--aacx-text-muted);">
+                                        <a href="<?php echo esc_url($feature_url); ?>" target="_blank" rel="noopener">
+                                            <?php esc_html_e('Manage in dashboard', 'allaccessible'); ?> →
+                                        </a>
+                                    </p>
+                                <?php endif; ?>
+                            <?php endif; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <?php if ($rendered === 0) : ?>
+                    <div class="aacx-v2__empty">
+                        <p class="aacx-v2__empty-title"><?php esc_html_e('No metered features on your plan yet', 'allaccessible'); ?></p>
+                        <p><?php esc_html_e('Usage will appear here once your widget starts serving pages.', 'allaccessible'); ?></p>
+                    </div>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
-    </div>
+
+        <?php if ($is_free && $has_usage) : ?>
+            <footer class="aacx-v2__card-footer">
+                <p style="font-size: var(--aacx-text-sm); color: var(--aacx-text-muted); margin: 0;">
+                    <?php esc_html_e('Need more pageviews or AllAccessible AI capacity?', 'allaccessible'); ?>
+                </p>
+                <a href="<?php echo esc_url($addon_url); ?>" target="_blank" rel="noopener"
+                   class="aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--sm">
+                    <?php esc_html_e('Upgrade plan', 'allaccessible'); ?>
+                </a>
+            </footer>
+        <?php endif; ?>
+    </section>
     <?php
 }

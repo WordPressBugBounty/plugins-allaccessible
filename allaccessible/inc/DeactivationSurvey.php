@@ -248,19 +248,17 @@ class AllAccessible_DeactivationSurvey {
                     comment = textarea.length ? textarea.val() : (input.length ? input.val() : '');
                 }
 
-                console.log('🔍 Deactivation Feedback:', {reason, comment});
 
                 // Show loading
                 $btn.text('<?php esc_js(_e('Submitting...', 'allaccessible')); ?>').prop('disabled', true);
 
-                // Submit feedback - use 'comment' field name to match Symfony
+                // Submit feedback — 'comment' field name matches AllAccessible feedback endpoint
                 $.post(ajaxurl, {
                     action: 'aacb_deactivation_feedback',
                     reason: reason,
                     comment: comment,
                     nonce: '<?php echo wp_create_nonce('aacb_deactivation'); ?>'
                 }, function(response) {
-                    console.log('✅ Feedback submitted:', response);
                     window.location.href = deactivateUrl;
                 }).fail(function(xhr) {
                     console.error('❌ Feedback failed:', xhr);
@@ -289,13 +287,13 @@ class AllAccessible_DeactivationSurvey {
         $comment = sanitize_textarea_field($_POST['comment'] ?? '');
         $site_url = get_bloginfo('url');
 
-        // Prepare plugin data as JSON (matching Symfony endpoint)
+        // Prepare plugin data as JSON (matches AllAccessible feedback endpoint schema)
         $plugin_data = json_encode(array(
             'version' => AACB_VERSION,
             'url' => $site_url,
         ));
 
-        // Build form data matching Symfony /api/wp-feedback endpoint exactly like old plugin
+        // Build form data matching /api/wp-feedback endpoint exactly like old plugin
         $form_data = array(
             'type' => 'deactivation',
             'reason' => $reason,
@@ -303,13 +301,13 @@ class AllAccessible_DeactivationSurvey {
         );
 
         // Add comment field with pattern: comment-{reason}
-        // This matches old plugin format and Symfony's findNonEmptyCommentKeys expects this
+        // Matches old plugin format expected by AllAccessible feedback endpoint
         if (!empty($comment)) {
             $comment_field = 'comment-' . $reason; // e.g., 'comment-stopped-working'
             $form_data[$comment_field] = $comment;
         }
 
-        // Send to Symfony API endpoint (URL-encoded form data)
+        // Send to AllAccessible feedback endpoint (URL-encoded form data)
         wp_remote_post('https://app.allaccessible.org/api/wp-feedback', array(
             'body' => $form_data,
             'headers' => array('Content-Type' => 'application/x-www-form-urlencoded'),

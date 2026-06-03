@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AllAccessible\n"
-"POT-Creation-Date: 2023-05-11 15:25-0400\n"
-"PO-Revision-Date: 2023-05-11 15:26-0400\n"
+"POT-Creation-Date: 2026-06-03 13:39-0400\n"
+"PO-Revision-Date: 2026-06-03 13:59-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: he\n"
@@ -11,367 +11,3940 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
 "2 : 3);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.9\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: allaccessible.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: allaccessible.php:52
-msgid "Accessibility"
-msgstr "Ułatwienia"
+#: allaccessible.php:166
+msgid "Account settings saved successfully"
+msgstr "הגדרות החשבון נשמרו בהצלחה"
 
-#: allaccessible.php:291
-msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
-msgstr "הפעל את AllAccessible Premium כדי לפתוח את תכונות הנגישות של Ai."
+#: allaccessible.php:200
+msgid "Unauthorized access"
+msgstr "גישה לא מורשית"
 
-#: allaccessible.php:291
-msgid "Click Here"
-msgstr "לחץ כאן"
+#: allaccessible.php:221
+msgid "Plugin data has been reset successfully"
+msgstr "נתוני התוסף אופסו בהצלחה"
 
-#: inc/AllAccessibleDeactivationForm.php:29
-msgid "AllAccessible Deactivation"
-msgstr "ביטול כל נגיש"
+#: allaccessible.php:235 allaccessible.php:323 allaccessible.php:404
+#: inc/SettingsPage.php:1894
+msgid "Unauthorized"
+msgstr "אין הרשאה"
 
-#: inc/AllAccessibleDeactivationForm.php:30
-msgid ""
-"If you have a moment, please let us know why you are deactivating "
-"AllAccessible. All submissions are anonymous and we only use this feedback "
-"to improve this plugin."
-msgstr ""
-"אם יש לך רגע, ספר לנו מדוע אתה משבית את AllAccessible. כל ההגשות הן "
-"אנונימיות ואנו משתמשים במשוב זה רק כדי לשפר את התוסף הזה."
+#: allaccessible.php:363
+msgid "Still finishing setup — wait a few seconds and try again."
+msgstr "עדיין מסיימים את ההגדרה — המתן כמה שניות ונסה שוב."
 
-#: inc/AllAccessibleDeactivationForm.php:31
-msgid "Do not send my e-mail address with this feedback"
-msgstr "אל תשלח את כתובת הדואר האלקטרוני שלי עם המשוב הזה"
+#: allaccessible.php:368
+msgid "Scan queued. Results appear in 2-5 minutes."
+msgstr "הסריקה הוכנסה לתור. התוצאות יופיעו תוך 2–5 דקות."
 
-#: inc/AllAccessibleDeactivationForm.php:33
-msgid "Please give us any feedback that could help us improve"
-msgstr "אנא תנו לנו כל משוב שיכול לעזור לנו להשתפר"
+#: inc/AdminBar.php:64
+msgid "Scan this page now"
+msgstr "סרוק את הדף הזה עכשיו"
 
-#: inc/AllAccessibleDeactivationForm.php:35
-msgid "Cancel"
-msgstr "ביטול"
+#: inc/AdminBar.php:77
+msgid "View page report"
+msgstr "הצג דוח דף"
 
-#: inc/AllAccessibleDeactivationForm.php:36
-msgid "Skip &amp; Deactivate"
-msgstr "דלג &amp; השבת"
+#: inc/AdminBar.php:97 inc/SettingsPage.php:48 inc/SettingsPage.php:49
+msgid "Dashboard"
+msgstr "לוח בקרה"
 
-#: inc/AllAccessibleDeactivationForm.php:37
-msgid "Submit &amp; Deactivate"
-msgstr "שלח &amp; השבת"
+#: inc/AdminBar.php:103
+msgid "Audits & Fixes"
+msgstr "ביקורות ותיקונים"
 
-#: inc/AllAccessibleDeactivationForm.php:38
-msgid "Please wait"
-msgstr "אנא המתן"
+#: inc/AdminBar.php:109 inc/WidgetCustomizer.php:190
+msgid "Settings"
+msgstr "הגדרות"
 
-#: inc/AllAccessibleDeactivationForm.php:39
-msgid "Thank you!"
-msgstr "תודה רבה!"
+#: inc/AdminBar.php:116 inc/AgenticFixesPage.php:162
+#: inc/DashboardLayout.php:290 inc/SettingsPage.php:389
+msgid "Open dashboard"
+msgstr "פתח את לוח הבקרה"
 
-#: inc/AllAccessibleDeactivationForm.php:48
-msgid "The plugin suddenly stopped working"
-msgstr "הפלאגין הפסיק לפתע לעבוד"
+#: inc/AdminBar.php:172 inc/EditorMetaBox.php:440
+msgid "Scanning page…"
+msgstr "סורק את הדף…"
 
-#: inc/AllAccessibleDeactivationForm.php:51
-#: inc/AllAccessibleDeactivationForm.php:58
-msgid ""
-"We're sorry to hear that, check <a href=\"https://support.allaccessible."
-"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
-"issue?"
-msgstr ""
-"אנו מצטערים לשמוע זאת, בדוק את <a href=\"https://support.allaccessible.org\" "
-"target=\"_blank\">התמיכה של AllAccessible</a> . אתה יכול לתאר את הבעיה?"
+#: inc/AdminBar.php:173
+#, php-format
+msgid "Scan complete. Score: %d%%"
+msgstr "הסריקה הושלמה. ציון: %d%%"
 
-#: inc/AllAccessibleDeactivationForm.php:55
-msgid "The plugin broke my site"
-msgstr "התוסף שבר את האתר שלי"
+#: inc/AdminBar.php:174
+msgid "Scan complete. Refresh to see updated score."
+msgstr "הסריקה הושלמה. רענן כדי לראות את הציון המעודכן."
 
-#: inc/AllAccessibleDeactivationForm.php:62
-msgid "I don't need this plugin any more"
-msgstr "אני לא צריך את התוסף הזה יותר"
+#: inc/AdminBar.php:175 inc/EditorMetaBox.php:444
+msgid "Scan failed. Try again or check the dashboard."
+msgstr "הסריקה נכשלה. נסה שוב או בדוק את לוח הבקרה."
 
-#: inc/AllAccessibleDeactivationForm.php:66
-msgid "I found a better plugin"
-msgstr "מצאתי תוסף טוב יותר"
+#: inc/AdminBar.php:176
+msgid "Scan is still running — check back in a minute."
+msgstr "הסריקה עדיין פועלת — בדקו שוב בעוד דקה."
 
-#: inc/AllAccessibleDeactivationForm.php:69
-msgid "Can you please share the name of the other plugin?"
-msgstr "אתה יכול בבקשה לשתף את השם של התוסף השני?"
+#: inc/AdminBar.php:177
+msgid "Could not start scan: "
+msgstr "לא ניתן היה להתחיל את הסריקה: "
 
-#: inc/AllAccessibleDeactivationForm.php:73
-msgid "It's a temporary deactivation, I'm troubleshooting"
-msgstr "זו השבתה זמנית, אני פותר בעיות"
+#: inc/AdminBar.php:178 inc/EditorMetaBox.php:446
+msgid "Scan rate limit reached. Try again later."
+msgstr "הגעתם למגבלת קצב הסריקה. נסו שוב מאוחר יותר."
 
-#: inc/AllAccessibleDeactivationForm.php:77
-msgid "Other"
-msgstr "אחר"
+#: inc/AdminBar.php:341 inc/AdminBar.php:375
+msgid "Permission denied."
+msgstr "ההרשאה נדחתה."
 
-#: inc/AllAccessibleDeactivationForm.php:80
-msgid "Can you describe the issue?"
-msgstr "אתה יכול לתאר את הבעיה?"
+#: inc/AdminBar.php:347
+msgid "Missing page URL."
+msgstr "כתובת ה-URL של הדף חסרה."
 
-#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
-msgid "Preview Widget"
-msgstr "ווידג'ט תצוגה מקדימה"
+#: inc/AdminBar.php:382
+msgid "Missing job ID."
+msgstr "מזהה המשימה חסר."
 
-#: inc/AllAccessibleSettings.php:40
-msgid "Widget Status"
-msgstr "סטטוס ווידג'ט"
+#: inc/AgenticFixes/Labels.php:23
+msgid "Missing image description"
+msgstr "חסר תיאור לתמונה"
 
-#: inc/AllAccessibleSettings.php:40
+#: inc/AgenticFixes/Labels.php:24
+msgid "Button without label"
+msgstr "כפתור ללא תווית"
+
+#: inc/AgenticFixes/Labels.php:25
+msgid "Form field without label"
+msgstr "שדה טופס ללא תווית"
+
+#: inc/AgenticFixes/Labels.php:26
+msgid "Missing page language"
+msgstr "חסרה שפת עמוד"
+
+#: inc/AgenticFixes/Labels.php:27
+msgid "Link without text"
+msgstr "קישור ללא טקסט"
+
+#: inc/AgenticFixes/Labels.php:28
+msgid "ARIA labeling issue"
+msgstr "בעיה בתיוג ARIA"
+
+#: inc/AgenticFixes/Labels.php:29
+msgid "Heading hierarchy issue"
+msgstr "בעיה בהיררכיית כותרות"
+
+#: inc/AgenticFixes/Labels.php:30 inc/AgenticFixes/Labels.php:33
+msgid "Other accessibility issue"
+msgstr "בעיה אחרת בנגישות"
+
+#: inc/AgenticFixes/Labels.php:44 inc/AgenticFixesPage.php:241
+msgid "Pending review"
+msgstr "ממתין לבדיקה"
+
+#: inc/AgenticFixes/Labels.php:45
+msgid "Approved"
+msgstr "אושר"
+
+#: inc/AgenticFixes/Labels.php:46
 msgid "Active"
 msgstr "פעיל"
 
-#: inc/AllAccessibleSettings.php:41
-#, php-format
-msgid "AllAccessible's %s widget is visible on the front end of your site."
-msgstr "הווידג'ט %s של AllAccessible גלוי בקצה הקדמי של האתר שלך."
+#: inc/AgenticFixes/Labels.php:47 inc/AgenticFixesPage.php:249
+msgid "Reverted"
+msgstr "שוחזר"
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Website Accessibility"
-msgstr "‫Ułatwienia"
+#: inc/AgenticFixes/Labels.php:61 inc/AgenticFixes/Labels.php:67
+#: inc/AgenticFixesPage.php:347 inc/AgenticFixesPage.php:452
+msgid "AllAccessible agents"
+msgstr "סוכני AllAccessible"
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Audits & Remediation"
-msgstr "ביקורת ותיקון"
+#: inc/AgenticFixes/Labels.php:62
+msgid "Automated rule check"
+msgstr "בדיקת כללים אוטומטית"
 
-#: inc/AllAccessibleSettings.php:61
+#: inc/AgenticFixes/Labels.php:63
+msgid "Compliance scanner"
+msgstr "סורק תאימות"
+
+#: inc/AgenticFixes/Labels.php:64
+msgid "Manual review"
+msgstr "בדיקה ידנית"
+
+#: inc/AgenticFixes/Labels.php:80
+msgid "Suggested alt text for image"
+msgstr "טקסט חלופי מוצע לתמונה"
+
+#: inc/AgenticFixes/Labels.php:81
+msgid "Suggested label for button"
+msgstr "תווית מוצעת לכפתור"
+
+#: inc/AgenticFixes/Labels.php:82
+msgid "Suggested label for form field"
+msgstr "תווית מוצעת לשדה טופס"
+
+#: inc/AgenticFixes/Labels.php:83
+msgid "Set page language attribute"
+msgstr "הגדרת מאפיין שפת הדף"
+
+#: inc/AgenticFixes/Labels.php:84
+msgid "Suggested text for link"
+msgstr "טקסט מוצע לקישור"
+
+#: inc/AgenticFixes/Labels.php:85
+msgid "Correct ARIA role assignment"
+msgstr "הקצאת תפקיד ARIA נכונה"
+
+#: inc/AgenticFixes/Labels.php:86
+msgid "Fix heading order"
+msgstr "תיקון סדר הכותרות"
+
+#: inc/AgenticFixes/Labels.php:87 inc/AgenticFixes/Labels.php:90
+msgid "Accessibility fix suggested"
+msgstr "הוצע תיקון נגישות"
+
+#: inc/AgenticFixes/Labels.php:122
+msgid "Non-text Content"
+msgstr "תוכן שאינו טקסט"
+
+#: inc/AgenticFixes/Labels.php:123
+msgid "Audio-only and Video-only (Prerecorded)"
+msgstr "אודיו בלבד ווידאו בלבד (מוקלט מראש)"
+
+#: inc/AgenticFixes/Labels.php:124
+msgid "Captions (Prerecorded)"
+msgstr "כתוביות (מוקלט מראש)"
+
+#: inc/AgenticFixes/Labels.php:125
+msgid "Audio Description or Media Alternative (Prerecorded)"
+msgstr "תיאור קולי או חלופה למדיה (מוקלט מראש)"
+
+#: inc/AgenticFixes/Labels.php:126
+msgid "Captions (Live)"
+msgstr "כתוביות (בשידור חי)"
+
+#: inc/AgenticFixes/Labels.php:127
+msgid "Audio Description (Prerecorded)"
+msgstr "תיאור קולי (מוקלט מראש)"
+
+#: inc/AgenticFixes/Labels.php:128
+msgid "Sign Language (Prerecorded)"
+msgstr "שפת סימנים (מוקלט מראש)"
+
+#: inc/AgenticFixes/Labels.php:129
+msgid "Extended Audio Description (Prerecorded)"
+msgstr "תיאור שמע מורחב (מוקלט מראש)"
+
+#: inc/AgenticFixes/Labels.php:130
+msgid "Media Alternative (Prerecorded)"
+msgstr "חלופה למדיה (מוקלט מראש)"
+
+#: inc/AgenticFixes/Labels.php:131
+msgid "Audio-only (Live)"
+msgstr "שמע בלבד (חי)"
+
+#: inc/AgenticFixes/Labels.php:132
+msgid "Info and Relationships"
+msgstr "מידע וקשרים"
+
+#: inc/AgenticFixes/Labels.php:133
+msgid "Meaningful Sequence"
+msgstr "רצף משמעותי"
+
+#: inc/AgenticFixes/Labels.php:134
+msgid "Sensory Characteristics"
+msgstr "מאפיינים חושיים"
+
+#: inc/AgenticFixes/Labels.php:135
+msgid "Orientation"
+msgstr "כיוון"
+
+#: inc/AgenticFixes/Labels.php:136
+msgid "Identify Input Purpose"
+msgstr "זיהוי מטרת הקלט"
+
+#: inc/AgenticFixes/Labels.php:137
+msgid "Identify Purpose"
+msgstr "זיהוי המטרה"
+
+#: inc/AgenticFixes/Labels.php:138
+msgid "Use of Color"
+msgstr "שימוש בצבע"
+
+#: inc/AgenticFixes/Labels.php:139
+msgid "Audio Control"
+msgstr "בקרת שמע"
+
+#: inc/AgenticFixes/Labels.php:140
+msgid "Contrast (Minimum)"
+msgstr "ניגודיות (מינימום)"
+
+#: inc/AgenticFixes/Labels.php:141
+msgid "Resize Text"
+msgstr "שינוי גודל הטקסט"
+
+#: inc/AgenticFixes/Labels.php:142
+msgid "Images of Text"
+msgstr "תמונות של טקסט"
+
+#: inc/AgenticFixes/Labels.php:143
+msgid "Contrast (Enhanced)"
+msgstr "ניגודיות (משופרת)"
+
+#: inc/AgenticFixes/Labels.php:144
+msgid "Low or No Background Audio"
+msgstr "שמע רקע נמוך או ללא"
+
+#: inc/AgenticFixes/Labels.php:145
+msgid "Visual Presentation"
+msgstr "הצגה חזותית"
+
+#: inc/AgenticFixes/Labels.php:146
+msgid "Images of Text (No Exception)"
+msgstr "תמונות של טקסט (ללא חריגים)"
+
+#: inc/AgenticFixes/Labels.php:147
+msgid "Reflow"
+msgstr "זרימה מחדש"
+
+#: inc/AgenticFixes/Labels.php:148
+msgid "Non-text Contrast"
+msgstr "ניגודיות שאינה של טקסט"
+
+#: inc/AgenticFixes/Labels.php:149
+msgid "Text Spacing"
+msgstr "ריווח טקסט"
+
+#: inc/AgenticFixes/Labels.php:150
+msgid "Content on Hover or Focus"
+msgstr "תוכן בעת ריחוף או מיקוד"
+
+#: inc/AgenticFixes/Labels.php:152
+msgid "Keyboard"
+msgstr "מקלדת"
+
+#: inc/AgenticFixes/Labels.php:153
+msgid "No Keyboard Trap"
+msgstr "ללא מלכודת מקלדת"
+
+#: inc/AgenticFixes/Labels.php:154
+msgid "Keyboard (No Exception)"
+msgstr "מקלדת (ללא חריגים)"
+
+#: inc/AgenticFixes/Labels.php:155
+msgid "Character Key Shortcuts"
+msgstr "קיצורי מקשים לתווים"
+
+#: inc/AgenticFixes/Labels.php:156
+msgid "Timing Adjustable"
+msgstr "תזמון ניתן להתאמה"
+
+#: inc/AgenticFixes/Labels.php:157
+msgid "Pause, Stop, Hide"
+msgstr "השהיה, עצירה, הסתרה"
+
+#: inc/AgenticFixes/Labels.php:158
+msgid "No Timing"
+msgstr "ללא תזמון"
+
+#: inc/AgenticFixes/Labels.php:159
+msgid "Interruptions"
+msgstr "הפרעות"
+
+#: inc/AgenticFixes/Labels.php:160
+msgid "Re-authenticating"
+msgstr "אימות מחדש"
+
+#: inc/AgenticFixes/Labels.php:161
+msgid "Timeouts"
+msgstr "זמני תפוגה"
+
+#: inc/AgenticFixes/Labels.php:162
+msgid "Three Flashes or Below Threshold"
+msgstr "שלושה הבהובים או מתחת לסף"
+
+#: inc/AgenticFixes/Labels.php:163
+msgid "Three Flashes"
+msgstr "שלושה הבהובים"
+
+#: inc/AgenticFixes/Labels.php:164
+msgid "Animation from Interactions"
+msgstr "אנימציה מאינטראקציות"
+
+#: inc/AgenticFixes/Labels.php:165
+msgid "Bypass Blocks"
+msgstr "עקיפת חסימות"
+
+#: inc/AgenticFixes/Labels.php:166
+msgid "Page Titled"
+msgstr "לעמוד יש כותרת"
+
+#: inc/AgenticFixes/Labels.php:167
+msgid "Focus Order"
+msgstr "סדר המיקוד"
+
+#: inc/AgenticFixes/Labels.php:168
+msgid "Link Purpose (In Context)"
+msgstr "מטרת הקישור (בהקשר)"
+
+#: inc/AgenticFixes/Labels.php:169
+msgid "Multiple Ways"
+msgstr "מספר דרכים"
+
+#: inc/AgenticFixes/Labels.php:170
+msgid "Headings and Labels"
+msgstr "כותרות ותוויות"
+
+#: inc/AgenticFixes/Labels.php:171
+msgid "Focus Visible"
+msgstr "מיקוד גלוי"
+
+#: inc/AgenticFixes/Labels.php:172
+msgid "Location"
+msgstr "מיקום"
+
+#: inc/AgenticFixes/Labels.php:173
+msgid "Link Purpose (Link Only)"
+msgstr "מטרת הקישור (הקישור בלבד)"
+
+#: inc/AgenticFixes/Labels.php:174
+msgid "Section Headings"
+msgstr "כותרות מקטעים"
+
+#: inc/AgenticFixes/Labels.php:175
+msgid "Focus Not Obscured (Minimum)"
+msgstr "המיקוד אינו מוסתר (מינימום)"
+
+#: inc/AgenticFixes/Labels.php:176
+msgid "Focus Not Obscured (Enhanced)"
+msgstr "המיקוד אינו מוסתר (משופר)"
+
+#: inc/AgenticFixes/Labels.php:177
+msgid "Focus Appearance"
+msgstr "מראה המיקוד"
+
+#: inc/AgenticFixes/Labels.php:178
+msgid "Pointer Gestures"
+msgstr "מחוות מצביע"
+
+#: inc/AgenticFixes/Labels.php:179
+msgid "Pointer Cancellation"
+msgstr "ביטול פעולת מצביע"
+
+#: inc/AgenticFixes/Labels.php:180
+msgid "Label in Name"
+msgstr "תווית בשם"
+
+#: inc/AgenticFixes/Labels.php:181
+msgid "Motion Actuation"
+msgstr "הפעלה באמצעות תנועה"
+
+#: inc/AgenticFixes/Labels.php:182
+msgid "Target Size (Enhanced)"
+msgstr "גודל יעד (משופר)"
+
+#: inc/AgenticFixes/Labels.php:183
+msgid "Concurrent Input Mechanisms"
+msgstr "מנגנוני קלט בו-זמניים"
+
+#: inc/AgenticFixes/Labels.php:184
+msgid "Dragging Movements"
+msgstr "תנועות גרירה"
+
+#: inc/AgenticFixes/Labels.php:185
+msgid "Target Size (Minimum)"
+msgstr "גודל יעד (מינימום)"
+
+#: inc/AgenticFixes/Labels.php:187
+msgid "Language of Page"
+msgstr "שפת הדף"
+
+#: inc/AgenticFixes/Labels.php:188
+msgid "Language of Parts"
+msgstr "שפת חלקים"
+
+#: inc/AgenticFixes/Labels.php:189
+msgid "Unusual Words"
+msgstr "מילים חריגות"
+
+#: inc/AgenticFixes/Labels.php:190
+msgid "Abbreviations"
+msgstr "קיצורים"
+
+#: inc/AgenticFixes/Labels.php:191
+msgid "Reading Level"
+msgstr "רמת קריאה"
+
+#: inc/AgenticFixes/Labels.php:192
+msgid "Pronunciation"
+msgstr "הגייה"
+
+#: inc/AgenticFixes/Labels.php:193
+msgid "On Focus"
+msgstr "בעת מיקוד"
+
+#: inc/AgenticFixes/Labels.php:194
+msgid "On Input"
+msgstr "בעת קלט"
+
+#: inc/AgenticFixes/Labels.php:195
+msgid "Consistent Navigation"
+msgstr "ניווט עקבי"
+
+#: inc/AgenticFixes/Labels.php:196
+msgid "Consistent Identification"
+msgstr "זיהוי עקבי"
+
+#: inc/AgenticFixes/Labels.php:197
+msgid "Change on Request"
+msgstr "שינוי לפי בקשה"
+
+#: inc/AgenticFixes/Labels.php:198
+msgid "Consistent Help"
+msgstr "עזרה עקבית"
+
+#: inc/AgenticFixes/Labels.php:199
+msgid "Error Identification"
+msgstr "זיהוי שגיאות"
+
+#: inc/AgenticFixes/Labels.php:200
+msgid "Labels or Instructions"
+msgstr "תוויות או הוראות"
+
+#: inc/AgenticFixes/Labels.php:201
+msgid "Error Suggestion"
+msgstr "הצעת תיקון לשגיאה"
+
+#: inc/AgenticFixes/Labels.php:202
+msgid "Error Prevention (Legal, Financial, Data)"
+msgstr "מניעת שגיאות (משפטי, פיננסי, נתונים)"
+
+#: inc/AgenticFixes/Labels.php:203
+msgid "Help"
+msgstr "עזרה"
+
+#: inc/AgenticFixes/Labels.php:204
+msgid "Error Prevention (All)"
+msgstr "מניעת שגיאות (הכול)"
+
+#: inc/AgenticFixes/Labels.php:205
+msgid "Redundant Entry"
+msgstr "רשומה כפולה"
+
+#: inc/AgenticFixes/Labels.php:206
+msgid "Accessible Authentication (Minimum)"
+msgstr "אימות נגיש (מינימום)"
+
+#: inc/AgenticFixes/Labels.php:207
+msgid "Accessible Authentication (Enhanced)"
+msgstr "אימות נגיש (משופר)"
+
+#: inc/AgenticFixes/Labels.php:209
+msgid "Parsing"
+msgstr "ניתוח תחבירי"
+
+#: inc/AgenticFixes/Labels.php:210
+msgid "Name, Role, Value"
+msgstr "שם, תפקיד, ערך"
+
+#: inc/AgenticFixes/Labels.php:211
+msgid "Status Messages"
+msgstr "הודעות מצב"
+
+#: inc/AgenticFixes/Labels.php:224
+msgid "Let AllAccessible agents fix these for you"
+msgstr "תנו לסוכני AllAccessible לתקן את אלה בשבילכם"
+
+#: inc/AgenticFixes/Labels.php:225
 msgid ""
-"View the results of your website scans, accessibility Remediation and more "
-"with AllAccessibile Premium."
+"Premium plans include human-in-the-loop agentic AI remediation. Your team "
+"approves, agents do the work."
 msgstr ""
-"הצג את התוצאות של סריקות האתר שלך, תיקון נגישות ועוד עם AllAccessibile "
-"Premium."
+"תוכניות פרימיום כוללות תיקון באמצעות בינה מלאכותית סוכנית עם אדם בלולאה. "
+"הצוות שלך מאשר, והסוכנים עושים את העבודה."
 
-#: inc/AllAccessibleSettings.php:62
+#: inc/AgenticFixesDashboardWidget.php:27
+msgid "AllAccessible — Agentic Fixes"
+msgstr "AllAccessible — תיקונים סוכניים"
+
+#: inc/AgenticFixesDashboardWidget.php:34
+msgid "Plugin not fully initialized. Please reload."
+msgstr "התוסף לא אותחל במלואו. נא לטעון מחדש."
+
+#: inc/AgenticFixesDashboardWidget.php:63
+msgid "Upgrade to apply fixes"
+msgstr "שדרגו כדי להחיל תיקונים"
+
+#: inc/AgenticFixesDashboardWidget.php:64 inc/DashboardLayout.php:243
+msgid "Review fixes"
+msgstr "סקירת תיקונים"
+
+#: inc/AgenticFixesDashboardWidget.php:70
+msgid "No scans yet. Submit your sitemap from the AllAccessible page to start."
+msgstr "עדיין אין סריקות. שלחו את מפת האתר שלכם מדף AllAccessible כדי להתחיל."
+
+#: inc/AgenticFixesDashboardWidget.php:74
+msgid "Go to AllAccessible"
+msgstr "מעבר ל-AllAccessible"
+
+#: inc/AgenticFixesDashboardWidget.php:87
+msgid "accessibility issue detected"
+msgid_plural "accessibility issues detected"
+msgstr[0] "זוהתה בעיית נגישות"
+msgstr[1] "הצהרת נגישות"
+msgstr[2] "הצהרת נגישות"
+msgstr[3] "הצהרת נגישות"
+
+# GPT: “page” could mean a paper page or a web page; given the scanning context, I translated it as a scanned paper page (עמוד).
+#. translators: %s: count of pages scanned
+#: inc/AgenticFixesDashboardWidget.php:97
+#, fuzzy, php-format
+msgid "%s page scanned"
+msgid_plural "%s pages scanned"
+msgstr[0] "נסרק %s עמוד"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/AgenticFixesDashboardWidget.php:105
+#, php-format
+msgid "last scan %s ago"
+msgstr "הסריקה האחרונה לפני %s"
+
+# GPT: “manifest” can be translated as “מניפסט” (common in logistics) or as “מסמך/רשימת מטען”; given the context (count of manifests awaiting approval), I used the common term “מניפסטים”.
+#. translators: %s: count of manifests waiting on approval
+#: inc/AgenticFixesDashboardWidget.php:118
+#, fuzzy, php-format
+msgid "%s manifest pending your approval"
+msgid_plural "%s manifests pending your approval"
+msgstr[0] "%s מניפסטים ממתינים לאישור שלך"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/AgenticFixesDashboardWidget.php:127
+msgid ""
+"AllAccessible agents can auto-fix these. Upgrade to enable agentic AI "
+"remediation."
+msgstr ""
+"הסוכנים של AllAccessible יכולים לתקן את אלה אוטומטית. שדרגו כדי לאפשר תיקון "
+"באמצעות בינה מלאכותית סוכנית."
+
+#: inc/AgenticFixesDashboardWidget.php:145
+msgid "Could not load fixes summary right now."
+msgstr "לא ניתן לטעון כעת את סיכום התיקונים."
+
+#: inc/AgenticFixesPage.php:27 inc/AgenticFixesPage.php:28
+#: inc/AgenticFixesPage.php:140 inc/AgenticFixesPage.php:667
+#: inc/SettingsPage.php:499 inc/SettingsPage.php:603
+msgid "Agentic Fixes"
+msgstr "תיקונים סוכניים"
+
+#: inc/AgenticFixesPage.php:137 inc/AgenticFixesPage.php:142
+#: inc/AgenticFixesPage.php:665 inc/AgenticFixesPage.php:680
+#: inc/AgenticFixesPage.php:857 inc/ConversionCTA.php:119
+#: inc/EditorMetaBox.php:271 inc/ImageManagerPage.php:160
+#: inc/OnboardingWizard.php:288 inc/SettingsPage.php:416
+#: inc/SettingsPage.php:490 inc/SettingsPage.php:574 inc/SettingsPage.php:1969
+#: inc/UsageDashboard.php:142 inc/WidgetCustomizer.php:211
+msgid "AllAccessible AI"
+msgstr "AllAccessible AI"
+
+#: inc/AgenticFixesPage.php:146
+msgid "Beta feature"
+msgstr "תכונת בטא"
+
+#: inc/AgenticFixesPage.php:147 inc/SettingsPage.php:1155
+msgid "Beta"
+msgstr "בטא"
+
+#: inc/AgenticFixesPage.php:152
+msgid ""
+"AllAccessible agents propose accessibility fixes. You review and approve "
+"before anything goes live on your site."
+msgstr ""
+"סוכני AllAccessible מציעים תיקוני נגישות. אתם בודקים ומאשרים לפני שמשהו עולה "
+"לאוויר באתר שלכם."
+
+#: inc/AgenticFixesPage.php:169 inc/ConnectionStatusCard.php:71
+msgid "Could not reach AllAccessible right now."
+msgstr "לא ניתן להגיע אל AllAccessible כרגע."
+
+#: inc/AgenticFixesPage.php:182
+msgid "score"
+msgstr "ציון"
+
+#: inc/AgenticFixesPage.php:186
+msgid "pages audited"
+msgstr "דפים שנבדקו"
+
+#. translators: %s: human-readable time difference (e.g. "2 hours")
+#. translators: %s: human-readable time diff
+#: inc/AgenticFixesPage.php:194 inc/ScanTriggerPanel.php:86
+#, php-format
+msgid "Last scan %s ago"
+msgstr "הסריקה האחרונה הייתה לפני %s"
+
+#: inc/AgenticFixesPage.php:245
+msgid "Approved & applied"
+msgstr "אושר והוחל"
+
+#: inc/AgenticFixesPage.php:254
+msgid "Filter Agentic Fixes by status"
+msgstr "סינון תיקונים סוכניים לפי סטטוס"
+
+#: inc/AgenticFixesPage.php:330
+msgid "How this works"
+msgstr "איך זה עובד"
+
+#: inc/AgenticFixesPage.php:332
+msgid ""
+"AllAccessible agents review your site and propose fixes for accessibility "
+"issues. Nothing changes on your site until you approve. You can edit any "
+"suggestion before approving, and you can revert any approved fix at any time."
+msgstr ""
+"סוכני AllAccessible סוקרים את האתר שלך ומציעים תיקונים לבעיות נגישות. שום "
+"דבר לא משתנה באתר שלך עד שתאשר. ניתן לערוך כל הצעה לפני האישור, וניתן לבטל "
+"כל תיקון שאושר בכל עת."
+
+#. translators: 1: count of fixes; 2: rule type label (e.g., "Missing image description")
+#: inc/AgenticFixesPage.php:353
+#, php-format
+msgid "%1$s pending fixes for \"%2$s\". Approve them all in one click."
+msgstr "%1$s תיקונים ממתינים עבור \"%2$s\". אשרו את כולם בלחיצה אחת."
+
+#. translators: 1: count; 2: rule label
+#: inc/AgenticFixesPage.php:366
+#, php-format
+msgid "Bulk approve %1$s %2$s fixes"
+msgstr "אישור גורף של %1$s תיקונים עבור %2$s"
+
+#. translators: %s: count of fixes
+#: inc/AgenticFixesPage.php:373
+#, php-format
+msgid "Bulk approve all %s"
+msgstr "אישור גורף של כל %s"
+
+#. translators: %s: WCAG success criterion number (e.g., "1.1.1")
+#: inc/AgenticFixesPage.php:426
+#, php-format
+msgid "WCAG %s"
+msgstr "WCAG %s"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:439
+#, php-format
+msgid "confidence: %s percent"
+msgstr "רמת ביטחון: %s אחוז"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:445
+#, php-format
+msgid "%s%% confidence"
+msgstr "%s%% cרמת ביטחון"
+
+#: inc/AgenticFixesPage.php:463
+msgid "What's wrong"
+msgstr "מה לא תקין"
+
+#. translators: 1: rationale phrase (e.g., "Suggested alt text for image"); 2: selector
+#: inc/AgenticFixesPage.php:469
+#, php-format
+msgid "%1$s on element %2$s"
+msgstr "%1$s ברכיב %2$s"
+
+#: inc/AgenticFixesPage.php:481
+msgid "Proposed fix"
+msgstr "תיקון מוצע"
+
+#: inc/AgenticFixesPage.php:487
+msgid "Edit proposed fix value"
+msgstr "עריכת ערך התיקון המוצע"
+
+#: inc/AgenticFixesPage.php:500
+msgid "page affected"
+msgid_plural "pages affected"
+msgstr[0] "דף מושפע"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. translators: %s: formatted date (e.g., "2026-05-23")
+#: inc/AgenticFixesPage.php:509
+#, php-format
+msgid "Applied on %s"
+msgstr "הוחל ב-%s"
+
+#. translators: %s: count of pages where this fix appears
+#: inc/AgenticFixesPage.php:525
+#, php-format
+msgid "Where it appears (%s)"
+msgstr "היכן זה מופיע (%s)"
+
+#: inc/AgenticFixesPage.php:544
+msgid ""
+"Open this page with the affected element scrolled into view and highlighted"
+msgstr "פתח דף זה כאשר הרכיב המושפע גולל לתצוגה ומודגש"
+
+#: inc/AgenticFixesPage.php:545
+msgid "View on site"
+msgstr "צפייה באתר"
+
+#: inc/AgenticFixesPage.php:552 inc/ImageManagerPage.php:347
+msgid "Edit"
+msgstr "עריכה"
+
+#. translators: %s: count of additional pages not listed
+#: inc/AgenticFixesPage.php:562
+#, php-format
+msgid "+%s more"
+msgstr "+%s נוספים"
+
+#: inc/AgenticFixesPage.php:579
+msgid "Skip"
+msgstr "דלג"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:587
+#, php-format
+msgid "Save edit and apply to %2$s pages for %1$s"
+msgstr "שמור את העריכה והחל על %2$s עמודים עבור %1$s"
+
+#: inc/AgenticFixesPage.php:591
+msgid "Save edit"
+msgstr "שמור עריכה"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:598
+#, php-format
+msgid "Approve %1$s on %2$s pages"
+msgstr "אשר %1$s ב-%2$s עמודים"
+
+#. translators: %s: count of pages
+#: inc/AgenticFixesPage.php:605
+#, php-format
+msgid "Approve on %s page"
+msgid_plural "Approve on %s pages"
+msgstr[0] "אישור בדף %s"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/AgenticFixesPage.php:613
+msgid "Live on your site"
+msgstr "פעיל באתר שלך"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:618
+#, php-format
+msgid "Revert %1$s on %2$s pages"
+msgstr "שחזר %1$s ב-%2$s דפים"
+
+#: inc/AgenticFixesPage.php:622 inc/AgenticFixesPage.php:902
+msgid "Revert"
+msgstr "שחזר"
+
+#: inc/AgenticFixesPage.php:626
+msgid "Not applied"
+msgstr "לא הוחל"
+
+#: inc/AgenticFixesPage.php:668 inc/SettingsPage.php:470
+msgid "Legacy widget"
+msgstr "וידג׳ט מדור קודם"
+
+#: inc/AgenticFixesPage.php:671
+msgid "Agentic AI remediation is not available on your current plan."
+msgstr "תיקון באמצעות Agentic AI אינו זמין בתוכנית הנוכחית שלך."
+
+#: inc/AgenticFixesPage.php:682 inc/SettingsPage.php:417
+msgid "Upgrade to unlock Agentic Fixes"
+msgstr "שדרג כדי לפתוח תיקונים סוכניים"
+
+#: inc/AgenticFixesPage.php:687
+msgid ""
+"Your site runs the legacy AllAccessible widget, which predates agentic AI "
+"remediation. The widget keeps working as-is, but upgrading to the current "
+"plan tier unlocks:"
+msgstr ""
+"האתר שלך מפעיל את הווידג'ט הישן של AllAccessible, שקדם לתיקון מבוסס בינה "
+"מלאכותית סוכנת. הווידג'ט ממשיך לעבוד כפי שהוא, אך שדרוג לרמת התוכנית הנוכחית "
+"פותח:"
+
+#: inc/AgenticFixesPage.php:690
+msgid ""
+"Human-in-the-loop agentic AI remediation — agents propose fixes, your team "
+"approves."
+msgstr ""
+"תיקון מבוסס בינה מלאכותית סוכנת עם אדם בלולאה — הסוכנים מציעים תיקונים, "
+"הצוות שלך מאשר."
+
+#: inc/AgenticFixesPage.php:691
+msgid "Continuous accessibility scoring with site-level coverage tracking."
+msgstr "דירוג נגישות רציף עם מעקב כיסוי ברמת האתר."
+
+#: inc/AgenticFixesPage.php:692
+msgid "Higher monthly pageview caps and AllAccessible AI alt text generation."
+msgstr ""
+"מגבלות צפיות דף חודשיות גבוהות יותר ויצירת טקסט חלופי באמצעות AllAccessible "
+"AI."
+
+#: inc/AgenticFixesPage.php:693
+msgid ""
+"Image AI manager, per-page audit scores in the WordPress editor, and "
+"downloadable WCAG / VPAT reports."
+msgstr ""
+"מנהל תמונות מבוסס בינה מלאכותית, ציוני ביקורת לכל עמוד בעורך WordPress, "
+"ודוחות WCAG / VPAT להורדה."
+
+#: inc/AgenticFixesPage.php:696 inc/SettingsPage.php:480
+msgid "See upgrade options"
+msgstr "ראה אפשרויות שדרוג"
+
+#: inc/AgenticFixesPage.php:716 inc/AgenticFixesPage.php:727
+msgid "You're all caught up"
+msgstr "אתה מעודכן"
+
+#: inc/AgenticFixesPage.php:717
+msgid ""
+"No fixes are waiting for review. Run a scan and AllAccessible agents will "
+"propose any new fixes they find."
+msgstr ""
+"אין תיקונים שממתינים לבדיקה. הרץ סריקה וסוכני AllAccessible יציעו כל תיקון "
+"חדש שימצאו."
+
+#: inc/AgenticFixesPage.php:728
+msgid "No fixes are waiting for review right now."
+msgstr "אין תיקונים שממתינים לבדיקה כרגע."
+
+#: inc/AgenticFixesPage.php:738
+msgid "No fixes approved yet"
+msgstr "עדיין לא אושרו תיקונים"
+
+#: inc/AgenticFixesPage.php:741
+msgid ""
+"Approved fixes will appear here once you start reviewing the pending queue."
+msgstr "תיקונים שאושרו יופיעו כאן לאחר שתתחיל לבדוק את התור הממתין."
+
+#: inc/AgenticFixesPage.php:751
+msgid "Nothing has been reverted"
+msgstr "לא בוטל שום דבר"
+
+#: inc/AgenticFixesPage.php:754
+msgid "Any approved fix you revert will be tracked here for reference."
+msgstr "כל תיקון מאושר שתבטלו יירשם כאן לעיון."
+
+#: inc/AgenticFixesPage.php:772 inc/ImageManagerPage.php:403
+msgid "AllAccessible AI · Free preview"
+msgstr "AllAccessible AI · תצוגה מקדימה בחינם"
+
+#: inc/AgenticFixesPage.php:776
+#, php-format
+msgid "You've previewed %1$d of %2$d agentic fix proposals"
+msgstr "צפיתם ב-%1$d מתוך %2$d הצעות לתיקון סוכני"
+
+#: inc/AgenticFixesPage.php:781
+msgid ""
+"Real proposals drafted for the real issues found on your site. Upgrade to "
+"review, approve, and apply the rest — human-in-the-loop, every fix."
+msgstr ""
+"הצעות אמיתיות שנוסחו עבור הבעיות האמיתיות שנמצאו באתר שלכם. שדרגו כדי לסקור, "
+"לאשר ולהחיל את השאר — אדם בלולאה, בכל תיקון."
+
+#: inc/AgenticFixesPage.php:785 inc/ImageManagerPage.php:416
+msgid "Unlock unlimited"
+msgstr "פתח ללא הגבלה"
+
+#: inc/AgenticFixesPage.php:798
+msgid "Fix proposal preview"
+msgstr "תצוגה מקדימה של הצעת תיקון"
+
+#: inc/AgenticFixesPage.php:816
+#, php-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] "עמוד %d"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/AgenticFixesPage.php:833
+#, php-format
+msgid "Unlock %d more agentic fix proposals for your site"
+msgstr "פתחו %d הצעות נוספות לתיקון סוכני עבור האתר שלכם"
+
+#: inc/AgenticFixesPage.php:838 inc/ImageManagerPage.php:460
+msgid "Upgrade — starts at $10/month"
+msgstr "שדרוג — החל מ-$10 לחודש"
+
+#: inc/AgenticFixesPage.php:866 inc/SettingsPage.php:134
+#: inc/SettingsPage.php:424 inc/SettingsPage.php:679 inc/SettingsPage.php:990
+#: inc/TierGate.php:105 inc/UsageDashboard.php:42 inc/UsageDashboard.php:234
+msgid "Upgrade plan"
+msgstr "שדרוג תוכנית"
+
+#: inc/AgenticFixesPage.php:882
+msgid "Edit fix"
+msgstr "עריכת תיקון"
+
+#: inc/AgenticFixesPage.php:884
+msgid "Update the suggested value before approving. Max 500 characters."
+msgstr "עדכנו את הערך המוצע לפני האישור. מקסימום 500 תווים."
+
+#: inc/AgenticFixesPage.php:888 inc/ImageManagerPage.php:584
+msgid "Save"
+msgstr "שמירה"
+
+#: inc/AgenticFixesPage.php:889 inc/AgenticFixesPage.php:903
+#: inc/DeactivationSurvey.php:189 inc/ImageManagerPage.php:581
+msgid "Cancel"
+msgstr "ביטול"
+
+#: inc/AgenticFixesPage.php:896
+msgid "Revert manifest"
+msgstr "שחזור מניפסט"
+
+#: inc/AgenticFixesPage.php:898
+msgid ""
+"Why are you reverting? This helps us improve fix quality. Max 500 characters."
+msgstr "למה אתם מבטלים? זה עוזר לנו לשפר את איכות התיקונים. מקסימום 500 תווים."
+
+#: inc/AgenticFixesPage.php:952
+msgid "Action failed"
+msgstr "הפעולה נכשלה"
+
+#: inc/AgenticFixesPage.php:977
+msgid "Server returned no data"
+msgstr "השרת לא החזיר נתונים"
+
+#: inc/AgenticFixesPage.php:1024
+msgid "Approve this fix on every page where it appears?"
+msgstr "לאשר את התיקון הזה בכל עמוד שבו הוא מופיע?"
+
+#: inc/AgenticFixesPage.php:1034
+msgid "Revert reason (max 500 chars):"
+msgstr "סיבת הביטול (מקסימום 500 תווים):"
+
+#: inc/AgenticFixesPage.php:1046 inc/AgenticFixesPage.php:1136
+msgid "Value cannot be empty"
+msgstr "הערך לא יכול להיות ריק"
+
+#: inc/AgenticFixesPage.php:1047
+msgid "Apply this value to every page in the group?"
+msgstr "להחיל ערך זה על כל הדפים בקבוצה?"
+
+#: inc/AgenticFixesPage.php:1069
+msgid "Nothing to approve."
+msgstr "אין מה לאשר."
+
+#: inc/AgenticFixesPage.php:1070
+msgid "Approve every pending fix of this type?"
+msgstr "לאשר כל תיקון ממתין מסוג זה?"
+
+#: inc/AgenticFixesPage.php:1087
+msgid "Bulk approve failed"
+msgstr "האישור המרוכז נכשל"
+
+#: inc/AgenticFixesPage.php:1112
+msgid "Approve this manifest? Fixes will go live immediately."
+msgstr "לאשר את המניפסט הזה? התיקונים יעלו לאוויר מיד."
+
+#: inc/ConnectionStatusCard.php:56
+msgid "Connection status"
+msgstr "סטטוס החיבור"
+
+#: inc/ConnectionStatusCard.php:58
+msgid ""
+"Confirm this WordPress install is linked to the correct AllAccessible site."
+msgstr "אשרו שהתקנת WordPress זו מקושרת לאתר AllAccessible הנכון."
+
+#: inc/ConnectionStatusCard.php:64
+msgid "Re-verify"
+msgstr "אימות מחדש"
+
+#: inc/ConnectionStatusCard.php:79
+msgid "WordPress URL"
+msgstr "כתובת URL של WordPress"
+
+#: inc/ConnectionStatusCard.php:80 inc/SettingsPage.php:922
+msgid "Account ID"
+msgstr "מזהה חשבון"
+
+#: inc/ConnectionStatusCard.php:81
+msgid "Connected to"
+msgstr "מחובר אל"
+
+#: inc/ConnectionStatusCard.php:82
+msgid "Subdomain ID"
+msgstr "מזהה תת-דומיין"
+
+#: inc/ConnectionStatusCard.php:84
+msgid "Plan tier"
+msgstr "רמת התוכנית"
+
+#: inc/ConnectionStatusCard.php:93
+msgid "WordPress URL matches the connected AllAccessible site."
+msgstr "כתובת ה-URL של WordPress תואמת לאתר AllAccessible המחובר."
+
+#: inc/ConnectionStatusCard.php:98
+msgid "Mismatch detected"
+msgstr "זוהתה אי-התאמה"
+
+#. translators: 1: WP URL host, 2: server host
+#: inc/ConnectionStatusCard.php:103
+#, php-format
+msgid ""
+"WordPress is configured for %1$s but this plugin is linked to %2$s on your "
+"AllAccessible account. The Agentic Fixes page will show fixes for the "
+"connected site, not this WordPress install."
+msgstr ""
+"WordPress מוגדר עבור %1$s, אך התוסף הזה מקושר ל-%2$s בחשבון AllAccessible "
+"שלכם. דף התיקונים האגנטיים יציג תיקונים עבור האתר המחובר, ולא עבור התקנת "
+"WordPress זו."
+
+#: inc/ConnectionStatusCard.php:110
+msgid ""
+"Click \"Re-verify\" to refresh, or contact support if this site needs to be "
+"added to your account."
+msgstr ""
+"לחץ/י על \"Re-verify\" כדי לרענן, או פנה/י לתמיכה אם צריך להוסיף את האתר הזה "
+"לחשבון שלך."
+
+#: inc/ConnectionStatusCard.php:116
+msgid ""
+"This site has not been registered with AllAccessible yet. Visit your "
+"WordPress homepage to trigger registration, then click \"Re-verify\"."
+msgstr ""
+"האתר הזה עדיין לא נרשם ב-AllAccessible. בקר/י בדף הבית של WordPress כדי "
+"להפעיל את הרישום, ואז לחץ/י על \"Re-verify\"."
+
+#: inc/ConnectionStatusCard.php:189 inc/FeatureComparison.php:40
+#: inc/SettingsPage.php:1945 inc/SettingsPage.php:1946
+msgid "Free"
+msgstr "חינם"
+
+#: inc/ConnectionStatusCard.php:190 inc/FeatureComparison.php:43
+#: inc/SettingsPage.php:1927 inc/SettingsPage.php:1928
+msgid "Starter"
+msgstr "מתחיל"
+
+#: inc/ConnectionStatusCard.php:191 inc/FeatureComparison.php:46
+#: inc/SettingsPage.php:1933 inc/SettingsPage.php:1934
+msgid "Enterprise"
+msgstr "ארגוני"
+
+#: inc/ConnectionStatusCard.php:192 inc/SettingsPage.php:1939
+msgid "Legacy"
+msgstr "מדור קודם"
+
+#: inc/ConnectionStatusCard.php:193 inc/SettingsPage.php:1921
+msgid "Trial"
+msgstr "ניסיון"
+
+#: inc/ConnectionStatusCard.php:208
+msgid "Verifying…"
+msgstr "מאמת…"
+
+#: inc/ConversionCTA.php:40
 msgid "Upgrade Now"
 msgstr "לשדרג עכשיו"
 
-#: inc/AllAccessibleSettings.php:64
-msgid ""
-"View the results of your website scans in your AllAccessibile Account "
-"Dashboard."
-msgstr ""
-"הצג את התוצאות של סריקות האתר שלך במרכז השליטה של חשבון AllAccessibile שלך."
+#: inc/ConversionCTA.php:46
+msgid "Usage Limit Exceeded!"
+msgstr "חרגת ממגבלת השימוש!"
 
-#: inc/AllAccessibleSettings.php:65
-msgid "Accessibility Dashboard"
-msgstr "‫Ułatwienia"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Need"
-msgstr "צריכה עזרה"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Help & Support?"
-msgstr "עזרה תמיכה?"
-
-#: inc/AllAccessibleSettings.php:84
-msgid ""
-"Check our knowledge base for assistance with installation, customization, "
-"and more."
-msgstr "עיין במאגר הידע שלנו לקבלת סיוע בהתקנה, התאמה אישית ועוד."
-
-#: inc/AllAccessibleSettings.php:85
-msgid "Get Support"
-msgstr "קבל תמיכה"
-
-#: inc/AllAccessibleSettings.php:109
-msgid "Unlock the Power of AllAccessible Premium"
-msgstr "פתח את הכוח של AllAccessible Premium"
-
-#: inc/AllAccessibleSettings.php:110
-msgid ""
-"Unlock all the benefits of our Ai accessibility automation with a free trial "
-"by connecting your AllAccessible account to your email below. Already using "
-"the free version? No problem! We'll set you up with a free 7-day trial of "
-"our premium version. After the trial period, upgrade to the premium version "
-"for just $10 a month and enjoy a more accessible digital experience."
-msgstr ""
-"פתח את כל היתרונות של אוטומציה של נגישות Ai שלנו עם ניסיון חינם על ידי חיבור "
-"חשבון AllAccessible שלך לדוא\"ל שלך למטה. כבר משתמשים בגרסה החינמית? אין "
-"בעיה! אנו נגדיר לך ניסיון חינם למשך 7 ימים של גרסת הפרימיום שלנו. לאחר תקופת "
-"הניסיון, שדרג לגרסת הפרימיום תמורת 19 דולר בלבד לחודש ותיהנה מחוויה דיגיטלית "
-"נגישה יותר."
-
-#: inc/AllAccessibleSettings.php:113
-msgid ""
-"Below are some additional features unlocked with AllAccessible Premium. All "
-"for Only $10/mo."
-msgstr "להלן כמה תכונות נוספות שנפתחו עם AllAccessible Premium."
-
-#: inc/AllAccessibleSettings.php:114
-msgid "User Control Panel"
-msgstr "לוח הבקרה של המשתמש"
-
-#: inc/AllAccessibleSettings.php:115
-msgid "Accessibility Statement"
-msgstr "הצהרת נגישות"
-
-#: inc/AllAccessibleSettings.php:116
-msgid "Widget Customization (Color, Shape, Placement, etc.)"
-msgstr "התאמה אישית של ווידג'ט (צבע, צורה, מיקום וכו')"
-
-#: inc/AllAccessibleSettings.php:117
-msgid "Ai Accessibility Fixes"
-msgstr "תיקוני נגישות Ai"
-
-#: inc/AllAccessibleSettings.php:118
-msgid "Image Alt Text Generation"
-msgstr "יצירת טקסט חלופי של תמונה"
-
-#: inc/AllAccessibleSettings.php:119
-msgid "Monthly Accessibility Audits"
-msgstr "מבדקי נגישות חודשיים"
-
-#: inc/AllAccessibleSettings.php:120
-msgid "Accessibility Accommodation Requests"
-msgstr "בקשות נגישות לינה"
-
-#: inc/AllAccessibleSettings.php:127
-msgid "To learn more, visit: https://www.allaccessible.org"
-msgstr "למידע נוסף, בקר בכתובת: https://www.allaccessible.org"
-
-#: inc/AllAccessibleSettings.php:131
-msgid "Your Email"
-msgstr "האימייל שלך"
-
-#: inc/AllAccessibleSettings.php:131
+#: inc/ConversionCTA.php:48
 #, php-format
-msgid "(Used to manage your Account on %s)"
-msgstr "(משמש לניהול חשבונך ב-%s)"
+msgid ""
+"Your widget is currently using free features only. Upgrade to %s to restore "
+"premium functionality and increase your limits."
+msgstr ""
+"הווידג'ט שלכם משתמש כרגע רק בתכונות החינמיות. שדרגו ל-%s כדי לשחזר את "
+"פונקציונליות הפרימיום ולהגדיל את המגבלות שלכם."
 
-#: inc/AllAccessibleSettings.php:135
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Starter"
+msgstr "שדרג/י ל-Starter"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Enterprise"
+msgstr "שדרגו ל-Enterprise"
+
+#: inc/ConversionCTA.php:68
+msgid "Approaching Your Limit"
+msgstr "מתקרב/ת למגבלה שלך"
+
+#: inc/ConversionCTA.php:70
+#, php-format
+msgid ""
+"You're using over 80%% of your %s. Upgrade before you hit the limit to avoid "
+"service interruption."
+msgstr ""
+"אתם משתמשים ביותר מ-80%% מתוך ה-%s שלכם. שדרגו לפני שתגיעו למגבלה כדי להימנע "
+"מהפסקת שירות."
+
+#: inc/ConversionCTA.php:73
+msgid "Upgrade Before Limit"
+msgstr "שדרג/י לפני ההגעה למגבלה"
+
+#: inc/ConversionCTA.php:78
+msgid "Unlock Premium Features"
+msgstr "פתחו תכונות פרימיום"
+
+#: inc/ConversionCTA.php:79
+msgid ""
+"Get AI-powered accessibility fixes, monthly compliance audits, custom widget "
+"styling, and priority support."
+msgstr ""
+"קבלו תיקוני נגישות מבוססי AI, ביקורות תאימות חודשיות, עיצוב מותאם אישית של "
+"הווידג'ט ותמיכה בעדיפות גבוהה."
+
+#: inc/ConversionCTA.php:80
+msgid "Start 7-Day Trial"
+msgstr "התחל/י ניסיון ל-7 ימים"
+
+#: inc/ConversionCTA.php:85
+msgid "Scale with Add-Ons"
+msgstr "התרחבו עם תוספים"
+
+#: inc/ConversionCTA.php:86
+msgid ""
+"Need more pageviews, AI fixes, or audits? Add custom limits to your plan or "
+"upgrade to Enterprise for unlimited access."
+msgstr ""
+"צריכים יותר צפיות בעמודים, תיקוני AI או ביקורות? הוסיפו מגבלות מותאמות אישית "
+"לתוכנית שלכם או שדרגו ל-Enterprise לקבלת גישה ללא הגבלה."
+
+#: inc/ConversionCTA.php:87
+msgid "Explore Add-Ons"
+msgstr "גלה/י תוספים"
+
+#: inc/DashboardBanner.php:66
+msgid "Get the Most Out of AllAccessible! 🚀"
+msgstr "הפיקו את המקסימום מ-AllAccessible! 🚀"
+
+#: inc/DashboardBanner.php:69
+msgid ""
+"Complete the quick 2-minute setup to activate your accessibility widget and "
+"unlock premium features."
+msgstr ""
+"השלימו את ההגדרה המהירה של 2 דקות כדי להפעיל את ווידג׳ט הנגישות שלכם ולפתוח "
+"תכונות פרימיום."
+
+#: inc/DashboardBanner.php:76
+msgid "Start Setup"
+msgstr "התחל/י הגדרה"
+
+#. translators: %s: accessibility score 0-100 or em-dash
+#: inc/DashboardLayout.php:75
+#, php-format
+msgid "Accessibility score %s out of 100"
+msgstr "ציון נגישות %s מתוך 100"
+
+#: inc/DashboardLayout.php:152
+msgid "Daily"
+msgstr "יומי"
+
+#: inc/DashboardLayout.php:153 inc/FeatureComparison.php:75
+msgid "Weekly"
+msgstr "שבועי"
+
+#: inc/DashboardLayout.php:154 inc/FeatureComparison.php:74
+msgid "Monthly"
+msgstr "חודשי"
+
+#: inc/DashboardLayout.php:155
+msgid "On-demand"
+msgstr "לפי דרישה"
+
+#. translators: %s: number of days between scans
+#: inc/DashboardLayout.php:162
+#, php-format
+msgid "Every %s days"
+msgstr "כל %s ימים"
+
+#: inc/DashboardLayout.php:170
+msgid "Scans"
+msgstr "סריקות"
+
+#: inc/DashboardLayout.php:171
+msgid "Scheduled scans"
+msgstr "סריקות מתוזמנות"
+
+#. translators: %s: human time diff, e.g. "2 hours"
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/DashboardLayout.php:176 inc/EditorMetaBox.php:199
+#, php-format
+msgid "%s ago"
+msgstr "לפני %s"
+
+#: inc/DashboardLayout.php:180 inc/ScanTriggerPanel.php:91
+msgid "No scans yet"
+msgstr "עדיין אין סריקות"
+
+#. translators: %s: human time diff
+#: inc/DashboardLayout.php:184
+#, php-format
+msgid "in %s"
+msgstr "בעוד %s"
+
+#: inc/DashboardLayout.php:185
+msgid "due now"
+msgstr "לתשלום עכשיו"
+
+#: inc/DashboardLayout.php:193 inc/OnboardingWizard.php:451
+#: inc/ScanTriggerPanel.php:29
+msgid "Run your first scan"
+msgstr "הריצו את הסריקה הראשונה שלכם"
+
+#: inc/DashboardLayout.php:197
+msgid "Excellent — strong accessibility coverage."
+msgstr "מצוין — כיסוי נגישות חזק."
+
+#: inc/DashboardLayout.php:199
+msgid "Good — a few fixes to go."
+msgstr "טוב — נשארו עוד כמה תיקונים."
+
+#: inc/DashboardLayout.php:201
+msgid "Needs attention."
+msgstr "דורש תשומת לב."
+
+#: inc/DashboardLayout.php:203
+msgid "Needs work — start with the top issues."
+msgstr "דורש עבודה — התחילו עם הבעיות המובילות."
+
+#: inc/DashboardLayout.php:209
+msgid ""
+"Run a scan and AllAccessible agents will check every page for accessibility "
+"issues."
+msgstr "הריצו סריקה וסוכני AllAccessible יבדקו כל עמוד לאיתור בעיות נגישות."
+
+# GPT: The source text appears to have a typo/truncation (“f issues remediated”), which likely intended “of issues remediated” (percentage of issues fixed). I translated accordingly.
+#. translators: %s: percentage with <b> wrapper
+#: inc/DashboardLayout.php:215
+#, fuzzy, php-format
+msgid "%s%% of issues remediated"
+msgstr "%s%% o מהבעיות תוקנו"
+
+# GPT: “Audited” could mean reviewed in an audit/compliance sense, and {0} could be 1 or more; I chose a literal singular “page audited” as in the source.
+#: inc/DashboardLayout.php:221
+#, fuzzy, php-format
+msgid "%s page audited"
+msgid_plural "%s pages audited"
+msgstr[0] "%s עמוד נבדק"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/DashboardLayout.php:227
+msgid "View pages"
+msgstr "צפו בעמודים"
+
+#: inc/DashboardLayout.php:239
+#, php-format
+msgid "%s fix is ready for your review"
+msgid_plural "%s fixes are ready for your review"
+msgstr[0] "התיקון של %s מוכן לבדיקה שלך"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+# GPT: "issue" can mean a problem/bug or a topic/case; I chose "בעיית" to reflect a technical problem needing a manual fix.
+#: inc/DashboardLayout.php:247
+#, fuzzy, php-format
+msgid "%s issue needs a manual fix"
+msgid_plural "%s issues need a manual fix"
+msgstr[0] "בעיית %s דורשת תיקון ידני"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/DashboardLayout.php:251
+msgid "View issues"
+msgstr "צפו בבעיות"
+
+#: inc/DashboardLayout.php:254
+msgid "You're all caught up — AllAccessible agents are monitoring your site."
+msgstr "אתם מעודכנים — סוכני AllAccessible מנטרים את האתר שלכם."
+
+#: inc/DashboardLayout.php:257
+msgid "No scan yet — run one to find and fix accessibility issues."
+msgstr "עדיין לא בוצעה סריקה — הריצו אחת כדי למצוא ולתקן בעיות נגישות."
+
+#: inc/DashboardLayout.php:259 inc/OnboardingWizard.php:106
+#: inc/OnboardingWizard.php:236
+msgid "Get started"
+msgstr "התחילו"
+
+#: inc/DashboardLayout.php:264
+msgid "AI-resolved"
+msgstr "נפתר באמצעות AI"
+
+#: inc/DashboardLayout.php:265
+msgid "manual"
+msgstr "מדריך"
+
+#: inc/DashboardLayout.php:267
+msgid "images with alt text"
+msgstr "תמונות עם טקסט חלופי"
+
+#: inc/DashboardLayout.php:270
+msgid "pageviews"
+msgstr "צפיות בעמוד"
+
+#: inc/DashboardLayout.php:276
+msgid "Accessibility status"
+msgstr "סטטוס נגישות"
+
+#: inc/DashboardLayout.php:282
+msgid "Live · updates nightly"
+msgstr "בשידור חי · מתעדכן מדי לילה"
+
+#: inc/DashboardLayout.php:287 inc/SettingsPage.php:387
+#: inc/SettingsPage.php:645
+msgid "Preview widget"
+msgstr "תצוגה מקדימה של הווידג׳ט"
+
+#: inc/DashboardLayout.php:297
+msgid "Scan schedule"
+msgstr "לוח זמנים לסריקות"
+
+#: inc/DashboardLayout.php:303
+msgid ""
+"How often AllAccessible automatically scans your whole site behind the "
+"scenes for a deep accessibility analysis. You can also run on-demand scans "
+"of individual pages anytime — from the WordPress page editor, or on the "
+"front end while logged in."
+msgstr ""
+"באיזו תדירות AllAccessible סורק אוטומטית את כל האתר שלכם מאחורי הקלעים לצורך "
+"ניתוח נגישות מעמיק. תוכלו גם להריץ סריקות לפי דרישה של עמודים בודדים בכל עת "
+"— מתוך עורך העמודים של WordPress, או בחזית האתר בזמן שאתם מחוברים."
+
+#: inc/DashboardLayout.php:306
+msgid "Frequency"
+msgstr "תדירות"
+
+#: inc/DashboardLayout.php:309
+msgid "Last"
+msgstr "אחרון"
+
+#: inc/DashboardLayout.php:312 inc/ImageManagerPage.php:523
+msgid "Next"
+msgstr "הבא"
+
+#: inc/DashboardLayout.php:326
+msgid "Remediation activity"
+msgstr "פעילות תיקון"
+
+#: inc/DeactivationSurvey.php:92
+msgid "Quick Feedback"
+msgstr "משוב מהיר"
+
+#: inc/DeactivationSurvey.php:95
+msgid "Help us improve AllAccessible"
+msgstr "עזרו לנו לשפר את AllAccessible"
+
+#: inc/DeactivationSurvey.php:100
+msgid ""
+"If you have a moment, please let us know why you're deactivating "
+"AllAccessible. All submissions are anonymous and help us improve."
+msgstr ""
+"אם יש לכם רגע, נשמח שתספרו לנו למה אתם משביתים את AllAccessible. כל התשובות "
+"אנונימיות ועוזרות לנו להשתפר."
+
+#: inc/DeactivationSurvey.php:113
+msgid "The plugin stopped working"
+msgstr "התוסף הפסיק לעבוד"
+
+#: inc/DeactivationSurvey.php:116
+#, php-format
+msgid "We're sorry! Please %scontact support%s or describe the issue:"
+msgstr "אנחנו מצטערים! אנא %sצרו קשר עם התמיכה%s או תארו את הבעיה:"
+
+#: inc/DeactivationSurvey.php:127
+msgid "Missing features I need"
+msgstr "חסרות תכונות שאני צריך/ה"
+
+#: inc/DeactivationSurvey.php:130
+msgid "What features would make you stay?"
+msgstr "אילו תכונות יגרמו לכם להישאר?"
+
+#: inc/DeactivationSurvey.php:141
+#, fuzzy
+#| msgid "I found a better plugin"
+msgid "Found a better plugin"
+msgstr "מצאתי תוסף טוב יותר"
+
+#: inc/DeactivationSurvey.php:144
+msgid "Which plugin are you switching to?"
+msgstr "לאיזה תוסף אתם עוברים?"
+
+#: inc/DeactivationSurvey.php:155
+msgid "Temporary - troubleshooting an issue"
+msgstr "זמני - פתרון בעיה"
+
+#: inc/DeactivationSurvey.php:163
+msgid "I don't need accessibility features anymore"
+msgstr "אני כבר לא צריך/ה תכונות נגישות"
+
+#: inc/DeactivationSurvey.php:171
+msgid "Other"
+msgstr "אחר"
+
+#: inc/DeactivationSurvey.php:173
+msgid "Please tell us more..."
+msgstr "אנא ספרו לנו עוד..."
+
+#: inc/DeactivationSurvey.php:185
+msgid "Skip & Deactivate"
+msgstr "דלג והשבת"
+
+#: inc/DeactivationSurvey.php:192
+msgid "Submit & Deactivate"
+msgstr "שלח והשבת"
+
+#: inc/DeactivationSurvey.php:238
+msgid "Please select a reason"
+msgstr "אנא בחרו סיבה"
+
+#: inc/DeactivationSurvey.php:253
+msgid "Submitting..."
+msgstr "שולח..."
+
+#: inc/EditorMetaBox.php:52 inc/EditorMetaBox.php:63
+msgid "Accessibility Score"
+msgstr "ציון נגישות"
+
+#: inc/EditorMetaBox.php:98
+msgid "Loading score..."
+msgstr "טוען ציון..."
+
+#: inc/EditorMetaBox.php:99
+msgid "Error loading score"
+msgstr "שגיאה בטעינת הציון"
+
+#: inc/EditorMetaBox.php:100
+msgid "Rescan initiated successfully"
+msgstr "הסריקה מחדש הופעלה בהצלחה"
+
+#: inc/EditorMetaBox.php:101
+msgid "Error initiating rescan"
+msgstr "שגיאה בהפעלת סריקה מחדש"
+
+#: inc/EditorMetaBox.php:118
+msgid "Publish this page to see its accessibility score."
+msgstr "פרסמו את העמוד הזה כדי לראות את ציון הנגישות שלו."
+
+#: inc/EditorMetaBox.php:151
+msgid "Score unavailable"
+msgstr "הציון אינו זמין"
+
+#: inc/EditorMetaBox.php:153
+msgid ""
+"Could not load this page's accessibility score. Try refreshing the editor."
+msgstr "לא ניתן היה לטעון את ציון הנגישות של העמוד הזה. נסו לרענן את העורך."
+
+#: inc/EditorMetaBox.php:177
+msgid "Needs attention"
+msgstr "דורש תשומת לב"
+
+#: inc/EditorMetaBox.php:180 inc/PostListColumn.php:447
+msgid "Awaiting scan"
+msgstr "ממתין לסריקה"
+
+#: inc/EditorMetaBox.php:183
+msgid "Excellent"
+msgstr "מצוין"
+
+#: inc/EditorMetaBox.php:186
+msgid "Good"
+msgstr "טוב"
+
+#: inc/EditorMetaBox.php:189
+msgid "Needs review"
+msgstr "דורש בדיקה"
+
+#: inc/EditorMetaBox.php:235
+#, php-format
+msgid "Accessibility score %1$d out of 100, %2$s. Open full audit."
+msgstr "ציון נגישות %1$d מתוך 100, %2$s. פתחו את הבדיקה המלאה."
+
+#: inc/EditorMetaBox.php:236
+msgid "Accessibility score not available yet."
+msgstr "ציון הנגישות עדיין לא זמין."
+
+#. translators: 1: raw, 2: current, 3: lift delta
+#: inc/EditorMetaBox.php:265
+#, php-format
+msgid ""
+"Score lifted from %1$d to %2$d by AllAccessible AI, a gain of %3$d points."
+msgstr "הציון עלה מ-%1$d ל-%2$d על ידי AllAccessible AI, עלייה של %3$d נקודות."
+
+# GPT: “{0} issue” could be singular or plural depending on the count; I chose a plural phrasing since the context describes a count of issues.
+#. translators: %s: count of issues AllAccessible auto-resolves at runtime
+#: inc/EditorMetaBox.php:286
+#, fuzzy, php-format
+msgid "%s issue resolved by AllAccessible"
+msgid_plural "%s issues resolved by AllAccessible"
+msgstr[0] "%s בעיות נפתרו על ידי AllAccessible"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. translators: %s: count of live agentic AI fixes
+#: inc/EditorMetaBox.php:293
+#, php-format
+msgid "%s agentic AI fix live"
+msgid_plural "%s agentic AI fixes live"
+msgstr[0] "%s תיקון AI סוכני פעיל בזמן אמת"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/EditorMetaBox.php:307
+#, php-format
+msgid ""
+"Review %1$d pending agentic AI fix; approve to reach %2$d%% accessibility "
+"score"
+msgid_plural ""
+"Review %1$d pending agentic AI fixes; approve to reach %2$d%% accessibility "
+"score"
+msgstr[0] ""
+"בדוק תיקון AI סוכני ממתין עבור %1$d; אשר כדי להגיע לציון נגישות %2$d%%"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. translators: %s: count of pending fixes
+#: inc/EditorMetaBox.php:323
+#, php-format
+msgid "%s fix ready to review"
+msgid_plural "%s fixes ready to review"
+msgstr[0] "%s תיקון מוכן לבדיקה"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. translators: %s: potential score
+#: inc/EditorMetaBox.php:330
+#, php-format
+msgid "Approve to reach %s%%"
+msgstr "אשרו כדי להגיע ל-%s%%"
+
+#. translators: %s: total issues
+#: inc/EditorMetaBox.php:344
+#, php-format
+msgid "Issues (%s)"
+msgstr "בעיות (%s)"
+
+#: inc/EditorMetaBox.php:351
+msgid "Critical"
+msgstr "קריטי"
+
+#: inc/EditorMetaBox.php:352
+msgid "Serious"
+msgstr "חמור"
+
+#: inc/EditorMetaBox.php:353
+msgid "Moderate"
+msgstr "בינוני"
+
+#: inc/EditorMetaBox.php:354
+msgid "Minor"
+msgstr "קל"
+
+#. translators: %s: human-readable time ago
+#: inc/EditorMetaBox.php:378
+#, php-format
+msgid "Last scanned %s"
+msgstr "נסרק לאחרונה %s"
+
+#: inc/EditorMetaBox.php:392
+msgid "View full report"
+msgstr "צפו בדוח המלא"
+
+#: inc/EditorMetaBox.php:400
+msgid "Rescan this page"
+msgstr "סרקו מחדש את העמוד הזה"
+
+#: inc/EditorMetaBox.php:441
+msgid "Scan complete. Refreshing…"
+msgstr "הסריקה הושלמה. מרענן…"
+
+#: inc/EditorMetaBox.php:442
+msgid "Scan complete. Save or reload to see the updated score."
+msgstr "הסריקה הושלמה. שמרו או טענו מחדש כדי לראות את הציון המעודכן."
+
+#: inc/EditorMetaBox.php:443
+msgid "Reload now"
+msgstr "טען מחדש עכשיו"
+
+#: inc/EditorMetaBox.php:445
+msgid "Still running — refresh the page in a minute."
+msgstr "עדיין פועל — רעננו את העמוד בעוד דקה."
+
+#: inc/EditorMetaBox.php:447
+msgid "Could not start scan."
+msgstr "לא ניתן להתחיל סריקה."
+
+#: inc/EditorMetaBox.php:448
+msgid "Network error. Check your connection and try again."
+msgstr "שגיאת רשת. בדוק את החיבור שלך ונסה שוב."
+
+#: inc/EditorMetaBox.php:587
+msgid "Page-level score"
+msgstr "ציון ברמת הדף"
+
+#: inc/EditorMetaBox.php:590
+msgid "Site-level score (page not yet crawled)"
+msgstr "ציון ברמת האתר (הדף עדיין לא נסרק)"
+
+#: inc/EditorMetaBox.php:593 inc/SettingsPage.php:575
+msgid "Awaiting first scan"
+msgstr "ממתין לסריקה הראשונה"
+
+#: inc/EditorMetaBox.php:821
+msgid "Premium Feature"
+msgstr "תכונת פרימיום"
+
+#: inc/EditorMetaBox.php:824
+msgid "See accessibility scores for each page/post with a premium account."
+msgstr "ראה ציוני נגישות לכל דף/פוסט עם חשבון פרימיום."
+
+#: inc/EditorMetaBox.php:827
 msgid "Upgrade to Premium"
 msgstr "לשדרג לפרימיום"
 
-#: inc/AllAccessibleSettings.php:138
-msgid "Plugin Configuration"
-msgstr "תצורת תוסף"
+#: inc/EditorMetaBox.php:830
+msgid "7-day free trial available"
+msgstr "זמין ניסיון חינם ל-7 ימים"
 
-#: inc/AllAccessibleSettings.php:139
+#: inc/FeatureComparison.php:28
+msgid "Compare Plans"
+msgstr "השווה תוכניות"
+
+#: inc/FeatureComparison.php:37
+msgid "Feature"
+msgstr "תכונה"
+
+#: inc/FeatureComparison.php:52
+msgid "Accessibility Widget"
+msgstr "ווידג'ט נגישות"
+
+#: inc/FeatureComparison.php:53 inc/FeatureComparison.php:54
+#: inc/FeatureComparison.php:55 inc/FeatureComparison.php:80
+#: inc/FeatureComparison.php:81 inc/FeatureComparison.php:87
+#: inc/FeatureComparison.php:92
+msgid "Included"
+msgstr "כלול"
+
+#: inc/FeatureComparison.php:58
+msgid "Monthly Pageviews"
+msgstr "צפיות חודשיות בדפים"
+
+#: inc/FeatureComparison.php:61 inc/FeatureComparison.php:68
+#: inc/FeatureComparison.php:69
+msgid "Unlimited"
+msgstr "ללא הגבלה"
+
+#: inc/FeatureComparison.php:65
+msgid "AI Image Alt Text"
+msgstr "טקסט חלופי לתמונה באמצעות AI"
+
+#: inc/FeatureComparison.php:67
+msgid "10 preview"
+msgstr "תצוגה מקדימה 10"
+
+#: inc/FeatureComparison.php:72
+msgid "Compliance Audits"
+msgstr "ביקורות תאימות"
+
+#: inc/FeatureComparison.php:73 inc/FeatureComparison.php:79
+#: inc/FeatureComparison.php:85 inc/FeatureComparison.php:86
+#: inc/FeatureComparison.php:91
+msgid "Not included"
+msgstr "לא כלול"
+
+#: inc/FeatureComparison.php:78
+msgid "Widget Customization"
+msgstr "התאמה אישית של הווידג׳ט"
+
+#: inc/FeatureComparison.php:84
+msgid "VPAT Reports"
+msgstr "דוחות VPAT"
+
+#: inc/FeatureComparison.php:90
+msgid "Priority Support"
+msgstr "תמיכה בעדיפות גבוהה"
+
+#: inc/FeatureComparison.php:93
+msgid "Dedicated"
+msgstr "ייעודי"
+
+#: inc/FeatureComparison.php:103
+msgid "Upgrade Plan"
+msgstr "שדרוג תוכנית"
+
+#: inc/ImageManagerPage.php:28 inc/ImageManagerPage.php:29
+#: inc/SettingsPage.php:608
+msgid "Image AI"
+msgstr "AI לתמונות"
+
+#: inc/ImageManagerPage.php:101
+msgid "Image alt text is available on paid plans"
+msgstr "טקסט חלופי לתמונה זמין בתוכניות בתשלום"
+
+#: inc/ImageManagerPage.php:102
+msgid ""
+"Upgrade to review, refine, and approve every alt text on your site. Includes "
+"inline editing, manual overrides, and full media library coverage."
+msgstr ""
+"שדרג כדי לסקור, לשפר ולאשר כל טקסט חלופי באתר שלך. כולל עריכה בתוך העמוד, "
+"עקיפות ידניות וכיסוי מלא של ספריית המדיה."
+
+#: inc/ImageManagerPage.php:116
+msgid "Could not load image data right now."
+msgstr "לא ניתן לטעון את נתוני התמונה כרגע."
+
+#. translators: %d = number of images on this page
+#: inc/ImageManagerPage.php:132
 #, php-format
-msgid "%1$s is connected to %2$s with account ID %3$s"
-msgstr "%1$s מחובר ל-%2$s עם מזהה חשבון %3$s"
+msgid "%d image on this page."
+msgid_plural "%d images on this page."
+msgstr[0] "%d תמונה בדף זה."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
-#: inc/AllAccessibleSettings.php:161
-msgid "Choose Widget Color"
-msgstr "בחר צבע וידג'ט"
+#: inc/ImageManagerPage.php:157 inc/PostListColumn.php:264
+#: inc/PostListColumn.php:270 inc/constants.php:19
+msgid "Accessibility"
+msgstr "Ułatwienia"
 
-#: inc/AllAccessibleSettings.php:167
-msgid "Choose Icon"
-msgstr "בחר אייקון"
+#: inc/ImageManagerPage.php:159
+msgid "Image alt text"
+msgstr "טקסט חלופי לתמונה"
 
-#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
-msgid "Choose Widget Size"
-msgstr "בחר גודל ווידג'ט"
+#: inc/ImageManagerPage.php:163
+msgid ""
+"AllAccessible AI suggests descriptive alt text for every image on your site. "
+"Review and approve, or edit before it goes live."
+msgstr ""
+"AllAccessible AI מציע טקסט חלופי תיאורי לכל תמונה באתר שלך. אפשר לסקור "
+"ולאשר, או לערוך לפני שזה עולה לאוויר."
 
-#: inc/AllAccessibleSettings.php:192
-msgid "Small"
-msgstr "קטן"
+#: inc/ImageManagerPage.php:167 inc/SettingsPage.php:836
+msgid "Open full dashboard"
+msgstr "פתח את לוח הבקרה המלא"
 
-#: inc/AllAccessibleSettings.php:193
-msgid "Medium (Default)"
-msgstr "בינוני (ברירת מחדל)"
+#: inc/ImageManagerPage.php:189
+msgid "images"
+msgstr "תמונות"
 
-#: inc/AllAccessibleSettings.php:194
-msgid "Large"
-msgstr "גדול"
+#: inc/ImageManagerPage.php:193
+msgid "with alt text"
+msgstr "עם טקסט חלופי"
 
-#: inc/AllAccessibleSettings.php:202
-msgid "Choose Widget Position"
-msgstr "בחר מיקום וידג'ט"
+#. translators: %d = percentage
+#: inc/ImageManagerPage.php:194
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
 
-#: inc/AllAccessibleSettings.php:204
+#: inc/ImageManagerPage.php:200
+msgid "AI-authored"
+msgstr "נכתב על ידי בינה מלאכותית"
+
+#: inc/ImageManagerPage.php:212
+msgid "All images"
+msgstr "כל התמונות"
+
+#: inc/ImageManagerPage.php:213
+msgid "Missing alt"
+msgstr "חסר טקסט חלופי"
+
+#: inc/ImageManagerPage.php:214
+msgid "AI-suggested"
+msgstr "מוצע על ידי בינה מלאכותית"
+
+#: inc/ImageManagerPage.php:215 inc/SettingsPage.php:450
+msgid "Manual"
+msgstr "ידני"
+
+#: inc/ImageManagerPage.php:226
+msgid "Show"
+msgstr "הצג"
+
+#: inc/ImageManagerPage.php:237
+msgid "Search filename or alt text"
+msgstr "חפש שם קובץ או טקסט חלופי"
+
+#: inc/ImageManagerPage.php:240
+msgid "Type to filter visible images…"
+msgstr "הקלד כדי לסנן תמונות גלויות…"
+
+#: inc/ImageManagerPage.php:245
+msgid "Apply"
+msgstr "החל"
+
+#: inc/ImageManagerPage.php:294
+msgid "AI suggestion"
+msgstr "הצעה של בינה מלאכותית"
+
+#: inc/ImageManagerPage.php:320
+msgid "No alt text yet."
+msgstr "עדיין אין טקסט חלופי."
+
+#: inc/ImageManagerPage.php:332
+msgid "Found on:"
+msgstr "נמצא ב:"
+
+#: inc/ImageManagerPage.php:361
+msgid "Needs alt"
+msgstr "נדרש טקסט חלופי"
+
+#: inc/ImageManagerPage.php:364
+msgid "Set"
+msgstr "הגדר"
+
+#. translators: %d = image ID
+#: inc/ImageManagerPage.php:371 inc/ImageManagerPage.php:379
+#, php-format
+msgid "Image #%d"
+msgstr "תמונה מס׳ %d"
+
+#: inc/ImageManagerPage.php:407
+#, php-format
+msgid "You've used %1$d of %2$d preview alt-texts on this site"
+msgstr "השתמשת ב-%1$d מתוך %2$d תצוגות מקדימות של טקסט חלופי באתר הזה"
+
+#: inc/ImageManagerPage.php:412
+msgid ""
+"Real AI output, drafted for your real images. Upgrade to unlock unlimited "
+"alt-text generation for every image on your site."
+msgstr ""
+"פלט AI אמיתי, מנוסח עבור התמונות האמיתיות שלך. שדרג כדי לפתוח יצירת טקסט "
+"חלופי ללא הגבלה לכל תמונה באתר שלך."
+
+#: inc/ImageManagerPage.php:455
+#, php-format
+msgid "Unlock AI alt text for all %d images on your site"
+msgstr "פתח טקסט חלופי מבוסס AI לכל %d התמונות באתר שלך"
+
+#: inc/ImageManagerPage.php:478
+msgid "No images discovered yet"
+msgstr "עדיין לא נמצאו תמונות"
+
+#: inc/ImageManagerPage.php:480
+msgid ""
+"Scan your site to discover images. AllAccessible AI writes alt text for each "
+"one automatically. You can review or override any entry from this page."
+msgstr ""
+"סרקו את האתר שלכם כדי לגלות תמונות. ה-AI של AllAccessible כותב טקסט חלופי "
+"לכל אחת באופן אוטומטי. תוכלו לסקור או לעקוף כל רשומה מהעמוד הזה."
+
+#: inc/ImageManagerPage.php:483
+msgid "Scan your site to discover images"
+msgstr "סרוק את האתר שלך כדי לגלות תמונות"
+
+#: inc/ImageManagerPage.php:504
+msgid "Image pagination"
+msgstr "דפדוף בין תמונות"
+
+#. translators: 1: current page, 2: total pages, 3: total items
+#: inc/ImageManagerPage.php:508
+#, php-format
+msgid "Page %1$d of %2$d (%3$s images)"
+msgstr "עמוד %1$d מתוך %2$d (%3$s תמונות)"
+
+#: inc/ImageManagerPage.php:518
+msgid "Previous"
+msgstr "הקודם"
+
+#: inc/ImageManagerPage.php:540
+msgid "Edit alt text"
+msgstr "ערוך טקסט חלופי"
+
+#: inc/ImageManagerPage.php:541
+msgid "Close"
+msgstr "סגור"
+
+#: inc/ImageManagerPage.php:553
+msgid "AllAccessible AI suggests"
+msgstr "AllAccessible AI מציע"
+
+#: inc/ImageManagerPage.php:559
+msgid "Use this suggestion"
+msgstr "השתמש בהצעה הזו"
+
+#: inc/ImageManagerPage.php:564
+msgid "Alt text"
+msgstr "טקסט חלופי"
+
+#: inc/ImageManagerPage.php:570
+msgid ""
+"Aim for 1–2 sentences describing the image's purpose, not its appearance."
+msgstr "שאפו ל-1–2 משפטים שמתארים את מטרת התמונה, ולא את המראה שלה."
+
+#: inc/ImageManagerPage.php:670
+msgid ""
+"Saved. Updates may take up to a minute to appear after refresh as the change "
+"propagates through our system."
+msgstr ""
+"נשמר. ייתכן שעדכונים יופיעו רק עד דקה לאחר רענון, כאשר השינוי מתפשט במערכת "
+"שלנו."
+
+#: inc/ImageManagerPage.php:707
+msgid "Alt text is required."
+msgstr "נדרש טקסט חלופי."
+
+#: inc/ImageManagerPage.php:711
+msgid "Alt text must be 500 characters or fewer."
+msgstr "הטקסט החלופי חייב להיות באורך של 500 תווים או פחות."
+
+#: inc/ImageManagerPage.php:716 inc/SettingsPage.php:1218
+msgid "Saving…"
+msgstr "שומר…"
+
+#: inc/ImageManagerPage.php:726 inc/SettingsPage.php:1785
+msgid "Save failed"
+msgstr "השמירה נכשלה"
+
+#: inc/ImageManagerPage.php:745
+msgid "Save failed. Please try again."
+msgstr "השמירה נכשלה. נסה שוב."
+
+#: inc/ImageManagerPage.php:766
+msgid "Showing all images on this page."
+msgstr "מוצגות כל התמונות בדף זה."
+
+#: inc/ImageManagerPage.php:768
+#, php-format
+msgid "Showing %d images matching your search."
+msgstr "מוצגות %d תמונות התואמות לחיפוש שלך."
+
+#: inc/ImageManagerPage.php:787
+msgid "Insufficient permissions"
+msgstr "הרשאות לא מספיקות"
+
+#: inc/ImageManagerPage.php:796 inc/api/ApiClient.php:901
+msgid "Invalid image ID"
+msgstr "מזהה תמונה לא חוקי"
+
+#: inc/ImageManagerPage.php:799 inc/api/ApiClient.php:905
+msgid "Alt text must be 1–500 characters"
+msgstr "הטקסט החלופי חייב להיות באורך של 1–500 תווים"
+
+#: inc/OnboardingWizard.php:43
+msgid "AllAccessible Setup"
+msgstr "הגדרת AllAccessible"
+
+#: inc/OnboardingWizard.php:44
+msgid "Setup"
+msgstr "הגדרה"
+
+#: inc/OnboardingWizard.php:107
+msgid "First scan"
+msgstr "סריקה ראשונה"
+
+#: inc/OnboardingWizard.php:112
+msgid "AllAccessible setup"
+msgstr "הגדרת AllAccessible"
+
+#: inc/OnboardingWizard.php:119
+msgid "Setup progress"
+msgstr "התקדמות ההגדרה"
+
+#: inc/OnboardingWizard.php:144
+msgid "Step 1 of 2"
+msgstr "שלב 1 מתוך 2"
+
+#: inc/OnboardingWizard.php:146 inc/OnboardingWizard.php:808
+msgid "Welcome to AllAccessible"
+msgstr "ברוכים הבאים ל-AllAccessible"
+
+#: inc/OnboardingWizard.php:149
+msgid ""
+"Make this WordPress site usable for every visitor. Enter your email and pick "
+"a plan to get started."
+msgstr ""
+"הפכו את אתר ה-WordPress הזה לשמיש עבור כל מבקר. הזינו את האימייל שלכם ובחרו "
+"תוכנית כדי להתחיל."
+
+#: inc/OnboardingWizard.php:155
+msgid "See what an account does for you"
+msgstr "ראו מה חשבון עושה בשבילכם"
+
+#: inc/OnboardingWizard.php:165
+msgid "Accessibility scans"
+msgstr "סריקות נגישות"
+
+#: inc/OnboardingWizard.php:168
+msgid ""
+"Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged."
+msgstr "כל עמוד שפורסם נבדק מול WCAG 2.2, ADA ו-EAA. מסומן לפי רמת חומרה."
+
+#: inc/OnboardingWizard.php:179
+msgid "24 fixed"
+msgstr "24 תוקנו"
+
+#: inc/OnboardingWizard.php:180
+msgid "3 to review"
+msgstr "3 לבדיקה"
+
+#: inc/OnboardingWizard.php:190
+msgid "Agentic AI fixes"
+msgstr "תיקונים באמצעות AI סוכני"
+
+#: inc/OnboardingWizard.php:193
+msgid "AI drafts the fix; your team approves before anything ships."
+msgstr "ה-AI מנסח את התיקון; הצוות שלך מאשר לפני שמשהו עולה לאוויר."
+
+#: inc/OnboardingWizard.php:196
+msgid "Issue: button missing accessible name"
+msgstr "בעיה: לכפתור חסר שם נגיש"
+
+#: inc/OnboardingWizard.php:198
+msgid "AI fix"
+msgstr "תיקון AI"
+
+#: inc/OnboardingWizard.php:207
+msgid "Smart alt text"
+msgstr "טקסט חלופי חכם"
+
+#: inc/OnboardingWizard.php:210
+msgid ""
+"Missing alt generated for every image, in the language your visitors use."
+msgstr "טקסט חלופי חסר נוצר לכל תמונה, בשפה שבה המבקרים שלך משתמשים."
+
+#: inc/OnboardingWizard.php:218
+msgid "AI generated"
+msgstr "נוצר על ידי AI"
+
+#: inc/OnboardingWizard.php:220
+msgid "A golden retriever sitting in a sunlit park, wearing a pink bandana."
+msgstr "גולדן רטריבר יושב בפארק מואר שמש, עם בנדנה ורודה."
+
+#: inc/OnboardingWizard.php:246
+msgid "Email address"
+msgstr "כתובת אימייל"
+
+#: inc/OnboardingWizard.php:258 inc/OnboardingWizard.php:811
+msgid ""
+"We'll create a new account or link your existing one — same email, either "
+"way."
+msgstr "ניצור חשבון חדש או נקשר את החשבון הקיים שלך — אותו אימייל, בכל מקרה."
+
+#: inc/OnboardingWizard.php:265
+msgid "Plan"
+msgstr "תוכנית"
+
+#: inc/OnboardingWizard.php:271
+msgid "Free forever"
+msgstr "חינם לנצח"
+
+#: inc/OnboardingWizard.php:277
+msgid "Widget, contrast + sizing controls, essential accessibility tools."
+msgstr "ווידג׳ט, בקרות ניגודיות + שינוי גודל, כלי נגישות חיוניים."
+
+#: inc/OnboardingWizard.php:285
+msgid "Most popular"
+msgstr "הכי פופולרי"
+
+#: inc/OnboardingWizard.php:291
+msgid "7 days free"
+msgstr "7 ימים בחינם"
+
+#: inc/OnboardingWizard.php:291
+msgid "then $10/mo"
+msgstr "ואז $10 לחודש"
+
+#: inc/OnboardingWizard.php:294
+msgid "Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits."
+msgstr "תיקונים באמצעות Agentic AI, טקסט חלופי חכם, ביקורות WCAG/ADA/EAA."
+
+#: inc/OnboardingWizard.php:307
+msgid "Ready to reconnect"
+msgstr "מוכנים להתחבר מחדש"
+
+#: inc/OnboardingWizard.php:321
+msgid "Heads up:"
+msgstr "לתשומת לבך:"
+
+#: inc/OnboardingWizard.php:322
+msgid ""
+"This site is on another AllAccessible account. The plugin will work right "
+"away, but the site only appears in your dashboard once the existing admin "
+"approves your access — they'll get an email automatically."
+msgstr ""
+"האתר הזה נמצא בחשבון AllAccessible אחר. התוסף יעבוד מיד, אבל האתר יופיע בלוח "
+"הבקרה שלך רק לאחר שהמנהל הקיים יאשר את הגישה שלך — הוא יקבל אימייל באופן "
+"אוטומטי."
+
+#: inc/OnboardingWizard.php:332 inc/OnboardingWizard.php:670
+#: inc/OnboardingWizard.php:682 inc/OnboardingWizard.php:703
+#: inc/OnboardingWizard.php:734 inc/OnboardingWizard.php:816
+msgid "Continue"
+msgstr "המשך"
+
+#. translators: 1: Terms link, 2: Privacy Policy link
+#: inc/OnboardingWizard.php:340
+#, php-format
+msgid "By continuing you agree to our %1$s and %2$s."
+msgstr "בהמשך השימוש אתה מסכים ל-%1$s ול-%2$s שלנו."
+
+#: inc/OnboardingWizard.php:341 inc/SettingsPage.php:1445
+msgid "Terms & Conditions"
+msgstr "תנאים והגבלות"
+
+#: inc/OnboardingWizard.php:342 inc/SettingsPage.php:1446
+msgid "Privacy Policy"
+msgstr "מדיניות פרטיות"
+
+#: inc/OnboardingWizard.php:351
+msgid "Skip and use just the free widget"
+msgstr "דלג והשתמש רק בווידג׳ט החינמי"
+
+#: inc/OnboardingWizard.php:377
+msgid "Interactions / month"
+msgstr "אינטראקציות / חודש"
+
+#: inc/OnboardingWizard.php:385
+msgid "Visitors served / month"
+msgstr "מבקרים שקיבלו שירות / חודש"
+
+#: inc/OnboardingWizard.php:393
+msgid "Protecting WordPress"
+msgstr "הגנה על WordPress"
+
+#: inc/OnboardingWizard.php:398
+msgid "WCAG 2.2"
+msgstr "WCAG 2.2"
+
+#: inc/OnboardingWizard.php:399
+msgid "ADA"
+msgstr "ADA"
+
+#: inc/OnboardingWizard.php:400
+msgid "Section 508"
+msgstr "סעיף 508"
+
+#: inc/OnboardingWizard.php:401
+msgid "EAA 2025"
+msgstr "EAA 2025"
+
+#: inc/OnboardingWizard.php:422
+msgid "Free to start"
+msgstr "אפשר להתחיל בחינם"
+
+#: inc/OnboardingWizard.php:426
+msgid "No credit card required"
+msgstr "אין צורך בכרטיס אשראי"
+
+#: inc/OnboardingWizard.php:430
+msgid "Privacy-first — GDPR / CCPA"
+msgstr "פרטיות תחילה — GDPR / CCPA"
+
+#: inc/OnboardingWizard.php:434
+msgid "Cancel any time on paid plans"
+msgstr "ניתן לבטל בכל עת בתוכניות בתשלום"
+
+#: inc/OnboardingWizard.php:438
+msgid "Trusted on thousands of WordPress sites worldwide."
+msgstr "מהימן באלפי אתרי WordPress ברחבי העולם."
+
+#: inc/OnboardingWizard.php:450
+msgid "Step 2 of 2"
+msgstr "שלב 2 מתוך 2"
+
+#: inc/OnboardingWizard.php:453
+msgid "Account ready"
+msgstr "החשבון מוכן"
+
+#: inc/OnboardingWizard.php:462
+msgid "Your account is set up."
+msgstr "החשבון שלך הוגדר."
+
+#: inc/OnboardingWizard.php:464
+msgid ""
+"The AllAccessible agents are ready to scan this site for accessibility "
+"issues."
+msgstr "הסוכנים של AllAccessible מוכנים לסרוק את האתר הזה לאיתור בעיות נגישות."
+
+#: inc/OnboardingWizard.php:474
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; you can re-run it any time from "
+"the Agentic Fixes page."
+msgstr ""
+"AllAccessible מוצא אוטומטית כל עמוד שפורסם באתר שלך — אין צורך במפת אתר. "
+"התחל את הסריקה הראשונה שלך למטה; אפשר להריץ אותה מחדש בכל עת מדף התיקונים "
+"הסוכניים."
+
+#: inc/OnboardingWizard.php:483
+msgid "Skip for now"
+msgstr "דלג לעת עתה"
+
+#: inc/OnboardingWizard.php:486
+msgid "Go to dashboard"
+msgstr "עבור ללוח הבקרה"
+
+#: inc/OnboardingWizard.php:587
+msgid "Skip setup for now? You can finish any time from the settings page."
+msgstr "לדלג על ההגדרה לעת עתה? אפשר להשלים בכל עת מדף ההגדרות."
+
+#: inc/OnboardingWizard.php:619
+msgid "Account created. Provisioning your site…"
+msgstr "החשבון נוצר. מקצה משאבים לאתר שלך…"
+
+#: inc/OnboardingWizard.php:622
+msgid "Welcome back. We linked this WordPress site to your account."
+msgstr "ברוך שובך. קישרנו את אתר ה-WordPress הזה לחשבון שלך."
+
+#: inc/OnboardingWizard.php:625
+msgid "Welcome back. This site was already on your account."
+msgstr "ברוך שובך. האתר הזה כבר היה בחשבון שלך."
+
+#: inc/OnboardingWizard.php:627
+msgid "Connected."
+msgstr "מחובר."
+
+#: inc/OnboardingWizard.php:639
+msgid "Please enter your email address."
+msgstr "נא להזין את כתובת האימייל שלך."
+
+#: inc/OnboardingWizard.php:644
+msgid "Setting things up…"
+msgstr "מגדיר את הדברים…"
+
+#: inc/OnboardingWizard.php:645
+msgid "Connecting to AllAccessible…"
+msgstr "מתחבר ל-AllAccessible…"
+
+#: inc/OnboardingWizard.php:668
+msgid "Something went wrong. Please try again."
+msgstr "משהו השתבש. נא לנסות שוב."
+
+#: inc/OnboardingWizard.php:680
+msgid "We received an unexpected response. Please try again."
+msgstr "קיבלנו תגובה לא צפויה. נא לנסות שוב."
+
+#: inc/OnboardingWizard.php:701 inc/OnboardingWizard.php:883
+msgid "We could not save your settings. Please try again."
+msgstr "לא הצלחנו לשמור את ההגדרות שלך. נא לנסות שוב."
+
+#: inc/OnboardingWizard.php:728
+msgid "We could not reach AllAccessible. Please try again."
+msgstr "לא הצלחנו ליצור קשר עם AllAccessible. נא לנסות שוב."
+
+#: inc/OnboardingWizard.php:753 inc/OnboardingWizard.php:781
+msgid "Welcome back"
+msgstr "ברוך שובך"
+
+#: inc/OnboardingWizard.php:763
+msgid "Linking"
+msgstr "מקשר"
+
+#: inc/OnboardingWizard.php:764
+msgid "to"
+msgstr "אל"
+
+#: inc/OnboardingWizard.php:768
+msgid "Reconnect this site"
+msgstr "חבר מחדש את האתר הזה"
+
+#: inc/OnboardingWizard.php:783
+msgid ""
+"We will link this WordPress site to your existing AllAccessible account."
+msgstr "נקשר את אתר ה-WordPress הזה לחשבון AllAccessible הקיים שלך."
+
+#: inc/OnboardingWizard.php:788
+msgid "Connect this site"
+msgstr "חיבור האתר הזה"
+
+#: inc/OnboardingWizard.php:795
+msgid "Request access to this site"
+msgstr "בקשת גישה לאתר הזה"
+
+#: inc/OnboardingWizard.php:797
+msgid ""
+"This site is on another AllAccessible account. Enter your email to request "
+"access."
+msgstr ""
+"האתר הזה נמצא בחשבון AllAccessible אחר. הזן את כתובת האימייל שלך כדי לבקש "
+"גישה."
+
+#: inc/OnboardingWizard.php:802
+msgid "Request access"
+msgstr "בקשת גישה"
+
+#: inc/OnboardingWizard.php:868
+msgid "Reconnecting…"
+msgstr "מתחבר מחדש…"
+
+#: inc/OnboardingWizard.php:879
+msgid "Reconnected. Provisioning…"
+msgstr "החיבור חודש. מתבצע הקצאה…"
+
+#: inc/OnboardingWizard.php:906
+msgid "Permission denied"
+msgstr "הגישה נדחתה"
+
+#: inc/PostListColumn.php:306
+msgid "Loading accessibility score"
+msgstr "טוען ציון נגישות"
+
+#: inc/PostListColumn.php:307
+msgid "Loading"
+msgstr "טוען"
+
+#: inc/PostListColumn.php:308
+msgid "Loading…"
+msgstr "טוען…"
+
+#: inc/PostListColumn.php:434
+msgid "Will scan on publish"
+msgstr "יבצע סריקה בעת פרסום"
+
+#: inc/PostListColumn.php:435
+msgid ""
+"Drafts are not reachable by the public crawler. Publish to scan "
+"automatically, or preview to scan now."
+msgstr ""
+"טיוטות אינן נגישות לסורק הציבורי. פרסם כדי לסרוק אוטומטית, או השתמש בתצוגה "
+"מקדימה כדי לסרוק עכשיו."
+
+#: inc/PostListColumn.php:440
+msgid "Preview & scan"
+msgstr "תצוגה מקדימה וסריקה"
+
+#: inc/PostListColumn.php:445
+msgid "Awaiting scan — AllAccessible will populate this on the next crawl"
+msgstr "ממתין לסריקה — AllAccessible ימלא זאת בסריקה הבאה"
+
+#: inc/PostListColumn.php:456
+msgid "Score is stale — page hasn't been scanned recently"
+msgstr "הציון לא מעודכן — העמוד לא נסרק לאחרונה"
+
+#: inc/PostListColumn.php:457
+msgid "Last scan failed"
+msgstr "הסריקה האחרונה נכשלה"
+
+#: inc/PostListColumn.php:458
+msgid "Accessibility score"
+msgstr "ציון נגישות"
+
+#: inc/PostListColumn.php:468
+msgid "Approve pending fixes to reach this score"
+msgstr "אשר תיקונים ממתינים כדי להגיע לציון הזה"
+
+#: inc/ReviewNudge.php:73
+msgid "How's your experience with AllAccessible so far?"
+msgstr "איך החוויה שלך עם AllAccessible עד כה?"
+
+#: inc/ReviewNudge.php:77
+msgid "Great 😊"
+msgstr "מעולה 😊"
+
+#: inc/ReviewNudge.php:80
+msgid "Could be better"
+msgstr "יכול להיות טוב יותר"
+
+#: inc/ReviewNudge.php:83
+msgid "Maybe later"
+msgstr "אולי אחר כך"
+
+#: inc/ReviewNudge.php:91
+msgid "That's wonderful to hear!"
+msgstr "נפלא לשמוע!"
+
+#: inc/ReviewNudge.php:92
+msgid ""
+"A quick review on WordPress.org helps other site owners find us — it takes "
+"about 30 seconds and means a lot."
+msgstr ""
+"ביקורת קצרה ב-WordPress.org עוזרת לבעלי אתרים אחרים למצוא אותנו — זה לוקח "
+"בערך 30 שניות ומשמעותי לנו מאוד."
+
+#: inc/ReviewNudge.php:97
+msgid "Leave a review"
+msgstr "השאר ביקורת"
+
+#: inc/ReviewNudge.php:100
+msgid "I already did"
+msgstr "כבר עשיתי"
+
+#: inc/ReviewNudge.php:108
+msgid "Sorry to hear that — we'd like to make it right."
+msgstr "מצטערים לשמוע — נשמח לתקן את זה."
+
+#: inc/ReviewNudge.php:109
+msgid ""
+"Tell us what's not working and we'll follow up. This goes straight to our "
+"team."
+msgstr "ספרו לנו מה לא עובד ונחזור אליכם. זה מגיע ישירות לצוות שלנו."
+
+#: inc/ReviewNudge.php:113
+msgid "What could be better?"
+msgstr "מה יכול להיות טוב יותר?"
+
+#: inc/ReviewNudge.php:117
+msgid "Send feedback"
+msgstr "שלח משוב"
+
+#: inc/ReviewNudge.php:121 inc/SettingsPage.php:1428
+msgid "Contact support"
+msgstr "צור קשר עם התמיכה"
+
+#: inc/ReviewNudge.php:129
+msgid "Thank you — we appreciate you."
+msgstr "תודה — אנחנו מעריכים אותך."
+
+#: inc/ScanTriggerPanel.php:30
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; future scans then run "
+"automatically based on your plan."
+msgstr ""
+"AllAccessible מאתר אוטומטית כל עמוד שפורסם באתר שלך — אין צורך במפת אתר. "
+"התחל את הסריקה הראשונה שלך למטה; סריקות עתידיות ירוצו לאחר מכן אוטומטית "
+"בהתאם לתוכנית שלך."
+
+#: inc/ScanTriggerPanel.php:43
+msgid "Scan now"
+msgstr "סרוק עכשיו"
+
+#: inc/ScanTriggerPanel.php:44 inc/ScanTriggerPanel.php:257
+#: inc/ScanTriggerPanel.php:311
+msgid "Run scan again"
+msgstr "הפעל סריקה שוב"
+
+#. translators: %s: human-readable time until
+#: inc/ScanTriggerPanel.php:101
+#, php-format
+msgid "Next scan in %s"
+msgstr "הסריקה הבאה בעוד %s"
+
+#: inc/ScanTriggerPanel.php:105
+msgid "Next scan due now"
+msgstr "הסריקה הבאה אמורה להתבצע עכשיו"
+
+#. translators: %s: human-readable time difference
+#: inc/ScanTriggerPanel.php:117
+#, php-format
+msgid "Last scan triggered %s ago"
+msgstr "הסריקה האחרונה הופעלה לפני %s"
+
+#: inc/ScanTriggerPanel.php:131
+#, php-format
+msgid "%d published page will be scanned. This can take a minute or two."
+msgid_plural ""
+"%d published pages and posts will be scanned. This can take a minute or two."
+msgstr[0] "דף שפורסם %d ייסרק. זה עשוי לקחת דקה או שתיים."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/ScanTriggerPanel.php:157
+msgid "pages scanned"
+msgstr "דפים שנסרקו"
+
+#: inc/ScanTriggerPanel.php:166
+msgid ""
+"pages scanned. Accessibility scores appear in your Pages list within a "
+"minute or two as the AI finishes reviewing."
+msgstr ""
+"עמודים נסרקו. ציוני הנגישות יופיעו ברשימת העמודים שלך בתוך דקה או שתיים, "
+"כשה-AI יסיים את הבדיקה."
+
+#: inc/ScanTriggerPanel.php:168
+msgid "Open Pages list"
+msgstr "פתח רשימת דפים"
+
+#: inc/ScanTriggerPanel.php:182
+msgid "Scan a specific sitemap instead (advanced)"
+msgstr "במקום זאת, סרוק מפת אתר ספציפית (מתקדם)"
+
+#: inc/ScanTriggerPanel.php:186
+msgid ""
+"Leave this closed to let AllAccessible auto-discover your pages "
+"(recommended). Open only to point the scan at a specific sitemap."
+msgstr ""
+"השאירו את זה סגור כדי לאפשר ל-AllAccessible לגלות אוטומטית את הדפים שלכם "
+"(מומלץ). פתחו רק כדי לכוון את הסריקה למפת אתר ספציפית."
+
+#: inc/ScanTriggerPanel.php:189 inc/ScanTriggerPanel.php:345
+msgid "Looking for sitemaps…"
+msgstr "מחפש מפות אתר…"
+
+#: inc/ScanTriggerPanel.php:221
+msgid "Enter your sitemap URL, or close Advanced to auto-discover."
+msgstr ""
+"הזן את כתובת ה-URL של מפת האתר שלך, או סגור את \"מתקדם\" כדי לאתר אוטומטית."
+
+#: inc/ScanTriggerPanel.php:232
+msgid "Starting…"
+msgstr "מתחיל…"
+
+#: inc/ScanTriggerPanel.php:244
+msgid "Scan failed to start."
+msgstr "הסריקה לא הצליחה להתחיל."
+
+#: inc/ScanTriggerPanel.php:245 inc/ScanTriggerPanel.php:265
+#: inc/ScanTriggerPanel.php:290
+msgid "Start first scan"
+msgstr "התחל סריקה ראשונה"
+
+#: inc/ScanTriggerPanel.php:255
+msgid "Scan started. Results appear on the Agentic Fixes page in 2-5 minutes."
+msgstr "הסריקה התחילה. התוצאות יופיעו בדף Agentic Fixes בתוך 2–5 דקות."
+
+#: inc/ScanTriggerPanel.php:256
+msgid "Scan triggered just now"
+msgstr "הסריקה הופעלה עכשיו"
+
+#: inc/ScanTriggerPanel.php:264
+msgid "Server did not return a job ID."
+msgstr "השרת לא החזיר מזהה משימה."
+
+#: inc/ScanTriggerPanel.php:274
+msgid "Finishing setup…"
+msgstr "מסיים את ההגדרה…"
+
+#: inc/ScanTriggerPanel.php:279
+msgid "Network error"
+msgstr "שגיאת רשת"
+
+#: inc/ScanTriggerPanel.php:285
+msgid "Server timeout while queuing scan. Try again."
+msgstr "תם הזמן הקצוב של השרת בעת הוספת הסריקה לתור. נסו שוב."
+
+#: inc/ScanTriggerPanel.php:287
+#, php-format
+msgid "Request failed (HTTP %s)"
+msgstr "הבקשה נכשלה (HTTP %s)"
+
+#: inc/ScanTriggerPanel.php:316
+msgid "Scan failed. Try again."
+msgstr "הסריקה נכשלה. נסה שוב."
+
+#: inc/ScanTriggerPanel.php:318
+msgid "Retry scan"
+msgstr "נסה שוב את הסריקה"
+
+#: inc/ScanTriggerPanel.php:334 inc/ScanTriggerPanel.php:354
+msgid "Detected"
+msgstr "זוהה"
+
+#: inc/ScanTriggerPanel.php:361
+msgid "Open & verify"
+msgstr "פתח ואמת"
+
+#: inc/ScanTriggerPanel.php:365
+msgid ""
+"No reachable sitemap found. Enter one below, or close Advanced to auto-"
+"discover."
+msgstr ""
+"לא נמצאה מפת אתר נגישה. הזינו אחת למטה, או סגרו את מתקדם כדי לאפשר גילוי "
+"אוטומטי."
+
+#: inc/ScanTriggerPanel.php:370
+msgid "Enter my own sitemap URL"
+msgstr "הזינו כתובת URL של מפת אתר משלי"
+
+#: inc/ScanTriggerPanel.php:376
+msgid "Could not check for sitemaps. Close Advanced to auto-discover instead."
+msgstr ""
+"לא ניתן היה לבדוק מפות אתר. סגור את מתקדם כדי לבצע גילוי אוטומטי במקום זאת."
+
+#. Plugin Name of the plugin/theme
+#: inc/SettingsPage.php:36 inc/SettingsPage.php:37 inc/SettingsPage.php:373
+#: inc/SettingsPage.php:820
+msgid "AllAccessible"
+msgstr "הכל נגיש"
+
+#: inc/SettingsPage.php:59 inc/SettingsPage.php:822
+msgid "Account & Settings"
+msgstr "חשבון והגדרות"
+
+#: inc/SettingsPage.php:60
+msgid "Account"
+msgstr "חשבון"
+
+#: inc/SettingsPage.php:70 inc/SettingsPage.php:71 inc/SettingsPage.php:108
+msgid "Widget Customizer"
+msgstr "התאמה אישית של הווידג׳ט"
+
+#: inc/SettingsPage.php:107 inc/SettingsPage.php:881
+msgid "Widget"
+msgstr "ווידג׳ט"
+
+#: inc/SettingsPage.php:109
+msgid ""
+"Customize the AllAccessible widget that visitors see on your site. Changes "
+"save instantly and clear the visitor cache."
+msgstr ""
+"התאם אישית את הווידג'ט AllAccessible שהמבקרים רואים באתר שלך. השינויים "
+"נשמרים באופן מיידי ומנקים את מטמון המבקרים."
+
+#: inc/SettingsPage.php:119
+msgid "Connect your AllAccessible account"
+msgstr "חברו את חשבון AllAccessible שלכם"
+
+#: inc/SettingsPage.php:120
+msgid "Finish setup to customize your widget."
+msgstr "סיימו את ההגדרה כדי להתאים אישית את הווידג׳ט שלכם."
+
+#: inc/SettingsPage.php:122 inc/SettingsPage.php:850
+msgid "Start setup"
+msgstr "התחילו בהגדרה"
+
+#: inc/SettingsPage.php:131
+msgid "Widget customization is a paid feature"
+msgstr "התאמה אישית של הווידג׳ט היא תכונה בתשלום"
+
+#: inc/SettingsPage.php:132
+msgid ""
+"Upgrade your AllAccessible plan to customize the widget color, position, "
+"icon, and shape — plus enable agentic AI remediation."
+msgstr ""
+"שדרג את תוכנית AllAccessible שלך כדי להתאים אישית את צבע הווידג'ט, המיקום, "
+"הסמל והצורה — וגם להפעיל תיקון באמצעות AI סוכני."
+
+#: inc/SettingsPage.php:333 inc/SettingsPage.php:345 inc/UsageDashboard.php:69
+msgid "Pageviews"
+msgstr "צפיות בדף"
+
+#: inc/SettingsPage.php:371 inc/SettingsPage.php:627
+msgid "Site overview"
+msgstr "סקירת האתר"
+
+#: inc/SettingsPage.php:380
+msgid "Widget connected"
+msgstr "הווידג׳ט מחובר"
+
+#: inc/SettingsPage.php:384
+msgid ""
+"Accessibility widget and human-in-the-loop agentic AI remediation for your "
+"site."
+msgstr "ווידג'ט נגישות ותיקון באמצעות AI סוכני עם אדם בתהליך עבור האתר שלך."
+
+#: inc/SettingsPage.php:420
+msgid ""
+"Your current plan uses the legacy AllAccessible widget, which predates "
+"agentic AI remediation. Upgrade to the current plan tier to unlock auto-"
+"suggested fixes, larger pageview caps, and the full AllAccessible AI feature "
+"set."
+msgstr ""
+"התוכנית הנוכחית שלך משתמשת בווידג׳ט AllAccessible מדור קודם, שקדם לתיקון "
+"באמצעות בינה מלאכותית סוכנתית. שדרג לרמת התוכנית הנוכחית כדי לפתוח תיקונים "
+"מוצעים אוטומטית, מכסות צפיות דף גדולות יותר, ואת סט התכונות המלא של "
+"AllAccessible AI."
+
+#: inc/SettingsPage.php:449
+msgid "AI Resolved"
+msgstr "נפתר באמצעות AI"
+
+#: inc/SettingsPage.php:451
+msgid "Completed"
+msgstr "הושלם"
+
+#: inc/SettingsPage.php:452
+msgid "Reopened"
+msgstr "נפתח מחדש"
+
+#: inc/SettingsPage.php:453
+msgid "Ignored"
+msgstr "התעלמות"
+
+#: inc/SettingsPage.php:462
+msgid "Activity and quick actions"
+msgstr "פעילות ופעולות מהירות"
+
+#: inc/SettingsPage.php:472
+msgid "Agentic Fixes not available on your plan"
+msgstr "תיקונים סוכניים אינם זמינים בתוכנית שלך"
+
+#: inc/SettingsPage.php:477
+msgid ""
+"The legacy AllAccessible widget keeps running, but the agentic AI "
+"remediation pipeline requires a current plan tier. Upgrade to bring auto-"
+"suggested fixes, larger pageview caps, and continuous accessibility scoring "
+"to this site."
+msgstr ""
+"הווידג׳ט הישן של AllAccessible ממשיך לפעול, אך צינור התיקון מבוסס ה-AI "
+"האגנטי דורש רמת תוכנית עדכנית. שדרגו כדי להביא לאתר הזה תיקונים מוצעים "
+"אוטומטית, מגבלות צפיות בדף גבוהות יותר, ודירוג נגישות רציף."
+
+#: inc/SettingsPage.php:492
+msgid "Issues from your latest scan"
+msgstr "בעיות מהסריקה האחרונה שלך"
+
+#: inc/SettingsPage.php:494
+msgid "Grouped by rule, newest scan first."
+msgstr "מקובץ לפי כלל, הסריקה החדשה ביותר תחילה."
+
+#: inc/SettingsPage.php:503
+msgid "View all"
+msgstr "הצג הכול"
+
+#: inc/SettingsPage.php:512
+msgid "Severity"
+msgstr "חומרה"
+
+#: inc/SettingsPage.php:513
+msgid "Rule"
+msgstr "כלל"
+
+#: inc/SettingsPage.php:514
+msgid "Issues"
+msgstr "בעיות"
+
+#: inc/SettingsPage.php:515
+msgid "WCAG"
+msgstr "WCAG"
+
+#: inc/SettingsPage.php:516
+msgid "Status"
+msgstr "סטטוס"
+
+#: inc/SettingsPage.php:559
+#, php-format
+msgid "%s fix manifest ready for your review."
+msgid_plural "%s fix manifests ready for your review."
+msgstr[0] "מניפסט תיקון %s מוכן לסקירה שלך."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/SettingsPage.php:563
+msgid "Review manifests"
+msgstr "סקירת מניפסטים"
+
+#: inc/SettingsPage.php:580
+msgid ""
+"AllAccessible agents are getting ready to scan your site. Detected "
+"accessibility issues will appear here grouped by rule once your first crawl "
+"completes."
+msgstr ""
+"סוכני AllAccessible מתכוננים לסרוק את האתר שלך. בעיות נגישות שזוהו יופיעו "
+"כאן, מקובצות לפי כלל, לאחר שהסריקה הראשונה תושלם."
+
+#: inc/SettingsPage.php:583
+msgid "Open coverage"
+msgstr "פתיחת כיסוי"
+
+#: inc/SettingsPage.php:593
+msgid "Quick actions"
+msgstr "פעולות מהירות"
+
+#: inc/SettingsPage.php:599
+msgid "In WordPress"
+msgstr "ב-WordPress"
+
+#: inc/SettingsPage.php:612
+msgid "Widget customizer"
+msgstr "התאמה אישית של וידג׳טים"
+
+#: inc/SettingsPage.php:616
+msgid "Account & settings"
+msgstr "חשבון והגדרות"
+
+#: inc/SettingsPage.php:624
+msgid "On AllAccessible"
+msgstr "ב-AllAccessible"
+
+#: inc/SettingsPage.php:631
+msgid "Audit history"
+msgstr "היסטוריית ביקורות"
+
+#: inc/SettingsPage.php:635
+msgid "Tasks"
+msgstr "משימות"
+
+#: inc/SettingsPage.php:640
+msgid "Reports"
+msgstr "דוחות"
+
+#: inc/SettingsPage.php:661
+msgid "Usage limit exceeded"
+msgstr "חרגת ממגבלת השימוש"
+
+#: inc/SettingsPage.php:669
+#, php-format
+msgid ""
+"You have exceeded your %s limit. Your widget has been temporarily downgraded "
+"to free features. Upgrade your plan to restore premium functionality."
+msgid_plural ""
+"You have exceeded the following limits: %s. Your widget has been temporarily "
+"downgraded to free features. Upgrade your plan to restore premium "
+"functionality."
+msgstr[0] ""
+"חרגת ממגבלת ה-%s שלך. הווידג'ט שלך הונמך זמנית לתכונות החינמיות. שדרג את "
+"התוכנית שלך כדי לשחזר את הפונקציונליות הפרימיום."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: inc/SettingsPage.php:697
+msgid "Complete setup to get started"
+msgstr "השלימו את ההגדרה כדי להתחיל"
+
+#: inc/SettingsPage.php:698
+msgid ""
+"Your accessibility widget is ready to go. Complete the quick setup wizard to "
+"activate your widget."
+msgstr ""
+"וידג׳ט הנגישות שלך מוכן לשימוש. השלם את אשף ההגדרה המהיר כדי להפעיל את "
+"הווידג׳ט שלך."
+
+#: inc/SettingsPage.php:700
+msgid "Start setup wizard"
+msgstr "התחל אשף הגדרה"
+
+#: inc/SettingsPage.php:830
+msgid ""
+"Manage your AllAccessible account, plan, widget settings, and integrations."
+msgstr "נהל את חשבון AllAccessible שלך, התוכנית, הגדרות הווידג׳ט והשילובים."
+
+#: inc/SettingsPage.php:845
+msgid "No AllAccessible account linked"
+msgstr "אין חשבון AllAccessible מקושר"
+
+#: inc/SettingsPage.php:846
+msgid "Complete the setup wizard to activate your accessibility widget."
+msgstr "השלם את אשף ההגדרה כדי להפעיל את וידג׳ט הנגישות שלך."
+
+#: inc/SettingsPage.php:864
+msgid "Usage limit reached"
+msgstr "הגעת למגבלת השימוש"
+
+#: inc/SettingsPage.php:866
+msgid ""
+"Your widget is running in free mode until usage resets or your plan is "
+"upgraded."
+msgstr "הווידג׳ט שלך פועל במצב חינמי עד שהשימוש יתאפס או שהתוכנית שלך תשודרג."
+
+#: inc/SettingsPage.php:871
+msgid "Manage plan"
+msgstr "נהל תוכנית"
+
+#: inc/SettingsPage.php:876
+msgid "Account settings sections"
+msgstr "מקטעי הגדרות חשבון"
+
+#: inc/SettingsPage.php:879 inc/SettingsPage.php:909
+msgid "Connection"
+msgstr "חיבור"
+
+#: inc/SettingsPage.php:880
+msgid "Plan & Usage"
+msgstr "תוכנית ושימוש"
+
+#: inc/SettingsPage.php:882
+msgid "Advanced"
+msgstr "מתקדם"
+
+#: inc/SettingsPage.php:911
+msgid "How this site links to your AllAccessible account."
+msgstr "כיצד אתר זה מקושר לחשבון AllAccessible שלך."
+
+#: inc/SettingsPage.php:915
+msgid "Connected"
+msgstr "מחובר"
+
+#: inc/SettingsPage.php:917
+msgid "Action required"
+msgstr "נדרשת פעולה"
+
+#: inc/SettingsPage.php:930
+msgid "Copy account ID"
+msgstr "העתק מזהה חשבון"
+
+#: inc/SettingsPage.php:931 inc/SettingsPage.php:950
+msgid "Copy"
+msgstr "העתק"
+
+#: inc/SettingsPage.php:935
+msgid "Identifies your AllAccessible account across every site you own."
+msgstr "מזהה את חשבון AllAccessible שלך בכל אתר שבבעלותך."
+
+#: inc/SettingsPage.php:941
+msgid "Site ID"
+msgstr "מזהה אתר"
+
+#: inc/SettingsPage.php:949
+msgid "Copy site ID"
+msgstr "העתק מזהה אתר"
+
+#: inc/SettingsPage.php:954
+msgid "Identifies this specific WordPress site within your account."
+msgstr "מזהה את אתר ה-WordPress הספציפי הזה בתוך החשבון שלך."
+
+#: inc/SettingsPage.php:960
+msgid "Site URL"
+msgstr "כתובת URL של האתר"
+
+#: inc/SettingsPage.php:989
+msgid "Manage subscription"
+msgstr "ניהול המנוי"
+
+#: inc/SettingsPage.php:997
+msgid "Current plan"
+msgstr "התוכנית הנוכחית"
+
+#: inc/SettingsPage.php:1019
+msgid "Plan changes update immediately across every site on this account."
+msgstr "עדכוני שינויי התוכנית חלים מיד בכל אתר בחשבון הזה."
+
+#: inc/SettingsPage.php:1033
+msgid "Pageview usage"
+msgstr "שימוש בצפיות בעמוד"
+
+#: inc/SettingsPage.php:1035
+msgid "Resets at the start of each billing cycle."
+msgstr "מתאפס בתחילת כל מחזור חיוב."
+
+#: inc/SettingsPage.php:1055
+msgid "Pageviews used this cycle"
+msgstr "צפיות בעמוד שנוצלו במחזור זה"
+
+#. translators: 1: used pageviews, 2: limit
+#: inc/SettingsPage.php:1063
+#, php-format
+msgid "%1$s of %2$s pageviews this cycle."
+msgstr "%1$s מתוך %2$s צפיות בעמוד במחזור זה."
+
+#: inc/SettingsPage.php:1073
+msgid ""
+"You are close to your monthly limit. Add a pageview pack to keep premium "
+"features active."
+msgstr ""
+"אתה קרוב למגבלה החודשית שלך. הוסף חבילת צפיות דף כדי לשמור על תכונות "
+"הפרימיום פעילות."
+
+#: inc/SettingsPage.php:1075
+msgid "Heads up — you are above 75% of your monthly pageviews."
+msgstr "לתשומת לבך — אתה מעל 75% o מצפיות הדף החודשיות שלך."
+
+#: inc/SettingsPage.php:1082
+msgid ""
+"Pageview tracking is active. Detailed numbers appear after the first billing "
+"cycle."
+msgstr "מעקב אחר צפיות דף פעיל. מספרים מפורטים יופיעו לאחר מחזור החיוב הראשון."
+
+#: inc/SettingsPage.php:1099
+msgid "Widget appearance"
+msgstr "מראה הווידג'ט"
+
+#: inc/SettingsPage.php:1101
+msgid "Color, position, icon, and label live in the Widget Customizer."
+msgstr "צבע, מיקום, סמל ותווית נמצאים בכלי ההתאמה האישית של הווידג׳ט."
+
+#: inc/SettingsPage.php:1106
+msgid "Open customizer"
+msgstr "פתח את כלי ההתאמה האישית"
+
+#: inc/SettingsPage.php:1119
+msgid ""
+"Preview your live widget on the front-end to confirm placement and styling."
+msgstr "הצג תצוגה מקדימה של הווידג׳ט החי שלך בצד הלקוח כדי לאשר מיקום ועיצוב."
+
+#: inc/SettingsPage.php:1125
+msgid "Preview on site"
+msgstr "תצוגה מקדימה באתר"
+
+#: inc/SettingsPage.php:1130
+msgid "Advanced settings"
+msgstr "הגדרות מתקדמות"
+
+#: inc/SettingsPage.php:1141
+msgid "Quick toggles"
+msgstr "מתגים מהירים"
+
+#: inc/SettingsPage.php:1143
+msgid "Local overrides applied before the widget renders."
+msgstr "עקיפות מקומיות מוחלות לפני שהווידג׳ט מוצג."
+
+#: inc/SettingsPage.php:1153
+msgid "Headless mode"
+msgstr "מצב Headless"
+
+#: inc/SettingsPage.php:1159
+msgid ""
+"Skip the floating button and trigger the panel from your own UI. Recommended "
+"for custom theme integrations."
+msgstr ""
+"דלג על הכפתור הצף והפעל את הלוח מתוך ממשק המשתמש שלך. מומלץ לשילובים עם "
+"ערכות עיצוב מותאמות אישית."
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1175
+#, php-format
+msgid ""
+"Available on Enterprise. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"זמין ב-Enterprise. <a href=\"%s\" target=\"_blank\" rel=\"noopener\">ראה "
+"תוכניות</a>."
+
+#: inc/SettingsPage.php:1186 inc/SettingsPage.php:1998
+msgid "Hide widget branding"
+msgstr "הסתר מיתוג של הווידג׳ט"
+
+#: inc/SettingsPage.php:1188
+msgid "Remove the \"Powered by\" footer link inside the widget panel."
+msgstr "הסר את קישור הכותרת התחתונה \"Powered by\" בתוך לוח הווידג'ט."
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1204
+#, php-format
+msgid ""
+"Included with paid plans. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"כלול בתוכניות בתשלום. <a href=\"%s\" target=\"_blank\" rel=\"noopener\">ראה "
+"תוכניות</a>."
+
+#: inc/SettingsPage.php:1217 inc/SettingsPage.php:1220
+msgid "Save changes"
+msgstr "שמור שינויים"
+
+#: inc/SettingsPage.php:1219
+msgid "Saved"
+msgstr "נשמר"
+
+#: inc/SettingsPage.php:1237
+msgid "Diagnostics"
+msgstr "אבחון"
+
+#: inc/SettingsPage.php:1239
+msgid "Local identifiers and tools for troubleshooting."
+msgstr "מזהים וכלים מקומיים לפתרון בעיות."
+
+#: inc/SettingsPage.php:1246
+msgid "Plugin version"
+msgstr "גרסת התוסף"
+
+#: inc/SettingsPage.php:1255
+msgid "Debug logging"
+msgstr "רישום יומן לניפוי באגים"
+
+#: inc/SettingsPage.php:1257
+msgid "Write extra diagnostics to the WordPress debug log."
+msgstr "כתוב אבחונים נוספים ליומן ניפוי הבאגים של WordPress."
+
+#: inc/SettingsPage.php:1280
+msgid "Disable error reporting to AllAccessible"
+msgstr "השבת דיווח שגיאות ל-AllAccessible"
+
+#: inc/SettingsPage.php:1282
+msgid ""
+"AllAccessible records plugin errors (with your account ID + plugin version) "
+"so the team can spot issues affecting your install. Toggle on to stop "
+"sending. No personal data is collected."
+msgstr ""
+"AllAccessible מתעד שגיאות תוסף (עם מזהה החשבון שלך + גרסת התוסף) כדי שהצוות "
+"יוכל לזהות בעיות שמשפיעות על ההתקנה שלך. כבה כדי להפסיק לשלוח. לא נאספים "
+"נתונים אישיים."
+
+#: inc/SettingsPage.php:1298
+msgid "Developer tools"
+msgstr "כלי מפתחים"
+
+#: inc/SettingsPage.php:1299
+msgid "Diagnose lookup · Sync · Flush caches"
+msgstr "אבחון חיפוש · סנכרון · ניקוי מטמונים"
+
+#: inc/SettingsPage.php:1304
+msgid "Diagnose page lookup"
+msgstr "אבחון חיפוש דף"
+
+#: inc/SettingsPage.php:1306
+msgid ""
+"Pick a published page or post to inspect the exact URL canonicalization and "
+"API response. Useful when a row shows \"Not scanned\" but you expect a score."
+msgstr ""
+"בחרו עמוד או פוסט שפורסמו כדי לבדוק את הקנוניקליזציה המדויקת של כתובת ה-URL "
+"ואת תגובת ה-API. שימושי כאשר שורה מציגה \"לא נסרק\" אבל אתם מצפים לציון."
+
+#: inc/SettingsPage.php:1312
+msgid "Post / page ID"
+msgstr "מזהה פוסט / דף"
+
+#: inc/SettingsPage.php:1320 inc/SettingsPage.php:1322
+msgid "Run diagnosis"
+msgstr "הרץ אבחון"
+
+#: inc/SettingsPage.php:1321
+msgid "Looking up…"
+msgstr "מחפש…"
+
+#: inc/SettingsPage.php:1331
+msgid "Sync post audit links"
+msgstr "סנכרון קישורי ביקורת פוסטים"
+
+#: inc/SettingsPage.php:1333
+msgid ""
+"Manually run the post → audit linker. The background job runs about once a "
+"week (paid plans only, and only when your site receives traffic). Trigger "
+"here if the All Posts column or Editor box shows missing scores and you "
+"don't want to wait."
+msgstr ""
+"הפעילו ידנית את מקשר הפוסט → הביקורת. משימת הרקע רצה בערך פעם בשבוע "
+"(בתוכניות בתשלום בלבד, ורק כשהאתר שלכם מקבל תנועה). הפעילו כאן אם עמודת כל "
+"הפוסטים או תיבת העורך מציגות ציונים חסרים ואתם לא רוצים לחכות."
+
+#: inc/SettingsPage.php:1341 inc/SettingsPage.php:1343
+msgid "Sync now"
+msgstr "סנכרן עכשיו"
+
+#: inc/SettingsPage.php:1342
+msgid "Syncing…"
+msgstr "מסתנכרן…"
+
+#: inc/SettingsPage.php:1350
+msgid "Flush plugin caches"
+msgstr "ניקוי מטמוני התוסף"
+
+#: inc/SettingsPage.php:1352
+msgid ""
+"Wipes every plugin-side API transient (page scores, manifest, validate, "
+"images). Use when the API has been updated and the 2–10 min cache is still "
+"showing old data."
+msgstr ""
+"מוחק כל transient של ה-API בצד התוסף (ציוני דפים, מניפסט, אימות, תמונות). "
+"השתמשו בזה כאשר ה-API עודכן והמטמון של 2–10 דקות עדיין מציג נתונים ישנים."
+
+#: inc/SettingsPage.php:1360 inc/SettingsPage.php:1362
+msgid "Flush caches"
+msgstr "ניקוי מטמונים"
+
+#: inc/SettingsPage.php:1361
+msgid "Flushing…"
+msgstr "מנקה…"
+
+#: inc/SettingsPage.php:1372 inc/SettingsPage.php:1380
+#: inc/SettingsPage.php:1383
+msgid "Clear widget caches"
+msgstr "ניקוי מטמוני הווידג׳טים"
+
+#: inc/SettingsPage.php:1374
+msgid ""
+"Flush local browser storage and server response cache so the widget reloads "
+"fresh on the next page view."
+msgstr ""
+"נקו את אחסון הדפדפן המקומי ואת מטמון תגובת השרת כדי שהווידג'ט ייטען מחדש "
+"באופן נקי בצפייה הבאה בעמוד."
+
+#: inc/SettingsPage.php:1381
+msgid "Clearing…"
+msgstr "מנקה…"
+
+#: inc/SettingsPage.php:1382
+msgid "Caches cleared"
+msgstr "המטמונים נוקו"
+
+#: inc/SettingsPage.php:1393 inc/SettingsPage.php:1409
+msgid "Reset plugin data"
+msgstr "איפוס נתוני התוסף"
+
+#: inc/SettingsPage.php:1395
+msgid "Disconnect this site and clear local options. Cannot be undone."
+msgstr "נתקו את האתר הזה ונקו אפשרויות מקומיות. לא ניתן לבטל."
+
+#: inc/SettingsPage.php:1401
+msgid ""
+"Use this if you are moving the plugin to a different account or starting "
+"over from the setup wizard. Uninstalling the plugin also removes these "
+"options automatically."
+msgstr ""
+"השתמשו בזה אם אתם מעבירים את התוסף לחשבון אחר או מתחילים מחדש מאשף ההגדרה. "
+"הסרת התקנת התוסף מסירה גם את האפשרויות האלה באופן אוטומטי."
+
+#: inc/SettingsPage.php:1421
+#, fuzzy
+#| msgid "Need Help"
+msgid "Need help?"
+msgstr "צריכה עזרה"
+
+#: inc/SettingsPage.php:1423
+msgid "Our team is here for you — get answers fast."
+msgstr "הצוות שלנו כאן בשבילך — קבל תשובות במהירות."
+
+#: inc/SettingsPage.php:1432
+msgid "Knowledge base"
+msgstr "מאגר ידע"
+
+#: inc/SettingsPage.php:1444
+msgid "Legal & Trust:"
+msgstr "משפטי ואמון:"
+
+#: inc/SettingsPage.php:1447
+msgid "GDPR"
+msgstr "GDPR"
+
+#: inc/SettingsPage.php:1448
+msgid "Cookies"
+msgstr "קובצי Cookie"
+
+#: inc/SettingsPage.php:1449
+msgid "Trust Center"
+msgstr "מרכז האמון"
+
+#: inc/SettingsPage.php:1450
+msgid "Partner Agreement"
+msgstr "הסכם שותפים"
+
+#: inc/SettingsPage.php:1721 inc/SettingsPage.php:1724
+msgid "Copied"
+msgstr "הועתק"
+
+#: inc/SettingsPage.php:1725
+msgid "copied to clipboard"
+msgstr "הועתק ללוח"
+
+#: inc/SettingsPage.php:1730 inc/SettingsPage.php:1733
+msgid "Copy:"
+msgstr "העתקה:"
+
+#: inc/SettingsPage.php:1784
+msgid "Could not save. Try again."
+msgstr "לא ניתן לשמור. נסו שוב."
+
+#: inc/SettingsPage.php:1791 inc/SettingsPage.php:1877
+msgid "Network error. Try again."
+msgstr "שגיאת רשת. נסו שוב."
+
+#: inc/SettingsPage.php:1847
+msgid "Reset all plugin data? This disconnects this site and cannot be undone."
+msgstr "לאפס את כל נתוני התוסף? פעולה זו תנתק את האתר הזה ולא ניתן לבטל אותה."
+
+#: inc/SettingsPage.php:1852
+msgid "Resetting…"
+msgstr "מאפס…"
+
+#: inc/SettingsPage.php:1853
+msgid "Resetting plugin data"
+msgstr "מאפס נתוני תוסף"
+
+#: inc/SettingsPage.php:1863
+msgid "Plugin data cleared. Reloading…"
+msgstr "נתוני התוסף נוקו. טוען מחדש…"
+
+#: inc/SettingsPage.php:1864
+msgid "Plugin data reset. Reloading."
+msgstr "נתוני התוסף אופסו. טוען מחדש."
+
+#: inc/SettingsPage.php:1871
+msgid "Could not reset plugin data. Try again."
+msgstr "לא ניתן לאפס את נתוני התוסף. נסו שוב."
+
+#: inc/SettingsPage.php:1908
+msgid "Settings saved"
+msgstr "ההגדרות נשמרו"
+
+#: inc/SettingsPage.php:1922
+msgid "Premium Trial — 7 days free"
+msgstr "ניסיון פרימיום — 7 ימים בחינם"
+
+#: inc/SettingsPage.php:1940
+msgid "Legacy Premium"
+msgstr "פרימיום מדור קודם"
+
+#. translators: %s: tier name (e.g., "Enterprise")
+#: inc/SettingsPage.php:1954
+#, php-format
+msgid "%s account"
+msgstr "חשבון %s"
+
+#. translators: %s: monthly pageview limit (e.g. "10,000")
+#: inc/SettingsPage.php:1974
+#, php-format
+msgid "Up to %s pageviews per month"
+msgstr "עד %s צפיות דף בחודש"
+
+#: inc/SettingsPage.php:1977
+msgid "Pageview cap based on your plan"
+msgstr "מגבלת צפיות דף בהתאם לתוכנית שלך"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1980
+#, php-format
+msgid ""
+"Unlimited %s interactions — alt text and agentic fix proposals, no monthly "
+"cap"
+msgstr ""
+"אינטראקציות %s ללא הגבלה — טקסט חלופי והצעות תיקון סוכניות, ללא מגבלה חודשית"
+
+#: inc/SettingsPage.php:1987
+msgid "Unlimited pageviews and sites"
+msgstr "צפיות דף ואתרים ללא הגבלה"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1988
+#, php-format
+msgid "Human-in-the-loop agentic remediation powered by %s"
+msgstr "תיקון סוכני עם אדם בתהליך, מופעל על ידי %s"
+
+#: inc/SettingsPage.php:1989
+msgid "Priority support and dedicated success manager"
+msgstr "תמיכה בעדיפות גבוהה ומנהל הצלחה ייעודי"
+
+#: inc/SettingsPage.php:1990
+msgid "Custom branding and white-label widget"
+msgstr "מיתוג מותאם אישית ווידג'ט White-label"
+
+#: inc/SettingsPage.php:1991
+msgid "Single sign-on (SSO) and audit log export"
+msgstr "כניסה יחידה (SSO) וייצוא יומן ביקורת"
+
+#: inc/SettingsPage.php:1997
+msgid "Continuous site scans and accessibility scoring"
+msgstr "סריקות אתר רציפות ודירוג נגישות"
+
+#: inc/SettingsPage.php:1999
+msgid "Email support"
+msgstr "תמיכה באימייל"
+
+#: inc/SettingsPage.php:2003
+msgid "Full premium widget for 7 days"
+msgstr "ווידג׳ט פרימיום מלא למשך 7 ימים"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2004
+#, php-format
+msgid "Try %s agents on your real site"
+msgstr "נסו סוכני %s באתר האמיתי שלכם"
+
+#: inc/SettingsPage.php:2005
+msgid "Cancel any time — no card hold"
+msgstr "אפשר לבטל בכל עת — ללא שמירת פרטי כרטיס"
+
+#: inc/SettingsPage.php:2009
+msgid "Premium widget on the legacy plan"
+msgstr "ווידג׳ט פרימיום בתוכנית הישנה"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2010
+#, php-format
+msgid "Includes %s agent features"
+msgstr "כולל תכונות סוכן %s"
+
+#: inc/SettingsPage.php:2011
+msgid "Continuous accessibility scoring"
+msgstr "דירוג נגישות רציף"
+
+#: inc/SettingsPage.php:2016
+msgid "Accessibility widget on every page"
+msgstr "ווידג'ט נגישות בכל עמוד"
+
+#: inc/SettingsPage.php:2017
+msgid "Keyboard navigation and screen reader helpers"
+msgstr "ניווט באמצעות מקלדת וכלי עזר לקוראי מסך"
+
+# GPT: “Agentic remediation” can be translated in several ways (e.g., agent-based vs. autonomous). Given the AI-badge context, I chose “מבוסס סוכנים” to reflect AI agents.
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2018
+#, fuzzy, php-format
+msgid "Upgrade for agentic remediation with %s"
+msgstr "שדרוג לתיקון מבוסס סוכנים עם %s"
+
+#: inc/TierGate.php:26
+msgid "Approve, edit, and revert agentic fixes"
+msgstr "אישור, עריכה ושחזור תיקונים סוכניים"
+
+#: inc/TierGate.php:27
+msgid "Image Descriptions"
+msgstr "תיאורי תמונות"
+
+#: inc/TierGate.php:28
+msgid "Reports & Statement deep-links"
+msgstr "קישורים עמוקים לדוחות ולהצהרה"
+
+#: inc/TierGate.php:29
+msgid "Per-page accessibility breakdown in editor"
+msgstr "פירוט נגישות לפי עמוד בעורך"
+
+#: inc/TierGate.php:30
+msgid "Notification center"
+msgstr "מרכז התראות"
+
+#: inc/TierGate.php:31
+msgid "CSV export of fixes"
+msgstr "ייצוא תיקונים ל-CSV"
+
+#: inc/TierGate.php:32
+msgid "PDF report export"
+msgstr "ייצוא דוח PDF"
+
+#: inc/TierGate.php:33
+msgid "White-label branding"
+msgstr "מיתוג White-label"
+
+#: inc/TierGate.php:34
+msgid "Weekly automatic scans"
+msgstr "סריקות אוטומטיות שבועיות"
+
+#: inc/TierGate.php:35
+msgid "Page change detection"
+msgstr "זיהוי שינויים בעמוד"
+
+#: inc/TierGate.php:36
+msgid "Accommodation request widget"
+msgstr "ווידג׳ט לבקשת התאמות"
+
+#. translators: %s: feature label
+#: inc/TierGate.php:84
+#, php-format
+msgid "%s is available on paid plans"
+msgstr "%s זמין בתוכניות בתשלום"
+
+#: inc/TierGate.php:87
+msgid ""
+"Upgrade to unlock this feature plus everything else included in the "
+"AllAccessible AI suite."
+msgstr ""
+"שדרגו כדי לפתוח את התכונה הזו, בנוסף לכל מה שכלול בחבילת AllAccessible AI."
+
+#: inc/TierGate.php:98
+msgid "Upgrade required"
+msgstr "נדרש שדרוג"
+
+#: inc/UsageDashboard.php:31
+msgid "Usage overview"
+msgstr "סקירת שימוש"
+
+#: inc/UsageDashboard.php:34
+msgid "Usage this month"
+msgstr "שימוש החודש"
+
+#: inc/UsageDashboard.php:36
+msgid "Tracks pageviews and AllAccessible AI activity against your plan."
+msgstr "עוקב אחר צפיות בדף ופעילות AllAccessible AI ביחס לתוכנית שלך."
+
+#: inc/UsageDashboard.php:55
+msgid "No usage to show yet"
+msgstr "אין עדיין נתוני שימוש להצגה"
+
+#: inc/UsageDashboard.php:57
+msgid "Usage appears here once your widget starts serving pageviews."
+msgstr "נתוני השימוש יופיעו כאן ברגע שהווידג'ט שלכם יתחיל לשרת צפיות בעמוד."
+
+#: inc/UsageDashboard.php:61
+msgid "Preview your widget"
+msgstr "תצוגה מקדימה של הווידג'ט שלכם"
+
+#: inc/UsageDashboard.php:70
+msgid "Active visits served by your widget this month."
+msgstr "ביקורים פעילים שהווידג'ט שלכם שירת החודש."
+
+#: inc/UsageDashboard.php:74
+msgid "AI image alt text"
+msgstr "טקסט חלופי לתמונות באמצעות AI"
+
+#: inc/UsageDashboard.php:75
+msgid "Alt text generated by AllAccessible AI for images on your site."
+msgstr "טקסט חלופי שנוצר על ידי AllAccessible AI עבור תמונות באתר שלך."
+
+#: inc/UsageDashboard.php:79
+msgid "Accessibility audits"
+msgstr "ביקורות נגישות"
+
+#: inc/UsageDashboard.php:80
+msgid "Automated scans run by AllAccessible agents."
+msgstr "סריקות אוטומטיות שמופעלות על ידי סוכני AllAccessible."
+
+#: inc/UsageDashboard.php:84
+msgid "Compliance reports"
+msgstr "דוחות תאימות"
+
+#: inc/UsageDashboard.php:85
+msgid "VPAT and accessibility statement PDFs generated."
+msgstr "נוצרו קובצי PDF של VPAT והצהרת נגישות."
+
+#: inc/UsageDashboard.php:133
+#, php-format
+msgid "%1$s usage: %2$d percent"
+msgstr "שימוש %1$s: %2$d אחוז"
+
+#: inc/UsageDashboard.php:150
+msgid "Upgrade to unlock"
+msgstr "שדרגו כדי לפתוח"
+
+#: inc/UsageDashboard.php:175
+#, php-format
+msgid "%s percent used"
+msgstr "%s אחוז בשימוש"
+
+#: inc/UsageDashboard.php:183
+msgid "Limit reached — widget temporarily on free features."
+msgstr "הגעתם למגבלה — הווידג׳ט עבר זמנית לתכונות החינמיות."
+
+#. translators: %s: count of remaining units this month
+#: inc/UsageDashboard.php:188
+#, php-format
+msgid "%s remaining this month"
+msgstr "נותרו %s החודש"
+
+#: inc/UsageDashboard.php:195
+msgid "Manage"
+msgstr "ניהול"
+
+#: inc/UsageDashboard.php:203
+msgid "Upgrade your plan"
+msgstr "שדרגו את התוכנית שלכם"
+
+#: inc/UsageDashboard.php:209
+msgid "Manage in dashboard"
+msgstr "ניהול בלוח הבקרה"
+
+#: inc/UsageDashboard.php:220
+msgid "No metered features on your plan yet"
+msgstr "עדיין אין תכונות מדודות בתוכנית שלך"
+
+#: inc/UsageDashboard.php:221
+msgid "Usage will appear here once your widget starts serving pages."
+msgstr "השימוש יופיע כאן ברגע שהווידג׳ט שלך יתחיל לשרת דפים."
+
+#: inc/UsageDashboard.php:230
+msgid "Need more pageviews or AllAccessible AI capacity?"
+msgstr "צריך יותר צפיות בדף או יותר קיבולת של AllAccessible AI?"
+
+#: inc/WidgetCustomizer.php:104
+msgid "Quick Widget Settings"
+msgstr "הגדרות מהירות לווידג׳ט"
+
+#: inc/WidgetCustomizer.php:105
+msgid "Customize your widget appearance"
+msgstr "התאם אישית את מראה הווידג׳ט שלך"
+
+#: inc/WidgetCustomizer.php:109
+msgid "Advanced Settings"
+msgstr "הגדרות מתקדמות"
+
+#: inc/WidgetCustomizer.php:122
+msgid "Pro Tip:"
+msgstr "טיפ מקצועי:"
+
+#: inc/WidgetCustomizer.php:123
+msgid ""
+"For more options including accessibility profiles, custom CSS, and advanced "
+"features, visit"
+msgstr ""
+"לאפשרויות נוספות, כולל פרופילי נגישות, CSS מותאם אישית ותכונות מתקדמות, בקר "
+"ב-"
+
+#: inc/WidgetCustomizer.php:124
+msgid "Advanced Widget Settings"
+msgstr "הגדרות ווידג׳ט מתקדמות"
+
+#: inc/WidgetCustomizer.php:142
+msgid "Widget Color"
+msgstr "צבע הווידג׳ט"
+
+#: inc/WidgetCustomizer.php:147
+msgid "Choose the color for your accessibility widget button."
+msgstr "בחר את הצבע עבור כפתור ווידג׳ט הנגישות שלך."
+
+#: inc/WidgetCustomizer.php:150
+msgid "Widget Position"
+msgstr "מיקום הווידג׳ט"
+
+#: inc/WidgetCustomizer.php:152
 msgid "Bottom Right"
 msgstr "ימין תחתון"
 
-#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
-msgid "Middle Right"
-msgstr "אמצעי ימין"
-
-#: inc/AllAccessibleSettings.php:207
-msgid "Bottom Center"
-msgstr "מרכז תחתון"
-
-#: inc/AllAccessibleSettings.php:208
+#: inc/WidgetCustomizer.php:153
 msgid "Bottom Left"
 msgstr "שמאל תחתון"
 
-#: inc/AllAccessibleSettings.php:209
+#: inc/WidgetCustomizer.php:154
+msgid "Bottom Center"
+msgstr "מרכז תחתון"
+
+#: inc/WidgetCustomizer.php:155
+msgid "Middle Right"
+msgstr "אמצעי ימין"
+
+#: inc/WidgetCustomizer.php:156
 msgid "Middle Left"
 msgstr "אמצעי שמאל"
 
-#: inc/AllAccessibleSettings.php:210
+#: inc/WidgetCustomizer.php:157
+msgid "Top Right"
+msgstr "ימין למעלה"
+
+#: inc/WidgetCustomizer.php:158
 msgid "Top Left"
 msgstr "למעלה משמאל"
 
-#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
-msgid "Choose Widget Shape"
-msgstr "בחר צורת וידג'ט"
+#: inc/WidgetCustomizer.php:160
+msgid "Where the widget button appears on your site."
+msgstr "היכן כפתור הווידג׳ט מופיע באתר שלך."
 
-#: inc/AllAccessibleSettings.php:220
+#: inc/WidgetCustomizer.php:167
+msgid "Widget Size"
+msgstr "גודל הווידג׳ט"
+
+#: inc/WidgetCustomizer.php:169
+msgid "Small"
+msgstr "קטן"
+
+#: inc/WidgetCustomizer.php:170
+msgid "Medium (Default)"
+msgstr "בינוני (ברירת מחדל)"
+
+#: inc/WidgetCustomizer.php:171
+msgid "Large"
+msgstr "גדול"
+
+#: inc/WidgetCustomizer.php:173
+msgid "Size of the widget button in pixels."
+msgstr "גודל כפתור הווידג'ט בפיקסלים."
+
+#: inc/WidgetCustomizer.php:176
+msgid "Widget Icon"
+msgstr "סמל הווידג׳ט"
+
+#: inc/WidgetCustomizer.php:179
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#: inc/WidgetCustomizer.php:180
+msgid "Accessibility Person"
+msgstr "דמות נגישות"
+
+#: inc/WidgetCustomizer.php:181
+msgid "Accessibility Settings"
+msgstr "הגדרות נגישות"
+
+#: inc/WidgetCustomizer.php:182
+msgid "Adjust"
+msgstr "התאם"
+
+#: inc/WidgetCustomizer.php:183
+msgid "Wheelchair 1"
+msgstr "כיסא גלגלים 1"
+
+#: inc/WidgetCustomizer.php:184
+msgid "Heart"
+msgstr "לב"
+
+#: inc/WidgetCustomizer.php:185
+msgid "Braille"
+msgstr "ברייל"
+
+#: inc/WidgetCustomizer.php:186
+msgid "Blind/Cane"
+msgstr "עיוור/מקל"
+
+#: inc/WidgetCustomizer.php:187
+msgid "Eye"
+msgstr "עין"
+
+#: inc/WidgetCustomizer.php:188
+msgid "Globe"
+msgstr "גלובוס"
+
+#: inc/WidgetCustomizer.php:189
+msgid "Universal Access"
+msgstr "נגישות אוניברסלית"
+
+#: inc/WidgetCustomizer.php:191
+msgid "Walking Cane"
+msgstr "מקל הליכה"
+
+#: inc/WidgetCustomizer.php:195
+msgid "Icon displayed in the widget button."
+msgstr "הסמל שמוצג בכפתור הווידג'ט."
+
+#: inc/WidgetCustomizer.php:202
+msgid "Widget Shape"
+msgstr "צורת הווידג'ט"
+
+#: inc/WidgetCustomizer.php:204
 msgid "Circle"
 msgstr "עיגול"
 
-#: inc/AllAccessibleSettings.php:221
+#: inc/WidgetCustomizer.php:205
 msgid "Square"
 msgstr "מרובע"
 
-#: inc/AllAccessibleSettings.php:234
-msgid "Hide AllAccessible Branding"
-msgstr "הסתר מיתוג AllAccessible"
+#: inc/WidgetCustomizer.php:207
+msgid "Shape of the widget button."
+msgstr "צורת כפתור הווידג'ט."
 
-#: inc/AllAccessibleSettings.php:235
-msgid "Remove Branding"
-msgstr "הסרת מיתוג"
+#: inc/WidgetCustomizer.php:212
+msgid "Run without the bubble"
+msgstr "הפעל ללא הבועה"
 
-#: inc/AllAccessibleSettings.php:237
-msgid "Branding Visible"
-msgstr "מיתוג גלוי"
+#: inc/WidgetCustomizer.php:216
+msgid "Hide widget, keep agentic AI remediation running."
+msgstr "הסתר את הווידג׳ט, והשאר את תיקון ה-AI האגנטי פועל."
 
-#: inc/AllAccessibleSettings.php:238
-msgid "Branding Removed"
-msgstr "המיתוג הוסר"
-
-#: inc/AllAccessibleSettings.php:241
+#: inc/WidgetCustomizer.php:218
 msgid ""
-"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
-"and logo from the widget."
+"Visitors won't see the accessibility toolbar. AllAccessible agents continue "
+"scanning and applying approved fixes in the background."
 msgstr ""
-"הערה: הסתרת המיתוג תסיר את הטקסט והלוגו \"מופעל על ידי AllAccessible\" "
-"מהווידג'ט."
+"הגולשים לא יראו את סרגל הנגישות. סוכני AllAccessible ממשיכים לסרוק ולהחיל "
+"תיקונים מאושרים ברקע."
 
-#: inc/AllAccessibleSettings.php:246
+#: inc/WidgetCustomizer.php:230
 msgid "Save Settings"
 msgstr "שמור שינויים"
 
-#: inc/AllAccessibleSettings.php:252
-msgid "You may need to reload this page if your widget options are not visible"
-msgstr "ייתכן שיהיה עליך לטעון מחדש דף זה אם אפשרויות הווידג'ט שלך אינן גלויות"
+#: inc/WidgetCustomizer.php:234
+msgid "Having trouble viewing updates?"
+msgstr "מתקשים לראות עדכונים?"
 
-#: inc/AllAccessibleSettings.php:259
-msgid "Version"
-msgstr "גרסה"
+#: inc/WidgetCustomizer.php:238
+msgid "Clear all caches: browser, cookies, and server (full reset)"
+msgstr "נקה את כל המטמונים: דפדפן, קובצי Cookie ושרת (איפוס מלא)"
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Need Help"
-msgstr "צריכה עזרה"
+#: inc/WidgetCustomizer.php:239
+msgid "Clear All Caches"
+msgstr "נקה את כל המטמונים"
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Contact Us"
-msgstr "צרו איתנו קשר"
+#: inc/WidgetCustomizer.php:249
+msgid "Saving..."
+msgstr "שומר..."
 
-#. Plugin Name of the plugin/theme
-msgid "AllAccessible"
-msgstr "הכל נגיש"
+#: inc/WidgetCustomizer.php:253
+msgid "Settings saved!"
+msgstr "ההגדרות נשמרו!"
+
+#: inc/WidgetCustomizer.php:259
+msgid "Cache cleared! Refresh your site to see changes."
+msgstr "המטמון נוקה! רעננו את האתר כדי לראות את השינויים."
+
+#: inc/WidgetCustomizer.php:267
+msgid "Clearing all caches..."
+msgstr "מנקה את כל המטמונים..."
+
+#: inc/WidgetCustomizer.php:271
+msgid "All caches cleared! Refresh your site to see changes."
+msgstr "כל המטמונים נוקו! רעננו את האתר כדי לראות את השינויים."
+
+#: inc/WidgetCustomizer.php:284
+msgid "Live Preview"
+msgstr "תצוגה מקדימה חיה"
+
+#: inc/WidgetCustomizer.php:297
+msgid "See how your widget will look on your site."
+msgstr "ראו איך הווידג׳ט ייראה באתר שלכם."
+
+#: inc/WidgetCustomizer.php:576
+msgid "Failed to save settings. Please try again."
+msgstr "שמירת ההגדרות נכשלה. נא לנסות שוב."
+
+#: inc/WidgetCustomizer.php:623
+msgid "Error clearing cache. Please check browser console."
+msgstr "שגיאה בניקוי המטמון. נא לבדוק את קונסולת הדפדפן."
+
+#: inc/WidgetCustomizer.php:677
+msgid "Server cache invalidation failed. Browser cache was cleared."
+msgstr "ביטול תוקף מטמון השרת נכשל. מטמון הדפדפן נוקה."
+
+#: inc/WidgetCustomizer.php:699
+msgid "Error clearing caches. Please check browser console."
+msgstr "שגיאה בניקוי המטמונים. נא לבדוק את קונסולת הדפדפן."
+
+#: inc/api/ApiClient.php:82
+msgid "Account ID not found"
+msgstr "מזהה החשבון לא נמצא"
+
+#: inc/api/ApiClient.php:125
+msgid "Invalid API response"
+msgstr "תגובת API לא תקינה"
+
+#: inc/api/ApiClient.php:371
+msgid "A page URL is required to trigger a scan."
+msgstr "נדרשת כתובת URL של דף כדי להפעיל סריקה."
+
+#: inc/api/ApiClient.php:473
+msgid "post_id or page_url required"
+msgstr "נדרש post_id או page_url"
+
+#: inc/api/ApiClient.php:568
+msgid "post_id and page_url required"
+msgstr "נדרשים post_id ו-page_url"
+
+#: inc/api/ApiClient.php:589
+msgid "pairs required"
+msgstr "נדרשים זוגות"
+
+#: inc/api/ApiClient.php:592
+msgid "batch limited to 100 pairs"
+msgstr "האצווה מוגבלת ל-100 זוגות"
+
+#: inc/api/ApiClient.php:641 inc/api/ApiClient.php:700
+#: inc/api/ApiClient.php:967
+msgid "Account not configured"
+msgstr "החשבון לא הוגדר"
+
+#: inc/api/ApiClient.php:753 inc/api/ApiClient.php:768
+#: inc/api/ApiClient.php:788
+msgid "Invalid manifest ID"
+msgstr "מזהה מניפסט לא תקין"
+
+#: inc/api/ApiClient.php:814
+msgid "Invalid manifest or fix index"
+msgstr "מניפסט או אינדקס תיקון לא תקינים"
+
+#: inc/api/ApiClient.php:818
+msgid "Value is required"
+msgstr "נדרש ערך"
+
+#: inc/api/ApiClient.php:821
+msgid "Value too long (max 500 characters)"
+msgstr "הערך ארוך מדי (מקסימום 500 תווים)"
+
+#: inc/api/ApiClient.php:841
+msgid "Invalid site ID"
+msgstr "מזהה אתר לא תקין"
+
+#: inc/api/ApiClient.php:845
+msgid "No manifest IDs supplied"
+msgstr "לא סופקו מזהי מניפסט"
+
+#: inc/api/ApiClient.php:988
+msgid "Server returned invalid plugin secret payload"
+msgstr "השרת החזיר מטען סודי של תוסף לא תקין"
+
+#: inc/api/ApiClient.php:1017
+msgid ""
+"No site associated with this account yet. Visit your WordPress homepage once "
+"to register this site, then return here."
+msgstr ""
+"עדיין אין אתר שמשויך לחשבון הזה. יש לבקר בדף הבית של WordPress פעם אחת כדי "
+"לרשום את האתר הזה, ואז לחזור לכאן."
+
+#: inc/api/ApiClient.php:1151
+msgid "Invalid scan job ID"
+msgstr "מזהה משימת סריקה לא תקין"
+
+#: inc/api/ApiClient.php:1170
+msgid "Plugin secret unavailable. Re-validate license to refresh credentials."
+msgstr ""
+"הסוד של התוסף אינו זמין. אמת מחדש את הרישיון כדי לרענן את פרטי ההתחברות."
+
+#. translators: %s: error message
+#: inc/api/ApiClient.php:1226
+#, php-format
+msgid "API request failed: %s"
+msgstr "בקשת ה-API נכשלה: %s"
+
+#: inc/api/ApiClient.php:1249
+msgid "Failed to decode API response"
+msgstr "פענוח תגובת ה-API נכשל"
 
 #. Plugin URI of the plugin/theme
 msgid "https://www.allaccessible.org/platform/wordpress/"
@@ -381,13 +3954,13 @@ msgstr "https://www.allaccessible.org/platform/wordpress/"
 msgid ""
 "Unlock true digital accessibility with AllAccessible - a comprehensive "
 "WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
-"your users with a fully customizable accessibility widget, and enhance their "
-"experience with our premium AI-powered features."
+"your users with a fully customizable accessibility widget, plus agentic AI "
+"remediation that auto-suggests fixes for your team to approve."
 msgstr ""
-"פתח נגישות דיגיטלית אמיתית עם AllAccessible - תוסף WordPress מקיף המניע את "
-"האתר שלך לקראת תאימות ל-WCAG/ADA. העצים את המשתמשים שלך עם ווידג'ט נגישות "
-"הניתן להתאמה אישית מלאה, ושפר את החוויה שלהם עם תכונות הפרימיום המופעלות על "
-"ידי AI."
+"פתחו נגישות דיגיטלית אמיתית עם AllAccessible – תוסף WordPress מקיף שמקדם את "
+"האתר שלכם לעבר תאימות ל-WCAG/ADA. העצימו את המשתמשים שלכם עם וידג'ט נגישות "
+"הניתן להתאמה אישית מלאה, ובנוסף תיקון באמצעות בינה מלאכותית סוכנתית שמציעה "
+"אוטומטית תיקונים לאישור הצוות שלכם."
 
 #. Author of the plugin/theme
 msgid "AllAccessible Team"
@@ -396,6 +3969,133 @@ msgstr "צוות הכל נגיש"
 #. Author URI of the plugin/theme
 msgid "https://www.allaccessible.org/"
 msgstr "https://www.allaccessible.org/"
+
+#~ msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+#~ msgstr "הפעל את AllAccessible Premium כדי לפתוח את תכונות הנגישות של Ai."
+
+#~ msgid "Click Here"
+#~ msgstr "לחץ כאן"
+
+#~ msgid "Do not send my e-mail address with this feedback"
+#~ msgstr "אל תשלח את כתובת הדואר האלקטרוני שלי עם המשוב הזה"
+
+#~ msgid "Please give us any feedback that could help us improve"
+#~ msgstr "אנא תנו לנו כל משוב שיכול לעזור לנו להשתפר"
+
+#~ msgid "Please wait"
+#~ msgstr "אנא המתן"
+
+#~ msgid "Thank you!"
+#~ msgstr "תודה רבה!"
+
+#~ msgid ""
+#~ "We're sorry to hear that, check <a href=\"https://"
+#~ "support.allaccessible.org\" target=\"_blank\">AllAccessible Support</a>. "
+#~ "Can you describe the issue?"
+#~ msgstr ""
+#~ "אנו מצטערים לשמוע זאת, בדוק את <a href=\"https://"
+#~ "support.allaccessible.org\" target=\"_blank\">התמיכה של AllAccessible</"
+#~ "a> . אתה יכול לתאר את הבעיה?"
+
+#~ msgid "The plugin broke my site"
+#~ msgstr "התוסף שבר את האתר שלי"
+
+#~ msgid "Can you please share the name of the other plugin?"
+#~ msgstr "אתה יכול בבקשה לשתף את השם של התוסף השני?"
+
+#~ msgid "It's a temporary deactivation, I'm troubleshooting"
+#~ msgstr "זו השבתה זמנית, אני פותר בעיות"
+
+#~ msgid "Can you describe the issue?"
+#~ msgstr "אתה יכול לתאר את הבעיה?"
+
+#, php-format
+#~ msgid "AllAccessible's %s widget is visible on the front end of your site."
+#~ msgstr "הווידג'ט %s של AllAccessible גלוי בקצה הקדמי של האתר שלך."
+
+#~ msgid "Website Accessibility"
+#~ msgstr "‫Ułatwienia"
+
+#~ msgid "Audits & Remediation"
+#~ msgstr "ביקורת ותיקון"
+
+#~ msgid ""
+#~ "View the results of your website scans, accessibility Remediation and "
+#~ "more with AllAccessibile Premium."
+#~ msgstr ""
+#~ "הצג את התוצאות של סריקות האתר שלך, תיקון נגישות ועוד עם AllAccessibile "
+#~ "Premium."
+
+#~ msgid "Need"
+#~ msgstr "צריכה עזרה"
+
+#~ msgid "Help & Support?"
+#~ msgstr "עזרה תמיכה?"
+
+#~ msgid ""
+#~ "Check our knowledge base for assistance with installation, customization, "
+#~ "and more."
+#~ msgstr "עיין במאגר הידע שלנו לקבלת סיוע בהתקנה, התאמה אישית ועוד."
+
+#~ msgid ""
+#~ "Unlock all the benefits of our Ai accessibility automation with a free "
+#~ "trial by connecting your AllAccessible account to your email below. "
+#~ "Already using the free version? No problem! We'll set you up with a free "
+#~ "7-day trial of our premium version. After the trial period, upgrade to "
+#~ "the premium version for just $10 a month and enjoy a more accessible "
+#~ "digital experience."
+#~ msgstr ""
+#~ "פתח את כל היתרונות של אוטומציה של נגישות Ai שלנו עם ניסיון חינם על ידי "
+#~ "חיבור חשבון AllAccessible שלך לדוא\"ל שלך למטה. כבר משתמשים בגרסה "
+#~ "החינמית? אין בעיה! אנו נגדיר לך ניסיון חינם למשך 7 ימים של גרסת הפרימיום "
+#~ "שלנו. לאחר תקופת הניסיון, שדרג לגרסת הפרימיום תמורת 19 דולר בלבד לחודש "
+#~ "ותיהנה מחוויה דיגיטלית נגישה יותר."
+
+#~ msgid ""
+#~ "Below are some additional features unlocked with AllAccessible Premium. "
+#~ "All for Only $10/mo."
+#~ msgstr "להלן כמה תכונות נוספות שנפתחו עם AllAccessible Premium."
+
+#~ msgid "User Control Panel"
+#~ msgstr "לוח הבקרה של המשתמש"
+
+#~ msgid "To learn more, visit: https://www.allaccessible.org"
+#~ msgstr "למידע נוסף, בקר בכתובת: https://www.allaccessible.org"
+
+#~ msgid "Your Email"
+#~ msgstr "האימייל שלך"
+
+#, php-format
+#~ msgid "(Used to manage your Account on %s)"
+#~ msgstr "(משמש לניהול חשבונך ב-%s)"
+
+#, php-format
+#~ msgid "%1$s is connected to %2$s with account ID %3$s"
+#~ msgstr "%1$s מחובר ל-%2$s עם מזהה חשבון %3$s"
+
+#~ msgid "Choose Icon"
+#~ msgstr "בחר אייקון"
+
+#~ msgid "Remove Branding"
+#~ msgstr "הסרת מיתוג"
+
+#~ msgid "Branding Visible"
+#~ msgstr "מיתוג גלוי"
+
+#~ msgid ""
+#~ "Note: Hiding the branding will remove the \"Powered by AllAccessible\" "
+#~ "text and logo from the widget."
+#~ msgstr ""
+#~ "הערה: הסתרת המיתוג תסיר את הטקסט והלוגו \"מופעל על ידי AllAccessible\" "
+#~ "מהווידג'ט."
+
+#~ msgid ""
+#~ "You may need to reload this page if your widget options are not visible"
+#~ msgstr ""
+#~ "ייתכן שיהיה עליך לטעון מחדש דף זה אם אפשרויות הווידג'ט שלך אינן גלויות"
+
+#~ msgid "Version"
+#~ msgstr "גרסה"
 
 #~ msgid "Let's make this WordPress Site Accessible"
 #~ msgstr "בואו נהפוך את אתר הוורדפרס הזה לנגיש"
@@ -406,9 +4106,6 @@ msgstr "https://www.allaccessible.org/"
 #, php-format
 #~ msgid "Let's make this WordPress Site %s"
 #~ msgstr "בוא נעשה אתר וורדפרס זה %s"
-
-#~ msgid "Connect"
-#~ msgstr "התחבר"
 
 #~ msgid "AllAccessible Accessibility Plugin"
 #~ msgstr "Allתוסף נגישות נגיש"
@@ -451,12 +4148,3 @@ msgstr "https://www.allaccessible.org/"
 
 #~ msgid "Yes, I will write a positive review."
 #~ msgstr "כן, אני אכתוב ביקורת חיובית."
-
-#~ msgid "Let's make this WordPress Site AllAccessible"
-#~ msgstr "בואו נהפוך את אתר הוורדפרס הזה לנגיש"
-
-#~ msgid "is connected to"
-#~ msgstr "מחובר ל-"
-
-#~ msgid "with account ID"
-#~ msgstr "עם מזהה חשבון"

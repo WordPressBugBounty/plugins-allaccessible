@@ -2,11 +2,6 @@
 /**
  * Onboarding Wizard for AllAccessible Plugin
  *
- * Modern setup flow with Tailwind CSS:
- * - Welcome screen
- * - Plan selection (Free Forever vs Paid Trial)
- * - Email-only signup
- *
  * @package AllAccessible
  * @since 2.0.0
  */
@@ -62,7 +57,7 @@ class AllAccessible_OnboardingWizard {
             return;
         }
 
-        // Enqueue our Tailwind CSS
+        // Legacy Tailwind utility stylesheet (still ships with the build)
         wp_enqueue_style(
             'allaccessible-admin',
             AACB_CSS . 'admin.css',
@@ -70,14 +65,28 @@ class AllAccessible_OnboardingWizard {
             AACB_VERSION
         );
 
-        // Add inline CSS to hide WordPress admin notices on wizard page
+        // Admin v2 design system — single source of truth for the redesign
+        wp_enqueue_style(
+            'aacx-v2-admin',
+            AACB_CSS . 'admin-v2.css',
+            array(),
+            aacb_asset_ver('admin-v2.css')
+        );
+
+        // Hide WordPress admin notices on the wizard page for a clean experience
         $custom_css = "
             .notice, .updated, .error, .update-nag,
             div.notice, div.updated, div.error, div.update-nag {
                 display: none !important;
             }
+            /* Soften the wp-admin chrome around the wizard */
+            #wpcontent { padding-left: 0 !important; }
+            .aacx-v2-wizard-shell {
+                min-height: calc(100vh - 32px);
+                background: var(--aacx-bg, #f8fafc);
+            }
         ";
-        wp_add_inline_style('allaccessible-admin', $custom_css);
+        wp_add_inline_style('aacx-v2-admin', $custom_css);
     }
 
     /**
@@ -88,381 +97,396 @@ class AllAccessible_OnboardingWizard {
         remove_all_actions('admin_notices');
         remove_all_actions('all_admin_notices');
 
-        $site_url = get_bloginfo('wpurl');
+        $site_url    = get_bloginfo('wpurl');
         $admin_email = get_bloginfo('admin_email');
+
+        // Step labels for the stepper: a single "Get started" step
+        // (email + plan picker + Continue on one screen), then First scan.
+        $steps = array(
+            1 => __('Get started', 'allaccessible'),
+            2 => __('First scan',  'allaccessible'),
+        );
         ?>
         <div class="wrap allaccessible-admin">
-            <div class="aacx-min-h-screen aacx-bg-gradient-to-br aacx-from-aacx-slate-900 aacx-to-aacx-primary-900 aacx-flex aacx-items-center aacx-justify-center aacx-py-12 aacx-px-4">
-                <div class="aacx-max-w-4xl aacx-w-full">
+            <div class="aacx-v2 aacx-v2-wizard-shell">
+                <div class="aacx-v2__page" role="region" aria-label="<?php esc_attr_e('AllAccessible setup', 'allaccessible'); ?>">
 
-                    <!-- Step 1: Welcome -->
-                    <div id="wizard-step-1" class="wizard-step aacx-bg-white aacx-rounded-2xl aacx-shadow-2xl aacx-p-12 aacx-text-center">
-                        <div class="aacx-mb-6">
-                            <img src="<?php echo esc_url(AACB_IMG . 'bug.svg'); ?>" alt="AllAccessible" style="width: 80px; height: 80px;" class="aacx-mx-auto">
-                        </div>
+                    <!-- Brand header removed — the "Welcome to AllAccessible"
+                         h2 inside the active step already brands the page. Stepper stays as
+                         the canonical wayfinding. -->
 
-                        <h1 class="aacx-text-4xl aacx-font-black aacx-text-aacx-slate-900 aacx-mb-3">
-                            <?php _e('Welcome to AllAccessible!', 'allaccessible'); ?>
-                        </h1>
+                    <!-- Step indicator (always visible) -->
+                    <nav class="aacx-v2__stepper" aria-label="<?php esc_attr_e('Setup progress', 'allaccessible'); ?>" id="aacb-wizard-stepper">
+                        <?php
+                        $step_count = count($steps);
+                        $i = 0;
+                        foreach ($steps as $num => $label):
+                            $i++;
+                            $is_last = ($i === $step_count);
+                            ?>
+                            <div class="aacx-v2__step<?php echo $num === 1 ? ' aacx-v2__step--active' : ''; ?>"
+                                 data-step="<?php echo (int) $num; ?>"
+                                 <?php echo $num === 1 ? 'aria-current="step"' : ''; ?>>
+                                <span class="aacx-v2__step-dot"><?php echo (int) $num; ?></span>
+                                <span class="aacx-v2__step-label"><?php echo esc_html($label); ?></span>
+                            </div>
+                            <?php if (!$is_last): ?>
+                                <span class="aacx-v2__step-line" aria-hidden="true"></span>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </nav>
 
-                        <p class="aacx-text-lg aacx-text-aacx-slate-600 aacx-mb-10 aacx-max-w-xl aacx-mx-auto">
-                            <?php _e('Make your WordPress site accessible to everyone. Choose how you\'d like to get started:', 'allaccessible'); ?>
-                        </p>
-
-                        <!-- Three Option Cards -->
-                        <div class="aacx-grid aacx-grid-cols-1 md:aacx-grid-cols-3 aacx-gap-4 aacx-max-w-4xl aacx-mx-auto">
-
-                            <!-- Option 1: Create Account (Recommended) -->
-                            <div
-                                onclick="aacbWizardNext(2)"
-                                class="aacx-relative aacx-border-2 aacx-border-aacx-primary-500 aacx-rounded-xl aacx-p-6 aacx-cursor-pointer hover:aacx-shadow-lg hover:-aacx-translate-y-1 aacx-transition-all aacx-duration-200 aacx-bg-aacx-primary-50">
-                                <div class="aacx-absolute aacx-top-0 aacx-right-0 aacx-bg-aacx-secondary-600 aacx-text-white aacx-px-3 aacx-py-1 aacx-rounded-bl-lg aacx-rounded-tr-xl aacx-text-xs aacx-font-bold">
-                                    <?php _e('Recommended', 'allaccessible'); ?>
-                                </div>
-                                <div class="aacx-mb-4 aacx-mt-2">
-                                    <div class="aacx-w-12 aacx-h-12 aacx-bg-aacx-primary-600 aacx-rounded-full aacx-flex aacx-items-center aacx-justify-center aacx-mx-auto">
-                                        <svg class="aacx-w-6 aacx-h-6 aacx-text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <h3 class="aacx-text-lg aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-2">
-                                    <?php _e('Create Account', 'allaccessible'); ?>
-                                </h3>
-                                <p class="aacx-text-sm aacx-text-aacx-slate-600 aacx-mb-4">
-                                    <?php _e('Set up a new AllAccessible account with access to all features, dashboard, and AI tools.', 'allaccessible'); ?>
+                    <!-- =================================================
+                         Step 1: Get started (email + plan picker)
+                         ================================================= -->
+                    <section id="wizard-step-1" class="wizard-step aacx-v2__card aacx-v2__card--elevated" data-step="1">
+                        <div class="aacx-v2__card-body">
+                            <div class="aacx-v2__page-eyebrow"><?php esc_html_e('Step 1 of 2', 'allaccessible'); ?></div>
+                            <h2 tabindex="-1" class="aacx-v2__page-title" style="font-size: var(--aacx-text-3xl);" id="wizard-step-1-heading">
+                                <?php esc_html_e('Welcome to AllAccessible', 'allaccessible'); ?>
+                            </h2>
+                            <p class="aacx-v2__page-desc aacb-create-only" style="margin-top: var(--aacx-space-3);">
+                                <?php esc_html_e('Make this WordPress site usable for every visitor. Enter your email and pick a plan to get started.', 'allaccessible'); ?>
+                            </p>
+                            <!-- ─── 1. FEATURE MINI-DEMOS ──────────────────────────────── -->
+                            <div class="aacb-create-only" style="display:flex; align-items:center; gap: var(--aacx-space-2); margin: var(--aacx-space-4) 0 var(--aacx-space-3);">
+                                <span style="display:inline-block; width: 28px; height: 2px; background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);"></span>
+                                <p class="aacx-v2__page-eyebrow" style="margin: 0; color: var(--aacx-text-strong); font-weight: 700;">
+                                    <?php esc_html_e('See what an account does for you', 'allaccessible'); ?>
                                 </p>
-                                <span class="aacx-inline-flex aacx-items-center aacx-text-aacx-primary-600 aacx-font-semibold aacx-text-sm">
-                                    <?php _e('Get Started', 'allaccessible'); ?> →
-                                </span>
                             </div>
 
-                            <!-- Option 2: Connect Existing Account -->
-                            <div
-                                onclick="aacbWizardNext(4)"
-                                class="aacx-border-2 aacx-border-aacx-slate-200 aacx-rounded-xl aacx-p-6 aacx-cursor-pointer hover:aacx-border-aacx-primary-300 hover:aacx-shadow-lg hover:-aacx-translate-y-1 aacx-transition-all aacx-duration-200">
-                                <div class="aacx-mb-4">
-                                    <div class="aacx-w-12 aacx-h-12 aacx-bg-aacx-slate-100 aacx-rounded-full aacx-flex aacx-items-center aacx-justify-center aacx-mx-auto">
-                                        <svg class="aacx-w-6 aacx-h-6 aacx-text-aacx-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <h3 class="aacx-text-lg aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-2">
-                                    <?php _e('Connect Account', 'allaccessible'); ?>
-                                </h3>
-                                <p class="aacx-text-sm aacx-text-aacx-slate-600 aacx-mb-4">
-                                    <?php _e('Already have an AllAccessible account? Link this site to your existing account.', 'allaccessible'); ?>
-                                </p>
-                                <span class="aacx-inline-flex aacx-items-center aacx-text-aacx-primary-600 aacx-font-semibold aacx-text-sm">
-                                    <?php _e('Link Account', 'allaccessible'); ?> →
-                                </span>
-                            </div>
-
-                            <!-- Option 3: Skip (Limited Free Widget) -->
-                            <div
-                                onclick="aacbWizardSkip()"
-                                class="aacx-border-2 aacx-border-aacx-slate-200 aacx-rounded-xl aacx-p-6 aacx-cursor-pointer hover:aacx-border-aacx-slate-300 hover:aacx-shadow-md aacx-transition-all aacx-duration-200 aacx-bg-aacx-slate-50">
-                                <div class="aacx-mb-4">
-                                    <div class="aacx-w-12 aacx-h-12 aacx-bg-aacx-slate-200 aacx-rounded-full aacx-flex aacx-items-center aacx-justify-center aacx-mx-auto">
-                                        <svg class="aacx-w-6 aacx-h-6 aacx-text-aacx-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <h3 class="aacx-text-lg aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                                    <?php _e('Skip for Now', 'allaccessible'); ?>
-                                </h3>
-                                <p class="aacx-text-sm aacx-text-aacx-slate-500 aacx-mb-4">
-                                    <?php _e('Use a basic widget without an account. Very limited features, no dashboard access.', 'allaccessible'); ?>
-                                </p>
-                                <span class="aacx-inline-flex aacx-items-center aacx-text-aacx-slate-500 aacx-font-semibold aacx-text-sm">
-                                    <?php _e('Skip Setup', 'allaccessible'); ?> →
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Step 2: Plan Selection -->
-                    <div id="wizard-step-2" class="wizard-step aacx-hidden aacx-bg-white aacx-rounded-2xl aacx-shadow-2xl aacx-p-12">
-                        <h2 class="aacx-text-4xl aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-2 aacx-text-center">
-                            <?php _e('Choose Your Plan', 'allaccessible'); ?>
-                        </h2>
-                        <p class="aacx-text-aacx-slate-600 aacx-text-center aacx-mb-10">
-                            <?php _e('Enter your email to create a new account or link to an existing one', 'allaccessible'); ?>
-                        </p>
-
-                        <div class="aacx-text-center aacx-mb-6">
-                            <button
-                                onclick="aacbWizardNext(4)"
-                                class="aacx-inline-flex aacx-items-center aacx-px-6 aacx-py-3 aacx-bg-aacx-slate-100 aacx-text-aacx-primary-600 aacx-rounded-lg aacx-font-semibold aacx-text-base hover:aacx-bg-aacx-primary-50 hover:aacx-text-aacx-primary-700 aacx-transition-all aacx-duration-200 aacx-shadow-sm hover:aacx-shadow-md">
-                                <svg class="aacx-w-5 aacx-h-5 aacx-mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
-                                <?php _e('Already have an account? Link it here', 'allaccessible'); ?>
-                            </button>
-                        </div>
-
-                        <div class="aacx-grid aacx-grid-cols-1 md:aacx-grid-cols-2 aacx-gap-8 aacx-mb-8">
-
-                            <!-- Free Forever Plan -->
-                            <div class="aacx-border-2 aacx-border-aacx-slate-200 aacx-rounded-2xl aacx-p-8 hover:aacx-border-aacx-primary-300 aacx-transition-all aacx-cursor-pointer" onclick="aacbWizardSelectPlan('free')">
-                                <div class="aacx-mb-6">
-                                    <h3 class="aacx-text-2xl aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-2">
-                                        <?php _e('Free Forever', 'allaccessible'); ?>
-                                    </h3>
-                                    <p class="aacx-text-4xl aacx-font-black aacx-text-aacx-slate-900">
-                                        $0<span class="aacx-text-lg aacx-font-normal aacx-text-aacx-slate-600">/month</span>
+                            <div class="aacx-v2__grid aacx-v2__grid--3 aacb-create-only" style="gap: var(--aacx-space-4);">
+                                <!-- Accessibility scans — blue hover ring -->
+                                <div style="background: var(--aacx-surface, #fff); border: 1px solid var(--aacx-border); border-radius: 12px; padding: var(--aacx-space-4); transition: box-shadow 200ms ease, transform 200ms ease;"
+                                     onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 0 0 2px rgba(59,130,246,0.4), 0 8px 20px rgba(37,99,235,0.10)';"
+                                     onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+                                    <strong style="font-size: 15px; color: var(--aacx-text-strong); display:block; margin-bottom: 4px;">
+                                        <?php esc_html_e('Accessibility scans', 'allaccessible'); ?>
+                                    </strong>
+                                    <p style="font-size: 13px; color: var(--aacx-text-muted); margin: 0 0 var(--aacx-space-3); line-height: 1.45;">
+                                        <?php esc_html_e('Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged.', 'allaccessible'); ?>
                                     </p>
+                                    <div style="border-radius: 8px; border: 1px solid var(--aacx-border); background: var(--aacx-surface-alt, #fafafa); padding: 10px 12px; font-family: 'SFMono-Regular', Menlo, monospace; font-size: 12px;">
+                                        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom: 6px;">
+                                            <span style="color:var(--aacx-text-muted); font-size: 11px;">about-us</span>
+                                            <span style="font-size: 22px; font-weight: 800; color: var(--aacx-text-strong); line-height: 1;">87 <small style="font-size: 11px; font-weight:500; color:var(--aacx-text-muted);">/100</small></span>
+                                        </div>
+                                        <div style="height: 5px; background: var(--aacx-border); border-radius: 999px; overflow: hidden;">
+                                            <div style="height: 100%; width: 87%; background: linear-gradient(90deg, #10b981 0%, #34d399 100%);"></div>
+                                        </div>
+                                        <div style="display:flex; gap: 8px; margin-top: 6px; font-family: inherit; font-size: 10.5px;">
+                                            <span style="color: #10b981 !important;">✓ <?php esc_html_e('24 fixed', 'allaccessible'); ?></span>
+                                            <span style="color: #f59e0b !important;">⚠ <?php esc_html_e('3 to review', 'allaccessible'); ?></span>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <ul class="aacx-space-y-4 aacx-mb-8">
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700"><?php _e('Basic accessibility widget', 'allaccessible'); ?></span>
-                                    </li>
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700"><?php _e('Color & contrast controls', 'allaccessible'); ?></span>
-                                    </li>
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700"><?php _e('Text sizing & spacing', 'allaccessible'); ?></span>
-                                    </li>
-                                </ul>
+                                <!-- Agentic AI fixes — purple hover ring -->
+                                <div style="background: var(--aacx-surface, #fff); border: 1px solid var(--aacx-border); border-radius: 12px; padding: var(--aacx-space-4); transition: box-shadow 200ms ease, transform 200ms ease;"
+                                     onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 0 0 2px rgba(168,85,247,0.4), 0 8px 20px rgba(124,58,237,0.12)';"
+                                     onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+                                    <strong style="font-size: 15px; color: var(--aacx-text-strong); display:block; margin-bottom: 4px;">
+                                        <?php esc_html_e('Agentic AI fixes', 'allaccessible'); ?>
+                                    </strong>
+                                    <p style="font-size: 13px; color: var(--aacx-text-muted); margin: 0 0 var(--aacx-space-3); line-height: 1.45;">
+                                        <?php esc_html_e('AI drafts the fix; your team approves before anything ships.', 'allaccessible'); ?>
+                                    </p>
+                                    <div style="border-radius: 8px; border: 1px solid var(--aacx-border); background: var(--aacx-surface-alt, #fafafa); padding: 10px 12px; font-family: 'SFMono-Regular', Menlo, monospace; font-size: 12px;">
+                                        <div style="color:var(--aacx-text-muted); font-size:10.5px; margin-bottom: 5px;"><?php esc_html_e('Issue: button missing accessible name', 'allaccessible'); ?></div>
+                                        <div style="padding: 4px 8px; border-radius: 6px; margin-bottom: 4px; background: rgba(239,68,68,0.12); color:#ef4444 !important; text-decoration: line-through; text-decoration-color: rgba(239,68,68,0.55); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">&lt;button&gt;🛒&lt;/button&gt;</div>
+                                        <div style="padding: 4px 8px; border-radius: 6px; background: rgba(16,185,129,0.12); color:#10b981 !important; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;"><strong style="color:#a855f7 !important; font-size:10px; font-weight:800; letter-spacing:0.04em; margin-right:4px;">✦ <?php esc_html_e('AI fix', 'allaccessible'); ?></strong>&lt;button aria-label="Add to cart"&gt;🛒&lt;/button&gt;</div>
+                                    </div>
+                                </div>
 
-                                <button
-                                    class="aacx-w-full aacx-px-6 aacx-py-3 aacx-border-2 aacx-border-aacx-primary-600 aacx-text-aacx-primary-600 aacx-rounded-xl aacx-font-bold hover:aacx-bg-aacx-primary-50 aacx-transition-colors">
-                                    <?php _e('Choose Free', 'allaccessible'); ?>
+                                <!-- Smart alt text — teal hover ring -->
+                                <div style="background: var(--aacx-surface, #fff); border: 1px solid var(--aacx-border); border-radius: 12px; padding: var(--aacx-space-4); transition: box-shadow 200ms ease, transform 200ms ease;"
+                                     onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 0 0 2px rgba(20,184,166,0.4), 0 8px 20px rgba(13,148,136,0.12)';"
+                                     onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+                                    <strong style="font-size: 15px; color: var(--aacx-text-strong); display:block; margin-bottom: 4px;">
+                                        <?php esc_html_e('Smart alt text', 'allaccessible'); ?>
+                                    </strong>
+                                    <p style="font-size: 13px; color: var(--aacx-text-muted); margin: 0 0 var(--aacx-space-3); line-height: 1.45;">
+                                        <?php esc_html_e('Missing alt generated for every image, in the language your visitors use.', 'allaccessible'); ?>
+                                    </p>
+                                    <div style="border-radius: 8px; border: 1px solid var(--aacx-border); background: var(--aacx-surface-alt, #fafafa); padding: 10px 12px;">
+                                        <div style="display:flex; gap: 10px; align-items: stretch;">
+                                            <img src="<?php echo esc_url(AACB_IMG . 'demo-alt-text-sample.jpg'); ?>"
+                                                 alt=""
+                                                 style="flex: 0 0 64px; width: 64px; height: 64px; border-radius: 6px; object-fit: cover; display:block; box-shadow: 0 2px 6px rgba(0,0,0,0.12);">
+                                            <div style="flex:1; font-size: 11px; color: var(--aacx-text); line-height: 1.45; display:flex; flex-direction:column; gap: 4px;">
+                                                <span style="display:inline-flex; align-self:flex-start; align-items:center; gap:4px; padding: 2px 6px; border-radius: 999px; background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); color:#fff; font-weight:700; font-size:9px; text-transform:uppercase; letter-spacing:0.06em;">✦ <?php esc_html_e('AI generated', 'allaccessible'); ?></span>
+                                                <span style="font-family: 'SFMono-Regular', Menlo, monospace; color: var(--aacx-text-strong);">
+                                                    "<?php esc_html_e('A golden retriever sitting in a sunlit park, wearing a pink bandana.', 'allaccessible'); ?>"
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- ─── 2. GET STARTED FORM (email + plan picker + CTA) ───
+                                 Single form: submit the email + plan and the
+                                 server creates or links the account.
+                            -->
+                            <div style="display:flex; align-items:center; gap: var(--aacx-space-2); margin: var(--aacx-space-5) 0 var(--aacx-space-3);">
+                                <span style="display:inline-block; width: 28px; height: 2px; background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);"></span>
+                                <p class="aacx-v2__page-eyebrow" style="margin: 0; color: var(--aacx-text-strong); font-weight: 700;">
+                                    <?php esc_html_e('Get started', 'allaccessible'); ?>
+                                </p>
+                            </div>
+
+                            <form id="aacb-wizard-form" novalidate>
+                                <input type="hidden" name="site_url" value="<?php echo esc_attr($site_url); ?>">
+                                <input type="hidden" id="wizard-selected-tier" name="tier" value="trial">
+
+                                <!-- Email field -->
+                                <div class="aacx-v2__field" style="margin-bottom: var(--aacx-space-4);">
+                                    <label class="aacx-v2__label" for="wizard-email"><?php esc_html_e('Email address', 'allaccessible'); ?></label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="wizard-email"
+                                        class="aacx-v2__input"
+                                        value="<?php echo esc_attr($admin_email); ?>"
+                                        required
+                                        placeholder="you@example.com"
+                                        autocomplete="email"
+                                        style="font-size: 16px; padding: 10px 12px;">
+                                    <span id="wizard-email-help" class="aacx-v2__help" style="font-size: 12.5px;">
+                                        <?php esc_html_e("We'll create a new account or link your existing one — same email, either way.", 'allaccessible'); ?>
+                                    </span>
+                                </div>
+
+                                <!-- Plan picker — compact radio cards (Free vs Trial).
+                                     The wrapper id `wizard-plan-section` is hidden by JS
+                                     for existing customers, who keep their current plan. -->
+                                <div id="wizard-plan-section" role="radiogroup" aria-label="<?php esc_attr_e('Plan', 'allaccessible'); ?>" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--aacx-space-3); margin-bottom: var(--aacx-space-4);">
+
+                                    <!-- Free plan card -->
+                                    <label class="aacb-plan-option" style="cursor:pointer; display:block; padding: var(--aacx-space-4); border: 2px solid var(--aacx-border); border-radius: 12px; background: var(--aacx-surface, #fff); transition: border-color 150ms ease, box-shadow 150ms ease; position: relative;">
+                                        <input type="radio" name="aacb_plan" value="free" style="position:absolute; opacity:0; pointer-events:none;">
+                                        <span style="display:inline-block; font-size:10.5px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; padding: 3px 8px; border-radius: 999px; background:#f3f4f6; color:#374151 !important;">
+                                            <?php esc_html_e('Free forever', 'allaccessible'); ?>
+                                        </span>
+                                        <div style="margin-top: var(--aacx-space-2); font-size: 22px; font-weight: 800; color: var(--aacx-text-strong); line-height: 1;">
+                                            $0 <span style="font-size: 13px; font-weight: 500; color: var(--aacx-text-muted);">/ mo</span>
+                                        </div>
+                                        <p style="font-size: 12.5px; color: var(--aacx-text-muted); margin: var(--aacx-space-2) 0 0; line-height: 1.4;">
+                                            <?php esc_html_e('Widget, contrast + sizing controls, essential accessibility tools.', 'allaccessible'); ?>
+                                        </p>
+                                    </label>
+
+                                    <!-- Trial plan card — pre-selected (matches hidden input default 'trial') -->
+                                    <label class="aacb-plan-option aacb-plan-option--checked" style="cursor:pointer; display:block; padding: var(--aacx-space-4); border: 2px solid #7c3aed; border-radius: 12px; background: linear-gradient(135deg, rgba(124,58,237,0.04) 0%, rgba(79,70,229,0.04) 100%); transition: border-color 150ms ease, box-shadow 150ms ease; position: relative; box-shadow: 0 0 0 3px rgba(124,58,237,0.10);">
+                                        <input type="radio" name="aacb_plan" value="trial" checked style="position:absolute; opacity:0; pointer-events:none;">
+                                        <div style="position:absolute; top:-9px; right: var(--aacx-space-3); background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); color:#fff !important; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; padding: 3px 8px; border-radius: 999px; box-shadow: 0 4px 12px rgba(139,92,246,0.35);">
+                                            ✦ <?php esc_html_e('Most popular', 'allaccessible'); ?>
+                                        </div>
+                                        <span style="display:inline-block; font-size:10.5px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; padding: 3px 8px; border-radius: 999px; background:#ede9fe; color:#5b21b6 !important;">
+                                            <?php esc_html_e('AllAccessible AI', 'allaccessible'); ?>
+                                        </span>
+                                        <div style="margin-top: var(--aacx-space-2); font-size: 22px; font-weight: 800; color: var(--aacx-text-strong); line-height: 1;">
+                                            <?php esc_html_e('7 days free', 'allaccessible'); ?> <span style="font-size: 12.5px; font-weight: 500; color: var(--aacx-text-muted);"><?php esc_html_e('then $10/mo', 'allaccessible'); ?></span>
+                                        </div>
+                                        <p style="font-size: 12.5px; color: var(--aacx-text-muted); margin: var(--aacx-space-2) 0 0; line-height: 1.4;">
+                                            <?php esc_html_e('Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits.', 'allaccessible'); ?>
+                                        </p>
+                                    </label>
+                                </div>
+
+                                <!-- Auto-state confirmation. Shown only when state === 'auto'.
+                                     Displays the matched email + site URL so the user
+                                     confirms what they're reconnecting before clicking. -->
+                                <div id="wizard-auto-confirm" style="display:none; margin-bottom: var(--aacx-space-4); padding: 14px 16px; background: linear-gradient(135deg, rgba(124,58,237,0.06) 0%, rgba(79,70,229,0.06) 100%); border: 1px solid rgba(124,58,237,0.25); border-radius: 10px;">
+                                    <div style="display:flex; align-items:center; gap: 10px;">
+                                        <span aria-hidden="true" style="font-size: 24px;">✦</span>
+                                        <div style="flex:1;">
+                                            <strong style="display:block; font-size: 14px; color: var(--aacx-text-strong); margin-bottom: 2px;">
+                                                <?php esc_html_e('Ready to reconnect', 'allaccessible'); ?>
+                                            </strong>
+                                            <span id="wizard-auto-confirm-detail" style="font-size: 12.5px; color: var(--aacx-text-muted);">
+                                                <!-- populated by JS: "Linking {site} to {email}" -->
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Link-pending note. Shown when the site is on a
+                                     different account. Hidden by default; JS toggles it.
+                                     Explains that dashboard visibility waits for the
+                                     existing owner to approve access. -->
+                                <div id="wizard-pending-note" style="display:none; margin-bottom: var(--aacx-space-3); padding: 10px 12px; background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 8px; font-size: 12.5px; color: #92400e !important;">
+                                    <strong style="color:#92400e !important;"><?php esc_html_e('Heads up:', 'allaccessible'); ?></strong>
+                                    <?php esc_html_e("This site is on another AllAccessible account. The plugin will work right away, but the site only appears in your dashboard once the existing admin approves your access — they'll get an email automatically.", 'allaccessible'); ?>
+                                </div>
+
+                                <!-- Loading + error/welcome banner (toggled via JS) -->
+                                <div id="wizard-status" style="display:none; margin-bottom: var(--aacx-space-3);"></div>
+
+                                <!-- Submit -->
+                                <button type="submit" id="wizard-submit-btn"
+                                        class="aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--lg"
+                                        style="width: 100%; justify-content: center; font-weight: 700;">
+                                    <span id="wizard-submit-text"><?php esc_html_e('Continue', 'allaccessible'); ?> →</span>
                                 </button>
-                            </div>
 
-                            <!-- Paid Trial Plan -->
-                            <div class="aacx-border-2 aacx-border-aacx-primary-600 aacx-rounded-2xl aacx-p-8 aacx-shadow-xl aacx-relative aacx-cursor-pointer" onclick="aacbWizardSelectPlan('trial')">
-                                <div class="aacx-absolute aacx-top-0 aacx-right-0 aacx-bg-aacx-secondary-600 aacx-text-white aacx-px-4 aacx-py-1 aacx-rounded-bl-xl aacx-rounded-tr-2xl aacx-text-sm aacx-font-bold">
-                                    <?php _e('Recommended', 'allaccessible'); ?>
-                                </div>
+                                <!-- Consent disclosure (browse-wrap pattern) -->
+                                <p class="aacx-v2__help" style="text-align: center; margin: var(--aacx-space-2) 0 0; font-size: 12px;">
+                                    <?php
+                                    printf(
+                                        /* translators: 1: Terms link, 2: Privacy Policy link */
+                                        esc_html__('By continuing you agree to our %1$s and %2$s.', 'allaccessible'),
+                                        '<a href="https://www.allaccessible.org/terms-conditions" target="_blank" rel="noopener">' . esc_html__('Terms & Conditions', 'allaccessible') . '</a>',
+                                        '<a href="https://www.allaccessible.org/privacy-policy" target="_blank" rel="noopener">' . esc_html__('Privacy Policy', 'allaccessible') . '</a>'
+                                    );
+                                    ?>
+                                </p>
 
-                                <div class="aacx-mb-6 aacx-mt-4">
-                                    <h3 class="aacx-text-2xl aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-2">
-                                        <?php _e('Premium Trial', 'allaccessible'); ?>
-                                    </h3>
-                                    <p class="aacx-text-4xl aacx-font-black aacx-text-aacx-primary-600">
-                                        <?php _e('7 Days Free', 'allaccessible'); ?>
-                                    </p>
-                                    <p class="aacx-text-sm aacx-text-aacx-slate-600">
-                                        <?php _e('Then $10/month', 'allaccessible'); ?>
-                                    </p>
-                                </div>
+                                <!-- Skip-for-now (tertiary text link) -->
+                                <p style="text-align: center; margin: var(--aacx-space-3) 0 0;">
+                                    <a href="#" onclick="event.preventDefault(); aacbWizardSkip();"
+                                       style="color: var(--aacx-text-muted); font-size: 12.5px; text-decoration: underline; text-underline-offset: 3px;">
+                                        <?php esc_html_e('Skip and use just the free widget', 'allaccessible'); ?>
+                                    </a>
+                                </p>
+                            </form>
 
-                                <ul class="aacx-space-y-4 aacx-mb-8">
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700 aacx-font-semibold"><?php _e('Everything in Free, plus:', 'allaccessible'); ?></span>
-                                    </li>
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700"><?php _e('AI accessibility fixes', 'allaccessible'); ?></span>
-                                    </li>
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700"><?php _e('WCAG/ADA compliance audits', 'allaccessible'); ?></span>
-                                    </li>
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700"><?php _e('Widget customization', 'allaccessible'); ?></span>
-                                    </li>
-                                    <li class="aacx-flex aacx-items-start">
-                                        <svg class="aacx-h-6 aacx-w-6 aacx-text-aacx-secondary-600 aacx-mr-3 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                        </svg>
-                                        <span class="aacx-text-aacx-slate-700"><?php _e('Alt text generation', 'allaccessible'); ?></span>
-                                    </li>
-                                </ul>
+                            <!-- ─── 3. CREDIBILITY (proof band) ──────────────────────── -->
+                            <div class="aacb-wizard-proof aacb-create-only" style="
+                                margin-top: var(--aacx-space-5);
+                                padding: var(--aacx-space-4) var(--aacx-space-5);
+                                background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 50%, #6d28d9 100%);
+                                border-radius: 12px;
+                                box-shadow: 0 8px 24px rgba(67, 56, 202, 0.22), 0 2px 8px rgba(0,0,0,0.06);
+                                color: #fff;
+                                position: relative;
+                                overflow: hidden;
+                            ">
+                                <div aria-hidden="true" style="position:absolute; top:-60px; right:-60px; width:200px; height:200px; border-radius:50%; background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%); pointer-events:none;"></div>
+                                <div aria-hidden="true" style="position:absolute; bottom:-80px; left:30%; width:240px; height:240px; border-radius:50%; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); pointer-events:none;"></div>
 
-                                <button
-                                    class="aacx-w-full aacx-px-6 aacx-py-3 aacx-bg-aacx-primary-600 aacx-text-white aacx-rounded-xl aacx-font-bold aacx-shadow-xl hover:aacx-bg-aacx-primary-700 hover:aacx-shadow-2xl hover:-aacx-translate-y-1 aacx-transition-all aacx-duration-200">
-                                    <?php _e('Start Free Trial', 'allaccessible'); ?> →
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="aacx-text-center aacx-mt-6">
-                            <button
-                                onclick="aacbWizardBack(1)"
-                                class="aacx-inline-flex aacx-items-center aacx-px-4 aacx-py-2 aacx-text-aacx-slate-600 hover:aacx-text-aacx-slate-900 aacx-transition-colors aacx-font-medium aacx-rounded-lg hover:aacx-bg-aacx-slate-100">
-                                <svg class="aacx-w-4 aacx-h-4 aacx-mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                                </svg>
-                                <?php _e('Back', 'allaccessible'); ?>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Step 3: Email Capture (New Account) -->
-                    <div id="wizard-step-3" class="wizard-step aacx-hidden aacx-bg-white aacx-rounded-2xl aacx-shadow-2xl aacx-p-12">
-                        <h2 class="aacx-text-4xl aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-2 aacx-text-center">
-                            <span id="wizard-plan-title"><?php _e('Create Your Account', 'allaccessible'); ?></span>
-                        </h2>
-                        <p class="aacx-text-aacx-slate-600 aacx-text-center aacx-mb-10">
-                            <?php _e('We\'ll create a new account or link to your existing one', 'allaccessible'); ?>
-                        </p>
-
-                        <form id="aacb-wizard-form" class="aacx-max-w-md aacx-mx-auto">
-                            <input type="hidden" id="wizard-selected-tier" name="tier" value="">
-                            <input type="hidden" name="site_url" value="<?php echo esc_url($site_url); ?>">
-
-                            <div class="aacx-mb-6">
-                                <label class="aacx-block aacx-text-sm aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                                    <?php _e('Your Email', 'allaccessible'); ?>
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="wizard-email"
-                                    class="aacx-w-full aacx-px-4 aacx-py-3 aacx-border-2 aacx-border-aacx-slate-300 aacx-rounded-lg focus:aacx-border-aacx-primary-600 focus:aacx-outline-none aacx-transition-colors aacx-text-base"
-                                    value="<?php echo esc_attr($admin_email); ?>"
-                                    required
-                                    placeholder="you@example.com"
-                                >
-                            </div>
-
-                            <div class="aacx-bg-aacx-slate-50 aacx-border aacx-border-aacx-slate-200 aacx-rounded-lg aacx-p-4 aacx-mb-6">
-                                <div class="aacx-flex aacx-items-start">
-                                    <svg class="aacx-h-5 aacx-w-5 aacx-text-aacx-secondary-600 aacx-mr-2 aacx-mt-0.5 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                                    </svg>
-                                    <div class="aacx-text-sm aacx-text-aacx-slate-700">
-                                        <p id="wizard-benefits-free" class="aacx-hidden">
-                                            ✓ <?php _e('Free forever, no credit card', 'allaccessible'); ?><br>
-                                            ✓ <?php _e('Upgrade anytime', 'allaccessible'); ?><br>
-                                            ✓ <?php _e('Basic accessibility features', 'allaccessible'); ?>
-                                        </p>
-                                        <p id="wizard-benefits-trial" class="aacx-hidden">
-                                            ✓ <?php _e('7-day trial, no credit card', 'allaccessible'); ?><br>
-                                            ✓ <?php _e('Cancel anytime', 'allaccessible'); ?><br>
-                                            ✓ <?php _e('Full premium features', 'allaccessible'); ?>
-                                        </p>
+                                <div style="position:relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--aacx-space-4);">
+                                    <div style="display:flex; gap: var(--aacx-space-6); flex-wrap: wrap;">
+                                        <div>
+                                            <p style="font-size: 28px; font-weight: 800; margin: 0; line-height: 1; letter-spacing: -0.02em; color:#fff; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                                220M<span style="font-size:0.6em; opacity:0.85;">+</span>
+                                            </p>
+                                            <p style="font-size: 10.5px; color: rgba(255,255,255,0.85); margin: 4px 0 0; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">
+                                                <?php esc_html_e('Interactions / month', 'allaccessible'); ?>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 28px; font-weight: 800; margin: 0; line-height: 1; letter-spacing: -0.02em; color:#fff; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                                8.2<span style="font-size:0.7em; opacity:0.85;">M</span>
+                                            </p>
+                                            <p style="font-size: 10.5px; color: rgba(255,255,255,0.85); margin: 4px 0 0; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">
+                                                <?php esc_html_e('Visitors served / month', 'allaccessible'); ?>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 28px; font-weight: 800; margin: 0; line-height: 1; letter-spacing: -0.02em; color:#fff; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                                5<span style="font-size:0.55em; opacity:0.85; margin-left:4px;">yrs</span>
+                                            </p>
+                                            <p style="font-size: 10.5px; color: rgba(255,255,255,0.85); margin: 4px 0 0; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">
+                                                <?php esc_html_e('Protecting WordPress', 'allaccessible'); ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="display:flex; flex-wrap: wrap; gap: 6px;">
+                                        <span style="font-size:11px; font-weight:700; padding: 5px 10px; border-radius: 6px; background: rgba(255,255,255,0.18); color:#fff; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2);"><?php esc_html_e('WCAG 2.2', 'allaccessible'); ?></span>
+                                        <span style="font-size:11px; font-weight:700; padding: 5px 10px; border-radius: 6px; background: rgba(255,255,255,0.18); color:#fff; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2);"><?php esc_html_e('ADA', 'allaccessible'); ?></span>
+                                        <span style="font-size:11px; font-weight:700; padding: 5px 10px; border-radius: 6px; background: rgba(255,255,255,0.18); color:#fff; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2);"><?php esc_html_e('Section 508', 'allaccessible'); ?></span>
+                                        <span style="font-size:11px; font-weight:700; padding: 5px 10px; border-radius: 6px; background: rgba(255,255,255,0.18); color:#fff; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2);"><?php esc_html_e('EAA 2025', 'allaccessible'); ?></span>
                                     </div>
                                 </div>
                             </div>
 
-                            <button
-                                type="submit"
-                                id="wizard-submit-btn"
-                                class="aacx-w-full aacx-px-8 aacx-py-4 aacx-bg-aacx-primary-600 aacx-text-white aacx-rounded-xl aacx-font-bold aacx-text-lg aacx-shadow-xl hover:aacx-bg-aacx-primary-700 hover:aacx-shadow-2xl hover:-aacx-translate-y-1 aacx-transition-all aacx-duration-200">
-                                <span id="wizard-submit-text"><?php _e('Create Account', 'allaccessible'); ?></span>
-                            </button>
-
-                            <div id="wizard-loading" class="aacx-hidden aacx-text-center aacx-mt-4">
-                                <svg class="aacx-animate-spin aacx-h-8 aacx-w-8 aacx-text-aacx-primary-600 aacx-mx-auto" fill="none" viewBox="0 0 24 24">
-                                    <circle class="aacx-opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                    <path class="aacx-opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                </svg>
-                                <p class="aacx-text-aacx-slate-600 aacx-mt-2"><?php _e('Creating your account...', 'allaccessible'); ?></p>
+                            <!-- ─── 4. TRUST FOOTER ──────────────────────────────────── -->
+                            <div class="aacb-create-only" style="
+                                margin-top: var(--aacx-space-4);
+                                padding-top: var(--aacx-space-3);
+                                border-top: 1px solid var(--aacx-border);
+                                display:flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: var(--aacx-space-2);
+                                color: var(--aacx-text-muted);
+                                font-size: 12.5px;
+                            ">
+                                <div style="display:flex; flex-wrap: wrap; gap: var(--aacx-space-5);">
+                                    <span style="display:inline-flex; align-items:center; gap: var(--aacx-space-1);">
+                                        <span class="dashicons dashicons-yes-alt" aria-hidden="true" style="font-size:16px; color: var(--aacx-ok-600, #15803d);"></span>
+                                        <?php esc_html_e('Free to start', 'allaccessible'); ?>
+                                    </span>
+                                    <span style="display:inline-flex; align-items:center; gap: var(--aacx-space-1);">
+                                        <span class="dashicons dashicons-yes-alt" aria-hidden="true" style="font-size:16px; color: var(--aacx-ok-600, #15803d);"></span>
+                                        <?php esc_html_e('No credit card required', 'allaccessible'); ?>
+                                    </span>
+                                    <span style="display:inline-flex; align-items:center; gap: var(--aacx-space-1);">
+                                        <span class="dashicons dashicons-lock" aria-hidden="true" style="font-size:16px; color: var(--aacx-ok-600, #15803d);"></span>
+                                        <?php esc_html_e('Privacy-first — GDPR / CCPA', 'allaccessible'); ?>
+                                    </span>
+                                    <span style="display:inline-flex; align-items:center; gap: var(--aacx-space-1);">
+                                        <span class="dashicons dashicons-update" aria-hidden="true" style="font-size:16px; color: var(--aacx-ok-600, #15803d);"></span>
+                                        <?php esc_html_e('Cancel any time on paid plans', 'allaccessible'); ?>
+                                    </span>
+                                </div>
+                                <span style="font-size: var(--aacx-text-xs); color: var(--aacx-text-muted);">
+                                    <?php esc_html_e('Trusted on thousands of WordPress sites worldwide.', 'allaccessible'); ?>
+                                </span>
                             </div>
-
-                            <div id="wizard-error" class="aacx-hidden aacx-mt-4 aacx-p-4 aacx-bg-red-50 aacx-border aacx-border-red-200 aacx-rounded-lg aacx-text-red-700"></div>
-                        </form>
-
-                        <div class="aacx-text-center aacx-mt-6">
-                            <button
-                                onclick="aacbWizardBack(2)"
-                                class="aacx-inline-flex aacx-items-center aacx-px-4 aacx-py-2 aacx-text-aacx-slate-600 hover:aacx-text-aacx-slate-900 aacx-transition-colors aacx-font-medium aacx-rounded-lg hover:aacx-bg-aacx-slate-100">
-                                <svg class="aacx-w-4 aacx-h-4 aacx-mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                                </svg>
-                                <?php _e('Back', 'allaccessible'); ?>
-                            </button>
                         </div>
-                    </div>
+                    </section>
 
-                    <!-- Step 4: Link Existing Account -->
-                    <div id="wizard-step-4" class="wizard-step aacx-hidden aacx-bg-white aacx-rounded-2xl aacx-shadow-2xl aacx-p-12">
-                        <h2 class="aacx-text-4xl aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-2 aacx-text-center">
-                            <?php _e('Link Your Account', 'allaccessible'); ?>
-                        </h2>
-                        <p class="aacx-text-aacx-slate-600 aacx-text-center aacx-mb-10">
-                            <?php _e('Enter the email address associated with your AllAccessible account', 'allaccessible'); ?>
-                        </p>
-
-                        <form id="aacb-existing-account-form" class="aacx-max-w-md aacx-mx-auto">
-                            <input type="hidden" name="site_url" value="<?php echo esc_url($site_url); ?>">
-
-                            <div class="aacx-mb-6">
-                                <label class="aacx-block aacx-text-sm aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                                    <?php _e('Your Email', 'allaccessible'); ?>
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="existing-account-email"
-                                    class="aacx-w-full aacx-px-4 aacx-py-3 aacx-border-2 aacx-border-aacx-slate-300 aacx-rounded-lg focus:aacx-border-aacx-primary-600 focus:aacx-outline-none aacx-transition-colors aacx-text-base"
-                                    value="<?php echo esc_attr($admin_email); ?>"
-                                    required
-                                    placeholder="you@example.com"
-                                >
+                    <!-- =================================================
+                         Step 2: First scan (success state)
+                         ================================================= -->
+                    <section id="wizard-step-2" class="wizard-step aacx-v2__card aacx-v2__card--elevated" data-step="2" hidden>
+                        <div class="aacx-v2__card-header">
+                            <div>
+                                <div class="aacx-v2__page-eyebrow"><?php esc_html_e('Step 2 of 2', 'allaccessible'); ?></div>
+                                <h2 tabindex="-1" id="wizard-step-2-heading"><?php esc_html_e('Run your first scan', 'allaccessible'); ?></h2>
                             </div>
-
-                            <div class="aacx-bg-aacx-blue-50 aacx-border aacx-border-aacx-blue-200 aacx-rounded-lg aacx-p-4 aacx-mb-6">
-                                <div class="aacx-flex aacx-items-start">
-                                    <svg class="aacx-h-5 aacx-w-5 aacx-text-aacx-blue-600 aacx-mr-2 aacx-mt-0.5 aacx-flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
-                                    </svg>
-                                    <div class="aacx-text-sm aacx-text-aacx-slate-700">
-                                        <p>
-                                            ✓ <?php _e('We\'ll link this WordPress site to your existing account', 'allaccessible'); ?><br>
-                                            ✓ <?php _e('Your current tier and settings will be preserved', 'allaccessible'); ?><br>
-                                            ✓ <?php _e('The widget will activate with your existing configuration', 'allaccessible'); ?>
-                                        </p>
-                                    </div>
+                            <span class="aacx-v2__badge aacx-v2__badge--ok"><?php esc_html_e('Account ready', 'allaccessible'); ?></span>
+                        </div>
+                        <div class="aacx-v2__card-body">
+                            <div class="aacx-v2__banner aacx-v2__banner--ok" style="margin-bottom: var(--aacx-space-6);">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <strong><?php esc_html_e('Your account is set up.', 'allaccessible'); ?></strong>
+                                    <p style="margin-top: var(--aacx-space-1); font-size: var(--aacx-text-sm);">
+                                        <?php esc_html_e('The AllAccessible agents are ready to scan this site for accessibility issues.', 'allaccessible'); ?>
+                                    </p>
                                 </div>
                             </div>
 
-                            <button
-                                type="submit"
-                                id="existing-account-submit-btn"
-                                class="aacx-w-full aacx-px-8 aacx-py-4 aacx-bg-aacx-primary-600 aacx-text-white aacx-rounded-xl aacx-font-bold aacx-text-lg aacx-shadow-xl hover:aacx-bg-aacx-primary-700 hover:aacx-shadow-2xl hover:-aacx-translate-y-1 aacx-transition-all aacx-duration-200">
-                                <?php _e('Link Account', 'allaccessible'); ?> →
-                            </button>
-
-                            <div id="existing-account-loading" class="aacx-hidden aacx-text-center aacx-mt-4">
-                                <svg class="aacx-animate-spin aacx-h-8 aacx-w-8 aacx-text-aacx-primary-600 aacx-mx-auto" fill="none" viewBox="0 0 24 24">
-                                    <circle class="aacx-opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                    <path class="aacx-opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                </svg>
-                                <p class="aacx-text-aacx-slate-600 aacx-mt-2"><?php _e('Linking your account...', 'allaccessible'); ?></p>
-                            </div>
-
-                            <div id="existing-account-error" class="aacx-hidden aacx-mt-4 aacx-p-4 aacx-bg-red-50 aacx-border aacx-border-red-200 aacx-rounded-lg aacx-text-red-700"></div>
-                        </form>
-
-                        <div class="aacx-text-center aacx-mt-6">
-                            <button
-                                onclick="aacbWizardBack(2)"
-                                class="aacx-inline-flex aacx-items-center aacx-px-4 aacx-py-2 aacx-text-aacx-slate-600 hover:aacx-text-aacx-slate-900 aacx-transition-colors aacx-font-medium aacx-rounded-lg hover:aacx-bg-aacx-slate-100">
-                                <svg class="aacx-w-4 aacx-h-4 aacx-mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                                </svg>
-                                <?php _e('Back to Plan Selection', 'allaccessible'); ?>
-                            </button>
+                            <?php
+                            if (class_exists('AllAccessible_ScanTriggerPanel')) {
+                                AllAccessible_ScanTriggerPanel::render(array(
+                                    'context'          => 'wizard',
+                                    'heading'          => '', // step section already renders the H2 — avoid a duplicate
+                                    'description'      => __('AllAccessible automatically finds every published page on your site — no sitemap needed. Start your first scan below; you can re-run it any time from the Agentic Fixes page.', 'allaccessible'),
+                                    'success_redirect' => admin_url('admin.php?page=allaccessible'),
+                                    'compact'          => true,
+                                ));
+                            }
+                            ?>
                         </div>
-                    </div>
+                        <div class="aacx-v2__card-footer">
+                            <a href="<?php echo esc_url(admin_url('admin.php?page=allaccessible')); ?>" class="aacx-v2__btn aacx-v2__btn--ghost">
+                                <?php esc_html_e('Skip for now', 'allaccessible'); ?>
+                            </a>
+                            <a href="<?php echo esc_url(admin_url('admin.php?page=allaccessible')); ?>" class="aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--lg">
+                                <?php esc_html_e('Go to dashboard', 'allaccessible'); ?>
+                            </a>
+                        </div>
+                    </section>
 
                 </div>
             </div>
@@ -470,41 +494,97 @@ class AllAccessible_OnboardingWizard {
 
         <script>
         jQuery(document).ready(function($) {
-            let selectedTier = '';
-
-            // Navigation functions
-            window.aacbWizardNext = function(step) {
-                $('.wizard-step').addClass('aacx-hidden');
-                $('#wizard-step-' + step).removeClass('aacx-hidden');
+            // Map of wizard-step DOM id → stepper position.
+            var stepMap = {
+                1: 1, // Get started (email + plan picker)
+                2: 2  // First scan
             };
 
-            window.aacbWizardBack = function(step) {
-                $('.wizard-step').addClass('aacx-hidden');
-                $('#wizard-step-' + step).removeClass('aacx-hidden');
-            };
+            function updateStepper(stepperPos) {
+                $('#aacb-wizard-stepper .aacx-v2__step').each(function() {
+                    var pos = parseInt($(this).data('step'), 10);
+                    $(this).removeClass('aacx-v2__step--active aacx-v2__step--done');
+                    $(this).removeAttr('aria-current');
+                    if (pos < stepperPos) {
+                        $(this).addClass('aacx-v2__step--done');
+                    } else if (pos === stepperPos) {
+                        $(this).addClass('aacx-v2__step--active');
+                        $(this).attr('aria-current', 'step');
+                    }
+                });
+                // Connecting lines reflect completion
+                $('#aacb-wizard-stepper .aacx-v2__step-line').each(function(idx) {
+                    if (idx + 1 < stepperPos) {
+                        $(this).addClass('aacx-v2__step-line--done');
+                    } else {
+                        $(this).removeClass('aacx-v2__step-line--done');
+                    }
+                });
+            }
 
-            window.aacbWizardSelectPlan = function(tier) {
-                selectedTier = tier;
-                $('#wizard-selected-tier').val(tier);
+            function showStep(step) {
+                $('.wizard-step').attr('hidden', true);
+                var $target = $('#wizard-step-' + step);
+                $target.removeAttr('hidden');
 
-                // Update step 3 UI (email capture)
-                if (tier === 'free') {
-                    $('#wizard-plan-title').text('<?php esc_js(_e('Start Free Forever', 'allaccessible')); ?>');
-                    $('#wizard-submit-text').text('<?php esc_js(_e('Activate Free Account', 'allaccessible')); ?>');
-                    $('#wizard-benefits-free').removeClass('aacx-hidden');
-                    $('#wizard-benefits-trial').addClass('aacx-hidden');
-                } else {
-                    $('#wizard-plan-title').text('<?php esc_js(_e('Start Your 7-Day Trial', 'allaccessible')); ?>');
-                    $('#wizard-submit-text').text('<?php esc_js(_e('Activate Free Trial', 'allaccessible')); ?>');
-                    $('#wizard-benefits-trial').removeClass('aacx-hidden');
-                    $('#wizard-benefits-free').addClass('aacx-hidden');
+                // Update stepper
+                var stepperPos = stepMap[step] || 1;
+                updateStepper(stepperPos);
+
+                // Move focus to the new step's heading for screen-reader users
+                var $heading = $('#wizard-step-' + step + '-heading');
+                if ($heading.length) {
+                    setTimeout(function() { $heading.focus(); }, 50);
                 }
 
-                aacbWizardNext(3);
-            };
+                // Scroll to top of wizard
+                if (typeof window.scrollTo === 'function') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+
+            // Navigation functions (kept on window for inline onclick handlers)
+            window.aacbWizardNext = function(step) { showStep(step); };
+            window.aacbWizardBack = function(step) { showStep(step); };
+
+            // Resume: if an account is already linked for this site, skip the
+            // Get-started form and land on the first-scan step.
+            <?php if (get_option('aacb_accountID')) : ?>
+            showStep(2);
+            <?php endif; ?>
+            $(document).on('change', 'input[name="aacb_plan"]', function() {
+                var picked = $(this).val();
+                $('#wizard-selected-tier').val(picked);
+                $('.aacb-plan-option').each(function() {
+                    var $card = $(this);
+                    var isChecked = $card.find('input[name="aacb_plan"]').is(':checked');
+                    if (isChecked) {
+                        $card.addClass('aacb-plan-option--checked');
+                        $card.css({
+                            'border-color': '#7c3aed',
+                            'box-shadow': '0 0 0 3px rgba(124,58,237,0.10)',
+                            'background': 'linear-gradient(135deg, rgba(124,58,237,0.04) 0%, rgba(79,70,229,0.04) 100%)'
+                        });
+                    } else {
+                        $card.removeClass('aacb-plan-option--checked');
+                        $card.css({
+                            'border-color': 'var(--aacx-border)',
+                            'box-shadow': 'none',
+                            'background': 'var(--aacx-surface, #fff)'
+                        });
+                    }
+                });
+            });
+            // Make the whole card clickable (clicking the label already
+            // toggles the inner radio; this just keeps focus behavior tidy).
+            $(document).on('click', '.aacb-plan-option', function(e) {
+                if (e.target.tagName !== 'INPUT') {
+                    $(this).find('input[name="aacb_plan"]').prop('checked', true).trigger('change');
+                }
+            });
 
             window.aacbWizardSkip = function() {
-                if (confirm('<?php esc_js(_e('Are you sure? You can always set up your account later from the settings page.', 'allaccessible')); ?>')) {
+                if (confirm('<?php echo esc_js(__('Skip setup for now? You can finish any time from the settings page.', 'allaccessible')); ?>')) {
                     $.post(ajaxurl, {
                         action: 'aacb_skip_wizard',
                         nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
@@ -514,271 +594,306 @@ class AllAccessible_OnboardingWizard {
                 }
             };
 
-            // Form submission
+            // ─── UNIFIED FORM SUBMIT ──────────────────────────────────
+            // Submit the form; show a welcome-back vs account-created
+            // message based on the response.
+            function setStatus(html, variant) {
+                var bg = '#e0e7ff', color = '#3730a3', border = '#a5b4fc';
+                if (variant === 'error') { bg = '#fef2f2'; color = '#991b1b'; border = '#fca5a5'; }
+                if (variant === 'ok')    { bg = '#ecfdf5'; color = '#065f46'; border = '#6ee7b7'; }
+                if (variant === 'info')  { bg = '#eff6ff'; color = '#1e40af'; border = '#93c5fd'; }
+                $('#wizard-status')
+                    .css({
+                        display: 'block',
+                        background: bg,
+                        color: color,
+                        border: '1px solid ' + border,
+                        'border-radius': '8px',
+                        padding: '10px 12px',
+                        'font-size': '13px'
+                    })
+                    .html(html);
+            }
+            function actionCopy(action) {
+                if (action === 'created') {
+                    return <?php echo wp_json_encode(__('Account created. Provisioning your site…', 'allaccessible')); ?>;
+                }
+                if (action === 'linked-existing-account') {
+                    return <?php echo wp_json_encode(__('Welcome back. We linked this WordPress site to your account.', 'allaccessible')); ?>;
+                }
+                if (action === 'linked-existing-site') {
+                    return <?php echo wp_json_encode(__('Welcome back. This site was already on your account.', 'allaccessible')); ?>;
+                }
+                return <?php echo wp_json_encode(__('Connected.', 'allaccessible')); ?>;
+            }
+
             $('#aacb-wizard-form').on('submit', function(e) {
                 e.preventDefault();
 
-                const email = $('#wizard-email').val().trim();
-                const siteUrl = $('input[name="site_url"]').val();
-                const tier = $('#wizard-selected-tier').val();
-
-                if (!email || !tier) {
-                    $('#wizard-error').text('<?php esc_js(_e('Please fill in all required fields', 'allaccessible')); ?>').removeClass('aacx-hidden');
-                    return;
-                }
-
-                console.log('🚀 AllAccessible Wizard: Submitting...', {email, siteUrl, tier});
-
-                // Show loading
-                $('#wizard-submit-btn').prop('disabled', true);
-                $('#wizard-loading').removeClass('aacx-hidden');
-                $('#wizard-error').addClass('aacx-hidden');
-
-                // Call add-site API directly
-                $.ajax({
-                    url: 'https://app.allaccessible.org/api/add-site',
-                    method: 'POST',
-                    contentType: 'application/json',
-                    dataType: 'text', // Get as text first to handle CORS issues
-                    data: JSON.stringify({
-                        email: email,
-                        url: siteUrl,
-                        tier: tier,
-                        source: 'wordpress-v2'
-                    }),
-                    success: function(responseText) {
-                        console.log('✅ API Response (raw):', responseText);
-
-                        // Try to parse JSON
-                        let response;
-                        try {
-                            response = JSON.parse(responseText);
-                        } catch(e) {
-                            // Response might already be parsed by jQuery
-                            response = responseText;
-                        }
-
-                        console.log('✅ API Response (parsed):', response);
-
-                        if (response.error) {
-                            console.error('❌ API returned error:', response);
-                            $('#wizard-error').text(response.errors || '<?php esc_js(_e('An error occurred. Please try again.', 'allaccessible')); ?>').removeClass('aacx-hidden');
-                            $('#wizard-loading').addClass('aacx-hidden');
-                            $('#wizard-submit-btn').prop('disabled', false);
-                            return;
-                        }
-
-                        // Extract accountID (try multiple possible field names)
-                        const accountID = response.account || response.accountID || response.id || responseText;
-                        console.log('💾 Account ID to save:', accountID);
-
-                        if (!accountID) {
-                            console.error('❌ No account ID in response');
-                            $('#wizard-error').text('<?php esc_js(_e('Invalid response from server', 'allaccessible')); ?>').removeClass('aacx-hidden');
-                            $('#wizard-loading').addClass('aacx-hidden');
-                            $('#wizard-submit-btn').prop('disabled', false);
-                            return;
-                        }
-
-                        // Save accountID via WordPress AJAX (tier will be fetched from API)
-                        console.log('💾 Saving to WordPress...', {accountID});
-                        $.post(ajaxurl, {
-                            action: 'AllAccessible_save_settings',
-                            aacb_accountID: accountID,
-                            _wpnonce: '<?php echo wp_create_nonce('allaccessible_save_settings'); ?>'
-                        }, function(saveResponse) {
-                            console.log('✅ WordPress Save Response:', saveResponse);
-
-                            // Mark wizard as complete
-                            $.post(ajaxurl, {
-                                action: 'aacb_complete_wizard',
-                                nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
-                            }, function(wizardResponse) {
-                                console.log('✅ Wizard Complete Response:', wizardResponse);
-                                console.log('🎉 Success! Redirecting to dashboard...');
-
-                                // Redirect to AllAccessible dashboard
-                                window.location.href = '<?php echo admin_url('admin.php?page=allaccessible&wizard=complete'); ?>';
-                            });
-                        }).fail(function(xhr, status, error) {
-                            console.error('❌ WordPress save failed:', {xhr, status, error});
-                            $('#wizard-error').text('<?php esc_js(_e('Failed to save settings. Please try again.', 'allaccessible')); ?>').removeClass('aacx-hidden');
-                            $('#wizard-loading').addClass('aacx-hidden');
-                            $('#wizard-submit-btn').prop('disabled', false);
-                        });
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('❌ API Error:', {xhr, status, error, responseText: xhr.responseText});
-
-                        // Even if CORS blocks the response, the API might still work
-                        // Try to extract accountID from response text
-                        if (xhr.responseText) {
-                            console.log('⚠️  CORS issue detected, but response exists. Trying to parse...');
-                            try {
-                                const response = JSON.parse(xhr.responseText);
-                                const accountID = response.account || response.accountID || response.id || xhr.responseText;
-                                if (accountID && accountID.length > 5) {
-                                    console.log('✅ Found accountID despite CORS:', accountID);
-                                    // Continue with saving (tier will be fetched from API)
-                                    $.post(ajaxurl, {
-                                        action: 'AllAccessible_save_settings',
-                                        aacb_accountID: accountID,
-                                        _wpnonce: '<?php echo wp_create_nonce('allaccessible_save_settings'); ?>'
-                                    }, function() {
-                                        $.post(ajaxurl, {
-                                            action: 'aacb_complete_wizard',
-                                            nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
-                                        }, function() {
-                                            window.location.href = '<?php echo admin_url('admin.php?page=allaccessible&wizard=complete'); ?>';
-                                        });
-                                    });
-                                    return;
-                                }
-                            } catch(e) {
-                                console.error('Failed to parse error response:', e);
-                            }
-                        }
-
-                        let errorMsg = '<?php esc_js(_e('Could not connect to AllAccessible. Please try again.', 'allaccessible')); ?>';
-                        if (xhr.responseJSON && xhr.responseJSON.errors) {
-                            errorMsg = xhr.responseJSON.errors;
-                        }
-                        $('#wizard-error').text(errorMsg).removeClass('aacx-hidden');
-                        $('#wizard-loading').addClass('aacx-hidden');
-                        $('#wizard-submit-btn').prop('disabled', false);
-                    }
-                });
-            });
-
-            // Existing account form submission (Step 4) - uses same add-site API
-            $('#aacb-existing-account-form').on('submit', function(e) {
-                e.preventDefault();
-
-                const email = $('#existing-account-email').val().trim();
-                const siteUrl = $('input[name="site_url"]', this).val();
+                var $form = $(this);
+                var email = $form.find('#wizard-email').val().trim();
+                var siteUrl = $form.find('input[name="site_url"]').val();
+                var tier = $('#wizard-selected-tier').val() || 'trial';
 
                 if (!email) {
-                    $('#existing-account-error').text('<?php esc_js(_e('Please enter your email address', 'allaccessible')); ?>').removeClass('aacx-hidden');
+                    setStatus('<?php echo esc_js(__('Please enter your email address.', 'allaccessible')); ?>', 'error');
                     return;
                 }
 
-                console.log('🔗 AllAccessible: Linking existing account via add-site API:', {email, siteUrl});
+                $('#wizard-submit-btn').prop('disabled', true);
+                $('#wizard-submit-text').text('<?php echo esc_js(__('Setting things up…', 'allaccessible')); ?>');
+                setStatus('<?php echo esc_js(__('Connecting to AllAccessible…', 'allaccessible')); ?>', 'info');
 
-                // Show loading
-                $('#existing-account-submit-btn').prop('disabled', true);
-                $('#existing-account-loading').removeClass('aacx-hidden');
-                $('#existing-account-error').addClass('aacx-hidden');
-
-                // Call add-site API - backend will link to existing account if email exists
                 $.ajax({
                     url: 'https://app.allaccessible.org/api/add-site',
                     method: 'POST',
                     contentType: 'application/json',
                     dataType: 'text',
+                    headers: { 'Accept': 'application/json' },
                     data: JSON.stringify({
-                        email: email,
-                        url: siteUrl,
-                        tier: 'existing', // Signal this is linking existing account
-                        source: 'wordpress-v2-existing'
+                        email:  email,
+                        url:    siteUrl,
+                        tier:   tier,
+                        source: 'wordpress-v2-unified'
                     }),
-                    success: function(responseText) {
-                        console.log('✅ API Response (raw):', responseText);
+                    success: function(responseText, _status, xhr) {
+                        var response = null;
+                        try { response = JSON.parse(responseText); } catch (err) { response = null; }
 
-                        let response;
-                        try {
-                            response = JSON.parse(responseText);
-                        } catch(e) {
-                            response = responseText;
+                        // Normalize older responses that return a bare string.
+                        var accountID = null;
+                        var action = 'created';
+                        if (response && typeof response === 'object') {
+                            if (response.error) {
+                                setStatus(response.error || '<?php echo esc_js(__('Something went wrong. Please try again.', 'allaccessible')); ?>', 'error');
+                                $('#wizard-submit-btn').prop('disabled', false);
+                                $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
+                                return;
+                            }
+                            accountID = response.accountID || response.account || response.id;
+                            action = response.action || (response.created ? 'created' : 'linked-existing-account');
+                        } else if (typeof responseText === 'string' && responseText.length > 4) {
+                            accountID = responseText.replace(/^"+|"+$/g, '').trim();
                         }
-
-                        console.log('✅ API Response (parsed):', response);
-
-                        if (response.error) {
-                            console.error('❌ API returned error:', response);
-                            $('#existing-account-error').text(response.errors || '<?php esc_js(_e('Could not find an account with this email. Please check and try again.', 'allaccessible')); ?>').removeClass('aacx-hidden');
-                            $('#existing-account-loading').addClass('aacx-hidden');
-                            $('#existing-account-submit-btn').prop('disabled', false);
-                            return;
-                        }
-
-                        // Extract accountID
-                        const accountID = response.account || response.accountID || response.id || responseText;
-                        console.log('💾 Account ID to save:', accountID);
 
                         if (!accountID) {
-                            console.error('❌ No account ID in response');
-                            $('#existing-account-error').text('<?php esc_js(_e('Invalid response from server', 'allaccessible')); ?>').removeClass('aacx-hidden');
-                            $('#existing-account-loading').addClass('aacx-hidden');
-                            $('#existing-account-submit-btn').prop('disabled', false);
+                            setStatus('<?php echo esc_js(__('We received an unexpected response. Please try again.', 'allaccessible')); ?>', 'error');
+                            $('#wizard-submit-btn').prop('disabled', false);
+                            $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
                             return;
                         }
 
-                        // Save accountID to WordPress (tier will be fetched from API)
+                        setStatus(actionCopy(action), 'ok');
+
+                        // Save accountID + mark wizard complete + advance.
                         $.post(ajaxurl, {
                             action: 'AllAccessible_save_settings',
                             aacb_accountID: accountID,
                             _wpnonce: '<?php echo wp_create_nonce('allaccessible_save_settings'); ?>'
-                        }, function(saveResponse) {
-                            console.log('✅ WordPress Save Response:', saveResponse);
-
-                            // Mark wizard as complete
+                        }).done(function() {
                             $.post(ajaxurl, {
                                 action: 'aacb_complete_wizard',
                                 nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
-                            }, function() {
-                                console.log('🎉 Existing account linked! Redirecting...');
-                                window.location.href = '<?php echo admin_url('admin.php?page=allaccessible&wizard=complete'); ?>';
+                            }).done(function() {
+                                setTimeout(function() { showStep(2); }, 600);
                             });
-                        }).fail(function(xhr, status, error) {
-                            console.error('❌ WordPress save failed:', {xhr, status, error});
-                            $('#existing-account-error').text('<?php esc_js(_e('Failed to save settings. Please try again.', 'allaccessible')); ?>').removeClass('aacx-hidden');
-                            $('#existing-account-loading').addClass('aacx-hidden');
-                            $('#existing-account-submit-btn').prop('disabled', false);
+                        }).fail(function() {
+                            setStatus('<?php echo esc_js(__('We could not save your settings. Please try again.', 'allaccessible')); ?>', 'error');
+                            $('#wizard-submit-btn').prop('disabled', false);
+                            $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
                         });
                     },
-                    error: function(xhr, status, error) {
-                        console.error('❌ API Error:', {xhr, status, error});
-
-                        // Try to handle CORS issues
+                    error: function(xhr) {
+                        // Some browser/server combinations land here even with
+                        // a 200 body. Replay the success-path parse.
                         if (xhr.responseText) {
-                            console.log('⚠️  CORS issue detected, trying to parse response...');
                             try {
-                                const response = JSON.parse(xhr.responseText);
-                                const accountID = response.account || response.accountID || response.id || xhr.responseText;
-                                if (accountID && accountID.length > 5) {
-                                    console.log('✅ Found accountID despite CORS:', accountID);
+                                var response = JSON.parse(xhr.responseText);
+                                var accountID = response.accountID || response.account || response.id;
+                                if (accountID && (accountID + '').length > 4) {
                                     $.post(ajaxurl, {
                                         action: 'AllAccessible_save_settings',
                                         aacb_accountID: accountID,
                                         _wpnonce: '<?php echo wp_create_nonce('allaccessible_save_settings'); ?>'
-                                    }, function() {
+                                    }).done(function() {
                                         $.post(ajaxurl, {
                                             action: 'aacb_complete_wizard',
                                             nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
-                                        }, function() {
-                                            window.location.href = '<?php echo admin_url('admin.php?page=allaccessible&wizard=complete'); ?>';
-                                        });
+                                        }).done(function() { setTimeout(function() { showStep(2); }, 600); });
                                     });
                                     return;
                                 }
-                            } catch(e) {
-                                console.error('Failed to parse error response:', e);
-                            }
+                            } catch (err) { /* fall through */ }
                         }
-
-                        let errorMsg = '<?php esc_js(_e('Could not connect to AllAccessible. Please try again.', 'allaccessible')); ?>';
-                        if (xhr.responseJSON && xhr.responseJSON.errors) {
-                            errorMsg = xhr.responseJSON.errors;
+                        var msg = '<?php echo esc_js(__('We could not reach AllAccessible. Please try again.', 'allaccessible')); ?>';
+                        if (xhr.responseJSON && xhr.responseJSON.error) {
+                            msg = xhr.responseJSON.error;
                         }
-                        $('#existing-account-error').text(errorMsg).removeClass('aacx-hidden');
-                        $('#existing-account-loading').addClass('aacx-hidden');
-                        $('#existing-account-submit-btn').prop('disabled', false);
+                        setStatus(msg, 'error');
+                        $('#wizard-submit-btn').prop('disabled', false);
+                        $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
                     }
                 });
             });
+
+            // ─── SITE + EMAIL PRECHECK ────────────────────────────────
+            var _siteUrl              = <?php echo wp_json_encode($site_url); ?>;
+            var _precheckTimer        = null;
+            var _precheckLastKey      = '';
+            var _precheckCurrentState = 'create';
+            var _autoAttachAccountID  = '';   // populated when state === 'auto'
+
+            function setState(state, ctx) {
+                ctx = ctx || {};
+                if (state === _precheckCurrentState && state !== 'auto') return;
+                _precheckCurrentState = state;
+
+                if (state === 'auto') {
+                    _autoAttachAccountID = ctx.accountID || '';
+                    $('#wizard-step-1-heading').text('<?php echo esc_js(__('Welcome back', 'allaccessible')); ?>');
+                    $('.aacb-create-only').hide();
+                    $('#wizard-email').closest('.aacx-v2__field').stop(true, true).slideUp(150);
+                    $('#wizard-plan-section').stop(true, true).slideUp(150);
+                    $('#wizard-pending-note').stop(true, true).slideUp(100);
+                    // Populate + show the confirmation card.
+                    var siteHost = '';
+                    try { siteHost = (new URL(_siteUrl)).hostname; } catch (e) { siteHost = _siteUrl; }
+                    var matchedEmail = ($('#wizard-email').val() || '').trim();
+                    $('#wizard-auto-confirm-detail').text(
+                        '<?php echo esc_js(__('Linking', 'allaccessible')); ?> ' + siteHost +
+                        ' <?php echo esc_js(__('to', 'allaccessible')); ?> ' + matchedEmail
+                    );
+                    $('#wizard-auto-confirm').stop(true, true).slideDown(150);
+                    $('#wizard-submit-text').text(
+                        '<?php echo esc_js(__('Reconnect this site', 'allaccessible')); ?> →'
+                    );
+                    return;
+                }
+
+                // Non-auto states: restore the create-only marketing content
+                // + show the email field.
+                $('.aacb-create-only').show();
+                $('#wizard-auto-confirm').stop(true, true).slideUp(100);
+                $('#wizard-email').closest('.aacx-v2__field').stop(true, true).slideDown(150);
+
+                if (state === 'link') {
+                    _autoAttachAccountID = '';
+                    $('#wizard-step-1-heading').text('<?php echo esc_js(__('Welcome back', 'allaccessible')); ?>');
+                    $('#wizard-email-help').text(
+                        '<?php echo esc_js(__('We will link this WordPress site to your existing AllAccessible account.', 'allaccessible')); ?>'
+                    );
+                    $('#wizard-plan-section').stop(true, true).slideUp(150);
+                    $('#wizard-pending-note').stop(true, true).slideUp(100);
+                    $('#wizard-submit-text').text(
+                        '<?php echo esc_js(__('Connect this site', 'allaccessible')); ?> →'
+                    );
+                } else if (state === 'link-pending') {
+                    // This site is on another account. The plugin works
+                    // locally right away; dashboard visibility waits for the
+                    // existing owner to approve access.
+                    _autoAttachAccountID = '';
+                    $('#wizard-step-1-heading').text('<?php echo esc_js(__('Request access to this site', 'allaccessible')); ?>');
+                    $('#wizard-email-help').text(
+                        '<?php echo esc_js(__('This site is on another AllAccessible account. Enter your email to request access.', 'allaccessible')); ?>'
+                    );
+                    $('#wizard-plan-section').stop(true, true).slideUp(150);
+                    $('#wizard-pending-note').stop(true, true).slideDown(150);
+                    $('#wizard-submit-text').text(
+                        '<?php echo esc_js(__('Request access', 'allaccessible')); ?> →'
+                    );
+                } else {
+                    // 'create' (default)
+                    _autoAttachAccountID = '';
+                    $('#wizard-step-1-heading').text(
+                        '<?php echo esc_js(__('Welcome to AllAccessible', 'allaccessible')); ?>'
+                    );
+                    $('#wizard-email-help').text(
+                        '<?php echo esc_js(__("We'll create a new account or link your existing one — same email, either way.", 'allaccessible')); ?>'
+                    );
+                    $('#wizard-plan-section').stop(true, true).slideDown(150);
+                    $('#wizard-pending-note').stop(true, true).slideUp(100);
+                    $('#wizard-submit-text').text(
+                        '<?php echo esc_js(__('Continue', 'allaccessible')); ?> →'
+                    );
+                }
+            }
+
+            function runPrecheck(email) {
+                email = (email || '').trim().toLowerCase();
+                if (!email || email.indexOf('@') === -1 || email.indexOf('.') === -1) return;
+                var cacheKey = _siteUrl + '|' + email;
+                if (cacheKey === _precheckLastKey) return;
+                _precheckLastKey = cacheKey;
+
+                $.ajax({
+                    url: 'https://app.allaccessible.org/api/check-site-account',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    dataType: 'json',
+                    data: JSON.stringify({ url: _siteUrl, email: email }),
+                    timeout: 3000
+                }).done(function(resp) {
+                    if (!resp || resp.error) { setState('create'); return; }
+                    if (resp.site_exists && resp.user_matches && resp.account_id) {
+                        setState('auto', { accountID: resp.account_id });
+                    } else if (resp.site_exists && !resp.user_matches) {
+                        setState('link-pending');
+                    } else if (resp.user_exists) {
+                        setState('link');
+                    } else {
+                        setState('create');
+                    }
+                }).fail(function() { setState('create'); });
+            }
+
+            $('#wizard-email').on('blur change', function() {
+                var email = $(this).val().trim().toLowerCase();
+                clearTimeout(_precheckTimer);
+                _precheckTimer = setTimeout(function() { runPrecheck(email); }, 350);
+            });
+            // Fire on load with the pre-filled admin email — typical fresh
+            // install case, lets us land directly in 'auto' state for
+            // returning customers reinstalling on the same WP.
+            setTimeout(function() {
+                var prefilled = ($('#wizard-email').val() || '').trim().toLowerCase();
+                if (prefilled) runPrecheck(prefilled);
+            }, 500);
+
+            // Reconnect short-circuit: when already matched, attach the
+            // existing account directly without re-submitting the form.
+            $('#aacb-wizard-form').on('submit', function(e) {
+                if (_precheckCurrentState !== 'auto' || !_autoAttachAccountID) return;
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                setStatus('<?php echo esc_js(__('Reconnecting…', 'allaccessible')); ?>', 'info');
+                $('#wizard-submit-btn').prop('disabled', true);
+                $.post(ajaxurl, {
+                    action: 'AllAccessible_save_settings',
+                    aacb_accountID: _autoAttachAccountID,
+                    _wpnonce: '<?php echo wp_create_nonce('allaccessible_save_settings'); ?>'
+                }).done(function() {
+                    $.post(ajaxurl, {
+                        action: 'aacb_complete_wizard',
+                        nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
+                    }).done(function() {
+                        setStatus('<?php echo esc_js(__('Reconnected. Provisioning…', 'allaccessible')); ?>', 'ok');
+                        setTimeout(function() { showStep(2); }, 500);
+                    });
+                }).fail(function() {
+                    setStatus('<?php echo esc_js(__('We could not save your settings. Please try again.', 'allaccessible')); ?>', 'error');
+                    $('#wizard-submit-btn').prop('disabled', false);
+                });
+            });
+
+            // Initialize stepper on load
+            updateStepper(1);
         });
         </script>
         <?php
+        // Print the scan-trigger JS for step 5 (idempotent — printed once per page).
+        if (class_exists('AllAccessible_ScanTriggerPanel')) {
+            AllAccessible_ScanTriggerPanel::enqueue_inline_script();
+        }
     }
 
     /**
@@ -792,6 +907,12 @@ class AllAccessible_OnboardingWizard {
         }
 
         update_option('aacb_wizard_completed', true);
+
+        // Wizard finish
+        if (class_exists('AllAccessible_PostLinkBackfill')) {
+            AllAccessible_PostLinkBackfill::on_activate();
+        }
+
         wp_send_json_success();
     }
 
@@ -806,6 +927,12 @@ class AllAccessible_OnboardingWizard {
         }
 
         update_option('aacb_wizard_completed', true);
+
+        // Wizard finish
+        if (class_exists('AllAccessible_PostLinkBackfill')) {
+            AllAccessible_PostLinkBackfill::on_activate();
+        }
+
         wp_send_json_success();
     }
 }

@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AllAccessible\n"
-"POT-Creation-Date: 2023-05-11 15:26-0400\n"
-"PO-Revision-Date: 2023-05-11 15:26-0400\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: support@allaccessible.org\n"
+"POT-Creation-Date: 2026-06-03 13:39-0400\n"
+"PO-Revision-Date: 2026-06-03 13:40-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -11,378 +12,4006 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: allaccessible.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: .\n"
 
-#: allaccessible.php:52
-msgid "Accessibility"
-msgstr "Приступачности"
+#: allaccessible.php:166
+msgid "Account settings saved successfully"
+msgstr "Podešavanja naloga su uspešno sačuvana"
 
-#: allaccessible.php:291
-msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+#: allaccessible.php:200
+msgid "Unauthorized access"
+msgstr "Neovlašćen pristup"
+
+#: allaccessible.php:221
+msgid "Plugin data has been reset successfully"
+msgstr "Подаци додатка су успешно ресетовани"
+
+#: allaccessible.php:235 allaccessible.php:323 allaccessible.php:404
+#: inc/SettingsPage.php:1894
+msgid "Unauthorized"
+msgstr "Neovlašćeno"
+
+#: allaccessible.php:363
+msgid "Still finishing setup — wait a few seconds and try again."
 msgstr ""
-"Активирајте АллАццессибле Премиум да бисте откључали Аи функције "
-"приступачности."
+"Подешавање се још увек довршава — сачекајте неколико секунди и покушајте "
+"поново."
 
-#: allaccessible.php:291
-msgid "Click Here"
-msgstr "Кликни овде"
+#: allaccessible.php:368
+msgid "Scan queued. Results appear in 2-5 minutes."
+msgstr "Скенирање је стављено у ред. Резултати ће се појавити за 2–5 минута."
 
-#: inc/AllAccessibleDeactivationForm.php:29
-msgid "AllAccessible Deactivation"
-msgstr "АллАццессибле Деактивација"
+#: inc/AdminBar.php:64
+msgid "Scan this page now"
+msgstr "Skeniraj ovu stranicu sada"
 
-#: inc/AllAccessibleDeactivationForm.php:30
+#: inc/AdminBar.php:77
+msgid "View page report"
+msgstr "Prikaži izveštaj stranice"
+
+#: inc/AdminBar.php:97 inc/SettingsPage.php:48 inc/SettingsPage.php:49
+msgid "Dashboard"
+msgstr "Контролна табла"
+
+#: inc/AdminBar.php:103
+msgid "Audits & Fixes"
+msgstr "Revizije i ispravke"
+
+#: inc/AdminBar.php:109 inc/WidgetCustomizer.php:190
+msgid "Settings"
+msgstr "Подешавања"
+
+#: inc/AdminBar.php:116 inc/AgenticFixesPage.php:162
+#: inc/DashboardLayout.php:290 inc/SettingsPage.php:389
+msgid "Open dashboard"
+msgstr "Отвори контролну таблу"
+
+#: inc/AdminBar.php:172 inc/EditorMetaBox.php:440
+msgid "Scanning page…"
+msgstr "Skeniranje stranice…"
+
+#: inc/AdminBar.php:173
+#, php-format
+msgid "Scan complete. Score: %d%%"
+msgstr "Skeniranje završeno. Ocena: %d%%"
+
+#: inc/AdminBar.php:174
+msgid "Scan complete. Refresh to see updated score."
+msgstr "Skeniranje je završeno. Osvežite da biste videli ažurirani rezultat."
+
+#: inc/AdminBar.php:175 inc/EditorMetaBox.php:444
+msgid "Scan failed. Try again or check the dashboard."
+msgstr ""
+"Skeniranje nije uspelo. Pokušajte ponovo ili proverite kontrolnu tablu."
+
+#: inc/AdminBar.php:176
+msgid "Scan is still running — check back in a minute."
+msgstr "Skeniranje je i dalje u toku — proverite ponovo za minut."
+
+#: inc/AdminBar.php:177
+msgid "Could not start scan: "
+msgstr "Nije moguće pokrenuti skeniranje: "
+
+#: inc/AdminBar.php:178 inc/EditorMetaBox.php:446
+msgid "Scan rate limit reached. Try again later."
+msgstr ""
+"Dostignuto je ograničenje učestalosti skeniranja. Pokušaj ponovo kasnije."
+
+#: inc/AdminBar.php:341 inc/AdminBar.php:375
+msgid "Permission denied."
+msgstr "Pristup odbijen."
+
+#: inc/AdminBar.php:347
+msgid "Missing page URL."
+msgstr "Nedostaje URL stranice."
+
+#: inc/AdminBar.php:382
+msgid "Missing job ID."
+msgstr "Nedostaje ID posla."
+
+#: inc/AgenticFixes/Labels.php:23
+msgid "Missing image description"
+msgstr "Nedostaje opis slike"
+
+#: inc/AgenticFixes/Labels.php:24
+msgid "Button without label"
+msgstr "Dugme bez oznake"
+
+#: inc/AgenticFixes/Labels.php:25
+msgid "Form field without label"
+msgstr "Polje obrasca bez oznake"
+
+#: inc/AgenticFixes/Labels.php:26
+msgid "Missing page language"
+msgstr "Nedostaje jezik stranice"
+
+#: inc/AgenticFixes/Labels.php:27
+msgid "Link without text"
+msgstr "Veza bez teksta"
+
+#: inc/AgenticFixes/Labels.php:28
+msgid "ARIA labeling issue"
+msgstr "Problem sa ARIA označavanjem"
+
+#: inc/AgenticFixes/Labels.php:29
+msgid "Heading hierarchy issue"
+msgstr "Problem u hijerarhiji naslova"
+
+#: inc/AgenticFixes/Labels.php:30 inc/AgenticFixes/Labels.php:33
+msgid "Other accessibility issue"
+msgstr "Drugi problem pristupačnosti"
+
+#: inc/AgenticFixes/Labels.php:44 inc/AgenticFixesPage.php:241
+msgid "Pending review"
+msgstr "Na čekanju za pregled"
+
+#: inc/AgenticFixes/Labels.php:45
+msgid "Approved"
+msgstr "Одобрена"
+
+#: inc/AgenticFixes/Labels.php:46
+msgid "Active"
+msgstr "Активно"
+
+#: inc/AgenticFixes/Labels.php:47 inc/AgenticFixesPage.php:249
+msgid "Reverted"
+msgstr "Vraćeno"
+
+#: inc/AgenticFixes/Labels.php:61 inc/AgenticFixes/Labels.php:67
+#: inc/AgenticFixesPage.php:347 inc/AgenticFixesPage.php:452
+msgid "AllAccessible agents"
+msgstr "Svi AllAccessible agenti"
+
+#: inc/AgenticFixes/Labels.php:62
+msgid "Automated rule check"
+msgstr "Automatska provera pravila"
+
+#: inc/AgenticFixes/Labels.php:63
+msgid "Compliance scanner"
+msgstr "Skener usklađenosti"
+
+#: inc/AgenticFixes/Labels.php:64
+msgid "Manual review"
+msgstr "Ručni pregled"
+
+#: inc/AgenticFixes/Labels.php:80
+msgid "Suggested alt text for image"
+msgstr "Predloženi alternativni tekst za sliku"
+
+#: inc/AgenticFixes/Labels.php:81
+msgid "Suggested label for button"
+msgstr "Predložena oznaka za dugme"
+
+#: inc/AgenticFixes/Labels.php:82
+msgid "Suggested label for form field"
+msgstr "Predložena oznaka za polje obrasca"
+
+#: inc/AgenticFixes/Labels.php:83
+msgid "Set page language attribute"
+msgstr "Postavite atribut jezika stranice"
+
+#: inc/AgenticFixes/Labels.php:84
+msgid "Suggested text for link"
+msgstr "Predloženi tekst za vezu"
+
+#: inc/AgenticFixes/Labels.php:85
+msgid "Correct ARIA role assignment"
+msgstr "Ispravna dodela ARIA uloge"
+
+#: inc/AgenticFixes/Labels.php:86
+msgid "Fix heading order"
+msgstr "Ispravite redosled naslova"
+
+#: inc/AgenticFixes/Labels.php:87 inc/AgenticFixes/Labels.php:90
+msgid "Accessibility fix suggested"
+msgstr "Predložena ispravka pristupačnosti"
+
+#: inc/AgenticFixes/Labels.php:122
+msgid "Non-text Content"
+msgstr "Нетекстуални садржај"
+
+#: inc/AgenticFixes/Labels.php:123
+msgid "Audio-only and Video-only (Prerecorded)"
+msgstr "Samo audio i samo video (unapred snimljeno)"
+
+#: inc/AgenticFixes/Labels.php:124
+msgid "Captions (Prerecorded)"
+msgstr "Титлови (унапред снимљено)"
+
+#: inc/AgenticFixes/Labels.php:125
+msgid "Audio Description or Media Alternative (Prerecorded)"
+msgstr "Аудио опис или алтернатива за медије (унапред снимљено)"
+
+#: inc/AgenticFixes/Labels.php:126
+msgid "Captions (Live)"
+msgstr "Титлови (уживо)"
+
+#: inc/AgenticFixes/Labels.php:127
+msgid "Audio Description (Prerecorded)"
+msgstr "Аудио опис (унапред снимљено)"
+
+#: inc/AgenticFixes/Labels.php:128
+msgid "Sign Language (Prerecorded)"
+msgstr "Знаковни језик (унапред снимљено)"
+
+#: inc/AgenticFixes/Labels.php:129
+msgid "Extended Audio Description (Prerecorded)"
+msgstr "Prošireni audio-opis (unapred snimljeno)"
+
+#: inc/AgenticFixes/Labels.php:130
+msgid "Media Alternative (Prerecorded)"
+msgstr "Алтернатива за медије (унапред снимљено)"
+
+#: inc/AgenticFixes/Labels.php:131
+msgid "Audio-only (Live)"
+msgstr "Само аудио (уживо)"
+
+#: inc/AgenticFixes/Labels.php:132
+msgid "Info and Relationships"
+msgstr "Информације и односи"
+
+#: inc/AgenticFixes/Labels.php:133
+msgid "Meaningful Sequence"
+msgstr "Смислени редослед"
+
+#: inc/AgenticFixes/Labels.php:134
+msgid "Sensory Characteristics"
+msgstr "Senzorne karakteristike"
+
+#: inc/AgenticFixes/Labels.php:135
+msgid "Orientation"
+msgstr "Orijentacija"
+
+#: inc/AgenticFixes/Labels.php:136
+msgid "Identify Input Purpose"
+msgstr "Identifikujte svrhu unosa"
+
+#: inc/AgenticFixes/Labels.php:137
+msgid "Identify Purpose"
+msgstr "Identifikujte svrhu"
+
+#: inc/AgenticFixes/Labels.php:138
+msgid "Use of Color"
+msgstr "Upotreba boje"
+
+#: inc/AgenticFixes/Labels.php:139
+msgid "Audio Control"
+msgstr "Kontrola zvuka"
+
+#: inc/AgenticFixes/Labels.php:140
+msgid "Contrast (Minimum)"
+msgstr "Kontrast (minimum)"
+
+#: inc/AgenticFixes/Labels.php:141
+msgid "Resize Text"
+msgstr "Promena veličine teksta"
+
+#: inc/AgenticFixes/Labels.php:142
+msgid "Images of Text"
+msgstr "Slike teksta"
+
+#: inc/AgenticFixes/Labels.php:143
+msgid "Contrast (Enhanced)"
+msgstr "Kontrast (poboljšan)"
+
+#: inc/AgenticFixes/Labels.php:144
+msgid "Low or No Background Audio"
+msgstr "Nizak ili bez pozadinskog zvuka"
+
+#: inc/AgenticFixes/Labels.php:145
+msgid "Visual Presentation"
+msgstr "Vizuelna prezentacija"
+
+#: inc/AgenticFixes/Labels.php:146
+msgid "Images of Text (No Exception)"
+msgstr "Slike teksta (bez izuzetka)"
+
+#: inc/AgenticFixes/Labels.php:147
+msgid "Reflow"
+msgstr "Prelom"
+
+#: inc/AgenticFixes/Labels.php:148
+msgid "Non-text Contrast"
+msgstr "Kontrast netekstualnih elemenata"
+
+#: inc/AgenticFixes/Labels.php:149
+msgid "Text Spacing"
+msgstr "Razmak u tekstu"
+
+#: inc/AgenticFixes/Labels.php:150
+msgid "Content on Hover or Focus"
+msgstr "Sadržaj pri prelasku mišem ili fokusu"
+
+#: inc/AgenticFixes/Labels.php:152
+msgid "Keyboard"
+msgstr "Tastatura"
+
+#: inc/AgenticFixes/Labels.php:153
+msgid "No Keyboard Trap"
+msgstr "Bez zamke za tastaturu"
+
+#: inc/AgenticFixes/Labels.php:154
+msgid "Keyboard (No Exception)"
+msgstr "Tastatura (bez izuzetka)"
+
+#: inc/AgenticFixes/Labels.php:155
+msgid "Character Key Shortcuts"
+msgstr "Prečice na tasterima sa znakovima"
+
+#: inc/AgenticFixes/Labels.php:156
+msgid "Timing Adjustable"
+msgstr "Podesivo vremensko ograničenje"
+
+#: inc/AgenticFixes/Labels.php:157
+msgid "Pause, Stop, Hide"
+msgstr "Pauziraj, zaustavi, sakrij"
+
+#: inc/AgenticFixes/Labels.php:158
+msgid "No Timing"
+msgstr "Bez vremenskog ograničenja"
+
+#: inc/AgenticFixes/Labels.php:159
+msgid "Interruptions"
+msgstr "Prekidi"
+
+#: inc/AgenticFixes/Labels.php:160
+msgid "Re-authenticating"
+msgstr "Ponovna autentifikacija"
+
+#: inc/AgenticFixes/Labels.php:161
+msgid "Timeouts"
+msgstr "Istek vremena"
+
+#: inc/AgenticFixes/Labels.php:162
+msgid "Three Flashes or Below Threshold"
+msgstr "Три блица или испод прага"
+
+#: inc/AgenticFixes/Labels.php:163
+msgid "Three Flashes"
+msgstr "Три трептаја"
+
+#: inc/AgenticFixes/Labels.php:164
+msgid "Animation from Interactions"
+msgstr "Анимација из интеракција"
+
+#: inc/AgenticFixes/Labels.php:165
+msgid "Bypass Blocks"
+msgstr "Заобилажење блокова"
+
+# GPT: Izraz je dvosmislen: može značiti „stranice koje je robot pretražio” ili „stranice indeksirane”. Izabrao sam „Indeksirane stranice” kao najčešći UI termin u kontekstu pretraživača/SEO metrika.
+#: inc/AgenticFixes/Labels.php:166
+msgid "Page Titled"
+msgstr "Stranica ima naslov"
+
+#: inc/AgenticFixes/Labels.php:167
+msgid "Focus Order"
+msgstr "Редослед фокуса"
+
+#: inc/AgenticFixes/Labels.php:168
+msgid "Link Purpose (In Context)"
+msgstr "Сврха везе (у контексту)"
+
+#: inc/AgenticFixes/Labels.php:169
+msgid "Multiple Ways"
+msgstr "Више начина"
+
+#: inc/AgenticFixes/Labels.php:170
+msgid "Headings and Labels"
+msgstr "Наслови и ознаке"
+
+#: inc/AgenticFixes/Labels.php:171
+msgid "Focus Visible"
+msgstr "Фокус је видљив"
+
+#: inc/AgenticFixes/Labels.php:172
+msgid "Location"
+msgstr "Локација"
+
+#: inc/AgenticFixes/Labels.php:173
+msgid "Link Purpose (Link Only)"
+msgstr "Сврха везе (само веза)"
+
+#: inc/AgenticFixes/Labels.php:174
+msgid "Section Headings"
+msgstr "Naslovi odeljaka"
+
+#: inc/AgenticFixes/Labels.php:175
+msgid "Focus Not Obscured (Minimum)"
+msgstr "Fokus nije zaklonjen (minimum)"
+
+#: inc/AgenticFixes/Labels.php:176
+msgid "Focus Not Obscured (Enhanced)"
+msgstr "Фокус није заклоњен (побољшано)"
+
+#: inc/AgenticFixes/Labels.php:177
+msgid "Focus Appearance"
+msgstr "Izgled fokusa"
+
+#: inc/AgenticFixes/Labels.php:178
+msgid "Pointer Gestures"
+msgstr "Гестови показивача"
+
+#: inc/AgenticFixes/Labels.php:179
+msgid "Pointer Cancellation"
+msgstr "Otkazivanje pokazivača"
+
+#: inc/AgenticFixes/Labels.php:180
+msgid "Label in Name"
+msgstr "Ознака у називу"
+
+#: inc/AgenticFixes/Labels.php:181
+msgid "Motion Actuation"
+msgstr "Активирање покретом"
+
+#: inc/AgenticFixes/Labels.php:182
+msgid "Target Size (Enhanced)"
+msgstr "Veličina cilja (poboljšano)"
+
+#: inc/AgenticFixes/Labels.php:183
+msgid "Concurrent Input Mechanisms"
+msgstr "Истовремени механизми уноса"
+
+#: inc/AgenticFixes/Labels.php:184
+msgid "Dragging Movements"
+msgstr "Pokreti prevlačenja"
+
+#: inc/AgenticFixes/Labels.php:185
+msgid "Target Size (Minimum)"
+msgstr "Величина циља (минимум)"
+
+#: inc/AgenticFixes/Labels.php:187
+msgid "Language of Page"
+msgstr "Језик странице"
+
+#: inc/AgenticFixes/Labels.php:188
+msgid "Language of Parts"
+msgstr "Језик делова"
+
+#: inc/AgenticFixes/Labels.php:189
+msgid "Unusual Words"
+msgstr "Неуобичајене речи"
+
+#: inc/AgenticFixes/Labels.php:190
+msgid "Abbreviations"
+msgstr "Скраћенице"
+
+#: inc/AgenticFixes/Labels.php:191
+msgid "Reading Level"
+msgstr "Nivo čitanja"
+
+#: inc/AgenticFixes/Labels.php:192
+msgid "Pronunciation"
+msgstr "Изговор"
+
+#: inc/AgenticFixes/Labels.php:193
+msgid "On Focus"
+msgstr "При фокусу"
+
+#: inc/AgenticFixes/Labels.php:194
+msgid "On Input"
+msgstr "При уносу"
+
+#: inc/AgenticFixes/Labels.php:195
+msgid "Consistent Navigation"
+msgstr "Dosledna navigacija"
+
+#: inc/AgenticFixes/Labels.php:196
+msgid "Consistent Identification"
+msgstr "Dosledna identifikacija"
+
+#: inc/AgenticFixes/Labels.php:197
+msgid "Change on Request"
+msgstr "Promena na zahtev"
+
+#: inc/AgenticFixes/Labels.php:198
+msgid "Consistent Help"
+msgstr "Dosledna pomoć"
+
+#: inc/AgenticFixes/Labels.php:199
+msgid "Error Identification"
+msgstr "Identifikacija greške"
+
+#: inc/AgenticFixes/Labels.php:200
+msgid "Labels or Instructions"
+msgstr "Oznake ili uputstva"
+
+#: inc/AgenticFixes/Labels.php:201
+msgid "Error Suggestion"
+msgstr "Predlog za ispravku greške"
+
+#: inc/AgenticFixes/Labels.php:202
+msgid "Error Prevention (Legal, Financial, Data)"
+msgstr "Prevencija grešaka (pravne, finansijske, podaci)"
+
+#: inc/AgenticFixes/Labels.php:203
+msgid "Help"
+msgstr "Pomoć"
+
+#: inc/AgenticFixes/Labels.php:204
+msgid "Error Prevention (All)"
+msgstr "Prevencija grešaka (sve)"
+
+#: inc/AgenticFixes/Labels.php:205
+msgid "Redundant Entry"
+msgstr "Redundantni unos"
+
+#: inc/AgenticFixes/Labels.php:206
+msgid "Accessible Authentication (Minimum)"
+msgstr "Pristupačna autentifikacija (minimum)"
+
+#: inc/AgenticFixes/Labels.php:207
+msgid "Accessible Authentication (Enhanced)"
+msgstr "Pristupačna autentifikacija (poboljšana)"
+
+#: inc/AgenticFixes/Labels.php:209
+msgid "Parsing"
+msgstr "Parsiranje"
+
+#: inc/AgenticFixes/Labels.php:210
+msgid "Name, Role, Value"
+msgstr "Naziv, uloga, vrednost"
+
+#: inc/AgenticFixes/Labels.php:211
+msgid "Status Messages"
+msgstr "Statusne poruke"
+
+#: inc/AgenticFixes/Labels.php:224
+msgid "Let AllAccessible agents fix these for you"
+msgstr "Dozvolite AllAccessible agentima da ovo isprave umesto vas"
+
+#: inc/AgenticFixes/Labels.php:225
 msgid ""
-"If you have a moment, please let us know why you are deactivating "
-"AllAccessible. All submissions are anonymous and we only use this feedback "
-"to improve this plugin."
+"Premium plans include human-in-the-loop agentic AI remediation. Your team "
+"approves, agents do the work."
 msgstr ""
-"Ако имате тренутак, реците нам зашто деактивирате АллАццессибле. Све пријаве "
-"су анонимне и користимо само ове повратне информације за побољшање овог "
-"додатка."
+"Premium planovi uključuju agentičku AI sanaciju uz ljudski nadzor. Vaš tim "
+"odobrava, agenti obavljaju posao."
 
-#: inc/AllAccessibleDeactivationForm.php:31
-msgid "Do not send my e-mail address with this feedback"
-msgstr "Не шаљите моју е-маил адресу са овим повратним информацијама"
+#: inc/AgenticFixesDashboardWidget.php:27
+msgid "AllAccessible — Agentic Fixes"
+msgstr "AllAccessible — Agentske ispravke"
 
-#: inc/AllAccessibleDeactivationForm.php:33
-msgid "Please give us any feedback that could help us improve"
+#: inc/AgenticFixesDashboardWidget.php:34
+msgid "Plugin not fully initialized. Please reload."
+msgstr "Dodatak nije u potpunosti inicijalizovan. Ponovo učitajte."
+
+#: inc/AgenticFixesDashboardWidget.php:63
+msgid "Upgrade to apply fixes"
+msgstr "Nadogradite da biste primenili ispravke"
+
+#: inc/AgenticFixesDashboardWidget.php:64 inc/DashboardLayout.php:243
+msgid "Review fixes"
+msgstr "Pregledajte ispravke"
+
+#: inc/AgenticFixesDashboardWidget.php:70
+msgid "No scans yet. Submit your sitemap from the AllAccessible page to start."
 msgstr ""
-"Молимо да нам дате повратне информације које би нам могле помоћи да побољшамо"
+"Još nema skeniranja. Pošaljite svoj sitemap sa stranice AllAccessible da "
+"biste započeli."
 
-#: inc/AllAccessibleDeactivationForm.php:35
+#: inc/AgenticFixesDashboardWidget.php:74
+msgid "Go to AllAccessible"
+msgstr "Idite na AllAccessible"
+
+#: inc/AgenticFixesDashboardWidget.php:87
+msgid "accessibility issue detected"
+msgid_plural "accessibility issues detected"
+msgstr[0] "otkriven problem pristupačnosti"
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: %s: count of pages scanned
+#: inc/AgenticFixesDashboardWidget.php:97
+#, php-format
+msgid "%s page scanned"
+msgid_plural "%s pages scanned"
+msgstr[0] "Скенирано страница: %s"
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/AgenticFixesDashboardWidget.php:105
+#, php-format
+msgid "last scan %s ago"
+msgstr "poslednje skeniranje pre %s"
+
+# GPT: “{0} manifest(s)” is ambiguous without plural forms; I used a plural-style phrasing suitable for counts (typically 0 or 2+).
+#. translators: %s: count of manifests waiting on approval
+#: inc/AgenticFixesDashboardWidget.php:118
+#, php-format
+msgid "%s manifest pending your approval"
+msgid_plural "%s manifests pending your approval"
+msgstr[0] "%s manifest(a) čeka vaše odobrenje"
+msgstr[1] ""
+msgstr[2] ""
+
+# GPT: „Agentic AI remediation“ може да се преведе и као „агентска AI ремедијација“ или „AI санација уз агенте“; изабрао сам „агентичку AI санацију“ као најнеутралније и најближе оригиналу у техничком контексту.
+#: inc/AgenticFixesDashboardWidget.php:127
+msgid ""
+"AllAccessible agents can auto-fix these. Upgrade to enable agentic AI "
+"remediation."
+msgstr ""
+"AllAccessible агенти могу аутоматски да исправе ово. Надоградите да бисте "
+"омогућили агентичку AI санацију."
+
+#: inc/AgenticFixesDashboardWidget.php:145
+msgid "Could not load fixes summary right now."
+msgstr "Trenutno nije moguće učitati sažetak ispravki."
+
+#: inc/AgenticFixesPage.php:27 inc/AgenticFixesPage.php:28
+#: inc/AgenticFixesPage.php:140 inc/AgenticFixesPage.php:667
+#: inc/SettingsPage.php:499 inc/SettingsPage.php:603
+msgid "Agentic Fixes"
+msgstr "Agentske ispravke"
+
+#: inc/AgenticFixesPage.php:137 inc/AgenticFixesPage.php:142
+#: inc/AgenticFixesPage.php:665 inc/AgenticFixesPage.php:680
+#: inc/AgenticFixesPage.php:857 inc/ConversionCTA.php:119
+#: inc/EditorMetaBox.php:271 inc/ImageManagerPage.php:160
+#: inc/OnboardingWizard.php:288 inc/SettingsPage.php:416
+#: inc/SettingsPage.php:490 inc/SettingsPage.php:574 inc/SettingsPage.php:1969
+#: inc/UsageDashboard.php:142 inc/WidgetCustomizer.php:211
+msgid "AllAccessible AI"
+msgstr "AllAccessible AI"
+
+#: inc/AgenticFixesPage.php:146
+msgid "Beta feature"
+msgstr "Beta funkcija"
+
+#: inc/AgenticFixesPage.php:147 inc/SettingsPage.php:1155
+msgid "Beta"
+msgstr "Beta"
+
+#: inc/AgenticFixesPage.php:152
+msgid ""
+"AllAccessible agents propose accessibility fixes. You review and approve "
+"before anything goes live on your site."
+msgstr ""
+"AllAccessible agenti predlažu ispravke pristupačnosti. Vi pregledate i "
+"odobravate pre nego što bilo šta bude objavljeno na vašem sajtu."
+
+#: inc/AgenticFixesPage.php:169 inc/ConnectionStatusCard.php:71
+msgid "Could not reach AllAccessible right now."
+msgstr "Тренутно није могуће успоставити везу са AllAccessible-ом."
+
+#: inc/AgenticFixesPage.php:182
+msgid "score"
+msgstr "резултат"
+
+#: inc/AgenticFixesPage.php:186
+msgid "pages audited"
+msgstr "страница прегледано"
+
+#. translators: %s: human-readable time difference (e.g. "2 hours")
+#. translators: %s: human-readable time diff
+#: inc/AgenticFixesPage.php:194 inc/ScanTriggerPanel.php:86
+#, php-format
+msgid "Last scan %s ago"
+msgstr "Poslednje skeniranje pre %s"
+
+#: inc/AgenticFixesPage.php:245
+msgid "Approved & applied"
+msgstr "Odobreno i primenjeno"
+
+#: inc/AgenticFixesPage.php:254
+msgid "Filter Agentic Fixes by status"
+msgstr "Filtrirajte Agentic Fixes po statusu"
+
+#: inc/AgenticFixesPage.php:330
+msgid "How this works"
+msgstr "Kako ovo funkcioniše"
+
+#: inc/AgenticFixesPage.php:332
+msgid ""
+"AllAccessible agents review your site and propose fixes for accessibility "
+"issues. Nothing changes on your site until you approve. You can edit any "
+"suggestion before approving, and you can revert any approved fix at any time."
+msgstr ""
+"AllAccessible agenti pregledaju vaš sajt i predlažu ispravke za probleme "
+"pristupačnosti. Ništa se ne menja na vašem sajtu dok ne odobrite. Možete "
+"izmeniti bilo koji predlog pre odobravanja i možete poništiti bilo koju "
+"odobrenu ispravku u bilo kom trenutku."
+
+#. translators: 1: count of fixes; 2: rule type label (e.g., "Missing image description")
+#: inc/AgenticFixesPage.php:353
+#, php-format
+msgid "%1$s pending fixes for \"%2$s\". Approve them all in one click."
+msgstr "%1$s поправки на чекању за „%2$s“. Одобрите их све једним кликом."
+
+#. translators: 1: count; 2: rule label
+#: inc/AgenticFixesPage.php:366
+#, php-format
+msgid "Bulk approve %1$s %2$s fixes"
+msgstr "Masovno odobri %1$s %2$s ispravki"
+
+#. translators: %s: count of fixes
+#: inc/AgenticFixesPage.php:373
+#, php-format
+msgid "Bulk approve all %s"
+msgstr "Masovno odobri sve %s"
+
+#. translators: %s: WCAG success criterion number (e.g., "1.1.1")
+#: inc/AgenticFixesPage.php:426
+#, php-format
+msgid "WCAG %s"
+msgstr "WCAG %s"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:439
+#, php-format
+msgid "confidence: %s percent"
+msgstr "pouzdanost: %s procenata"
+
+# GPT: “Confidence” can mean self-confidence or a reliability/confidence score; given the 0–100 percentage context, I translated it as the latter (“Pouzdanost”).
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:445
+#, php-format
+msgid "%s%% confidence"
+msgstr "%s%% couzdanost"
+
+#: inc/AgenticFixesPage.php:463
+msgid "What's wrong"
+msgstr "Šta nije u redu"
+
+#. translators: 1: rationale phrase (e.g., "Suggested alt text for image"); 2: selector
+#: inc/AgenticFixesPage.php:469
+#, php-format
+msgid "%1$s on element %2$s"
+msgstr "%1$s na elementu %2$s"
+
+#: inc/AgenticFixesPage.php:481
+msgid "Proposed fix"
+msgstr "Predložena ispravka"
+
+#: inc/AgenticFixesPage.php:487
+msgid "Edit proposed fix value"
+msgstr "Измените предложену вредност исправке"
+
+#: inc/AgenticFixesPage.php:500
+msgid "page affected"
+msgid_plural "pages affected"
+msgstr[0] "страница је погођена"
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: %s: formatted date (e.g., "2026-05-23")
+#: inc/AgenticFixesPage.php:509
+#, php-format
+msgid "Applied on %s"
+msgstr "Примењено на %s"
+
+#. translators: %s: count of pages where this fix appears
+#: inc/AgenticFixesPage.php:525
+#, php-format
+msgid "Where it appears (%s)"
+msgstr "Где се појављује (%s)"
+
+#: inc/AgenticFixesPage.php:544
+msgid ""
+"Open this page with the affected element scrolled into view and highlighted"
+msgstr ""
+"Отворите ову страницу тако да се погођени елемент помери у приказ, и буде "
+"истакнут"
+
+#: inc/AgenticFixesPage.php:545
+msgid "View on site"
+msgstr "Погледај на сајту"
+
+#: inc/AgenticFixesPage.php:552 inc/ImageManagerPage.php:347
+msgid "Edit"
+msgstr "Уреди"
+
+#. translators: %s: count of additional pages not listed
+#: inc/AgenticFixesPage.php:562
+#, php-format
+msgid "+%s more"
+msgstr "+још %s"
+
+#: inc/AgenticFixesPage.php:579
+msgid "Skip"
+msgstr "Preskoči"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:587
+#, php-format
+msgid "Save edit and apply to %2$s pages for %1$s"
+msgstr "Сачувајте измену и примените на %2$s страница за %1$s"
+
+#: inc/AgenticFixesPage.php:591
+msgid "Save edit"
+msgstr "Сачувајте измену"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:598
+#, php-format
+msgid "Approve %1$s on %2$s pages"
+msgstr "Одобрите %1$s на %2$s страница"
+
+#. translators: %s: count of pages
+#: inc/AgenticFixesPage.php:605
+#, php-format
+msgid "Approve on %s page"
+msgid_plural "Approve on %s pages"
+msgstr[0] "Одобри на %s страници"
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/AgenticFixesPage.php:613
+msgid "Live on your site"
+msgstr "Uživo na vašem sajtu"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:618
+#, php-format
+msgid "Revert %1$s on %2$s pages"
+msgstr "Вратите %1$s на %2$s страница"
+
+#: inc/AgenticFixesPage.php:622 inc/AgenticFixesPage.php:902
+msgid "Revert"
+msgstr "Вратите"
+
+#: inc/AgenticFixesPage.php:626
+msgid "Not applied"
+msgstr "Није примењено"
+
+#: inc/AgenticFixesPage.php:668 inc/SettingsPage.php:470
+msgid "Legacy widget"
+msgstr "Zastareli vidžet"
+
+#: inc/AgenticFixesPage.php:671
+msgid "Agentic AI remediation is not available on your current plan."
+msgstr "Агентска AI ремедијација није доступна у вашем тренутном плану."
+
+#: inc/AgenticFixesPage.php:682 inc/SettingsPage.php:417
+msgid "Upgrade to unlock Agentic Fixes"
+msgstr "Надоградите да бисте откључали агентске исправке"
+
+#: inc/AgenticFixesPage.php:687
+msgid ""
+"Your site runs the legacy AllAccessible widget, which predates agentic AI "
+"remediation. The widget keeps working as-is, but upgrading to the current "
+"plan tier unlocks:"
+msgstr ""
+"Vaš sajt koristi zastareli AllAccessible vidžet, koji je prethodio agentnoj "
+"AI remedijaciji. Vidžet nastavlja da radi kao i do sada, ali nadogradnja na "
+"trenutni nivo plana otključava:"
+
+#: inc/AgenticFixesPage.php:690
+msgid ""
+"Human-in-the-loop agentic AI remediation — agents propose fixes, your team "
+"approves."
+msgstr ""
+"Agentna AI remedijacija uz čoveka u petlji — agenti predlažu ispravke, vaš "
+"tim odobrava."
+
+#: inc/AgenticFixesPage.php:691
+msgid "Continuous accessibility scoring with site-level coverage tracking."
+msgstr ""
+"Континуирано оцењивање приступачности уз праћење покривености на нивоу сајта."
+
+#: inc/AgenticFixesPage.php:692
+msgid "Higher monthly pageview caps and AllAccessible AI alt text generation."
+msgstr ""
+"Veći mesečni limiti pregleda stranica i AllAccessible AI generisanje alt "
+"teksta."
+
+#: inc/AgenticFixesPage.php:693
+msgid ""
+"Image AI manager, per-page audit scores in the WordPress editor, and "
+"downloadable WCAG / VPAT reports."
+msgstr ""
+"AI menadžer slika, ocene audita po stranici u WordPress uređivaču i WCAG / "
+"VPAT izveštaje za preuzimanje."
+
+#: inc/AgenticFixesPage.php:696 inc/SettingsPage.php:480
+msgid "See upgrade options"
+msgstr "Pogledajte opcije nadogradnje"
+
+#: inc/AgenticFixesPage.php:716 inc/AgenticFixesPage.php:727
+msgid "You're all caught up"
+msgstr "Све је ажурирано"
+
+#: inc/AgenticFixesPage.php:717
+msgid ""
+"No fixes are waiting for review. Run a scan and AllAccessible agents will "
+"propose any new fixes they find."
+msgstr ""
+"Нема исправки које чекају на преглед. Покрените скенирање и AllAccessible "
+"агенти ће предложити све нове исправке које пронађу."
+
+#: inc/AgenticFixesPage.php:728
+msgid "No fixes are waiting for review right now."
+msgstr "Тренутно нема исправки које чекају на преглед."
+
+#: inc/AgenticFixesPage.php:738
+msgid "No fixes approved yet"
+msgstr "Još nema odobrenih ispravki"
+
+#: inc/AgenticFixesPage.php:741
+msgid ""
+"Approved fixes will appear here once you start reviewing the pending queue."
+msgstr ""
+"Odobrene ispravke će se pojaviti ovde kada počnete da pregledate red na "
+"čekanju."
+
+#: inc/AgenticFixesPage.php:751
+msgid "Nothing has been reverted"
+msgstr "Ništa nije poništeno"
+
+#: inc/AgenticFixesPage.php:754
+msgid "Any approved fix you revert will be tracked here for reference."
+msgstr ""
+"Svaka odobrena ispravka koju poništite biće praćena ovde radi reference."
+
+#: inc/AgenticFixesPage.php:772 inc/ImageManagerPage.php:403
+msgid "AllAccessible AI · Free preview"
+msgstr "AllAccessible AI · Бесплатни преглед"
+
+#: inc/AgenticFixesPage.php:776
+#, php-format
+msgid "You've previewed %1$d of %2$d agentic fix proposals"
+msgstr "Pregledali ste %1$d od %2$d agentičkih predloga ispravki"
+
+#: inc/AgenticFixesPage.php:781
+msgid ""
+"Real proposals drafted for the real issues found on your site. Upgrade to "
+"review, approve, and apply the rest — human-in-the-loop, every fix."
+msgstr ""
+"Стварни предлози припремљени за стварне проблеме пронађене на вашем сајту. "
+"Надоградите да бисте прегледали, одобрили и применили остало — човек у "
+"петљи, свака исправка."
+
+#: inc/AgenticFixesPage.php:785 inc/ImageManagerPage.php:416
+msgid "Unlock unlimited"
+msgstr "Откључајте неограничено"
+
+#: inc/AgenticFixesPage.php:798
+msgid "Fix proposal preview"
+msgstr "Преглед предлога исправке"
+
+#: inc/AgenticFixesPage.php:816
+#, php-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] "%d страница"
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/AgenticFixesPage.php:833
+#, php-format
+msgid "Unlock %d more agentic fix proposals for your site"
+msgstr "Otključajte još %d agentičkih predloga ispravki za svoj sajt"
+
+#: inc/AgenticFixesPage.php:838 inc/ImageManagerPage.php:460
+msgid "Upgrade — starts at $10/month"
+msgstr "Надоградња — почиње од $10/месечно"
+
+#: inc/AgenticFixesPage.php:866 inc/SettingsPage.php:134
+#: inc/SettingsPage.php:424 inc/SettingsPage.php:679 inc/SettingsPage.php:990
+#: inc/TierGate.php:105 inc/UsageDashboard.php:42 inc/UsageDashboard.php:234
+msgid "Upgrade plan"
+msgstr "Nadogradi plan"
+
+#: inc/AgenticFixesPage.php:882
+msgid "Edit fix"
+msgstr "Izmeni ispravku"
+
+#: inc/AgenticFixesPage.php:884
+msgid "Update the suggested value before approving. Max 500 characters."
+msgstr "Ažurirajte predloženu vrednost pre odobravanja. Maks. 500 karaktera."
+
+#: inc/AgenticFixesPage.php:888 inc/ImageManagerPage.php:584
+msgid "Save"
+msgstr "Сачувај"
+
+#: inc/AgenticFixesPage.php:889 inc/AgenticFixesPage.php:903
+#: inc/DeactivationSurvey.php:189 inc/ImageManagerPage.php:581
 msgid "Cancel"
 msgstr "Откажи"
 
-#: inc/AllAccessibleDeactivationForm.php:36
-msgid "Skip &amp; Deactivate"
-msgstr "Прескочи &амп; Деактивирај"
+#: inc/AgenticFixesPage.php:896
+msgid "Revert manifest"
+msgstr "Evidencija poništavanja"
 
-#: inc/AllAccessibleDeactivationForm.php:37
-msgid "Submit &amp; Deactivate"
-msgstr "Пошаљи &амп; Деактивирај"
-
-#: inc/AllAccessibleDeactivationForm.php:38
-msgid "Please wait"
-msgstr "Сачекајте"
-
-#: inc/AllAccessibleDeactivationForm.php:39
-msgid "Thank you!"
-msgstr "Хвала вам!"
-
-#: inc/AllAccessibleDeactivationForm.php:48
-msgid "The plugin suddenly stopped working"
-msgstr "Додатак је изненада престао да ради"
-
-#: inc/AllAccessibleDeactivationForm.php:51
-#: inc/AllAccessibleDeactivationForm.php:58
+#: inc/AgenticFixesPage.php:898
 msgid ""
-"We're sorry to hear that, check <a href=\"https://support.allaccessible."
-"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
-"issue?"
+"Why are you reverting? This helps us improve fix quality. Max 500 characters."
 msgstr ""
-"Жао нам је што то чујемо, проверите <a href=\"https://support.allaccessible."
-"org\" target=\"_blank\">АллАццессибле Суппорт</a> . Можете ли описати "
-"проблем?"
+"Zašto vraćate? Ovo nam pomaže da poboljšamo kvalitet ispravki. Maks. 500 "
+"znakova."
 
-#: inc/AllAccessibleDeactivationForm.php:55
-msgid "The plugin broke my site"
-msgstr "Додатак је покварио мој сајт"
+#: inc/AgenticFixesPage.php:952
+msgid "Action failed"
+msgstr "Radnja nije uspela"
 
-#: inc/AllAccessibleDeactivationForm.php:62
-msgid "I don't need this plugin any more"
-msgstr "Више ми не треба овај додатак"
+#: inc/AgenticFixesPage.php:977
+msgid "Server returned no data"
+msgstr "Server nije vratio podatke"
 
-#: inc/AllAccessibleDeactivationForm.php:66
-msgid "I found a better plugin"
-msgstr "Нашао сам бољи додатак"
+#: inc/AgenticFixesPage.php:1024
+msgid "Approve this fix on every page where it appears?"
+msgstr "Odobriti ovu ispravku na svakoj stranici gde se pojavljuje?"
 
-#: inc/AllAccessibleDeactivationForm.php:69
-msgid "Can you please share the name of the other plugin?"
-msgstr "Можете ли молим вас да поделите име другог додатка?"
+#: inc/AgenticFixesPage.php:1034
+msgid "Revert reason (max 500 chars):"
+msgstr "Razlog vraćanja (maks. 500 znakova):"
 
-#: inc/AllAccessibleDeactivationForm.php:73
-msgid "It's a temporary deactivation, I'm troubleshooting"
-msgstr "То је привремено деактивирање, решавам проблеме"
+#: inc/AgenticFixesPage.php:1046 inc/AgenticFixesPage.php:1136
+msgid "Value cannot be empty"
+msgstr "Vrednost ne može biti prazna"
 
-#: inc/AllAccessibleDeactivationForm.php:77
-msgid "Other"
-msgstr "Остало"
+#: inc/AgenticFixesPage.php:1047
+msgid "Apply this value to every page in the group?"
+msgstr "Primeni ovu vrednost na svaku stranicu u grupi?"
 
-#: inc/AllAccessibleDeactivationForm.php:80
-msgid "Can you describe the issue?"
-msgstr "Можете ли описати проблем?"
+#: inc/AgenticFixesPage.php:1069
+msgid "Nothing to approve."
+msgstr "Nema ničega za odobravanje."
 
-#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
-msgid "Preview Widget"
-msgstr "Преглед виџета"
+#: inc/AgenticFixesPage.php:1070
+msgid "Approve every pending fix of this type?"
+msgstr "Odobriti svaku ispravku na čekanju ovog tipa?"
 
-#: inc/AllAccessibleSettings.php:40
-msgid "Widget Status"
-msgstr "Статус виџета"
+#: inc/AgenticFixesPage.php:1087
+msgid "Bulk approve failed"
+msgstr "Masovno odobravanje nije uspelo"
 
-#: inc/AllAccessibleSettings.php:40
-msgid "Active"
-msgstr "Aktivno"
+#: inc/AgenticFixesPage.php:1112
+msgid "Approve this manifest? Fixes will go live immediately."
+msgstr "Odobriti ovaj manifest? Ispravke će odmah biti primenjene."
 
-#: inc/AllAccessibleSettings.php:41
+#: inc/ConnectionStatusCard.php:56
+msgid "Connection status"
+msgstr "Статус повезивања"
+
+#: inc/ConnectionStatusCard.php:58
+msgid ""
+"Confirm this WordPress install is linked to the correct AllAccessible site."
+msgstr ""
+"Потврдите да је ова WordPress инсталација повезана са исправним "
+"AllAccessible сајтом."
+
+#: inc/ConnectionStatusCard.php:64
+msgid "Re-verify"
+msgstr "Поново верификуј"
+
+#: inc/ConnectionStatusCard.php:79
+msgid "WordPress URL"
+msgstr "WordPress URL"
+
+#: inc/ConnectionStatusCard.php:80 inc/SettingsPage.php:922
+msgid "Account ID"
+msgstr "ID налога"
+
+#: inc/ConnectionStatusCard.php:81
+msgid "Connected to"
+msgstr "Повезано са"
+
+#: inc/ConnectionStatusCard.php:82
+msgid "Subdomain ID"
+msgstr "ID поддомена"
+
+#: inc/ConnectionStatusCard.php:84
+msgid "Plan tier"
+msgstr "Ниво плана"
+
+#: inc/ConnectionStatusCard.php:93
+msgid "WordPress URL matches the connected AllAccessible site."
+msgstr "WordPress URL се поклапа са повезаним AllAccessible сајтом."
+
+#: inc/ConnectionStatusCard.php:98
+msgid "Mismatch detected"
+msgstr "Откривено неслагање"
+
+#. translators: 1: WP URL host, 2: server host
+#: inc/ConnectionStatusCard.php:103
 #, php-format
-msgid "AllAccessible's %s widget is visible on the front end of your site."
-msgstr "АллАццессибле-ов %s виџет је видљив на предњој страни вашег сајта."
-
-#: inc/AllAccessibleSettings.php:59
-msgid "Website Accessibility"
-msgstr "Приступачности"
-
-#: inc/AllAccessibleSettings.php:59
-msgid "Audits & Remediation"
-msgstr "Ревизије и санација"
-
-#: inc/AllAccessibleSettings.php:61
 msgid ""
-"View the results of your website scans, accessibility Remediation and more "
-"with AllAccessibile Premium."
+"WordPress is configured for %1$s but this plugin is linked to %2$s on your "
+"AllAccessible account. The Agentic Fixes page will show fixes for the "
+"connected site, not this WordPress install."
 msgstr ""
-"Погледајте резултате скенирања ваше веб странице, поправку приступачности и "
-"још много тога уз АллАццессибиле Премиум."
+"WordPress је подешен за %1$s, али је овај додатак повезан са %2$s на вашем "
+"AllAccessible налогу. Страница Агентске исправке ће приказивати исправке за "
+"повезани сајт, а не за ову WordPress инсталацију."
 
-#: inc/AllAccessibleSettings.php:62
+#: inc/ConnectionStatusCard.php:110
+msgid ""
+"Click \"Re-verify\" to refresh, or contact support if this site needs to be "
+"added to your account."
+msgstr ""
+"Кликните на „Поново верификуј“ да освежите или контактирајте подршку ако је "
+"потребно да се овај сајт дода вашем налогу."
+
+#: inc/ConnectionStatusCard.php:116
+msgid ""
+"This site has not been registered with AllAccessible yet. Visit your "
+"WordPress homepage to trigger registration, then click \"Re-verify\"."
+msgstr ""
+"Овај сајт још није регистрован у AllAccessible. Посетите почетну страницу "
+"вашег WordPress сајта да бисте покренули регистрацију, а затим кликните на "
+"„Поново верификуј“."
+
+#: inc/ConnectionStatusCard.php:189 inc/FeatureComparison.php:40
+#: inc/SettingsPage.php:1945 inc/SettingsPage.php:1946
+msgid "Free"
+msgstr "Бесплатно"
+
+#: inc/ConnectionStatusCard.php:190 inc/FeatureComparison.php:43
+#: inc/SettingsPage.php:1927 inc/SettingsPage.php:1928
+msgid "Starter"
+msgstr "Почетни"
+
+#: inc/ConnectionStatusCard.php:191 inc/FeatureComparison.php:46
+#: inc/SettingsPage.php:1933 inc/SettingsPage.php:1934
+msgid "Enterprise"
+msgstr "Ентерпрајз"
+
+#: inc/ConnectionStatusCard.php:192 inc/SettingsPage.php:1939
+msgid "Legacy"
+msgstr "Наслеђе"
+
+#: inc/ConnectionStatusCard.php:193 inc/SettingsPage.php:1921
+msgid "Trial"
+msgstr "Пробни период"
+
+#: inc/ConnectionStatusCard.php:208
+msgid "Verifying…"
+msgstr "Верификација…"
+
+#: inc/ConversionCTA.php:40
 msgid "Upgrade Now"
 msgstr "Надоградите сада"
 
-#: inc/AllAccessibleSettings.php:64
-msgid ""
-"View the results of your website scans in your AllAccessibile Account "
-"Dashboard."
-msgstr ""
-"Погледајте резултате скенирања ваше веб странице на контролној табли "
-"АллАццессибиле налога."
+#: inc/ConversionCTA.php:46
+msgid "Usage Limit Exceeded!"
+msgstr "Прекорачено ограничење коришћења!"
 
-#: inc/AllAccessibleSettings.php:65
-msgid "Accessibility Dashboard"
-msgstr "Приступачности"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Need"
-msgstr "Потребна помоћ"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Help & Support?"
-msgstr "Помоћ и подршка?"
-
-#: inc/AllAccessibleSettings.php:84
-msgid ""
-"Check our knowledge base for assistance with installation, customization, "
-"and more."
-msgstr ""
-"Проверите нашу базу знања за помоћ при инсталацији, прилагођавању и још "
-"много тога."
-
-#: inc/AllAccessibleSettings.php:85
-msgid "Get Support"
-msgstr "Добити подршку"
-
-#: inc/AllAccessibleSettings.php:109
-msgid "Unlock the Power of AllAccessible Premium"
-msgstr "Откључајте моћ АллАццессибле Премиум"
-
-#: inc/AllAccessibleSettings.php:110
-msgid ""
-"Unlock all the benefits of our Ai accessibility automation with a free trial "
-"by connecting your AllAccessible account to your email below. Already using "
-"the free version? No problem! We'll set you up with a free 7-day trial of "
-"our premium version. After the trial period, upgrade to the premium version "
-"for just $10 a month and enjoy a more accessible digital experience."
-msgstr ""
-"Откључајте све предности наше аутоматизације приступачности Аи бесплатном "
-"пробном верзијом тако што ћете повезати свој АллАццессибле налог са е-поштом "
-"у наставку. Већ користите бесплатну верзију? Нема проблема! Подесићемо вам "
-"бесплатну 7-дневну пробну верзију наше премиум верзије. Након пробног "
-"периода, надоградите на премиум верзију за само 19 УСД месечно и уживајте у "
-"приступачнијем дигиталном искуству."
-
-#: inc/AllAccessibleSettings.php:113
-msgid ""
-"Below are some additional features unlocked with AllAccessible Premium. All "
-"for Only $10/mo."
-msgstr "Испод су неке додатне функције откључане уз АллАццессибле Премиум."
-
-#: inc/AllAccessibleSettings.php:114
-msgid "User Control Panel"
-msgstr "Корисничка контролна табла"
-
-#: inc/AllAccessibleSettings.php:115
-msgid "Accessibility Statement"
-msgstr "Изјава о приступачности"
-
-#: inc/AllAccessibleSettings.php:116
-msgid "Widget Customization (Color, Shape, Placement, etc.)"
-msgstr "Прилагођавање виџета (боја, облик, положај, итд.)"
-
-#: inc/AllAccessibleSettings.php:117
-msgid "Ai Accessibility Fixes"
-msgstr "Исправке приступачности Аи"
-
-#: inc/AllAccessibleSettings.php:118
-msgid "Image Alt Text Generation"
-msgstr "Генерисање алтернативног текста слике"
-
-#: inc/AllAccessibleSettings.php:119
-msgid "Monthly Accessibility Audits"
-msgstr "Месечне ревизије приступачности"
-
-#: inc/AllAccessibleSettings.php:120
-msgid "Accessibility Accommodation Requests"
-msgstr "Приступачност Захтеви за смештај"
-
-#: inc/AllAccessibleSettings.php:127
-msgid "To learn more, visit: https://www.allaccessible.org"
-msgstr "Да бисте сазнали више, посетите: хттпс://ввв.аллаццессибле.орг"
-
-#: inc/AllAccessibleSettings.php:131
-msgid "Your Email"
-msgstr "Ваша е-пошта"
-
-#: inc/AllAccessibleSettings.php:131
+#: inc/ConversionCTA.php:48
 #, php-format
-msgid "(Used to manage your Account on %s)"
-msgstr "(Користи се за управљање вашим налогом на %s)"
+msgid ""
+"Your widget is currently using free features only. Upgrade to %s to restore "
+"premium functionality and increase your limits."
+msgstr ""
+"Ваш виџет тренутно користи само бесплатне функције. Надоградите на %s да "
+"бисте вратили премијум функционалност и повећали своја ограничења."
 
-#: inc/AllAccessibleSettings.php:135
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Starter"
+msgstr "Надоградите на Starter"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Enterprise"
+msgstr "Надоградите на Enterprise"
+
+#: inc/ConversionCTA.php:68
+msgid "Approaching Your Limit"
+msgstr "Приближавате се свом ограничењу"
+
+#: inc/ConversionCTA.php:70
+#, php-format
+msgid ""
+"You're using over 80%% of your %s. Upgrade before you hit the limit to avoid "
+"service interruption."
+msgstr ""
+"Koristite preko 80%% od vašeg %s. Nadogradite pre nego što dostignete "
+"ograničenje da biste izbegli prekid usluge."
+
+#: inc/ConversionCTA.php:73
+msgid "Upgrade Before Limit"
+msgstr "Надоградите пре него што достигнете ограничење"
+
+#: inc/ConversionCTA.php:78
+msgid "Unlock Premium Features"
+msgstr "Откључајте премијум функције"
+
+#: inc/ConversionCTA.php:79
+msgid ""
+"Get AI-powered accessibility fixes, monthly compliance audits, custom widget "
+"styling, and priority support."
+msgstr ""
+"Добијте AI исправке приступачности, месечне ревизије усклађености, "
+"прилагођено стилизовање виџета и приоритетну подршку."
+
+#: inc/ConversionCTA.php:80
+msgid "Start 7-Day Trial"
+msgstr "Започните 7-дневни пробни период"
+
+#: inc/ConversionCTA.php:85
+msgid "Scale with Add-Ons"
+msgstr "Скалирајте уз додатке"
+
+#: inc/ConversionCTA.php:86
+msgid ""
+"Need more pageviews, AI fixes, or audits? Add custom limits to your plan or "
+"upgrade to Enterprise for unlimited access."
+msgstr ""
+"Треба вам више прегледа страница, AI исправки или ревизија? Додајте "
+"прилагођена ограничења свом плану или надоградите на Enterprise за "
+"неограничен приступ."
+
+#: inc/ConversionCTA.php:87
+msgid "Explore Add-Ons"
+msgstr "Истражите додатке"
+
+#: inc/DashboardBanner.php:66
+msgid "Get the Most Out of AllAccessible! 🚀"
+msgstr "Извуците максимум из AllAccessible-а! 🚀"
+
+#: inc/DashboardBanner.php:69
+msgid ""
+"Complete the quick 2-minute setup to activate your accessibility widget and "
+"unlock premium features."
+msgstr ""
+"Завршите брзо подешавање од 2 минута да бисте активирали свој виџет за "
+"приступачност и откључали премијум функције."
+
+#: inc/DashboardBanner.php:76
+msgid "Start Setup"
+msgstr "Започни подешавање"
+
+#. translators: %s: accessibility score 0-100 or em-dash
+#: inc/DashboardLayout.php:75
+#, php-format
+msgid "Accessibility score %s out of 100"
+msgstr "Ocena pristupačnosti %s od 100"
+
+#: inc/DashboardLayout.php:152
+msgid "Daily"
+msgstr "Дневно"
+
+#: inc/DashboardLayout.php:153 inc/FeatureComparison.php:75
+msgid "Weekly"
+msgstr "Недељно"
+
+#: inc/DashboardLayout.php:154 inc/FeatureComparison.php:74
+msgid "Monthly"
+msgstr "Месечно"
+
+#: inc/DashboardLayout.php:155
+msgid "On-demand"
+msgstr "Na zahtev"
+
+#. translators: %s: number of days between scans
+#: inc/DashboardLayout.php:162
+#, php-format
+msgid "Every %s days"
+msgstr "Svakih %s dana"
+
+#: inc/DashboardLayout.php:170
+msgid "Scans"
+msgstr "Skeniranja"
+
+#: inc/DashboardLayout.php:171
+msgid "Scheduled scans"
+msgstr "Zakazana skeniranja"
+
+#. translators: %s: human time diff, e.g. "2 hours"
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/DashboardLayout.php:176 inc/EditorMetaBox.php:199
+#, php-format
+msgid "%s ago"
+msgstr "%s pre"
+
+#: inc/DashboardLayout.php:180 inc/ScanTriggerPanel.php:91
+msgid "No scans yet"
+msgstr "Još nema skeniranja"
+
+#. translators: %s: human time diff
+#: inc/DashboardLayout.php:184
+#, php-format
+msgid "in %s"
+msgstr "za %s"
+
+#: inc/DashboardLayout.php:185
+msgid "due now"
+msgstr "dospeva sada"
+
+#: inc/DashboardLayout.php:193 inc/OnboardingWizard.php:451
+#: inc/ScanTriggerPanel.php:29
+msgid "Run your first scan"
+msgstr "Pokrenite svoje prvo skeniranje"
+
+#: inc/DashboardLayout.php:197
+msgid "Excellent — strong accessibility coverage."
+msgstr "Одлично — снажна покривеност приступачности."
+
+#: inc/DashboardLayout.php:199
+msgid "Good — a few fixes to go."
+msgstr "Добро — остало је још неколико исправки."
+
+#: inc/DashboardLayout.php:201
+msgid "Needs attention."
+msgstr "Zahteva pažnju."
+
+#: inc/DashboardLayout.php:203
+msgid "Needs work — start with the top issues."
+msgstr "Потребно је дорађивање — почните од најважнијих проблема."
+
+#: inc/DashboardLayout.php:209
+msgid ""
+"Run a scan and AllAccessible agents will check every page for accessibility "
+"issues."
+msgstr ""
+"Покрените скенирање и AllAccessible агенти ће проверити сваку страницу на "
+"проблеме приступачности."
+
+#. translators: %s: percentage with <b> wrapper
+#: inc/DashboardLayout.php:215
+#, php-format
+msgid "%s%% of issues remediated"
+msgstr "%s%% of проблема отклоњено"
+
+#: inc/DashboardLayout.php:221
+#, php-format
+msgid "%s page audited"
+msgid_plural "%s pages audited"
+msgstr[0] "%s stranica je proverena"
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/DashboardLayout.php:227
+msgid "View pages"
+msgstr "Прикажи странице"
+
+#: inc/DashboardLayout.php:239
+#, php-format
+msgid "%s fix is ready for your review"
+msgid_plural "%s fixes are ready for your review"
+msgstr[0] "Ispravka %s je spremna za vašu recenziju"
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/DashboardLayout.php:247
+#, php-format
+msgid "%s issue needs a manual fix"
+msgid_plural "%s issues need a manual fix"
+msgstr[0] "%s проблем захтева ручну исправку"
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/DashboardLayout.php:251
+msgid "View issues"
+msgstr "Прикажи проблеме"
+
+#: inc/DashboardLayout.php:254
+msgid "You're all caught up — AllAccessible agents are monitoring your site."
+msgstr "Sve ste pregledali — AllAccessible agenti nadgledaju vaš sajt."
+
+#: inc/DashboardLayout.php:257
+msgid "No scan yet — run one to find and fix accessibility issues."
+msgstr ""
+"Još nema skeniranja — pokrenite ga da biste pronašli i otklonili probleme sa "
+"pristupačnošću."
+
+#: inc/DashboardLayout.php:259 inc/OnboardingWizard.php:106
+#: inc/OnboardingWizard.php:236
+msgid "Get started"
+msgstr "Započnite"
+
+#: inc/DashboardLayout.php:264
+msgid "AI-resolved"
+msgstr "Rešeno uz pomoć AI"
+
+#: inc/DashboardLayout.php:265
+msgid "manual"
+msgstr "priručnik"
+
+#: inc/DashboardLayout.php:267
+msgid "images with alt text"
+msgstr "slike sa alt tekstom"
+
+#: inc/DashboardLayout.php:270
+msgid "pageviews"
+msgstr "pregledi stranice"
+
+#: inc/DashboardLayout.php:276
+msgid "Accessibility status"
+msgstr "Status pristupačnosti"
+
+#: inc/DashboardLayout.php:282
+msgid "Live · updates nightly"
+msgstr "Uživo · ažurira se svake noći"
+
+#: inc/DashboardLayout.php:287 inc/SettingsPage.php:387
+#: inc/SettingsPage.php:645
+msgid "Preview widget"
+msgstr "Pregled vidžeta"
+
+#: inc/DashboardLayout.php:297
+msgid "Scan schedule"
+msgstr "Raspored skeniranja"
+
+#: inc/DashboardLayout.php:303
+msgid ""
+"How often AllAccessible automatically scans your whole site behind the "
+"scenes for a deep accessibility analysis. You can also run on-demand scans "
+"of individual pages anytime — from the WordPress page editor, or on the "
+"front end while logged in."
+msgstr ""
+"Koliko često AllAccessible automatski, u pozadini, skenira ceo vaš sajt radi "
+"detaljne analize pristupačnosti. Takođe možete u bilo kom trenutku pokrenuti "
+"skeniranja pojedinačnih stranica na zahtev — iz WordPress uređivača stranica "
+"ili na front-endu dok ste prijavljeni."
+
+#: inc/DashboardLayout.php:306
+msgid "Frequency"
+msgstr "Učestalost"
+
+#: inc/DashboardLayout.php:309
+msgid "Last"
+msgstr "Poslednje"
+
+#: inc/DashboardLayout.php:312 inc/ImageManagerPage.php:523
+msgid "Next"
+msgstr "Следеће"
+
+#: inc/DashboardLayout.php:326
+msgid "Remediation activity"
+msgstr "Aktivnost otklanjanja problema"
+
+#: inc/DeactivationSurvey.php:92
+msgid "Quick Feedback"
+msgstr "Брзе повратне информације"
+
+#: inc/DeactivationSurvey.php:95
+msgid "Help us improve AllAccessible"
+msgstr "Помозите нам да побољшамо AllAccessible"
+
+#: inc/DeactivationSurvey.php:100
+msgid ""
+"If you have a moment, please let us know why you're deactivating "
+"AllAccessible. All submissions are anonymous and help us improve."
+msgstr ""
+"Ако имате тренутак, молимо вас да нам кажете зашто деактивирате "
+"AllAccessible. Све пријаве су анонимне и помажу нам да се побољшамо."
+
+#: inc/DeactivationSurvey.php:113
+msgid "The plugin stopped working"
+msgstr "Додатак је престао да ради"
+
+#: inc/DeactivationSurvey.php:116
+#, php-format
+msgid "We're sorry! Please %scontact support%s or describe the issue:"
+msgstr ""
+"Жао нам је! Молимо вас да %sконтактирате подршку%s или опишете проблем:"
+
+#: inc/DeactivationSurvey.php:127
+msgid "Missing features I need"
+msgstr "Недостају ми функције које су ми потребне"
+
+#: inc/DeactivationSurvey.php:130
+msgid "What features would make you stay?"
+msgstr "Које функције би вас натерале да останете?"
+
+#: inc/DeactivationSurvey.php:141
+#, fuzzy
+msgid "Found a better plugin"
+msgstr "Нашао сам бољи додатак"
+
+#: inc/DeactivationSurvey.php:144
+msgid "Which plugin are you switching to?"
+msgstr "На који додатак прелазите?"
+
+#: inc/DeactivationSurvey.php:155
+msgid "Temporary - troubleshooting an issue"
+msgstr "Привремено – решавам проблем"
+
+#: inc/DeactivationSurvey.php:163
+msgid "I don't need accessibility features anymore"
+msgstr "Више ми нису потребне функције приступачности"
+
+#: inc/DeactivationSurvey.php:171
+msgid "Other"
+msgstr "Остало"
+
+#: inc/DeactivationSurvey.php:173
+msgid "Please tell us more..."
+msgstr "Реците нам више..."
+
+#: inc/DeactivationSurvey.php:185
+msgid "Skip & Deactivate"
+msgstr "Прескочи и деактивирај"
+
+#: inc/DeactivationSurvey.php:192
+msgid "Submit & Deactivate"
+msgstr "Пошаљи и деактивирај"
+
+#: inc/DeactivationSurvey.php:238
+msgid "Please select a reason"
+msgstr "Изаберите разлог"
+
+#: inc/DeactivationSurvey.php:253
+msgid "Submitting..."
+msgstr "Слање..."
+
+#: inc/EditorMetaBox.php:52 inc/EditorMetaBox.php:63
+msgid "Accessibility Score"
+msgstr "Ocena pristupačnosti"
+
+#: inc/EditorMetaBox.php:98
+msgid "Loading score..."
+msgstr "Učitavanje ocene..."
+
+#: inc/EditorMetaBox.php:99
+msgid "Error loading score"
+msgstr "Greška pri učitavanju ocene"
+
+#: inc/EditorMetaBox.php:100
+msgid "Rescan initiated successfully"
+msgstr "Ponovno skeniranje je uspešno pokrenuto"
+
+#: inc/EditorMetaBox.php:101
+msgid "Error initiating rescan"
+msgstr "Greška pri pokretanju ponovnog skeniranja"
+
+#: inc/EditorMetaBox.php:118
+msgid "Publish this page to see its accessibility score."
+msgstr "Objavite ovu stranicu da biste videli njenu ocenu pristupačnosti."
+
+#: inc/EditorMetaBox.php:151
+msgid "Score unavailable"
+msgstr "Ocena nije dostupna"
+
+#: inc/EditorMetaBox.php:153
+msgid ""
+"Could not load this page's accessibility score. Try refreshing the editor."
+msgstr ""
+"Nije moguće učitati ocenu pristupačnosti ove stranice. Pokušajte da osvežite "
+"uređivač."
+
+#: inc/EditorMetaBox.php:177
+msgid "Needs attention"
+msgstr "Potrebna pažnja"
+
+#: inc/EditorMetaBox.php:180 inc/PostListColumn.php:447
+msgid "Awaiting scan"
+msgstr "Čeka se skeniranje"
+
+#: inc/EditorMetaBox.php:183
+msgid "Excellent"
+msgstr "Odlično"
+
+#: inc/EditorMetaBox.php:186
+msgid "Good"
+msgstr "Добро"
+
+#: inc/EditorMetaBox.php:189
+msgid "Needs review"
+msgstr "Ревизија неопходна"
+
+#: inc/EditorMetaBox.php:235
+#, php-format
+msgid "Accessibility score %1$d out of 100, %2$s. Open full audit."
+msgstr "Ocena pristupačnosti %1$d od 100, %2$s. Otvorite kompletan izveštaj."
+
+#: inc/EditorMetaBox.php:236
+msgid "Accessibility score not available yet."
+msgstr "Ocena pristupačnosti još nije dostupna."
+
+#. translators: 1: raw, 2: current, 3: lift delta
+#: inc/EditorMetaBox.php:265
+#, php-format
+msgid ""
+"Score lifted from %1$d to %2$d by AllAccessible AI, a gain of %3$d points."
+msgstr ""
+"Rezultat je podignut sa %1$d na %2$d od strane AllAccessible AI, što je "
+"povećanje od %3$d poena."
+
+#. translators: %s: count of issues AllAccessible auto-resolves at runtime
+#: inc/EditorMetaBox.php:286
+#, php-format
+msgid "%s issue resolved by AllAccessible"
+msgid_plural "%s issues resolved by AllAccessible"
+msgstr[0] "%s problem rešen pomoću AllAccessible"
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: %s: count of live agentic AI fixes
+#: inc/EditorMetaBox.php:293
+#, php-format
+msgid "%s agentic AI fix live"
+msgid_plural "%s agentic AI fixes live"
+msgstr[0] "%s agentička AI ispravka uživo"
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/EditorMetaBox.php:307
+#, php-format
+msgid ""
+"Review %1$d pending agentic AI fix; approve to reach %2$d%% accessibility "
+"score"
+msgid_plural ""
+"Review %1$d pending agentic AI fixes; approve to reach %2$d%% accessibility "
+"score"
+msgstr[0] ""
+"Pregledaj %1$d ispravku na čekanju od agentičke AI; odobri da dostigneš "
+"%2$d%% rezultat pristupačnosti"
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: %s: count of pending fixes
+#: inc/EditorMetaBox.php:323
+#, php-format
+msgid "%s fix ready to review"
+msgid_plural "%s fixes ready to review"
+msgstr[0] "%s ispravka spremna za pregled"
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: %s: potential score
+#: inc/EditorMetaBox.php:330
+#, php-format
+msgid "Approve to reach %s%%"
+msgstr "Odobrite da biste dostigli %s%%"
+
+#. translators: %s: total issues
+#: inc/EditorMetaBox.php:344
+#, php-format
+msgid "Issues (%s)"
+msgstr "Problemi (%s)"
+
+#: inc/EditorMetaBox.php:351
+msgid "Critical"
+msgstr "Критично стање"
+
+#: inc/EditorMetaBox.php:352
+msgid "Serious"
+msgstr "Ozbiljno"
+
+#: inc/EditorMetaBox.php:353
+msgid "Moderate"
+msgstr "Umereno"
+
+#: inc/EditorMetaBox.php:354
+msgid "Minor"
+msgstr "Мањи"
+
+#. translators: %s: human-readable time ago
+#: inc/EditorMetaBox.php:378
+#, php-format
+msgid "Last scanned %s"
+msgstr "Poslednje skenirano %s"
+
+#: inc/EditorMetaBox.php:392
+msgid "View full report"
+msgstr "Pogledaj ceo izveštaj"
+
+#: inc/EditorMetaBox.php:400
+msgid "Rescan this page"
+msgstr "Ponovo skeniraj ovu stranicu"
+
+#: inc/EditorMetaBox.php:441
+msgid "Scan complete. Refreshing…"
+msgstr "Skeniranje završeno. Osvežavanje…"
+
+#: inc/EditorMetaBox.php:442
+msgid "Scan complete. Save or reload to see the updated score."
+msgstr ""
+"Скенирање је завршено. Сачувајте или поново учитајте да бисте видели "
+"ажурирани резултат."
+
+#: inc/EditorMetaBox.php:443
+msgid "Reload now"
+msgstr "Ponovo učitaj sada"
+
+#: inc/EditorMetaBox.php:445
+msgid "Still running — refresh the page in a minute."
+msgstr "И даље ради — освежите страницу за минут."
+
+#: inc/EditorMetaBox.php:447
+msgid "Could not start scan."
+msgstr "Nije moguće pokrenuti skeniranje."
+
+#: inc/EditorMetaBox.php:448
+msgid "Network error. Check your connection and try again."
+msgstr "Грешка на мрежи. Проверите везу и покушајте поново."
+
+#: inc/EditorMetaBox.php:587
+msgid "Page-level score"
+msgstr "Rezultat na nivou stranice"
+
+#: inc/EditorMetaBox.php:590
+msgid "Site-level score (page not yet crawled)"
+msgstr "Rezultat na nivou sajta (stranica još nije indeksirana)"
+
+#: inc/EditorMetaBox.php:593 inc/SettingsPage.php:575
+msgid "Awaiting first scan"
+msgstr "Čeka se prvo skeniranje"
+
+#: inc/EditorMetaBox.php:821
+msgid "Premium Feature"
+msgstr "Premium funkcija"
+
+#: inc/EditorMetaBox.php:824
+msgid "See accessibility scores for each page/post with a premium account."
+msgstr ""
+"Погледајте оцене приступачности за сваку страницу/објаву уз премијум налог."
+
+#: inc/EditorMetaBox.php:827
 msgid "Upgrade to Premium"
 msgstr "Унапредите на Премиум"
 
-#: inc/AllAccessibleSettings.php:138
-msgid "Plugin Configuration"
-msgstr "Конфигурација додатне компоненте"
+#: inc/EditorMetaBox.php:830
+msgid "7-day free trial available"
+msgstr "Dostupna je besplatna probna verzija od 7 dana"
 
-#: inc/AllAccessibleSettings.php:139
+#: inc/FeatureComparison.php:28
+msgid "Compare Plans"
+msgstr "Упореди планове"
+
+#: inc/FeatureComparison.php:37
+msgid "Feature"
+msgstr "Функција"
+
+#: inc/FeatureComparison.php:52
+msgid "Accessibility Widget"
+msgstr "Виџет за приступачност"
+
+#: inc/FeatureComparison.php:53 inc/FeatureComparison.php:54
+#: inc/FeatureComparison.php:55 inc/FeatureComparison.php:80
+#: inc/FeatureComparison.php:81 inc/FeatureComparison.php:87
+#: inc/FeatureComparison.php:92
+msgid "Included"
+msgstr "Uključeno"
+
+#: inc/FeatureComparison.php:58
+msgid "Monthly Pageviews"
+msgstr "Месечни прегледи страница"
+
+#: inc/FeatureComparison.php:61 inc/FeatureComparison.php:68
+#: inc/FeatureComparison.php:69
+msgid "Unlimited"
+msgstr "Neograničeno"
+
+#: inc/FeatureComparison.php:65
+msgid "AI Image Alt Text"
+msgstr "AI алтернативни текст за слике"
+
+#: inc/FeatureComparison.php:67
+msgid "10 preview"
+msgstr "Преглед 10"
+
+#: inc/FeatureComparison.php:72
+msgid "Compliance Audits"
+msgstr "Ревизије усклађености"
+
+#: inc/FeatureComparison.php:73 inc/FeatureComparison.php:79
+#: inc/FeatureComparison.php:85 inc/FeatureComparison.php:86
+#: inc/FeatureComparison.php:91
+msgid "Not included"
+msgstr "Није укључено"
+
+#: inc/FeatureComparison.php:78
+msgid "Widget Customization"
+msgstr "Прилагођавање виџета"
+
+#: inc/FeatureComparison.php:84
+msgid "VPAT Reports"
+msgstr "VPAT извештаји"
+
+#: inc/FeatureComparison.php:90
+msgid "Priority Support"
+msgstr "Приоритетна подршка"
+
+#: inc/FeatureComparison.php:93
+msgid "Dedicated"
+msgstr "Наменски"
+
+#: inc/FeatureComparison.php:103
+msgid "Upgrade Plan"
+msgstr "Pretplati se"
+
+#: inc/ImageManagerPage.php:28 inc/ImageManagerPage.php:29
+#: inc/SettingsPage.php:608
+msgid "Image AI"
+msgstr "AI za slike"
+
+#: inc/ImageManagerPage.php:101
+msgid "Image alt text is available on paid plans"
+msgstr "Alternativni tekst za slike je dostupan u plaćenim planovima"
+
+#: inc/ImageManagerPage.php:102
+msgid ""
+"Upgrade to review, refine, and approve every alt text on your site. Includes "
+"inline editing, manual overrides, and full media library coverage."
+msgstr ""
+"Надоградите да бисте прегледали, дорађивали и одобрили сваки алтернативни "
+"текст на вашем сајту. Укључује уређивање у самом приказу, ручна подешавања и "
+"потпуну покривеност библиотеке медија."
+
+#: inc/ImageManagerPage.php:116
+msgid "Could not load image data right now."
+msgstr "Trenutno nije moguće učitati podatke o slici."
+
+#. translators: %d = number of images on this page
+#: inc/ImageManagerPage.php:132
 #, php-format
-msgid "%1$s is connected to %2$s with account ID %3$s"
-msgstr "%1$s је повезан са %2$s са ИД-ом налога %3$s"
+msgid "%d image on this page."
+msgid_plural "%d images on this page."
+msgstr[0] "%d слика на овој страници."
+msgstr[1] ""
+msgstr[2] ""
 
-#: inc/AllAccessibleSettings.php:161
-msgid "Choose Widget Color"
-msgstr "Одаберите боју виџета"
+#: inc/ImageManagerPage.php:157 inc/PostListColumn.php:264
+#: inc/PostListColumn.php:270 inc/constants.php:19
+msgid "Accessibility"
+msgstr "Приступачности"
 
-#: inc/AllAccessibleSettings.php:167
-msgid "Choose Icon"
-msgstr "Одабери икону"
+#: inc/ImageManagerPage.php:159
+msgid "Image alt text"
+msgstr "Alt tekst slike"
 
-#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
-msgid "Choose Widget Size"
-msgstr "Одаберите величину виџета"
+#: inc/ImageManagerPage.php:163
+msgid ""
+"AllAccessible AI suggests descriptive alt text for every image on your site. "
+"Review and approve, or edit before it goes live."
+msgstr ""
+"AllAccessible AI предлаже описни алтернативни текст за сваку слику на вашем "
+"сајту. Прегледајте и одобрите или уредите пре него што буде објављено."
 
-#: inc/AllAccessibleSettings.php:192
-msgid "Small"
-msgstr "Malo"
+#: inc/ImageManagerPage.php:167 inc/SettingsPage.php:836
+msgid "Open full dashboard"
+msgstr "Otvori kompletnu kontrolnu tablu"
 
-#: inc/AllAccessibleSettings.php:193
-msgid "Medium (Default)"
-msgstr "Средњи (подразумевани)"
+#: inc/ImageManagerPage.php:189
+msgid "images"
+msgstr "слике"
 
-#: inc/AllAccessibleSettings.php:194
-msgid "Large"
-msgstr "Велика"
+#: inc/ImageManagerPage.php:193
+msgid "with alt text"
+msgstr "sa alternativnim tekstom"
 
-#: inc/AllAccessibleSettings.php:202
-msgid "Choose Widget Position"
-msgstr "Одаберите позицију виџета"
+#. translators: %d = percentage
+#: inc/ImageManagerPage.php:194
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
 
-#: inc/AllAccessibleSettings.php:204
+#: inc/ImageManagerPage.php:200
+msgid "AI-authored"
+msgstr "Написано уз помоћ вештачке интелигенције"
+
+#: inc/ImageManagerPage.php:212
+msgid "All images"
+msgstr "Sve slike"
+
+#: inc/ImageManagerPage.php:213
+msgid "Missing alt"
+msgstr "Nedostaje alternativni tekst"
+
+#: inc/ImageManagerPage.php:214
+msgid "AI-suggested"
+msgstr "Predloženo od strane AI"
+
+#: inc/ImageManagerPage.php:215 inc/SettingsPage.php:450
+msgid "Manual"
+msgstr "Мануелно"
+
+#: inc/ImageManagerPage.php:226
+msgid "Show"
+msgstr "Прикажи"
+
+#: inc/ImageManagerPage.php:237
+msgid "Search filename or alt text"
+msgstr "Претражи назив датотеке или алтернативни текст"
+
+#: inc/ImageManagerPage.php:240
+msgid "Type to filter visible images…"
+msgstr "Куцајте да бисте филтрирали видљиве слике…"
+
+#: inc/ImageManagerPage.php:245
+msgid "Apply"
+msgstr "Primeni"
+
+#: inc/ImageManagerPage.php:294
+msgid "AI suggestion"
+msgstr "AI predlog"
+
+#: inc/ImageManagerPage.php:320
+msgid "No alt text yet."
+msgstr "Још нема алтернативног текста."
+
+#: inc/ImageManagerPage.php:332
+msgid "Found on:"
+msgstr "Пронађено на:"
+
+#: inc/ImageManagerPage.php:361
+msgid "Needs alt"
+msgstr "Потребан алтернативни текст"
+
+#: inc/ImageManagerPage.php:364
+msgid "Set"
+msgstr "Постави"
+
+#. translators: %d = image ID
+#: inc/ImageManagerPage.php:371 inc/ImageManagerPage.php:379
+#, php-format
+msgid "Image #%d"
+msgstr "Слика #%d"
+
+#: inc/ImageManagerPage.php:407
+#, php-format
+msgid "You've used %1$d of %2$d preview alt-texts on this site"
+msgstr ""
+"Iskoristili ste %1$d od %2$d probnih alternativnih tekstova na ovom sajtu"
+
+#: inc/ImageManagerPage.php:412
+msgid ""
+"Real AI output, drafted for your real images. Upgrade to unlock unlimited "
+"alt-text generation for every image on your site."
+msgstr ""
+"Pravi AI izlaz, pripremljen za vaše stvarne slike. Nadogradite da biste "
+"otključali neograničeno generisanje alt-teksta za svaku sliku na vašem sajtu."
+
+#: inc/ImageManagerPage.php:455
+#, php-format
+msgid "Unlock AI alt text for all %d images on your site"
+msgstr "Otključajte AI alternativni tekst za svih %d slika na vašem sajtu"
+
+#: inc/ImageManagerPage.php:478
+msgid "No images discovered yet"
+msgstr "Још није откривена ниједна слика"
+
+#: inc/ImageManagerPage.php:480
+msgid ""
+"Scan your site to discover images. AllAccessible AI writes alt text for each "
+"one automatically. You can review or override any entry from this page."
+msgstr ""
+"Skenirajte svoj sajt da biste otkrili slike. AllAccessible AI automatski "
+"piše alternativni tekst za svaku od njih. Možete pregledati ili zameniti "
+"bilo koji unos sa ove stranice."
+
+#: inc/ImageManagerPage.php:483
+msgid "Scan your site to discover images"
+msgstr "Скенирајте свој сајт да бисте открили слике"
+
+#: inc/ImageManagerPage.php:504
+msgid "Image pagination"
+msgstr "Пагинација слика"
+
+#. translators: 1: current page, 2: total pages, 3: total items
+#: inc/ImageManagerPage.php:508
+#, php-format
+msgid "Page %1$d of %2$d (%3$s images)"
+msgstr "Stranica %1$d od %2$d (%3$s slika)"
+
+#: inc/ImageManagerPage.php:518
+msgid "Previous"
+msgstr "Претходно"
+
+#: inc/ImageManagerPage.php:540
+msgid "Edit alt text"
+msgstr "Уреди алтернативни текст"
+
+#: inc/ImageManagerPage.php:541
+msgid "Close"
+msgstr "Затвори"
+
+#: inc/ImageManagerPage.php:553
+msgid "AllAccessible AI suggests"
+msgstr "AllAccessible AI предлаже"
+
+#: inc/ImageManagerPage.php:559
+msgid "Use this suggestion"
+msgstr "Користи овај предлог"
+
+#: inc/ImageManagerPage.php:564
+msgid "Alt text"
+msgstr "Алтернативни текст"
+
+#: inc/ImageManagerPage.php:570
+msgid ""
+"Aim for 1–2 sentences describing the image's purpose, not its appearance."
+msgstr "Ciljajte na 1–2 rečenice koje opisuju svrhu slike, a ne njen izgled."
+
+#: inc/ImageManagerPage.php:670
+msgid ""
+"Saved. Updates may take up to a minute to appear after refresh as the change "
+"propagates through our system."
+msgstr ""
+"Sačuvano. Ažuriranja mogu potrajati do minut da se pojave nakon osvežavanja, "
+"jer se promena propagira kroz naš sistem."
+
+#: inc/ImageManagerPage.php:707
+msgid "Alt text is required."
+msgstr "Alternativni tekst je obavezan."
+
+#: inc/ImageManagerPage.php:711
+msgid "Alt text must be 500 characters or fewer."
+msgstr "Alternativni tekst mora imati 500 znakova ili manje."
+
+#: inc/ImageManagerPage.php:716 inc/SettingsPage.php:1218
+msgid "Saving…"
+msgstr "Čuvanje…"
+
+#: inc/ImageManagerPage.php:726 inc/SettingsPage.php:1785
+msgid "Save failed"
+msgstr "Чување није успело"
+
+#: inc/ImageManagerPage.php:745
+msgid "Save failed. Please try again."
+msgstr "Čuvanje nije uspelo. Pokušajte ponovo."
+
+#: inc/ImageManagerPage.php:766
+msgid "Showing all images on this page."
+msgstr "Prikazuju se sve slike na ovoj stranici."
+
+#: inc/ImageManagerPage.php:768
+#, php-format
+msgid "Showing %d images matching your search."
+msgstr "Prikazuje se %d slika koje odgovaraju vašoj pretrazi."
+
+#: inc/ImageManagerPage.php:787
+msgid "Insufficient permissions"
+msgstr "Nedovoljne dozvole"
+
+#: inc/ImageManagerPage.php:796 inc/api/ApiClient.php:901
+msgid "Invalid image ID"
+msgstr "Nevažeći ID slike"
+
+#: inc/ImageManagerPage.php:799 inc/api/ApiClient.php:905
+msgid "Alt text must be 1–500 characters"
+msgstr "Alternativni tekst mora imati 1–500 znakova"
+
+#: inc/OnboardingWizard.php:43
+msgid "AllAccessible Setup"
+msgstr "AllAccessible podešavanje"
+
+#: inc/OnboardingWizard.php:44
+msgid "Setup"
+msgstr "Podešavanje"
+
+#: inc/OnboardingWizard.php:107
+msgid "First scan"
+msgstr "Prvo skeniranje"
+
+#: inc/OnboardingWizard.php:112
+msgid "AllAccessible setup"
+msgstr "AllAccessible podešavanje"
+
+#: inc/OnboardingWizard.php:119
+msgid "Setup progress"
+msgstr "Napredak podešavanja"
+
+#: inc/OnboardingWizard.php:144
+msgid "Step 1 of 2"
+msgstr "Korak 1 od 2"
+
+#: inc/OnboardingWizard.php:146 inc/OnboardingWizard.php:808
+msgid "Welcome to AllAccessible"
+msgstr "Dobrodošli u AllAccessible"
+
+#: inc/OnboardingWizard.php:149
+msgid ""
+"Make this WordPress site usable for every visitor. Enter your email and pick "
+"a plan to get started."
+msgstr ""
+"Učinite ovaj WordPress sajt upotrebljivim za svakog posetioca. Unesite svoj "
+"imejl i izaberite plan da biste započeli."
+
+#: inc/OnboardingWizard.php:155
+msgid "See what an account does for you"
+msgstr "Pogledajte šta vam nalog donosi"
+
+#: inc/OnboardingWizard.php:165
+msgid "Accessibility scans"
+msgstr "Скенирања приступачности"
+
+#: inc/OnboardingWizard.php:168
+msgid ""
+"Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged."
+msgstr ""
+"Svaka objavljena stranica proverena u odnosu na WCAG 2.2, ADA i EAA. "
+"Obeleženo po nivou ozbiljnosti."
+
+#: inc/OnboardingWizard.php:179
+msgid "24 fixed"
+msgstr "24 ispravljeno"
+
+#: inc/OnboardingWizard.php:180
+msgid "3 to review"
+msgstr "3 za pregled"
+
+#: inc/OnboardingWizard.php:190
+msgid "Agentic AI fixes"
+msgstr "Agentni AI popravci"
+
+#: inc/OnboardingWizard.php:193
+msgid "AI drafts the fix; your team approves before anything ships."
+msgstr ""
+"AI priprema nacrt ispravke; vaš tim odobrava pre nego što bilo šta bude "
+"objavljeno."
+
+#: inc/OnboardingWizard.php:196
+msgid "Issue: button missing accessible name"
+msgstr "Problem: dugmetu nedostaje pristupačno ime"
+
+#: inc/OnboardingWizard.php:198
+msgid "AI fix"
+msgstr "AI ispravka"
+
+#: inc/OnboardingWizard.php:207
+msgid "Smart alt text"
+msgstr "Pametni alternativni tekst"
+
+#: inc/OnboardingWizard.php:210
+msgid ""
+"Missing alt generated for every image, in the language your visitors use."
+msgstr ""
+"Nedostajući alt se generiše za svaku sliku, na jeziku koji koriste vaši "
+"posetioci."
+
+#: inc/OnboardingWizard.php:218
+msgid "AI generated"
+msgstr "Generisano pomoću AI"
+
+#: inc/OnboardingWizard.php:220
+msgid "A golden retriever sitting in a sunlit park, wearing a pink bandana."
+msgstr "Zlatni retriver sedi u osunčanom parku, nosi ružičastu maramu."
+
+#: inc/OnboardingWizard.php:246
+msgid "Email address"
+msgstr "Email adresa"
+
+#: inc/OnboardingWizard.php:258 inc/OnboardingWizard.php:811
+msgid ""
+"We'll create a new account or link your existing one — same email, either "
+"way."
+msgstr ""
+"Napravićemo novi nalog ili povezati vaš postojeći — u oba slučaja, isti "
+"imejl."
+
+#: inc/OnboardingWizard.php:265
+msgid "Plan"
+msgstr "Plan"
+
+#: inc/OnboardingWizard.php:271
+msgid "Free forever"
+msgstr "Besplatno zauvek"
+
+#: inc/OnboardingWizard.php:277
+msgid "Widget, contrast + sizing controls, essential accessibility tools."
+msgstr "Vidžet, kontrole kontrasta i veličine, ključni alati za pristupačnost."
+
+#: inc/OnboardingWizard.php:285
+msgid "Most popular"
+msgstr "Najpopularnije"
+
+#: inc/OnboardingWizard.php:291
+msgid "7 days free"
+msgstr "7 dana besplatno"
+
+#: inc/OnboardingWizard.php:291
+msgid "then $10/mo"
+msgstr "zatim $10/mesečno"
+
+#: inc/OnboardingWizard.php:294
+msgid "Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits."
+msgstr "Agentni AI popravci, pametan alt tekst, WCAG/ADA/EAA revizije."
+
+#: inc/OnboardingWizard.php:307
+msgid "Ready to reconnect"
+msgstr "Spremni za ponovno povezivanje"
+
+#: inc/OnboardingWizard.php:321
+msgid "Heads up:"
+msgstr "Važno:"
+
+#: inc/OnboardingWizard.php:322
+msgid ""
+"This site is on another AllAccessible account. The plugin will work right "
+"away, but the site only appears in your dashboard once the existing admin "
+"approves your access — they'll get an email automatically."
+msgstr ""
+"Ovaj sajt je na drugom AllAccessible nalogu. Dodatak će raditi odmah, ali će "
+"se sajt pojaviti na vašoj kontrolnoj tabli tek kada postojeći administrator "
+"odobri vaš pristup — automatski će dobiti imejl."
+
+#: inc/OnboardingWizard.php:332 inc/OnboardingWizard.php:670
+#: inc/OnboardingWizard.php:682 inc/OnboardingWizard.php:703
+#: inc/OnboardingWizard.php:734 inc/OnboardingWizard.php:816
+msgid "Continue"
+msgstr "Nastavi"
+
+#. translators: 1: Terms link, 2: Privacy Policy link
+#: inc/OnboardingWizard.php:340
+#, php-format
+msgid "By continuing you agree to our %1$s and %2$s."
+msgstr "Nastavkom se slažete sa našim %1$s i %2$s."
+
+#: inc/OnboardingWizard.php:341 inc/SettingsPage.php:1445
+msgid "Terms & Conditions"
+msgstr "Услови коришћења"
+
+#: inc/OnboardingWizard.php:342 inc/SettingsPage.php:1446
+msgid "Privacy Policy"
+msgstr "Politika privatnosti"
+
+#: inc/OnboardingWizard.php:351
+msgid "Skip and use just the free widget"
+msgstr "Preskočite i koristite samo besplatni vidžet"
+
+#: inc/OnboardingWizard.php:377
+msgid "Interactions / month"
+msgstr "Interakcije / mesec"
+
+#: inc/OnboardingWizard.php:385
+msgid "Visitors served / month"
+msgstr "Usluženi posetioci / mesec"
+
+#: inc/OnboardingWizard.php:393
+msgid "Protecting WordPress"
+msgstr "Zaštita WordPress-a"
+
+#: inc/OnboardingWizard.php:398
+msgid "WCAG 2.2"
+msgstr "WCAG 2.2"
+
+#: inc/OnboardingWizard.php:399
+msgid "ADA"
+msgstr "ADA"
+
+#: inc/OnboardingWizard.php:400
+msgid "Section 508"
+msgstr "Section 508"
+
+#: inc/OnboardingWizard.php:401
+msgid "EAA 2025"
+msgstr "EAA 2025"
+
+#: inc/OnboardingWizard.php:422
+msgid "Free to start"
+msgstr "Besplatno za početak"
+
+#: inc/OnboardingWizard.php:426
+msgid "No credit card required"
+msgstr "Nije potrebna kreditna kartica"
+
+#: inc/OnboardingWizard.php:430
+msgid "Privacy-first — GDPR / CCPA"
+msgstr "Privatnost na prvom mestu — GDPR / CCPA"
+
+#: inc/OnboardingWizard.php:434
+msgid "Cancel any time on paid plans"
+msgstr "Otkažite u bilo kom trenutku na plaćenim planovima"
+
+#: inc/OnboardingWizard.php:438
+msgid "Trusted on thousands of WordPress sites worldwide."
+msgstr "Pouzdano na hiljadama WordPress sajtova širom sveta."
+
+#: inc/OnboardingWizard.php:450
+msgid "Step 2 of 2"
+msgstr "Korak 2 od 2"
+
+#: inc/OnboardingWizard.php:453
+msgid "Account ready"
+msgstr "Nalog je spreman"
+
+#: inc/OnboardingWizard.php:462
+msgid "Your account is set up."
+msgstr "Vaš nalog je podešen."
+
+#: inc/OnboardingWizard.php:464
+msgid ""
+"The AllAccessible agents are ready to scan this site for accessibility "
+"issues."
+msgstr ""
+"AllAccessible agenti su spremni da skeniraju ovaj sajt u potrazi za "
+"problemima pristupačnosti."
+
+#: inc/OnboardingWizard.php:474
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; you can re-run it any time from "
+"the Agentic Fixes page."
+msgstr ""
+"AllAccessible automatski pronalazi svaku objavljenu stranicu na vašem sajtu "
+"— sitemap nije potreban. Pokrenite svoje prvo skeniranje ispod; možete ga "
+"ponovo pokrenuti u bilo kom trenutku sa stranice Agentic Fixes."
+
+#: inc/OnboardingWizard.php:483
+msgid "Skip for now"
+msgstr "Preskoči za sada"
+
+#: inc/OnboardingWizard.php:486
+msgid "Go to dashboard"
+msgstr "Idi na kontrolnu tablu"
+
+#: inc/OnboardingWizard.php:587
+msgid "Skip setup for now? You can finish any time from the settings page."
+msgstr ""
+"Preskočiti podešavanje za sada? Možete završiti u bilo kom trenutku na "
+"stranici podešavanja."
+
+#: inc/OnboardingWizard.php:619
+msgid "Account created. Provisioning your site…"
+msgstr "Nalog je kreiran. Pripremamo vaš sajt…"
+
+#: inc/OnboardingWizard.php:622
+msgid "Welcome back. We linked this WordPress site to your account."
+msgstr "Dobrodošli nazad. Povezali smo ovaj WordPress sajt sa vašim nalogom."
+
+#: inc/OnboardingWizard.php:625
+msgid "Welcome back. This site was already on your account."
+msgstr "Dobrodošli nazad. Ovaj sajt je već bio na vašem nalogu."
+
+#: inc/OnboardingWizard.php:627
+msgid "Connected."
+msgstr "Povezano."
+
+#: inc/OnboardingWizard.php:639
+msgid "Please enter your email address."
+msgstr "Молимо Вас да унесете важећу адресу е-поште."
+
+#: inc/OnboardingWizard.php:644
+msgid "Setting things up…"
+msgstr "Podešavamo sve…"
+
+#: inc/OnboardingWizard.php:645
+msgid "Connecting to AllAccessible…"
+msgstr "Povezivanje sa AllAccessible…"
+
+#: inc/OnboardingWizard.php:668
+msgid "Something went wrong. Please try again."
+msgstr "Нешто није успело. Молим да покушате поново касније."
+
+#: inc/OnboardingWizard.php:680
+msgid "We received an unexpected response. Please try again."
+msgstr "Primili smo neočekivan odgovor. Molimo pokušajte ponovo."
+
+#: inc/OnboardingWizard.php:701 inc/OnboardingWizard.php:883
+msgid "We could not save your settings. Please try again."
+msgstr "Nismo mogli da sačuvamo vaša podešavanja. Molimo pokušajte ponovo."
+
+#: inc/OnboardingWizard.php:728
+msgid "We could not reach AllAccessible. Please try again."
+msgstr ""
+"Nismo mogli da stupimo u kontakt sa AllAccessible. Molimo pokušajte ponovo."
+
+#: inc/OnboardingWizard.php:753 inc/OnboardingWizard.php:781
+msgid "Welcome back"
+msgstr "Dobrodošli nazad"
+
+#: inc/OnboardingWizard.php:763
+msgid "Linking"
+msgstr "Povezivanje"
+
+#: inc/OnboardingWizard.php:764
+msgid "to"
+msgstr "za"
+
+#: inc/OnboardingWizard.php:768
+msgid "Reconnect this site"
+msgstr "Ponovo povežite ovaj sajt"
+
+#: inc/OnboardingWizard.php:783
+msgid ""
+"We will link this WordPress site to your existing AllAccessible account."
+msgstr ""
+"Povezaćemo ovaj WordPress sajt sa vašim postojećim AllAccessible nalogom."
+
+#: inc/OnboardingWizard.php:788
+msgid "Connect this site"
+msgstr "Povežite ovaj sajt"
+
+#: inc/OnboardingWizard.php:795
+msgid "Request access to this site"
+msgstr "Zatraži pristup ovom sajtu"
+
+#: inc/OnboardingWizard.php:797
+msgid ""
+"This site is on another AllAccessible account. Enter your email to request "
+"access."
+msgstr ""
+"Ovaj sajt je na drugom AllAccessible nalogu. Unesite svoju e-adresu da "
+"zatražite pristup."
+
+#: inc/OnboardingWizard.php:802
+msgid "Request access"
+msgstr "Zatraži pristup"
+
+#: inc/OnboardingWizard.php:868
+msgid "Reconnecting…"
+msgstr "Ponovno povezivanje…"
+
+#: inc/OnboardingWizard.php:879
+msgid "Reconnected. Provisioning…"
+msgstr "Ponovo povezano. Podešavanje…"
+
+#: inc/OnboardingWizard.php:906
+msgid "Permission denied"
+msgstr "Pristup odbijen"
+
+#: inc/PostListColumn.php:306
+msgid "Loading accessibility score"
+msgstr "Учитавање оцене приступачности"
+
+#: inc/PostListColumn.php:307
+msgid "Loading"
+msgstr "Учитавање"
+
+#: inc/PostListColumn.php:308
+msgid "Loading…"
+msgstr "Учитавање…"
+
+#: inc/PostListColumn.php:434
+msgid "Will scan on publish"
+msgstr "Skeniraće pri objavljivanju"
+
+#: inc/PostListColumn.php:435
+msgid ""
+"Drafts are not reachable by the public crawler. Publish to scan "
+"automatically, or preview to scan now."
+msgstr ""
+"Nacrti nisu dostupni javnom crawleru. Objavite da bi se automatski skeniralo "
+"ili pregledajte da biste skenirali odmah."
+
+#: inc/PostListColumn.php:440
+msgid "Preview & scan"
+msgstr "Pregled i skeniranje"
+
+#: inc/PostListColumn.php:445
+msgid "Awaiting scan — AllAccessible will populate this on the next crawl"
+msgstr ""
+"Čeka se skeniranje — AllAccessible će ovo popuniti pri sledećem obilasku"
+
+#: inc/PostListColumn.php:456
+msgid "Score is stale — page hasn't been scanned recently"
+msgstr "Ocena je zastarela — stranica nije nedavno skenirana"
+
+#: inc/PostListColumn.php:457
+msgid "Last scan failed"
+msgstr "Последње скенирање није успело"
+
+#: inc/PostListColumn.php:458
+msgid "Accessibility score"
+msgstr "Ocena pristupačnosti"
+
+#: inc/PostListColumn.php:468
+msgid "Approve pending fixes to reach this score"
+msgstr "Odobrite ispravke na čekanju da biste dostigli ovu ocenu"
+
+#: inc/ReviewNudge.php:73
+msgid "How's your experience with AllAccessible so far?"
+msgstr "Kakvo je vaše iskustvo sa AllAccessible do sada?"
+
+#: inc/ReviewNudge.php:77
+msgid "Great 😊"
+msgstr "Sjajno 😊"
+
+#: inc/ReviewNudge.php:80
+msgid "Could be better"
+msgstr "Može bolje"
+
+#: inc/ReviewNudge.php:83
+msgid "Maybe later"
+msgstr "Можда касније"
+
+#: inc/ReviewNudge.php:91
+msgid "That's wonderful to hear!"
+msgstr "Drago nam je da to čujemo!"
+
+#: inc/ReviewNudge.php:92
+msgid ""
+"A quick review on WordPress.org helps other site owners find us — it takes "
+"about 30 seconds and means a lot."
+msgstr ""
+"Кратка рецензија на WordPress.org помаже другим власницима сајтова да нас "
+"пронађу — траје око 30 секунди и много нам значи."
+
+#: inc/ReviewNudge.php:97
+msgid "Leave a review"
+msgstr "Оставите рецензију"
+
+#: inc/ReviewNudge.php:100
+msgid "I already did"
+msgstr "Већ сам то урадио"
+
+#: inc/ReviewNudge.php:108
+msgid "Sorry to hear that — we'd like to make it right."
+msgstr "Жао нам је што то чујемо — желимо да то исправимо."
+
+#: inc/ReviewNudge.php:109
+msgid ""
+"Tell us what's not working and we'll follow up. This goes straight to our "
+"team."
+msgstr "Реците нам шта не ради и јавићемо вам се. Ово иде директно нашем тиму."
+
+#: inc/ReviewNudge.php:113
+msgid "What could be better?"
+msgstr "Šta bi moglo biti bolje?"
+
+#: inc/ReviewNudge.php:117
+msgid "Send feedback"
+msgstr "Pošalji povratne informacije"
+
+#: inc/ReviewNudge.php:121 inc/SettingsPage.php:1428
+msgid "Contact support"
+msgstr "Контактирајте подршку"
+
+#: inc/ReviewNudge.php:129
+msgid "Thank you — we appreciate you."
+msgstr "Хвала вам — ценимо вас."
+
+#: inc/ScanTriggerPanel.php:30
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; future scans then run "
+"automatically based on your plan."
+msgstr ""
+"AllAccessible automatski pronalazi svaku objavljenu stranicu na vašem sajtu "
+"— mapa sajta nije potrebna. Pokrenite prvo skeniranje ispod; buduća "
+"skeniranja se zatim automatski pokreću u skladu sa vašim planom."
+
+#: inc/ScanTriggerPanel.php:43
+msgid "Scan now"
+msgstr "Скенирај сада"
+
+#: inc/ScanTriggerPanel.php:44 inc/ScanTriggerPanel.php:257
+#: inc/ScanTriggerPanel.php:311
+msgid "Run scan again"
+msgstr "Покрени скенирање поново"
+
+#. translators: %s: human-readable time until
+#: inc/ScanTriggerPanel.php:101
+#, php-format
+msgid "Next scan in %s"
+msgstr "Sledeće skeniranje za %s"
+
+#: inc/ScanTriggerPanel.php:105
+msgid "Next scan due now"
+msgstr "Sledeće skeniranje je na redu sada"
+
+#. translators: %s: human-readable time difference
+#: inc/ScanTriggerPanel.php:117
+#, php-format
+msgid "Last scan triggered %s ago"
+msgstr "Последње скенирање је покренуто пре %s"
+
+#: inc/ScanTriggerPanel.php:131
+#, php-format
+msgid "%d published page will be scanned. This can take a minute or two."
+msgid_plural ""
+"%d published pages and posts will be scanned. This can take a minute or two."
+msgstr[0] ""
+"Скенираће се %d објављена страница. Ово може потрајати минут или два."
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/ScanTriggerPanel.php:157
+msgid "pages scanned"
+msgstr "skeniranih stranica"
+
+#: inc/ScanTriggerPanel.php:166
+msgid ""
+"pages scanned. Accessibility scores appear in your Pages list within a "
+"minute or two as the AI finishes reviewing."
+msgstr ""
+"stranica skenirano. Ocene pristupačnosti pojavljuju se na listi Stranice za "
+"minut ili dva, čim AI završi pregled."
+
+#: inc/ScanTriggerPanel.php:168
+msgid "Open Pages list"
+msgstr "Отвори листу страница"
+
+#: inc/ScanTriggerPanel.php:182
+msgid "Scan a specific sitemap instead (advanced)"
+msgstr "Уместо тога скенирај одређену мапу сајта (напредно)"
+
+#: inc/ScanTriggerPanel.php:186
+msgid ""
+"Leave this closed to let AllAccessible auto-discover your pages "
+"(recommended). Open only to point the scan at a specific sitemap."
+msgstr ""
+"Ostavite ovo zatvoreno da bi AllAccessible automatski otkrio vaše stranice "
+"(preporučeno). Otvorite samo da biste usmerili skeniranje na određenu mapu "
+"sajta."
+
+#: inc/ScanTriggerPanel.php:189 inc/ScanTriggerPanel.php:345
+msgid "Looking for sitemaps…"
+msgstr "Тражим мапе сајта…"
+
+#: inc/ScanTriggerPanel.php:221
+msgid "Enter your sitemap URL, or close Advanced to auto-discover."
+msgstr ""
+"Унесите URL своје мапе сајта или затворите Напредно да би се аутоматски "
+"открила."
+
+#: inc/ScanTriggerPanel.php:232
+msgid "Starting…"
+msgstr "Pokretanje…"
+
+#: inc/ScanTriggerPanel.php:244
+msgid "Scan failed to start."
+msgstr "Скенирање није успело да се покрене."
+
+#: inc/ScanTriggerPanel.php:245 inc/ScanTriggerPanel.php:265
+#: inc/ScanTriggerPanel.php:290
+msgid "Start first scan"
+msgstr "Покрени прво скенирање"
+
+#: inc/ScanTriggerPanel.php:255
+msgid "Scan started. Results appear on the Agentic Fixes page in 2-5 minutes."
+msgstr ""
+"Скенирање је започето. Резултати ће се појавити на страници Агентске "
+"исправке за 2–5 минута."
+
+#: inc/ScanTriggerPanel.php:256
+msgid "Scan triggered just now"
+msgstr "Скенирање је управо покренуто"
+
+#: inc/ScanTriggerPanel.php:264
+msgid "Server did not return a job ID."
+msgstr "Сервер није вратио ID посла."
+
+#: inc/ScanTriggerPanel.php:274
+msgid "Finishing setup…"
+msgstr "Завршавам подешавање…"
+
+#: inc/ScanTriggerPanel.php:279
+msgid "Network error"
+msgstr "Грешка на мрежи"
+
+#: inc/ScanTriggerPanel.php:285
+msgid "Server timeout while queuing scan. Try again."
+msgstr ""
+"Истекло је време на серверу приликом стављања скенирања у ред. Покушајте "
+"поново."
+
+#: inc/ScanTriggerPanel.php:287
+#, php-format
+msgid "Request failed (HTTP %s)"
+msgstr "Захтев није успео (HTTP %s)"
+
+#: inc/ScanTriggerPanel.php:316
+msgid "Scan failed. Try again."
+msgstr "Скенирање није успело. Покушајте поново."
+
+#: inc/ScanTriggerPanel.php:318
+msgid "Retry scan"
+msgstr "Поново покрени скенирање"
+
+#: inc/ScanTriggerPanel.php:334 inc/ScanTriggerPanel.php:354
+msgid "Detected"
+msgstr "Откривено"
+
+#: inc/ScanTriggerPanel.php:361
+msgid "Open & verify"
+msgstr "Отвори и потврди"
+
+#: inc/ScanTriggerPanel.php:365
+msgid ""
+"No reachable sitemap found. Enter one below, or close Advanced to auto-"
+"discover."
+msgstr ""
+"Nije pronađena dostupna mapa sajta. Unesite je ispod ili zatvorite Napredno "
+"da biste omogućili automatsko otkrivanje."
+
+#: inc/ScanTriggerPanel.php:370
+msgid "Enter my own sitemap URL"
+msgstr "Унеси URL своје мапе сајта"
+
+#: inc/ScanTriggerPanel.php:376
+msgid "Could not check for sitemaps. Close Advanced to auto-discover instead."
+msgstr ""
+"Nije moguće proveriti mape sajta. Zatvorite Napredno da biste umesto toga "
+"omogućili automatsko otkrivanje."
+
+#. Plugin Name of the plugin/theme
+#: inc/SettingsPage.php:36 inc/SettingsPage.php:37 inc/SettingsPage.php:373
+#: inc/SettingsPage.php:820
+msgid "AllAccessible"
+msgstr "АллАццессибле"
+
+#: inc/SettingsPage.php:59 inc/SettingsPage.php:822
+msgid "Account & Settings"
+msgstr "Nalog i podešavanja"
+
+#: inc/SettingsPage.php:60
+msgid "Account"
+msgstr "Налог"
+
+#: inc/SettingsPage.php:70 inc/SettingsPage.php:71 inc/SettingsPage.php:108
+msgid "Widget Customizer"
+msgstr "Prilagođavanje vidžeta"
+
+#: inc/SettingsPage.php:107 inc/SettingsPage.php:881
+msgid "Widget"
+msgstr "Vidžet"
+
+#: inc/SettingsPage.php:109
+msgid ""
+"Customize the AllAccessible widget that visitors see on your site. Changes "
+"save instantly and clear the visitor cache."
+msgstr ""
+"Прилагодите AllAccessible виџет који посетиоци виде на вашем сајту. Промене "
+"се чувају одмах и бришу кеш посетилаца."
+
+#: inc/SettingsPage.php:119
+msgid "Connect your AllAccessible account"
+msgstr "Povežite svoj AllAccessible nalog"
+
+#: inc/SettingsPage.php:120
+msgid "Finish setup to customize your widget."
+msgstr "Dovršite podešavanje da biste prilagodili svoj vidžet."
+
+#: inc/SettingsPage.php:122 inc/SettingsPage.php:850
+msgid "Start setup"
+msgstr "Započni podešavanje"
+
+#: inc/SettingsPage.php:131
+msgid "Widget customization is a paid feature"
+msgstr "Prilagođavanje vidžeta je plaćena funkcija"
+
+#: inc/SettingsPage.php:132
+msgid ""
+"Upgrade your AllAccessible plan to customize the widget color, position, "
+"icon, and shape — plus enable agentic AI remediation."
+msgstr ""
+"Надоградите свој AllAccessible план да бисте прилагодили боју, позицију, "
+"икону и облик виџета — и омогућили агентску AI ремедијацију."
+
+#: inc/SettingsPage.php:333 inc/SettingsPage.php:345 inc/UsageDashboard.php:69
+msgid "Pageviews"
+msgstr "Прикази страница"
+
+#: inc/SettingsPage.php:371 inc/SettingsPage.php:627
+msgid "Site overview"
+msgstr "Pregled sajta"
+
+#: inc/SettingsPage.php:380
+msgid "Widget connected"
+msgstr "Vidžet je povezan"
+
+#: inc/SettingsPage.php:384
+msgid ""
+"Accessibility widget and human-in-the-loop agentic AI remediation for your "
+"site."
+msgstr ""
+"Виџет за приступачност и агентска AI ремедијација уз људски надзор за ваш "
+"сајт."
+
+#: inc/SettingsPage.php:420
+msgid ""
+"Your current plan uses the legacy AllAccessible widget, which predates "
+"agentic AI remediation. Upgrade to the current plan tier to unlock auto-"
+"suggested fixes, larger pageview caps, and the full AllAccessible AI feature "
+"set."
+msgstr ""
+"Vaš trenutni plan koristi zastareli AllAccessible vidžet, koji je nastao pre "
+"agentne AI remedijacije. Nadogradite na trenutni nivo plana da biste "
+"otključali automatski predložene ispravke, veće limite pregleda stranica i "
+"kompletan skup AllAccessible AI funkcija."
+
+#: inc/SettingsPage.php:449
+msgid "AI Resolved"
+msgstr "Решено помоћу AI"
+
+#: inc/SettingsPage.php:451
+msgid "Completed"
+msgstr "Завршено"
+
+#: inc/SettingsPage.php:452
+msgid "Reopened"
+msgstr "Поново отворено"
+
+#: inc/SettingsPage.php:453
+msgid "Ignored"
+msgstr "Игнорисано"
+
+#: inc/SettingsPage.php:462
+msgid "Activity and quick actions"
+msgstr "Aktivnost i brze radnje"
+
+#: inc/SettingsPage.php:472
+msgid "Agentic Fixes not available on your plan"
+msgstr "Agentne ispravke nisu dostupne u vašem planu"
+
+#: inc/SettingsPage.php:477
+msgid ""
+"The legacy AllAccessible widget keeps running, but the agentic AI "
+"remediation pipeline requires a current plan tier. Upgrade to bring auto-"
+"suggested fixes, larger pageview caps, and continuous accessibility scoring "
+"to this site."
+msgstr ""
+"Nasleđeni AllAccessible vidžet nastavlja da radi, ali agentski AI proces "
+"otklanjanja problema zahteva aktuelni nivo plana. Nadogradite da biste na "
+"ovom sajtu dobili automatski predložene ispravke, veće limite pregleda "
+"stranica i kontinuirano ocenjivanje pristupačnosti."
+
+#: inc/SettingsPage.php:492
+msgid "Issues from your latest scan"
+msgstr "Problemi iz vašeg najnovijeg skeniranja"
+
+#: inc/SettingsPage.php:494
+msgid "Grouped by rule, newest scan first."
+msgstr "Grupisano po pravilu, najnovije skeniranje prvo."
+
+#: inc/SettingsPage.php:503
+msgid "View all"
+msgstr "Pogledaj sve"
+
+#: inc/SettingsPage.php:512
+msgid "Severity"
+msgstr "Ozbiljnost"
+
+#: inc/SettingsPage.php:513
+msgid "Rule"
+msgstr "Pravila"
+
+#: inc/SettingsPage.php:514
+msgid "Issues"
+msgstr "Problemi"
+
+#: inc/SettingsPage.php:515
+msgid "WCAG"
+msgstr "WCAG"
+
+#: inc/SettingsPage.php:516
+msgid "Status"
+msgstr "Статус"
+
+#: inc/SettingsPage.php:559
+#, php-format
+msgid "%s fix manifest ready for your review."
+msgid_plural "%s fix manifests ready for your review."
+msgstr[0] "Manifest ispravki %s je spreman za vaš pregled."
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/SettingsPage.php:563
+msgid "Review manifests"
+msgstr "Pregled manifestâ"
+
+#: inc/SettingsPage.php:580
+msgid ""
+"AllAccessible agents are getting ready to scan your site. Detected "
+"accessibility issues will appear here grouped by rule once your first crawl "
+"completes."
+msgstr ""
+"AllAccessible agenti se pripremaju da skeniraju vaš sajt. Otkriveni problemi "
+"pristupačnosti će se ovde pojaviti grupisani po pravilu kada se vaše prvo "
+"indeksiranje završi."
+
+#: inc/SettingsPage.php:583
+msgid "Open coverage"
+msgstr "Otvorena pokrivenost"
+
+#: inc/SettingsPage.php:593
+msgid "Quick actions"
+msgstr "Brze radnje"
+
+#: inc/SettingsPage.php:599
+msgid "In WordPress"
+msgstr "U WordPress-u"
+
+#: inc/SettingsPage.php:612
+msgid "Widget customizer"
+msgstr "Prilagođavač vidžeta"
+
+#: inc/SettingsPage.php:616
+msgid "Account & settings"
+msgstr "Nalog i podešavanja"
+
+#: inc/SettingsPage.php:624
+msgid "On AllAccessible"
+msgstr "Na AllAccessible"
+
+#: inc/SettingsPage.php:631
+msgid "Audit history"
+msgstr "Istorija revizija"
+
+#: inc/SettingsPage.php:635
+msgid "Tasks"
+msgstr "Задаци"
+
+#: inc/SettingsPage.php:640
+msgid "Reports"
+msgstr "Извештаји"
+
+#: inc/SettingsPage.php:661
+msgid "Usage limit exceeded"
+msgstr "Prekoračeno ograničenje upotrebe"
+
+#: inc/SettingsPage.php:669
+#, php-format
+msgid ""
+"You have exceeded your %s limit. Your widget has been temporarily downgraded "
+"to free features. Upgrade your plan to restore premium functionality."
+msgid_plural ""
+"You have exceeded the following limits: %s. Your widget has been temporarily "
+"downgraded to free features. Upgrade your plan to restore premium "
+"functionality."
+msgstr[0] ""
+"Прекорачили сте своје ограничење за %s. Ваш виџет је привремено враћен на "
+"бесплатне функције. Надоградите план да бисте вратили премијум "
+"функционалност."
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/SettingsPage.php:697
+msgid "Complete setup to get started"
+msgstr "Dovršite podešavanje da biste započeli"
+
+#: inc/SettingsPage.php:698
+msgid ""
+"Your accessibility widget is ready to go. Complete the quick setup wizard to "
+"activate your widget."
+msgstr ""
+"Vaš vidžet za pristupačnost je spreman. Dovršite čarobnjak za brzo "
+"podešavanje da biste aktivirali vidžet."
+
+#: inc/SettingsPage.php:700
+msgid "Start setup wizard"
+msgstr "Pokreni čarobnjak za podešavanje"
+
+#: inc/SettingsPage.php:830
+msgid ""
+"Manage your AllAccessible account, plan, widget settings, and integrations."
+msgstr ""
+"Управљајте својим AllAccessible налогом, планом, подешавањима виџета и "
+"интеграцијама."
+
+#: inc/SettingsPage.php:845
+msgid "No AllAccessible account linked"
+msgstr "Ниједан AllAccessible налог није повезан"
+
+#: inc/SettingsPage.php:846
+msgid "Complete the setup wizard to activate your accessibility widget."
+msgstr ""
+"Довршите чаробњак за подешавање да бисте активирали свој виџет за "
+"приступачност."
+
+#: inc/SettingsPage.php:864
+msgid "Usage limit reached"
+msgstr "Достигнуто ограничење коришћења"
+
+#: inc/SettingsPage.php:866
+msgid ""
+"Your widget is running in free mode until usage resets or your plan is "
+"upgraded."
+msgstr ""
+"Ваш виџет ради у бесплатном режиму док се коришћење не ресетује или док се "
+"ваш план не надогради."
+
+#: inc/SettingsPage.php:871
+msgid "Manage plan"
+msgstr "Upravljaj planom"
+
+#: inc/SettingsPage.php:876
+msgid "Account settings sections"
+msgstr "Odeljci podešavanja naloga"
+
+#: inc/SettingsPage.php:879 inc/SettingsPage.php:909
+msgid "Connection"
+msgstr "Veze"
+
+#: inc/SettingsPage.php:880
+msgid "Plan & Usage"
+msgstr "План и коришћење"
+
+#: inc/SettingsPage.php:882
+msgid "Advanced"
+msgstr "Напредни"
+
+#: inc/SettingsPage.php:911
+msgid "How this site links to your AllAccessible account."
+msgstr "Kako se ovaj sajt povezuje sa vašim AllAccessible nalogom."
+
+#: inc/SettingsPage.php:915
+msgid "Connected"
+msgstr "Повезано"
+
+#: inc/SettingsPage.php:917
+msgid "Action required"
+msgstr "Potrebna radnja"
+
+#: inc/SettingsPage.php:930
+msgid "Copy account ID"
+msgstr "Копирај ID налога"
+
+#: inc/SettingsPage.php:931 inc/SettingsPage.php:950
+msgid "Copy"
+msgstr "Копирај"
+
+#: inc/SettingsPage.php:935
+msgid "Identifies your AllAccessible account across every site you own."
+msgstr ""
+"Identifikuje vaš AllAccessible nalog na svim sajtovima koje posedujete."
+
+#: inc/SettingsPage.php:941
+msgid "Site ID"
+msgstr "IDлокације"
+
+#: inc/SettingsPage.php:949
+msgid "Copy site ID"
+msgstr "Копирај ID сајта"
+
+#: inc/SettingsPage.php:954
+msgid "Identifies this specific WordPress site within your account."
+msgstr "Идентификује ову конкретну WordPress локацију у оквиру вашег налога."
+
+#: inc/SettingsPage.php:960
+msgid "Site URL"
+msgstr "URL странице"
+
+#: inc/SettingsPage.php:989
+msgid "Manage subscription"
+msgstr "Upravljaj pretplatom"
+
+#: inc/SettingsPage.php:997
+msgid "Current plan"
+msgstr "Тренутни план"
+
+#: inc/SettingsPage.php:1019
+msgid "Plan changes update immediately across every site on this account."
+msgstr "Promene plana se odmah ažuriraju na svim sajtovima na ovom nalogu."
+
+#: inc/SettingsPage.php:1033
+msgid "Pageview usage"
+msgstr "Коришћење прегледа странице"
+
+#: inc/SettingsPage.php:1035
+msgid "Resets at the start of each billing cycle."
+msgstr "Ресетује се на почетку сваког обрачунског циклуса."
+
+#: inc/SettingsPage.php:1055
+msgid "Pageviews used this cycle"
+msgstr "Прегледа страница искоришћено у овом циклусу"
+
+#. translators: 1: used pageviews, 2: limit
+#: inc/SettingsPage.php:1063
+#, php-format
+msgid "%1$s of %2$s pageviews this cycle."
+msgstr "%1$s од %2$s прегледа страница у овом циклусу."
+
+#: inc/SettingsPage.php:1073
+msgid ""
+"You are close to your monthly limit. Add a pageview pack to keep premium "
+"features active."
+msgstr ""
+"Blizu ste mesečnog ograničenja. Dodajte paket pregleda stranica da biste "
+"zadržali premium funkcije aktivnim."
+
+#: inc/SettingsPage.php:1075
+msgid "Heads up — you are above 75% of your monthly pageviews."
+msgstr "Pažnja — iznad ste 75% of vaših mesečnih pregleda stranica."
+
+#: inc/SettingsPage.php:1082
+msgid ""
+"Pageview tracking is active. Detailed numbers appear after the first billing "
+"cycle."
+msgstr ""
+"Praćenje pregleda stranica je aktivno. Detaljni brojevi će se pojaviti nakon "
+"prvog obračunskog ciklusa."
+
+#: inc/SettingsPage.php:1099
+msgid "Widget appearance"
+msgstr "Izgled vidžeta"
+
+#: inc/SettingsPage.php:1101
+msgid "Color, position, icon, and label live in the Widget Customizer."
+msgstr "Boja, pozicija, ikonica i oznaka nalaze se u Prilagođavaču vidžeta."
+
+#: inc/SettingsPage.php:1106
+msgid "Open customizer"
+msgstr "Otvori prilagođavač"
+
+#: inc/SettingsPage.php:1119
+msgid ""
+"Preview your live widget on the front-end to confirm placement and styling."
+msgstr ""
+"Pregledajte svoj vidžet uživo na front-endu da biste potvrdili poziciju i "
+"stilizovanje."
+
+#: inc/SettingsPage.php:1125
+msgid "Preview on site"
+msgstr "Pregled na sajtu"
+
+#: inc/SettingsPage.php:1130
+msgid "Advanced settings"
+msgstr "Напредне опције"
+
+#: inc/SettingsPage.php:1141
+msgid "Quick toggles"
+msgstr "Brzi prekidači"
+
+#: inc/SettingsPage.php:1143
+msgid "Local overrides applied before the widget renders."
+msgstr "Lokalna premošćavanja se primenjuju pre nego što se vidžet prikaže."
+
+#: inc/SettingsPage.php:1153
+msgid "Headless mode"
+msgstr "Headless režim"
+
+#: inc/SettingsPage.php:1159
+msgid ""
+"Skip the floating button and trigger the panel from your own UI. Recommended "
+"for custom theme integrations."
+msgstr ""
+"Preskočite plutajuće dugme i pokrenite panel iz sopstvenog korisničkog "
+"interfejsa. Preporučeno za integracije sa prilagođenim temama."
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1175
+#, php-format
+msgid ""
+"Available on Enterprise. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"Dostupno u Enterprise planu. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Pogledajte planove</a>."
+
+#: inc/SettingsPage.php:1186 inc/SettingsPage.php:1998
+msgid "Hide widget branding"
+msgstr "Sakrij brendiranje vidžeta"
+
+#: inc/SettingsPage.php:1188
+msgid "Remove the \"Powered by\" footer link inside the widget panel."
+msgstr "Uklonite link u podnožju „Powered by“ unutar panela vidžeta."
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1204
+#, php-format
+msgid ""
+"Included with paid plans. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"Uključeno u plaćene planove. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Pogledajte planove</a>."
+
+#: inc/SettingsPage.php:1217 inc/SettingsPage.php:1220
+msgid "Save changes"
+msgstr "Сачувај промене"
+
+#: inc/SettingsPage.php:1219
+msgid "Saved"
+msgstr "Sačuvano"
+
+#: inc/SettingsPage.php:1237
+msgid "Diagnostics"
+msgstr "Dijagnostika"
+
+#: inc/SettingsPage.php:1239
+msgid "Local identifiers and tools for troubleshooting."
+msgstr "Lokalni identifikatori i alati za rešavanje problema."
+
+#: inc/SettingsPage.php:1246
+msgid "Plugin version"
+msgstr "Верзија додатка"
+
+#: inc/SettingsPage.php:1255
+msgid "Debug logging"
+msgstr "Evidentiranje za otklanjanje grešaka"
+
+#: inc/SettingsPage.php:1257
+msgid "Write extra diagnostics to the WordPress debug log."
+msgstr ""
+"Upisujte dodatnu dijagnostiku u WordPress dnevnik za otklanjanje grešaka."
+
+#: inc/SettingsPage.php:1280
+msgid "Disable error reporting to AllAccessible"
+msgstr "Onemogući prijavljivanje grešaka ka AllAccessible"
+
+#: inc/SettingsPage.php:1282
+msgid ""
+"AllAccessible records plugin errors (with your account ID + plugin version) "
+"so the team can spot issues affecting your install. Toggle on to stop "
+"sending. No personal data is collected."
+msgstr ""
+"AllAccessible бележи грешке додатка (са ID-јем вашег налога + верзијом "
+"додатка) како би тим могао да уочи проблеме који утичу на вашу инсталацију. "
+"Искључите да бисте престали да шаљете. Не прикупљају се лични подаци."
+
+#: inc/SettingsPage.php:1298
+msgid "Developer tools"
+msgstr "Alati za programere"
+
+#: inc/SettingsPage.php:1299
+msgid "Diagnose lookup · Sync · Flush caches"
+msgstr "Dijagnostikuj pretragu · Sinhronizuj · Isprazni keš"
+
+#: inc/SettingsPage.php:1304
+msgid "Diagnose page lookup"
+msgstr "Dijagnostikuj pronalaženje stranice"
+
+#: inc/SettingsPage.php:1306
+msgid ""
+"Pick a published page or post to inspect the exact URL canonicalization and "
+"API response. Useful when a row shows \"Not scanned\" but you expect a score."
+msgstr ""
+"Изаберите објављену страницу или објаву да бисте проверили тачну "
+"каноникализацију URL-а и API одговор. Корисно када ред приказује „Није "
+"скенирано“, а очекујете оцену."
+
+#: inc/SettingsPage.php:1312
+msgid "Post / page ID"
+msgstr "ID objave / stranice"
+
+#: inc/SettingsPage.php:1320 inc/SettingsPage.php:1322
+msgid "Run diagnosis"
+msgstr "Pokreni dijagnostiku"
+
+#: inc/SettingsPage.php:1321
+msgid "Looking up…"
+msgstr "Провера…"
+
+#: inc/SettingsPage.php:1331
+msgid "Sync post audit links"
+msgstr "Синхронизуј линкове за ревизију након објаве"
+
+#: inc/SettingsPage.php:1333
+msgid ""
+"Manually run the post → audit linker. The background job runs about once a "
+"week (paid plans only, and only when your site receives traffic). Trigger "
+"here if the All Posts column or Editor box shows missing scores and you "
+"don't want to wait."
+msgstr ""
+"Ручно покрените повезивање објава → ревизија. Позадински задатак се покреће "
+"отприлике једном недељно (само плаћени планови, и само када ваш сајт има "
+"саобраћај). Покрените овде ако колона „Све објаве“ или поље у уређивачу "
+"приказује недостајуће оцене и не желите да чекате."
+
+#: inc/SettingsPage.php:1341 inc/SettingsPage.php:1343
+msgid "Sync now"
+msgstr "Синхронизуј сада"
+
+#: inc/SettingsPage.php:1342
+msgid "Syncing…"
+msgstr "Синхронизација…"
+
+#: inc/SettingsPage.php:1350
+msgid "Flush plugin caches"
+msgstr "Испразни кешеве додатка"
+
+#: inc/SettingsPage.php:1352
+msgid ""
+"Wipes every plugin-side API transient (page scores, manifest, validate, "
+"images). Use when the API has been updated and the 2–10 min cache is still "
+"showing old data."
+msgstr ""
+"Брише сваки API transient на страни додатка (оцене страница, манифест, "
+"валидација, слике). Користите када је API ажуриран, а кеш од 2–10 мин и даље "
+"приказује старе податке."
+
+#: inc/SettingsPage.php:1360 inc/SettingsPage.php:1362
+msgid "Flush caches"
+msgstr "Испразни кешеве"
+
+#: inc/SettingsPage.php:1361
+msgid "Flushing…"
+msgstr "Пражњење…"
+
+#: inc/SettingsPage.php:1372 inc/SettingsPage.php:1380
+#: inc/SettingsPage.php:1383
+msgid "Clear widget caches"
+msgstr "Обриши кешеве виџета"
+
+#: inc/SettingsPage.php:1374
+msgid ""
+"Flush local browser storage and server response cache so the widget reloads "
+"fresh on the next page view."
+msgstr ""
+"Испразните локално складиште прегледача и кеш одговора сервера како би се "
+"виџет поново учитао свеж при следећем приказу странице."
+
+#: inc/SettingsPage.php:1381
+msgid "Clearing…"
+msgstr "Брисање…"
+
+#: inc/SettingsPage.php:1382
+msgid "Caches cleared"
+msgstr "Кешеви су обрисани"
+
+#: inc/SettingsPage.php:1393 inc/SettingsPage.php:1409
+msgid "Reset plugin data"
+msgstr "Ресетуј податке додатка"
+
+#: inc/SettingsPage.php:1395
+msgid "Disconnect this site and clear local options. Cannot be undone."
+msgstr ""
+"Прекини везу са овим сајтом и обриши локалне опције. Не може се поништити."
+
+#: inc/SettingsPage.php:1401
+msgid ""
+"Use this if you are moving the plugin to a different account or starting "
+"over from the setup wizard. Uninstalling the plugin also removes these "
+"options automatically."
+msgstr ""
+"Користите ово ако премештате додатак на други налог или почињете испочетка "
+"из чаробњака за подешавање. Деинсталирање додатка такође аутоматски уклања "
+"ове опције."
+
+#: inc/SettingsPage.php:1421
+#, fuzzy
+#| msgid "Needs alt"
+msgid "Need help?"
+msgstr "Потребна помоћ"
+
+#: inc/SettingsPage.php:1423
+msgid "Our team is here for you — get answers fast."
+msgstr "Naš tim je tu za vas — brzo do odgovora."
+
+#: inc/SettingsPage.php:1432
+msgid "Knowledge base"
+msgstr "Baza znanja"
+
+#: inc/SettingsPage.php:1444
+msgid "Legal & Trust:"
+msgstr "Правно и поверење:"
+
+#: inc/SettingsPage.php:1447
+msgid "GDPR"
+msgstr "GDPR"
+
+#: inc/SettingsPage.php:1448
+msgid "Cookies"
+msgstr "Kolačići"
+
+#: inc/SettingsPage.php:1449
+msgid "Trust Center"
+msgstr "Центар поверења"
+
+#: inc/SettingsPage.php:1450
+msgid "Partner Agreement"
+msgstr "Партнерски уговор"
+
+#: inc/SettingsPage.php:1721 inc/SettingsPage.php:1724
+msgid "Copied"
+msgstr "Kopirano"
+
+#: inc/SettingsPage.php:1725
+msgid "copied to clipboard"
+msgstr "копирано у међуспремник"
+
+#: inc/SettingsPage.php:1730 inc/SettingsPage.php:1733
+msgid "Copy:"
+msgstr "Копирај:"
+
+#: inc/SettingsPage.php:1784
+msgid "Could not save. Try again."
+msgstr "Није могуће сачувати. Покушајте поново."
+
+#: inc/SettingsPage.php:1791 inc/SettingsPage.php:1877
+msgid "Network error. Try again."
+msgstr "Грешка мреже. Покушајте поново."
+
+#: inc/SettingsPage.php:1847
+msgid "Reset all plugin data? This disconnects this site and cannot be undone."
+msgstr ""
+"Ресетовати све податке додатка? Ово прекида везу са овим сајтом и не може се "
+"поништити."
+
+#: inc/SettingsPage.php:1852
+msgid "Resetting…"
+msgstr "Ресетовање…"
+
+#: inc/SettingsPage.php:1853
+msgid "Resetting plugin data"
+msgstr "Ресетовање података додатка"
+
+#: inc/SettingsPage.php:1863
+msgid "Plugin data cleared. Reloading…"
+msgstr "Подаци додатка су обрисани. Поново се учитава…"
+
+#: inc/SettingsPage.php:1864
+msgid "Plugin data reset. Reloading."
+msgstr "Подаци додатка су ресетовани. Поновно учитавање."
+
+#: inc/SettingsPage.php:1871
+msgid "Could not reset plugin data. Try again."
+msgstr "Није могуће ресетовати податке додатка. Покушајте поново."
+
+#: inc/SettingsPage.php:1908
+msgid "Settings saved"
+msgstr "Подешавања сачувана"
+
+#: inc/SettingsPage.php:1922
+msgid "Premium Trial — 7 days free"
+msgstr "Премијум пробни период — 7 дана бесплатно"
+
+#: inc/SettingsPage.php:1940
+msgid "Legacy Premium"
+msgstr "Наслеђени Премијум"
+
+#. translators: %s: tier name (e.g., "Enterprise")
+#: inc/SettingsPage.php:1954
+#, php-format
+msgid "%s account"
+msgstr "%s налог"
+
+#. translators: %s: monthly pageview limit (e.g. "10,000")
+#: inc/SettingsPage.php:1974
+#, php-format
+msgid "Up to %s pageviews per month"
+msgstr "До %s прегледа странице месечно"
+
+#: inc/SettingsPage.php:1977
+msgid "Pageview cap based on your plan"
+msgstr "Ограничење прегледа страница на основу вашег плана"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1980
+#, php-format
+msgid ""
+"Unlimited %s interactions — alt text and agentic fix proposals, no monthly "
+"cap"
+msgstr ""
+"Neograničene %s interakcije — alternativni tekst i agentički predlozi "
+"ispravki, bez mesečnog ograničenja"
+
+#: inc/SettingsPage.php:1987
+msgid "Unlimited pageviews and sites"
+msgstr "Неограничени прегледи страница и сајтови"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1988
+#, php-format
+msgid "Human-in-the-loop agentic remediation powered by %s"
+msgstr "Агентска ремедијација уз људску контролу, покретана од стране %s"
+
+#: inc/SettingsPage.php:1989
+msgid "Priority support and dedicated success manager"
+msgstr "Prioritetna podrška i posvećeni menadžer za uspeh"
+
+#: inc/SettingsPage.php:1990
+msgid "Custom branding and white-label widget"
+msgstr "Прилагођено брендирање и white-label виџет"
+
+#: inc/SettingsPage.php:1991
+msgid "Single sign-on (SSO) and audit log export"
+msgstr "Jedinstvena prijava (SSO) i izvoz revizorskog dnevnika"
+
+#: inc/SettingsPage.php:1997
+msgid "Continuous site scans and accessibility scoring"
+msgstr "Kontinuirana skeniranja sajta i ocenjivanje pristupačnosti"
+
+#: inc/SettingsPage.php:1999
+msgid "Email support"
+msgstr "Подршка путем е-поште"
+
+#: inc/SettingsPage.php:2003
+msgid "Full premium widget for 7 days"
+msgstr "Potpuni premium vidžet na 7 dana"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2004
+#, php-format
+msgid "Try %s agents on your real site"
+msgstr "Isprobajte %s agenata na svom stvarnom sajtu"
+
+#: inc/SettingsPage.php:2005
+msgid "Cancel any time — no card hold"
+msgstr "Otkažite u bilo kom trenutku — bez rezervacije na kartici"
+
+#: inc/SettingsPage.php:2009
+msgid "Premium widget on the legacy plan"
+msgstr "Premium vidžet u okviru legacy plana"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2010
+#, php-format
+msgid "Includes %s agent features"
+msgstr "Uključuje %s agentskih funkcija"
+
+#: inc/SettingsPage.php:2011
+msgid "Continuous accessibility scoring"
+msgstr "Kontinuirano ocenjivanje pristupačnosti"
+
+#: inc/SettingsPage.php:2016
+msgid "Accessibility widget on every page"
+msgstr "Vidžet za pristupačnost na svakoj stranici"
+
+#: inc/SettingsPage.php:2017
+msgid "Keyboard navigation and screen reader helpers"
+msgstr "Navigacija tastaturom i pomoćnici za čitače ekrana"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2018
+#, php-format
+msgid "Upgrade for agentic remediation with %s"
+msgstr "Nadogradite za agentsku remedijaciju uz %s"
+
+#: inc/TierGate.php:26
+msgid "Approve, edit, and revert agentic fixes"
+msgstr "Одобрите, уредите и вратите агентске исправке"
+
+#: inc/TierGate.php:27
+msgid "Image Descriptions"
+msgstr "Описи слика"
+
+#: inc/TierGate.php:28
+msgid "Reports & Statement deep-links"
+msgstr "Дубоке везе ка извештајима и изводима"
+
+#: inc/TierGate.php:29
+msgid "Per-page accessibility breakdown in editor"
+msgstr "Pregled pristupačnosti po stranici u uređivaču"
+
+#: inc/TierGate.php:30
+msgid "Notification center"
+msgstr "Центар за обавештења"
+
+#: inc/TierGate.php:31
+msgid "CSV export of fixes"
+msgstr "CSV izvoz ispravki"
+
+#: inc/TierGate.php:32
+msgid "PDF report export"
+msgstr "Извоз PDF извештаја"
+
+#: inc/TierGate.php:33
+msgid "White-label branding"
+msgstr "White-label brendiranje"
+
+#: inc/TierGate.php:34
+msgid "Weekly automatic scans"
+msgstr "Nedeljna automatska skeniranja"
+
+#: inc/TierGate.php:35
+msgid "Page change detection"
+msgstr "Detekcija promena na stranici"
+
+#: inc/TierGate.php:36
+msgid "Accommodation request widget"
+msgstr "Vidžet za zahtev za prilagođavanje"
+
+#. translators: %s: feature label
+#: inc/TierGate.php:84
+#, php-format
+msgid "%s is available on paid plans"
+msgstr "%s je dostupno u plaćenim planovima"
+
+#: inc/TierGate.php:87
+msgid ""
+"Upgrade to unlock this feature plus everything else included in the "
+"AllAccessible AI suite."
+msgstr ""
+"Nadogradite da biste otključali ovu funkciju, kao i sve ostalo uključeno u "
+"AllAccessible AI paket."
+
+#: inc/TierGate.php:98
+msgid "Upgrade required"
+msgstr "Potrebna je nadogradnja"
+
+#: inc/UsageDashboard.php:31
+msgid "Usage overview"
+msgstr "Преглед коришћења"
+
+#: inc/UsageDashboard.php:34
+msgid "Usage this month"
+msgstr "Коришћење овог месеца"
+
+#: inc/UsageDashboard.php:36
+msgid "Tracks pageviews and AllAccessible AI activity against your plan."
+msgstr ""
+"Прати прегледе страница и AllAccessible AI активност у односу на ваш план."
+
+#: inc/UsageDashboard.php:55
+msgid "No usage to show yet"
+msgstr "Још нема приказа коришћења"
+
+#: inc/UsageDashboard.php:57
+msgid "Usage appears here once your widget starts serving pageviews."
+msgstr ""
+"Коришћење ће се појавити овде када ваш виџет почне да опслужује прегледе "
+"страница."
+
+#: inc/UsageDashboard.php:61
+msgid "Preview your widget"
+msgstr "Прегледајте свој виџет"
+
+#: inc/UsageDashboard.php:70
+msgid "Active visits served by your widget this month."
+msgstr "Активне посете које је ваш виџет опслужио овог месеца."
+
+#: inc/UsageDashboard.php:74
+msgid "AI image alt text"
+msgstr "AI алтернативни текст за слике"
+
+#: inc/UsageDashboard.php:75
+msgid "Alt text generated by AllAccessible AI for images on your site."
+msgstr ""
+"Алтернативни текст који AllAccessible AI генерише за слике на вашем сајту."
+
+#: inc/UsageDashboard.php:79
+msgid "Accessibility audits"
+msgstr "Ревизије приступачности"
+
+#: inc/UsageDashboard.php:80
+msgid "Automated scans run by AllAccessible agents."
+msgstr "Аутоматизована скенирања која покрећу AllAccessible агенти."
+
+#: inc/UsageDashboard.php:84
+msgid "Compliance reports"
+msgstr "Извештаји о усаглашености"
+
+#: inc/UsageDashboard.php:85
+msgid "VPAT and accessibility statement PDFs generated."
+msgstr "Генерисани су VPAT и PDF-ови изјаве о приступачности."
+
+#: inc/UsageDashboard.php:133
+#, php-format
+msgid "%1$s usage: %2$d percent"
+msgstr "%1$s употреба: %2$d процената"
+
+#: inc/UsageDashboard.php:150
+msgid "Upgrade to unlock"
+msgstr "Надоградите да бисте откључали"
+
+#: inc/UsageDashboard.php:175
+#, php-format
+msgid "%s percent used"
+msgstr "Искоришћено: %s процената"
+
+#: inc/UsageDashboard.php:183
+msgid "Limit reached — widget temporarily on free features."
+msgstr "Достигнут је лимит — виџет је привремено на бесплатним функцијама."
+
+#. translators: %s: count of remaining units this month
+#: inc/UsageDashboard.php:188
+#, php-format
+msgid "%s remaining this month"
+msgstr "Преостало овог месеца: %s"
+
+#: inc/UsageDashboard.php:195
+msgid "Manage"
+msgstr "Upravljaj"
+
+#: inc/UsageDashboard.php:203
+msgid "Upgrade your plan"
+msgstr "Надоградите свој план"
+
+#: inc/UsageDashboard.php:209
+msgid "Manage in dashboard"
+msgstr "Управљајте у контролној табли"
+
+#: inc/UsageDashboard.php:220
+msgid "No metered features on your plan yet"
+msgstr "На вашем плану још нема мерених функција"
+
+#: inc/UsageDashboard.php:221
+msgid "Usage will appear here once your widget starts serving pages."
+msgstr ""
+"Употреба ће се појавити овде када ваш виџет почне да приказује странице."
+
+#: inc/UsageDashboard.php:230
+msgid "Need more pageviews or AllAccessible AI capacity?"
+msgstr "Треба вам више прегледа страница или AllAccessible AI капацитета?"
+
+#: inc/WidgetCustomizer.php:104
+msgid "Quick Widget Settings"
+msgstr "Brza podešavanja vidžeta"
+
+#: inc/WidgetCustomizer.php:105
+msgid "Customize your widget appearance"
+msgstr "Prilagodite izgled svog vidžeta"
+
+#: inc/WidgetCustomizer.php:109
+msgid "Advanced Settings"
+msgstr "Напредна подешавања"
+
+#: inc/WidgetCustomizer.php:122
+msgid "Pro Tip:"
+msgstr "Pro savet:"
+
+#: inc/WidgetCustomizer.php:123
+msgid ""
+"For more options including accessibility profiles, custom CSS, and advanced "
+"features, visit"
+msgstr ""
+"За више опција, укључујући профиле приступачности, прилагођени CSS и "
+"напредне функције, посетите"
+
+#: inc/WidgetCustomizer.php:124
+msgid "Advanced Widget Settings"
+msgstr "Napredna podešavanja vidžeta"
+
+#: inc/WidgetCustomizer.php:142
+msgid "Widget Color"
+msgstr "Boja vidžeta"
+
+#: inc/WidgetCustomizer.php:147
+msgid "Choose the color for your accessibility widget button."
+msgstr "Изаберите боју дугмета виџета за приступачност."
+
+#: inc/WidgetCustomizer.php:150
+msgid "Widget Position"
+msgstr "Pozicija vidžeta"
+
+#: inc/WidgetCustomizer.php:152
 msgid "Bottom Right"
 msgstr "Dole Desno"
 
-#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
-msgid "Middle Right"
-msgstr "Средњи десни"
-
-#: inc/AllAccessibleSettings.php:207
-msgid "Bottom Center"
-msgstr "Доњи центар"
-
-#: inc/AllAccessibleSettings.php:208
+#: inc/WidgetCustomizer.php:153
 msgid "Bottom Left"
 msgstr "Dole Ljevo"
 
-#: inc/AllAccessibleSettings.php:209
+#: inc/WidgetCustomizer.php:154
+msgid "Bottom Center"
+msgstr "Доњи центар"
+
+#: inc/WidgetCustomizer.php:155
+msgid "Middle Right"
+msgstr "Средњи десни"
+
+#: inc/WidgetCustomizer.php:156
 msgid "Middle Left"
 msgstr "Средња лева"
 
-#: inc/AllAccessibleSettings.php:210
+#: inc/WidgetCustomizer.php:157
+msgid "Top Right"
+msgstr "Gore Desno"
+
+#: inc/WidgetCustomizer.php:158
 msgid "Top Left"
 msgstr "Gore Ljevo"
 
-#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
-msgid "Choose Widget Shape"
-msgstr "Одабери облик виџета"
+#: inc/WidgetCustomizer.php:160
+msgid "Where the widget button appears on your site."
+msgstr "Gde se dugme vidžeta pojavljuje na vašem sajtu."
 
-#: inc/AllAccessibleSettings.php:220
+#: inc/WidgetCustomizer.php:167
+msgid "Widget Size"
+msgstr "Величина виџета"
+
+#: inc/WidgetCustomizer.php:169
+msgid "Small"
+msgstr "Malo"
+
+#: inc/WidgetCustomizer.php:170
+msgid "Medium (Default)"
+msgstr "Средњи (подразумевани)"
+
+#: inc/WidgetCustomizer.php:171
+msgid "Large"
+msgstr "Велика"
+
+#: inc/WidgetCustomizer.php:173
+msgid "Size of the widget button in pixels."
+msgstr "Veličina dugmeta vidžeta u pikselima."
+
+#: inc/WidgetCustomizer.php:176
+msgid "Widget Icon"
+msgstr "Ikonica vidžeta"
+
+#: inc/WidgetCustomizer.php:179
+msgid "Default"
+msgstr "Подраумевано"
+
+#: inc/WidgetCustomizer.php:180
+msgid "Accessibility Person"
+msgstr "Osoba za pristupačnost"
+
+#: inc/WidgetCustomizer.php:181
+msgid "Accessibility Settings"
+msgstr "Podešavanja pristupačnosti"
+
+#: inc/WidgetCustomizer.php:182
+msgid "Adjust"
+msgstr "Подеси"
+
+#: inc/WidgetCustomizer.php:183
+msgid "Wheelchair 1"
+msgstr "Invalidska kolica 1"
+
+#: inc/WidgetCustomizer.php:184
+msgid "Heart"
+msgstr "Срце"
+
+#: inc/WidgetCustomizer.php:185
+msgid "Braille"
+msgstr "Brajevo pismo"
+
+#: inc/WidgetCustomizer.php:186
+msgid "Blind/Cane"
+msgstr "Slepa osoba/štap"
+
+#: inc/WidgetCustomizer.php:187
+msgid "Eye"
+msgstr "Oko"
+
+#: inc/WidgetCustomizer.php:188
+msgid "Globe"
+msgstr "Globus"
+
+#: inc/WidgetCustomizer.php:189
+msgid "Universal Access"
+msgstr "Univerzalni pristup"
+
+#: inc/WidgetCustomizer.php:191
+msgid "Walking Cane"
+msgstr "Štap za hodanje"
+
+#: inc/WidgetCustomizer.php:195
+msgid "Icon displayed in the widget button."
+msgstr "Ikonica prikazana na dugmetu vidžeta."
+
+#: inc/WidgetCustomizer.php:202
+msgid "Widget Shape"
+msgstr "Oblik vidžeta"
+
+#: inc/WidgetCustomizer.php:204
 msgid "Circle"
 msgstr "Кrug"
 
-#: inc/AllAccessibleSettings.php:221
+#: inc/WidgetCustomizer.php:205
 msgid "Square"
 msgstr "Коцка"
 
-#: inc/AllAccessibleSettings.php:234
-msgid "Hide AllAccessible Branding"
-msgstr "Сакриј све доступно брендирање"
+#: inc/WidgetCustomizer.php:207
+msgid "Shape of the widget button."
+msgstr "Oblik dugmeta vidžeta."
 
-#: inc/AllAccessibleSettings.php:235
-msgid "Remove Branding"
-msgstr "Уклони брендирање"
+#: inc/WidgetCustomizer.php:212
+msgid "Run without the bubble"
+msgstr "Pokreni bez oblačića"
 
-#: inc/AllAccessibleSettings.php:237
-msgid "Branding Visible"
-msgstr "Брендирање видљиво"
+#: inc/WidgetCustomizer.php:216
+msgid "Hide widget, keep agentic AI remediation running."
+msgstr "Sakrij vidžet, zadrži agentičku AI sanaciju da radi."
 
-#: inc/AllAccessibleSettings.php:238
-msgid "Branding Removed"
-msgstr "Брендирање је уклоњено"
-
-#: inc/AllAccessibleSettings.php:241
+#: inc/WidgetCustomizer.php:218
 msgid ""
-"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
-"and logo from the widget."
+"Visitors won't see the accessibility toolbar. AllAccessible agents continue "
+"scanning and applying approved fixes in the background."
 msgstr ""
-"Напомена: Сакривање брендирања ће уклонити текст и логотип „Поверед би "
-"АллАццессибле“ из виџета."
+"Posetioci neće videti traku sa alatkama za pristupačnost. AllAccessible "
+"agenti nastavljaju skeniranje i primenu odobrenih ispravki u pozadini."
 
-#: inc/AllAccessibleSettings.php:246
+#: inc/WidgetCustomizer.php:230
 msgid "Save Settings"
 msgstr "Сачувај подешавања"
 
-#: inc/AllAccessibleSettings.php:252
-msgid "You may need to reload this page if your widget options are not visible"
+#: inc/WidgetCustomizer.php:234
+msgid "Having trouble viewing updates?"
+msgstr "Imate problema sa prikazom ažuriranja?"
+
+#: inc/WidgetCustomizer.php:238
+msgid "Clear all caches: browser, cookies, and server (full reset)"
 msgstr ""
-"Можда ћете морати поново да учитате ову страницу ако опције виџета нису "
-"видљиве"
+"Obriši sve keš memorije: pregledač, kolačiće i server (potpuno resetovanje)"
 
-#: inc/AllAccessibleSettings.php:259
-msgid "Version"
-msgstr "Верзија"
+#: inc/WidgetCustomizer.php:239
+msgid "Clear All Caches"
+msgstr "Obriši sve keš memorije"
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Need Help"
-msgstr "Потребна помоћ"
+#: inc/WidgetCustomizer.php:249
+msgid "Saving..."
+msgstr "Чување..."
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Contact Us"
-msgstr "Контактирај нас"
+#: inc/WidgetCustomizer.php:253
+msgid "Settings saved!"
+msgstr "Podešavanja su sačuvana!"
 
-#. Plugin Name of the plugin/theme
-msgid "AllAccessible"
-msgstr "АллАццессибле"
+#: inc/WidgetCustomizer.php:259
+msgid "Cache cleared! Refresh your site to see changes."
+msgstr "Keš je obrisan! Osvežite sajt da biste videli promene."
+
+#: inc/WidgetCustomizer.php:267
+msgid "Clearing all caches..."
+msgstr "Brisanje svih keš memorija..."
+
+#: inc/WidgetCustomizer.php:271
+msgid "All caches cleared! Refresh your site to see changes."
+msgstr "Sve keš memorije su obrisane! Osvežite sajt da biste videli promene."
+
+#: inc/WidgetCustomizer.php:284
+msgid "Live Preview"
+msgstr "Pregledaj:"
+
+#: inc/WidgetCustomizer.php:297
+msgid "See how your widget will look on your site."
+msgstr "Pogledajte kako će vaš vidžet izgledati na vašem sajtu."
+
+#: inc/WidgetCustomizer.php:576
+msgid "Failed to save settings. Please try again."
+msgstr "Nije uspelo čuvanje podešavanja. Pokušajte ponovo."
+
+#: inc/WidgetCustomizer.php:623
+msgid "Error clearing cache. Please check browser console."
+msgstr "Greška pri brisanju keš memorije. Proverite konzolu pregledača."
+
+#: inc/WidgetCustomizer.php:677
+msgid "Server cache invalidation failed. Browser cache was cleared."
+msgstr "Poništavanje keša na serveru nije uspelo. Keš pregledača je obrisan."
+
+#: inc/WidgetCustomizer.php:699
+msgid "Error clearing caches. Please check browser console."
+msgstr "Greška pri brisanju keš memorije. Proverite konzolu pregledača."
+
+#: inc/api/ApiClient.php:82
+msgid "Account ID not found"
+msgstr "ID налога није пронађен"
+
+#: inc/api/ApiClient.php:125
+msgid "Invalid API response"
+msgstr "Неважећи API одговор"
+
+#: inc/api/ApiClient.php:371
+msgid "A page URL is required to trigger a scan."
+msgstr "URL странице је обавезан да би се покренуло скенирање."
+
+#: inc/api/ApiClient.php:473
+msgid "post_id or page_url required"
+msgstr "post_id или page_url су обавезни"
+
+#: inc/api/ApiClient.php:568
+msgid "post_id and page_url required"
+msgstr "post_id и page_url су обавезни"
+
+#: inc/api/ApiClient.php:589
+msgid "pairs required"
+msgstr "парови су обавезни"
+
+#: inc/api/ApiClient.php:592
+msgid "batch limited to 100 pairs"
+msgstr "пакет је ограничен на 100 парова"
+
+#: inc/api/ApiClient.php:641 inc/api/ApiClient.php:700
+#: inc/api/ApiClient.php:967
+msgid "Account not configured"
+msgstr "Налог није конфигурисан"
+
+#: inc/api/ApiClient.php:753 inc/api/ApiClient.php:768
+#: inc/api/ApiClient.php:788
+msgid "Invalid manifest ID"
+msgstr "Неважећи ID манифеста"
+
+#: inc/api/ApiClient.php:814
+msgid "Invalid manifest or fix index"
+msgstr "Неважећи манифест или индекс исправке"
+
+#: inc/api/ApiClient.php:818
+msgid "Value is required"
+msgstr "Вредност је обавезна"
+
+#: inc/api/ApiClient.php:821
+msgid "Value too long (max 500 characters)"
+msgstr "Вредност је предугачка (макс. 500 карактера)"
+
+#: inc/api/ApiClient.php:841
+msgid "Invalid site ID"
+msgstr "Неважећи ID сајта"
+
+#: inc/api/ApiClient.php:845
+msgid "No manifest IDs supplied"
+msgstr "Нису достављени ID-еви манифеста"
+
+#: inc/api/ApiClient.php:988
+msgid "Server returned invalid plugin secret payload"
+msgstr "Сервер је вратио неважећи payload тајне додатка"
+
+#: inc/api/ApiClient.php:1017
+msgid ""
+"No site associated with this account yet. Visit your WordPress homepage once "
+"to register this site, then return here."
+msgstr ""
+"Још увек нема сајта повезаног са овим налогом. Посетите своју WordPress "
+"почетну страницу једном да бисте регистровали овај сајт, а затим се вратите "
+"овде."
+
+#: inc/api/ApiClient.php:1151
+msgid "Invalid scan job ID"
+msgstr "Неважећи ID посла скенирања"
+
+#: inc/api/ApiClient.php:1170
+msgid "Plugin secret unavailable. Re-validate license to refresh credentials."
+msgstr ""
+"Тајна додатка није доступна. Поново потврдите лиценцу да бисте освежили "
+"акредитиве."
+
+#. translators: %s: error message
+#: inc/api/ApiClient.php:1226
+#, php-format
+msgid "API request failed: %s"
+msgstr "API zahtev nije uspeo: %s"
+
+#: inc/api/ApiClient.php:1249
+msgid "Failed to decode API response"
+msgstr "Nije uspelo dekodiranje API odgovora"
 
 #. Plugin URI of the plugin/theme
 msgid "https://www.allaccessible.org/platform/wordpress/"
@@ -392,14 +4021,14 @@ msgstr "https://www.allaccessible.org/platform/wordpress/"
 msgid ""
 "Unlock true digital accessibility with AllAccessible - a comprehensive "
 "WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
-"your users with a fully customizable accessibility widget, and enhance their "
-"experience with our premium AI-powered features."
+"your users with a fully customizable accessibility widget, plus agentic AI "
+"remediation that auto-suggests fixes for your team to approve."
 msgstr ""
-"Откључајте праву дигиталну приступачност помоћу АллАццессибле – "
-"свеобухватног ВордПресс додатка који води вашу веб локацију ка ВЦАГ/АДА "
-"усаглашености. Оснажите своје кориснике помоћу потпуно прилагодљивог виџета "
-"за приступачност и побољшајте њихово искуство помоћу наших врхунских "
-"функција које покреће вештачка интелигенција."
+"Otključajte pravu digitalnu pristupačnost uz AllAccessible — sveobuhvatan "
+"WordPress dodatak koji vodi vaš veb-sajt ka usklađenosti sa WCAG/ADA "
+"standardima. Osnažite svoje korisnike potpuno prilagodljivim vidžetom za "
+"pristupačnost, uz agentičku AI remedijaciju koja automatski predlaže "
+"ispravke koje vaš tim može da odobri."
 
 #. Author of the plugin/theme
 msgid "AllAccessible Team"
@@ -409,72 +4038,504 @@ msgstr "АллАццессибле Теам"
 msgid "https://www.allaccessible.org/"
 msgstr "https://www.allaccessible.org/"
 
-#~ msgid "Let's make this WordPress Site Accessible"
-#~ msgstr "Учинимо овај WордПресс сајт приступачним"
+#~ msgid ""
+#~ "Could not start scan — plugin credentials not yet provisioned. Visit "
+#~ "Settings → Re-verify to refresh, then retry."
+#~ msgstr ""
+#~ "Није могуће покренути скенирање — акредитиви додатка још нису обезбеђени. "
+#~ "Идите на Подешавања → Поново потврдите да бисте освежили, затим покушајте "
+#~ "поново."
 
-#~ msgid "Free Version"
-#~ msgstr "Фрее Версион"
+#~ msgid "AI alt text · this month"
+#~ msgstr "AI alternativni tekst · ovog meseca"
 
 #, php-format
-#~ msgid "Let's make this WordPress Site %s"
-#~ msgstr "Хајде да направимо овај ВордПресс сајт %s"
-
-#~ msgid "Connect"
-#~ msgstr "Повезан"
-
-#~ msgid "AllAccessible Accessibility Plugin"
-#~ msgstr "Додатна компонента за приступачност која се може приступити"
+#~ msgid "Grouped by rule. %1$s AI-resolvable · %2$s need manual review."
+#~ msgstr ""
+#~ "Grupisano po pravilu. %1$s rešivo uz pomoć AI · %2$s zahteva ručni "
+#~ "pregled."
 
 #, php-format
-#~ msgid ""
-#~ "Connect your account with your email in the form below. If you do not "
-#~ "have an existing account, we will create a free 7 day trial for %s."
-#~ msgstr ""
-#~ "Повежите свој налог са вашом е-поштом у обрасцу испод. Ако немате "
-#~ "постојећи налог, направићемо бесплатну пробну верзију од 7 дана за %s."
+#~ msgid "Agentic alt text by %1$s — up to %2$s images/month"
+#~ msgstr "Агентски алтернативни текст од стране %1$s — до %2$s слика месечно"
+
+#, php-format
+#~ msgid "Agentic alt text and label generation by %s"
+#~ msgstr "Агентско генерисање алтернативног текста и ознака од стране %s"
+
+#~ msgid "Scan started — watching for results…"
+#~ msgstr "Skeniranje je započeto — čekamo rezultate…"
+
+#~ msgid "Scan failed. Try again from the dashboard."
+#~ msgstr "Skeniranje nije uspelo. Pokušaj ponovo sa kontrolne table."
+
+#~ msgid "Enjoying AllAccessible?"
+#~ msgstr "Да ли вам се допада AllAccessible?"
+
+#~ msgid "No data yet"
+#~ msgstr "Još nema podataka"
+
+#~ msgid "Limit reached"
+#~ msgstr "Ograničenje dostignuto"
+
+#~ msgid "Approaching limit"
+#~ msgstr "Približavate se ograničenju"
+
+#~ msgid "On track"
+#~ msgstr "Na dobrom ste putu"
+
+#~ msgid "Healthy"
+#~ msgstr "U dobrom stanju"
+
+#~ msgid "Site overview at a glance"
+#~ msgstr "Pregled sajta na prvi pogled"
+
+#~ msgid "Accessibility Score: not yet measured"
+#~ msgstr "Ocena pristupačnosti: još nije izmerena"
+
+#, php-format
+#~ msgid "%1$s of %2$s pages audited"
+#~ msgstr "%1$s od %2$s stranica je provereno"
+
+#~ msgid "Pages audited: none yet"
+#~ msgstr "Proverene stranice: još nijedna"
+
+#~ msgid "Across your site"
+#~ msgstr "Na celom vašem sajtu"
+
+#~ msgid "Pending Fixes"
+#~ msgstr "Ispravke na čekanju"
+
+#, php-format
+#~ msgid "%s active on your site"
+#~ msgstr "%s aktivno na vašem sajtu"
+
+#~ msgid "Plan usage breakdown"
+#~ msgstr "Pregled korišćenja plana"
+
+#~ msgid "Site Stats"
+#~ msgstr "Statistika sajta"
+
+#, php-format
+#~ msgid "%s w/ AI alt"
+#~ msgstr "%s sa AI alternativnim tekstom"
+
+#, php-format
+#~ msgid "%1$s — %2$d%% used"
+#~ msgstr "%1$s — %2$d%% iskorišćeno"
+
+#~ msgid "Limit reached — upgrade capacity"
+#~ msgstr "Dostignuto ograničenje — nadogradite kapacitet"
+
+#~ msgid "Total images"
+#~ msgstr "Ukupno slika"
+
+#~ msgid "across all scanned pages"
+#~ msgstr "na svim skeniranim stranicama"
+
+#, php-format
+#~ msgid "%d%% of total"
+#~ msgstr "%d%% of ukupno"
+
+#~ msgid "Authored by AllAccessible AI"
+#~ msgstr "Autor: AllAccessible AI"
+
+#~ msgid "Get this site ready for everyone"
+#~ msgstr "Pripremite ovaj sajt za sve"
+
+#~ msgid "Create a new AllAccessible account"
+#~ msgstr "Kreirajte novi AllAccessible nalog"
+
+#~ msgid "Recommended"
+#~ msgstr "Препоручено"
+
+#~ msgid "Create a new account"
+#~ msgstr "Kreiraj novog korisnika"
 
 #~ msgid ""
-#~ "Are you enjoying the AllAccessible Accessibility Plugin for WordPress?"
+#~ "Spin up a fresh AllAccessible account with the dashboard, reporting, and "
+#~ "the full agentic AI toolkit."
 #~ msgstr ""
-#~ "Уживате ли у АллАццессибле Додатној компоненти за приступачност за "
-#~ "WордПресс?"
+#~ "Otvorite novi AllAccessible nalog sa kontrolnom tablom, izveštavanjem i "
+#~ "kompletnim agentnim AI alatom."
 
-#~ msgid "Yes"
-#~ msgstr "Да"
+#~ msgid "Existing customer"
+#~ msgstr "Postojeći korisnik"
 
-#~ msgid "No"
-#~ msgstr "Не"
+#~ msgid "Link an existing account"
+#~ msgstr "Povežite postojeći nalog"
 
-#~ msgid "Dismiss this notice"
-#~ msgstr "Odbaci obaveštenje"
+#~ msgid "Link account"
+#~ msgstr "Povežite nalog"
 
-#~ msgid "Would you like to provide more feedback about our plugin?"
-#~ msgstr ""
-#~ "Желите ли да пружите више повратних информација о нашој додатној "
-#~ "компоненти?"
-
-#~ msgid "Yes, I would like to provide feedback"
-#~ msgstr "Да , желео бих да пружим повратне информације"
+#~ msgid "Just the widget"
+#~ msgstr "Samo vidžet"
 
 #~ msgid ""
-#~ "Glad to hear you are enjoying it. Would you consider leaving a positive "
-#~ "review?"
+#~ "The free accessibility widget keeps running on this site. Finish setup "
+#~ "any time to unlock the dashboard and AI fixes."
 #~ msgstr ""
-#~ "Драго ми је да иујем да ућивате. Да ли бисте размотрили остављање "
-#~ "позитивне критике?"
+#~ "Besplatni vidžet za pristupačnost nastavlja da radi na ovom sajtu. "
+#~ "Dovršite podešavanje kad god želite da biste otključali kontrolnu tablu i "
+#~ "AI ispravke."
+
+#~ msgid "Skip setup"
+#~ msgstr "Прескочи инсталацију"
+
+#~ msgid "Choose a plan"
+#~ msgstr "Izaberite plan"
 
 #~ msgid ""
-#~ "It really helps to support the plugin and help others to discover it too!"
-#~ msgstr "Заиста помаже да се подржи плугин и помогне другима да га открију!"
+#~ "Start free and upgrade later, or try the full feature set free for seven "
+#~ "days. No credit card required either way."
+#~ msgstr ""
+#~ "Počnite besplatno i nadogradite kasnije ili isprobajte kompletan skup "
+#~ "funkcija besplatno sedam dana. Kreditna kartica nije potrebna ni u jednom "
+#~ "slučaju."
 
-#~ msgid "Yes, I will write a positive review."
-#~ msgstr "Да , написаћу позитивну критику."
+#~ msgid "month"
+#~ msgstr "mesec"
 
-#~ msgid "Let's make this WordPress Site AllAccessible"
-#~ msgstr "Учинимо овај WордПресс сајт аллАццессибле"
+#~ msgid "Accessibility widget"
+#~ msgstr "Vidžet za pristupačnost"
 
-#~ msgid "is connected to"
-#~ msgstr "је повезан са"
+#~ msgid "Color and contrast controls"
+#~ msgstr "Kontrole boja i kontrasta"
 
-#~ msgid "with account ID"
-#~ msgstr "са ИД-ом налога"
+#~ msgid "Choose Free"
+#~ msgstr "Izaberite besplatno"
+
+#~ msgid "Premium trial"
+#~ msgstr "Premium probni period"
+
+#~ msgid "Everything in Free"
+#~ msgstr "Sve iz besplatnog paketa"
+
+#~ msgid "AI"
+#~ msgstr "AI"
+
+#~ msgid "Human-in-the-loop agentic AI remediation"
+#~ msgstr "Agentni AI za otklanjanje problema uz ljudski nadzor"
+
+#~ msgid "Automatic alt text from AllAccessible agents"
+#~ msgstr "Automatski alt tekst od AllAccessible agenata"
+
+#~ msgid "WCAG and ADA audits"
+#~ msgstr "WCAG i ADA revizije"
+
+#~ msgid "Widget customization"
+#~ msgstr "Prilagođavanje vidžeta"
+
+#~ msgid "Cancel any time"
+#~ msgstr "Otkažite u bilo kom trenutku"
+
+#~ msgid "Start trial"
+#~ msgstr "Započnite probni period"
+
+# GPT: „Agentic AI“ се може превести као „агентска“ или „агентна“ ВИ; изабрано је „агентска“ као чешћи и разумљивији облик. „Handles the heavy lifting“ је преносно, па је преведено као „обавља тежи део посла“.
+#, fuzzy
+#~ msgid "Agentic AI handles the heavy lifting."
+#~ msgstr "Агентска вештачка интелигенција обавља тежи део посла."
+
+#~ msgid ""
+#~ "AllAccessible agents draft alt text, propose code fixes, and suggest "
+#~ "remediations. Your team reviews and approves before anything ships."
+#~ msgstr ""
+#~ "AllAccessible agenti pripremaju alt tekst, predlažu ispravke koda i "
+#~ "preporučuju mere za otklanjanje problema. Vaš tim pregleda i odobrava pre "
+#~ "nego što bilo šta bude objavljeno."
+
+#~ msgid "Back"
+#~ msgstr "Nazad"
+
+#~ msgid "I already have an account"
+#~ msgstr "Već imam nalog"
+
+#~ msgid "Step 3 of 4"
+#~ msgstr "Korak 3 od 4"
+
+#~ msgid "Create your account"
+#~ msgstr "Kreirajte svoj nalog"
+
+#~ msgid "We use this to provision your account and send setup confirmations."
+#~ msgstr ""
+#~ "Ovo koristimo da otvorimo vaš nalog i pošaljemo potvrde o podešavanju."
+
+#~ msgid "Create account"
+#~ msgstr "Kreirajte nalog"
+
+#~ msgid "Free forever plan"
+#~ msgstr "Besplatan plan zauvek"
+
+#~ msgid "No credit card. Upgrade any time."
+#~ msgstr "Bez kreditne kartice. Nadogradite u bilo kom trenutku."
+
+#~ msgid "Includes the accessibility widget and core controls."
+#~ msgstr "Uključuje vidžet za pristupačnost i osnovne kontrole."
+
+#~ msgid "Up to 10k pageviews / month covered."
+#~ msgstr "Pokriva do 10k pregleda stranica mesečno."
+
+#~ msgid "Seven-day premium trial"
+#~ msgstr "Sedmodnevno premium probno korišćenje"
+
+#~ msgid "No credit card. Cancel any time."
+#~ msgstr "Bez kreditne kartice. Otkažite u bilo kom trenutku."
+
+#~ msgid "Full access to agentic AI remediation."
+#~ msgstr "Pun pristup agentičkoj AI sanaciji."
+
+#~ msgid "Continuous audits + per-page scoring."
+#~ msgstr "Kontinuirane revizije + ocenjivanje po stranici."
+
+#~ msgid "Widget customization, Image AI, VPAT exports."
+#~ msgstr "Prilagođavanje vidžeta, Image AI, VPAT izvozi."
+
+#~ msgid "We never share your email."
+#~ msgstr "Nikada ne delimo vaš imejl."
+
+#~ msgid "Link your account"
+#~ msgstr "Povežite svoj nalog"
+
+#~ msgid ""
+#~ "Enter the email associated with your AllAccessible account and we will "
+#~ "connect this site to it."
+#~ msgstr ""
+#~ "Unesite imejl povezan sa vašim AllAccessible nalogom i povezaćemo ovaj "
+#~ "sajt sa njim."
+
+#~ msgid "Use the email tied to your AllAccessible login."
+#~ msgstr "Koristite imejl povezan sa vašom AllAccessible prijavom."
+
+#~ msgid "Linking your account..."
+#~ msgstr "Povezivanje vašeg naloga..."
+
+#~ msgid "What happens next"
+#~ msgstr "Šta sledi"
+
+#~ msgid "This WordPress site is added to your existing account."
+#~ msgstr "Ovaj WordPress sajt je dodat vašem postojećem nalogu."
+
+#~ msgid "Your current plan and settings stay in place."
+#~ msgstr "Vaš trenutni plan i podešavanja ostaju na snazi."
+
+#~ msgid "The widget activates with your saved configuration."
+#~ msgstr "Vidžet se aktivira sa vašom sačuvanom konfiguracijom."
+
+#~ msgid "Step 4 of 4"
+#~ msgstr "Korak 4 od 4"
+
+#~ msgid "We found your sitemap"
+#~ msgstr "Pronašli smo vašu mapu sajta"
+
+#~ msgid "Start free forever"
+#~ msgstr "Počnite besplatno zauvek"
+
+#~ msgid "Activate free account"
+#~ msgstr "Aktivirajte besplatan nalog"
+
+#~ msgid "Start your seven-day trial"
+#~ msgstr "Započnite svoju sedmodnevnu probu"
+
+#~ msgid "Activate free trial"
+#~ msgstr "Aktivirajte besplatnu probu"
+
+#~ msgid "Please fill in all required fields."
+#~ msgstr "Molimo popunite sva obavezna polja."
+
+#~ msgid ""
+#~ "We could not find an account with that email. Please check and try again."
+#~ msgstr ""
+#~ "Nismo mogli da pronađemo nalog sa tom imejl adresom. Proverite i "
+#~ "pokušajte ponovo."
+
+#~ msgid "Generate fixes now"
+#~ msgstr "Generiši ispravke sada"
+
+#~ msgid "Open in app"
+#~ msgstr "Otvori u aplikaciji"
+
+#~ msgid "Submit your sitemap"
+#~ msgstr "Pošaljite svoju mapu sajta"
+
+#~ msgid ""
+#~ "Your sitemap tells AllAccessible which pages to check. Once submitted, "
+#~ "scans run automatically based on your plan."
+#~ msgstr ""
+#~ "Vaša mapa sajta govori AllAccessible-u koje stranice treba proveriti. "
+#~ "Kada je pošaljete, skeniranja se automatski pokreću u skladu sa vašim "
+#~ "planom."
+
+#~ msgid "Submit sitemap"
+#~ msgstr "Pošalji mapu sajta"
+
+#~ msgid "Update sitemap"
+#~ msgstr "Ažuriraj mapu sajta"
+
+#~ msgid ""
+#~ "No sitemap detected on this site. Install an SEO plugin (Yoast, RankMath, "
+#~ "All in One SEO) or enable the WordPress core sitemap, then refresh this "
+#~ "page."
+#~ msgstr ""
+#~ "На овом сајту није откривена мапа сајта. Инсталирајте SEO додатак (Yoast, "
+#~ "RankMath, All in One SEO) или омогућите основну WordPress мапу сајта, а "
+#~ "затим освежите ову страницу."
+
+#~ msgid "Sitemap URL"
+#~ msgstr "Sitemap URL"
+
+# GPT: Енгл. "candidate" може бити „кандидат“ или „потенцијални/одговарајући резултат“ (нпр. у претрази); изабрао сам „кандидат“ као најнеутралније уобичајено UI решење.
+#, fuzzy, php-format
+#~ msgid "%d candidate found"
+#~ msgid_plural "%d candidates found"
+#~ msgstr[0] "Пронађен је %d кандидат"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+
+#~ msgid "pages scanned. Agentic Fixes ready to review."
+#~ msgstr "страница је скенирано. Agentic Fixes су спремне за преглед."
+
+#~ msgid "Pick a sitemap URL first."
+#~ msgstr "Прво изаберите URL мапе сајта."
+
+#~ msgid "Yoast SEO"
+#~ msgstr "Yoast SEO"
+
+#~ msgid "Rank Math"
+#~ msgstr "Rank Math"
+
+#~ msgid "All in One SEO"
+#~ msgstr "All in One SEO"
+
+#~ msgid "SEOPress"
+#~ msgstr "SEOPress"
+
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
+
+#~ msgid "—"
+#~ msgstr "—"
+
+#~ msgid "Accessibility resolution overview"
+#~ msgstr "Pregled rezolucije pristupačnosti"
+
+#~ msgid "Overall score"
+#~ msgstr "Ukupan rezultat"
+
+#, php-format
+#~ msgid "WCAG %s aligned"
+#~ msgstr "Usklađeno sa WCAG %s"
+
+#~ msgid "Resolution"
+#~ msgstr "Резолуција"
+
+#~ msgid "remaining"
+#~ msgstr "Преостало"
+
+#, php-format
+#~ msgid "%s%% resolved by AllAccessible agents"
+#~ msgstr "%s%% resolved od strane AllAccessible agenata"
+
+#, php-format
+#~ msgid "%1$s auto-applied · %2$s approved by your team"
+#~ msgstr "%1$s automatski primenjeno · %2$s odobrio vaš tim"
+
+#~ msgid ""
+#~ "Resolution numbers will appear after your first scan completes and "
+#~ "AllAccessible agents process your manifest."
+#~ msgstr ""
+#~ "Brojevi rezolucije će se pojaviti nakon što se vaše prvo skeniranje "
+#~ "završi i AllAccessible agenti obrade vaš manifest."
+
+#~ msgid "Coverage"
+#~ msgstr "Pokrivenost"
+
+#, php-format
+#~ msgid "%s%% of estimated site coverage"
+#~ msgstr "%s%% of procenjena pokrivenost sajta"
+
+#~ msgid "No pages scanned yet."
+#~ msgstr "Još uvek nijedna stranica nije skenirana."
+
+#, php-format
+#~ msgid "Last scan %s"
+#~ msgstr "Poslednje skeniranje %s"
+
+#, php-format
+#~ msgid "Overall accessibility score %s out of 100"
+#~ msgstr "Ukupan rezultat pristupačnosti %s od 100"
+
+#~ msgid "Run a scan to compute your first score."
+#~ msgstr "Pokrenite skeniranje da izračunate svoj prvi rezultat."
+
+#~ msgid "Trending up since your last scan."
+#~ msgstr "U porastu od poslednjeg skeniranja."
+
+#~ msgid "Down from your last scan — review pending fixes."
+#~ msgstr ""
+#~ "Niže u odnosu na poslednje skeniranje — pregledajte ispravke na čekanju."
+
+#~ msgid "Good. A few high-impact fixes will push you to excellent."
+#~ msgstr ""
+#~ "Dobro. Nekoliko ispravki sa velikim uticajem poguraće vas do odličnog."
+
+#~ msgid "Needs work. Approve the recommended fixes to climb fast."
+#~ msgstr ""
+#~ "Potrebna su poboljšanja. Odobrite preporučene ispravke da biste brzo "
+#~ "napredovali."
+
+#~ msgid "Critical issues detected. Start with the queue below."
+#~ msgstr "Otkriveni su kritični problemi. Počnite sa redom čekanja ispod."
+
+#~ msgid "Post not found"
+#~ msgstr "Objava nije pronađena"
+
+#~ msgid "Could not generate permalink for this post"
+#~ msgstr "Nije moguće generisati trajni link za ovu objavu"
+
+#~ msgid "Page scan initiated. Results will be available shortly."
+#~ msgstr ""
+#~ "Skeniranje stranice je pokrenuto. Rezultati će uskoro biti dostupni."
+
+#, php-format
+#~ msgid "API returned status code %d"
+#~ msgstr "API je vratio statusni kod %d"
+
+#~ msgid "Failed to parse API response"
+#~ msgstr "Nije uspelo raščlanjivanje API odgovora"
+
+#~ msgid ""
+#~ "Agentic AI accessibility remediation and the AllAccessible widget. "
+#~ "Connect your AllAccessible account to enable compliance scans, widget "
+#~ "customization, and human-in-the-loop remediation."
+#~ msgstr ""
+#~ "Агентска AI санација приступачности и AllAccessible виџет. Повежите свој "
+#~ "AllAccessible налог да бисте омогућили скенирања усклађености, "
+#~ "прилагођавање виџета и санацију уз људску интервенцију."
+
+#~ msgid "Site not connected to AllAccessible account."
+#~ msgstr "Sajt nije povezan sa AllAccessible nalogom."
+
+#~ msgid "Unknown API error"
+#~ msgstr "Nepoznata API greška"
+
+#, php-format
+#~ msgid "API error (%1$d): %2$s"
+#~ msgstr "API greška (%1$d): %2$s"
+
+#~ msgid "Not Available"
+#~ msgstr "Није доступно"
+
+#~ msgid "Needs Work"
+#~ msgstr "Potrebna su poboljšanja"
+
+#, php-format
+#~ msgid "WCAG %s Compliant"
+#~ msgstr "Usklađeno sa WCAG %s"
+
+#, php-format
+#~ msgid "WCAG %s Non-Compliant"
+#~ msgstr "Nije usklađeno sa WCAG %s"
+
+#~ msgid "Sitemap URL is required"
+#~ msgstr "URL мапе сајта је обавезан"

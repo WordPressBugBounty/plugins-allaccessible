@@ -46,301 +46,329 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
     $icon = $site_options->triggerSVG ?? 'Default';
     $shape = $site_options->triggerBtnRadius ?? '50';
     $white_label = $site_options->isWhitelabel ?? false;
+    // Headless mode: hide visible widget bubble while AllAccessible agents continue
+    // running remediation in the background. Prefer the backend-stored flag
+    // (from site_options) so multi-device admins see consistent state; fall back
+    // to local aacb_options for sites that haven't synced yet.
+    $aacb_local_opts = get_option('aacb_options', array());
+    $headless_mode = isset($site_options->headlessMode)
+        ? (bool) $site_options->headlessMode
+        : !empty($aacb_local_opts['headless_mode']);
     ?>
 
-    <div class="aacx-bg-white aacx-rounded-xl aacx-shadow-xl aacx-border-2 aacx-border-aacx-gray-200 aacx-overflow-hidden aacx-mb-8">
+    <div class="aacx-v2" style="margin-bottom: var(--aacx-space-8);">
+    <style>
+      /* aacx-hidden compatibility — preserved from legacy Tailwind so existing
+         JS toggleClass('aacx-hidden') still hides status panels. */
+      .aacx-v2 .aacx-hidden { display: none !important; }
+      /* Customizer-specific layout helpers (scoped to .aacx-v2 only). */
+      .wc-color-row { display: flex; align-items: center; gap: var(--aacx-space-3); }
+      .wc-color-input { height: 44px; width: 64px; padding: 2px; cursor: pointer;
+        border: 1px solid var(--aacx-border-strong); border-radius: var(--aacx-radius-sm);
+        background: var(--aacx-surface); }
+      .wc-icon-row { display: flex; align-items: center; gap: var(--aacx-space-3); }
+      .wc-icon-preview { width: 44px; height: 44px; padding: 6px; border-radius: var(--aacx-radius);
+        background: var(--aacx-primary-600); display: flex; align-items: center; justify-content: center;
+        flex-shrink: 0; color: #fff; }
+      .wc-toolbar { display: flex; align-items: center; gap: var(--aacx-space-3); flex-wrap: wrap;
+        padding-top: var(--aacx-space-6); margin-top: var(--aacx-space-6);
+        border-top: 1px solid var(--aacx-border); }
+      .wc-status { display: inline-flex; align-items: center; gap: var(--aacx-space-2);
+        font-size: var(--aacx-text-sm); }
+      .wc-status svg { width: 18px; height: 18px; }
+      .wc-preview-frame { position: relative; background: var(--aacx-surface);
+        border: 1px solid var(--aacx-border-strong); border-radius: var(--aacx-radius-md);
+        height: 380px; overflow: hidden; }
+      .wc-headless-toggle { display: flex; align-items: center; gap: var(--aacx-space-3);
+        padding: var(--aacx-space-3) var(--aacx-space-4); cursor: pointer;
+        border: 1px solid var(--aacx-border-strong); border-radius: var(--aacx-radius);
+        background: var(--aacx-surface); transition: border-color var(--aacx-transition); }
+      .wc-headless-toggle:hover { border-color: var(--aacx-ai-700); }
+      .wc-headless-toggle input { width: 18px; height: 18px; cursor: pointer; flex-shrink: 0; }
+      /* Spin animation for legacy SVG spinners */
+      @keyframes wc-spin { to { transform: rotate(360deg); } }
+      .aacx-v2 .aacx-animate-spin { animation: wc-spin 0.8s linear infinite; }
+    </style>
 
-        <div class="aacx-px-8 aacx-py-6 aacx-border-b-2 aacx-border-aacx-gray-200 aacx-bg-aacx-gray-50">
-            <div class="aacx-flex aacx-items-center aacx-justify-between">
-                <div class="aacx-flex aacx-items-center aacx-gap-4">
-                    <div class="aacx-w-12 aacx-h-12 aacx-bg-aacx-primary-100 aacx-rounded-xl aacx-flex aacx-items-center aacx-justify-center">
-                        <svg class="aacx-w-7 aacx-h-7 aacx-text-aacx-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h2 class="aacx-text-2xl aacx-font-bold aacx-text-aacx-slate-900">
-                            <?php _e('Quick Widget Settings', 'allaccessible'); ?>
-                        </h2>
-                        <p class="aacx-text-xs aacx-text-aacx-slate-600 aacx-mt-1">
-                            <?php _e('Customize your widget appearance', 'allaccessible'); ?>
-                        </p>
-                    </div>
-                </div>
-                <a href="<?php echo esc_url($widget_settings_url); ?>"
-                   target="_blank"
-                   class="aacx-inline-flex aacx-items-center aacx-gap-2 aacx-px-5 aacx-py-2.5 aacx-bg-aacx-primary-600 aacx-text-white aacx-rounded-lg aacx-font-semibold aacx-text-sm hover:aacx-bg-aacx-primary-700 aacx-shadow-lg hover:aacx-shadow-xl aacx-transition-all">
-                    <?php _e('Advanced Settings', 'allaccessible'); ?>
-                    <svg class="aacx-w-4 aacx-h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+    <div class="aacx-v2__card aacx-v2__card--elevated">
+
+        <!-- Header -->
+        <div class="aacx-v2__card-header">
+            <div style="display: flex; align-items: center; gap: var(--aacx-space-4);">
+                <div style="width: 40px; height: 40px; background: var(--aacx-primary-100); border-radius: var(--aacx-radius); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg style="width: 22px; height: 22px; color: var(--aacx-primary-600);" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                     </svg>
-                </a>
+                </div>
+                <div>
+                    <h3 style="margin: 0;"><?php _e('Quick Widget Settings', 'allaccessible'); ?></h3>
+                    <p style="font-size: var(--aacx-text-xs); color: var(--aacx-text-muted); margin-top: 2px;"><?php _e('Customize your widget appearance', 'allaccessible'); ?></p>
+                </div>
             </div>
+            <a href="<?php echo esc_url($widget_settings_url); ?>" target="_blank" class="aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--sm">
+                <?php _e('Advanced Settings', 'allaccessible'); ?>
+                <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+            </a>
         </div>
 
-        <!-- Info Message -->
-        <div class="aacx-px-8 aacx-pt-6">
-            <div class="aacx-bg-aacx-primary-50 aacx-border aacx-border-aacx-primary-200 aacx-rounded-lg aacx-p-4 aacx-mb-6">
-                <p class="aacx-text-sm aacx-text-aacx-primary-800">
+        <!-- Body: info banner + 2-column form/preview grid -->
+        <div class="aacx-v2__card-body">
+
+            <!-- Info banner -->
+            <div class="aacx-v2__banner aacx-v2__banner--info" style="margin-bottom: var(--aacx-space-6);">
+                <div>
                     <strong><?php _e('Pro Tip:', 'allaccessible'); ?></strong>
                     <?php _e('For more options including accessibility profiles, custom CSS, and advanced features, visit', 'allaccessible'); ?>
-                    <a href="<?php echo esc_url($widget_settings_url); ?>" target="_blank" class="aacx-underline aacx-font-semibold">
-                        <?php _e('Advanced Widget Settings', 'allaccessible'); ?>
-                    </a>
-                </p>
-            </div>
-        </div>
-
-        <!-- 2-Column Layout: Settings (2/3) + Preview (1/3) -->
-        <div class="aacx-px-8 aacx-pb-8">
-        <div class="aacx-grid aacx-grid-cols-1 md:aacx-grid-cols-2 aacx-gap-8">
-
-            <!-- Left: Settings Form (1 column) -->
-            <div class="md:aacx-col-span-1">
-                <form id="aacb-widget-settings-form">
-                    <input type="hidden" name="accountID" value="<?php echo esc_attr(get_option('aacb_accountID')); ?>">
-                    <input type="hidden" name="subdomainID" value="<?php echo esc_attr($subdomain_id); ?>">
-
-                    <div class="aacx-space-y-8">
-
-                <!-- Row 1: Color + Position -->
-                <div class="aacx-grid aacx-grid-cols-1 md:aacx-grid-cols-2 aacx-gap-8">
-
-                <!-- Widget Color -->
-                <div>
-                    <label class="aacx-block aacx-text-sm aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                        <?php _e('Widget Color', 'allaccessible'); ?>
-                    </label>
-                    <div class="aacx-flex aacx-items-center aacx-gap-3">
-                        <input
-                            type="color"
-                            name="triggerBtnBg"
-                            id="widget-color"
-                            value="<?php echo esc_attr(trim($color)); ?>"
-                            class="aacx-h-12 aacx-w-20 aacx-rounded aacx-border-2 aacx-border-aacx-gray-300 aacx-cursor-pointer">
-                        <input
-                            type="hidden"
-                            id="widget-color-text"
-                            value="<?php echo esc_attr(trim($color)); ?>"
-                            class="aacx-flex-1 aacx-px-4 aacx-py-2 aacx-border-2 aacx-border-aacx-gray-300 aacx-rounded-lg aacx-text-sm"
-                            readonly>
-                    </div>
-                    <p class="aacx-text-xs aacx-text-aacx-slate-500 aacx-mt-1">
-                        <?php _e('Choose the color for your accessibility widget button', 'allaccessible'); ?>
-                    </p>
+                    <a href="<?php echo esc_url($widget_settings_url); ?>" target="_blank"><?php _e('Advanced Widget Settings', 'allaccessible'); ?></a>.
                 </div>
-
-                <!-- Widget Position -->
-                <div>
-                    <label class="aacx-block aacx-text-sm aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                        <?php _e('Widget Position', 'allaccessible'); ?>
-                    </label>
-                    <select
-                        name="buttonPosition"
-                        class="aacx-w-full aacx-px-4 aacx-py-2 aacx-border-2 aacx-border-aacx-gray-300 aacx-rounded-lg focus:aacx-border-aacx-primary-600 focus:aacx-outline-none aacx-transition-colors">
-                        <option value="bottom-right" <?php selected($position, 'bottom-right'); ?>><?php _e('Bottom Right', 'allaccessible'); ?></option>
-                        <option value="bottom-left" <?php selected($position, 'bottom-left'); ?>><?php _e('Bottom Left', 'allaccessible'); ?></option>
-                        <option value="bottom-center" <?php selected($position, 'bottom-center'); ?>><?php _e('Bottom Center', 'allaccessible'); ?></option>
-                        <option value="right-center" <?php selected($position, 'right-center'); ?>><?php _e('Middle Right', 'allaccessible'); ?></option>
-                        <option value="left-center" <?php selected($position, 'left-center'); ?>><?php _e('Middle Left', 'allaccessible'); ?></option>
-                        <option value="top-right" <?php selected($position, 'top-right'); ?>><?php _e('Top Right', 'allaccessible'); ?></option>
-                        <option value="top-left" <?php selected($position, 'top-left'); ?>><?php _e('Top Left', 'allaccessible'); ?></option>
-                    </select>
-                    <p class="aacx-text-xs aacx-text-aacx-slate-500 aacx-mt-1">
-                        <?php _e('Where the widget button appears on your site', 'allaccessible'); ?>
-                    </p>
-                </div>
-
-                </div>
-
-                <!-- Row 2: Size + Icon -->
-                <div class="aacx-grid aacx-p-2 aacx-grid-cols-1 md:aacx-grid-cols-2 aacx-gap-8">
-
-                <!-- Widget Size -->
-                <div>
-                    <label class="aacx-block aacx-text-sm aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                        <?php _e('Widget Size', 'allaccessible'); ?>
-                    </label>
-                    <select
-                        name="triggerBtnSize"
-                        class="aacx-w-full aacx-px-4 aacx-py-2 aacx-border-2 aacx-border-aacx-gray-300 aacx-rounded-lg focus:aacx-border-aacx-primary-600 focus:aacx-outline-none aacx-transition-colors">
-                        <option value="40" <?php selected($size, '40'); ?>><?php _e('Small', 'allaccessible'); ?></option>
-                        <option value="55" <?php selected($size, '55'); ?>><?php _e('Medium (Default)', 'allaccessible'); ?></option>
-                        <option value="80" <?php selected($size, '80'); ?>><?php _e('Large', 'allaccessible'); ?></option>
-                    </select>
-                    <p class="aacx-text-xs aacx-text-aacx-slate-500 aacx-mt-1">
-                        <?php _e('Size of the widget button in pixels', 'allaccessible'); ?>
-                    </p>
-                </div>
-
-                <!-- Widget Icon -->
-                <div>
-                    <label class="aacx-block aacx-text-sm aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                        <?php _e('Widget Icon', 'allaccessible'); ?>
-                    </label>
-                    <div class="aacx-flex aacx-items-center aacx-gap-3">
-                        <select
-                            name="triggerSVG"
-                            id="icon-selector"
-                            class="aacx-flex-1 aacx-px-4 aacx-py-2 aacx-border-2 aacx-border-aacx-gray-300 aacx-rounded-lg focus:aacx-border-aacx-primary-600 focus:aacx-outline-none aacx-transition-colors">
-                            <option value="Default" <?php selected($icon, 'Default'); ?>><?php _e('Default', 'allaccessible'); ?></option>
-                            <option value="Alt" <?php selected($icon, 'Alt'); ?>><?php _e('Accessibility Person', 'allaccessible'); ?></option>
-                            <option value="Alt2" <?php selected($icon, 'Alt2'); ?>><?php _e('Accessibility Settings', 'allaccessible'); ?></option>
-                            <option value="Adjust" <?php selected($icon, 'Adjust'); ?>><?php _e('Adjust', 'allaccessible'); ?></option>
-                            <option value="Chair2" <?php selected($icon, 'Chair2'); ?>><?php _e('Wheelchair 1', 'allaccessible'); ?></option>
-                            <option value="Heart" <?php selected($icon, 'Heart'); ?>><?php _e('Heart', 'allaccessible'); ?></option>
-                            <option value="Braille" <?php selected($icon, 'Braille'); ?>><?php _e('Braille', 'allaccessible'); ?></option>
-                            <option value="Blind" <?php selected($icon, 'Blind'); ?>><?php _e('Blind/Cane', 'allaccessible'); ?></option>
-                            <option value="Eye" <?php selected($icon, 'Eye'); ?>><?php _e('Eye', 'allaccessible'); ?></option>
-                            <option value="Globe" <?php selected($icon, 'Globe'); ?>><?php _e('Globe', 'allaccessible'); ?></option>
-                            <option value="Access" <?php selected($icon, 'Access'); ?>><?php _e('Universal Access', 'allaccessible'); ?></option>
-                            <option value="Cogs" <?php selected($icon, 'Cogs'); ?>><?php _e('Settings', 'allaccessible'); ?></option>
-                            <option value="Cane" <?php selected($icon, 'Cane'); ?>><?php _e('Walking Cane', 'allaccessible'); ?></option>
-                        </select>
-                        <div id="icon-preview" class="aacx-w-12 aacx-p-2 aacx-h-12 aacx-bg-aacx-primary-600 aacx-rounded-lg aacx-flex aacx-items-center aacx-justify-center aacx-flex-shrink-0">
-                            <!-- SVG will be injected here -->
-                        </div>
-                    </div>
-                    <p class="aacx-text-xs aacx-text-aacx-slate-500 aacx-mt-1">
-                        <?php _e('Icon displayed in the widget button', 'allaccessible'); ?>
-                    </p>
-                </div>
-
-                </div>
-
-                <!-- Row 3: Shape -->
-                <div class="aacx-grid aacx-grid-cols-1 md:aacx-grid-cols-2 aacx-gap-8">
-
-                <!-- Widget Shape -->
-                <div>
-                    <label class="aacx-block aacx-text-sm aacx-font-bold aacx-text-aacx-slate-700 aacx-mb-2">
-                        <?php _e('Widget Shape', 'allaccessible'); ?>
-                    </label>
-                    <select
-                        name="triggerBtnRadius"
-                        class="aacx-w-full aacx-px-4 aacx-py-2 aacx-border-2 aacx-border-aacx-gray-300 aacx-rounded-lg focus:aacx-border-aacx-primary-600 focus:aacx-outline-none aacx-transition-colors">
-                        <option value="50" <?php selected($shape, '50'); ?>><?php _e('Circle', 'allaccessible'); ?></option>
-                        <option value="0" <?php selected($shape, '0'); ?>><?php _e('Square', 'allaccessible'); ?></option>
-                    </select>
-                    <p class="aacx-text-xs aacx-text-aacx-slate-500 aacx-mt-1">
-                        <?php _e('Shape of the widget button', 'allaccessible'); ?>
-                    </p>
-                </div>
-
-                </div>
-
-                </div>
-
-            <!-- Save Button -->
-            <div class="aacx-flex aacx-items-center aacx-gap-4 aacx-pt-8 aacx-mt-6 aacx-border-t-2 aacx-border-aacx-gray-200">
-                <button
-                    type="submit"
-                    id="save-widget-settings"
-                    class="aacx-px-8 aacx-py-4 aacx-bg-aacx-primary-600 aacx-text-white aacx-rounded-lg aacx-font-bold aacx-text-base hover:aacx-bg-aacx-primary-700 aacx-shadow-lg hover:aacx-shadow-xl aacx-transition-all aacx-flex aacx-items-center">
-                    <svg class="aacx-w-5 aacx-h-5 aacx-mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    <?php _e('Save Settings', 'allaccessible'); ?>
-                </button>
-
-                <a
-                    href="#"
-                    id="show-troubleshooting-link"
-                    class="aacx-text-sm aacx-text-aacx-primary-600 hover:aacx-text-aacx-primary-700 aacx-underline aacx-flex aacx-items-center">
-                    <svg class="aacx-w-4 aacx-h-4 aacx-mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    <?php _e('Having trouble viewing updates?', 'allaccessible'); ?>
-                </a>
-
-                <div id="troubleshooting-buttons" class="aacx-hidden">
-                    <button
-                        type="button"
-                        id="invalidate-all-cache-button"
-                        class="aacx-px-6 aacx-py-4 aacx-bg-aacx-warning-50 aacx-text-aacx-warning-700 aacx-rounded-lg aacx-font-semibold aacx-text-sm hover:aacx-bg-aacx-warning-100 aacx-border-2 aacx-border-aacx-warning-300 aacx-transition-all aacx-flex aacx-items-center"
-                        title="<?php esc_attr_e('Clear all caches: browser, cookies, and server (full reset)', 'allaccessible'); ?>">
-                        <svg class="aacx-w-4 aacx-h-4 aacx-mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
-                        </svg>
-                        <?php _e('Clear All Caches', 'allaccessible'); ?>
-                    </button>
-                </div>
-
-                <div id="save-status" class="aacx-hidden aacx-flex aacx-items-center aacx-text-sm">
-                    <svg class="aacx-animate-spin aacx-h-5 aacx-w-5 aacx-text-aacx-primary-600 aacx-mr-2" fill="none" viewBox="0 0 24 24">
-                        <circle class="aacx-opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                        <path class="aacx-opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    <span class="aacx-text-aacx-slate-600"><?php _e('Saving...', 'allaccessible'); ?></span>
-                </div>
-
-                <div id="save-success" class="aacx-hidden aacx-flex aacx-items-center aacx-text-sm aacx-text-aacx-secondary-600">
-                    <svg class="aacx-w-5 aacx-h-5 aacx-mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                    </svg>
-                    <?php _e('Settings saved!', 'allaccessible'); ?>
-                </div>
-
-                <div id="save-error" class="aacx-hidden aacx-text-sm aacx-text-red-600"></div>
-
-                <div id="reset-cache-success" class="aacx-hidden aacx-flex aacx-items-center aacx-text-sm aacx-text-aacx-secondary-600">
-                    <svg class="aacx-w-5 aacx-h-5 aacx-mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                    </svg>
-                    <?php _e('Cache cleared! Refresh your site to see changes.', 'allaccessible'); ?>
-                </div>
-
-                <div id="invalidate-cache-status" class="aacx-hidden aacx-flex aacx-items-center aacx-text-sm">
-                    <svg class="aacx-animate-spin aacx-h-5 aacx-w-5 aacx-text-aacx-warning-600 aacx-mr-2" fill="none" viewBox="0 0 24 24">
-                        <circle class="aacx-opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                        <path class="aacx-opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    <span class="aacx-text-aacx-slate-600"><?php _e('Clearing all caches...', 'allaccessible'); ?></span>
-                </div>
-
-                <div id="invalidate-cache-success" class="aacx-hidden aacx-flex aacx-items-center aacx-text-sm aacx-text-aacx-secondary-600">
-                    <svg class="aacx-w-5 aacx-h-5 aacx-mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                    </svg>
-                    <?php _e('All caches cleared! Refresh your site to see changes.', 'allaccessible'); ?>
-                </div>
-
-                <div id="invalidate-cache-error" class="aacx-hidden aacx-text-sm aacx-text-red-600"></div>
-            </div>
-        </form>
             </div>
 
-            <!-- Right: Live Preview (1 column) -->
-            <div class="md:aacx-col-span-1">
-                <div class="aacx-sticky" style="top: 20px;">
-                    <div class="aacx-bg-aacx-gray-50 aacx-border-2 aacx-border-aacx-primary-200 aacx-rounded-xl aacx-p-6">
-                        <h3 class="aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-4 aacx-text-center">
-                            <?php _e('Live Preview', 'allaccessible'); ?>
-                        </h3>
-                        <div class="aacx-relative aacx-bg-white aacx-border-2 aacx-border-aacx-gray-300 aacx-rounded-lg aacx-shadow-inner" style="height: 380px;">
-                            <!-- Position indicator -->
-                            <div id="widget-preview-position" class="aacx-absolute aacx-transition-all aacx-duration-300" style="bottom: 20px; right: 20px;">
-                                <div id="widget-preview-button"
-                                     class="aacx-shadow-xl aacx-flex aacx-items-center aacx-justify-center aacx-text-white aacx-font-bold aacx-cursor-pointer aacx-transition-all hover:aacx-shadow-2xl"
-                                     data-color="<?php echo esc_attr(trim($color)); ?>"
-                                     data-size="<?php echo esc_attr($size); ?>"
-                                     data-shape="<?php echo esc_attr($shape); ?>">
-                                    <!-- Icon SVG will be inserted by JavaScript -->
+            <!-- 2-column: form (2/3) + preview (1/3) -->
+            <div style="display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--aacx-space-8);">
+
+                <!-- LEFT: settings form -->
+                <div>
+                    <form id="aacb-widget-settings-form">
+                        <input type="hidden" name="accountID" value="<?php echo esc_attr(get_option('aacb_accountID')); ?>">
+                        <input type="hidden" name="subdomainID" value="<?php echo esc_attr($subdomain_id); ?>">
+
+                        <div class="aacx-v2__stack" style="gap: var(--aacx-space-6);">
+
+                            <!-- Row 1: Color + Position -->
+                            <div class="aacx-v2__grid aacx-v2__grid--2">
+                                <div class="aacx-v2__field">
+                                    <label class="aacx-v2__label" for="widget-color"><?php _e('Widget Color', 'allaccessible'); ?></label>
+                                    <div class="wc-color-row">
+                                        <input type="color" name="triggerBtnBg" id="widget-color" value="<?php echo esc_attr(trim($color)); ?>" class="wc-color-input">
+                                        <input type="hidden" id="widget-color-text" value="<?php echo esc_attr(trim($color)); ?>" readonly>
+                                    </div>
+                                    <p class="aacx-v2__help"><?php _e('Choose the color for your accessibility widget button.', 'allaccessible'); ?></p>
+                                </div>
+                                <div class="aacx-v2__field">
+                                    <label class="aacx-v2__label" for="wc-position"><?php _e('Widget Position', 'allaccessible'); ?></label>
+                                    <select name="buttonPosition" id="wc-position" class="aacx-v2__select">
+                                        <option value="bottom-right" <?php selected($position, 'bottom-right'); ?>><?php _e('Bottom Right', 'allaccessible'); ?></option>
+                                        <option value="bottom-left" <?php selected($position, 'bottom-left'); ?>><?php _e('Bottom Left', 'allaccessible'); ?></option>
+                                        <option value="bottom-center" <?php selected($position, 'bottom-center'); ?>><?php _e('Bottom Center', 'allaccessible'); ?></option>
+                                        <option value="right-center" <?php selected($position, 'right-center'); ?>><?php _e('Middle Right', 'allaccessible'); ?></option>
+                                        <option value="left-center" <?php selected($position, 'left-center'); ?>><?php _e('Middle Left', 'allaccessible'); ?></option>
+                                        <option value="top-right" <?php selected($position, 'top-right'); ?>><?php _e('Top Right', 'allaccessible'); ?></option>
+                                        <option value="top-left" <?php selected($position, 'top-left'); ?>><?php _e('Top Left', 'allaccessible'); ?></option>
+                                    </select>
+                                    <p class="aacx-v2__help"><?php _e('Where the widget button appears on your site.', 'allaccessible'); ?></p>
                                 </div>
                             </div>
+
+                            <!-- Row 2: Size + Icon -->
+                            <div class="aacx-v2__grid aacx-v2__grid--2">
+                                <div class="aacx-v2__field">
+                                    <label class="aacx-v2__label" for="wc-size"><?php _e('Widget Size', 'allaccessible'); ?></label>
+                                    <select name="triggerBtnSize" id="wc-size" class="aacx-v2__select">
+                                        <option value="40" <?php selected($size, '40'); ?>><?php _e('Small', 'allaccessible'); ?></option>
+                                        <option value="55" <?php selected($size, '55'); ?>><?php _e('Medium (Default)', 'allaccessible'); ?></option>
+                                        <option value="80" <?php selected($size, '80'); ?>><?php _e('Large', 'allaccessible'); ?></option>
+                                    </select>
+                                    <p class="aacx-v2__help"><?php _e('Size of the widget button in pixels.', 'allaccessible'); ?></p>
+                                </div>
+                                <div class="aacx-v2__field">
+                                    <label class="aacx-v2__label" for="icon-selector"><?php _e('Widget Icon', 'allaccessible'); ?></label>
+                                    <div class="wc-icon-row">
+                                        <select name="triggerSVG" id="icon-selector" class="aacx-v2__select" style="flex: 1;">
+                                            <option value="Default" <?php selected($icon, 'Default'); ?>><?php _e('Default', 'allaccessible'); ?></option>
+                                            <option value="Alt" <?php selected($icon, 'Alt'); ?>><?php _e('Accessibility Person', 'allaccessible'); ?></option>
+                                            <option value="Alt2" <?php selected($icon, 'Alt2'); ?>><?php _e('Accessibility Settings', 'allaccessible'); ?></option>
+                                            <option value="Adjust" <?php selected($icon, 'Adjust'); ?>><?php _e('Adjust', 'allaccessible'); ?></option>
+                                            <option value="Chair2" <?php selected($icon, 'Chair2'); ?>><?php _e('Wheelchair 1', 'allaccessible'); ?></option>
+                                            <option value="Heart" <?php selected($icon, 'Heart'); ?>><?php _e('Heart', 'allaccessible'); ?></option>
+                                            <option value="Braille" <?php selected($icon, 'Braille'); ?>><?php _e('Braille', 'allaccessible'); ?></option>
+                                            <option value="Blind" <?php selected($icon, 'Blind'); ?>><?php _e('Blind/Cane', 'allaccessible'); ?></option>
+                                            <option value="Eye" <?php selected($icon, 'Eye'); ?>><?php _e('Eye', 'allaccessible'); ?></option>
+                                            <option value="Globe" <?php selected($icon, 'Globe'); ?>><?php _e('Globe', 'allaccessible'); ?></option>
+                                            <option value="Access" <?php selected($icon, 'Access'); ?>><?php _e('Universal Access', 'allaccessible'); ?></option>
+                                            <option value="Cogs" <?php selected($icon, 'Cogs'); ?>><?php _e('Settings', 'allaccessible'); ?></option>
+                                            <option value="Cane" <?php selected($icon, 'Cane'); ?>><?php _e('Walking Cane', 'allaccessible'); ?></option>
+                                        </select>
+                                        <div id="icon-preview" class="wc-icon-preview" aria-hidden="true"></div>
+                                    </div>
+                                    <p class="aacx-v2__help"><?php _e('Icon displayed in the widget button.', 'allaccessible'); ?></p>
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Shape + Headless mode -->
+                            <div class="aacx-v2__grid aacx-v2__grid--2">
+                                <div class="aacx-v2__field">
+                                    <label class="aacx-v2__label" for="wc-shape"><?php _e('Widget Shape', 'allaccessible'); ?></label>
+                                    <select name="triggerBtnRadius" id="wc-shape" class="aacx-v2__select">
+                                        <option value="50" <?php selected($shape, '50'); ?>><?php _e('Circle', 'allaccessible'); ?></option>
+                                        <option value="0" <?php selected($shape, '0'); ?>><?php _e('Square', 'allaccessible'); ?></option>
+                                    </select>
+                                    <p class="aacx-v2__help"><?php _e('Shape of the widget button.', 'allaccessible'); ?></p>
+                                </div>
+                                <div class="aacx-v2__field">
+                                    <label class="aacx-v2__label" for="wc-headless" style="display: inline-flex; align-items: center; gap: var(--aacx-space-2);">
+                                        <span class="aacx-v2__ai-badge"><?php _e('AllAccessible AI', 'allaccessible'); ?></span>
+                                        <?php _e('Run without the bubble', 'allaccessible'); ?>
+                                    </label>
+                                    <label class="wc-headless-toggle" for="wc-headless">
+                                        <input type="checkbox" name="headlessMode" id="wc-headless" value="1" <?php checked($headless_mode); ?>>
+                                        <span style="font-size: var(--aacx-text-sm); color: var(--aacx-text-strong);"><?php _e('Hide widget, keep agentic AI remediation running.', 'allaccessible'); ?></span>
+                                    </label>
+                                    <p class="aacx-v2__help"><?php _e('Visitors won\'t see the accessibility toolbar. AllAccessible agents continue scanning and applying approved fixes in the background.', 'allaccessible'); ?></p>
+                                </div>
+                            </div>
+
                         </div>
-                        <p class="aacx-text-xs aacx-text-center aacx-text-aacx-slate-500 aacx-mt-3">
-                            <?php _e('See how your widget will look', 'allaccessible'); ?>
-                        </p>
+
+                        <!-- Save toolbar -->
+                        <div class="wc-toolbar">
+                            <button type="submit" id="save-widget-settings" class="aacx-v2__btn aacx-v2__btn--primary">
+                                <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <?php _e('Save Settings', 'allaccessible'); ?>
+                            </button>
+
+                            <a href="#" id="show-troubleshooting-link" class="aacx-v2__btn aacx-v2__btn--ghost aacx-v2__btn--sm">
+                                <?php _e('Having trouble viewing updates?', 'allaccessible'); ?>
+                            </a>
+
+                            <div id="troubleshooting-buttons" class="aacx-hidden">
+                                <button type="button" id="invalidate-all-cache-button" class="aacx-v2__btn aacx-v2__btn--secondary aacx-v2__btn--sm" title="<?php esc_attr_e('Clear all caches: browser, cookies, and server (full reset)', 'allaccessible'); ?>">
+                                    <?php _e('Clear All Caches', 'allaccessible'); ?>
+                                </button>
+                            </div>
+
+                            <!-- Status indicators (JS toggles aacx-hidden) -->
+                            <div id="save-status" class="aacx-hidden wc-status" style="color: var(--aacx-text-muted);">
+                                <svg class="aacx-animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" opacity="0.25"></circle>
+                                    <path fill="currentColor" opacity="0.75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                <?php _e('Saving...', 'allaccessible'); ?>
+                            </div>
+
+                            <div id="save-success" class="aacx-hidden wc-status" style="color: var(--aacx-ok-700);">
+                                <span aria-hidden="true">✓</span> <?php _e('Settings saved!', 'allaccessible'); ?>
+                            </div>
+
+                            <div id="save-error" class="aacx-hidden wc-status" style="color: var(--aacx-danger-700);"></div>
+
+                            <div id="reset-cache-success" class="aacx-hidden wc-status" style="color: var(--aacx-ok-700);">
+                                <span aria-hidden="true">✓</span> <?php _e('Cache cleared! Refresh your site to see changes.', 'allaccessible'); ?>
+                            </div>
+
+                            <div id="invalidate-cache-status" class="aacx-hidden wc-status" style="color: var(--aacx-warn-700);">
+                                <svg class="aacx-animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" opacity="0.25"></circle>
+                                    <path fill="currentColor" opacity="0.75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                <?php _e('Clearing all caches...', 'allaccessible'); ?>
+                            </div>
+
+                            <div id="invalidate-cache-success" class="aacx-hidden wc-status" style="color: var(--aacx-ok-700);">
+                                <span aria-hidden="true">✓</span> <?php _e('All caches cleared! Refresh your site to see changes.', 'allaccessible'); ?>
+                            </div>
+
+                            <div id="invalidate-cache-error" class="aacx-hidden wc-status" style="color: var(--aacx-danger-700);"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- RIGHT: Live preview -->
+                <div>
+                    <div style="position: sticky; top: 20px;">
+                        <div class="aacx-v2__card aacx-v2__card--featured">
+                            <div class="aacx-v2__card-header">
+                                <h3 style="margin: 0;"><?php _e('Live Preview', 'allaccessible'); ?></h3>
+                            </div>
+                            <div class="aacx-v2__card-body">
+                                <div class="wc-preview-frame">
+                                    <div id="widget-preview-position" style="position: absolute; bottom: 20px; right: 20px; transition: all 0.3s;">
+                                        <div id="widget-preview-button"
+                                             data-color="<?php echo esc_attr(trim($color)); ?>"
+                                             data-size="<?php echo esc_attr($size); ?>"
+                                             data-shape="<?php echo esc_attr($shape); ?>">
+                                            <!-- Icon SVG injected by JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <p style="font-size: var(--aacx-text-xs); text-align: center; color: var(--aacx-text-muted); margin-top: var(--aacx-space-3);"><?php _e('See how your widget will look on your site.', 'allaccessible'); ?></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-        </div>
+    </div>
     </div>
 
     <script>
+    /**
+     * Clear browser-side widget caches so option changes show up on the
+     * next page render. Modern v2 widget namespaces all storage under
+     * `aacx_` / `aacx-` prefixes (handled by the widget's storage layer).
+     * The legacy widget used `overrideOptions`.
+     *
+     * Writing `aacx_cache_invalidation` is the cross-tab signal the widget
+     * watches — any other open tab with the widget loaded will drop its
+     * own `aacx_validation` + `aacx_config` keys when the storage event
+     * fires.
+     *
+     * Idempotent. Silent on quota / private-browsing failures.
+     */
+    function aacxClearWidgetCaches() {
+        try {
+            if (typeof localStorage === 'undefined') return;
+
+            // Legacy: pre-2026 widget cache key
+            localStorage.removeItem('overrideOptions');
+
+            // v2 widget: every aacx_* / aacx-* key (user preferences,
+            // license cache, config cache, settings, etc.)
+            var toRemove = [];
+            for (var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                if (key && (key.indexOf('aacx_') === 0 || key.indexOf('aacx-') === 0)) {
+                    toRemove.push(key);
+                }
+            }
+            toRemove.forEach(function (key) {
+                localStorage.removeItem(key);
+            });
+
+            // sessionStorage too — widget caches some short-lived data here
+            try {
+                var sessRemove = [];
+                for (var j = 0; j < sessionStorage.length; j++) {
+                    var sk = sessionStorage.key(j);
+                    if (sk && (sk.indexOf('aacx_') === 0 || sk.indexOf('aacx-') === 0)) {
+                        sessRemove.push(sk);
+                    }
+                }
+                sessRemove.forEach(function (sk) {
+                    sessionStorage.removeItem(sk);
+                });
+            } catch (e) { /* ignore */ }
+
+            // Cross-tab signal — other open tabs running the widget will
+            // see this and clear their own validation/config caches.
+            localStorage.setItem('aacx_cache_invalidation', JSON.stringify({
+                ts: Date.now(),
+                source: 'wp-plugin-settings-save',
+                keys: ['aacx_validation', 'aacx_config']
+            }));
+
+            // Legacy cookie
+            document.cookie = 'aacxValidated=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+
+        } catch (e) {
+            console.warn('⚠️ Could not clear browser cache:', e);
+        }
+    }
+
     jQuery(document).ready(function($) {
         // Icon SVGs from v1.3.8 (exact same as old plugin)
         const svgIcons = {
@@ -405,7 +433,6 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
             // Convert RGB to hex if needed
             color = rgbToHex(color);
 
-            console.log('🎨 Preview update - Color:', color, 'Size:', size, 'Shape:', shape, 'Icon:', selectedIcon, 'Position:', position);
 
             // Update icon SVG
             const iconSVG = svgIcons[selectedIcon] || svgIcons['Default'];
@@ -494,10 +521,10 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
                 buttonPosition: $('select[name="buttonPosition"]').val(),
                 triggerBtnSize: $('select[name="triggerBtnSize"]').val(),
                 triggerSVG: $('select[name="triggerSVG"]').val(),
-                triggerBtnRadius: $('select[name="triggerBtnRadius"]').val()
+                triggerBtnRadius: $('select[name="triggerBtnRadius"]').val(),
+                headlessMode: $('#wc-headless').is(':checked')
             };
 
-            console.log('💾 Saving widget settings:', formData);
 
             // Show loading
             $('#save-widget-settings').prop('disabled', true);
@@ -505,14 +532,17 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
             $('#save-success').addClass('aacx-hidden');
             $('#save-error').addClass('aacx-hidden');
 
-            // Call save-site-options API with subdomain ID
+            // Save endpoint stays on the app service (kept warm) instead of
+            // the edge handler so customers don't eat the ~3-5s cold-start
+            // when hitting Save. App service busts its own cache AND
+            // triggers the edge cache invalidation so widget visitors see
+            // fresh options immediately.
             $.ajax({
-                url: 'https://api.allaccessible.org/save-site-options/' + subdomainID,
+                url: 'https://app.allaccessible.org/api/save-site-options/' + subdomainID,
                 method: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(formData),
                 success: function(response) {
-                    console.log('✅ Settings saved:', response);
 
                     // Clear server-side cache so next page load gets fresh data
                     $.post(ajaxurl, {
@@ -520,20 +550,14 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
                         _wpnonce: '<?php echo wp_create_nonce('aacb_clear_cache'); ?>'
                     });
 
-                    // Clear browser-side caches (localStorage and cookies)
-                    try {
-                        // Clear localStorage overrideOptions
-                        if (typeof localStorage !== 'undefined') {
-                            localStorage.removeItem('overrideOptions');
-                            console.log('✅ Cleared localStorage: overrideOptions');
-                        }
-
-                        // Clear aacxValidated cookie
-                        document.cookie = 'aacxValidated=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-                        console.log('✅ Cleared cookie: aacxValidated');
-                    } catch (e) {
-                        console.warn('⚠️ Could not clear browser cache:', e);
-                    }
+                    // Clear browser-side widget caches so the admin sees their
+                    // settings change immediately on the next page render.
+                    // Modern widget (v2) namespaces its storage under aacx_ /
+                    // aacx- prefixes; pre-2026 widget used `overrideOptions`.
+                    // Cross-tab clearing: writing to `aacx_cache_invalidation`
+                    // signals other open tabs to drop their own widget caches
+                    // (handled by the widget's storage layer).
+                    aacxClearWidgetCaches();
 
                     // Show success
                     $('#save-status').addClass('aacx-hidden');
@@ -574,26 +598,16 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
         $('#reset-cache-button').on('click', function(e) {
             e.preventDefault();
 
-            console.log('🔄 Manually clearing browser cache and cookies...');
 
             // Clear browser-side caches (localStorage and cookies)
             try {
-                // Clear localStorage overrideOptions
-                if (typeof localStorage !== 'undefined') {
-                    localStorage.removeItem('overrideOptions');
-                    console.log('✅ Cleared localStorage: overrideOptions');
-                }
-
-                // Clear aacxValidated cookie
-                document.cookie = 'aacxValidated=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-                console.log('✅ Cleared cookie: aacxValidated');
+                aacxClearWidgetCaches();
 
                 // Clear server-side cache too
                 $.post(ajaxurl, {
                     action: 'aacb_clear_cache',
                     _wpnonce: '<?php echo wp_create_nonce('aacb_clear_cache'); ?>'
                 }, function() {
-                    console.log('✅ Server cache cleared');
                 });
 
                 // Show success message
@@ -614,7 +628,6 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
         $('#invalidate-all-cache-button').on('click', function(e) {
             e.preventDefault();
 
-            console.log('🔄 Clearing all caches (browser + server)...');
 
             // Show loading status
             $('#invalidate-cache-status').removeClass('aacx-hidden');
@@ -625,21 +638,18 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
                 // Step 1: Clear browser-side caches (localStorage and cookies)
                 if (typeof localStorage !== 'undefined') {
                     localStorage.removeItem('overrideOptions');
-                    console.log('✅ Cleared localStorage: overrideOptions');
                 }
 
                 document.cookie = 'aacxValidated=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-                console.log('✅ Cleared cookie: aacxValidated');
 
                 // Step 2: Clear WordPress transient cache
                 $.post(ajaxurl, {
                     action: 'aacb_clear_cache',
                     _wpnonce: '<?php echo wp_create_nonce('aacb_clear_cache'); ?>'
                 }, function() {
-                    console.log('✅ WordPress cache cleared');
                 });
 
-                // Step 3: Call Lambda API to invalidate server cache
+                // Step 3: Call AllAccessible API to invalidate server cache
                 const accountID = $('input[name="accountID"]').val();
 
                 if (accountID) {
@@ -649,7 +659,6 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
                         contentType: 'application/json',
                         data: JSON.stringify({ accountId: accountID }),
                         success: function(response) {
-                            console.log('✅ Lambda cache invalidated:', response);
 
                             // Hide loading, show success
                             $('#invalidate-cache-status').addClass('aacx-hidden');
@@ -661,7 +670,7 @@ function aacb_render_widget_customizer($site_options, $widget_settings_url) {
                             }, 5000);
                         },
                         error: function(xhr, status, error) {
-                            console.error('❌ Lambda cache invalidation failed:', error);
+                            console.error('❌ Server cache invalidation failed:', error);
 
                             // Hide loading, show error
                             $('#invalidate-cache-status').addClass('aacx-hidden');

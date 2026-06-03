@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AllAccessible\n"
-"POT-Creation-Date: 2023-05-11 15:21-0400\n"
-"PO-Revision-Date: 2023-05-11 15:22-0400\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: support@allaccessible.org\n"
+"POT-Creation-Date: 2026-06-03 13:39-0400\n"
+"PO-Revision-Date: 2026-06-03 13:40-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh\n"
@@ -10,363 +11,3831 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: allaccessible.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: .\n"
 
-#: allaccessible.php:52
-msgid "Accessibility"
-msgstr "辅助功能"
+#: allaccessible.php:166
+msgid "Account settings saved successfully"
+msgstr "账户设置已成功保存"
 
-#: allaccessible.php:291
-msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
-msgstr "激活AllAccessible Premium以解锁Ai无障碍功能。"
+#: allaccessible.php:200
+msgid "Unauthorized access"
+msgstr "无权访问"
 
-#: allaccessible.php:291
-msgid "Click Here"
-msgstr "点击这里"
+#: allaccessible.php:221
+msgid "Plugin data has been reset successfully"
+msgstr "插件数据已成功重置"
 
-#: inc/AllAccessibleDeactivationForm.php:29
-msgid "AllAccessible Deactivation"
-msgstr "所有可访问的停用"
+#: allaccessible.php:235 allaccessible.php:323 allaccessible.php:404
+#: inc/SettingsPage.php:1894
+msgid "Unauthorized"
+msgstr "未授权"
 
-#: inc/AllAccessibleDeactivationForm.php:30
-msgid ""
-"If you have a moment, please let us know why you are deactivating "
-"AllAccessible. All submissions are anonymous and we only use this feedback "
-"to improve this plugin."
-msgstr ""
-"如果你有时间，请让我们知道你为什么要停用AllAccessible。所有提交的信息都是匿名"
-"的，我们只使用这些反馈来改进这个插件。"
+#: allaccessible.php:363
+msgid "Still finishing setup — wait a few seconds and try again."
+msgstr "仍在完成设置 — 请稍等几秒后重试。"
 
-#: inc/AllAccessibleDeactivationForm.php:31
-msgid "Do not send my e-mail address with this feedback"
-msgstr "不要发送我的电子邮件地址与此反馈"
+#: allaccessible.php:368
+msgid "Scan queued. Results appear in 2-5 minutes."
+msgstr "扫描已加入队列。结果将在 2-5 分钟内显示。"
 
-#: inc/AllAccessibleDeactivationForm.php:33
-msgid "Please give us any feedback that could help us improve"
-msgstr "请给我们任何可以帮助我们改进的反馈意见"
+#: inc/AdminBar.php:64
+msgid "Scan this page now"
+msgstr "立即扫描此页面"
 
-#: inc/AllAccessibleDeactivationForm.php:35
-msgid "Cancel"
-msgstr "取消"
+#: inc/AdminBar.php:77
+msgid "View page report"
+msgstr "查看页面报告"
 
-#: inc/AllAccessibleDeactivationForm.php:36
-msgid "Skip &amp; Deactivate"
-msgstr "跳过＆amp;停用"
+#: inc/AdminBar.php:97 inc/SettingsPage.php:48 inc/SettingsPage.php:49
+msgid "Dashboard"
+msgstr "仪表盘"
 
-#: inc/AllAccessibleDeactivationForm.php:37
-msgid "Submit &amp; Deactivate"
-msgstr "提交 停用"
+#: inc/AdminBar.php:103
+msgid "Audits & Fixes"
+msgstr "审核与修复"
 
-#: inc/AllAccessibleDeactivationForm.php:38
-msgid "Please wait"
-msgstr "请稍候"
+#: inc/AdminBar.php:109 inc/WidgetCustomizer.php:190
+msgid "Settings"
+msgstr "设置"
 
-#: inc/AllAccessibleDeactivationForm.php:39
-msgid "Thank you!"
-msgstr "谢谢！"
+#: inc/AdminBar.php:116 inc/AgenticFixesPage.php:162
+#: inc/DashboardLayout.php:290 inc/SettingsPage.php:389
+msgid "Open dashboard"
+msgstr "打开仪表板"
 
-#: inc/AllAccessibleDeactivationForm.php:48
-msgid "The plugin suddenly stopped working"
-msgstr "插件突然停止工作"
+#: inc/AdminBar.php:172 inc/EditorMetaBox.php:440
+msgid "Scanning page…"
+msgstr "正在扫描页面…"
 
-#: inc/AllAccessibleDeactivationForm.php:51
-#: inc/AllAccessibleDeactivationForm.php:58
-msgid ""
-"We're sorry to hear that, check <a href=\"https://support.allaccessible."
-"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
-"issue?"
-msgstr ""
-"我们对此感到很遗憾，请检查<a href=\"https://support.allaccessible.org\" "
-"target=\"_blank\">AllAccessible支持</a>。你能描述一下这个问题吗？"
+#: inc/AdminBar.php:173
+#, php-format
+msgid "Scan complete. Score: %d%%"
+msgstr "扫描完成。得分：%d%%"
 
-#: inc/AllAccessibleDeactivationForm.php:55
-msgid "The plugin broke my site"
-msgstr "该插件破坏了我的网站"
+#: inc/AdminBar.php:174
+msgid "Scan complete. Refresh to see updated score."
+msgstr "扫描完成。刷新以查看更新后的评分。"
 
-#: inc/AllAccessibleDeactivationForm.php:62
-msgid "I don't need this plugin any more"
-msgstr "我不需要这个插件了"
+#: inc/AdminBar.php:175 inc/EditorMetaBox.php:444
+msgid "Scan failed. Try again or check the dashboard."
+msgstr "扫描失败。请重试或查看仪表板。"
 
-#: inc/AllAccessibleDeactivationForm.php:66
-msgid "I found a better plugin"
-msgstr "我找到了一个更好的插件"
+#: inc/AdminBar.php:176
+msgid "Scan is still running — check back in a minute."
+msgstr "扫描仍在运行 — 请稍后再查看。"
 
-#: inc/AllAccessibleDeactivationForm.php:69
-msgid "Can you please share the name of the other plugin?"
-msgstr "能否请你分享一下其他插件的名称？"
+#: inc/AdminBar.php:177
+msgid "Could not start scan: "
+msgstr "无法启动扫描："
 
-#: inc/AllAccessibleDeactivationForm.php:73
-msgid "It's a temporary deactivation, I'm troubleshooting"
-msgstr "这是暂时停用，我正在排除故障"
+#: inc/AdminBar.php:178 inc/EditorMetaBox.php:446
+msgid "Scan rate limit reached. Try again later."
+msgstr "已达到扫描速率限制。请稍后再试。"
 
-#: inc/AllAccessibleDeactivationForm.php:77
-msgid "Other"
-msgstr "其他"
+#: inc/AdminBar.php:341 inc/AdminBar.php:375
+msgid "Permission denied."
+msgstr "没有权限。"
 
-#: inc/AllAccessibleDeactivationForm.php:80
-msgid "Can you describe the issue?"
-msgstr "你能描述一下这个问题吗？"
+#: inc/AdminBar.php:347
+msgid "Missing page URL."
+msgstr "缺少页面 URL。"
 
-#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
-msgid "Preview Widget"
-msgstr "预览小工具"
+#: inc/AdminBar.php:382
+msgid "Missing job ID."
+msgstr "缺少作业 ID。"
 
-#: inc/AllAccessibleSettings.php:40
-msgid "Widget Status"
-msgstr "小工具状态"
+#: inc/AgenticFixes/Labels.php:23
+msgid "Missing image description"
+msgstr "缺少图片描述"
 
-#: inc/AllAccessibleSettings.php:40
+#: inc/AgenticFixes/Labels.php:24
+msgid "Button without label"
+msgstr "按钮缺少标签"
+
+#: inc/AgenticFixes/Labels.php:25
+msgid "Form field without label"
+msgstr "没有标签的表单字段"
+
+#: inc/AgenticFixes/Labels.php:26
+msgid "Missing page language"
+msgstr "缺少页面语言"
+
+#: inc/AgenticFixes/Labels.php:27
+msgid "Link without text"
+msgstr "链接缺少文本"
+
+#: inc/AgenticFixes/Labels.php:28
+msgid "ARIA labeling issue"
+msgstr "ARIA 标注问题"
+
+#: inc/AgenticFixes/Labels.php:29
+msgid "Heading hierarchy issue"
+msgstr "标题层级问题"
+
+#: inc/AgenticFixes/Labels.php:30 inc/AgenticFixes/Labels.php:33
+msgid "Other accessibility issue"
+msgstr "其他无障碍问题"
+
+#: inc/AgenticFixes/Labels.php:44 inc/AgenticFixesPage.php:241
+msgid "Pending review"
+msgstr "等待审核"
+
+#: inc/AgenticFixes/Labels.php:45
+msgid "Approved"
+msgstr "批准"
+
+#: inc/AgenticFixes/Labels.php:46
 msgid "Active"
 msgstr "激活"
 
-#: inc/AllAccessibleSettings.php:41
-#, php-format
-msgid "AllAccessible's %s widget is visible on the front end of your site."
-msgstr "AllAccessible的%s小部件在你网站的前端是可见的。"
+#: inc/AgenticFixes/Labels.php:47 inc/AgenticFixesPage.php:249
+msgid "Reverted"
+msgstr "已还原 "
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Website Accessibility"
-msgstr "辅助功能"
+#: inc/AgenticFixes/Labels.php:61 inc/AgenticFixes/Labels.php:67
+#: inc/AgenticFixesPage.php:347 inc/AgenticFixesPage.php:452
+msgid "AllAccessible agents"
+msgstr "AllAccessible 代理"
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Audits & Remediation"
-msgstr "审计和补救"
+#: inc/AgenticFixes/Labels.php:62
+msgid "Automated rule check"
+msgstr "自动化规则检查"
 
-#: inc/AllAccessibleSettings.php:61
+#: inc/AgenticFixes/Labels.php:63
+msgid "Compliance scanner"
+msgstr "合规扫描器"
+
+#: inc/AgenticFixes/Labels.php:64
+msgid "Manual review"
+msgstr "人工审核"
+
+#: inc/AgenticFixes/Labels.php:80
+msgid "Suggested alt text for image"
+msgstr "图片的建议替代文本"
+
+#: inc/AgenticFixes/Labels.php:81
+msgid "Suggested label for button"
+msgstr "按钮的建议标签"
+
+#: inc/AgenticFixes/Labels.php:82
+msgid "Suggested label for form field"
+msgstr "表单字段的建议标签"
+
+#: inc/AgenticFixes/Labels.php:83
+msgid "Set page language attribute"
+msgstr "设置页面语言属性"
+
+#: inc/AgenticFixes/Labels.php:84
+msgid "Suggested text for link"
+msgstr "链接的建议文本"
+
+#: inc/AgenticFixes/Labels.php:85
+msgid "Correct ARIA role assignment"
+msgstr "纠正 ARIA 角色分配"
+
+#: inc/AgenticFixes/Labels.php:86
+msgid "Fix heading order"
+msgstr "修复标题层级顺序"
+
+#: inc/AgenticFixes/Labels.php:87 inc/AgenticFixes/Labels.php:90
+msgid "Accessibility fix suggested"
+msgstr "建议的无障碍修复"
+
+#: inc/AgenticFixes/Labels.php:122
+msgid "Non-text Content"
+msgstr "非文本内容"
+
+#: inc/AgenticFixes/Labels.php:123
+msgid "Audio-only and Video-only (Prerecorded)"
+msgstr "纯音频和纯视频（预录制）"
+
+#: inc/AgenticFixes/Labels.php:124
+msgid "Captions (Prerecorded)"
+msgstr "字幕（预录）"
+
+#: inc/AgenticFixes/Labels.php:125
+msgid "Audio Description or Media Alternative (Prerecorded)"
+msgstr "音频描述或媒体替代方案（预录制）"
+
+#: inc/AgenticFixes/Labels.php:126
+msgid "Captions (Live)"
+msgstr "字幕（直播）"
+
+#: inc/AgenticFixes/Labels.php:127
+msgid "Audio Description (Prerecorded)"
+msgstr "音频描述（预录）"
+
+#: inc/AgenticFixes/Labels.php:128
+msgid "Sign Language (Prerecorded)"
+msgstr "手语（预录）"
+
+#: inc/AgenticFixes/Labels.php:129
+msgid "Extended Audio Description (Prerecorded)"
+msgstr "扩展音频描述（预录）"
+
+#: inc/AgenticFixes/Labels.php:130
+msgid "Media Alternative (Prerecorded)"
+msgstr "媒体替代方案（预录）"
+
+#: inc/AgenticFixes/Labels.php:131
+msgid "Audio-only (Live)"
+msgstr "纯音频（直播）"
+
+#: inc/AgenticFixes/Labels.php:132
+msgid "Info and Relationships"
+msgstr "信息与关系"
+
+#: inc/AgenticFixes/Labels.php:133
+msgid "Meaningful Sequence"
+msgstr "有意义的顺序"
+
+#: inc/AgenticFixes/Labels.php:134
+msgid "Sensory Characteristics"
+msgstr "感官特征"
+
+#: inc/AgenticFixes/Labels.php:135
+msgid "Orientation"
+msgstr "方向"
+
+#: inc/AgenticFixes/Labels.php:136
+msgid "Identify Input Purpose"
+msgstr "识别输入目的"
+
+#: inc/AgenticFixes/Labels.php:137
+msgid "Identify Purpose"
+msgstr "识别目的"
+
+#: inc/AgenticFixes/Labels.php:138
+msgid "Use of Color"
+msgstr "颜色的使用"
+
+#: inc/AgenticFixes/Labels.php:139
+msgid "Audio Control"
+msgstr "音频控制"
+
+#: inc/AgenticFixes/Labels.php:140
+msgid "Contrast (Minimum)"
+msgstr "对比度（最低）"
+
+#: inc/AgenticFixes/Labels.php:141
+msgid "Resize Text"
+msgstr "调整文本大小"
+
+#: inc/AgenticFixes/Labels.php:142
+msgid "Images of Text"
+msgstr "文本图像"
+
+#: inc/AgenticFixes/Labels.php:143
+msgid "Contrast (Enhanced)"
+msgstr "对比度（增强）"
+
+#: inc/AgenticFixes/Labels.php:144
+msgid "Low or No Background Audio"
+msgstr "低或无背景音频"
+
+#: inc/AgenticFixes/Labels.php:145
+msgid "Visual Presentation"
+msgstr "视觉呈现"
+
+#: inc/AgenticFixes/Labels.php:146
+msgid "Images of Text (No Exception)"
+msgstr "文本图像（无例外）"
+
+#: inc/AgenticFixes/Labels.php:147
+msgid "Reflow"
+msgstr "重排"
+
+#: inc/AgenticFixes/Labels.php:148
+msgid "Non-text Contrast"
+msgstr "非文本对比度"
+
+#: inc/AgenticFixes/Labels.php:149
+msgid "Text Spacing"
+msgstr "文本间距"
+
+#: inc/AgenticFixes/Labels.php:150
+msgid "Content on Hover or Focus"
+msgstr "悬停或聚焦时显示的内容"
+
+#: inc/AgenticFixes/Labels.php:152
+msgid "Keyboard"
+msgstr "键盘"
+
+#: inc/AgenticFixes/Labels.php:153
+msgid "No Keyboard Trap"
+msgstr "无键盘陷阱"
+
+#: inc/AgenticFixes/Labels.php:154
+msgid "Keyboard (No Exception)"
+msgstr "键盘（无例外）"
+
+#: inc/AgenticFixes/Labels.php:155
+msgid "Character Key Shortcuts"
+msgstr "字符键快捷键"
+
+#: inc/AgenticFixes/Labels.php:156
+msgid "Timing Adjustable"
+msgstr "可调整的时间限制"
+
+#: inc/AgenticFixes/Labels.php:157
+msgid "Pause, Stop, Hide"
+msgstr "暂停、停止、隐藏"
+
+#: inc/AgenticFixes/Labels.php:158
+msgid "No Timing"
+msgstr "无时间限制"
+
+#: inc/AgenticFixes/Labels.php:159
+msgid "Interruptions"
+msgstr "中断"
+
+#: inc/AgenticFixes/Labels.php:160
+msgid "Re-authenticating"
+msgstr "重新身份验证"
+
+#: inc/AgenticFixes/Labels.php:161
+msgid "Timeouts"
+msgstr "超时"
+
+#: inc/AgenticFixes/Labels.php:162
+msgid "Three Flashes or Below Threshold"
+msgstr "三次闪烁或低于阈值"
+
+#: inc/AgenticFixes/Labels.php:163
+msgid "Three Flashes"
+msgstr "三次闪烁"
+
+#: inc/AgenticFixes/Labels.php:164
+msgid "Animation from Interactions"
+msgstr "来自交互的动画"
+
+#: inc/AgenticFixes/Labels.php:165
+msgid "Bypass Blocks"
+msgstr "跳过区块"
+
+#: inc/AgenticFixes/Labels.php:166
+msgid "Page Titled"
+msgstr "页面标题"
+
+#: inc/AgenticFixes/Labels.php:167
+msgid "Focus Order"
+msgstr "焦点顺序"
+
+#: inc/AgenticFixes/Labels.php:168
+msgid "Link Purpose (In Context)"
+msgstr "链接用途（在上下文中）"
+
+#: inc/AgenticFixes/Labels.php:169
+msgid "Multiple Ways"
+msgstr "多种方式"
+
+#: inc/AgenticFixes/Labels.php:170
+msgid "Headings and Labels"
+msgstr "标题和标签"
+
+#: inc/AgenticFixes/Labels.php:171
+msgid "Focus Visible"
+msgstr "焦点可见"
+
+#: inc/AgenticFixes/Labels.php:172
+msgid "Location"
+msgstr "位置"
+
+#: inc/AgenticFixes/Labels.php:173
+msgid "Link Purpose (Link Only)"
+msgstr "链接用途（仅链接）"
+
+#: inc/AgenticFixes/Labels.php:174
+msgid "Section Headings"
+msgstr "章节标题"
+
+#: inc/AgenticFixes/Labels.php:175
+msgid "Focus Not Obscured (Minimum)"
+msgstr "焦点不被遮挡（最低）"
+
+#: inc/AgenticFixes/Labels.php:176
+msgid "Focus Not Obscured (Enhanced)"
+msgstr "焦点不被遮挡（增强）"
+
+#: inc/AgenticFixes/Labels.php:177
+msgid "Focus Appearance"
+msgstr "焦点外观"
+
+#: inc/AgenticFixes/Labels.php:178
+msgid "Pointer Gestures"
+msgstr "指针手势"
+
+#: inc/AgenticFixes/Labels.php:179
+msgid "Pointer Cancellation"
+msgstr "指针取消"
+
+#: inc/AgenticFixes/Labels.php:180
+msgid "Label in Name"
+msgstr "名称中的标签"
+
+#: inc/AgenticFixes/Labels.php:181
+msgid "Motion Actuation"
+msgstr "动作触发"
+
+#: inc/AgenticFixes/Labels.php:182
+msgid "Target Size (Enhanced)"
+msgstr "目标尺寸（增强）"
+
+#: inc/AgenticFixes/Labels.php:183
+msgid "Concurrent Input Mechanisms"
+msgstr "并行输入机制"
+
+#: inc/AgenticFixes/Labels.php:184
+msgid "Dragging Movements"
+msgstr "拖拽操作"
+
+#: inc/AgenticFixes/Labels.php:185
+msgid "Target Size (Minimum)"
+msgstr "目标尺寸（最小）"
+
+#: inc/AgenticFixes/Labels.php:187
+msgid "Language of Page"
+msgstr "页面语言"
+
+#: inc/AgenticFixes/Labels.php:188
+msgid "Language of Parts"
+msgstr "部件语言"
+
+#: inc/AgenticFixes/Labels.php:189
+msgid "Unusual Words"
+msgstr "不常见词汇"
+
+#: inc/AgenticFixes/Labels.php:190
+msgid "Abbreviations"
+msgstr "缩写"
+
+#: inc/AgenticFixes/Labels.php:191
+msgid "Reading Level"
+msgstr "阅读水平"
+
+#: inc/AgenticFixes/Labels.php:192
+msgid "Pronunciation"
+msgstr "发音"
+
+#: inc/AgenticFixes/Labels.php:193
+msgid "On Focus"
+msgstr "获得焦点时"
+
+#: inc/AgenticFixes/Labels.php:194
+msgid "On Input"
+msgstr "输入时"
+
+#: inc/AgenticFixes/Labels.php:195
+msgid "Consistent Navigation"
+msgstr "一致的导航"
+
+#: inc/AgenticFixes/Labels.php:196
+msgid "Consistent Identification"
+msgstr "一致的标识"
+
+#: inc/AgenticFixes/Labels.php:197
+msgid "Change on Request"
+msgstr "按请求更改"
+
+#: inc/AgenticFixes/Labels.php:198
+msgid "Consistent Help"
+msgstr "一致的帮助"
+
+#: inc/AgenticFixes/Labels.php:199
+msgid "Error Identification"
+msgstr "错误识别"
+
+#: inc/AgenticFixes/Labels.php:200
+msgid "Labels or Instructions"
+msgstr "标签或说明"
+
+#: inc/AgenticFixes/Labels.php:201
+msgid "Error Suggestion"
+msgstr "错误建议"
+
+#: inc/AgenticFixes/Labels.php:202
+msgid "Error Prevention (Legal, Financial, Data)"
+msgstr "错误预防（法律、财务、数据）"
+
+#: inc/AgenticFixes/Labels.php:203
+msgid "Help"
+msgstr "帮助"
+
+#: inc/AgenticFixes/Labels.php:204
+msgid "Error Prevention (All)"
+msgstr "错误预防（全部）"
+
+#: inc/AgenticFixes/Labels.php:205
+msgid "Redundant Entry"
+msgstr "冗余条目"
+
+#: inc/AgenticFixes/Labels.php:206
+msgid "Accessible Authentication (Minimum)"
+msgstr "无障碍身份验证（最低要求）"
+
+#: inc/AgenticFixes/Labels.php:207
+msgid "Accessible Authentication (Enhanced)"
+msgstr "无障碍身份验证（增强）"
+
+#: inc/AgenticFixes/Labels.php:209
+msgid "Parsing"
+msgstr "解析"
+
+#: inc/AgenticFixes/Labels.php:210
+msgid "Name, Role, Value"
+msgstr "名称、角色、值"
+
+#: inc/AgenticFixes/Labels.php:211
+msgid "Status Messages"
+msgstr "状态消息"
+
+#: inc/AgenticFixes/Labels.php:224
+msgid "Let AllAccessible agents fix these for you"
+msgstr "让 AllAccessible 代理为你修复这些问题"
+
+#: inc/AgenticFixes/Labels.php:225
 msgid ""
-"View the results of your website scans, accessibility Remediation and more "
-"with AllAccessibile Premium."
-msgstr "通过AllAccessibile Premium查看你的网站扫描结果，可访问性补救和更多。"
+"Premium plans include human-in-the-loop agentic AI remediation. Your team "
+"approves, agents do the work."
+msgstr "高级方案包含有人参与的代理式 AI 修复。你的团队负责批准，代理负责执行。"
 
-#: inc/AllAccessibleSettings.php:62
+#: inc/AgenticFixesDashboardWidget.php:27
+msgid "AllAccessible — Agentic Fixes"
+msgstr "AllAccessible — 代理式修复"
+
+#: inc/AgenticFixesDashboardWidget.php:34
+msgid "Plugin not fully initialized. Please reload."
+msgstr "插件尚未完全初始化。请重新加载。"
+
+#: inc/AgenticFixesDashboardWidget.php:63
+msgid "Upgrade to apply fixes"
+msgstr "升级以应用修复"
+
+#: inc/AgenticFixesDashboardWidget.php:64 inc/DashboardLayout.php:243
+msgid "Review fixes"
+msgstr "查看修复项"
+
+#: inc/AgenticFixesDashboardWidget.php:70
+msgid "No scans yet. Submit your sitemap from the AllAccessible page to start."
+msgstr "尚未进行扫描。请在 AllAccessible 页面提交站点地图以开始。"
+
+#: inc/AgenticFixesDashboardWidget.php:74
+msgid "Go to AllAccessible"
+msgstr "前往 AllAccessible"
+
+#: inc/AgenticFixesDashboardWidget.php:87
+msgid "accessibility issue detected"
+msgid_plural "accessibility issues detected"
+msgstr[0] "检测到无障碍问题"
+
+#. translators: %s: count of pages scanned
+#: inc/AgenticFixesDashboardWidget.php:97
+#, php-format
+msgid "%s page scanned"
+msgid_plural "%s pages scanned"
+msgstr[0] "已扫描 %s 个页面"
+
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/AgenticFixesDashboardWidget.php:105
+#, php-format
+msgid "last scan %s ago"
+msgstr "上次扫描在 %s 前"
+
+#. translators: %s: count of manifests waiting on approval
+#: inc/AgenticFixesDashboardWidget.php:118
+#, php-format
+msgid "%s manifest pending your approval"
+msgid_plural "%s manifests pending your approval"
+msgstr[0] "%s 个清单待您批准"
+
+#: inc/AgenticFixesDashboardWidget.php:127
+msgid ""
+"AllAccessible agents can auto-fix these. Upgrade to enable agentic AI "
+"remediation."
+msgstr "AllAccessible 代理可以自动修复这些问题。升级以启用代理式 AI 修复。"
+
+#: inc/AgenticFixesDashboardWidget.php:145
+msgid "Could not load fixes summary right now."
+msgstr "目前无法加载修复摘要。"
+
+#: inc/AgenticFixesPage.php:27 inc/AgenticFixesPage.php:28
+#: inc/AgenticFixesPage.php:140 inc/AgenticFixesPage.php:667
+#: inc/SettingsPage.php:499 inc/SettingsPage.php:603
+msgid "Agentic Fixes"
+msgstr "代理式修复"
+
+#: inc/AgenticFixesPage.php:137 inc/AgenticFixesPage.php:142
+#: inc/AgenticFixesPage.php:665 inc/AgenticFixesPage.php:680
+#: inc/AgenticFixesPage.php:857 inc/ConversionCTA.php:119
+#: inc/EditorMetaBox.php:271 inc/ImageManagerPage.php:160
+#: inc/OnboardingWizard.php:288 inc/SettingsPage.php:416
+#: inc/SettingsPage.php:490 inc/SettingsPage.php:574 inc/SettingsPage.php:1969
+#: inc/UsageDashboard.php:142 inc/WidgetCustomizer.php:211
+msgid "AllAccessible AI"
+msgstr "AllAccessible AI"
+
+#: inc/AgenticFixesPage.php:146
+msgid "Beta feature"
+msgstr "Beta 功能"
+
+#: inc/AgenticFixesPage.php:147 inc/SettingsPage.php:1155
+msgid "Beta"
+msgstr "测试版"
+
+#: inc/AgenticFixesPage.php:152
+msgid ""
+"AllAccessible agents propose accessibility fixes. You review and approve "
+"before anything goes live on your site."
+msgstr ""
+"AllAccessible 智能体会提出无障碍修复建议。在任何内容上线到你的网站之前，你需"
+"要先审核并批准。"
+
+#: inc/AgenticFixesPage.php:169 inc/ConnectionStatusCard.php:71
+msgid "Could not reach AllAccessible right now."
+msgstr "目前无法连接到 AllAccessible。"
+
+#: inc/AgenticFixesPage.php:182
+msgid "score"
+msgstr "评分"
+
+#: inc/AgenticFixesPage.php:186
+msgid "pages audited"
+msgstr "已审核页面数"
+
+#. translators: %s: human-readable time difference (e.g. "2 hours")
+#. translators: %s: human-readable time diff
+#: inc/AgenticFixesPage.php:194 inc/ScanTriggerPanel.php:86
+#, php-format
+msgid "Last scan %s ago"
+msgstr "上次扫描在 %s 前"
+
+#: inc/AgenticFixesPage.php:245
+msgid "Approved & applied"
+msgstr "已批准并应用"
+
+#: inc/AgenticFixesPage.php:254
+msgid "Filter Agentic Fixes by status"
+msgstr "按状态筛选 Agentic Fixes"
+
+#: inc/AgenticFixesPage.php:330
+msgid "How this works"
+msgstr "工作原理"
+
+#: inc/AgenticFixesPage.php:332
+msgid ""
+"AllAccessible agents review your site and propose fixes for accessibility "
+"issues. Nothing changes on your site until you approve. You can edit any "
+"suggestion before approving, and you can revert any approved fix at any time."
+msgstr ""
+"AllAccessible 代理会审查您的网站，并为无障碍问题提出修复建议。在您批准之前，"
+"您的网站不会发生任何更改。您可以在批准前编辑任何建议，并且可以随时撤销任何已"
+"批准的修复。"
+
+#. translators: 1: count of fixes; 2: rule type label (e.g., "Missing image description")
+#: inc/AgenticFixesPage.php:353
+#, php-format
+msgid "%1$s pending fixes for \"%2$s\". Approve them all in one click."
+msgstr "“%2$s”有 %1$s 个待处理修复。一键全部批准。"
+
+#. translators: 1: count; 2: rule label
+#: inc/AgenticFixesPage.php:366
+#, php-format
+msgid "Bulk approve %1$s %2$s fixes"
+msgstr "批量批准 %1$s 个 %2$s 修复"
+
+#. translators: %s: count of fixes
+#: inc/AgenticFixesPage.php:373
+#, php-format
+msgid "Bulk approve all %s"
+msgstr "批量批准全部 %s"
+
+#. translators: %s: WCAG success criterion number (e.g., "1.1.1")
+#: inc/AgenticFixesPage.php:426
+#, php-format
+msgid "WCAG %s"
+msgstr "WCAG %s"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:439
+#, php-format
+msgid "confidence: %s percent"
+msgstr "置信度：%s%"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:445
+#, php-format
+msgid "%s%% confidence"
+msgstr "%s%% c置信度"
+
+#: inc/AgenticFixesPage.php:463
+msgid "What's wrong"
+msgstr "哪里有问题"
+
+#. translators: 1: rationale phrase (e.g., "Suggested alt text for image"); 2: selector
+#: inc/AgenticFixesPage.php:469
+#, php-format
+msgid "%1$s on element %2$s"
+msgstr "元素 %2$s 上的 %1$s"
+
+#: inc/AgenticFixesPage.php:481
+msgid "Proposed fix"
+msgstr "建议修复方案"
+
+#: inc/AgenticFixesPage.php:487
+msgid "Edit proposed fix value"
+msgstr "编辑建议修复值"
+
+#: inc/AgenticFixesPage.php:500
+msgid "page affected"
+msgid_plural "pages affected"
+msgstr[0] "受影响的页面"
+
+#. translators: %s: formatted date (e.g., "2026-05-23")
+#: inc/AgenticFixesPage.php:509
+#, php-format
+msgid "Applied on %s"
+msgstr "已应用于 %s"
+
+#. translators: %s: count of pages where this fix appears
+#: inc/AgenticFixesPage.php:525
+#, php-format
+msgid "Where it appears (%s)"
+msgstr "出现位置（%s）"
+
+#: inc/AgenticFixesPage.php:544
+msgid ""
+"Open this page with the affected element scrolled into view and highlighted"
+msgstr "打开此页面时，将受影响的元素滚动到视图中并高亮显示"
+
+#: inc/AgenticFixesPage.php:545
+msgid "View on site"
+msgstr "在网站上查看"
+
+#: inc/AgenticFixesPage.php:552 inc/ImageManagerPage.php:347
+msgid "Edit"
+msgstr "编辑"
+
+#. translators: %s: count of additional pages not listed
+#: inc/AgenticFixesPage.php:562
+#, php-format
+msgid "+%s more"
+msgstr "+%s更多"
+
+#: inc/AgenticFixesPage.php:579
+msgid "Skip"
+msgstr "跳过"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:587
+#, php-format
+msgid "Save edit and apply to %2$s pages for %1$s"
+msgstr "保存编辑并将其应用到 %1$s 的 %2$s 个页面"
+
+#: inc/AgenticFixesPage.php:591
+msgid "Save edit"
+msgstr "保存编辑"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:598
+#, php-format
+msgid "Approve %1$s on %2$s pages"
+msgstr "在 %2$s 个页面上批准 %1$s"
+
+#. translators: %s: count of pages
+#: inc/AgenticFixesPage.php:605
+#, php-format
+msgid "Approve on %s page"
+msgid_plural "Approve on %s pages"
+msgstr[0] "在 %s 页面上批准"
+
+#: inc/AgenticFixesPage.php:613
+msgid "Live on your site"
+msgstr "已在您的网站上线"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:618
+#, php-format
+msgid "Revert %1$s on %2$s pages"
+msgstr "在 %2$s 个页面上撤销 %1$s"
+
+#: inc/AgenticFixesPage.php:622 inc/AgenticFixesPage.php:902
+msgid "Revert"
+msgstr "还原"
+
+#: inc/AgenticFixesPage.php:626
+msgid "Not applied"
+msgstr "未应用"
+
+#: inc/AgenticFixesPage.php:668 inc/SettingsPage.php:470
+msgid "Legacy widget"
+msgstr "旧版小组件"
+
+#: inc/AgenticFixesPage.php:671
+msgid "Agentic AI remediation is not available on your current plan."
+msgstr "您的当前套餐不支持代理式 AI 修复。"
+
+#: inc/AgenticFixesPage.php:682 inc/SettingsPage.php:417
+msgid "Upgrade to unlock Agentic Fixes"
+msgstr "升级以解锁代理式修复"
+
+#: inc/AgenticFixesPage.php:687
+msgid ""
+"Your site runs the legacy AllAccessible widget, which predates agentic AI "
+"remediation. The widget keeps working as-is, but upgrading to the current "
+"plan tier unlocks:"
+msgstr ""
+"您的网站运行的是旧版 AllAccessible 小组件，该版本早于代理式 AI 修复。该小组件"
+"将继续按原样工作，但升级到当前的计划层级可解锁："
+
+#: inc/AgenticFixesPage.php:690
+msgid ""
+"Human-in-the-loop agentic AI remediation — agents propose fixes, your team "
+"approves."
+msgstr "人工参与的代理式 AI 修复——代理提出修复建议，您的团队进行批准。"
+
+#: inc/AgenticFixesPage.php:691
+msgid "Continuous accessibility scoring with site-level coverage tracking."
+msgstr "持续的无障碍评分，并跟踪站点级覆盖范围。"
+
+#: inc/AgenticFixesPage.php:692
+msgid "Higher monthly pageview caps and AllAccessible AI alt text generation."
+msgstr "更高的每月页面浏览量上限，以及 AllAccessible AI 替代文本生成。"
+
+#: inc/AgenticFixesPage.php:693
+msgid ""
+"Image AI manager, per-page audit scores in the WordPress editor, and "
+"downloadable WCAG / VPAT reports."
+msgstr ""
+"图像 AI 管理器、WordPress 编辑器中的按页面审核评分，以及可下载的 WCAG / VPAT "
+"报告。"
+
+#: inc/AgenticFixesPage.php:696 inc/SettingsPage.php:480
+msgid "See upgrade options"
+msgstr "查看升级选项"
+
+#: inc/AgenticFixesPage.php:716 inc/AgenticFixesPage.php:727
+msgid "You're all caught up"
+msgstr "您已全部处理完毕"
+
+#: inc/AgenticFixesPage.php:717
+msgid ""
+"No fixes are waiting for review. Run a scan and AllAccessible agents will "
+"propose any new fixes they find."
+msgstr ""
+"没有等待审核的修复。运行一次扫描，AllAccessible 代理将提出他们发现的任何新修"
+"复建议。"
+
+#: inc/AgenticFixesPage.php:728
+msgid "No fixes are waiting for review right now."
+msgstr "目前没有等待审核的修复。"
+
+#: inc/AgenticFixesPage.php:738
+msgid "No fixes approved yet"
+msgstr "尚无已批准的修复"
+
+#: inc/AgenticFixesPage.php:741
+msgid ""
+"Approved fixes will appear here once you start reviewing the pending queue."
+msgstr "当您开始审核待处理队列后，已批准的修复将显示在此处。"
+
+#: inc/AgenticFixesPage.php:751
+msgid "Nothing has been reverted"
+msgstr "尚未撤销任何内容"
+
+#: inc/AgenticFixesPage.php:754
+msgid "Any approved fix you revert will be tracked here for reference."
+msgstr "您撤销的任何已批准修复都会在此处记录，供参考。"
+
+#: inc/AgenticFixesPage.php:772 inc/ImageManagerPage.php:403
+msgid "AllAccessible AI · Free preview"
+msgstr "AllAccessible AI · 免费预览"
+
+#: inc/AgenticFixesPage.php:776
+#, php-format
+msgid "You've previewed %1$d of %2$d agentic fix proposals"
+msgstr "你已预览 %1$d/%2$d 条智能代理修复提案"
+
+#: inc/AgenticFixesPage.php:781
+msgid ""
+"Real proposals drafted for the real issues found on your site. Upgrade to "
+"review, approve, and apply the rest — human-in-the-loop, every fix."
+msgstr ""
+"为你的网站上发现的真实问题起草的真实修复方案。升级后即可审核、批准并应用其余"
+"方案——全程有人参与把关，每一项修复都如此。"
+
+#: inc/AgenticFixesPage.php:785 inc/ImageManagerPage.php:416
+msgid "Unlock unlimited"
+msgstr "解锁无限制"
+
+#: inc/AgenticFixesPage.php:798
+msgid "Fix proposal preview"
+msgstr "修复建议预览"
+
+#: inc/AgenticFixesPage.php:816
+#, php-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] "%d 个页面"
+
+#: inc/AgenticFixesPage.php:833
+#, php-format
+msgid "Unlock %d more agentic fix proposals for your site"
+msgstr "解锁适用于你网站的另外 %d 个自主修复方案"
+
+#: inc/AgenticFixesPage.php:838 inc/ImageManagerPage.php:460
+msgid "Upgrade — starts at $10/month"
+msgstr "升级 — 起价 $10/月"
+
+#: inc/AgenticFixesPage.php:866 inc/SettingsPage.php:134
+#: inc/SettingsPage.php:424 inc/SettingsPage.php:679 inc/SettingsPage.php:990
+#: inc/TierGate.php:105 inc/UsageDashboard.php:42 inc/UsageDashboard.php:234
+msgid "Upgrade plan"
+msgstr "升级计划"
+
+#: inc/AgenticFixesPage.php:882
+msgid "Edit fix"
+msgstr "编辑修复"
+
+#: inc/AgenticFixesPage.php:884
+msgid "Update the suggested value before approving. Max 500 characters."
+msgstr "批准前更新建议值。最多 500 个字符。"
+
+#: inc/AgenticFixesPage.php:888 inc/ImageManagerPage.php:584
+msgid "Save"
+msgstr "保存"
+
+#: inc/AgenticFixesPage.php:889 inc/AgenticFixesPage.php:903
+#: inc/DeactivationSurvey.php:189 inc/ImageManagerPage.php:581
+msgid "Cancel"
+msgstr "取消"
+
+#: inc/AgenticFixesPage.php:896
+msgid "Revert manifest"
+msgstr "撤销清单"
+
+#: inc/AgenticFixesPage.php:898
+msgid ""
+"Why are you reverting? This helps us improve fix quality. Max 500 characters."
+msgstr "为什么要撤销？这有助于我们提升修复质量。最多 500 个字符。"
+
+#: inc/AgenticFixesPage.php:952
+msgid "Action failed"
+msgstr "操作失败"
+
+#: inc/AgenticFixesPage.php:977
+msgid "Server returned no data"
+msgstr "服务器未返回数据"
+
+#: inc/AgenticFixesPage.php:1024
+msgid "Approve this fix on every page where it appears?"
+msgstr "是否在其出现的每个页面上批准此修复？"
+
+#: inc/AgenticFixesPage.php:1034
+msgid "Revert reason (max 500 chars):"
+msgstr "撤销原因（最多 500 个字符）："
+
+#: inc/AgenticFixesPage.php:1046 inc/AgenticFixesPage.php:1136
+msgid "Value cannot be empty"
+msgstr "值不能为空"
+
+#: inc/AgenticFixesPage.php:1047
+msgid "Apply this value to every page in the group?"
+msgstr "是否将此值应用到该组中的每个页面？"
+
+#: inc/AgenticFixesPage.php:1069
+msgid "Nothing to approve."
+msgstr "无需批准。"
+
+#: inc/AgenticFixesPage.php:1070
+msgid "Approve every pending fix of this type?"
+msgstr "是否批准此类型的所有待处理修复？"
+
+#: inc/AgenticFixesPage.php:1087
+msgid "Bulk approve failed"
+msgstr "批量批准失败"
+
+#: inc/AgenticFixesPage.php:1112
+msgid "Approve this manifest? Fixes will go live immediately."
+msgstr "批准此清单？修复将立即上线。"
+
+#: inc/ConnectionStatusCard.php:56
+msgid "Connection status"
+msgstr "连接状态"
+
+#: inc/ConnectionStatusCard.php:58
+msgid ""
+"Confirm this WordPress install is linked to the correct AllAccessible site."
+msgstr "确认此 WordPress 安装已关联到正确的 AllAccessible 站点。"
+
+#: inc/ConnectionStatusCard.php:64
+msgid "Re-verify"
+msgstr "重新验证"
+
+#: inc/ConnectionStatusCard.php:79
+msgid "WordPress URL"
+msgstr "WordPress 网址"
+
+#: inc/ConnectionStatusCard.php:80 inc/SettingsPage.php:922
+msgid "Account ID"
+msgstr "帐户ID"
+
+#: inc/ConnectionStatusCard.php:81
+msgid "Connected to"
+msgstr "连接到"
+
+#: inc/ConnectionStatusCard.php:82
+msgid "Subdomain ID"
+msgstr "子域名 ID"
+
+#: inc/ConnectionStatusCard.php:84
+msgid "Plan tier"
+msgstr "套餐等级"
+
+#: inc/ConnectionStatusCard.php:93
+msgid "WordPress URL matches the connected AllAccessible site."
+msgstr "WordPress URL 与已连接的 AllAccessible 站点匹配。"
+
+#: inc/ConnectionStatusCard.php:98
+msgid "Mismatch detected"
+msgstr "检测到不匹配"
+
+#. translators: 1: WP URL host, 2: server host
+#: inc/ConnectionStatusCard.php:103
+#, php-format
+msgid ""
+"WordPress is configured for %1$s but this plugin is linked to %2$s on your "
+"AllAccessible account. The Agentic Fixes page will show fixes for the "
+"connected site, not this WordPress install."
+msgstr ""
+"WordPress 已配置为 %1$s，但此插件在你的 AllAccessible 账户中关联的是 %2$s。"
+"Agentic Fixes 页面将显示已连接站点的修复，而不是此 WordPress 安装的修复。"
+
+#: inc/ConnectionStatusCard.php:110
+msgid ""
+"Click \"Re-verify\" to refresh, or contact support if this site needs to be "
+"added to your account."
+msgstr "点击“重新验证”以刷新；或者如果需要将此站点添加到您的账户，请联系支持。"
+
+#: inc/ConnectionStatusCard.php:116
+msgid ""
+"This site has not been registered with AllAccessible yet. Visit your "
+"WordPress homepage to trigger registration, then click \"Re-verify\"."
+msgstr ""
+"此站点尚未在 AllAccessible 注册。访问你的 WordPress 主页以触发注册，然后点击"
+"“重新验证”。"
+
+#: inc/ConnectionStatusCard.php:189 inc/FeatureComparison.php:40
+#: inc/SettingsPage.php:1945 inc/SettingsPage.php:1946
+msgid "Free"
+msgstr "免费"
+
+#: inc/ConnectionStatusCard.php:190 inc/FeatureComparison.php:43
+#: inc/SettingsPage.php:1927 inc/SettingsPage.php:1928
+msgid "Starter"
+msgstr "发起者"
+
+#: inc/ConnectionStatusCard.php:191 inc/FeatureComparison.php:46
+#: inc/SettingsPage.php:1933 inc/SettingsPage.php:1934
+msgid "Enterprise"
+msgstr "企业"
+
+#: inc/ConnectionStatusCard.php:192 inc/SettingsPage.php:1939
+msgid "Legacy"
+msgstr "旧版"
+
+#: inc/ConnectionStatusCard.php:193 inc/SettingsPage.php:1921
+msgid "Trial"
+msgstr "试用"
+
+#: inc/ConnectionStatusCard.php:208
+msgid "Verifying…"
+msgstr "正在验证…"
+
+#: inc/ConversionCTA.php:40
 msgid "Upgrade Now"
 msgstr "现在升级"
 
-#: inc/AllAccessibleSettings.php:64
-msgid ""
-"View the results of your website scans in your AllAccessibile Account "
-"Dashboard."
-msgstr "在您的AllAccessibile账户仪表板上查看您的网站扫描结果。"
+#: inc/ConversionCTA.php:46
+msgid "Usage Limit Exceeded!"
+msgstr "已超出使用限额！"
 
-#: inc/AllAccessibleSettings.php:65
-msgid "Accessibility Dashboard"
-msgstr "辅助功能"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Need"
-msgstr "必须"
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Help & Support?"
-msgstr "帮助与支持？"
-
-#: inc/AllAccessibleSettings.php:84
-msgid ""
-"Check our knowledge base for assistance with installation, customization, "
-"and more."
-msgstr "请查看我们的知识库，以获得安装、定制等方面的帮助。"
-
-#: inc/AllAccessibleSettings.php:85
-msgid "Get Support"
-msgstr "获取支持"
-
-#: inc/AllAccessibleSettings.php:109
-msgid "Unlock the Power of AllAccessible Premium"
-msgstr "释放AllAccessible Premium的力量"
-
-#: inc/AllAccessibleSettings.php:110
-msgid ""
-"Unlock all the benefits of our Ai accessibility automation with a free trial "
-"by connecting your AllAccessible account to your email below. Already using "
-"the free version? No problem! We'll set you up with a free 7-day trial of "
-"our premium version. After the trial period, upgrade to the premium version "
-"for just $10 a month and enjoy a more accessible digital experience."
-msgstr ""
-"通过连接你的AllAccessible账户和你的邮箱，可以免费试用我们的Ai无障碍自动化系统"
-"的所有好处。已经在使用免费版本？没问题!我们会给你安排一个免费的高级版本的7天"
-"试用。试用期结束后，升级到高级版本，每月只需10美元，即可享受更多的无障碍数字"
-"体验。"
-
-#: inc/AllAccessibleSettings.php:113
-msgid ""
-"Below are some additional features unlocked with AllAccessible Premium. All "
-"for Only $10/mo."
-msgstr "以下是AllAccessible Premium解锁的一些额外功能。"
-
-#: inc/AllAccessibleSettings.php:114
-msgid "User Control Panel"
-msgstr "用户控制面板"
-
-#: inc/AllAccessibleSettings.php:115
-msgid "Accessibility Statement"
-msgstr "辅助功能声明"
-
-#: inc/AllAccessibleSettings.php:116
-msgid "Widget Customization (Color, Shape, Placement, etc.)"
-msgstr "小工具定制（颜色、形状、位置等）。"
-
-#: inc/AllAccessibleSettings.php:117
-msgid "Ai Accessibility Fixes"
-msgstr "无障碍修复的Ai"
-
-#: inc/AllAccessibleSettings.php:118
-msgid "Image Alt Text Generation"
-msgstr "生成图片ALT文本"
-
-#: inc/AllAccessibleSettings.php:119
-msgid "Monthly Accessibility Audits"
-msgstr "月度无障碍审计"
-
-#: inc/AllAccessibleSettings.php:120
-msgid "Accessibility Accommodation Requests"
-msgstr "无障碍设施请求"
-
-#: inc/AllAccessibleSettings.php:127
-msgid "To learn more, visit: https://www.allaccessible.org"
-msgstr "要了解更多，请访问：https://www.allaccessible.org"
-
-#: inc/AllAccessibleSettings.php:131
-msgid "Your Email"
-msgstr "你的邮箱"
-
-#: inc/AllAccessibleSettings.php:131
+#: inc/ConversionCTA.php:48
 #, php-format
-msgid "(Used to manage your Account on %s)"
-msgstr "(用于管理您在%s上的账户)"
+msgid ""
+"Your widget is currently using free features only. Upgrade to %s to restore "
+"premium functionality and increase your limits."
+msgstr "您的小组件当前仅使用免费功能。升级到 %s 以恢复高级功能并提高您的限额。"
 
-#: inc/AllAccessibleSettings.php:135
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Starter"
+msgstr "升级到入门版"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Enterprise"
+msgstr "升级到企业版"
+
+#: inc/ConversionCTA.php:68
+msgid "Approaching Your Limit"
+msgstr "即将达到你的限额"
+
+#: inc/ConversionCTA.php:70
+#, php-format
+msgid ""
+"You're using over 80%% of your %s. Upgrade before you hit the limit to avoid "
+"service interruption."
+msgstr "您已使用超过 %s 的 80%%。在达到上限前升级，以避免服务中断。"
+
+#: inc/ConversionCTA.php:73
+msgid "Upgrade Before Limit"
+msgstr "在达到限额前升级"
+
+#: inc/ConversionCTA.php:78
+msgid "Unlock Premium Features"
+msgstr "解锁高级功能"
+
+#: inc/ConversionCTA.php:79
+msgid ""
+"Get AI-powered accessibility fixes, monthly compliance audits, custom widget "
+"styling, and priority support."
+msgstr "获取 AI 驱动的无障碍修复、每月合规审计、自定义小组件样式和优先支持。"
+
+#: inc/ConversionCTA.php:80
+msgid "Start 7-Day Trial"
+msgstr "开始 7 天试用"
+
+#: inc/ConversionCTA.php:85
+msgid "Scale with Add-Ons"
+msgstr "通过附加组件扩展"
+
+#: inc/ConversionCTA.php:86
+msgid ""
+"Need more pageviews, AI fixes, or audits? Add custom limits to your plan or "
+"upgrade to Enterprise for unlimited access."
+msgstr ""
+"需要更多页面浏览量、AI 修复或审计？为您的套餐添加自定义限额，或升级到 "
+"Enterprise 以获得无限访问。"
+
+#: inc/ConversionCTA.php:87
+msgid "Explore Add-Ons"
+msgstr "探索附加组件"
+
+#: inc/DashboardBanner.php:66
+msgid "Get the Most Out of AllAccessible! 🚀"
+msgstr "充分利用 AllAccessible！ 🚀"
+
+#: inc/DashboardBanner.php:69
+msgid ""
+"Complete the quick 2-minute setup to activate your accessibility widget and "
+"unlock premium features."
+msgstr "完成快速的 2 分钟设置，以激活您的无障碍小组件并解锁高级功能。"
+
+#: inc/DashboardBanner.php:76
+msgid "Start Setup"
+msgstr "开始安装"
+
+#. translators: %s: accessibility score 0-100 or em-dash
+#: inc/DashboardLayout.php:75
+#, php-format
+msgid "Accessibility score %s out of 100"
+msgstr "无障碍评分 %s/100"
+
+#: inc/DashboardLayout.php:152
+msgid "Daily"
+msgstr "每日"
+
+#: inc/DashboardLayout.php:153 inc/FeatureComparison.php:75
+msgid "Weekly"
+msgstr "每周"
+
+#: inc/DashboardLayout.php:154 inc/FeatureComparison.php:74
+msgid "Monthly"
+msgstr "每月"
+
+#: inc/DashboardLayout.php:155
+msgid "On-demand"
+msgstr "按需"
+
+#. translators: %s: number of days between scans
+#: inc/DashboardLayout.php:162
+#, php-format
+msgid "Every %s days"
+msgstr "每 %s 天"
+
+#: inc/DashboardLayout.php:170
+msgid "Scans"
+msgstr "扫描"
+
+#: inc/DashboardLayout.php:171
+msgid "Scheduled scans"
+msgstr "计划扫描"
+
+#. translators: %s: human time diff, e.g. "2 hours"
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/DashboardLayout.php:176 inc/EditorMetaBox.php:199
+#, php-format
+msgid "%s ago"
+msgstr "%s 前"
+
+#: inc/DashboardLayout.php:180 inc/ScanTriggerPanel.php:91
+msgid "No scans yet"
+msgstr "尚无扫描"
+
+#. translators: %s: human time diff
+#: inc/DashboardLayout.php:184
+#, php-format
+msgid "in %s"
+msgstr "在 %s 后"
+
+#: inc/DashboardLayout.php:185
+msgid "due now"
+msgstr "现在到期"
+
+#: inc/DashboardLayout.php:193 inc/OnboardingWizard.php:451
+#: inc/ScanTriggerPanel.php:29
+msgid "Run your first scan"
+msgstr "运行您的首次扫描"
+
+#: inc/DashboardLayout.php:197
+msgid "Excellent — strong accessibility coverage."
+msgstr "优秀——无障碍覆盖很全面。"
+
+#: inc/DashboardLayout.php:199
+msgid "Good — a few fixes to go."
+msgstr "不错——还剩少量修复。"
+
+#: inc/DashboardLayout.php:201
+msgid "Needs attention."
+msgstr "需要关注。"
+
+#: inc/DashboardLayout.php:203
+msgid "Needs work — start with the top issues."
+msgstr "需要改进——从最重要的问题开始。"
+
+#: inc/DashboardLayout.php:209
+msgid ""
+"Run a scan and AllAccessible agents will check every page for accessibility "
+"issues."
+msgstr "运行一次扫描，AllAccessible 代理将检查每个页面的无障碍问题。"
+
+#. translators: %s: percentage with <b> wrapper
+#: inc/DashboardLayout.php:215
+#, php-format
+msgid "%s%% of issues remediated"
+msgstr "已修复 %s%% of 个问题"
+
+#: inc/DashboardLayout.php:221
+#, php-format
+msgid "%s page audited"
+msgid_plural "%s pages audited"
+msgstr[0] "已审计 %s 个页面"
+
+#: inc/DashboardLayout.php:227
+msgid "View pages"
+msgstr "查看页面"
+
+#: inc/DashboardLayout.php:239
+#, php-format
+msgid "%s fix is ready for your review"
+msgid_plural "%s fixes are ready for your review"
+msgstr[0] "%s 个修复已准备好供您审核"
+
+#: inc/DashboardLayout.php:247
+#, php-format
+msgid "%s issue needs a manual fix"
+msgid_plural "%s issues need a manual fix"
+msgstr[0] "%s 个问题需要手动修复"
+
+#: inc/DashboardLayout.php:251
+msgid "View issues"
+msgstr "查看问题"
+
+#: inc/DashboardLayout.php:254
+msgid "You're all caught up — AllAccessible agents are monitoring your site."
+msgstr "你已全部查看完毕 — AllAccessible 代理正在监控你的网站。"
+
+#: inc/DashboardLayout.php:257
+msgid "No scan yet — run one to find and fix accessibility issues."
+msgstr "尚未扫描 — 运行一次以查找并修复无障碍问题。"
+
+#: inc/DashboardLayout.php:259 inc/OnboardingWizard.php:106
+#: inc/OnboardingWizard.php:236
+msgid "Get started"
+msgstr "开始使用"
+
+#: inc/DashboardLayout.php:264
+msgid "AI-resolved"
+msgstr "AI 已解决"
+
+#: inc/DashboardLayout.php:265
+msgid "manual"
+msgstr "手动"
+
+#: inc/DashboardLayout.php:267
+msgid "images with alt text"
+msgstr "带替代文本的图片"
+
+#: inc/DashboardLayout.php:270
+msgid "pageviews"
+msgstr "页面浏览量"
+
+#: inc/DashboardLayout.php:276
+msgid "Accessibility status"
+msgstr "无障碍状态"
+
+#: inc/DashboardLayout.php:282
+msgid "Live · updates nightly"
+msgstr "实时 · 每晚更新"
+
+#: inc/DashboardLayout.php:287 inc/SettingsPage.php:387
+#: inc/SettingsPage.php:645
+msgid "Preview widget"
+msgstr "预览小组件"
+
+#: inc/DashboardLayout.php:297
+msgid "Scan schedule"
+msgstr "扫描计划"
+
+#: inc/DashboardLayout.php:303
+msgid ""
+"How often AllAccessible automatically scans your whole site behind the "
+"scenes for a deep accessibility analysis. You can also run on-demand scans "
+"of individual pages anytime — from the WordPress page editor, or on the "
+"front end while logged in."
+msgstr ""
+"AllAccessible 会在后台自动扫描你的整个网站，以进行深入的无障碍分析的频率。你"
+"也可以随时按需扫描单个页面——可在 WordPress 页面编辑器中，或在登录状态下于前台"
+"进行。"
+
+#: inc/DashboardLayout.php:306
+msgid "Frequency"
+msgstr "频率"
+
+#: inc/DashboardLayout.php:309
+msgid "Last"
+msgstr "上次"
+
+#: inc/DashboardLayout.php:312 inc/ImageManagerPage.php:523
+msgid "Next"
+msgstr "下一步"
+
+#: inc/DashboardLayout.php:326
+msgid "Remediation activity"
+msgstr "修复活动"
+
+#: inc/DeactivationSurvey.php:92
+msgid "Quick Feedback"
+msgstr "快速反馈"
+
+#: inc/DeactivationSurvey.php:95
+msgid "Help us improve AllAccessible"
+msgstr "帮助我们改进 AllAccessible"
+
+#: inc/DeactivationSurvey.php:100
+msgid ""
+"If you have a moment, please let us know why you're deactivating "
+"AllAccessible. All submissions are anonymous and help us improve."
+msgstr ""
+"如果方便的话，请告诉我们你为什么要停用 AllAccessible。所有提交均为匿名，并有"
+"助于我们改进。"
+
+#: inc/DeactivationSurvey.php:113
+msgid "The plugin stopped working"
+msgstr "插件停止工作"
+
+#: inc/DeactivationSurvey.php:116
+#, php-format
+msgid "We're sorry! Please %scontact support%s or describe the issue:"
+msgstr "很抱歉！请 %s联系支持%s 或描述问题："
+
+#: inc/DeactivationSurvey.php:127
+msgid "Missing features I need"
+msgstr "缺少我需要的功能"
+
+#: inc/DeactivationSurvey.php:130
+msgid "What features would make you stay?"
+msgstr "哪些功能会让你留下来？"
+
+#: inc/DeactivationSurvey.php:141
+#, fuzzy
+msgid "Found a better plugin"
+msgstr "我找到了一个更好的插件"
+
+#: inc/DeactivationSurvey.php:144
+msgid "Which plugin are you switching to?"
+msgstr "你要切换到哪个插件？"
+
+#: inc/DeactivationSurvey.php:155
+msgid "Temporary - troubleshooting an issue"
+msgstr "临时 - 排查问题"
+
+#: inc/DeactivationSurvey.php:163
+msgid "I don't need accessibility features anymore"
+msgstr "我不再需要无障碍功能了"
+
+#: inc/DeactivationSurvey.php:171
+msgid "Other"
+msgstr "其他"
+
+#: inc/DeactivationSurvey.php:173
+msgid "Please tell us more..."
+msgstr "请告诉我们更多信息……"
+
+#: inc/DeactivationSurvey.php:185
+msgid "Skip & Deactivate"
+msgstr "跳过并停用"
+
+#: inc/DeactivationSurvey.php:192
+msgid "Submit & Deactivate"
+msgstr "提交并停用"
+
+#: inc/DeactivationSurvey.php:238
+msgid "Please select a reason"
+msgstr "请选择一个原因"
+
+#: inc/DeactivationSurvey.php:253
+msgid "Submitting..."
+msgstr "提交..."
+
+#: inc/EditorMetaBox.php:52 inc/EditorMetaBox.php:63
+msgid "Accessibility Score"
+msgstr "无障碍评分"
+
+#: inc/EditorMetaBox.php:98
+msgid "Loading score..."
+msgstr "正在加载评分..."
+
+#: inc/EditorMetaBox.php:99
+msgid "Error loading score"
+msgstr "加载评分时出错"
+
+#: inc/EditorMetaBox.php:100
+msgid "Rescan initiated successfully"
+msgstr "重新扫描已成功启动"
+
+#: inc/EditorMetaBox.php:101
+msgid "Error initiating rescan"
+msgstr "启动重新扫描时出错"
+
+#: inc/EditorMetaBox.php:118
+msgid "Publish this page to see its accessibility score."
+msgstr "发布此页面以查看其无障碍评分。"
+
+#: inc/EditorMetaBox.php:151
+msgid "Score unavailable"
+msgstr "评分不可用"
+
+#: inc/EditorMetaBox.php:153
+msgid ""
+"Could not load this page's accessibility score. Try refreshing the editor."
+msgstr "无法加载此页面的无障碍评分。请尝试刷新编辑器。"
+
+#: inc/EditorMetaBox.php:177
+msgid "Needs attention"
+msgstr "需要关注"
+
+#: inc/EditorMetaBox.php:180 inc/PostListColumn.php:447
+msgid "Awaiting scan"
+msgstr "等待扫描"
+
+#: inc/EditorMetaBox.php:183
+msgid "Excellent"
+msgstr "优秀"
+
+#: inc/EditorMetaBox.php:186
+msgid "Good"
+msgstr "好"
+
+#: inc/EditorMetaBox.php:189
+msgid "Needs review"
+msgstr "需要审查"
+
+#: inc/EditorMetaBox.php:235
+#, php-format
+msgid "Accessibility score %1$d out of 100, %2$s. Open full audit."
+msgstr "无障碍评分 %1$d/100，%2$s。打开完整审计。"
+
+#: inc/EditorMetaBox.php:236
+msgid "Accessibility score not available yet."
+msgstr "无障碍评分尚不可用。"
+
+#. translators: 1: raw, 2: current, 3: lift delta
+#: inc/EditorMetaBox.php:265
+#, php-format
+msgid ""
+"Score lifted from %1$d to %2$d by AllAccessible AI, a gain of %3$d points."
+msgstr "AllAccessible AI 将评分从 %1$d 提升至 %2$d，提高了 %3$d 分。"
+
+#. translators: %s: count of issues AllAccessible auto-resolves at runtime
+#: inc/EditorMetaBox.php:286
+#, php-format
+msgid "%s issue resolved by AllAccessible"
+msgid_plural "%s issues resolved by AllAccessible"
+msgstr[0] "%s 个问题已由 AllAccessible 解决"
+
+#. translators: %s: count of live agentic AI fixes
+#: inc/EditorMetaBox.php:293
+#, php-format
+msgid "%s agentic AI fix live"
+msgid_plural "%s agentic AI fixes live"
+msgstr[0] "%s 项代理式 AI 修复已上线"
+
+#: inc/EditorMetaBox.php:307
+#, php-format
+msgid ""
+"Review %1$d pending agentic AI fix; approve to reach %2$d%% accessibility "
+"score"
+msgid_plural ""
+"Review %1$d pending agentic AI fixes; approve to reach %2$d%% accessibility "
+"score"
+msgstr[0] "审核 %1$d 个待处理的代理式 AI 修复；批准以达到 %2$d%% 无障碍评分"
+
+#. translators: %s: count of pending fixes
+#: inc/EditorMetaBox.php:323
+#, php-format
+msgid "%s fix ready to review"
+msgid_plural "%s fixes ready to review"
+msgstr[0] "%s 项修复已准备好待审核"
+
+#. translators: %s: potential score
+#: inc/EditorMetaBox.php:330
+#, php-format
+msgid "Approve to reach %s%%"
+msgstr "批准即可达到 %s%%"
+
+#. translators: %s: total issues
+#: inc/EditorMetaBox.php:344
+#, php-format
+msgid "Issues (%s)"
+msgstr "问题（%s）"
+
+#: inc/EditorMetaBox.php:351
+msgid "Critical"
+msgstr "紧急"
+
+#: inc/EditorMetaBox.php:352
+msgid "Serious"
+msgstr "严重"
+
+#: inc/EditorMetaBox.php:353
+msgid "Moderate"
+msgstr "中等"
+
+#: inc/EditorMetaBox.php:354
+msgid "Minor"
+msgstr "轻微"
+
+#. translators: %s: human-readable time ago
+#: inc/EditorMetaBox.php:378
+#, php-format
+msgid "Last scanned %s"
+msgstr "上次扫描于 %s"
+
+#: inc/EditorMetaBox.php:392
+msgid "View full report"
+msgstr "查看完整报告"
+
+#: inc/EditorMetaBox.php:400
+msgid "Rescan this page"
+msgstr "重新扫描此页面"
+
+#: inc/EditorMetaBox.php:441
+msgid "Scan complete. Refreshing…"
+msgstr "扫描完成。正在刷新…"
+
+#: inc/EditorMetaBox.php:442
+msgid "Scan complete. Save or reload to see the updated score."
+msgstr "扫描完成。保存或重新加载以查看更新后的分数。"
+
+#: inc/EditorMetaBox.php:443
+msgid "Reload now"
+msgstr "立即重新加载"
+
+#: inc/EditorMetaBox.php:445
+msgid "Still running — refresh the page in a minute."
+msgstr "仍在运行 — 请在一分钟后刷新页面。"
+
+#: inc/EditorMetaBox.php:447
+msgid "Could not start scan."
+msgstr "无法开始扫描。"
+
+#: inc/EditorMetaBox.php:448
+msgid "Network error. Check your connection and try again."
+msgstr "网络错误。请检查你的连接并重试。"
+
+#: inc/EditorMetaBox.php:587
+msgid "Page-level score"
+msgstr "页面级评分"
+
+#: inc/EditorMetaBox.php:590
+msgid "Site-level score (page not yet crawled)"
+msgstr "站点级评分（页面尚未抓取）"
+
+#: inc/EditorMetaBox.php:593 inc/SettingsPage.php:575
+msgid "Awaiting first scan"
+msgstr "等待首次扫描"
+
+#: inc/EditorMetaBox.php:821
+msgid "Premium Feature"
+msgstr "高级功能"
+
+#: inc/EditorMetaBox.php:824
+msgid "See accessibility scores for each page/post with a premium account."
+msgstr "使用高级账户查看每个页面/文章的无障碍评分。"
+
+#: inc/EditorMetaBox.php:827
 msgid "Upgrade to Premium"
 msgstr "升级到高级版"
 
-#: inc/AllAccessibleSettings.php:138
-msgid "Plugin Configuration"
-msgstr "插件配置"
+#: inc/EditorMetaBox.php:830
+msgid "7-day free trial available"
+msgstr "提供 7 天免费试用"
 
-#: inc/AllAccessibleSettings.php:139
+#: inc/FeatureComparison.php:28
+msgid "Compare Plans"
+msgstr "对比套餐"
+
+#: inc/FeatureComparison.php:37
+msgid "Feature"
+msgstr "特征"
+
+#: inc/FeatureComparison.php:52
+msgid "Accessibility Widget"
+msgstr "无障碍小组件"
+
+#: inc/FeatureComparison.php:53 inc/FeatureComparison.php:54
+#: inc/FeatureComparison.php:55 inc/FeatureComparison.php:80
+#: inc/FeatureComparison.php:81 inc/FeatureComparison.php:87
+#: inc/FeatureComparison.php:92
+msgid "Included"
+msgstr "包括在内"
+
+#: inc/FeatureComparison.php:58
+msgid "Monthly Pageviews"
+msgstr "每月页面浏览量"
+
+#: inc/FeatureComparison.php:61 inc/FeatureComparison.php:68
+#: inc/FeatureComparison.php:69
+msgid "Unlimited"
+msgstr "无限"
+
+#: inc/FeatureComparison.php:65
+msgid "AI Image Alt Text"
+msgstr "AI 图片替代文本"
+
+#: inc/FeatureComparison.php:67
+msgid "10 preview"
+msgstr "10 个预览"
+
+#: inc/FeatureComparison.php:72
+msgid "Compliance Audits"
+msgstr "合规性审计"
+
+#: inc/FeatureComparison.php:73 inc/FeatureComparison.php:79
+#: inc/FeatureComparison.php:85 inc/FeatureComparison.php:86
+#: inc/FeatureComparison.php:91
+msgid "Not included"
+msgstr "不包含"
+
+#: inc/FeatureComparison.php:78
+msgid "Widget Customization"
+msgstr "小工具自定义"
+
+#: inc/FeatureComparison.php:84
+msgid "VPAT Reports"
+msgstr "VPAT 报告"
+
+#: inc/FeatureComparison.php:90
+msgid "Priority Support"
+msgstr "优先支持"
+
+#: inc/FeatureComparison.php:93
+msgid "Dedicated"
+msgstr "专用"
+
+#: inc/FeatureComparison.php:103
+msgid "Upgrade Plan"
+msgstr "升级计划"
+
+#: inc/ImageManagerPage.php:28 inc/ImageManagerPage.php:29
+#: inc/SettingsPage.php:608
+msgid "Image AI"
+msgstr "图像 AI"
+
+#: inc/ImageManagerPage.php:101
+msgid "Image alt text is available on paid plans"
+msgstr "图片替代文本仅在付费套餐中提供"
+
+#: inc/ImageManagerPage.php:102
+msgid ""
+"Upgrade to review, refine, and approve every alt text on your site. Includes "
+"inline editing, manual overrides, and full media library coverage."
+msgstr ""
+"升级以审核、优化并批准你网站上的每一条替代文本。包含内联编辑、手动覆盖以及完"
+"整的媒体库覆盖。"
+
+#: inc/ImageManagerPage.php:116
+msgid "Could not load image data right now."
+msgstr "目前无法加载图片数据。"
+
+#. translators: %d = number of images on this page
+#: inc/ImageManagerPage.php:132
 #, php-format
-msgid "%1$s is connected to %2$s with account ID %3$s"
-msgstr "%1$s被连接到%2$s，账户ID为%3$s"
+msgid "%d image on this page."
+msgid_plural "%d images on this page."
+msgstr[0] "此页面上有 %d 张图片。"
 
-#: inc/AllAccessibleSettings.php:161
-msgid "Choose Widget Color"
-msgstr "选择小部件颜色"
+#: inc/ImageManagerPage.php:157 inc/PostListColumn.php:264
+#: inc/PostListColumn.php:270 inc/constants.php:19
+msgid "Accessibility"
+msgstr "辅助功能"
 
-#: inc/AllAccessibleSettings.php:167
-msgid "Choose Icon"
-msgstr "选择图标"
+#: inc/ImageManagerPage.php:159
+msgid "Image alt text"
+msgstr "图片替换文本"
 
-#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
-msgid "Choose Widget Size"
-msgstr "选择小部件大小"
+#: inc/ImageManagerPage.php:163
+msgid ""
+"AllAccessible AI suggests descriptive alt text for every image on your site. "
+"Review and approve, or edit before it goes live."
+msgstr ""
+"AllAccessible AI 会为您网站上的每张图片建议描述性的替代文本。您可以审核并批"
+"准，或在上线前进行编辑。"
 
-#: inc/AllAccessibleSettings.php:192
-msgid "Small"
-msgstr "小"
+#: inc/ImageManagerPage.php:167 inc/SettingsPage.php:836
+msgid "Open full dashboard"
+msgstr "打开完整仪表板"
 
-#: inc/AllAccessibleSettings.php:193
-msgid "Medium (Default)"
-msgstr "中（默认）"
+#: inc/ImageManagerPage.php:189
+msgid "images"
+msgstr "图片"
 
-#: inc/AllAccessibleSettings.php:194
+#: inc/ImageManagerPage.php:193
+msgid "with alt text"
+msgstr "带替代文本"
+
+#. translators: %d = percentage
+#: inc/ImageManagerPage.php:194
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#: inc/ImageManagerPage.php:200
+msgid "AI-authored"
+msgstr "AI 撰写"
+
+#: inc/ImageManagerPage.php:212
+msgid "All images"
+msgstr "所有图片"
+
+#: inc/ImageManagerPage.php:213
+msgid "Missing alt"
+msgstr "缺少替代文本"
+
+#: inc/ImageManagerPage.php:214
+msgid "AI-suggested"
+msgstr "AI 建议"
+
+#: inc/ImageManagerPage.php:215 inc/SettingsPage.php:450
+msgid "Manual"
+msgstr "手动"
+
+#: inc/ImageManagerPage.php:226
+msgid "Show"
+msgstr "显示"
+
+#: inc/ImageManagerPage.php:237
+msgid "Search filename or alt text"
+msgstr "搜索文件名或替代文本"
+
+#: inc/ImageManagerPage.php:240
+msgid "Type to filter visible images…"
+msgstr "输入以筛选可见图片…"
+
+#: inc/ImageManagerPage.php:245
+msgid "Apply"
+msgstr "应用"
+
+#: inc/ImageManagerPage.php:294
+msgid "AI suggestion"
+msgstr "AI 建议"
+
+#: inc/ImageManagerPage.php:320
+msgid "No alt text yet."
+msgstr "尚无替代文本。"
+
+#: inc/ImageManagerPage.php:332
+msgid "Found on:"
+msgstr "发现于："
+
+#: inc/ImageManagerPage.php:361
+msgid "Needs alt"
+msgstr "需要替代文本"
+
+#: inc/ImageManagerPage.php:364
+msgid "Set"
+msgstr "设置"
+
+#. translators: %d = image ID
+#: inc/ImageManagerPage.php:371 inc/ImageManagerPage.php:379
+#, php-format
+msgid "Image #%d"
+msgstr "图片 #%d"
+
+#: inc/ImageManagerPage.php:407
+#, php-format
+msgid "You've used %1$d of %2$d preview alt-texts on this site"
+msgstr "你已在此网站使用 %2$d 个预览替代文本中的 %1$d 个"
+
+#: inc/ImageManagerPage.php:412
+msgid ""
+"Real AI output, drafted for your real images. Upgrade to unlock unlimited "
+"alt-text generation for every image on your site."
+msgstr ""
+"真实的 AI 输出，为你的真实图片起草。升级即可解锁为你网站上的每张图片无限生成"
+"替代文本。"
+
+#: inc/ImageManagerPage.php:455
+#, php-format
+msgid "Unlock AI alt text for all %d images on your site"
+msgstr "为你网站上的全部 %d 张图片解锁 AI 替代文本"
+
+#: inc/ImageManagerPage.php:478
+msgid "No images discovered yet"
+msgstr "尚未发现任何图片"
+
+#: inc/ImageManagerPage.php:480
+msgid ""
+"Scan your site to discover images. AllAccessible AI writes alt text for each "
+"one automatically. You can review or override any entry from this page."
+msgstr ""
+"扫描您的网站以发现图片。AllAccessible AI 会自动为每张图片编写替代文本。您可以"
+"在此页面查看或覆盖任何条目。"
+
+#: inc/ImageManagerPage.php:483
+msgid "Scan your site to discover images"
+msgstr "扫描你的网站以发现图片"
+
+#: inc/ImageManagerPage.php:504
+msgid "Image pagination"
+msgstr "图片分页"
+
+#. translators: 1: current page, 2: total pages, 3: total items
+#: inc/ImageManagerPage.php:508
+#, php-format
+msgid "Page %1$d of %2$d (%3$s images)"
+msgstr "第 %1$d 页，共 %2$d 页（%3$s 张图片）"
+
+#: inc/ImageManagerPage.php:518
+msgid "Previous"
+msgstr "上一个"
+
+#: inc/ImageManagerPage.php:540
+msgid "Edit alt text"
+msgstr "编辑替代文本"
+
+#: inc/ImageManagerPage.php:541
+msgid "Close"
+msgstr "关闭"
+
+#: inc/ImageManagerPage.php:553
+msgid "AllAccessible AI suggests"
+msgstr "AllAccessible AI 建议"
+
+#: inc/ImageManagerPage.php:559
+msgid "Use this suggestion"
+msgstr "使用此建议"
+
+#: inc/ImageManagerPage.php:564
+msgid "Alt text"
+msgstr "Alt 文本"
+
+#: inc/ImageManagerPage.php:570
+msgid ""
+"Aim for 1–2 sentences describing the image's purpose, not its appearance."
+msgstr "尽量用 1–2 句话描述图片的用途，而不是外观。"
+
+#: inc/ImageManagerPage.php:670
+msgid ""
+"Saved. Updates may take up to a minute to appear after refresh as the change "
+"propagates through our system."
+msgstr ""
+"已保存。刷新后，随着更改在我们的系统中传播，更新可能需要最多一分钟才会显示。"
+
+#: inc/ImageManagerPage.php:707
+msgid "Alt text is required."
+msgstr "替代文本为必填项。"
+
+#: inc/ImageManagerPage.php:711
+msgid "Alt text must be 500 characters or fewer."
+msgstr "替代文本必须不超过 500 个字符。"
+
+#: inc/ImageManagerPage.php:716 inc/SettingsPage.php:1218
+msgid "Saving…"
+msgstr "正在保存..."
+
+#: inc/ImageManagerPage.php:726 inc/SettingsPage.php:1785
+msgid "Save failed"
+msgstr "保存失败"
+
+#: inc/ImageManagerPage.php:745
+msgid "Save failed. Please try again."
+msgstr "保存失败。请重试。"
+
+#: inc/ImageManagerPage.php:766
+msgid "Showing all images on this page."
+msgstr "正在显示此页面上的所有图片。"
+
+#: inc/ImageManagerPage.php:768
+#, php-format
+msgid "Showing %d images matching your search."
+msgstr "正在显示 %d 张符合你搜索的图片。"
+
+#: inc/ImageManagerPage.php:787
+msgid "Insufficient permissions"
+msgstr "没有足够的权限"
+
+#: inc/ImageManagerPage.php:796 inc/api/ApiClient.php:901
+msgid "Invalid image ID"
+msgstr "无效的图片 ID"
+
+#: inc/ImageManagerPage.php:799 inc/api/ApiClient.php:905
+msgid "Alt text must be 1–500 characters"
+msgstr "替代文本必须为 1–500 个字符"
+
+#: inc/OnboardingWizard.php:43
+msgid "AllAccessible Setup"
+msgstr "AllAccessible 设置"
+
+#: inc/OnboardingWizard.php:44
+msgid "Setup"
+msgstr "设置"
+
+#: inc/OnboardingWizard.php:107
+msgid "First scan"
+msgstr "初次扫描"
+
+#: inc/OnboardingWizard.php:112
+msgid "AllAccessible setup"
+msgstr "AllAccessible 设置"
+
+#: inc/OnboardingWizard.php:119
+msgid "Setup progress"
+msgstr "设置进度"
+
+#: inc/OnboardingWizard.php:144
+msgid "Step 1 of 2"
+msgstr "第 1 步（共 2 步）"
+
+#: inc/OnboardingWizard.php:146 inc/OnboardingWizard.php:808
+msgid "Welcome to AllAccessible"
+msgstr "欢迎使用 AllAccessible"
+
+#: inc/OnboardingWizard.php:149
+msgid ""
+"Make this WordPress site usable for every visitor. Enter your email and pick "
+"a plan to get started."
+msgstr ""
+"让这个 WordPress 网站对每位访客都易于使用。输入你的邮箱并选择一个方案即可开"
+"始。"
+
+#: inc/OnboardingWizard.php:155
+msgid "See what an account does for you"
+msgstr "看看账户能为你做什么"
+
+#: inc/OnboardingWizard.php:165
+msgid "Accessibility scans"
+msgstr "无障碍扫描"
+
+#: inc/OnboardingWizard.php:168
+msgid ""
+"Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged."
+msgstr "每个已发布页面都会根据 WCAG 2.2、ADA 和 EAA 进行检查。按严重程度标记。"
+
+#: inc/OnboardingWizard.php:179
+msgid "24 fixed"
+msgstr "已修复 24 项"
+
+#: inc/OnboardingWizard.php:180
+msgid "3 to review"
+msgstr "待审核 3 项"
+
+#: inc/OnboardingWizard.php:190
+msgid "Agentic AI fixes"
+msgstr "代理式 AI 修复"
+
+#: inc/OnboardingWizard.php:193
+msgid "AI drafts the fix; your team approves before anything ships."
+msgstr "AI 起草修复方案；在任何内容发布前由你的团队审批。"
+
+#: inc/OnboardingWizard.php:196
+msgid "Issue: button missing accessible name"
+msgstr "问题：按钮缺少可访问名称"
+
+#: inc/OnboardingWizard.php:198
+msgid "AI fix"
+msgstr "AI 修复"
+
+#: inc/OnboardingWizard.php:207
+msgid "Smart alt text"
+msgstr "智能替代文本"
+
+#: inc/OnboardingWizard.php:210
+msgid ""
+"Missing alt generated for every image, in the language your visitors use."
+msgstr "为每张图片生成缺失的替代文本，使用访客所用的语言。"
+
+#: inc/OnboardingWizard.php:218
+msgid "AI generated"
+msgstr "AI 生成"
+
+#: inc/OnboardingWizard.php:220
+msgid "A golden retriever sitting in a sunlit park, wearing a pink bandana."
+msgstr "一只金毛寻回犬坐在阳光明媚的公园里，戴着粉色头巾。"
+
+#: inc/OnboardingWizard.php:246
+msgid "Email address"
+msgstr "邮箱地址"
+
+#: inc/OnboardingWizard.php:258 inc/OnboardingWizard.php:811
+msgid ""
+"We'll create a new account or link your existing one — same email, either "
+"way."
+msgstr "我们将创建一个新账户或关联你现有的账户——无论哪种方式，邮箱都相同。"
+
+#: inc/OnboardingWizard.php:265
+msgid "Plan"
+msgstr "计划"
+
+#: inc/OnboardingWizard.php:271
+msgid "Free forever"
+msgstr "永远免费"
+
+#: inc/OnboardingWizard.php:277
+msgid "Widget, contrast + sizing controls, essential accessibility tools."
+msgstr "小组件、对比度 + 尺寸控制，必备的无障碍工具。"
+
+#: inc/OnboardingWizard.php:285
+msgid "Most popular"
+msgstr "最受欢迎"
+
+#: inc/OnboardingWizard.php:291
+msgid "7 days free"
+msgstr "7天免费"
+
+#: inc/OnboardingWizard.php:291
+msgid "then $10/mo"
+msgstr "之后 $10/月"
+
+#: inc/OnboardingWizard.php:294
+msgid "Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits."
+msgstr "代理式 AI 修复、智能替代文本、WCAG/ADA/EAA 审计。"
+
+#: inc/OnboardingWizard.php:307
+msgid "Ready to reconnect"
+msgstr "准备重新连接"
+
+#: inc/OnboardingWizard.php:321
+msgid "Heads up:"
+msgstr "提醒："
+
+#: inc/OnboardingWizard.php:322
+msgid ""
+"This site is on another AllAccessible account. The plugin will work right "
+"away, but the site only appears in your dashboard once the existing admin "
+"approves your access — they'll get an email automatically."
+msgstr ""
+"此站点属于另一个 AllAccessible 账户。插件会立即生效，但只有在现有管理员批准你"
+"的访问请求后，该站点才会显示在你的仪表盘中——他们会自动收到一封邮件。"
+
+#: inc/OnboardingWizard.php:332 inc/OnboardingWizard.php:670
+#: inc/OnboardingWizard.php:682 inc/OnboardingWizard.php:703
+#: inc/OnboardingWizard.php:734 inc/OnboardingWizard.php:816
+msgid "Continue"
+msgstr "继续"
+
+#. translators: 1: Terms link, 2: Privacy Policy link
+#: inc/OnboardingWizard.php:340
+#, php-format
+msgid "By continuing you agree to our %1$s and %2$s."
+msgstr "继续即表示您同意我们的%1$s和%2$s。"
+
+#: inc/OnboardingWizard.php:341 inc/SettingsPage.php:1445
+msgid "Terms & Conditions"
+msgstr "条款和条件"
+
+#: inc/OnboardingWizard.php:342 inc/SettingsPage.php:1446
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+#: inc/OnboardingWizard.php:351
+msgid "Skip and use just the free widget"
+msgstr "跳过，仅使用免费小组件"
+
+#: inc/OnboardingWizard.php:377
+msgid "Interactions / month"
+msgstr "互动次数 / 月"
+
+#: inc/OnboardingWizard.php:385
+msgid "Visitors served / month"
+msgstr "服务访客数 / 月"
+
+#: inc/OnboardingWizard.php:393
+msgid "Protecting WordPress"
+msgstr "保护 WordPress"
+
+#: inc/OnboardingWizard.php:398
+msgid "WCAG 2.2"
+msgstr "WCAG 2.2"
+
+#: inc/OnboardingWizard.php:399
+msgid "ADA"
+msgstr "ADA"
+
+#: inc/OnboardingWizard.php:400
+msgid "Section 508"
+msgstr "第508条款"
+
+#: inc/OnboardingWizard.php:401
+msgid "EAA 2025"
+msgstr "EAA 2025"
+
+#: inc/OnboardingWizard.php:422
+msgid "Free to start"
+msgstr "免费开始"
+
+#: inc/OnboardingWizard.php:426
+msgid "No credit card required"
+msgstr "无需信用卡"
+
+#: inc/OnboardingWizard.php:430
+msgid "Privacy-first — GDPR / CCPA"
+msgstr "隐私优先 — GDPR / CCPA"
+
+#: inc/OnboardingWizard.php:434
+msgid "Cancel any time on paid plans"
+msgstr "付费方案可随时取消"
+
+#: inc/OnboardingWizard.php:438
+msgid "Trusted on thousands of WordPress sites worldwide."
+msgstr "全球数千个 WordPress 网站信赖之选。"
+
+#: inc/OnboardingWizard.php:450
+msgid "Step 2 of 2"
+msgstr "第 2 步（共 2 步）"
+
+#: inc/OnboardingWizard.php:453
+msgid "Account ready"
+msgstr "账户已就绪"
+
+#: inc/OnboardingWizard.php:462
+msgid "Your account is set up."
+msgstr "您的账户已设置完成。"
+
+#: inc/OnboardingWizard.php:464
+msgid ""
+"The AllAccessible agents are ready to scan this site for accessibility "
+"issues."
+msgstr "AllAccessible 代理已准备好扫描此站点的无障碍问题。"
+
+#: inc/OnboardingWizard.php:474
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; you can re-run it any time from "
+"the Agentic Fixes page."
+msgstr ""
+"AllAccessible 会自动发现你网站上每个已发布的页面——无需站点地图。请在下方开始"
+"你的首次扫描；你也可以随时在 Agentic Fixes 页面重新运行。"
+
+#: inc/OnboardingWizard.php:483
+msgid "Skip for now"
+msgstr "暂时跳过"
+
+#: inc/OnboardingWizard.php:486
+msgid "Go to dashboard"
+msgstr "返回仪表盘"
+
+#: inc/OnboardingWizard.php:587
+msgid "Skip setup for now? You can finish any time from the settings page."
+msgstr "暂时跳过设置？您可以随时在设置页面完成。"
+
+#: inc/OnboardingWizard.php:619
+msgid "Account created. Provisioning your site…"
+msgstr "账户已创建。正在为您的网站配置资源…"
+
+#: inc/OnboardingWizard.php:622
+msgid "Welcome back. We linked this WordPress site to your account."
+msgstr "欢迎回来。我们已将此 WordPress 站点关联到你的账户。"
+
+#: inc/OnboardingWizard.php:625
+msgid "Welcome back. This site was already on your account."
+msgstr "欢迎回来。此站点已在你的账户中。"
+
+#: inc/OnboardingWizard.php:627
+msgid "Connected."
+msgstr "已连接。"
+
+#: inc/OnboardingWizard.php:639
+msgid "Please enter your email address."
+msgstr "请输入您的电子邮件地址。"
+
+#: inc/OnboardingWizard.php:644
+msgid "Setting things up…"
+msgstr "正在设置…"
+
+#: inc/OnboardingWizard.php:645
+msgid "Connecting to AllAccessible…"
+msgstr "正在连接到 AllAccessible…"
+
+#: inc/OnboardingWizard.php:668
+msgid "Something went wrong. Please try again."
+msgstr "出了些问题。 请再试一次。"
+
+#: inc/OnboardingWizard.php:680
+msgid "We received an unexpected response. Please try again."
+msgstr "我们收到了意外的响应。请重试。"
+
+#: inc/OnboardingWizard.php:701 inc/OnboardingWizard.php:883
+msgid "We could not save your settings. Please try again."
+msgstr "我们无法保存您的设置。请重试。"
+
+#: inc/OnboardingWizard.php:728
+msgid "We could not reach AllAccessible. Please try again."
+msgstr "我们无法连接到 AllAccessible。请重试。"
+
+#: inc/OnboardingWizard.php:753 inc/OnboardingWizard.php:781
+msgid "Welcome back"
+msgstr "欢迎回来"
+
+# GPT: “Linking”可指创建超链接、连接或账号关联等；在缺少更多上下文时，我选用最通用的界面用语“链接”。
+#: inc/OnboardingWizard.php:763
 #, fuzzy
-msgid "Large"
-msgstr "大"
+msgid "Linking"
+msgstr "链接"
 
-#: inc/AllAccessibleSettings.php:202
-msgid "Choose Widget Position"
-msgstr "选择小部件位置"
+# GPT: “to” 可作介词（到/向/往）或不定式标记（去做）。此处无更多语境，我按最常见的方向介词译为“到”。
+#: inc/OnboardingWizard.php:764
+#, fuzzy
+msgid "to"
+msgstr "到"
 
-#: inc/AllAccessibleSettings.php:204
+#: inc/OnboardingWizard.php:768
+msgid "Reconnect this site"
+msgstr "重新连接此网站"
+
+#: inc/OnboardingWizard.php:783
+msgid ""
+"We will link this WordPress site to your existing AllAccessible account."
+msgstr "我们将把此 WordPress 站点关联到你现有的 AllAccessible 账户。"
+
+#: inc/OnboardingWizard.php:788
+msgid "Connect this site"
+msgstr "连接此站点"
+
+#: inc/OnboardingWizard.php:795
+msgid "Request access to this site"
+msgstr "请求访问此站点"
+
+#: inc/OnboardingWizard.php:797
+msgid ""
+"This site is on another AllAccessible account. Enter your email to request "
+"access."
+msgstr "此站点属于另一个 AllAccessible 账号。请输入你的邮箱以申请访问权限。"
+
+#: inc/OnboardingWizard.php:802
+msgid "Request access"
+msgstr "请求访问"
+
+#: inc/OnboardingWizard.php:868
+msgid "Reconnecting…"
+msgstr "正在重新连接…"
+
+#: inc/OnboardingWizard.php:879
+msgid "Reconnected. Provisioning…"
+msgstr "已重新连接。正在配置…"
+
+#: inc/OnboardingWizard.php:906
+msgid "Permission denied"
+msgstr "没有权限"
+
+#: inc/PostListColumn.php:306
+msgid "Loading accessibility score"
+msgstr "正在加载无障碍评分"
+
+#: inc/PostListColumn.php:307
+msgid "Loading"
+msgstr "载入中"
+
+#: inc/PostListColumn.php:308
+msgid "Loading…"
+msgstr "载入中..."
+
+#: inc/PostListColumn.php:434
+msgid "Will scan on publish"
+msgstr "发布时将扫描"
+
+#: inc/PostListColumn.php:435
+msgid ""
+"Drafts are not reachable by the public crawler. Publish to scan "
+"automatically, or preview to scan now."
+msgstr "草稿无法被公共爬虫访问。发布后将自动扫描，或预览以立即扫描。"
+
+#: inc/PostListColumn.php:440
+msgid "Preview & scan"
+msgstr "预览并扫描"
+
+#: inc/PostListColumn.php:445
+msgid "Awaiting scan — AllAccessible will populate this on the next crawl"
+msgstr "等待扫描 — AllAccessible 将在下次抓取时填充此内容"
+
+#: inc/PostListColumn.php:456
+msgid "Score is stale — page hasn't been scanned recently"
+msgstr "评分已过期 — 页面最近未被扫描"
+
+#: inc/PostListColumn.php:457
+msgid "Last scan failed"
+msgstr "上次扫描失败"
+
+#: inc/PostListColumn.php:458
+msgid "Accessibility score"
+msgstr "无障碍评分"
+
+#: inc/PostListColumn.php:468
+msgid "Approve pending fixes to reach this score"
+msgstr "批准待处理的修复以达到此分数"
+
+#: inc/ReviewNudge.php:73
+msgid "How's your experience with AllAccessible so far?"
+msgstr "到目前为止，你对 AllAccessible 的体验如何？"
+
+#: inc/ReviewNudge.php:77
+msgid "Great 😊"
+msgstr "太棒了 😊"
+
+#: inc/ReviewNudge.php:80
+msgid "Could be better"
+msgstr "还可以更好"
+
+#: inc/ReviewNudge.php:83
+msgid "Maybe later"
+msgstr "以后再说"
+
+#: inc/ReviewNudge.php:91
+msgid "That's wonderful to hear!"
+msgstr "听到这个真是太好了！"
+
+#: inc/ReviewNudge.php:92
+msgid ""
+"A quick review on WordPress.org helps other site owners find us — it takes "
+"about 30 seconds and means a lot."
+msgstr ""
+"在 WordPress.org 上快速写个评价可帮助其他站长找到我们——大约只需 30 秒，却意义"
+"重大。"
+
+#: inc/ReviewNudge.php:97
+msgid "Leave a review"
+msgstr "留下评论"
+
+#: inc/ReviewNudge.php:100
+msgid "I already did"
+msgstr "我已经做了"
+
+#: inc/ReviewNudge.php:108
+msgid "Sorry to hear that — we'd like to make it right."
+msgstr "很抱歉听到这些——我们希望把问题解决好。"
+
+#: inc/ReviewNudge.php:109
+msgid ""
+"Tell us what's not working and we'll follow up. This goes straight to our "
+"team."
+msgstr "告诉我们哪里出了问题，我们会跟进。这会直接发送给我们的团队。"
+
+#: inc/ReviewNudge.php:113
+msgid "What could be better?"
+msgstr "哪些方面可以做得更好？"
+
+#: inc/ReviewNudge.php:117
+msgid "Send feedback"
+msgstr "发送反馈"
+
+#: inc/ReviewNudge.php:121 inc/SettingsPage.php:1428
+msgid "Contact support"
+msgstr "联系支持"
+
+#: inc/ReviewNudge.php:129
+msgid "Thank you — we appreciate you."
+msgstr "谢谢——我们很感激你。"
+
+#: inc/ScanTriggerPanel.php:30
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; future scans then run "
+"automatically based on your plan."
+msgstr ""
+"AllAccessible 会自动找到你网站上每个已发布的页面——无需站点地图。请在下方开始"
+"你的首次扫描；之后的扫描将根据你的套餐自动运行。"
+
+#: inc/ScanTriggerPanel.php:43
+msgid "Scan now"
+msgstr "立即扫描"
+
+#: inc/ScanTriggerPanel.php:44 inc/ScanTriggerPanel.php:257
+#: inc/ScanTriggerPanel.php:311
+msgid "Run scan again"
+msgstr "再次运行扫描"
+
+#. translators: %s: human-readable time until
+#: inc/ScanTriggerPanel.php:101
+#, php-format
+msgid "Next scan in %s"
+msgstr "下次扫描将在 %s 后进行"
+
+#: inc/ScanTriggerPanel.php:105
+msgid "Next scan due now"
+msgstr "下次扫描现在到期"
+
+#. translators: %s: human-readable time difference
+#: inc/ScanTriggerPanel.php:117
+#, php-format
+msgid "Last scan triggered %s ago"
+msgstr "上次扫描触发于 %s 前"
+
+#: inc/ScanTriggerPanel.php:131
+#, php-format
+msgid "%d published page will be scanned. This can take a minute or two."
+msgid_plural ""
+"%d published pages and posts will be scanned. This can take a minute or two."
+msgstr[0] "将扫描 %d 个已发布页面。这可能需要一两分钟。"
+
+#: inc/ScanTriggerPanel.php:157
+msgid "pages scanned"
+msgstr "已扫描页面"
+
+#: inc/ScanTriggerPanel.php:166
+msgid ""
+"pages scanned. Accessibility scores appear in your Pages list within a "
+"minute or two as the AI finishes reviewing."
+msgstr ""
+"已扫描页面。随着 AI 完成审核，无障碍评分会在一两分钟内显示在你的“页面”列表"
+"中。"
+
+#: inc/ScanTriggerPanel.php:168
+msgid "Open Pages list"
+msgstr "打开页面列表"
+
+#: inc/ScanTriggerPanel.php:182
+msgid "Scan a specific sitemap instead (advanced)"
+msgstr "改为扫描指定的站点地图（高级）"
+
+#: inc/ScanTriggerPanel.php:186
+msgid ""
+"Leave this closed to let AllAccessible auto-discover your pages "
+"(recommended). Open only to point the scan at a specific sitemap."
+msgstr ""
+"保持关闭，让 AllAccessible 自动发现你的页面（推荐）。仅在需要将扫描指向特定站"
+"点地图时才打开。"
+
+#: inc/ScanTriggerPanel.php:189 inc/ScanTriggerPanel.php:345
+msgid "Looking for sitemaps…"
+msgstr "正在查找站点地图…"
+
+#: inc/ScanTriggerPanel.php:221
+msgid "Enter your sitemap URL, or close Advanced to auto-discover."
+msgstr "输入你的站点地图 URL，或关闭“高级”以自动发现。"
+
+#: inc/ScanTriggerPanel.php:232
+msgid "Starting…"
+msgstr "正在启动..."
+
+#: inc/ScanTriggerPanel.php:244
+msgid "Scan failed to start."
+msgstr "扫描未能启动。"
+
+#: inc/ScanTriggerPanel.php:245 inc/ScanTriggerPanel.php:265
+#: inc/ScanTriggerPanel.php:290
+msgid "Start first scan"
+msgstr "开始首次扫描"
+
+#: inc/ScanTriggerPanel.php:255
+msgid "Scan started. Results appear on the Agentic Fixes page in 2-5 minutes."
+msgstr "扫描已开始。结果将在 2-5 分钟后显示在 Agentic Fixes 页面上。"
+
+#: inc/ScanTriggerPanel.php:256
+msgid "Scan triggered just now"
+msgstr "刚刚触发扫描"
+
+#: inc/ScanTriggerPanel.php:264
+msgid "Server did not return a job ID."
+msgstr "服务器未返回作业 ID。"
+
+#: inc/ScanTriggerPanel.php:274
+msgid "Finishing setup…"
+msgstr "正在完成设置…"
+
+#: inc/ScanTriggerPanel.php:279
+msgid "Network error"
+msgstr "网络错误"
+
+#: inc/ScanTriggerPanel.php:285
+msgid "Server timeout while queuing scan. Try again."
+msgstr "排队扫描时服务器超时。请重试。"
+
+#: inc/ScanTriggerPanel.php:287
+#, php-format
+msgid "Request failed (HTTP %s)"
+msgstr "请求失败（HTTP %s）"
+
+#: inc/ScanTriggerPanel.php:316
+msgid "Scan failed. Try again."
+msgstr "扫描失败。请重试。"
+
+#: inc/ScanTriggerPanel.php:318
+msgid "Retry scan"
+msgstr "重试扫描"
+
+#: inc/ScanTriggerPanel.php:334 inc/ScanTriggerPanel.php:354
+msgid "Detected"
+msgstr "检测到"
+
+#: inc/ScanTriggerPanel.php:361
+msgid "Open & verify"
+msgstr "打开并验证"
+
+#: inc/ScanTriggerPanel.php:365
+msgid ""
+"No reachable sitemap found. Enter one below, or close Advanced to auto-"
+"discover."
+msgstr "未找到可访问的站点地图。请在下方输入一个，或关闭“高级”以自动发现。"
+
+#: inc/ScanTriggerPanel.php:370
+msgid "Enter my own sitemap URL"
+msgstr "输入我自己的站点地图 URL"
+
+#: inc/ScanTriggerPanel.php:376
+msgid "Could not check for sitemaps. Close Advanced to auto-discover instead."
+msgstr "无法检查站点地图。请关闭“高级”以改为自动发现。"
+
+#. Plugin Name of the plugin/theme
+#: inc/SettingsPage.php:36 inc/SettingsPage.php:37 inc/SettingsPage.php:373
+#: inc/SettingsPage.php:820
+msgid "AllAccessible"
+msgstr "AllAccessible"
+
+#: inc/SettingsPage.php:59 inc/SettingsPage.php:822
+msgid "Account & Settings"
+msgstr "账户与设置"
+
+#: inc/SettingsPage.php:60
+msgid "Account"
+msgstr "帐户"
+
+#: inc/SettingsPage.php:70 inc/SettingsPage.php:71 inc/SettingsPage.php:108
+msgid "Widget Customizer"
+msgstr "小组件自定义器"
+
+#: inc/SettingsPage.php:107 inc/SettingsPage.php:881
+msgid "Widget"
+msgstr "小工具"
+
+#: inc/SettingsPage.php:109
+msgid ""
+"Customize the AllAccessible widget that visitors see on your site. Changes "
+"save instantly and clear the visitor cache."
+msgstr ""
+"自定义访客在你的网站上看到的 AllAccessible 小组件。更改会立即保存，并清除访客"
+"缓存。"
+
+#: inc/SettingsPage.php:119
+msgid "Connect your AllAccessible account"
+msgstr "连接您的 AllAccessible 账户"
+
+#: inc/SettingsPage.php:120
+msgid "Finish setup to customize your widget."
+msgstr "完成设置以自定义您的小组件。"
+
+#: inc/SettingsPage.php:122 inc/SettingsPage.php:850
+msgid "Start setup"
+msgstr "开始安装"
+
+#: inc/SettingsPage.php:131
+msgid "Widget customization is a paid feature"
+msgstr "小组件自定义为付费功能"
+
+#: inc/SettingsPage.php:132
+msgid ""
+"Upgrade your AllAccessible plan to customize the widget color, position, "
+"icon, and shape — plus enable agentic AI remediation."
+msgstr ""
+"升级您的 AllAccessible 套餐，以自定义小组件的颜色、位置、图标和形状——并启用代"
+"理式 AI 修复。"
+
+#: inc/SettingsPage.php:333 inc/SettingsPage.php:345 inc/UsageDashboard.php:69
+msgid "Pageviews"
+msgstr "浏览量"
+
+#: inc/SettingsPage.php:371 inc/SettingsPage.php:627
+msgid "Site overview"
+msgstr "网站概览"
+
+#: inc/SettingsPage.php:380
+msgid "Widget connected"
+msgstr "小组件已连接"
+
+#: inc/SettingsPage.php:384
+msgid ""
+"Accessibility widget and human-in-the-loop agentic AI remediation for your "
+"site."
+msgstr "为您的网站提供无障碍小组件与人工参与的代理式 AI 修复。"
+
+#: inc/SettingsPage.php:420
+msgid ""
+"Your current plan uses the legacy AllAccessible widget, which predates "
+"agentic AI remediation. Upgrade to the current plan tier to unlock auto-"
+"suggested fixes, larger pageview caps, and the full AllAccessible AI feature "
+"set."
+msgstr ""
+"你当前的套餐使用的是旧版 AllAccessible 小组件，该小组件早于代理式 AI 修复功"
+"能。升级到当前的套餐等级即可解锁自动建议修复、更高的页面浏览量上限，以及完整"
+"的 AllAccessible AI 功能集。"
+
+#: inc/SettingsPage.php:449
+msgid "AI Resolved"
+msgstr "AI 已解决"
+
+#: inc/SettingsPage.php:451
+msgid "Completed"
+msgstr "已完成"
+
+#: inc/SettingsPage.php:452
+msgid "Reopened"
+msgstr "重新开放"
+
+#: inc/SettingsPage.php:453
+msgid "Ignored"
+msgstr "忽略"
+
+#: inc/SettingsPage.php:462
+msgid "Activity and quick actions"
+msgstr "活动与快捷操作"
+
+#: inc/SettingsPage.php:472
+msgid "Agentic Fixes not available on your plan"
+msgstr "您的套餐不支持代理式修复"
+
+#: inc/SettingsPage.php:477
+msgid ""
+"The legacy AllAccessible widget keeps running, but the agentic AI "
+"remediation pipeline requires a current plan tier. Upgrade to bring auto-"
+"suggested fixes, larger pageview caps, and continuous accessibility scoring "
+"to this site."
+msgstr ""
+"旧版 AllAccessible 小组件将继续运行，但代理式 AI 修复流水线需要当前的套餐等"
+"级。升级即可为此站点启用自动建议修复、更高的页面浏览量上限，以及持续的无障碍"
+"评分。"
+
+#: inc/SettingsPage.php:492
+msgid "Issues from your latest scan"
+msgstr "你最近一次扫描发现的问题"
+
+#: inc/SettingsPage.php:494
+msgid "Grouped by rule, newest scan first."
+msgstr "按规则分组，最新扫描优先。"
+
+#: inc/SettingsPage.php:503
+msgid "View all"
+msgstr "查看全部"
+
+#: inc/SettingsPage.php:512
+msgid "Severity"
+msgstr "严重性"
+
+#: inc/SettingsPage.php:513
+msgid "Rule"
+msgstr "规则"
+
+#: inc/SettingsPage.php:514
+msgid "Issues"
+msgstr "问题"
+
+#: inc/SettingsPage.php:515
+msgid "WCAG"
+msgstr "WCAG"
+
+#: inc/SettingsPage.php:516
+msgid "Status"
+msgstr "状态"
+
+#: inc/SettingsPage.php:559
+#, php-format
+msgid "%s fix manifest ready for your review."
+msgid_plural "%s fix manifests ready for your review."
+msgstr[0] "%s 份修复清单已准备好供你审核。"
+
+#: inc/SettingsPage.php:563
+msgid "Review manifests"
+msgstr "审核清单"
+
+#: inc/SettingsPage.php:580
+msgid ""
+"AllAccessible agents are getting ready to scan your site. Detected "
+"accessibility issues will appear here grouped by rule once your first crawl "
+"completes."
+msgstr ""
+"AllAccessible 代理正在准备扫描你的网站。首次抓取完成后，检测到的无障碍问题将"
+"按规则分组显示在此处。"
+
+#: inc/SettingsPage.php:583
+msgid "Open coverage"
+msgstr "打开覆盖范围"
+
+#: inc/SettingsPage.php:593
+msgid "Quick actions"
+msgstr "快速行动"
+
+#: inc/SettingsPage.php:599
+msgid "In WordPress"
+msgstr "在 WordPress 中"
+
+#: inc/SettingsPage.php:612
+msgid "Widget customizer"
+msgstr "小组件自定义器"
+
+#: inc/SettingsPage.php:616
+msgid "Account & settings"
+msgstr "账户与设置"
+
+#: inc/SettingsPage.php:624
+msgid "On AllAccessible"
+msgstr "在 AllAccessible 上"
+
+#: inc/SettingsPage.php:631
+msgid "Audit history"
+msgstr "审计历史"
+
+#: inc/SettingsPage.php:635
+msgid "Tasks"
+msgstr "任务"
+
+#: inc/SettingsPage.php:640
+msgid "Reports"
+msgstr "报告"
+
+#: inc/SettingsPage.php:661
+msgid "Usage limit exceeded"
+msgstr "已超出使用限额"
+
+#: inc/SettingsPage.php:669
+#, php-format
+msgid ""
+"You have exceeded your %s limit. Your widget has been temporarily downgraded "
+"to free features. Upgrade your plan to restore premium functionality."
+msgid_plural ""
+"You have exceeded the following limits: %s. Your widget has been temporarily "
+"downgraded to free features. Upgrade your plan to restore premium "
+"functionality."
+msgstr[0] ""
+"你已超出 %s 限制。你的小组件已被临时降级为免费功能。升级你的套餐以恢复高级功"
+"能。"
+
+#: inc/SettingsPage.php:697
+msgid "Complete setup to get started"
+msgstr "完成设置以开始使用"
+
+#: inc/SettingsPage.php:698
+msgid ""
+"Your accessibility widget is ready to go. Complete the quick setup wizard to "
+"activate your widget."
+msgstr "你的无障碍小组件已准备就绪。完成快速设置向导以激活你的小组件。"
+
+#: inc/SettingsPage.php:700
+msgid "Start setup wizard"
+msgstr "启动设置向导"
+
+#: inc/SettingsPage.php:830
+msgid ""
+"Manage your AllAccessible account, plan, widget settings, and integrations."
+msgstr "管理你的 AllAccessible 账户、套餐、小组件设置和集成。"
+
+#: inc/SettingsPage.php:845
+msgid "No AllAccessible account linked"
+msgstr "未关联 AllAccessible 账号"
+
+#: inc/SettingsPage.php:846
+msgid "Complete the setup wizard to activate your accessibility widget."
+msgstr "完成设置向导以激活你的无障碍小组件。"
+
+#: inc/SettingsPage.php:864
+msgid "Usage limit reached"
+msgstr "已达到使用限额"
+
+#: inc/SettingsPage.php:866
+msgid ""
+"Your widget is running in free mode until usage resets or your plan is "
+"upgraded."
+msgstr "在用量重置或你的套餐升级之前，你的小组件将以免费模式运行。"
+
+#: inc/SettingsPage.php:871
+msgid "Manage plan"
+msgstr "管理套餐"
+
+#: inc/SettingsPage.php:876
+msgid "Account settings sections"
+msgstr "账户设置部分"
+
+#: inc/SettingsPage.php:879 inc/SettingsPage.php:909
+msgid "Connection"
+msgstr "连接"
+
+#: inc/SettingsPage.php:880
+msgid "Plan & Usage"
+msgstr "套餐与用量"
+
+#: inc/SettingsPage.php:882
+msgid "Advanced"
+msgstr "高级"
+
+#: inc/SettingsPage.php:911
+msgid "How this site links to your AllAccessible account."
+msgstr "此站点如何关联到你的 AllAccessible 账号。"
+
+#: inc/SettingsPage.php:915
+msgid "Connected"
+msgstr "已连接"
+
+#: inc/SettingsPage.php:917
+msgid "Action required"
+msgstr "需要采取措施"
+
+#: inc/SettingsPage.php:930
+msgid "Copy account ID"
+msgstr "复制账户 ID"
+
+#: inc/SettingsPage.php:931 inc/SettingsPage.php:950
+msgid "Copy"
+msgstr "复制"
+
+#: inc/SettingsPage.php:935
+msgid "Identifies your AllAccessible account across every site you own."
+msgstr "在你拥有的所有站点中标识你的 AllAccessible 账户。"
+
+#: inc/SettingsPage.php:941
+msgid "Site ID"
+msgstr "站点ID"
+
+#: inc/SettingsPage.php:949
+msgid "Copy site ID"
+msgstr "复制站点 ID"
+
+#: inc/SettingsPage.php:954
+msgid "Identifies this specific WordPress site within your account."
+msgstr "在你的账户中标识此特定的 WordPress 站点。"
+
+#: inc/SettingsPage.php:960
+msgid "Site URL"
+msgstr "网站网址"
+
+#: inc/SettingsPage.php:989
+msgid "Manage subscription"
+msgstr "管理订阅"
+
+#: inc/SettingsPage.php:997
+msgid "Current plan"
+msgstr "当前计划"
+
+#: inc/SettingsPage.php:1019
+msgid "Plan changes update immediately across every site on this account."
+msgstr "套餐变更会立即在此账户下的所有站点生效。"
+
+#: inc/SettingsPage.php:1033
+msgid "Pageview usage"
+msgstr "页面浏览量使用情况"
+
+#: inc/SettingsPage.php:1035
+msgid "Resets at the start of each billing cycle."
+msgstr "在每个计费周期开始时重置。"
+
+#: inc/SettingsPage.php:1055
+msgid "Pageviews used this cycle"
+msgstr "本计费周期已使用的页面浏览量"
+
+#. translators: 1: used pageviews, 2: limit
+#: inc/SettingsPage.php:1063
+#, php-format
+msgid "%1$s of %2$s pageviews this cycle."
+msgstr "本周期已使用 %2$s 次页面浏览量中的 %1$s 次。"
+
+#: inc/SettingsPage.php:1073
+msgid ""
+"You are close to your monthly limit. Add a pageview pack to keep premium "
+"features active."
+msgstr "你已接近每月限制。添加页面浏览量包以保持高级功能处于启用状态。"
+
+#: inc/SettingsPage.php:1075
+msgid "Heads up — you are above 75% of your monthly pageviews."
+msgstr "提醒 — 你已超过每月页面浏览量的 75% o。"
+
+#: inc/SettingsPage.php:1082
+msgid ""
+"Pageview tracking is active. Detailed numbers appear after the first billing "
+"cycle."
+msgstr "页面浏览量跟踪已启用。详细数据将在第一个计费周期后显示。"
+
+#: inc/SettingsPage.php:1099
+msgid "Widget appearance"
+msgstr "小组件外观"
+
+#: inc/SettingsPage.php:1101
+msgid "Color, position, icon, and label live in the Widget Customizer."
+msgstr "颜色、位置、图标和标签都在小组件自定义器中设置。"
+
+#: inc/SettingsPage.php:1106
+msgid "Open customizer"
+msgstr "打开自定义器"
+
+#: inc/SettingsPage.php:1119
+msgid ""
+"Preview your live widget on the front-end to confirm placement and styling."
+msgstr "在前端预览你的实时小组件，以确认位置和样式。"
+
+#: inc/SettingsPage.php:1125
+msgid "Preview on site"
+msgstr "在站点上预览"
+
+#: inc/SettingsPage.php:1130
+msgid "Advanced settings"
+msgstr "高级设置"
+
+#: inc/SettingsPage.php:1141
+msgid "Quick toggles"
+msgstr "快速开关"
+
+#: inc/SettingsPage.php:1143
+msgid "Local overrides applied before the widget renders."
+msgstr "在小组件渲染之前应用本地覆盖设置。"
+
+#: inc/SettingsPage.php:1153
+msgid "Headless mode"
+msgstr "无头模式"
+
+#: inc/SettingsPage.php:1159
+msgid ""
+"Skip the floating button and trigger the panel from your own UI. Recommended "
+"for custom theme integrations."
+msgstr "跳过悬浮按钮，通过你自己的 UI 触发面板。推荐用于自定义主题集成。"
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1175
+#, php-format
+msgid ""
+"Available on Enterprise. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"企业版可用。<a href=\"%s\" target=\"_blank\" rel=\"noopener\">查看套餐</a>。"
+
+#: inc/SettingsPage.php:1186 inc/SettingsPage.php:1998
+msgid "Hide widget branding"
+msgstr "隐藏小组件品牌标识"
+
+#: inc/SettingsPage.php:1188
+msgid "Remove the \"Powered by\" footer link inside the widget panel."
+msgstr "移除小组件面板内的“Powered by”页脚链接。"
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1204
+#, php-format
+msgid ""
+"Included with paid plans. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"付费方案包含此功能。<a href=\"%s\" target=\"_blank\" rel=\"noopener\">查看方"
+"案</a>。"
+
+#: inc/SettingsPage.php:1217 inc/SettingsPage.php:1220
+msgid "Save changes"
+msgstr "保存更改"
+
+#: inc/SettingsPage.php:1219
+msgid "Saved"
+msgstr "已保存"
+
+#: inc/SettingsPage.php:1237
+msgid "Diagnostics"
+msgstr "诊断"
+
+#: inc/SettingsPage.php:1239
+msgid "Local identifiers and tools for troubleshooting."
+msgstr "用于故障排查的本地标识符和工具。"
+
+#: inc/SettingsPage.php:1246
+msgid "Plugin version"
+msgstr "插件版本"
+
+#: inc/SettingsPage.php:1255
+msgid "Debug logging"
+msgstr "调试日志记录"
+
+#: inc/SettingsPage.php:1257
+msgid "Write extra diagnostics to the WordPress debug log."
+msgstr "将额外的诊断信息写入 WordPress 调试日志。"
+
+#: inc/SettingsPage.php:1280
+msgid "Disable error reporting to AllAccessible"
+msgstr "禁用向 AllAccessible 发送错误报告"
+
+#: inc/SettingsPage.php:1282
+msgid ""
+"AllAccessible records plugin errors (with your account ID + plugin version) "
+"so the team can spot issues affecting your install. Toggle on to stop "
+"sending. No personal data is collected."
+msgstr ""
+"AllAccessible 会记录插件错误（包含你的账号 ID + 插件版本），以便团队发现影响"
+"你安装的问题。关闭开关即可停止发送。不会收集任何个人数据。"
+
+#: inc/SettingsPage.php:1298
+msgid "Developer tools"
+msgstr "开发人员工具"
+
+#: inc/SettingsPage.php:1299
+msgid "Diagnose lookup · Sync · Flush caches"
+msgstr "诊断查找 · 同步 · 刷新缓存"
+
+#: inc/SettingsPage.php:1304
+msgid "Diagnose page lookup"
+msgstr "诊断页面查找"
+
+#: inc/SettingsPage.php:1306
+msgid ""
+"Pick a published page or post to inspect the exact URL canonicalization and "
+"API response. Useful when a row shows \"Not scanned\" but you expect a score."
+msgstr ""
+"选择一个已发布的页面或文章，以检查精确的 URL 规范化处理和 API 响应。当某一行"
+"显示“未扫描”但你期望有评分时很有用。"
+
+#: inc/SettingsPage.php:1312
+msgid "Post / page ID"
+msgstr "文章 / 页面 ID"
+
+#: inc/SettingsPage.php:1320 inc/SettingsPage.php:1322
+msgid "Run diagnosis"
+msgstr "运行诊断"
+
+#: inc/SettingsPage.php:1321
+msgid "Looking up…"
+msgstr "正在查找…"
+
+#: inc/SettingsPage.php:1331
+msgid "Sync post audit links"
+msgstr "同步文章审计链接"
+
+#: inc/SettingsPage.php:1333
+msgid ""
+"Manually run the post → audit linker. The background job runs about once a "
+"week (paid plans only, and only when your site receives traffic). Trigger "
+"here if the All Posts column or Editor box shows missing scores and you "
+"don't want to wait."
+msgstr ""
+"手动运行“文章 → 审计”关联器。后台任务大约每周运行一次（仅付费套餐，且仅在你的"
+"网站有流量时）。如果“所有文章”列或编辑器框显示缺少评分，而你不想等待，可在此"
+"触发。"
+
+#: inc/SettingsPage.php:1341 inc/SettingsPage.php:1343
+msgid "Sync now"
+msgstr "立即同步"
+
+#: inc/SettingsPage.php:1342
+msgid "Syncing…"
+msgstr "正在同步…"
+
+#: inc/SettingsPage.php:1350
+msgid "Flush plugin caches"
+msgstr "清空插件缓存"
+
+#: inc/SettingsPage.php:1352
+msgid ""
+"Wipes every plugin-side API transient (page scores, manifest, validate, "
+"images). Use when the API has been updated and the 2–10 min cache is still "
+"showing old data."
+msgstr ""
+"清除插件端的所有 API transient（页面评分、清单、验证、图片）。当 API 已更新"
+"但 2–10 分钟缓存仍显示旧数据时使用。"
+
+#: inc/SettingsPage.php:1360 inc/SettingsPage.php:1362
+msgid "Flush caches"
+msgstr "清空缓存"
+
+#: inc/SettingsPage.php:1361
+msgid "Flushing…"
+msgstr "正在刷新…"
+
+#: inc/SettingsPage.php:1372 inc/SettingsPage.php:1380
+#: inc/SettingsPage.php:1383
+msgid "Clear widget caches"
+msgstr "清除小组件缓存"
+
+#: inc/SettingsPage.php:1374
+msgid ""
+"Flush local browser storage and server response cache so the widget reloads "
+"fresh on the next page view."
+msgstr ""
+"清除本地浏览器存储和服务器响应缓存，以便小组件在下次页面浏览时重新加载最新内"
+"容。"
+
+#: inc/SettingsPage.php:1381
+msgid "Clearing…"
+msgstr "正在清除…"
+
+#: inc/SettingsPage.php:1382
+msgid "Caches cleared"
+msgstr "缓存已清除"
+
+#: inc/SettingsPage.php:1393 inc/SettingsPage.php:1409
+msgid "Reset plugin data"
+msgstr "重置插件数据"
+
+#: inc/SettingsPage.php:1395
+msgid "Disconnect this site and clear local options. Cannot be undone."
+msgstr "断开此站点并清除本地选项。无法撤销。"
+
+#: inc/SettingsPage.php:1401
+msgid ""
+"Use this if you are moving the plugin to a different account or starting "
+"over from the setup wizard. Uninstalling the plugin also removes these "
+"options automatically."
+msgstr ""
+"如果你要将插件迁移到其他账号，或想从设置向导重新开始，请使用此功能。卸载插件"
+"也会自动移除这些选项。"
+
+#: inc/SettingsPage.php:1421
+#, fuzzy
+#| msgid "Needs alt"
+msgid "Need help?"
+msgstr "需要帮助"
+
+#: inc/SettingsPage.php:1423
+msgid "Our team is here for you — get answers fast."
+msgstr "我们的团队随时为你服务——快速获得答案。"
+
+#: inc/SettingsPage.php:1432
+msgid "Knowledge base"
+msgstr "知识库"
+
+#: inc/SettingsPage.php:1444
+msgid "Legal & Trust:"
+msgstr "法律与信任："
+
+#: inc/SettingsPage.php:1447
+msgid "GDPR"
+msgstr "GDPR"
+
+#: inc/SettingsPage.php:1448
+msgid "Cookies"
+msgstr "Cookies"
+
+#: inc/SettingsPage.php:1449
+msgid "Trust Center"
+msgstr "信任中心"
+
+#: inc/SettingsPage.php:1450
+msgid "Partner Agreement"
+msgstr "合作伙伴协议"
+
+#: inc/SettingsPage.php:1721 inc/SettingsPage.php:1724
+msgid "Copied"
+msgstr "复制"
+
+#: inc/SettingsPage.php:1725
+msgid "copied to clipboard"
+msgstr "复制到剪贴板"
+
+#: inc/SettingsPage.php:1730 inc/SettingsPage.php:1733
+msgid "Copy:"
+msgstr "复制："
+
+#: inc/SettingsPage.php:1784
+msgid "Could not save. Try again."
+msgstr "无法保存。请重试。"
+
+#: inc/SettingsPage.php:1791 inc/SettingsPage.php:1877
+msgid "Network error. Try again."
+msgstr "网络错误。请重试。"
+
+#: inc/SettingsPage.php:1847
+msgid "Reset all plugin data? This disconnects this site and cannot be undone."
+msgstr "要重置所有插件数据吗？这将断开此站点的连接，且无法撤销。"
+
+#: inc/SettingsPage.php:1852
+msgid "Resetting…"
+msgstr "正在重置…"
+
+#: inc/SettingsPage.php:1853
+msgid "Resetting plugin data"
+msgstr "正在重置插件数据"
+
+#: inc/SettingsPage.php:1863
+msgid "Plugin data cleared. Reloading…"
+msgstr "插件数据已清除。正在重新加载…"
+
+#: inc/SettingsPage.php:1864
+msgid "Plugin data reset. Reloading."
+msgstr "插件数据已重置。正在重新加载。"
+
+#: inc/SettingsPage.php:1871
+msgid "Could not reset plugin data. Try again."
+msgstr "无法重置插件数据。请重试。"
+
+#: inc/SettingsPage.php:1908
+msgid "Settings saved"
+msgstr "设置已保存"
+
+#: inc/SettingsPage.php:1922
+msgid "Premium Trial — 7 days free"
+msgstr "高级版试用 — 免费 7 天"
+
+#: inc/SettingsPage.php:1940
+msgid "Legacy Premium"
+msgstr "旧版高级版"
+
+#. translators: %s: tier name (e.g., "Enterprise")
+#: inc/SettingsPage.php:1954
+#, php-format
+msgid "%s account"
+msgstr "%s帐户"
+
+#. translators: %s: monthly pageview limit (e.g. "10,000")
+#: inc/SettingsPage.php:1974
+#, php-format
+msgid "Up to %s pageviews per month"
+msgstr "每月最多 %s 次页面浏览"
+
+#: inc/SettingsPage.php:1977
+msgid "Pageview cap based on your plan"
+msgstr "页面浏览上限取决于你的套餐"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1980
+#, php-format
+msgid ""
+"Unlimited %s interactions — alt text and agentic fix proposals, no monthly "
+"cap"
+msgstr "无限次 %s 交互——替代文本和代理式修复建议，无月度上限"
+
+#: inc/SettingsPage.php:1987
+msgid "Unlimited pageviews and sites"
+msgstr "无限页面浏览量和站点数"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1988
+#, php-format
+msgid "Human-in-the-loop agentic remediation powered by %s"
+msgstr "由 %s 驱动的人在回路的智能体式修复"
+
+#: inc/SettingsPage.php:1989
+msgid "Priority support and dedicated success manager"
+msgstr "优先支持和专属成功经理"
+
+#: inc/SettingsPage.php:1990
+msgid "Custom branding and white-label widget"
+msgstr "自定义品牌和白标小组件"
+
+#: inc/SettingsPage.php:1991
+msgid "Single sign-on (SSO) and audit log export"
+msgstr "单点登录（SSO）和审计日志导出"
+
+#: inc/SettingsPage.php:1997
+msgid "Continuous site scans and accessibility scoring"
+msgstr "持续站点扫描和无障碍评分"
+
+#: inc/SettingsPage.php:1999
+msgid "Email support"
+msgstr "邮件支持"
+
+#: inc/SettingsPage.php:2003
+msgid "Full premium widget for 7 days"
+msgstr "7 天完整高级小组件"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2004
+#, php-format
+msgid "Try %s agents on your real site"
+msgstr "在您的真实站点上试用 %s 个智能体"
+
+#: inc/SettingsPage.php:2005
+msgid "Cancel any time — no card hold"
+msgstr "随时取消 — 不会预扣卡款"
+
+#: inc/SettingsPage.php:2009
+msgid "Premium widget on the legacy plan"
+msgstr "旧版套餐中的高级小组件"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2010
+#, php-format
+msgid "Includes %s agent features"
+msgstr "包含 %s 项智能体功能"
+
+#: inc/SettingsPage.php:2011
+msgid "Continuous accessibility scoring"
+msgstr "持续无障碍评分"
+
+#: inc/SettingsPage.php:2016
+msgid "Accessibility widget on every page"
+msgstr "每个页面上的无障碍小组件"
+
+#: inc/SettingsPage.php:2017
+msgid "Keyboard navigation and screen reader helpers"
+msgstr "键盘导航和屏幕阅读器辅助功能"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2018
+#, php-format
+msgid "Upgrade for agentic remediation with %s"
+msgstr "升级以使用 %s 进行智能体式修复"
+
+#: inc/TierGate.php:26
+msgid "Approve, edit, and revert agentic fixes"
+msgstr "批准、编辑并还原代理式修复"
+
+#: inc/TierGate.php:27
+msgid "Image Descriptions"
+msgstr "图片描述"
+
+#: inc/TierGate.php:28
+msgid "Reports & Statement deep-links"
+msgstr "报告与报表深度链接"
+
+#: inc/TierGate.php:29
+msgid "Per-page accessibility breakdown in editor"
+msgstr "编辑器中的按页面无障碍细分"
+
+#: inc/TierGate.php:30
+msgid "Notification center"
+msgstr "通知中心"
+
+#: inc/TierGate.php:31
+msgid "CSV export of fixes"
+msgstr "修复项的 CSV 导出"
+
+#: inc/TierGate.php:32
+msgid "PDF report export"
+msgstr "导出 PDF 报告"
+
+#: inc/TierGate.php:33
+msgid "White-label branding"
+msgstr "白标品牌"
+
+#: inc/TierGate.php:34
+msgid "Weekly automatic scans"
+msgstr "每周自动扫描"
+
+#: inc/TierGate.php:35
+msgid "Page change detection"
+msgstr "页面变更检测"
+
+#: inc/TierGate.php:36
+msgid "Accommodation request widget"
+msgstr "无障碍便利请求小组件"
+
+#. translators: %s: feature label
+#: inc/TierGate.php:84
+#, php-format
+msgid "%s is available on paid plans"
+msgstr "%s 仅在付费方案中提供"
+
+#: inc/TierGate.php:87
+msgid ""
+"Upgrade to unlock this feature plus everything else included in the "
+"AllAccessible AI suite."
+msgstr "升级以解锁此功能，以及 AllAccessible AI 套件中包含的所有其他内容。"
+
+#: inc/TierGate.php:98
+msgid "Upgrade required"
+msgstr "需要升级"
+
+#: inc/UsageDashboard.php:31
+msgid "Usage overview"
+msgstr "使用概览"
+
+#: inc/UsageDashboard.php:34
+msgid "Usage this month"
+msgstr "本月使用情况"
+
+#: inc/UsageDashboard.php:36
+msgid "Tracks pageviews and AllAccessible AI activity against your plan."
+msgstr "根据您的套餐跟踪页面浏览量和 AllAccessible AI 活动。"
+
+#: inc/UsageDashboard.php:55
+msgid "No usage to show yet"
+msgstr "暂无可显示的使用情况"
+
+#: inc/UsageDashboard.php:57
+msgid "Usage appears here once your widget starts serving pageviews."
+msgstr "当你的小组件开始提供页面浏览量后，使用情况将显示在此处。"
+
+#: inc/UsageDashboard.php:61
+msgid "Preview your widget"
+msgstr "预览你的小组件"
+
+#: inc/UsageDashboard.php:70
+msgid "Active visits served by your widget this month."
+msgstr "本月由您的小组件提供服务的活跃访问量。"
+
+#: inc/UsageDashboard.php:74
+msgid "AI image alt text"
+msgstr "AI 图片替代文本"
+
+#: inc/UsageDashboard.php:75
+msgid "Alt text generated by AllAccessible AI for images on your site."
+msgstr "由 AllAccessible AI 为你网站上的图片生成的替代文本。"
+
+#: inc/UsageDashboard.php:79
+msgid "Accessibility audits"
+msgstr "无障碍审计"
+
+#: inc/UsageDashboard.php:80
+msgid "Automated scans run by AllAccessible agents."
+msgstr "由 AllAccessible 代理运行的自动化扫描。"
+
+#: inc/UsageDashboard.php:84
+msgid "Compliance reports"
+msgstr "合规报告"
+
+#: inc/UsageDashboard.php:85
+msgid "VPAT and accessibility statement PDFs generated."
+msgstr "已生成 VPAT 和无障碍声明 PDF。"
+
+#: inc/UsageDashboard.php:133
+#, php-format
+msgid "%1$s usage: %2$d percent"
+msgstr "%1$s 用量：%2$d%"
+
+#: inc/UsageDashboard.php:150
+msgid "Upgrade to unlock"
+msgstr "升级以解锁"
+
+#: inc/UsageDashboard.php:175
+#, php-format
+msgid "%s percent used"
+msgstr "已使用 %s%"
+
+#: inc/UsageDashboard.php:183
+msgid "Limit reached — widget temporarily on free features."
+msgstr "已达上限——小组件暂时仅提供免费功能。"
+
+#. translators: %s: count of remaining units this month
+#: inc/UsageDashboard.php:188
+#, php-format
+msgid "%s remaining this month"
+msgstr "本月剩余 %s"
+
+#: inc/UsageDashboard.php:195
+msgid "Manage"
+msgstr "管理"
+
+#: inc/UsageDashboard.php:203
+msgid "Upgrade your plan"
+msgstr "升级你的套餐"
+
+#: inc/UsageDashboard.php:209
+msgid "Manage in dashboard"
+msgstr "在仪表板中管理"
+
+#: inc/UsageDashboard.php:220
+msgid "No metered features on your plan yet"
+msgstr "你的套餐尚未包含任何计量功能"
+
+#: inc/UsageDashboard.php:221
+msgid "Usage will appear here once your widget starts serving pages."
+msgstr "当你的小组件开始为页面提供服务后，使用情况将显示在此处。"
+
+#: inc/UsageDashboard.php:230
+msgid "Need more pageviews or AllAccessible AI capacity?"
+msgstr "需要更多页面浏览量或 AllAccessible AI 容量？"
+
+#: inc/WidgetCustomizer.php:104
+msgid "Quick Widget Settings"
+msgstr "快速小组件设置"
+
+#: inc/WidgetCustomizer.php:105
+msgid "Customize your widget appearance"
+msgstr "自定义你的小组件外观"
+
+#: inc/WidgetCustomizer.php:109
+msgid "Advanced Settings"
+msgstr "高级设置"
+
+#: inc/WidgetCustomizer.php:122
+msgid "Pro Tip:"
+msgstr "专业小贴士:"
+
+#: inc/WidgetCustomizer.php:123
+msgid ""
+"For more options including accessibility profiles, custom CSS, and advanced "
+"features, visit"
+msgstr "如需更多选项（包括无障碍配置文件、自定义 CSS 和高级功能），请访问"
+
+#: inc/WidgetCustomizer.php:124
+msgid "Advanced Widget Settings"
+msgstr "高级小组件设置"
+
+#: inc/WidgetCustomizer.php:142
+msgid "Widget Color"
+msgstr "小部件颜色"
+
+#: inc/WidgetCustomizer.php:147
+msgid "Choose the color for your accessibility widget button."
+msgstr "为您的无障碍小组件按钮选择颜色。"
+
+#: inc/WidgetCustomizer.php:150
+msgid "Widget Position"
+msgstr "小部件位置"
+
+#: inc/WidgetCustomizer.php:152
 msgid "Bottom Right"
 msgstr "右下"
 
-#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
-msgid "Middle Right"
-msgstr "右中"
-
-#: inc/AllAccessibleSettings.php:207
-msgid "Bottom Center"
-msgstr "底部中心"
-
-#: inc/AllAccessibleSettings.php:208
+#: inc/WidgetCustomizer.php:153
 msgid "Bottom Left"
 msgstr "左下"
 
-#: inc/AllAccessibleSettings.php:209
+#: inc/WidgetCustomizer.php:154
+msgid "Bottom Center"
+msgstr "底部中心"
+
+#: inc/WidgetCustomizer.php:155
+msgid "Middle Right"
+msgstr "右中"
+
+#: inc/WidgetCustomizer.php:156
 msgid "Middle Left"
 msgstr "左中"
 
-#: inc/AllAccessibleSettings.php:210
+#: inc/WidgetCustomizer.php:157
+msgid "Top Right"
+msgstr "右上"
+
+#: inc/WidgetCustomizer.php:158
 msgid "Top Left"
 msgstr "左上"
 
-#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
-msgid "Choose Widget Shape"
-msgstr "选择小部件形状"
+#: inc/WidgetCustomizer.php:160
+msgid "Where the widget button appears on your site."
+msgstr "小组件按钮在您网站上显示的位置。"
 
-#: inc/AllAccessibleSettings.php:220
+#: inc/WidgetCustomizer.php:167
+msgid "Widget Size"
+msgstr "小部件尺寸"
+
+#: inc/WidgetCustomizer.php:169
+msgid "Small"
+msgstr "小"
+
+#: inc/WidgetCustomizer.php:170
+msgid "Medium (Default)"
+msgstr "中（默认）"
+
+#: inc/WidgetCustomizer.php:171
+msgid "Large"
+msgstr "大"
+
+#: inc/WidgetCustomizer.php:173
+msgid "Size of the widget button in pixels."
+msgstr "小组件按钮的尺寸（以像素为单位）。"
+
+#: inc/WidgetCustomizer.php:176
+msgid "Widget Icon"
+msgstr "小工具图标"
+
+#: inc/WidgetCustomizer.php:179
+msgid "Default"
+msgstr "默认"
+
+#: inc/WidgetCustomizer.php:180
+msgid "Accessibility Person"
+msgstr "无障碍人物"
+
+#: inc/WidgetCustomizer.php:181
+msgid "Accessibility Settings"
+msgstr "设置辅助功能设置"
+
+#: inc/WidgetCustomizer.php:182
+msgid "Adjust"
+msgstr "调整"
+
+#: inc/WidgetCustomizer.php:183
+msgid "Wheelchair 1"
+msgstr "轮椅 1"
+
+#: inc/WidgetCustomizer.php:184
+msgid "Heart"
+msgstr "爱心"
+
+#: inc/WidgetCustomizer.php:185
+msgid "Braille"
+msgstr "盲文"
+
+#: inc/WidgetCustomizer.php:186
+msgid "Blind/Cane"
+msgstr "盲人/手杖"
+
+#: inc/WidgetCustomizer.php:187
+msgid "Eye"
+msgstr "眼睛"
+
+#: inc/WidgetCustomizer.php:188
+msgid "Globe"
+msgstr "地球"
+
+#: inc/WidgetCustomizer.php:189
+msgid "Universal Access"
+msgstr "通用访问"
+
+#: inc/WidgetCustomizer.php:191
+msgid "Walking Cane"
+msgstr "手杖"
+
+#: inc/WidgetCustomizer.php:195
+msgid "Icon displayed in the widget button."
+msgstr "在小组件按钮中显示的图标。"
+
+#: inc/WidgetCustomizer.php:202
+msgid "Widget Shape"
+msgstr "小组件形状"
+
+#: inc/WidgetCustomizer.php:204
 msgid "Circle"
 msgstr "圆形"
 
-#: inc/AllAccessibleSettings.php:221
+#: inc/WidgetCustomizer.php:205
 msgid "Square"
 msgstr "方形"
 
-#: inc/AllAccessibleSettings.php:234
-msgid "Hide AllAccessible Branding"
-msgstr "隐藏所有可访问的品牌"
+#: inc/WidgetCustomizer.php:207
+msgid "Shape of the widget button."
+msgstr "小组件按钮的形状。"
 
-#: inc/AllAccessibleSettings.php:235
-msgid "Remove Branding"
-msgstr "删除品牌"
+#: inc/WidgetCustomizer.php:212
+msgid "Run without the bubble"
+msgstr "不显示气泡运行"
 
-#: inc/AllAccessibleSettings.php:237
-msgid "Branding Visible"
-msgstr "品牌可见"
+#: inc/WidgetCustomizer.php:216
+msgid "Hide widget, keep agentic AI remediation running."
+msgstr "隐藏小组件，保持代理式 AI 修复持续运行。"
 
-#: inc/AllAccessibleSettings.php:238
-msgid "Branding Removed"
-msgstr "品牌已删除"
-
-#: inc/AllAccessibleSettings.php:241
+#: inc/WidgetCustomizer.php:218
 msgid ""
-"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
-"and logo from the widget."
+"Visitors won't see the accessibility toolbar. AllAccessible agents continue "
+"scanning and applying approved fixes in the background."
 msgstr ""
-"注意：隐藏品牌将从小组件中移除 \"Powered by AllAccessible \"文本和标识。"
+"访客将看不到无障碍工具栏。AllAccessible 代理会在后台继续扫描并应用已批准的修"
+"复。"
 
-#: inc/AllAccessibleSettings.php:246
+#: inc/WidgetCustomizer.php:230
 msgid "Save Settings"
 msgstr "保存设置"
 
-#: inc/AllAccessibleSettings.php:252
-msgid "You may need to reload this page if your widget options are not visible"
-msgstr "如果您的小部件选项不可见，您可能需要重新加载此页面"
+#: inc/WidgetCustomizer.php:234
+msgid "Having trouble viewing updates?"
+msgstr "更新无法显示？"
 
-#: inc/AllAccessibleSettings.php:259
-msgid "Version"
-msgstr "版本"
+#: inc/WidgetCustomizer.php:238
+msgid "Clear all caches: browser, cookies, and server (full reset)"
+msgstr "清除所有缓存：浏览器、Cookie 和服务器（完全重置）"
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Need Help"
-msgstr "需要帮助"
+#: inc/WidgetCustomizer.php:239
+msgid "Clear All Caches"
+msgstr "清除所有缓存"
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Contact Us"
-msgstr "联系我们"
+#: inc/WidgetCustomizer.php:249
+msgid "Saving..."
+msgstr "保存中..."
 
-#. Plugin Name of the plugin/theme
-msgid "AllAccessible"
-msgstr "AllAccessible"
+#: inc/WidgetCustomizer.php:253
+msgid "Settings saved!"
+msgstr "设置已保存！"
+
+#: inc/WidgetCustomizer.php:259
+msgid "Cache cleared! Refresh your site to see changes."
+msgstr "缓存已清除！刷新您的网站以查看更改。"
+
+#: inc/WidgetCustomizer.php:267
+msgid "Clearing all caches..."
+msgstr "正在清除所有缓存..."
+
+#: inc/WidgetCustomizer.php:271
+msgid "All caches cleared! Refresh your site to see changes."
+msgstr "所有缓存已清除！刷新您的网站以查看更改。"
+
+#: inc/WidgetCustomizer.php:284
+msgid "Live Preview"
+msgstr "实时预览"
+
+#: inc/WidgetCustomizer.php:297
+msgid "See how your widget will look on your site."
+msgstr "查看您的小组件在网站上的显示效果。"
+
+#: inc/WidgetCustomizer.php:576
+msgid "Failed to save settings. Please try again."
+msgstr "保存设置失败。请重试。"
+
+#: inc/WidgetCustomizer.php:623
+msgid "Error clearing cache. Please check browser console."
+msgstr "清除缓存时出错。请检查浏览器控制台。"
+
+#: inc/WidgetCustomizer.php:677
+msgid "Server cache invalidation failed. Browser cache was cleared."
+msgstr "服务器缓存失效处理失败。浏览器缓存已清除。"
+
+#: inc/WidgetCustomizer.php:699
+msgid "Error clearing caches. Please check browser console."
+msgstr "清除缓存时出错。请检查浏览器控制台。"
+
+#: inc/api/ApiClient.php:82
+msgid "Account ID not found"
+msgstr "未找到账户 ID"
+
+#: inc/api/ApiClient.php:125
+msgid "Invalid API response"
+msgstr "无效的 API 响应"
+
+#: inc/api/ApiClient.php:371
+msgid "A page URL is required to trigger a scan."
+msgstr "触发扫描需要页面 URL。"
+
+#: inc/api/ApiClient.php:473
+msgid "post_id or page_url required"
+msgstr "需要 post_id 或 page_url"
+
+#: inc/api/ApiClient.php:568
+msgid "post_id and page_url required"
+msgstr "需要 post_id 和 page_url"
+
+#: inc/api/ApiClient.php:589
+msgid "pairs required"
+msgstr "需要 pairs"
+
+#: inc/api/ApiClient.php:592
+msgid "batch limited to 100 pairs"
+msgstr "批处理最多限制为 100 个 pairs"
+
+#: inc/api/ApiClient.php:641 inc/api/ApiClient.php:700
+#: inc/api/ApiClient.php:967
+msgid "Account not configured"
+msgstr "账户未配置"
+
+#: inc/api/ApiClient.php:753 inc/api/ApiClient.php:768
+#: inc/api/ApiClient.php:788
+msgid "Invalid manifest ID"
+msgstr "清单 ID 无效"
+
+#: inc/api/ApiClient.php:814
+msgid "Invalid manifest or fix index"
+msgstr "清单或修复索引无效"
+
+#: inc/api/ApiClient.php:818
+msgid "Value is required"
+msgstr "值为必填"
+
+#: inc/api/ApiClient.php:821
+msgid "Value too long (max 500 characters)"
+msgstr "值过长（最多 500 个字符）"
+
+#: inc/api/ApiClient.php:841
+msgid "Invalid site ID"
+msgstr "站点ID无效"
+
+#: inc/api/ApiClient.php:845
+msgid "No manifest IDs supplied"
+msgstr "未提供清单 ID"
+
+#: inc/api/ApiClient.php:988
+msgid "Server returned invalid plugin secret payload"
+msgstr "服务器返回的插件密钥载荷无效"
+
+#: inc/api/ApiClient.php:1017
+msgid ""
+"No site associated with this account yet. Visit your WordPress homepage once "
+"to register this site, then return here."
+msgstr ""
+"此账号尚未关联任何站点。请先访问一次你的 WordPress 主页以注册此站点，然后返回"
+"此处。"
+
+#: inc/api/ApiClient.php:1151
+msgid "Invalid scan job ID"
+msgstr "扫描作业 ID 无效"
+
+#: inc/api/ApiClient.php:1170
+msgid "Plugin secret unavailable. Re-validate license to refresh credentials."
+msgstr "插件密钥不可用。请重新验证许可证以刷新凭据。"
+
+#. translators: %s: error message
+#: inc/api/ApiClient.php:1226
+#, php-format
+msgid "API request failed: %s"
+msgstr "API 请求失败：%s"
+
+#: inc/api/ApiClient.php:1249
+msgid "Failed to decode API response"
+msgstr "无法解码 API 响应"
 
 #. Plugin URI of the plugin/theme
 msgid "https://www.allaccessible.org/platform/wordpress/"
@@ -376,12 +3845,12 @@ msgstr "https://www.allaccessible.org/platform/wordpress/"
 msgid ""
 "Unlock true digital accessibility with AllAccessible - a comprehensive "
 "WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
-"your users with a fully customizable accessibility widget, and enhance their "
-"experience with our premium AI-powered features."
+"your users with a fully customizable accessibility widget, plus agentic AI "
+"remediation that auto-suggests fixes for your team to approve."
 msgstr ""
-"AllAccessible是一个全面的WordPress插件，它使你的网站符合WCAG/ADA标准，开启真"
-"正的数字无障碍。通过一个完全可定制的无障碍小组件赋予你的用户权力，并通过我们"
-"优质的AI功能增强他们的体验。"
+"使用 AllAccessible 解锁真正的数字无障碍——一款全面的 WordPress 插件，推动你的"
+"网站迈向 WCAG/ADA 合规。通过完全可自定义的无障碍小组件赋能你的用户，并借助代"
+"理式 AI 修复功能自动提出修复建议，供你的团队审核批准。"
 
 #. Author of the plugin/theme
 msgid "AllAccessible Team"
@@ -391,67 +3860,487 @@ msgstr "全通团队"
 msgid "https://www.allaccessible.org/"
 msgstr "https://www.allaccessible.org/"
 
-#~ msgid "Let's make this WordPress Site Accessible"
-#~ msgstr "让我们让这个WordPress网站可访问"
-
-#~ msgid "Free Version"
-#~ msgstr "免费版"
-
-#, php-format
-#~ msgid "Let's make this WordPress Site %s"
-#~ msgstr "让我们来做这个WordPress网站 %s"
-
-#~ msgid "Connect"
-#~ msgstr "连接"
-
-#~ msgid "AllAccessible Accessibility Plugin"
-#~ msgstr "所有可访问的辅助功能插件"
-
-#, php-format
 #~ msgid ""
-#~ "Connect your account with your email in the form below. If you do not "
-#~ "have an existing account, we will create a free 7 day trial for %s."
+#~ "Could not start scan — plugin credentials not yet provisioned. Visit "
+#~ "Settings → Re-verify to refresh, then retry."
 #~ msgstr ""
-#~ "在下面的表格中用你的电子邮件连接你的账户。如果你没有一个现有的帐户，我们将"
-#~ "为%s创建一个免费的7天试用。"
+#~ "无法开始扫描——插件凭据尚未配置。请前往“设置”→“重新验证”进行刷新，然后重"
+#~ "试。"
+
+#~ msgid "AI alt text · this month"
+#~ msgstr "AI 替代文本 · 本月"
+
+#~ msgid "Pages crawled"
+#~ msgstr "已抓取的页面"
+
+#, php-format
+#~ msgid "Grouped by rule. %1$s AI-resolvable · %2$s need manual review."
+#~ msgstr "按规则分组。%1$s 可由 AI 解决 · %2$s 需要人工审核。"
+
+#, php-format
+#~ msgid "Agentic alt text by %1$s — up to %2$s images/month"
+#~ msgstr "由 %1$s 提供的智能体式替代文本 — 每月最多 %2$s 张图片"
+
+#, php-format
+#~ msgid "Agentic alt text and label generation by %s"
+#~ msgstr "由 %s 进行的智能体式替代文本和标签生成"
+
+#~ msgid "Scan started — watching for results…"
+#~ msgstr "扫描已开始 — 正在等待结果…"
+
+#~ msgid "Scan failed. Try again from the dashboard."
+#~ msgstr "扫描失败。请从仪表板重试。"
+
+#~ msgid "Enjoying AllAccessible?"
+#~ msgstr "喜欢 AllAccessible 吗？"
+
+#~ msgid "No data yet"
+#~ msgstr "尚无数据"
+
+#~ msgid "Limit reached"
+#~ msgstr "达到限制"
+
+#~ msgid "Approaching limit"
+#~ msgstr "即将达到限制"
+
+#~ msgid "On track"
+#~ msgstr "进展顺利"
+
+#~ msgid "Healthy"
+#~ msgstr "健康"
+
+#~ msgid "Site overview at a glance"
+#~ msgstr "网站概览一目了然"
+
+#~ msgid "Accessibility Score: not yet measured"
+#~ msgstr "无障碍评分：尚未测量"
+
+#, php-format
+#~ msgid "%1$s of %2$s pages audited"
+#~ msgstr "已审计 %2$s 个页面中的 %1$s 个"
+
+#~ msgid "Pages audited: none yet"
+#~ msgstr "已审计页面：暂无"
+
+#~ msgid "Across your site"
+#~ msgstr "覆盖整个网站"
+
+#, php-format
+#~ msgid "%s fix awaiting review"
+#~ msgid_plural "%s fixes awaiting review"
+#~ msgstr[0] "%s 项修复待审核"
+
+#~ msgid "Pending Fixes"
+#~ msgstr "待处理的修复"
+
+#, php-format
+#~ msgid "%s active on your site"
+#~ msgstr "您的网站上有 %s 个处于启用状态"
+
+#~ msgid "Plan usage breakdown"
+#~ msgstr "套餐用量明细"
+
+#~ msgid "Site Stats"
+#~ msgstr "网站统计"
+
+#, php-format
+#~ msgid "%s w/ AI alt"
+#~ msgstr "%s 张（含 AI 替代文本）"
+
+#, php-format
+#~ msgid "%1$s — %2$d%% used"
+#~ msgstr "%1$s — 已使用 %2$d%%"
+
+#~ msgid "Limit reached — upgrade capacity"
+#~ msgstr "已达到限制 — 升级容量"
+
+#~ msgid "Total images"
+#~ msgstr "總圖像"
+
+#~ msgid "across all scanned pages"
+#~ msgstr "覆盖所有已扫描页面"
+
+#, php-format
+#~ msgid "%d%% of total"
+#~ msgstr "%d%% of total"
+
+#~ msgid "Authored by AllAccessible AI"
+#~ msgstr "由 AllAccessible AI 编写"
+
+#~ msgid "Get this site ready for everyone"
+#~ msgstr "让此网站为所有人做好准备"
+
+#~ msgid "Create a new AllAccessible account"
+#~ msgstr "创建新的 AllAccessible 账户"
+
+#~ msgid "Recommended"
+#~ msgstr "推荐"
+
+#~ msgid "Create a new account"
+#~ msgstr "创建一个新账户"
 
 #~ msgid ""
-#~ "Are you enjoying the AllAccessible Accessibility Plugin for WordPress?"
-#~ msgstr "您是否喜欢WordPress的AllAccessible Accessibility Plugin？"
+#~ "Spin up a fresh AllAccessible account with the dashboard, reporting, and "
+#~ "the full agentic AI toolkit."
+#~ msgstr ""
+#~ "创建一个全新的 AllAccessible 账户，包含仪表板、报告以及完整的代理式 AI 工"
+#~ "具包。"
 
-#~ msgid "Yes"
-#~ msgstr "是"
+#~ msgid "Existing customer"
+#~ msgstr "现有客户"
 
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "否"
+#~ msgid "Link an existing account"
+#~ msgstr "关联现有账户"
 
-#~ msgid "Dismiss this notice"
-#~ msgstr "关闭此通知"
+#~ msgid "Link account"
+#~ msgstr "链接帐户"
 
-#~ msgid "Would you like to provide more feedback about our plugin?"
-#~ msgstr "您想提供有关我们插件的更多反馈吗？"
-
-#~ msgid "Yes, I would like to provide feedback"
-#~ msgstr "是的，我想提供反馈"
-
-#~ msgid ""
-#~ "Glad to hear you are enjoying it. Would you consider leaving a positive "
-#~ "review?"
-#~ msgstr "很高兴听到你正在享受它。你会考虑留下正面的评价吗？"
+#~ msgid "Just the widget"
+#~ msgstr "仅使用小组件"
 
 #~ msgid ""
-#~ "It really helps to support the plugin and help others to discover it too!"
-#~ msgstr "支持插件并帮助其他人发现它真的很有帮助！"
+#~ "The free accessibility widget keeps running on this site. Finish setup "
+#~ "any time to unlock the dashboard and AI fixes."
+#~ msgstr ""
+#~ "免费的无障碍小组件会继续在本网站上运行。您可随时完成设置，以解锁控制台和 "
+#~ "AI 修复功能。"
 
-#~ msgid "Yes, I will write a positive review."
-#~ msgstr "是的，我会写一个积极的评论。"
+#~ msgid "Skip setup"
+#~ msgstr "跳过设置"
 
-#~ msgid "Let's make this WordPress Site AllAccessible"
-#~ msgstr "让我们让这个WordPress网站全部可访问"
+#~ msgid "Choose a plan"
+#~ msgstr "选择一个计划"
 
-#~ msgid "is connected to"
-#~ msgstr "已连接到"
+#~ msgid ""
+#~ "Start free and upgrade later, or try the full feature set free for seven "
+#~ "days. No credit card required either way."
+#~ msgstr ""
+#~ "先免费开始，之后再升级；或免费试用完整功能 7 天。两种方式都无需信用卡。"
 
-#~ msgid "with account ID"
-#~ msgstr "使用帐户 ID"
+#~ msgid "month"
+#~ msgstr "月"
+
+#~ msgid "Accessibility widget"
+#~ msgstr "无障碍小组件"
+
+#~ msgid "Color and contrast controls"
+#~ msgstr "颜色与对比度控制"
+
+#~ msgid "Choose Free"
+#~ msgstr "选择免费版"
+
+#~ msgid "Premium trial"
+#~ msgstr "高级版试用"
+
+#~ msgid "Everything in Free"
+#~ msgstr "免费内容"
+
+#~ msgid "AI"
+#~ msgstr "AI"
+
+#~ msgid "Human-in-the-loop agentic AI remediation"
+#~ msgstr "有人类参与的代理式 AI 修复"
+
+#~ msgid "Automatic alt text from AllAccessible agents"
+#~ msgstr "由 AllAccessible 代理自动生成替代文本"
+
+#~ msgid "WCAG and ADA audits"
+#~ msgstr "WCAG 和 ADA 审核"
+
+#~ msgid "Widget customization"
+#~ msgstr "小组件自定义"
+
+#~ msgid "Cancel any time"
+#~ msgstr "随时取消"
+
+#~ msgid "Start trial"
+#~ msgstr "开始试用"
+
+#~ msgid "Agentic AI handles the heavy lifting."
+#~ msgstr "代理式 AI 负责繁重工作。"
+
+#~ msgid ""
+#~ "AllAccessible agents draft alt text, propose code fixes, and suggest "
+#~ "remediations. Your team reviews and approves before anything ships."
+#~ msgstr ""
+#~ "AllAccessible 智能代理会起草替代文本、提出代码修复建议并推荐整改方案。在任"
+#~ "何内容发布之前，您的团队会进行审核并批准。"
+
+#~ msgid "Back"
+#~ msgstr "返回"
+
+#~ msgid "I already have an account"
+#~ msgstr "我已经有一个帐户"
+
+#~ msgid "Step 3 of 4"
+#~ msgstr "第 3 步（共 4 步）"
+
+#~ msgid "Create your account"
+#~ msgstr "创建你的账户"
+
+#~ msgid "We use this to provision your account and send setup confirmations."
+#~ msgstr "我们会用它来开通您的账户并发送设置确认信息。"
+
+#~ msgid "Create account"
+#~ msgstr "创建帐号"
+
+#~ msgid "Free forever plan"
+#~ msgstr "永久免费方案"
+
+#~ msgid "No credit card. Upgrade any time."
+#~ msgstr "无需信用卡。随时可升级。"
+
+#~ msgid "Includes the accessibility widget and core controls."
+#~ msgstr "包含无障碍小组件和核心控制功能。"
+
+#~ msgid "Up to 10k pageviews / month covered."
+#~ msgstr "每月最多覆盖 10k 次页面浏览量。"
+
+#~ msgid "Seven-day premium trial"
+#~ msgstr "7 天高级版试用"
+
+#~ msgid "No credit card. Cancel any time."
+#~ msgstr "无需信用卡。随时可取消。"
+
+#~ msgid "Full access to agentic AI remediation."
+#~ msgstr "全面使用代理式 AI 整改功能。"
+
+#~ msgid "Continuous audits + per-page scoring."
+#~ msgstr "持续审计 + 按页面评分。"
+
+#~ msgid "Widget customization, Image AI, VPAT exports."
+#~ msgstr "小组件自定义、图像 AI、VPAT 导出。"
+
+#~ msgid "We never share your email."
+#~ msgstr "我们绝不会分享您的电子邮件。"
+
+#~ msgid "Link your account"
+#~ msgstr "关联您的账户"
+
+#~ msgid ""
+#~ "Enter the email associated with your AllAccessible account and we will "
+#~ "connect this site to it."
+#~ msgstr ""
+#~ "请输入与您的 AllAccessible 账户关联的电子邮件，我们将把此站点连接到该账"
+#~ "户。"
+
+#~ msgid "Use the email tied to your AllAccessible login."
+#~ msgstr "使用与您的 AllAccessible 登录关联的电子邮件。"
+
+#~ msgid "Linking your account..."
+#~ msgstr "正在关联您的账户..."
+
+#~ msgid "What happens next"
+#~ msgstr "接下来会发生什么"
+
+#~ msgid "This WordPress site is added to your existing account."
+#~ msgstr "此 WordPress 站点已添加到您现有的账户中。"
+
+#~ msgid "Your current plan and settings stay in place."
+#~ msgstr "您当前的套餐和设置将保持不变。"
+
+#~ msgid "The widget activates with your saved configuration."
+#~ msgstr "小组件将使用您保存的配置激活。"
+
+#~ msgid "Step 4 of 4"
+#~ msgstr "第 4 步（共 4 步）"
+
+#~ msgid "We found your sitemap"
+#~ msgstr "我们找到了您的站点地图"
+
+#~ msgid "Start free forever"
+#~ msgstr "开始永久免费使用"
+
+#~ msgid "Activate free account"
+#~ msgstr "激活免费账户"
+
+#~ msgid "Start your seven-day trial"
+#~ msgstr "开始您的七天试用"
+
+#~ msgid "Activate free trial"
+#~ msgstr "激活免费试用"
+
+#~ msgid "Please fill in all required fields."
+#~ msgstr "请填写所有必填字段。"
+
+#~ msgid ""
+#~ "We could not find an account with that email. Please check and try again."
+#~ msgstr "我们找不到使用该邮箱的账户。请检查后重试。"
+
+#~ msgid "Generate fixes now"
+#~ msgstr "立即生成修复"
+
+#~ msgid "Open in app"
+#~ msgstr "在应用中打开"
+
+#~ msgid "Submit your sitemap"
+#~ msgstr "提交您的站点地图"
+
+#~ msgid ""
+#~ "Your sitemap tells AllAccessible which pages to check. Once submitted, "
+#~ "scans run automatically based on your plan."
+#~ msgstr ""
+#~ "您的站点地图会告诉 AllAccessible 要检查哪些页面。提交后，扫描将根据您的套"
+#~ "餐自动运行。"
+
+#~ msgid "Submit sitemap"
+#~ msgstr "提交站点地图"
+
+#~ msgid "Update sitemap"
+#~ msgstr "更新站点地图"
+
+#~ msgid ""
+#~ "No sitemap detected on this site. Install an SEO plugin (Yoast, RankMath, "
+#~ "All in One SEO) or enable the WordPress core sitemap, then refresh this "
+#~ "page."
+#~ msgstr ""
+#~ "此站点未检测到站点地图。请安装 SEO 插件（Yoast、RankMath、All in One SEO）"
+#~ "或启用 WordPress 核心站点地图，然后刷新此页面。"
+
+#~ msgid "Sitemap URL"
+#~ msgstr "网站地图网址"
+
+#, php-format
+#~ msgid "%d candidate found"
+#~ msgid_plural "%d candidates found"
+#~ msgstr[0] "找到 %d 个候选项"
+
+#~ msgid "pages scanned. Agentic Fixes ready to review."
+#~ msgstr "已扫描页面。Agentic Fixes 已准备好供审核。"
+
+#~ msgid "Pick a sitemap URL first."
+#~ msgstr "请先选择一个站点地图 URL。"
+
+#~ msgid "Yoast SEO"
+#~ msgstr "Yoast SEO"
+
+#~ msgid "Rank Math"
+#~ msgstr "Rank Math"
+
+#~ msgid "All in One SEO"
+#~ msgstr "All in One SEO"
+
+#~ msgid "SEOPress"
+#~ msgstr "SEOPress"
+
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
+
+#~ msgid "—"
+#~ msgstr "—"
+
+#~ msgid "Accessibility resolution overview"
+#~ msgstr "无障碍问题解决概览"
+
+#~ msgid "Overall score"
+#~ msgstr "总分"
+
+#, php-format
+#~ msgid "WCAG %s aligned"
+#~ msgstr "符合 WCAG %s"
+
+#~ msgid "Resolution"
+#~ msgstr "分辨率"
+
+#~ msgid "remaining"
+#~ msgstr "剩余"
+
+#, php-format
+#~ msgid "%s%% resolved by AllAccessible agents"
+#~ msgstr "%s%% r由 AllAccessible 代理解决"
+
+#, php-format
+#~ msgid "%1$s auto-applied · %2$s approved by your team"
+#~ msgstr "%1$s 已自动应用 · %2$s 已获你的团队批准"
+
+#~ msgid ""
+#~ "Resolution numbers will appear after your first scan completes and "
+#~ "AllAccessible agents process your manifest."
+#~ msgstr "首次扫描完成且 AllAccessible 代理处理完你的清单后，将显示解决数量。"
+
+#~ msgid "Coverage"
+#~ msgstr "范围"
+
+#, php-format
+#~ msgid "%s%% of estimated site coverage"
+#~ msgstr "预计网站覆盖率为 %s%% of"
+
+#~ msgid "No pages scanned yet."
+#~ msgstr "尚未扫描任何页面。"
+
+#, php-format
+#~ msgid "Last scan %s"
+#~ msgstr "上次扫描 %s"
+
+#, php-format
+#~ msgid "Overall accessibility score %s out of 100"
+#~ msgstr "整体无障碍评分 %s（满分 100）"
+
+#~ msgid "Run a scan to compute your first score."
+#~ msgstr "运行一次扫描以计算你的首个评分。"
+
+#~ msgid "Trending up since your last scan."
+#~ msgstr "自上次扫描以来呈上升趋势。"
+
+#~ msgid "Down from your last scan — review pending fixes."
+#~ msgstr "较上次扫描有所下降——请查看待处理的修复。"
+
+#~ msgid "Good. A few high-impact fixes will push you to excellent."
+#~ msgstr "不错。少量高影响修复将助你达到优秀。"
+
+#~ msgid "Needs work. Approve the recommended fixes to climb fast."
+#~ msgstr "需要改进。批准推荐的修复即可快速提升。"
+
+#~ msgid "Critical issues detected. Start with the queue below."
+#~ msgstr "检测到严重问题。请从下方队列开始处理。"
+
+#~ msgid "Post not found"
+#~ msgstr "文章没有找到"
+
+#~ msgid "Could not generate permalink for this post"
+#~ msgstr "无法为此帖子生成永久链接"
+
+#~ msgid "Page scan initiated. Results will be available shortly."
+#~ msgstr "页面扫描已启动。结果将很快可用。"
+
+#, php-format
+#~ msgid "API returned status code %d"
+#~ msgstr "API 返回状态码 %d"
+
+#~ msgid "Failed to parse API response"
+#~ msgstr "解析 API 响应失败"
+
+#~ msgid ""
+#~ "Agentic AI accessibility remediation and the AllAccessible widget. "
+#~ "Connect your AllAccessible account to enable compliance scans, widget "
+#~ "customization, and human-in-the-loop remediation."
+#~ msgstr ""
+#~ "Agentic AI 无障碍修复以及 AllAccessible 小组件。连接您的 AllAccessible 账"
+#~ "户以启用合规性扫描、小组件自定义和人工参与的修复。"
+
+#~ msgid "Site not connected to AllAccessible account."
+#~ msgstr "站点未连接到 AllAccessible 账户。"
+
+#~ msgid "Unknown API error"
+#~ msgstr "未知API错误"
+
+#, php-format
+#~ msgid "API error (%1$d): %2$s"
+#~ msgstr "API 错误（%1$d）：%2$s"
+
+#~ msgid "Not Available"
+#~ msgstr "不可用"
+
+#~ msgid "Needs Work"
+#~ msgstr "需要工作"
+
+#, php-format
+#~ msgid "WCAG %s Compliant"
+#~ msgstr "符合 WCAG %s 标准"
+
+#, php-format
+#~ msgid "WCAG %s Non-Compliant"
+#~ msgstr "不符合 WCAG %s 标准"
+
+#~ msgid "Sitemap URL is required"
+#~ msgstr "必须提供站点地图 URL"

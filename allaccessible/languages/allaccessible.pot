@@ -2,360 +2,3775 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AllAccessible\n"
-"POT-Creation-Date: 2023-07-24 14:54-0400\n"
-"PO-Revision-Date: 2023-02-28 21:34-0500\n"
+"POT-Creation-Date: 2026-06-03 13:39-0400\n"
+"PO-Revision-Date: 2026-06-03 13:36-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.9\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: allaccessible.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
 
-#: allaccessible.php:49
-msgid "Accessibility"
+#: allaccessible.php:166
+msgid "Account settings saved successfully"
 msgstr ""
 
-#: allaccessible.php:238
-msgid "Activate AllAccessible Premium to Unlock Ai Accessibility Features."
+#: allaccessible.php:200
+msgid "Unauthorized access"
 msgstr ""
 
-#: allaccessible.php:238
-msgid "Click Here"
+#: allaccessible.php:221
+msgid "Plugin data has been reset successfully"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:47
-msgid "AllAccessible Deactivation"
+#: allaccessible.php:235 allaccessible.php:323 allaccessible.php:404
+#: inc/SettingsPage.php:1894
+msgid "Unauthorized"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:48
-msgid ""
-"If you have a moment, please let us know why you are deactivating "
-"AllAccessible. All submissions are anonymous and we only use this feedback "
-"to improve this plugin."
+#: allaccessible.php:363
+msgid "Still finishing setup — wait a few seconds and try again."
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:49
-msgid "Do not send my e-mail address with this feedback"
+#: allaccessible.php:368
+msgid "Scan queued. Results appear in 2-5 minutes."
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:51
-msgid "Please give us any feedback that could help us improve"
+#: inc/AdminBar.php:64
+msgid "Scan this page now"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:53
-msgid "Cancel"
+#: inc/AdminBar.php:77
+msgid "View page report"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:54
-msgid "Skip &amp; Deactivate"
+#: inc/AdminBar.php:97 inc/SettingsPage.php:48 inc/SettingsPage.php:49
+msgid "Dashboard"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:55
-msgid "Submit &amp; Deactivate"
+#: inc/AdminBar.php:103
+msgid "Audits & Fixes"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:56
-msgid "Please wait"
+#: inc/AdminBar.php:109 inc/WidgetCustomizer.php:190
+msgid "Settings"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:57
-msgid "Thank you!"
+#: inc/AdminBar.php:116 inc/AgenticFixesPage.php:162
+#: inc/DashboardLayout.php:290 inc/SettingsPage.php:389
+msgid "Open dashboard"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:64
-msgid "The plugin suddenly stopped working"
+#: inc/AdminBar.php:172 inc/EditorMetaBox.php:440
+msgid "Scanning page…"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:67
-#: inc/AllAccessibleDeactivationForm.php:74
-msgid ""
-"We're sorry to hear that, check <a href=\"https://support.allaccessible."
-"org\" target=\"_blank\">AllAccessible Support</a>. Can you describe the "
-"issue?"
+#: inc/AdminBar.php:173
+#, php-format
+msgid "Scan complete. Score: %d%%"
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:71
-msgid "The plugin broke my site"
+#: inc/AdminBar.php:174
+msgid "Scan complete. Refresh to see updated score."
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:78
-msgid "I don't need this plugin any more"
+#: inc/AdminBar.php:175 inc/EditorMetaBox.php:444
+msgid "Scan failed. Try again or check the dashboard."
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:82
-msgid "I found a better plugin"
+#: inc/AdminBar.php:176
+msgid "Scan is still running — check back in a minute."
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:85
-msgid "Can you please share the name of the other plugin?"
+#: inc/AdminBar.php:177
+msgid "Could not start scan: "
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:89
-msgid "It's a temporary deactivation, I'm troubleshooting"
+#: inc/AdminBar.php:178 inc/EditorMetaBox.php:446
+msgid "Scan rate limit reached. Try again later."
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:93
-msgid "Other"
+#: inc/AdminBar.php:341 inc/AdminBar.php:375
+msgid "Permission denied."
 msgstr ""
 
-#: inc/AllAccessibleDeactivationForm.php:96
-msgid "Can you describe the issue?"
+#: inc/AdminBar.php:347
+msgid "Missing page URL."
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:16 inc/AllAccessibleSettings.php:42
-msgid "Preview Widget"
+#: inc/AdminBar.php:382
+msgid "Missing job ID."
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:40
-msgid "Widget Status"
+#: inc/AgenticFixes/Labels.php:23
+msgid "Missing image description"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:40
+#: inc/AgenticFixes/Labels.php:24
+msgid "Button without label"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:25
+msgid "Form field without label"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:26
+msgid "Missing page language"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:27
+msgid "Link without text"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:28
+msgid "ARIA labeling issue"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:29
+msgid "Heading hierarchy issue"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:30 inc/AgenticFixes/Labels.php:33
+msgid "Other accessibility issue"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:44 inc/AgenticFixesPage.php:241
+msgid "Pending review"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:45
+msgid "Approved"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:46
 msgid "Active"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:41
-#, php-format
-msgid "AllAccessible's %s widget is visible on the front end of your site."
+#: inc/AgenticFixes/Labels.php:47 inc/AgenticFixesPage.php:249
+msgid "Reverted"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Website Accessibility"
+#: inc/AgenticFixes/Labels.php:61 inc/AgenticFixes/Labels.php:67
+#: inc/AgenticFixesPage.php:347 inc/AgenticFixesPage.php:452
+msgid "AllAccessible agents"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:59
-msgid "Audits & Remediation"
+#: inc/AgenticFixes/Labels.php:62
+msgid "Automated rule check"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:61
+#: inc/AgenticFixes/Labels.php:63
+msgid "Compliance scanner"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:64
+msgid "Manual review"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:80
+msgid "Suggested alt text for image"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:81
+msgid "Suggested label for button"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:82
+msgid "Suggested label for form field"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:83
+msgid "Set page language attribute"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:84
+msgid "Suggested text for link"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:85
+msgid "Correct ARIA role assignment"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:86
+msgid "Fix heading order"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:87 inc/AgenticFixes/Labels.php:90
+msgid "Accessibility fix suggested"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:122
+msgid "Non-text Content"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:123
+msgid "Audio-only and Video-only (Prerecorded)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:124
+msgid "Captions (Prerecorded)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:125
+msgid "Audio Description or Media Alternative (Prerecorded)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:126
+msgid "Captions (Live)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:127
+msgid "Audio Description (Prerecorded)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:128
+msgid "Sign Language (Prerecorded)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:129
+msgid "Extended Audio Description (Prerecorded)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:130
+msgid "Media Alternative (Prerecorded)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:131
+msgid "Audio-only (Live)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:132
+msgid "Info and Relationships"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:133
+msgid "Meaningful Sequence"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:134
+msgid "Sensory Characteristics"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:135
+msgid "Orientation"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:136
+msgid "Identify Input Purpose"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:137
+msgid "Identify Purpose"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:138
+msgid "Use of Color"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:139
+msgid "Audio Control"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:140
+msgid "Contrast (Minimum)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:141
+msgid "Resize Text"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:142
+msgid "Images of Text"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:143
+msgid "Contrast (Enhanced)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:144
+msgid "Low or No Background Audio"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:145
+msgid "Visual Presentation"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:146
+msgid "Images of Text (No Exception)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:147
+msgid "Reflow"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:148
+msgid "Non-text Contrast"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:149
+msgid "Text Spacing"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:150
+msgid "Content on Hover or Focus"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:152
+msgid "Keyboard"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:153
+msgid "No Keyboard Trap"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:154
+msgid "Keyboard (No Exception)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:155
+msgid "Character Key Shortcuts"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:156
+msgid "Timing Adjustable"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:157
+msgid "Pause, Stop, Hide"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:158
+msgid "No Timing"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:159
+msgid "Interruptions"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:160
+msgid "Re-authenticating"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:161
+msgid "Timeouts"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:162
+msgid "Three Flashes or Below Threshold"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:163
+msgid "Three Flashes"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:164
+msgid "Animation from Interactions"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:165
+msgid "Bypass Blocks"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:166
+msgid "Page Titled"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:167
+msgid "Focus Order"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:168
+msgid "Link Purpose (In Context)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:169
+msgid "Multiple Ways"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:170
+msgid "Headings and Labels"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:171
+msgid "Focus Visible"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:172
+msgid "Location"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:173
+msgid "Link Purpose (Link Only)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:174
+msgid "Section Headings"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:175
+msgid "Focus Not Obscured (Minimum)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:176
+msgid "Focus Not Obscured (Enhanced)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:177
+msgid "Focus Appearance"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:178
+msgid "Pointer Gestures"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:179
+msgid "Pointer Cancellation"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:180
+msgid "Label in Name"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:181
+msgid "Motion Actuation"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:182
+msgid "Target Size (Enhanced)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:183
+msgid "Concurrent Input Mechanisms"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:184
+msgid "Dragging Movements"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:185
+msgid "Target Size (Minimum)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:187
+msgid "Language of Page"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:188
+msgid "Language of Parts"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:189
+msgid "Unusual Words"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:190
+msgid "Abbreviations"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:191
+msgid "Reading Level"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:192
+msgid "Pronunciation"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:193
+msgid "On Focus"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:194
+msgid "On Input"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:195
+msgid "Consistent Navigation"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:196
+msgid "Consistent Identification"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:197
+msgid "Change on Request"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:198
+msgid "Consistent Help"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:199
+msgid "Error Identification"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:200
+msgid "Labels or Instructions"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:201
+msgid "Error Suggestion"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:202
+msgid "Error Prevention (Legal, Financial, Data)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:203
+msgid "Help"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:204
+msgid "Error Prevention (All)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:205
+msgid "Redundant Entry"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:206
+msgid "Accessible Authentication (Minimum)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:207
+msgid "Accessible Authentication (Enhanced)"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:209
+msgid "Parsing"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:210
+msgid "Name, Role, Value"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:211
+msgid "Status Messages"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:224
+msgid "Let AllAccessible agents fix these for you"
+msgstr ""
+
+#: inc/AgenticFixes/Labels.php:225
 msgid ""
-"View the results of your website scans, accessibility Remediation and more "
-"with AllAccessibile Premium."
+"Premium plans include human-in-the-loop agentic AI remediation. Your team "
+"approves, agents do the work."
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:62
+#: inc/AgenticFixesDashboardWidget.php:27
+msgid "AllAccessible — Agentic Fixes"
+msgstr ""
+
+#: inc/AgenticFixesDashboardWidget.php:34
+msgid "Plugin not fully initialized. Please reload."
+msgstr ""
+
+#: inc/AgenticFixesDashboardWidget.php:63
+msgid "Upgrade to apply fixes"
+msgstr ""
+
+#: inc/AgenticFixesDashboardWidget.php:64 inc/DashboardLayout.php:243
+msgid "Review fixes"
+msgstr ""
+
+#: inc/AgenticFixesDashboardWidget.php:70
+msgid "No scans yet. Submit your sitemap from the AllAccessible page to start."
+msgstr ""
+
+#: inc/AgenticFixesDashboardWidget.php:74
+msgid "Go to AllAccessible"
+msgstr ""
+
+#: inc/AgenticFixesDashboardWidget.php:87
+msgid "accessibility issue detected"
+msgid_plural "accessibility issues detected"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: count of pages scanned
+#: inc/AgenticFixesDashboardWidget.php:97
+#, php-format
+msgid "%s page scanned"
+msgid_plural "%s pages scanned"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/AgenticFixesDashboardWidget.php:105
+#, php-format
+msgid "last scan %s ago"
+msgstr ""
+
+#. translators: %s: count of manifests waiting on approval
+#: inc/AgenticFixesDashboardWidget.php:118
+#, php-format
+msgid "%s manifest pending your approval"
+msgid_plural "%s manifests pending your approval"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/AgenticFixesDashboardWidget.php:127
+msgid ""
+"AllAccessible agents can auto-fix these. Upgrade to enable agentic AI "
+"remediation."
+msgstr ""
+
+#: inc/AgenticFixesDashboardWidget.php:145
+msgid "Could not load fixes summary right now."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:27 inc/AgenticFixesPage.php:28
+#: inc/AgenticFixesPage.php:140 inc/AgenticFixesPage.php:667
+#: inc/SettingsPage.php:499 inc/SettingsPage.php:603
+msgid "Agentic Fixes"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:137 inc/AgenticFixesPage.php:142
+#: inc/AgenticFixesPage.php:665 inc/AgenticFixesPage.php:680
+#: inc/AgenticFixesPage.php:857 inc/ConversionCTA.php:119
+#: inc/EditorMetaBox.php:271 inc/ImageManagerPage.php:160
+#: inc/OnboardingWizard.php:288 inc/SettingsPage.php:416
+#: inc/SettingsPage.php:490 inc/SettingsPage.php:574 inc/SettingsPage.php:1969
+#: inc/UsageDashboard.php:142 inc/WidgetCustomizer.php:211
+msgid "AllAccessible AI"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:146
+msgid "Beta feature"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:147 inc/SettingsPage.php:1155
+msgid "Beta"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:152
+msgid ""
+"AllAccessible agents propose accessibility fixes. You review and approve "
+"before anything goes live on your site."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:169 inc/ConnectionStatusCard.php:71
+msgid "Could not reach AllAccessible right now."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:182
+msgid "score"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:186
+msgid "pages audited"
+msgstr ""
+
+#. translators: %s: human-readable time difference (e.g. "2 hours")
+#. translators: %s: human-readable time diff
+#: inc/AgenticFixesPage.php:194 inc/ScanTriggerPanel.php:86
+#, php-format
+msgid "Last scan %s ago"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:245
+msgid "Approved & applied"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:254
+msgid "Filter Agentic Fixes by status"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:330
+msgid "How this works"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:332
+msgid ""
+"AllAccessible agents review your site and propose fixes for accessibility "
+"issues. Nothing changes on your site until you approve. You can edit any "
+"suggestion before approving, and you can revert any approved fix at any time."
+msgstr ""
+
+#. translators: 1: count of fixes; 2: rule type label (e.g., "Missing image description")
+#: inc/AgenticFixesPage.php:353
+#, php-format
+msgid "%1$s pending fixes for \"%2$s\". Approve them all in one click."
+msgstr ""
+
+#. translators: 1: count; 2: rule label
+#: inc/AgenticFixesPage.php:366
+#, php-format
+msgid "Bulk approve %1$s %2$s fixes"
+msgstr ""
+
+#. translators: %s: count of fixes
+#: inc/AgenticFixesPage.php:373
+#, php-format
+msgid "Bulk approve all %s"
+msgstr ""
+
+#. translators: %s: WCAG success criterion number (e.g., "1.1.1")
+#: inc/AgenticFixesPage.php:426
+#, php-format
+msgid "WCAG %s"
+msgstr ""
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:439
+#, php-format
+msgid "confidence: %s percent"
+msgstr ""
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:445
+#, php-format
+msgid "%s%% confidence"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:463
+msgid "What's wrong"
+msgstr ""
+
+#. translators: 1: rationale phrase (e.g., "Suggested alt text for image"); 2: selector
+#: inc/AgenticFixesPage.php:469
+#, php-format
+msgid "%1$s on element %2$s"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:481
+msgid "Proposed fix"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:487
+msgid "Edit proposed fix value"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:500
+msgid "page affected"
+msgid_plural "pages affected"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: formatted date (e.g., "2026-05-23")
+#: inc/AgenticFixesPage.php:509
+#, php-format
+msgid "Applied on %s"
+msgstr ""
+
+#. translators: %s: count of pages where this fix appears
+#: inc/AgenticFixesPage.php:525
+#, php-format
+msgid "Where it appears (%s)"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:544
+msgid ""
+"Open this page with the affected element scrolled into view and highlighted"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:545
+msgid "View on site"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:552 inc/ImageManagerPage.php:347
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: count of additional pages not listed
+#: inc/AgenticFixesPage.php:562
+#, php-format
+msgid "+%s more"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:579
+msgid "Skip"
+msgstr ""
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:587
+#, php-format
+msgid "Save edit and apply to %2$s pages for %1$s"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:591
+msgid "Save edit"
+msgstr ""
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:598
+#, php-format
+msgid "Approve %1$s on %2$s pages"
+msgstr ""
+
+#. translators: %s: count of pages
+#: inc/AgenticFixesPage.php:605
+#, php-format
+msgid "Approve on %s page"
+msgid_plural "Approve on %s pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/AgenticFixesPage.php:613
+msgid "Live on your site"
+msgstr ""
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:618
+#, php-format
+msgid "Revert %1$s on %2$s pages"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:622 inc/AgenticFixesPage.php:902
+msgid "Revert"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:626
+msgid "Not applied"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:668 inc/SettingsPage.php:470
+msgid "Legacy widget"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:671
+msgid "Agentic AI remediation is not available on your current plan."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:682 inc/SettingsPage.php:417
+msgid "Upgrade to unlock Agentic Fixes"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:687
+msgid ""
+"Your site runs the legacy AllAccessible widget, which predates agentic AI "
+"remediation. The widget keeps working as-is, but upgrading to the current "
+"plan tier unlocks:"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:690
+msgid ""
+"Human-in-the-loop agentic AI remediation — agents propose fixes, your team "
+"approves."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:691
+msgid "Continuous accessibility scoring with site-level coverage tracking."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:692
+msgid "Higher monthly pageview caps and AllAccessible AI alt text generation."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:693
+msgid ""
+"Image AI manager, per-page audit scores in the WordPress editor, and "
+"downloadable WCAG / VPAT reports."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:696 inc/SettingsPage.php:480
+msgid "See upgrade options"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:716 inc/AgenticFixesPage.php:727
+msgid "You're all caught up"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:717
+msgid ""
+"No fixes are waiting for review. Run a scan and AllAccessible agents will "
+"propose any new fixes they find."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:728
+msgid "No fixes are waiting for review right now."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:738
+msgid "No fixes approved yet"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:741
+msgid ""
+"Approved fixes will appear here once you start reviewing the pending queue."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:751
+msgid "Nothing has been reverted"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:754
+msgid "Any approved fix you revert will be tracked here for reference."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:772 inc/ImageManagerPage.php:403
+msgid "AllAccessible AI · Free preview"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:776
+#, php-format
+msgid "You've previewed %1$d of %2$d agentic fix proposals"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:781
+msgid ""
+"Real proposals drafted for the real issues found on your site. Upgrade to "
+"review, approve, and apply the rest — human-in-the-loop, every fix."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:785 inc/ImageManagerPage.php:416
+msgid "Unlock unlimited"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:798
+msgid "Fix proposal preview"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:816
+#, php-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/AgenticFixesPage.php:833
+#, php-format
+msgid "Unlock %d more agentic fix proposals for your site"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:838 inc/ImageManagerPage.php:460
+msgid "Upgrade — starts at $10/month"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:866 inc/SettingsPage.php:134
+#: inc/SettingsPage.php:424 inc/SettingsPage.php:679 inc/SettingsPage.php:990
+#: inc/TierGate.php:105 inc/UsageDashboard.php:42 inc/UsageDashboard.php:234
+msgid "Upgrade plan"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:882
+msgid "Edit fix"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:884
+msgid "Update the suggested value before approving. Max 500 characters."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:888 inc/ImageManagerPage.php:584
+msgid "Save"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:889 inc/AgenticFixesPage.php:903
+#: inc/DeactivationSurvey.php:189 inc/ImageManagerPage.php:581
+msgid "Cancel"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:896
+msgid "Revert manifest"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:898
+msgid ""
+"Why are you reverting? This helps us improve fix quality. Max 500 characters."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:952
+msgid "Action failed"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:977
+msgid "Server returned no data"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1024
+msgid "Approve this fix on every page where it appears?"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1034
+msgid "Revert reason (max 500 chars):"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1046 inc/AgenticFixesPage.php:1136
+msgid "Value cannot be empty"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1047
+msgid "Apply this value to every page in the group?"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1069
+msgid "Nothing to approve."
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1070
+msgid "Approve every pending fix of this type?"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1087
+msgid "Bulk approve failed"
+msgstr ""
+
+#: inc/AgenticFixesPage.php:1112
+msgid "Approve this manifest? Fixes will go live immediately."
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:56
+msgid "Connection status"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:58
+msgid ""
+"Confirm this WordPress install is linked to the correct AllAccessible site."
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:64
+msgid "Re-verify"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:79
+msgid "WordPress URL"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:80 inc/SettingsPage.php:922
+msgid "Account ID"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:81
+msgid "Connected to"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:82
+msgid "Subdomain ID"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:84
+msgid "Plan tier"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:93
+msgid "WordPress URL matches the connected AllAccessible site."
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:98
+msgid "Mismatch detected"
+msgstr ""
+
+#. translators: 1: WP URL host, 2: server host
+#: inc/ConnectionStatusCard.php:103
+#, php-format
+msgid ""
+"WordPress is configured for %1$s but this plugin is linked to %2$s on your "
+"AllAccessible account. The Agentic Fixes page will show fixes for the "
+"connected site, not this WordPress install."
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:110
+msgid ""
+"Click \"Re-verify\" to refresh, or contact support if this site needs to be "
+"added to your account."
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:116
+msgid ""
+"This site has not been registered with AllAccessible yet. Visit your "
+"WordPress homepage to trigger registration, then click \"Re-verify\"."
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:189 inc/FeatureComparison.php:40
+#: inc/SettingsPage.php:1945 inc/SettingsPage.php:1946
+msgid "Free"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:190 inc/FeatureComparison.php:43
+#: inc/SettingsPage.php:1927 inc/SettingsPage.php:1928
+msgid "Starter"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:191 inc/FeatureComparison.php:46
+#: inc/SettingsPage.php:1933 inc/SettingsPage.php:1934
+msgid "Enterprise"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:192 inc/SettingsPage.php:1939
+msgid "Legacy"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:193 inc/SettingsPage.php:1921
+msgid "Trial"
+msgstr ""
+
+#: inc/ConnectionStatusCard.php:208
+msgid "Verifying…"
+msgstr ""
+
+#: inc/ConversionCTA.php:40
 msgid "Upgrade Now"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:64
-msgid ""
-"View the results of your website scans in your AllAccessibile Account "
-"Dashboard."
+#: inc/ConversionCTA.php:46
+msgid "Usage Limit Exceeded!"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:65
-msgid "Accessibility Dashboard"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Need"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:83
-msgid "Help & Support?"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:84
-msgid ""
-"Check our knowledge base for assistance with installation, customization, "
-"and more."
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:85
-msgid "Get Support"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:109
-msgid "Unlock the Power of AllAccessible Premium"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:110
-msgid ""
-"Unlock all the benefits of our Ai accessibility automation with a free trial "
-"by connecting your AllAccessible account to your email below. Already using "
-"the free version? No problem! We'll set you up with a free 7-day trial of "
-"our premium version. After the trial period, upgrade to the premium version "
-"for just $15 a month and enjoy a more accessible digital experience."
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:113
-msgid ""
-"Below are some additional features unlocked with AllAccessible Premium. All "
-"for Only $15/mo."
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:114
-msgid "User Control Panel"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:115
-msgid "Accessibility Statement"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:116
-msgid "Widget Customization (Color, Shape, Placement, etc.)"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:117
-msgid "Ai Accessibility Fixes"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:118
-msgid "Image Alt Text Generation"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:119
-msgid "Monthly Accessibility Audits"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:120
-msgid "Accessibility Accommodation Requests"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:127
-msgid "To learn more, visit: https://www.allaccessible.org"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:131
-msgid "Your Email"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:131
+#: inc/ConversionCTA.php:48
 #, php-format
-msgid "(Used to manage your Account on %s)"
+msgid ""
+"Your widget is currently using free features only. Upgrade to %s to restore "
+"premium functionality and increase your limits."
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:135
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Starter"
+msgstr ""
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Enterprise"
+msgstr ""
+
+#: inc/ConversionCTA.php:68
+msgid "Approaching Your Limit"
+msgstr ""
+
+#: inc/ConversionCTA.php:70
+#, php-format
+msgid ""
+"You're using over 80%% of your %s. Upgrade before you hit the limit to avoid "
+"service interruption."
+msgstr ""
+
+#: inc/ConversionCTA.php:73
+msgid "Upgrade Before Limit"
+msgstr ""
+
+#: inc/ConversionCTA.php:78
+msgid "Unlock Premium Features"
+msgstr ""
+
+#: inc/ConversionCTA.php:79
+msgid ""
+"Get AI-powered accessibility fixes, monthly compliance audits, custom widget "
+"styling, and priority support."
+msgstr ""
+
+#: inc/ConversionCTA.php:80
+msgid "Start 7-Day Trial"
+msgstr ""
+
+#: inc/ConversionCTA.php:85
+msgid "Scale with Add-Ons"
+msgstr ""
+
+#: inc/ConversionCTA.php:86
+msgid ""
+"Need more pageviews, AI fixes, or audits? Add custom limits to your plan or "
+"upgrade to Enterprise for unlimited access."
+msgstr ""
+
+#: inc/ConversionCTA.php:87
+msgid "Explore Add-Ons"
+msgstr ""
+
+#: inc/DashboardBanner.php:66
+msgid "Get the Most Out of AllAccessible! 🚀"
+msgstr ""
+
+#: inc/DashboardBanner.php:69
+msgid ""
+"Complete the quick 2-minute setup to activate your accessibility widget and "
+"unlock premium features."
+msgstr ""
+
+#: inc/DashboardBanner.php:76
+msgid "Start Setup"
+msgstr ""
+
+#. translators: %s: accessibility score 0-100 or em-dash
+#: inc/DashboardLayout.php:75
+#, php-format
+msgid "Accessibility score %s out of 100"
+msgstr ""
+
+#: inc/DashboardLayout.php:152
+msgid "Daily"
+msgstr ""
+
+#: inc/DashboardLayout.php:153 inc/FeatureComparison.php:75
+msgid "Weekly"
+msgstr ""
+
+#: inc/DashboardLayout.php:154 inc/FeatureComparison.php:74
+msgid "Monthly"
+msgstr ""
+
+#: inc/DashboardLayout.php:155
+msgid "On-demand"
+msgstr ""
+
+#. translators: %s: number of days between scans
+#: inc/DashboardLayout.php:162
+#, php-format
+msgid "Every %s days"
+msgstr ""
+
+#: inc/DashboardLayout.php:170
+msgid "Scans"
+msgstr ""
+
+#: inc/DashboardLayout.php:171
+msgid "Scheduled scans"
+msgstr ""
+
+#. translators: %s: human time diff, e.g. "2 hours"
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/DashboardLayout.php:176 inc/EditorMetaBox.php:199
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: inc/DashboardLayout.php:180 inc/ScanTriggerPanel.php:91
+msgid "No scans yet"
+msgstr ""
+
+#. translators: %s: human time diff
+#: inc/DashboardLayout.php:184
+#, php-format
+msgid "in %s"
+msgstr ""
+
+#: inc/DashboardLayout.php:185
+msgid "due now"
+msgstr ""
+
+#: inc/DashboardLayout.php:193 inc/OnboardingWizard.php:451
+#: inc/ScanTriggerPanel.php:29
+msgid "Run your first scan"
+msgstr ""
+
+#: inc/DashboardLayout.php:197
+msgid "Excellent — strong accessibility coverage."
+msgstr ""
+
+#: inc/DashboardLayout.php:199
+msgid "Good — a few fixes to go."
+msgstr ""
+
+#: inc/DashboardLayout.php:201
+msgid "Needs attention."
+msgstr ""
+
+#: inc/DashboardLayout.php:203
+msgid "Needs work — start with the top issues."
+msgstr ""
+
+#: inc/DashboardLayout.php:209
+msgid ""
+"Run a scan and AllAccessible agents will check every page for accessibility "
+"issues."
+msgstr ""
+
+#. translators: %s: percentage with <b> wrapper
+#: inc/DashboardLayout.php:215
+#, php-format
+msgid "%s%% of issues remediated"
+msgstr ""
+
+#: inc/DashboardLayout.php:221
+#, php-format
+msgid "%s page audited"
+msgid_plural "%s pages audited"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/DashboardLayout.php:227
+msgid "View pages"
+msgstr ""
+
+#: inc/DashboardLayout.php:239
+#, php-format
+msgid "%s fix is ready for your review"
+msgid_plural "%s fixes are ready for your review"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/DashboardLayout.php:247
+#, php-format
+msgid "%s issue needs a manual fix"
+msgid_plural "%s issues need a manual fix"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/DashboardLayout.php:251
+msgid "View issues"
+msgstr ""
+
+#: inc/DashboardLayout.php:254
+msgid "You're all caught up — AllAccessible agents are monitoring your site."
+msgstr ""
+
+#: inc/DashboardLayout.php:257
+msgid "No scan yet — run one to find and fix accessibility issues."
+msgstr ""
+
+#: inc/DashboardLayout.php:259 inc/OnboardingWizard.php:106
+#: inc/OnboardingWizard.php:236
+msgid "Get started"
+msgstr ""
+
+#: inc/DashboardLayout.php:264
+msgid "AI-resolved"
+msgstr ""
+
+#: inc/DashboardLayout.php:265
+msgid "manual"
+msgstr ""
+
+#: inc/DashboardLayout.php:267
+msgid "images with alt text"
+msgstr ""
+
+#: inc/DashboardLayout.php:270
+msgid "pageviews"
+msgstr ""
+
+#: inc/DashboardLayout.php:276
+msgid "Accessibility status"
+msgstr ""
+
+#: inc/DashboardLayout.php:282
+msgid "Live · updates nightly"
+msgstr ""
+
+#: inc/DashboardLayout.php:287 inc/SettingsPage.php:387
+#: inc/SettingsPage.php:645
+msgid "Preview widget"
+msgstr ""
+
+#: inc/DashboardLayout.php:297
+msgid "Scan schedule"
+msgstr ""
+
+#: inc/DashboardLayout.php:303
+msgid ""
+"How often AllAccessible automatically scans your whole site behind the "
+"scenes for a deep accessibility analysis. You can also run on-demand scans "
+"of individual pages anytime — from the WordPress page editor, or on the "
+"front end while logged in."
+msgstr ""
+
+#: inc/DashboardLayout.php:306
+msgid "Frequency"
+msgstr ""
+
+#: inc/DashboardLayout.php:309
+msgid "Last"
+msgstr ""
+
+#: inc/DashboardLayout.php:312 inc/ImageManagerPage.php:523
+msgid "Next"
+msgstr ""
+
+#: inc/DashboardLayout.php:326
+msgid "Remediation activity"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:92
+msgid "Quick Feedback"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:95
+msgid "Help us improve AllAccessible"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:100
+msgid ""
+"If you have a moment, please let us know why you're deactivating "
+"AllAccessible. All submissions are anonymous and help us improve."
+msgstr ""
+
+#: inc/DeactivationSurvey.php:113
+msgid "The plugin stopped working"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:116
+#, php-format
+msgid "We're sorry! Please %scontact support%s or describe the issue:"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:127
+msgid "Missing features I need"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:130
+msgid "What features would make you stay?"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:141
+msgid "Found a better plugin"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:144
+msgid "Which plugin are you switching to?"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:155
+msgid "Temporary - troubleshooting an issue"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:163
+msgid "I don't need accessibility features anymore"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:171
+msgid "Other"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:173
+msgid "Please tell us more..."
+msgstr ""
+
+#: inc/DeactivationSurvey.php:185
+msgid "Skip & Deactivate"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:192
+msgid "Submit & Deactivate"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:238
+msgid "Please select a reason"
+msgstr ""
+
+#: inc/DeactivationSurvey.php:253
+msgid "Submitting..."
+msgstr ""
+
+#: inc/EditorMetaBox.php:52 inc/EditorMetaBox.php:63
+msgid "Accessibility Score"
+msgstr ""
+
+#: inc/EditorMetaBox.php:98
+msgid "Loading score..."
+msgstr ""
+
+#: inc/EditorMetaBox.php:99
+msgid "Error loading score"
+msgstr ""
+
+#: inc/EditorMetaBox.php:100
+msgid "Rescan initiated successfully"
+msgstr ""
+
+#: inc/EditorMetaBox.php:101
+msgid "Error initiating rescan"
+msgstr ""
+
+#: inc/EditorMetaBox.php:118
+msgid "Publish this page to see its accessibility score."
+msgstr ""
+
+#: inc/EditorMetaBox.php:151
+msgid "Score unavailable"
+msgstr ""
+
+#: inc/EditorMetaBox.php:153
+msgid ""
+"Could not load this page's accessibility score. Try refreshing the editor."
+msgstr ""
+
+#: inc/EditorMetaBox.php:177
+msgid "Needs attention"
+msgstr ""
+
+#: inc/EditorMetaBox.php:180 inc/PostListColumn.php:447
+msgid "Awaiting scan"
+msgstr ""
+
+#: inc/EditorMetaBox.php:183
+msgid "Excellent"
+msgstr ""
+
+#: inc/EditorMetaBox.php:186
+msgid "Good"
+msgstr ""
+
+#: inc/EditorMetaBox.php:189
+msgid "Needs review"
+msgstr ""
+
+#: inc/EditorMetaBox.php:235
+#, php-format
+msgid "Accessibility score %1$d out of 100, %2$s. Open full audit."
+msgstr ""
+
+#: inc/EditorMetaBox.php:236
+msgid "Accessibility score not available yet."
+msgstr ""
+
+#. translators: 1: raw, 2: current, 3: lift delta
+#: inc/EditorMetaBox.php:265
+#, php-format
+msgid ""
+"Score lifted from %1$d to %2$d by AllAccessible AI, a gain of %3$d points."
+msgstr ""
+
+#. translators: %s: count of issues AllAccessible auto-resolves at runtime
+#: inc/EditorMetaBox.php:286
+#, php-format
+msgid "%s issue resolved by AllAccessible"
+msgid_plural "%s issues resolved by AllAccessible"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: count of live agentic AI fixes
+#: inc/EditorMetaBox.php:293
+#, php-format
+msgid "%s agentic AI fix live"
+msgid_plural "%s agentic AI fixes live"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/EditorMetaBox.php:307
+#, php-format
+msgid ""
+"Review %1$d pending agentic AI fix; approve to reach %2$d%% accessibility "
+"score"
+msgid_plural ""
+"Review %1$d pending agentic AI fixes; approve to reach %2$d%% accessibility "
+"score"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: count of pending fixes
+#: inc/EditorMetaBox.php:323
+#, php-format
+msgid "%s fix ready to review"
+msgid_plural "%s fixes ready to review"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: potential score
+#: inc/EditorMetaBox.php:330
+#, php-format
+msgid "Approve to reach %s%%"
+msgstr ""
+
+#. translators: %s: total issues
+#: inc/EditorMetaBox.php:344
+#, php-format
+msgid "Issues (%s)"
+msgstr ""
+
+#: inc/EditorMetaBox.php:351
+msgid "Critical"
+msgstr ""
+
+#: inc/EditorMetaBox.php:352
+msgid "Serious"
+msgstr ""
+
+#: inc/EditorMetaBox.php:353
+msgid "Moderate"
+msgstr ""
+
+#: inc/EditorMetaBox.php:354
+msgid "Minor"
+msgstr ""
+
+#. translators: %s: human-readable time ago
+#: inc/EditorMetaBox.php:378
+#, php-format
+msgid "Last scanned %s"
+msgstr ""
+
+#: inc/EditorMetaBox.php:392
+msgid "View full report"
+msgstr ""
+
+#: inc/EditorMetaBox.php:400
+msgid "Rescan this page"
+msgstr ""
+
+#: inc/EditorMetaBox.php:441
+msgid "Scan complete. Refreshing…"
+msgstr ""
+
+#: inc/EditorMetaBox.php:442
+msgid "Scan complete. Save or reload to see the updated score."
+msgstr ""
+
+#: inc/EditorMetaBox.php:443
+msgid "Reload now"
+msgstr ""
+
+#: inc/EditorMetaBox.php:445
+msgid "Still running — refresh the page in a minute."
+msgstr ""
+
+#: inc/EditorMetaBox.php:447
+msgid "Could not start scan."
+msgstr ""
+
+#: inc/EditorMetaBox.php:448
+msgid "Network error. Check your connection and try again."
+msgstr ""
+
+#: inc/EditorMetaBox.php:587
+msgid "Page-level score"
+msgstr ""
+
+#: inc/EditorMetaBox.php:590
+msgid "Site-level score (page not yet crawled)"
+msgstr ""
+
+#: inc/EditorMetaBox.php:593 inc/SettingsPage.php:575
+msgid "Awaiting first scan"
+msgstr ""
+
+#: inc/EditorMetaBox.php:821
+msgid "Premium Feature"
+msgstr ""
+
+#: inc/EditorMetaBox.php:824
+msgid "See accessibility scores for each page/post with a premium account."
+msgstr ""
+
+#: inc/EditorMetaBox.php:827
 msgid "Upgrade to Premium"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:138
-msgid "Plugin Configuration"
+#: inc/EditorMetaBox.php:830
+msgid "7-day free trial available"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:139
-#, php-format
-msgid "%1$s is connected to %2$s with account ID %3$s"
+#: inc/FeatureComparison.php:28
+msgid "Compare Plans"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:161
-msgid "Choose Widget Color"
+#: inc/FeatureComparison.php:37
+msgid "Feature"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:167
-msgid "Choose Icon"
+#: inc/FeatureComparison.php:52
+msgid "Accessibility Widget"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:189 inc/AllAccessibleSettings.php:190
-msgid "Choose Widget Size"
+#: inc/FeatureComparison.php:53 inc/FeatureComparison.php:54
+#: inc/FeatureComparison.php:55 inc/FeatureComparison.php:80
+#: inc/FeatureComparison.php:81 inc/FeatureComparison.php:87
+#: inc/FeatureComparison.php:92
+msgid "Included"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:192
-msgid "Small"
+#: inc/FeatureComparison.php:58
+msgid "Monthly Pageviews"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:193
-msgid "Medium (Default)"
+#: inc/FeatureComparison.php:61 inc/FeatureComparison.php:68
+#: inc/FeatureComparison.php:69
+msgid "Unlimited"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:194
-msgid "Large"
+#: inc/FeatureComparison.php:65
+msgid "AI Image Alt Text"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:202
-msgid "Choose Widget Position"
+#: inc/FeatureComparison.php:67
+msgid "10 preview"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:204
-msgid "Bottom Right"
+#: inc/FeatureComparison.php:72
+msgid "Compliance Audits"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:205 inc/AllAccessibleSettings.php:206
-msgid "Middle Right"
+#: inc/FeatureComparison.php:73 inc/FeatureComparison.php:79
+#: inc/FeatureComparison.php:85 inc/FeatureComparison.php:86
+#: inc/FeatureComparison.php:91
+msgid "Not included"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:207
-msgid "Bottom Center"
+#: inc/FeatureComparison.php:78
+msgid "Widget Customization"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:208
-msgid "Bottom Left"
+#: inc/FeatureComparison.php:84
+msgid "VPAT Reports"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:209
-msgid "Middle Left"
+#: inc/FeatureComparison.php:90
+msgid "Priority Support"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:210
-msgid "Top Left"
+#: inc/FeatureComparison.php:93
+msgid "Dedicated"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:216 inc/AllAccessibleSettings.php:217
-msgid "Choose Widget Shape"
+#: inc/FeatureComparison.php:103
+msgid "Upgrade Plan"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:220
-msgid "Circle"
+#: inc/ImageManagerPage.php:28 inc/ImageManagerPage.php:29
+#: inc/SettingsPage.php:608
+msgid "Image AI"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:221
-msgid "Square"
+#: inc/ImageManagerPage.php:101
+msgid "Image alt text is available on paid plans"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:234
-msgid "Hide AllAccessible Branding"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:235
-msgid "Remove Branding"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:237
-msgid "Branding Visible"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:238
-msgid "Branding Removed"
-msgstr ""
-
-#: inc/AllAccessibleSettings.php:241
+#: inc/ImageManagerPage.php:102
 msgid ""
-"Note: Hiding the branding will remove the \"Powered by AllAccessible\" text "
-"and logo from the widget."
+"Upgrade to review, refine, and approve every alt text on your site. Includes "
+"inline editing, manual overrides, and full media library coverage."
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:246
-msgid "Save Settings"
+#: inc/ImageManagerPage.php:116
+msgid "Could not load image data right now."
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:252
-msgid "You may need to reload this page if your widget options are not visible"
+#. translators: %d = number of images on this page
+#: inc/ImageManagerPage.php:132
+#, php-format
+msgid "%d image on this page."
+msgid_plural "%d images on this page."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/ImageManagerPage.php:157 inc/PostListColumn.php:264
+#: inc/PostListColumn.php:270 inc/constants.php:19
+msgid "Accessibility"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:259
-msgid "Version"
+#: inc/ImageManagerPage.php:159
+msgid "Image alt text"
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Need Help"
+#: inc/ImageManagerPage.php:163
+msgid ""
+"AllAccessible AI suggests descriptive alt text for every image on your site. "
+"Review and approve, or edit before it goes live."
 msgstr ""
 
-#: inc/AllAccessibleSettings.php:260
-msgid "Contact Us"
+#: inc/ImageManagerPage.php:167 inc/SettingsPage.php:836
+msgid "Open full dashboard"
+msgstr ""
+
+#: inc/ImageManagerPage.php:189
+msgid "images"
+msgstr ""
+
+#: inc/ImageManagerPage.php:193
+msgid "with alt text"
+msgstr ""
+
+#. translators: %d = percentage
+#: inc/ImageManagerPage.php:194
+#, php-format
+msgid "%d%%"
+msgstr ""
+
+#: inc/ImageManagerPage.php:200
+msgid "AI-authored"
+msgstr ""
+
+#: inc/ImageManagerPage.php:212
+msgid "All images"
+msgstr ""
+
+#: inc/ImageManagerPage.php:213
+msgid "Missing alt"
+msgstr ""
+
+#: inc/ImageManagerPage.php:214
+msgid "AI-suggested"
+msgstr ""
+
+#: inc/ImageManagerPage.php:215 inc/SettingsPage.php:450
+msgid "Manual"
+msgstr ""
+
+#: inc/ImageManagerPage.php:226
+msgid "Show"
+msgstr ""
+
+#: inc/ImageManagerPage.php:237
+msgid "Search filename or alt text"
+msgstr ""
+
+#: inc/ImageManagerPage.php:240
+msgid "Type to filter visible images…"
+msgstr ""
+
+#: inc/ImageManagerPage.php:245
+msgid "Apply"
+msgstr ""
+
+#: inc/ImageManagerPage.php:294
+msgid "AI suggestion"
+msgstr ""
+
+#: inc/ImageManagerPage.php:320
+msgid "No alt text yet."
+msgstr ""
+
+#: inc/ImageManagerPage.php:332
+msgid "Found on:"
+msgstr ""
+
+#: inc/ImageManagerPage.php:361
+msgid "Needs alt"
+msgstr ""
+
+#: inc/ImageManagerPage.php:364
+msgid "Set"
+msgstr ""
+
+#. translators: %d = image ID
+#: inc/ImageManagerPage.php:371 inc/ImageManagerPage.php:379
+#, php-format
+msgid "Image #%d"
+msgstr ""
+
+#: inc/ImageManagerPage.php:407
+#, php-format
+msgid "You've used %1$d of %2$d preview alt-texts on this site"
+msgstr ""
+
+#: inc/ImageManagerPage.php:412
+msgid ""
+"Real AI output, drafted for your real images. Upgrade to unlock unlimited "
+"alt-text generation for every image on your site."
+msgstr ""
+
+#: inc/ImageManagerPage.php:455
+#, php-format
+msgid "Unlock AI alt text for all %d images on your site"
+msgstr ""
+
+#: inc/ImageManagerPage.php:478
+msgid "No images discovered yet"
+msgstr ""
+
+#: inc/ImageManagerPage.php:480
+msgid ""
+"Scan your site to discover images. AllAccessible AI writes alt text for each "
+"one automatically. You can review or override any entry from this page."
+msgstr ""
+
+#: inc/ImageManagerPage.php:483
+msgid "Scan your site to discover images"
+msgstr ""
+
+#: inc/ImageManagerPage.php:504
+msgid "Image pagination"
+msgstr ""
+
+#. translators: 1: current page, 2: total pages, 3: total items
+#: inc/ImageManagerPage.php:508
+#, php-format
+msgid "Page %1$d of %2$d (%3$s images)"
+msgstr ""
+
+#: inc/ImageManagerPage.php:518
+msgid "Previous"
+msgstr ""
+
+#: inc/ImageManagerPage.php:540
+msgid "Edit alt text"
+msgstr ""
+
+#: inc/ImageManagerPage.php:541
+msgid "Close"
+msgstr ""
+
+#: inc/ImageManagerPage.php:553
+msgid "AllAccessible AI suggests"
+msgstr ""
+
+#: inc/ImageManagerPage.php:559
+msgid "Use this suggestion"
+msgstr ""
+
+#: inc/ImageManagerPage.php:564
+msgid "Alt text"
+msgstr ""
+
+#: inc/ImageManagerPage.php:570
+msgid ""
+"Aim for 1–2 sentences describing the image's purpose, not its appearance."
+msgstr ""
+
+#: inc/ImageManagerPage.php:670
+msgid ""
+"Saved. Updates may take up to a minute to appear after refresh as the change "
+"propagates through our system."
+msgstr ""
+
+#: inc/ImageManagerPage.php:707
+msgid "Alt text is required."
+msgstr ""
+
+#: inc/ImageManagerPage.php:711
+msgid "Alt text must be 500 characters or fewer."
+msgstr ""
+
+#: inc/ImageManagerPage.php:716 inc/SettingsPage.php:1218
+msgid "Saving…"
+msgstr ""
+
+#: inc/ImageManagerPage.php:726 inc/SettingsPage.php:1785
+msgid "Save failed"
+msgstr ""
+
+#: inc/ImageManagerPage.php:745
+msgid "Save failed. Please try again."
+msgstr ""
+
+#: inc/ImageManagerPage.php:766
+msgid "Showing all images on this page."
+msgstr ""
+
+#: inc/ImageManagerPage.php:768
+#, php-format
+msgid "Showing %d images matching your search."
+msgstr ""
+
+#: inc/ImageManagerPage.php:787
+msgid "Insufficient permissions"
+msgstr ""
+
+#: inc/ImageManagerPage.php:796 inc/api/ApiClient.php:901
+msgid "Invalid image ID"
+msgstr ""
+
+#: inc/ImageManagerPage.php:799 inc/api/ApiClient.php:905
+msgid "Alt text must be 1–500 characters"
+msgstr ""
+
+#: inc/OnboardingWizard.php:43
+msgid "AllAccessible Setup"
+msgstr ""
+
+#: inc/OnboardingWizard.php:44
+msgid "Setup"
+msgstr ""
+
+#: inc/OnboardingWizard.php:107
+msgid "First scan"
+msgstr ""
+
+#: inc/OnboardingWizard.php:112
+msgid "AllAccessible setup"
+msgstr ""
+
+#: inc/OnboardingWizard.php:119
+msgid "Setup progress"
+msgstr ""
+
+#: inc/OnboardingWizard.php:144
+msgid "Step 1 of 2"
+msgstr ""
+
+#: inc/OnboardingWizard.php:146 inc/OnboardingWizard.php:808
+msgid "Welcome to AllAccessible"
+msgstr ""
+
+#: inc/OnboardingWizard.php:149
+msgid ""
+"Make this WordPress site usable for every visitor. Enter your email and pick "
+"a plan to get started."
+msgstr ""
+
+#: inc/OnboardingWizard.php:155
+msgid "See what an account does for you"
+msgstr ""
+
+#: inc/OnboardingWizard.php:165
+msgid "Accessibility scans"
+msgstr ""
+
+#: inc/OnboardingWizard.php:168
+msgid ""
+"Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged."
+msgstr ""
+
+#: inc/OnboardingWizard.php:179
+msgid "24 fixed"
+msgstr ""
+
+#: inc/OnboardingWizard.php:180
+msgid "3 to review"
+msgstr ""
+
+#: inc/OnboardingWizard.php:190
+msgid "Agentic AI fixes"
+msgstr ""
+
+#: inc/OnboardingWizard.php:193
+msgid "AI drafts the fix; your team approves before anything ships."
+msgstr ""
+
+#: inc/OnboardingWizard.php:196
+msgid "Issue: button missing accessible name"
+msgstr ""
+
+#: inc/OnboardingWizard.php:198
+msgid "AI fix"
+msgstr ""
+
+#: inc/OnboardingWizard.php:207
+msgid "Smart alt text"
+msgstr ""
+
+#: inc/OnboardingWizard.php:210
+msgid ""
+"Missing alt generated for every image, in the language your visitors use."
+msgstr ""
+
+#: inc/OnboardingWizard.php:218
+msgid "AI generated"
+msgstr ""
+
+#: inc/OnboardingWizard.php:220
+msgid "A golden retriever sitting in a sunlit park, wearing a pink bandana."
+msgstr ""
+
+#: inc/OnboardingWizard.php:246
+msgid "Email address"
+msgstr ""
+
+#: inc/OnboardingWizard.php:258 inc/OnboardingWizard.php:811
+msgid ""
+"We'll create a new account or link your existing one — same email, either "
+"way."
+msgstr ""
+
+#: inc/OnboardingWizard.php:265
+msgid "Plan"
+msgstr ""
+
+#: inc/OnboardingWizard.php:271
+msgid "Free forever"
+msgstr ""
+
+#: inc/OnboardingWizard.php:277
+msgid "Widget, contrast + sizing controls, essential accessibility tools."
+msgstr ""
+
+#: inc/OnboardingWizard.php:285
+msgid "Most popular"
+msgstr ""
+
+#: inc/OnboardingWizard.php:291
+msgid "7 days free"
+msgstr ""
+
+#: inc/OnboardingWizard.php:291
+msgid "then $10/mo"
+msgstr ""
+
+#: inc/OnboardingWizard.php:294
+msgid "Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits."
+msgstr ""
+
+#: inc/OnboardingWizard.php:307
+msgid "Ready to reconnect"
+msgstr ""
+
+#: inc/OnboardingWizard.php:321
+msgid "Heads up:"
+msgstr ""
+
+#: inc/OnboardingWizard.php:322
+msgid ""
+"This site is on another AllAccessible account. The plugin will work right "
+"away, but the site only appears in your dashboard once the existing admin "
+"approves your access — they'll get an email automatically."
+msgstr ""
+
+#: inc/OnboardingWizard.php:332 inc/OnboardingWizard.php:670
+#: inc/OnboardingWizard.php:682 inc/OnboardingWizard.php:703
+#: inc/OnboardingWizard.php:734 inc/OnboardingWizard.php:816
+msgid "Continue"
+msgstr ""
+
+#. translators: 1: Terms link, 2: Privacy Policy link
+#: inc/OnboardingWizard.php:340
+#, php-format
+msgid "By continuing you agree to our %1$s and %2$s."
+msgstr ""
+
+#: inc/OnboardingWizard.php:341 inc/SettingsPage.php:1445
+msgid "Terms & Conditions"
+msgstr ""
+
+#: inc/OnboardingWizard.php:342 inc/SettingsPage.php:1446
+msgid "Privacy Policy"
+msgstr ""
+
+#: inc/OnboardingWizard.php:351
+msgid "Skip and use just the free widget"
+msgstr ""
+
+#: inc/OnboardingWizard.php:377
+msgid "Interactions / month"
+msgstr ""
+
+#: inc/OnboardingWizard.php:385
+msgid "Visitors served / month"
+msgstr ""
+
+#: inc/OnboardingWizard.php:393
+msgid "Protecting WordPress"
+msgstr ""
+
+#: inc/OnboardingWizard.php:398
+msgid "WCAG 2.2"
+msgstr ""
+
+#: inc/OnboardingWizard.php:399
+msgid "ADA"
+msgstr ""
+
+#: inc/OnboardingWizard.php:400
+msgid "Section 508"
+msgstr ""
+
+#: inc/OnboardingWizard.php:401
+msgid "EAA 2025"
+msgstr ""
+
+#: inc/OnboardingWizard.php:422
+msgid "Free to start"
+msgstr ""
+
+#: inc/OnboardingWizard.php:426
+msgid "No credit card required"
+msgstr ""
+
+#: inc/OnboardingWizard.php:430
+msgid "Privacy-first — GDPR / CCPA"
+msgstr ""
+
+#: inc/OnboardingWizard.php:434
+msgid "Cancel any time on paid plans"
+msgstr ""
+
+#: inc/OnboardingWizard.php:438
+msgid "Trusted on thousands of WordPress sites worldwide."
+msgstr ""
+
+#: inc/OnboardingWizard.php:450
+msgid "Step 2 of 2"
+msgstr ""
+
+#: inc/OnboardingWizard.php:453
+msgid "Account ready"
+msgstr ""
+
+#: inc/OnboardingWizard.php:462
+msgid "Your account is set up."
+msgstr ""
+
+#: inc/OnboardingWizard.php:464
+msgid ""
+"The AllAccessible agents are ready to scan this site for accessibility "
+"issues."
+msgstr ""
+
+#: inc/OnboardingWizard.php:474
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; you can re-run it any time from "
+"the Agentic Fixes page."
+msgstr ""
+
+#: inc/OnboardingWizard.php:483
+msgid "Skip for now"
+msgstr ""
+
+#: inc/OnboardingWizard.php:486
+msgid "Go to dashboard"
+msgstr ""
+
+#: inc/OnboardingWizard.php:587
+msgid "Skip setup for now? You can finish any time from the settings page."
+msgstr ""
+
+#: inc/OnboardingWizard.php:619
+msgid "Account created. Provisioning your site…"
+msgstr ""
+
+#: inc/OnboardingWizard.php:622
+msgid "Welcome back. We linked this WordPress site to your account."
+msgstr ""
+
+#: inc/OnboardingWizard.php:625
+msgid "Welcome back. This site was already on your account."
+msgstr ""
+
+#: inc/OnboardingWizard.php:627
+msgid "Connected."
+msgstr ""
+
+#: inc/OnboardingWizard.php:639
+msgid "Please enter your email address."
+msgstr ""
+
+#: inc/OnboardingWizard.php:644
+msgid "Setting things up…"
+msgstr ""
+
+#: inc/OnboardingWizard.php:645
+msgid "Connecting to AllAccessible…"
+msgstr ""
+
+#: inc/OnboardingWizard.php:668
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: inc/OnboardingWizard.php:680
+msgid "We received an unexpected response. Please try again."
+msgstr ""
+
+#: inc/OnboardingWizard.php:701 inc/OnboardingWizard.php:883
+msgid "We could not save your settings. Please try again."
+msgstr ""
+
+#: inc/OnboardingWizard.php:728
+msgid "We could not reach AllAccessible. Please try again."
+msgstr ""
+
+#: inc/OnboardingWizard.php:753 inc/OnboardingWizard.php:781
+msgid "Welcome back"
+msgstr ""
+
+#: inc/OnboardingWizard.php:763
+msgid "Linking"
+msgstr ""
+
+#: inc/OnboardingWizard.php:764
+msgid "to"
+msgstr ""
+
+#: inc/OnboardingWizard.php:768
+msgid "Reconnect this site"
+msgstr ""
+
+#: inc/OnboardingWizard.php:783
+msgid ""
+"We will link this WordPress site to your existing AllAccessible account."
+msgstr ""
+
+#: inc/OnboardingWizard.php:788
+msgid "Connect this site"
+msgstr ""
+
+#: inc/OnboardingWizard.php:795
+msgid "Request access to this site"
+msgstr ""
+
+#: inc/OnboardingWizard.php:797
+msgid ""
+"This site is on another AllAccessible account. Enter your email to request "
+"access."
+msgstr ""
+
+#: inc/OnboardingWizard.php:802
+msgid "Request access"
+msgstr ""
+
+#: inc/OnboardingWizard.php:868
+msgid "Reconnecting…"
+msgstr ""
+
+#: inc/OnboardingWizard.php:879
+msgid "Reconnected. Provisioning…"
+msgstr ""
+
+#: inc/OnboardingWizard.php:906
+msgid "Permission denied"
+msgstr ""
+
+#: inc/PostListColumn.php:306
+msgid "Loading accessibility score"
+msgstr ""
+
+#: inc/PostListColumn.php:307
+msgid "Loading"
+msgstr ""
+
+#: inc/PostListColumn.php:308
+msgid "Loading…"
+msgstr ""
+
+#: inc/PostListColumn.php:434
+msgid "Will scan on publish"
+msgstr ""
+
+#: inc/PostListColumn.php:435
+msgid ""
+"Drafts are not reachable by the public crawler. Publish to scan "
+"automatically, or preview to scan now."
+msgstr ""
+
+#: inc/PostListColumn.php:440
+msgid "Preview & scan"
+msgstr ""
+
+#: inc/PostListColumn.php:445
+msgid "Awaiting scan — AllAccessible will populate this on the next crawl"
+msgstr ""
+
+#: inc/PostListColumn.php:456
+msgid "Score is stale — page hasn't been scanned recently"
+msgstr ""
+
+#: inc/PostListColumn.php:457
+msgid "Last scan failed"
+msgstr ""
+
+#: inc/PostListColumn.php:458
+msgid "Accessibility score"
+msgstr ""
+
+#: inc/PostListColumn.php:468
+msgid "Approve pending fixes to reach this score"
+msgstr ""
+
+#: inc/ReviewNudge.php:73
+msgid "How's your experience with AllAccessible so far?"
+msgstr ""
+
+#: inc/ReviewNudge.php:77
+msgid "Great 😊"
+msgstr ""
+
+#: inc/ReviewNudge.php:80
+msgid "Could be better"
+msgstr ""
+
+#: inc/ReviewNudge.php:83
+msgid "Maybe later"
+msgstr ""
+
+#: inc/ReviewNudge.php:91
+msgid "That's wonderful to hear!"
+msgstr ""
+
+#: inc/ReviewNudge.php:92
+msgid ""
+"A quick review on WordPress.org helps other site owners find us — it takes "
+"about 30 seconds and means a lot."
+msgstr ""
+
+#: inc/ReviewNudge.php:97
+msgid "Leave a review"
+msgstr ""
+
+#: inc/ReviewNudge.php:100
+msgid "I already did"
+msgstr ""
+
+#: inc/ReviewNudge.php:108
+msgid "Sorry to hear that — we'd like to make it right."
+msgstr ""
+
+#: inc/ReviewNudge.php:109
+msgid ""
+"Tell us what's not working and we'll follow up. This goes straight to our "
+"team."
+msgstr ""
+
+#: inc/ReviewNudge.php:113
+msgid "What could be better?"
+msgstr ""
+
+#: inc/ReviewNudge.php:117
+msgid "Send feedback"
+msgstr ""
+
+#: inc/ReviewNudge.php:121 inc/SettingsPage.php:1428
+msgid "Contact support"
+msgstr ""
+
+#: inc/ReviewNudge.php:129
+msgid "Thank you — we appreciate you."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:30
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; future scans then run "
+"automatically based on your plan."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:43
+msgid "Scan now"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:44 inc/ScanTriggerPanel.php:257
+#: inc/ScanTriggerPanel.php:311
+msgid "Run scan again"
+msgstr ""
+
+#. translators: %s: human-readable time until
+#: inc/ScanTriggerPanel.php:101
+#, php-format
+msgid "Next scan in %s"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:105
+msgid "Next scan due now"
+msgstr ""
+
+#. translators: %s: human-readable time difference
+#: inc/ScanTriggerPanel.php:117
+#, php-format
+msgid "Last scan triggered %s ago"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:131
+#, php-format
+msgid "%d published page will be scanned. This can take a minute or two."
+msgid_plural ""
+"%d published pages and posts will be scanned. This can take a minute or two."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/ScanTriggerPanel.php:157
+msgid "pages scanned"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:166
+msgid ""
+"pages scanned. Accessibility scores appear in your Pages list within a "
+"minute or two as the AI finishes reviewing."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:168
+msgid "Open Pages list"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:182
+msgid "Scan a specific sitemap instead (advanced)"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:186
+msgid ""
+"Leave this closed to let AllAccessible auto-discover your pages "
+"(recommended). Open only to point the scan at a specific sitemap."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:189 inc/ScanTriggerPanel.php:345
+msgid "Looking for sitemaps…"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:221
+msgid "Enter your sitemap URL, or close Advanced to auto-discover."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:232
+msgid "Starting…"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:244
+msgid "Scan failed to start."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:245 inc/ScanTriggerPanel.php:265
+#: inc/ScanTriggerPanel.php:290
+msgid "Start first scan"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:255
+msgid "Scan started. Results appear on the Agentic Fixes page in 2-5 minutes."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:256
+msgid "Scan triggered just now"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:264
+msgid "Server did not return a job ID."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:274
+msgid "Finishing setup…"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:279
+msgid "Network error"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:285
+msgid "Server timeout while queuing scan. Try again."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:287
+#, php-format
+msgid "Request failed (HTTP %s)"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:316
+msgid "Scan failed. Try again."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:318
+msgid "Retry scan"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:334 inc/ScanTriggerPanel.php:354
+msgid "Detected"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:361
+msgid "Open & verify"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:365
+msgid ""
+"No reachable sitemap found. Enter one below, or close Advanced to auto-"
+"discover."
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:370
+msgid "Enter my own sitemap URL"
+msgstr ""
+
+#: inc/ScanTriggerPanel.php:376
+msgid "Could not check for sitemaps. Close Advanced to auto-discover instead."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
+#: inc/SettingsPage.php:36 inc/SettingsPage.php:37 inc/SettingsPage.php:373
+#: inc/SettingsPage.php:820
 msgid "AllAccessible"
+msgstr ""
+
+#: inc/SettingsPage.php:59 inc/SettingsPage.php:822
+msgid "Account & Settings"
+msgstr ""
+
+#: inc/SettingsPage.php:60
+msgid "Account"
+msgstr ""
+
+#: inc/SettingsPage.php:70 inc/SettingsPage.php:71 inc/SettingsPage.php:108
+msgid "Widget Customizer"
+msgstr ""
+
+#: inc/SettingsPage.php:107 inc/SettingsPage.php:881
+msgid "Widget"
+msgstr ""
+
+#: inc/SettingsPage.php:109
+msgid ""
+"Customize the AllAccessible widget that visitors see on your site. Changes "
+"save instantly and clear the visitor cache."
+msgstr ""
+
+#: inc/SettingsPage.php:119
+msgid "Connect your AllAccessible account"
+msgstr ""
+
+#: inc/SettingsPage.php:120
+msgid "Finish setup to customize your widget."
+msgstr ""
+
+#: inc/SettingsPage.php:122 inc/SettingsPage.php:850
+msgid "Start setup"
+msgstr ""
+
+#: inc/SettingsPage.php:131
+msgid "Widget customization is a paid feature"
+msgstr ""
+
+#: inc/SettingsPage.php:132
+msgid ""
+"Upgrade your AllAccessible plan to customize the widget color, position, "
+"icon, and shape — plus enable agentic AI remediation."
+msgstr ""
+
+#: inc/SettingsPage.php:333 inc/SettingsPage.php:345 inc/UsageDashboard.php:69
+msgid "Pageviews"
+msgstr ""
+
+#: inc/SettingsPage.php:371 inc/SettingsPage.php:627
+msgid "Site overview"
+msgstr ""
+
+#: inc/SettingsPage.php:380
+msgid "Widget connected"
+msgstr ""
+
+#: inc/SettingsPage.php:384
+msgid ""
+"Accessibility widget and human-in-the-loop agentic AI remediation for your "
+"site."
+msgstr ""
+
+#: inc/SettingsPage.php:420
+msgid ""
+"Your current plan uses the legacy AllAccessible widget, which predates "
+"agentic AI remediation. Upgrade to the current plan tier to unlock auto-"
+"suggested fixes, larger pageview caps, and the full AllAccessible AI feature "
+"set."
+msgstr ""
+
+#: inc/SettingsPage.php:449
+msgid "AI Resolved"
+msgstr ""
+
+#: inc/SettingsPage.php:451
+msgid "Completed"
+msgstr ""
+
+#: inc/SettingsPage.php:452
+msgid "Reopened"
+msgstr ""
+
+#: inc/SettingsPage.php:453
+msgid "Ignored"
+msgstr ""
+
+#: inc/SettingsPage.php:462
+msgid "Activity and quick actions"
+msgstr ""
+
+#: inc/SettingsPage.php:472
+msgid "Agentic Fixes not available on your plan"
+msgstr ""
+
+#: inc/SettingsPage.php:477
+msgid ""
+"The legacy AllAccessible widget keeps running, but the agentic AI "
+"remediation pipeline requires a current plan tier. Upgrade to bring auto-"
+"suggested fixes, larger pageview caps, and continuous accessibility scoring "
+"to this site."
+msgstr ""
+
+#: inc/SettingsPage.php:492
+msgid "Issues from your latest scan"
+msgstr ""
+
+#: inc/SettingsPage.php:494
+msgid "Grouped by rule, newest scan first."
+msgstr ""
+
+#: inc/SettingsPage.php:503
+msgid "View all"
+msgstr ""
+
+#: inc/SettingsPage.php:512
+msgid "Severity"
+msgstr ""
+
+#: inc/SettingsPage.php:513
+msgid "Rule"
+msgstr ""
+
+#: inc/SettingsPage.php:514
+msgid "Issues"
+msgstr ""
+
+#: inc/SettingsPage.php:515
+msgid "WCAG"
+msgstr ""
+
+#: inc/SettingsPage.php:516
+msgid "Status"
+msgstr ""
+
+#: inc/SettingsPage.php:559
+#, php-format
+msgid "%s fix manifest ready for your review."
+msgid_plural "%s fix manifests ready for your review."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/SettingsPage.php:563
+msgid "Review manifests"
+msgstr ""
+
+#: inc/SettingsPage.php:580
+msgid ""
+"AllAccessible agents are getting ready to scan your site. Detected "
+"accessibility issues will appear here grouped by rule once your first crawl "
+"completes."
+msgstr ""
+
+#: inc/SettingsPage.php:583
+msgid "Open coverage"
+msgstr ""
+
+#: inc/SettingsPage.php:593
+msgid "Quick actions"
+msgstr ""
+
+#: inc/SettingsPage.php:599
+msgid "In WordPress"
+msgstr ""
+
+#: inc/SettingsPage.php:612
+msgid "Widget customizer"
+msgstr ""
+
+#: inc/SettingsPage.php:616
+msgid "Account & settings"
+msgstr ""
+
+#: inc/SettingsPage.php:624
+msgid "On AllAccessible"
+msgstr ""
+
+#: inc/SettingsPage.php:631
+msgid "Audit history"
+msgstr ""
+
+#: inc/SettingsPage.php:635
+msgid "Tasks"
+msgstr ""
+
+#: inc/SettingsPage.php:640
+msgid "Reports"
+msgstr ""
+
+#: inc/SettingsPage.php:661
+msgid "Usage limit exceeded"
+msgstr ""
+
+#: inc/SettingsPage.php:669
+#, php-format
+msgid ""
+"You have exceeded your %s limit. Your widget has been temporarily downgraded "
+"to free features. Upgrade your plan to restore premium functionality."
+msgid_plural ""
+"You have exceeded the following limits: %s. Your widget has been temporarily "
+"downgraded to free features. Upgrade your plan to restore premium "
+"functionality."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/SettingsPage.php:697
+msgid "Complete setup to get started"
+msgstr ""
+
+#: inc/SettingsPage.php:698
+msgid ""
+"Your accessibility widget is ready to go. Complete the quick setup wizard to "
+"activate your widget."
+msgstr ""
+
+#: inc/SettingsPage.php:700
+msgid "Start setup wizard"
+msgstr ""
+
+#: inc/SettingsPage.php:830
+msgid ""
+"Manage your AllAccessible account, plan, widget settings, and integrations."
+msgstr ""
+
+#: inc/SettingsPage.php:845
+msgid "No AllAccessible account linked"
+msgstr ""
+
+#: inc/SettingsPage.php:846
+msgid "Complete the setup wizard to activate your accessibility widget."
+msgstr ""
+
+#: inc/SettingsPage.php:864
+msgid "Usage limit reached"
+msgstr ""
+
+#: inc/SettingsPage.php:866
+msgid ""
+"Your widget is running in free mode until usage resets or your plan is "
+"upgraded."
+msgstr ""
+
+#: inc/SettingsPage.php:871
+msgid "Manage plan"
+msgstr ""
+
+#: inc/SettingsPage.php:876
+msgid "Account settings sections"
+msgstr ""
+
+#: inc/SettingsPage.php:879 inc/SettingsPage.php:909
+msgid "Connection"
+msgstr ""
+
+#: inc/SettingsPage.php:880
+msgid "Plan & Usage"
+msgstr ""
+
+#: inc/SettingsPage.php:882
+msgid "Advanced"
+msgstr ""
+
+#: inc/SettingsPage.php:911
+msgid "How this site links to your AllAccessible account."
+msgstr ""
+
+#: inc/SettingsPage.php:915
+msgid "Connected"
+msgstr ""
+
+#: inc/SettingsPage.php:917
+msgid "Action required"
+msgstr ""
+
+#: inc/SettingsPage.php:930
+msgid "Copy account ID"
+msgstr ""
+
+#: inc/SettingsPage.php:931 inc/SettingsPage.php:950
+msgid "Copy"
+msgstr ""
+
+#: inc/SettingsPage.php:935
+msgid "Identifies your AllAccessible account across every site you own."
+msgstr ""
+
+#: inc/SettingsPage.php:941
+msgid "Site ID"
+msgstr ""
+
+#: inc/SettingsPage.php:949
+msgid "Copy site ID"
+msgstr ""
+
+#: inc/SettingsPage.php:954
+msgid "Identifies this specific WordPress site within your account."
+msgstr ""
+
+#: inc/SettingsPage.php:960
+msgid "Site URL"
+msgstr ""
+
+#: inc/SettingsPage.php:989
+msgid "Manage subscription"
+msgstr ""
+
+#: inc/SettingsPage.php:997
+msgid "Current plan"
+msgstr ""
+
+#: inc/SettingsPage.php:1019
+msgid "Plan changes update immediately across every site on this account."
+msgstr ""
+
+#: inc/SettingsPage.php:1033
+msgid "Pageview usage"
+msgstr ""
+
+#: inc/SettingsPage.php:1035
+msgid "Resets at the start of each billing cycle."
+msgstr ""
+
+#: inc/SettingsPage.php:1055
+msgid "Pageviews used this cycle"
+msgstr ""
+
+#. translators: 1: used pageviews, 2: limit
+#: inc/SettingsPage.php:1063
+#, php-format
+msgid "%1$s of %2$s pageviews this cycle."
+msgstr ""
+
+#: inc/SettingsPage.php:1073
+msgid ""
+"You are close to your monthly limit. Add a pageview pack to keep premium "
+"features active."
+msgstr ""
+
+#: inc/SettingsPage.php:1075
+msgid "Heads up — you are above 75% of your monthly pageviews."
+msgstr ""
+
+#: inc/SettingsPage.php:1082
+msgid ""
+"Pageview tracking is active. Detailed numbers appear after the first billing "
+"cycle."
+msgstr ""
+
+#: inc/SettingsPage.php:1099
+msgid "Widget appearance"
+msgstr ""
+
+#: inc/SettingsPage.php:1101
+msgid "Color, position, icon, and label live in the Widget Customizer."
+msgstr ""
+
+#: inc/SettingsPage.php:1106
+msgid "Open customizer"
+msgstr ""
+
+#: inc/SettingsPage.php:1119
+msgid ""
+"Preview your live widget on the front-end to confirm placement and styling."
+msgstr ""
+
+#: inc/SettingsPage.php:1125
+msgid "Preview on site"
+msgstr ""
+
+#: inc/SettingsPage.php:1130
+msgid "Advanced settings"
+msgstr ""
+
+#: inc/SettingsPage.php:1141
+msgid "Quick toggles"
+msgstr ""
+
+#: inc/SettingsPage.php:1143
+msgid "Local overrides applied before the widget renders."
+msgstr ""
+
+#: inc/SettingsPage.php:1153
+msgid "Headless mode"
+msgstr ""
+
+#: inc/SettingsPage.php:1159
+msgid ""
+"Skip the floating button and trigger the panel from your own UI. Recommended "
+"for custom theme integrations."
+msgstr ""
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1175
+#, php-format
+msgid ""
+"Available on Enterprise. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+
+#: inc/SettingsPage.php:1186 inc/SettingsPage.php:1998
+msgid "Hide widget branding"
+msgstr ""
+
+#: inc/SettingsPage.php:1188
+msgid "Remove the \"Powered by\" footer link inside the widget panel."
+msgstr ""
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1204
+#, php-format
+msgid ""
+"Included with paid plans. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+
+#: inc/SettingsPage.php:1217 inc/SettingsPage.php:1220
+msgid "Save changes"
+msgstr ""
+
+#: inc/SettingsPage.php:1219
+msgid "Saved"
+msgstr ""
+
+#: inc/SettingsPage.php:1237
+msgid "Diagnostics"
+msgstr ""
+
+#: inc/SettingsPage.php:1239
+msgid "Local identifiers and tools for troubleshooting."
+msgstr ""
+
+#: inc/SettingsPage.php:1246
+msgid "Plugin version"
+msgstr ""
+
+#: inc/SettingsPage.php:1255
+msgid "Debug logging"
+msgstr ""
+
+#: inc/SettingsPage.php:1257
+msgid "Write extra diagnostics to the WordPress debug log."
+msgstr ""
+
+#: inc/SettingsPage.php:1280
+msgid "Disable error reporting to AllAccessible"
+msgstr ""
+
+#: inc/SettingsPage.php:1282
+msgid ""
+"AllAccessible records plugin errors (with your account ID + plugin version) "
+"so the team can spot issues affecting your install. Toggle on to stop "
+"sending. No personal data is collected."
+msgstr ""
+
+#: inc/SettingsPage.php:1298
+msgid "Developer tools"
+msgstr ""
+
+#: inc/SettingsPage.php:1299
+msgid "Diagnose lookup · Sync · Flush caches"
+msgstr ""
+
+#: inc/SettingsPage.php:1304
+msgid "Diagnose page lookup"
+msgstr ""
+
+#: inc/SettingsPage.php:1306
+msgid ""
+"Pick a published page or post to inspect the exact URL canonicalization and "
+"API response. Useful when a row shows \"Not scanned\" but you expect a score."
+msgstr ""
+
+#: inc/SettingsPage.php:1312
+msgid "Post / page ID"
+msgstr ""
+
+#: inc/SettingsPage.php:1320 inc/SettingsPage.php:1322
+msgid "Run diagnosis"
+msgstr ""
+
+#: inc/SettingsPage.php:1321
+msgid "Looking up…"
+msgstr ""
+
+#: inc/SettingsPage.php:1331
+msgid "Sync post audit links"
+msgstr ""
+
+#: inc/SettingsPage.php:1333
+msgid ""
+"Manually run the post → audit linker. The background job runs about once a "
+"week (paid plans only, and only when your site receives traffic). Trigger "
+"here if the All Posts column or Editor box shows missing scores and you "
+"don't want to wait."
+msgstr ""
+
+#: inc/SettingsPage.php:1341 inc/SettingsPage.php:1343
+msgid "Sync now"
+msgstr ""
+
+#: inc/SettingsPage.php:1342
+msgid "Syncing…"
+msgstr ""
+
+#: inc/SettingsPage.php:1350
+msgid "Flush plugin caches"
+msgstr ""
+
+#: inc/SettingsPage.php:1352
+msgid ""
+"Wipes every plugin-side API transient (page scores, manifest, validate, "
+"images). Use when the API has been updated and the 2–10 min cache is still "
+"showing old data."
+msgstr ""
+
+#: inc/SettingsPage.php:1360 inc/SettingsPage.php:1362
+msgid "Flush caches"
+msgstr ""
+
+#: inc/SettingsPage.php:1361
+msgid "Flushing…"
+msgstr ""
+
+#: inc/SettingsPage.php:1372 inc/SettingsPage.php:1380
+#: inc/SettingsPage.php:1383
+msgid "Clear widget caches"
+msgstr ""
+
+#: inc/SettingsPage.php:1374
+msgid ""
+"Flush local browser storage and server response cache so the widget reloads "
+"fresh on the next page view."
+msgstr ""
+
+#: inc/SettingsPage.php:1381
+msgid "Clearing…"
+msgstr ""
+
+#: inc/SettingsPage.php:1382
+msgid "Caches cleared"
+msgstr ""
+
+#: inc/SettingsPage.php:1393 inc/SettingsPage.php:1409
+msgid "Reset plugin data"
+msgstr ""
+
+#: inc/SettingsPage.php:1395
+msgid "Disconnect this site and clear local options. Cannot be undone."
+msgstr ""
+
+#: inc/SettingsPage.php:1401
+msgid ""
+"Use this if you are moving the plugin to a different account or starting "
+"over from the setup wizard. Uninstalling the plugin also removes these "
+"options automatically."
+msgstr ""
+
+#: inc/SettingsPage.php:1421
+msgid "Need help?"
+msgstr ""
+
+#: inc/SettingsPage.php:1423
+msgid "Our team is here for you — get answers fast."
+msgstr ""
+
+#: inc/SettingsPage.php:1432
+msgid "Knowledge base"
+msgstr ""
+
+#: inc/SettingsPage.php:1444
+msgid "Legal & Trust:"
+msgstr ""
+
+#: inc/SettingsPage.php:1447
+msgid "GDPR"
+msgstr ""
+
+#: inc/SettingsPage.php:1448
+msgid "Cookies"
+msgstr ""
+
+#: inc/SettingsPage.php:1449
+msgid "Trust Center"
+msgstr ""
+
+#: inc/SettingsPage.php:1450
+msgid "Partner Agreement"
+msgstr ""
+
+#: inc/SettingsPage.php:1721 inc/SettingsPage.php:1724
+msgid "Copied"
+msgstr ""
+
+#: inc/SettingsPage.php:1725
+msgid "copied to clipboard"
+msgstr ""
+
+#: inc/SettingsPage.php:1730 inc/SettingsPage.php:1733
+msgid "Copy:"
+msgstr ""
+
+#: inc/SettingsPage.php:1784
+msgid "Could not save. Try again."
+msgstr ""
+
+#: inc/SettingsPage.php:1791 inc/SettingsPage.php:1877
+msgid "Network error. Try again."
+msgstr ""
+
+#: inc/SettingsPage.php:1847
+msgid "Reset all plugin data? This disconnects this site and cannot be undone."
+msgstr ""
+
+#: inc/SettingsPage.php:1852
+msgid "Resetting…"
+msgstr ""
+
+#: inc/SettingsPage.php:1853
+msgid "Resetting plugin data"
+msgstr ""
+
+#: inc/SettingsPage.php:1863
+msgid "Plugin data cleared. Reloading…"
+msgstr ""
+
+#: inc/SettingsPage.php:1864
+msgid "Plugin data reset. Reloading."
+msgstr ""
+
+#: inc/SettingsPage.php:1871
+msgid "Could not reset plugin data. Try again."
+msgstr ""
+
+#: inc/SettingsPage.php:1908
+msgid "Settings saved"
+msgstr ""
+
+#: inc/SettingsPage.php:1922
+msgid "Premium Trial — 7 days free"
+msgstr ""
+
+#: inc/SettingsPage.php:1940
+msgid "Legacy Premium"
+msgstr ""
+
+#. translators: %s: tier name (e.g., "Enterprise")
+#: inc/SettingsPage.php:1954
+#, php-format
+msgid "%s account"
+msgstr ""
+
+#. translators: %s: monthly pageview limit (e.g. "10,000")
+#: inc/SettingsPage.php:1974
+#, php-format
+msgid "Up to %s pageviews per month"
+msgstr ""
+
+#: inc/SettingsPage.php:1977
+msgid "Pageview cap based on your plan"
+msgstr ""
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1980
+#, php-format
+msgid ""
+"Unlimited %s interactions — alt text and agentic fix proposals, no monthly "
+"cap"
+msgstr ""
+
+#: inc/SettingsPage.php:1987
+msgid "Unlimited pageviews and sites"
+msgstr ""
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1988
+#, php-format
+msgid "Human-in-the-loop agentic remediation powered by %s"
+msgstr ""
+
+#: inc/SettingsPage.php:1989
+msgid "Priority support and dedicated success manager"
+msgstr ""
+
+#: inc/SettingsPage.php:1990
+msgid "Custom branding and white-label widget"
+msgstr ""
+
+#: inc/SettingsPage.php:1991
+msgid "Single sign-on (SSO) and audit log export"
+msgstr ""
+
+#: inc/SettingsPage.php:1997
+msgid "Continuous site scans and accessibility scoring"
+msgstr ""
+
+#: inc/SettingsPage.php:1999
+msgid "Email support"
+msgstr ""
+
+#: inc/SettingsPage.php:2003
+msgid "Full premium widget for 7 days"
+msgstr ""
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2004
+#, php-format
+msgid "Try %s agents on your real site"
+msgstr ""
+
+#: inc/SettingsPage.php:2005
+msgid "Cancel any time — no card hold"
+msgstr ""
+
+#: inc/SettingsPage.php:2009
+msgid "Premium widget on the legacy plan"
+msgstr ""
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2010
+#, php-format
+msgid "Includes %s agent features"
+msgstr ""
+
+#: inc/SettingsPage.php:2011
+msgid "Continuous accessibility scoring"
+msgstr ""
+
+#: inc/SettingsPage.php:2016
+msgid "Accessibility widget on every page"
+msgstr ""
+
+#: inc/SettingsPage.php:2017
+msgid "Keyboard navigation and screen reader helpers"
+msgstr ""
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2018
+#, php-format
+msgid "Upgrade for agentic remediation with %s"
+msgstr ""
+
+#: inc/TierGate.php:26
+msgid "Approve, edit, and revert agentic fixes"
+msgstr ""
+
+#: inc/TierGate.php:27
+msgid "Image Descriptions"
+msgstr ""
+
+#: inc/TierGate.php:28
+msgid "Reports & Statement deep-links"
+msgstr ""
+
+#: inc/TierGate.php:29
+msgid "Per-page accessibility breakdown in editor"
+msgstr ""
+
+#: inc/TierGate.php:30
+msgid "Notification center"
+msgstr ""
+
+#: inc/TierGate.php:31
+msgid "CSV export of fixes"
+msgstr ""
+
+#: inc/TierGate.php:32
+msgid "PDF report export"
+msgstr ""
+
+#: inc/TierGate.php:33
+msgid "White-label branding"
+msgstr ""
+
+#: inc/TierGate.php:34
+msgid "Weekly automatic scans"
+msgstr ""
+
+#: inc/TierGate.php:35
+msgid "Page change detection"
+msgstr ""
+
+#: inc/TierGate.php:36
+msgid "Accommodation request widget"
+msgstr ""
+
+#. translators: %s: feature label
+#: inc/TierGate.php:84
+#, php-format
+msgid "%s is available on paid plans"
+msgstr ""
+
+#: inc/TierGate.php:87
+msgid ""
+"Upgrade to unlock this feature plus everything else included in the "
+"AllAccessible AI suite."
+msgstr ""
+
+#: inc/TierGate.php:98
+msgid "Upgrade required"
+msgstr ""
+
+#: inc/UsageDashboard.php:31
+msgid "Usage overview"
+msgstr ""
+
+#: inc/UsageDashboard.php:34
+msgid "Usage this month"
+msgstr ""
+
+#: inc/UsageDashboard.php:36
+msgid "Tracks pageviews and AllAccessible AI activity against your plan."
+msgstr ""
+
+#: inc/UsageDashboard.php:55
+msgid "No usage to show yet"
+msgstr ""
+
+#: inc/UsageDashboard.php:57
+msgid "Usage appears here once your widget starts serving pageviews."
+msgstr ""
+
+#: inc/UsageDashboard.php:61
+msgid "Preview your widget"
+msgstr ""
+
+#: inc/UsageDashboard.php:70
+msgid "Active visits served by your widget this month."
+msgstr ""
+
+#: inc/UsageDashboard.php:74
+msgid "AI image alt text"
+msgstr ""
+
+#: inc/UsageDashboard.php:75
+msgid "Alt text generated by AllAccessible AI for images on your site."
+msgstr ""
+
+#: inc/UsageDashboard.php:79
+msgid "Accessibility audits"
+msgstr ""
+
+#: inc/UsageDashboard.php:80
+msgid "Automated scans run by AllAccessible agents."
+msgstr ""
+
+#: inc/UsageDashboard.php:84
+msgid "Compliance reports"
+msgstr ""
+
+#: inc/UsageDashboard.php:85
+msgid "VPAT and accessibility statement PDFs generated."
+msgstr ""
+
+#: inc/UsageDashboard.php:133
+#, php-format
+msgid "%1$s usage: %2$d percent"
+msgstr ""
+
+#: inc/UsageDashboard.php:150
+msgid "Upgrade to unlock"
+msgstr ""
+
+#: inc/UsageDashboard.php:175
+#, php-format
+msgid "%s percent used"
+msgstr ""
+
+#: inc/UsageDashboard.php:183
+msgid "Limit reached — widget temporarily on free features."
+msgstr ""
+
+#. translators: %s: count of remaining units this month
+#: inc/UsageDashboard.php:188
+#, php-format
+msgid "%s remaining this month"
+msgstr ""
+
+#: inc/UsageDashboard.php:195
+msgid "Manage"
+msgstr ""
+
+#: inc/UsageDashboard.php:203
+msgid "Upgrade your plan"
+msgstr ""
+
+#: inc/UsageDashboard.php:209
+msgid "Manage in dashboard"
+msgstr ""
+
+#: inc/UsageDashboard.php:220
+msgid "No metered features on your plan yet"
+msgstr ""
+
+#: inc/UsageDashboard.php:221
+msgid "Usage will appear here once your widget starts serving pages."
+msgstr ""
+
+#: inc/UsageDashboard.php:230
+msgid "Need more pageviews or AllAccessible AI capacity?"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:104
+msgid "Quick Widget Settings"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:105
+msgid "Customize your widget appearance"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:109
+msgid "Advanced Settings"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:122
+msgid "Pro Tip:"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:123
+msgid ""
+"For more options including accessibility profiles, custom CSS, and advanced "
+"features, visit"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:124
+msgid "Advanced Widget Settings"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:142
+msgid "Widget Color"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:147
+msgid "Choose the color for your accessibility widget button."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:150
+msgid "Widget Position"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:152
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:153
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:154
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:155
+msgid "Middle Right"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:156
+msgid "Middle Left"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:157
+msgid "Top Right"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:158
+msgid "Top Left"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:160
+msgid "Where the widget button appears on your site."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:167
+msgid "Widget Size"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:169
+msgid "Small"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:170
+msgid "Medium (Default)"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:171
+msgid "Large"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:173
+msgid "Size of the widget button in pixels."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:176
+msgid "Widget Icon"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:179
+msgid "Default"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:180
+msgid "Accessibility Person"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:181
+msgid "Accessibility Settings"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:182
+msgid "Adjust"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:183
+msgid "Wheelchair 1"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:184
+msgid "Heart"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:185
+msgid "Braille"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:186
+msgid "Blind/Cane"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:187
+msgid "Eye"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:188
+msgid "Globe"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:189
+msgid "Universal Access"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:191
+msgid "Walking Cane"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:195
+msgid "Icon displayed in the widget button."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:202
+msgid "Widget Shape"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:204
+msgid "Circle"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:205
+msgid "Square"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:207
+msgid "Shape of the widget button."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:212
+msgid "Run without the bubble"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:216
+msgid "Hide widget, keep agentic AI remediation running."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:218
+msgid ""
+"Visitors won't see the accessibility toolbar. AllAccessible agents continue "
+"scanning and applying approved fixes in the background."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:230
+msgid "Save Settings"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:234
+msgid "Having trouble viewing updates?"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:238
+msgid "Clear all caches: browser, cookies, and server (full reset)"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:239
+msgid "Clear All Caches"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:249
+msgid "Saving..."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:253
+msgid "Settings saved!"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:259
+msgid "Cache cleared! Refresh your site to see changes."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:267
+msgid "Clearing all caches..."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:271
+msgid "All caches cleared! Refresh your site to see changes."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:284
+msgid "Live Preview"
+msgstr ""
+
+#: inc/WidgetCustomizer.php:297
+msgid "See how your widget will look on your site."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:576
+msgid "Failed to save settings. Please try again."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:623
+msgid "Error clearing cache. Please check browser console."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:677
+msgid "Server cache invalidation failed. Browser cache was cleared."
+msgstr ""
+
+#: inc/WidgetCustomizer.php:699
+msgid "Error clearing caches. Please check browser console."
+msgstr ""
+
+#: inc/api/ApiClient.php:82
+msgid "Account ID not found"
+msgstr ""
+
+#: inc/api/ApiClient.php:125
+msgid "Invalid API response"
+msgstr ""
+
+#: inc/api/ApiClient.php:371
+msgid "A page URL is required to trigger a scan."
+msgstr ""
+
+#: inc/api/ApiClient.php:473
+msgid "post_id or page_url required"
+msgstr ""
+
+#: inc/api/ApiClient.php:568
+msgid "post_id and page_url required"
+msgstr ""
+
+#: inc/api/ApiClient.php:589
+msgid "pairs required"
+msgstr ""
+
+#: inc/api/ApiClient.php:592
+msgid "batch limited to 100 pairs"
+msgstr ""
+
+#: inc/api/ApiClient.php:641 inc/api/ApiClient.php:700
+#: inc/api/ApiClient.php:967
+msgid "Account not configured"
+msgstr ""
+
+#: inc/api/ApiClient.php:753 inc/api/ApiClient.php:768
+#: inc/api/ApiClient.php:788
+msgid "Invalid manifest ID"
+msgstr ""
+
+#: inc/api/ApiClient.php:814
+msgid "Invalid manifest or fix index"
+msgstr ""
+
+#: inc/api/ApiClient.php:818
+msgid "Value is required"
+msgstr ""
+
+#: inc/api/ApiClient.php:821
+msgid "Value too long (max 500 characters)"
+msgstr ""
+
+#: inc/api/ApiClient.php:841
+msgid "Invalid site ID"
+msgstr ""
+
+#: inc/api/ApiClient.php:845
+msgid "No manifest IDs supplied"
+msgstr ""
+
+#: inc/api/ApiClient.php:988
+msgid "Server returned invalid plugin secret payload"
+msgstr ""
+
+#: inc/api/ApiClient.php:1017
+msgid ""
+"No site associated with this account yet. Visit your WordPress homepage once "
+"to register this site, then return here."
+msgstr ""
+
+#: inc/api/ApiClient.php:1151
+msgid "Invalid scan job ID"
+msgstr ""
+
+#: inc/api/ApiClient.php:1170
+msgid "Plugin secret unavailable. Re-validate license to refresh credentials."
+msgstr ""
+
+#. translators: %s: error message
+#: inc/api/ApiClient.php:1226
+#, php-format
+msgid "API request failed: %s"
+msgstr ""
+
+#: inc/api/ApiClient.php:1249
+msgid "Failed to decode API response"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
@@ -366,8 +3781,8 @@ msgstr ""
 msgid ""
 "Unlock true digital accessibility with AllAccessible - a comprehensive "
 "WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
-"your users with a fully customizable accessibility widget, and enhance their "
-"experience with our premium AI-powered features."
+"your users with a fully customizable accessibility widget, plus agentic AI "
+"remediation that auto-suggests fixes for your team to approve."
 msgstr ""
 
 #. Author of the plugin/theme

@@ -92,30 +92,47 @@ function aacb_render_smart_cta($site_options, $account_tier, $addon_url) {
         return; // No CTA to show
     }
 
-    // Determine styling
-    $bg_colors = array(
-        'urgent' => 'aacx-bg-gradient-to-br aacx-from-red-500 aacx-to-red-600',
-        'warning' => 'aacx-bg-gradient-to-br aacx-from-orange-500 aacx-to-orange-600',
-        'feature' => 'aacx-bg-gradient-to-br aacx-from-aacx-primary-500 aacx-to-aacx-primary-700',
-        'default' => 'aacx-bg-gradient-to-br aacx-from-aacx-secondary-500 aacx-to-aacx-secondary-600',
+    // Map CTA type → admin-v2 component variants.
+    // `feature` uses the AI-flavored card (gradient + sparkle button) since the
+    // feature upsell highlights AllAccessible AI / agentic remediation.
+    // `urgent` + `warning` use semantic banner variants for time-sensitive states.
+    // `default` falls back to a featured (primary-tinted) card.
+    $variants = array(
+        'urgent'  => array('card' => 'aacx-v2__card aacx-v2__card--elevated', 'banner' => 'aacx-v2__banner aacx-v2__banner--danger', 'btn' => 'aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--lg'),
+        'warning' => array('card' => 'aacx-v2__card aacx-v2__card--elevated', 'banner' => 'aacx-v2__banner aacx-v2__banner--warn',   'btn' => 'aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--lg'),
+        'feature' => array('card' => 'aacx-v2__card aacx-v2__card--elevated aacx-v2__card--ai', 'banner' => '', 'btn' => 'aacx-v2__btn aacx-v2__btn--ai aacx-v2__btn--lg'),
+        'default' => array('card' => 'aacx-v2__card aacx-v2__card--elevated aacx-v2__card--featured', 'banner' => '', 'btn' => 'aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--lg'),
     );
 
-    $bg_color = $bg_colors[$cta_type] ?? $bg_colors['default'];
+    $variant = $variants[$cta_type] ?? $variants['default'];
     ?>
 
-    <div class="<?php echo esc_attr($bg_color); ?> aacx-rounded-lg aacx-shadow-xl aacx-p-8 aacx-mb-6 aacx-text-white">
-        <div class="aacx-max-w-4xl aacx-mx-auto aacx-text-center">
-            <h2 class="aacx-text-3xl aacx-font-bold aacx-mb-3">
-                <?php echo esc_html($cta_title); ?>
-            </h2>
-            <p class="aacx-text-lg aacx-mb-6 aacx-opacity-95">
+    <div class="<?php echo esc_attr($variant['card']); ?>" style="margin-bottom: var(--aacx-space-6);">
+        <div class="aacx-v2__card-body">
+            <?php if ($variant['banner']): ?>
+                <div class="<?php echo esc_attr($variant['banner']); ?>" style="margin-bottom: var(--aacx-space-5);" role="alert">
+                    <strong><?php echo esc_html($cta_title); ?></strong>
+                </div>
+            <?php else: ?>
+                <?php if ($cta_type === 'feature'): ?>
+                    <div style="margin-bottom: var(--aacx-space-3);">
+                        <span class="aacx-v2__ai-badge"><?php esc_html_e('AllAccessible AI', 'allaccessible'); ?></span>
+                    </div>
+                <?php endif; ?>
+                <h2 style="margin-bottom: var(--aacx-space-3);">
+                    <?php echo esc_html($cta_title); ?>
+                </h2>
+            <?php endif; ?>
+
+            <p style="font-size: var(--aacx-text-lg); margin-bottom: var(--aacx-space-6); max-width: 60ch;">
                 <?php echo $cta_message; ?>
             </p>
+
             <a href="<?php echo esc_url($cta_url); ?>"
                target="_blank"
-               class="aacx-inline-flex aacx-items-center aacx-px-8 aacx-py-4 aacx-bg-white aacx-text-aacx-slate-900 aacx-rounded-xl aacx-font-bold aacx-text-lg aacx-shadow-2xl hover:aacx-shadow-xl hover:-aacx-translate-y-1 aacx-transition-all aacx-duration-200">
+               class="<?php echo esc_attr($variant['btn']); ?>">
                 <?php echo esc_html($cta_button); ?>
-                <svg class="aacx-w-5 aacx-h-5 aacx-ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
                 </svg>
             </a>

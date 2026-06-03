@@ -1,0 +1,4266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR AllAccessible
+# This file is distributed under the same license as the AllAccessible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AllAccessible\n"
+"Report-Msgid-Bugs-To: support@allaccessible.org\n"
+"POT-Creation-Date: 2026-06-03 13:39-0400\n"
+"PO-Revision-Date: 2026-06-03 13:45-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#: allaccessible.php:166
+msgid "Account settings saved successfully"
+msgstr "ਖਾਤਾ ਸੈਟਿੰਗਾਂ ਸਫਲਤਾਪੂਰਵਕ ਸੇਵ ਹੋ ਗਈਆਂ ਹਨ"
+
+#: allaccessible.php:200
+msgid "Unauthorized access"
+msgstr "ਬਿਨਾਂ ਅਧਿਕਾਰ ਪਹੁੰਚ"
+
+#: allaccessible.php:221
+msgid "Plugin data has been reset successfully"
+msgstr "ਪਲੱਗਇਨ ਡਾਟਾ ਸਫਲਤਾਪੂਰਵਕ ਰੀਸੈੱਟ ਹੋ ਗਿਆ ਹੈ"
+
+#: allaccessible.php:235 allaccessible.php:323 allaccessible.php:404 inc/SettingsPage.php:1894
+msgid "Unauthorized"
+msgstr "ਅਧਿਕਾਰ ਨਹੀਂ"
+
+#: allaccessible.php:363
+msgid "Still finishing setup — wait a few seconds and try again."
+msgstr "ਹਾਲੇ ਸੈਟਅੱਪ ਪੂਰਾ ਹੋ ਰਿਹਾ ਹੈ — ਕੁਝ ਸਕਿੰਟ ਉਡੀਕ ਕਰੋ ਅਤੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: allaccessible.php:368
+msgid "Scan queued. Results appear in 2-5 minutes."
+msgstr "ਸਕੈਨ ਕਤਾਰ ਵਿੱਚ ਲਾਇਆ ਗਿਆ ਹੈ। ਨਤੀਜੇ 2-5 ਮਿੰਟਾਂ ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਗੇ।"
+
+#: inc/AdminBar.php:64
+msgid "Scan this page now"
+msgstr "ਹੁਣੇ ਇਸ ਪੰਨੇ ਨੂੰ ਸਕੈਨ ਕਰੋ"
+
+#: inc/AdminBar.php:77
+msgid "View page report"
+msgstr "ਪੰਨੇ ਦੀ ਰਿਪੋਰਟ ਵੇਖੋ"
+
+#: inc/AdminBar.php:97 inc/SettingsPage.php:48 inc/SettingsPage.php:49
+msgid "Dashboard"
+msgstr "ਡੈਸ਼ਬੋਰਡ"
+
+#: inc/AdminBar.php:103
+msgid "Audits & Fixes"
+msgstr "ਆਡਿਟ ਅਤੇ ਫਿਕਸ"
+
+#: inc/AdminBar.php:109 inc/WidgetCustomizer.php:190
+msgid "Settings"
+msgstr "ਸੈਟਿੰਗਾਂ"
+
+#: inc/AdminBar.php:116 inc/AgenticFixesPage.php:162 inc/DashboardLayout.php:290
+#: inc/SettingsPage.php:389
+msgid "Open dashboard"
+msgstr "ਡੈਸ਼ਬੋਰਡ ਖੋਲ੍ਹੋ"
+
+#: inc/AdminBar.php:172 inc/EditorMetaBox.php:440
+msgid "Scanning page…"
+msgstr "ਪੰਨਾ ਸਕੈਨ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/AdminBar.php:173
+#, php-format
+msgid "Scan complete. Score: %d%%"
+msgstr "ਸਕੈਨ ਪੂਰਾ ਹੋਇਆ। ਸਕੋਰ: %d%%"
+
+#: inc/AdminBar.php:174
+msgid "Scan complete. Refresh to see updated score."
+msgstr "ਸਕੈਨ ਪੂਰਾ ਹੋ ਗਿਆ। ਅਪਡੇਟ ਕੀਤਾ ਸਕੋਰ ਵੇਖਣ ਲਈ ਰਿਫ੍ਰੈਸ਼ ਕਰੋ।"
+
+#: inc/AdminBar.php:175 inc/EditorMetaBox.php:444
+msgid "Scan failed. Try again or check the dashboard."
+msgstr "ਸਕੈਨ ਅਸਫਲ ਰਿਹਾ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਡੈਸ਼ਬੋਰਡ ਚੈੱਕ ਕਰੋ।"
+
+#: inc/AdminBar.php:176
+msgid "Scan is still running — check back in a minute."
+msgstr "ਸਕੈਨ ਹਾਲੇ ਵੀ ਚੱਲ ਰਿਹਾ ਹੈ — ਇੱਕ ਮਿੰਟ ਬਾਅਦ ਮੁੜ ਚੈੱਕ ਕਰੋ।"
+
+#: inc/AdminBar.php:177
+msgid "Could not start scan: "
+msgstr "ਸਕੈਨ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ: "
+
+#: inc/AdminBar.php:178 inc/EditorMetaBox.php:446
+msgid "Scan rate limit reached. Try again later."
+msgstr "ਸਕੈਨ ਰੇਟ ਲਿਮਿਟ ਪੂਰੀ ਹੋ ਗਈ ਹੈ। ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/AdminBar.php:341 inc/AdminBar.php:375
+msgid "Permission denied."
+msgstr "ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ।"
+
+#: inc/AdminBar.php:347
+msgid "Missing page URL."
+msgstr "ਪੇਜ URL ਗੁੰਮ ਹੈ।"
+
+#: inc/AdminBar.php:382
+msgid "Missing job ID."
+msgstr "ਜੌਬ ID ਗੁੰਮ ਹੈ।"
+
+#: inc/AgenticFixes/Labels.php:23
+msgid "Missing image description"
+msgstr "ਚਿੱਤਰ ਦਾ ਵੇਰਵਾ ਗੁੰਮ ਹੈ"
+
+#: inc/AgenticFixes/Labels.php:24
+msgid "Button without label"
+msgstr "ਲੇਬਲ ਤੋਂ ਬਿਨਾਂ ਬਟਨ"
+
+#: inc/AgenticFixes/Labels.php:25
+msgid "Form field without label"
+msgstr "ਲੇਬਲ ਤੋਂ ਬਿਨਾਂ ਫਾਰਮ ਫੀਲਡ"
+
+#: inc/AgenticFixes/Labels.php:26
+msgid "Missing page language"
+msgstr "ਪੰਨੇ ਦੀ ਭਾਸ਼ਾ ਗੁੰਮ ਹੈ"
+
+#: inc/AgenticFixes/Labels.php:27
+msgid "Link without text"
+msgstr "ਟੈਕਸਟ ਤੋਂ ਬਿਨਾਂ ਲਿੰਕ"
+
+#: inc/AgenticFixes/Labels.php:28
+msgid "ARIA labeling issue"
+msgstr "ARIA ਲੇਬਲਿੰਗ ਸਮੱਸਿਆ"
+
+#: inc/AgenticFixes/Labels.php:29
+msgid "Heading hierarchy issue"
+msgstr "ਹੈਡਿੰਗ ਹਾਇਰਾਰਕੀ ਦੀ ਸਮੱਸਿਆ"
+
+#: inc/AgenticFixes/Labels.php:30 inc/AgenticFixes/Labels.php:33
+msgid "Other accessibility issue"
+msgstr "ਹੋਰ ਪਹੁੰਚਯੋਗਤਾ ਸਮੱਸਿਆ"
+
+#: inc/AgenticFixes/Labels.php:44 inc/AgenticFixesPage.php:241
+msgid "Pending review"
+msgstr "ਸਮੀਖਿਆ ਲਈ ਬਕਾਇਆ"
+
+#: inc/AgenticFixes/Labels.php:45
+msgid "Approved"
+msgstr "ਮਨਜ਼ੂਰਸ਼ੁਦਾ"
+
+#: inc/AgenticFixes/Labels.php:46
+msgid "Active"
+msgstr "ਸਰਗਰਮ"
+
+#: inc/AgenticFixes/Labels.php:47 inc/AgenticFixesPage.php:249
+msgid "Reverted"
+msgstr "ਵਾਪਸ ਕੀਤਾ ਗਿਆ"
+
+#: inc/AgenticFixes/Labels.php:61 inc/AgenticFixes/Labels.php:67 inc/AgenticFixesPage.php:347
+#: inc/AgenticFixesPage.php:452
+msgid "AllAccessible agents"
+msgstr "AllAccessible ਏਜੰਟ"
+
+#: inc/AgenticFixes/Labels.php:62
+msgid "Automated rule check"
+msgstr "ਆਟੋਮੇਟਿਕ ਨਿਯਮ ਜਾਂਚ"
+
+#: inc/AgenticFixes/Labels.php:63
+msgid "Compliance scanner"
+msgstr "ਅਨੁਕੂਲਤਾ ਸਕੈਨਰ"
+
+#: inc/AgenticFixes/Labels.php:64
+msgid "Manual review"
+msgstr "ਹੱਥੋਂ ਸਮੀਖਿਆ"
+
+#: inc/AgenticFixes/Labels.php:80
+msgid "Suggested alt text for image"
+msgstr "ਚਿੱਤਰ ਲਈ ਸੁਝਾਇਆ alt ਟੈਕਸਟ"
+
+#: inc/AgenticFixes/Labels.php:81
+msgid "Suggested label for button"
+msgstr "ਬਟਨ ਲਈ ਸੁਝਾਇਆ ਲੇਬਲ"
+
+#: inc/AgenticFixes/Labels.php:82
+msgid "Suggested label for form field"
+msgstr "ਫਾਰਮ ਫੀਲਡ ਲਈ ਸੁਝਾਇਆ ਲੇਬਲ"
+
+#: inc/AgenticFixes/Labels.php:83
+msgid "Set page language attribute"
+msgstr "ਪੰਨੇ ਦੀ ਭਾਸ਼ਾ ਐਟ੍ਰਿਬਿਊਟ ਸੈੱਟ ਕਰੋ"
+
+#: inc/AgenticFixes/Labels.php:84
+msgid "Suggested text for link"
+msgstr "ਲਿੰਕ ਲਈ ਸੁਝਾਇਆ ਟੈਕਸਟ"
+
+#: inc/AgenticFixes/Labels.php:85
+msgid "Correct ARIA role assignment"
+msgstr "ARIA ਰੋਲ ਅਸਾਈਨਮੈਂਟ ਠੀਕ ਕਰੋ"
+
+#: inc/AgenticFixes/Labels.php:86
+msgid "Fix heading order"
+msgstr "ਹੈਡਿੰਗ ਕ੍ਰਮ ਠੀਕ ਕਰੋ"
+
+#: inc/AgenticFixes/Labels.php:87 inc/AgenticFixes/Labels.php:90
+msgid "Accessibility fix suggested"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਸੁਧਾਰ ਸੁਝਾਇਆ ਗਿਆ"
+
+#: inc/AgenticFixes/Labels.php:122
+msgid "Non-text Content"
+msgstr "ਗੈਰ-ਪਾਠ ਸਮੱਗਰੀ"
+
+#: inc/AgenticFixes/Labels.php:123
+msgid "Audio-only and Video-only (Prerecorded)"
+msgstr "ਸਿਰਫ਼ ਆਡੀਓ ਅਤੇ ਸਿਰਫ਼ ਵੀਡੀਓ (ਪੂਰਵ-ਰਿਕਾਰਡ ਕੀਤੇ)"
+
+#: inc/AgenticFixes/Labels.php:124
+msgid "Captions (Prerecorded)"
+msgstr "ਕੈਪਸ਼ਨ (ਪੂਰਵ-ਰਿਕਾਰਡ ਕੀਤੇ)"
+
+#: inc/AgenticFixes/Labels.php:125
+msgid "Audio Description or Media Alternative (Prerecorded)"
+msgstr "ਆਡੀਓ ਵਰਣਨ ਜਾਂ ਮੀਡੀਆ ਵਿਕਲਪ (ਪਹਿਲਾਂ ਤੋਂ ਰਿਕਾਰਡ ਕੀਤਾ ਹੋਇਆ)"
+
+#: inc/AgenticFixes/Labels.php:126
+msgid "Captions (Live)"
+msgstr "ਕੈਪਸ਼ਨ (ਲਾਈਵ)"
+
+#: inc/AgenticFixes/Labels.php:127
+msgid "Audio Description (Prerecorded)"
+msgstr "ਆਡੀਓ ਵਰਣਨ (ਪੂਰਵ-ਰਿਕਾਰਡ ਕੀਤੇ)"
+
+#: inc/AgenticFixes/Labels.php:128
+msgid "Sign Language (Prerecorded)"
+msgstr "ਸੰਕੇਤ ਭਾਸ਼ਾ (ਪਹਿਲਾਂ ਤੋਂ ਰਿਕਾਰਡ ਕੀਤੀ ਹੋਈ)"
+
+#: inc/AgenticFixes/Labels.php:129
+msgid "Extended Audio Description (Prerecorded)"
+msgstr "ਵਿਸਤਾਰਿਤ ਆਡੀਓ ਵਰਣਨ (ਪੂਰਵ-ਰਿਕਾਰਡ ਕੀਤੇ)"
+
+#: inc/AgenticFixes/Labels.php:130
+msgid "Media Alternative (Prerecorded)"
+msgstr "ਮੀਡੀਆ ਵਿਕਲਪ (ਪੂਰਵ-ਰਿਕਾਰਡ ਕੀਤੇ)"
+
+#: inc/AgenticFixes/Labels.php:131
+msgid "Audio-only (Live)"
+msgstr "ਸਿਰਫ਼ ਆਡੀਓ (ਲਾਈਵ)"
+
+#: inc/AgenticFixes/Labels.php:132
+msgid "Info and Relationships"
+msgstr "ਜਾਣਕਾਰੀ ਅਤੇ ਸੰਬੰਧ"
+
+#: inc/AgenticFixes/Labels.php:133
+msgid "Meaningful Sequence"
+msgstr "ਅਰਥਪੂਰਨ ਕ੍ਰਮ"
+
+#: inc/AgenticFixes/Labels.php:134
+msgid "Sensory Characteristics"
+msgstr "ਇੰਦਰੀ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ"
+
+#: inc/AgenticFixes/Labels.php:135
+msgid "Orientation"
+msgstr "ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼"
+
+#: inc/AgenticFixes/Labels.php:136
+msgid "Identify Input Purpose"
+msgstr "ਇਨਪੁੱਟ ਦੇ ਉਦੇਸ਼ ਦੀ ਪਛਾਣ ਕਰੋ"
+
+#: inc/AgenticFixes/Labels.php:137
+msgid "Identify Purpose"
+msgstr "ਉਦੇਸ਼ ਦੀ ਪਛਾਣ ਕਰੋ"
+
+#: inc/AgenticFixes/Labels.php:138
+msgid "Use of Color"
+msgstr "ਰੰਗ ਦੀ ਵਰਤੋਂ"
+
+#: inc/AgenticFixes/Labels.php:139
+msgid "Audio Control"
+msgstr "ਆਡੀਓ ਨਿਯੰਤਰਣ"
+
+#: inc/AgenticFixes/Labels.php:140
+msgid "Contrast (Minimum)"
+msgstr "ਕਾਂਟ੍ਰਾਸਟ (ਘੱਟੋ-ਘੱਟ)"
+
+#: inc/AgenticFixes/Labels.php:141
+msgid "Resize Text"
+msgstr "ਟੈਕਸਟ ਦਾ ਆਕਾਰ ਬਦਲੋ"
+
+#: inc/AgenticFixes/Labels.php:142
+msgid "Images of Text"
+msgstr "ਟੈਕਸਟ ਦੀਆਂ ਤਸਵੀਰਾਂ"
+
+#: inc/AgenticFixes/Labels.php:143
+msgid "Contrast (Enhanced)"
+msgstr "ਕਾਂਟ੍ਰਾਸਟ (ਵਧਾਇਆ ਹੋਇਆ)"
+
+#: inc/AgenticFixes/Labels.php:144
+msgid "Low or No Background Audio"
+msgstr "ਘੱਟ ਜਾਂ ਕੋਈ ਪਿਛੋਕੜ ਆਡੀਓ ਨਹੀਂ"
+
+#: inc/AgenticFixes/Labels.php:145
+msgid "Visual Presentation"
+msgstr "ਦ੍ਰਿਸ਼ਟੀਗਤ ਪ੍ਰਸਤੁਤੀ"
+
+#: inc/AgenticFixes/Labels.php:146
+msgid "Images of Text (No Exception)"
+msgstr "ਟੈਕਸਟ ਦੀਆਂ ਤਸਵੀਰਾਂ (ਕੋਈ ਅਪਵਾਦ ਨਹੀਂ)"
+
+#: inc/AgenticFixes/Labels.php:147
+msgid "Reflow"
+msgstr "ਰੀਫ਼ਲੋ"
+
+#: inc/AgenticFixes/Labels.php:148
+msgid "Non-text Contrast"
+msgstr "ਗੈਰ-ਟੈਕਸਟ ਕਾਂਟ੍ਰਾਸਟ"
+
+#: inc/AgenticFixes/Labels.php:149
+msgid "Text Spacing"
+msgstr "ਟੈਕਸਟ ਦੂਰੀ"
+
+#: inc/AgenticFixes/Labels.php:150
+msgid "Content on Hover or Focus"
+msgstr "ਹੋਵਰ ਜਾਂ ਫੋਕਸ 'ਤੇ ਸਮੱਗਰੀ"
+
+#: inc/AgenticFixes/Labels.php:152
+msgid "Keyboard"
+msgstr "ਕੀਬੋਰਡ"
+
+#: inc/AgenticFixes/Labels.php:153
+msgid "No Keyboard Trap"
+msgstr "ਕੀਬੋਰਡ ਟ੍ਰੈਪ ਨਹੀਂ"
+
+#: inc/AgenticFixes/Labels.php:154
+msgid "Keyboard (No Exception)"
+msgstr "ਕੀਬੋਰਡ (ਕੋਈ ਅਪਵਾਦ ਨਹੀਂ)"
+
+#: inc/AgenticFixes/Labels.php:155
+msgid "Character Key Shortcuts"
+msgstr "ਅੱਖਰ ਕੁੰਜੀ ਸ਼ਾਰਟਕੱਟ"
+
+#: inc/AgenticFixes/Labels.php:156
+msgid "Timing Adjustable"
+msgstr "ਸਮਾਂ-ਸੈਟਿੰਗ ਸਮਾਇਜਯੋਗ"
+
+#: inc/AgenticFixes/Labels.php:157
+msgid "Pause, Stop, Hide"
+msgstr "ਰੋਕੋ, ਬੰਦ ਕਰੋ, ਲੁਕਾਓ"
+
+#: inc/AgenticFixes/Labels.php:158
+msgid "No Timing"
+msgstr "ਕੋਈ ਸਮਾਂ ਸੀਮਾ ਨਹੀਂ"
+
+#: inc/AgenticFixes/Labels.php:159
+msgid "Interruptions"
+msgstr "ਵਿਘਨ"
+
+#: inc/AgenticFixes/Labels.php:160
+msgid "Re-authenticating"
+msgstr "ਮੁੜ-ਪ੍ਰਮਾਣਿਕਤਾ ਕਰਨਾ"
+
+#: inc/AgenticFixes/Labels.php:161
+msgid "Timeouts"
+msgstr "ਸਮਾਂ ਸਮਾਪਤੀ"
+
+#: inc/AgenticFixes/Labels.php:162
+msgid "Three Flashes or Below Threshold"
+msgstr "ਤਿੰਨ ਫਲੈਸ਼ ਜਾਂ ਥ੍ਰੈਸ਼ਹੋਲਡ ਤੋਂ ਹੇਠਾਂ"
+
+#: inc/AgenticFixes/Labels.php:163
+msgid "Three Flashes"
+msgstr "ਤਿੰਨ ਫਲੈਸ਼"
+
+#: inc/AgenticFixes/Labels.php:164
+msgid "Animation from Interactions"
+msgstr "ਇੰਟਰੈਕਸ਼ਨਾਂ ਤੋਂ ਐਨੀਮੇਸ਼ਨ"
+
+#: inc/AgenticFixes/Labels.php:165
+msgid "Bypass Blocks"
+msgstr "ਬਲਾਕਾਂ ਨੂੰ ਬਾਈਪਾਸ ਕਰੋ"
+
+#: inc/AgenticFixes/Labels.php:166
+msgid "Page Titled"
+msgstr "ਪੰਨੇ ਦਾ ਸਿਰਲੇਖ"
+
+#: inc/AgenticFixes/Labels.php:167
+msgid "Focus Order"
+msgstr "ਫੋਕਸ ਕ੍ਰਮ"
+
+#: inc/AgenticFixes/Labels.php:168
+msgid "Link Purpose (In Context)"
+msgstr "ਲਿੰਕ ਦਾ ਉਦੇਸ਼ (ਸੰਦਰਭ ਵਿੱਚ)"
+
+#: inc/AgenticFixes/Labels.php:169
+msgid "Multiple Ways"
+msgstr "ਕਈ ਤਰੀਕੇ"
+
+#: inc/AgenticFixes/Labels.php:170
+msgid "Headings and Labels"
+msgstr "ਸਿਰਲੇਖ ਅਤੇ ਲੇਬਲ"
+
+#: inc/AgenticFixes/Labels.php:171
+msgid "Focus Visible"
+msgstr "ਫੋਕਸ ਦਿੱਖਯੋਗ"
+
+#: inc/AgenticFixes/Labels.php:172
+msgid "Location"
+msgstr "ਟਿਕਾਣਾ"
+
+#: inc/AgenticFixes/Labels.php:173
+msgid "Link Purpose (Link Only)"
+msgstr "ਲਿੰਕ ਦਾ ਉਦੇਸ਼ (ਕੇਵਲ ਲਿੰਕ)"
+
+#: inc/AgenticFixes/Labels.php:174
+msgid "Section Headings"
+msgstr "ਭਾਗ ਸਿਰਲੇਖ"
+
+#: inc/AgenticFixes/Labels.php:175
+msgid "Focus Not Obscured (Minimum)"
+msgstr "ਫੋਕਸ ਓਹਲੇ ਨਹੀਂ ਹੁੰਦਾ (ਘੱਟੋ-ਘੱਟ)"
+
+#: inc/AgenticFixes/Labels.php:176
+msgid "Focus Not Obscured (Enhanced)"
+msgstr "ਫੋਕਸ ਓਹਲੇ ਨਹੀਂ ਹੁੰਦਾ (ਉੱਨਤ)"
+
+#: inc/AgenticFixes/Labels.php:177
+msgid "Focus Appearance"
+msgstr "ਫੋਕਸ ਦੀ ਦਿੱਖ"
+
+#: inc/AgenticFixes/Labels.php:178
+msgid "Pointer Gestures"
+msgstr "ਪੌਇੰਟਰ ਇਸ਼ਾਰੇ"
+
+#: inc/AgenticFixes/Labels.php:179
+msgid "Pointer Cancellation"
+msgstr "ਪੌਇੰਟਰ ਰੱਦ ਕਰਨਾ"
+
+#: inc/AgenticFixes/Labels.php:180
+msgid "Label in Name"
+msgstr "ਨਾਮ ਵਿੱਚ ਲੇਬਲ"
+
+#: inc/AgenticFixes/Labels.php:181
+msgid "Motion Actuation"
+msgstr "ਗਤੀ ਰਾਹੀਂ ਸਰਗਰਮੀ"
+
+#: inc/AgenticFixes/Labels.php:182
+msgid "Target Size (Enhanced)"
+msgstr "ਟਾਰਗੇਟ ਆਕਾਰ (ਉੱਨਤ)"
+
+#: inc/AgenticFixes/Labels.php:183
+msgid "Concurrent Input Mechanisms"
+msgstr "ਸਮਕਾਲੀ ਇਨਪੁੱਟ ਮਕੈਨਿਜ਼ਮ"
+
+#: inc/AgenticFixes/Labels.php:184
+msgid "Dragging Movements"
+msgstr "ਖਿੱਚਣ ਵਾਲੀਆਂ ਹਿਲਚਲਾਂ"
+
+#: inc/AgenticFixes/Labels.php:185
+msgid "Target Size (Minimum)"
+msgstr "ਟਾਰਗੇਟ ਆਕਾਰ (ਘੱਟੋ-ਘੱਟ)"
+
+#: inc/AgenticFixes/Labels.php:187
+msgid "Language of Page"
+msgstr "ਪੰਨੇ ਦੀ ਭਾਸ਼ਾ"
+
+#: inc/AgenticFixes/Labels.php:188
+msgid "Language of Parts"
+msgstr "ਹਿੱਸਿਆਂ ਦੀ ਭਾਸ਼ਾ"
+
+#: inc/AgenticFixes/Labels.php:189
+msgid "Unusual Words"
+msgstr "ਅਸਧਾਰਣ ਸ਼ਬਦ"
+
+#: inc/AgenticFixes/Labels.php:190
+msgid "Abbreviations"
+msgstr "ਸੰਖੇਪ ਰੂਪ"
+
+#: inc/AgenticFixes/Labels.php:191
+msgid "Reading Level"
+msgstr "ਪੜ੍ਹਨ ਦਾ ਪੱਧਰ"
+
+#: inc/AgenticFixes/Labels.php:192
+msgid "Pronunciation"
+msgstr "ਉਚਾਰਣ"
+
+#: inc/AgenticFixes/Labels.php:193
+msgid "On Focus"
+msgstr "ਫੋਕਸ ਹੋਣ 'ਤੇ"
+
+#: inc/AgenticFixes/Labels.php:194
+msgid "On Input"
+msgstr "ਇਨਪੁੱਟ ਹੋਣ 'ਤੇ"
+
+#: inc/AgenticFixes/Labels.php:195
+msgid "Consistent Navigation"
+msgstr "ਸਥਿਰ ਨੇਵੀਗੇਸ਼ਨ"
+
+#: inc/AgenticFixes/Labels.php:196
+msgid "Consistent Identification"
+msgstr "ਸਥਿਰ ਪਛਾਣ"
+
+#: inc/AgenticFixes/Labels.php:197
+msgid "Change on Request"
+msgstr "ਬੇਨਤੀ 'ਤੇ ਤਬਦੀਲੀ"
+
+#: inc/AgenticFixes/Labels.php:198
+msgid "Consistent Help"
+msgstr "ਸਥਿਰ ਮਦਦ"
+
+#: inc/AgenticFixes/Labels.php:199
+msgid "Error Identification"
+msgstr "ਗਲਤੀ ਦੀ ਪਛਾਣ"
+
+#: inc/AgenticFixes/Labels.php:200
+msgid "Labels or Instructions"
+msgstr "ਲੇਬਲ ਜਾਂ ਹਦਾਇਤਾਂ"
+
+#: inc/AgenticFixes/Labels.php:201
+msgid "Error Suggestion"
+msgstr "ਗਲਤੀ ਲਈ ਸੁਝਾਅ"
+
+#: inc/AgenticFixes/Labels.php:202
+msgid "Error Prevention (Legal, Financial, Data)"
+msgstr "ਗਲਤੀ ਰੋਕਥਾਮ (ਕਾਨੂੰਨੀ, ਵਿੱਤੀ, ਡਾਟਾ)"
+
+#: inc/AgenticFixes/Labels.php:203
+msgid "Help"
+msgstr "ਮਦਦ"
+
+#: inc/AgenticFixes/Labels.php:204
+msgid "Error Prevention (All)"
+msgstr "ਗਲਤੀ ਰੋਕਥਾਮ (ਸਭ)"
+
+#: inc/AgenticFixes/Labels.php:205
+msgid "Redundant Entry"
+msgstr "ਫ਼ਜ਼ੂਲ ਐਂਟਰੀ"
+
+#: inc/AgenticFixes/Labels.php:206
+msgid "Accessible Authentication (Minimum)"
+msgstr "ਪਹੁੰਚਯੋਗ ਪ੍ਰਮਾਣਿਕਤਾ (ਘੱਟੋ-ਘੱਟ)"
+
+#: inc/AgenticFixes/Labels.php:207
+msgid "Accessible Authentication (Enhanced)"
+msgstr "ਪਹੁੰਚਯੋਗ ਪ੍ਰਮਾਣਿਕਤਾ (ਉੱਨਤ)"
+
+#: inc/AgenticFixes/Labels.php:209
+msgid "Parsing"
+msgstr "ਪਾਰਸਿੰਗ"
+
+#: inc/AgenticFixes/Labels.php:210
+msgid "Name, Role, Value"
+msgstr "ਨਾਮ, ਭੂਮਿਕਾ, ਮੁੱਲ"
+
+#: inc/AgenticFixes/Labels.php:211
+msgid "Status Messages"
+msgstr "ਸਥਿਤੀ ਸੁਨੇਹੇ"
+
+#: inc/AgenticFixes/Labels.php:224
+msgid "Let AllAccessible agents fix these for you"
+msgstr "AllAccessible ਏਜੰਟਾਂ ਨੂੰ ਇਹ ਤੁਹਾਡੇ ਲਈ ਠੀਕ ਕਰਨ ਦਿਓ"
+
+#: inc/AgenticFixes/Labels.php:225
+msgid ""
+"Premium plans include human-in-the-loop agentic AI remediation. Your team approves, agents do the "
+"work."
+msgstr ""
+"ਪ੍ਰੀਮੀਅਮ ਪਲਾਨਾਂ ਵਿੱਚ human-in-the-loop agentic AI ਰੀਮੀਡੀਏਸ਼ਨ ਸ਼ਾਮਲ ਹੈ। ਤੁਹਾਡੀ ਟੀਮ ਮਨਜ਼ੂਰੀ ਦਿੰਦੀ ਹੈ, ਏਜੰਟ ਕੰਮ ਕਰਦੇ "
+"ਹਨ।"
+
+#: inc/AgenticFixesDashboardWidget.php:27
+msgid "AllAccessible — Agentic Fixes"
+msgstr "AllAccessible — Agentic Fixes"
+
+#: inc/AgenticFixesDashboardWidget.php:34
+msgid "Plugin not fully initialized. Please reload."
+msgstr "ਪਲੱਗਇਨ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸ਼ੁਰੂ ਨਹੀਂ ਹੋਇਆ। ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਲੋਡ ਕਰੋ।"
+
+#: inc/AgenticFixesDashboardWidget.php:63
+msgid "Upgrade to apply fixes"
+msgstr "ਠੀਕੀਆਂ ਲਾਗੂ ਕਰਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/AgenticFixesDashboardWidget.php:64 inc/DashboardLayout.php:243
+msgid "Review fixes"
+msgstr "ਸੁਧਾਰਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰੋ"
+
+#: inc/AgenticFixesDashboardWidget.php:70
+msgid "No scans yet. Submit your sitemap from the AllAccessible page to start."
+msgstr "ਹਾਲੇ ਕੋਈ ਸਕੈਨ ਨਹੀਂ। ਸ਼ੁਰੂ ਕਰਨ ਲਈ AllAccessible ਪੰਨੇ ਤੋਂ ਆਪਣਾ ਸਾਈਟਮੈਪ ਜਮ੍ਹਾਂ ਕਰੋ।"
+
+#: inc/AgenticFixesDashboardWidget.php:74
+msgid "Go to AllAccessible"
+msgstr "AllAccessible 'ਤੇ ਜਾਓ"
+
+#: inc/AgenticFixesDashboardWidget.php:87
+msgid "accessibility issue detected"
+msgid_plural "accessibility issues detected"
+msgstr[0] "ਪਹੁੰਚਯੋਗਤਾ ਸਮੱਸਿਆ ਮਿਲੀ"
+msgstr[1] "ਪਹੁੰਚਯੋਗਤਾ ਸਮੱਸਿਆਵਾਂ ਮਿਲੀਆਂ"
+
+#. translators: %s: count of pages scanned
+#: inc/AgenticFixesDashboardWidget.php:97
+#, php-format
+msgid "%s page scanned"
+msgid_plural "%s pages scanned"
+msgstr[0] "%s ਪੰਨਾ ਸਕੈਨ ਕੀਤਾ ਗਿਆ"
+msgstr[1] "%s ਪੰਨੇ ਸਕੈਨ ਕੀਤੇ ਗਏ"
+
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/AgenticFixesDashboardWidget.php:105
+#, php-format
+msgid "last scan %s ago"
+msgstr "ਆਖਰੀ ਸਕੈਨ %s ਪਹਿਲਾਂ"
+
+#. translators: %s: count of manifests waiting on approval
+#: inc/AgenticFixesDashboardWidget.php:118
+#, php-format
+msgid "%s manifest pending your approval"
+msgid_plural "%s manifests pending your approval"
+msgstr[0] "%s ਮੈਨਿਫੈਸਟ ਤੁਹਾਡੀ ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਵਿੱਚ ਹੈ"
+msgstr[1] "%s ਮੈਨਿਫੈਸਟ ਤੁਹਾਡੀ ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਵਿੱਚ ਹਨ"
+
+#: inc/AgenticFixesDashboardWidget.php:127
+msgid "AllAccessible agents can auto-fix these. Upgrade to enable agentic AI remediation."
+msgstr "AllAccessible ਏਜੰਟ ਇਹਨਾਂ ਨੂੰ ਆਪਣੇ ਆਪ ਠੀਕ ਕਰ ਸਕਦੇ ਹਨ। ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ ਚਾਲੂ ਕਰਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#: inc/AgenticFixesDashboardWidget.php:145
+msgid "Could not load fixes summary right now."
+msgstr "ਇਸ ਵੇਲੇ ਫਿਕਸਾਂ ਦਾ ਸਾਰ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ।"
+
+#: inc/AgenticFixesPage.php:27 inc/AgenticFixesPage.php:28 inc/AgenticFixesPage.php:140
+#: inc/AgenticFixesPage.php:667 inc/SettingsPage.php:499 inc/SettingsPage.php:603
+msgid "Agentic Fixes"
+msgstr "Agentic Fixes"
+
+#: inc/AgenticFixesPage.php:137 inc/AgenticFixesPage.php:142 inc/AgenticFixesPage.php:665
+#: inc/AgenticFixesPage.php:680 inc/AgenticFixesPage.php:857 inc/ConversionCTA.php:119
+#: inc/EditorMetaBox.php:271 inc/ImageManagerPage.php:160 inc/OnboardingWizard.php:288
+#: inc/SettingsPage.php:416 inc/SettingsPage.php:490 inc/SettingsPage.php:574 inc/SettingsPage.php:1969
+#: inc/UsageDashboard.php:142 inc/WidgetCustomizer.php:211
+msgid "AllAccessible AI"
+msgstr "AllAccessible AI"
+
+#: inc/AgenticFixesPage.php:146
+msgid "Beta feature"
+msgstr "ਬੀਟਾ ਫੀਚਰ"
+
+#: inc/AgenticFixesPage.php:147 inc/SettingsPage.php:1155
+msgid "Beta"
+msgstr "ਬੀਟਾ"
+
+#: inc/AgenticFixesPage.php:152
+msgid ""
+"AllAccessible agents propose accessibility fixes. You review and approve before anything goes live "
+"on your site."
+msgstr ""
+"AllAccessible ਏਜੰਟ ਪਹੁੰਚਯੋਗਤਾ ਲਈ ਸੁਧਾਰ ਸੁਝਾਉਂਦੇ ਹਨ। ਤੁਹਾਡੇ ਸਾਈਟ ‘ਤੇ ਕੁਝ ਵੀ ਲਾਈਵ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਸਮੀਖਿਆ ਕਰਕੇ ਮਨਜ਼ੂਰੀ "
+"ਦਿੰਦੇ ਹੋ।"
+
+#: inc/AgenticFixesPage.php:169 inc/ConnectionStatusCard.php:71
+msgid "Could not reach AllAccessible right now."
+msgstr "ਇਸ ਵੇਲੇ AllAccessible ਤੱਕ ਪਹੁੰਚ ਨਹੀਂ ਹੋ ਸਕੀ।"
+
+#: inc/AgenticFixesPage.php:182
+msgid "score"
+msgstr "ਸਕੋਰ"
+
+#: inc/AgenticFixesPage.php:186
+msgid "pages audited"
+msgstr "ਆਡਿਟ ਕੀਤੇ ਪੰਨੇ"
+
+#. translators: %s: human-readable time difference (e.g. "2 hours")
+#. translators: %s: human-readable time diff
+#: inc/AgenticFixesPage.php:194 inc/ScanTriggerPanel.php:86
+#, php-format
+msgid "Last scan %s ago"
+msgstr "ਆਖਰੀ ਸਕੈਨ %s ਪਹਿਲਾਂ"
+
+#: inc/AgenticFixesPage.php:245
+msgid "Approved & applied"
+msgstr "ਮਨਜ਼ੂਰ ਅਤੇ ਲਾਗੂ ਕੀਤਾ"
+
+#: inc/AgenticFixesPage.php:254
+msgid "Filter Agentic Fixes by status"
+msgstr "ਸਥਿਤੀ ਅਨੁਸਾਰ Agentic Fixes ਫਿਲਟਰ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:330
+msgid "How this works"
+msgstr "ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ"
+
+#: inc/AgenticFixesPage.php:332
+msgid ""
+"AllAccessible agents review your site and propose fixes for accessibility issues. Nothing changes on "
+"your site until you approve. You can edit any suggestion before approving, and you can revert any "
+"approved fix at any time."
+msgstr ""
+"AllAccessible ਏਜੰਟ ਤੁਹਾਡੀ ਸਾਈਟ ਦੀ ਸਮੀਖਿਆ ਕਰਦੇ ਹਨ ਅਤੇ ਐਕਸੈਸਿਬਿਲਟੀ ਸਮੱਸਿਆਵਾਂ ਲਈ ਸੁਧਾਰ ਸੁਝਾਉਂਦੇ ਹਨ। ਤੁਹਾਡੇ ਮਨਜ਼ੂਰ ਕਰਨ "
+"ਤੱਕ ਤੁਹਾਡੀ ਸਾਈਟ ‘ਤੇ ਕੁਝ ਵੀ ਨਹੀਂ ਬਦਲਦਾ। ਤੁਸੀਂ ਮਨਜ਼ੂਰ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਕਿਸੇ ਵੀ ਸੁਝਾਅ ਨੂੰ ਸੋਧ ਸਕਦੇ ਹੋ, ਅਤੇ ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਮਨਜ਼ੂਰਸ਼ੁਦਾ "
+"ਸੁਧਾਰ ਨੂੰ ਕਿਸੇ ਵੀ ਵੇਲੇ ਵਾਪਸ ਕਰ ਸਕਦੇ ਹੋ।"
+
+#. translators: 1: count of fixes; 2: rule type label (e.g., "Missing image description")
+#: inc/AgenticFixesPage.php:353
+#, php-format
+msgid "%1$s pending fixes for \"%2$s\". Approve them all in one click."
+msgstr "\"%2$s\" ਲਈ %1$s ਬਾਕੀ ਸੁਧਾਰ। ਉਹਨਾਂ ਸਭ ਨੂੰ ਇੱਕ ਕਲਿੱਕ ਵਿੱਚ ਮਨਜ਼ੂਰ ਕਰੋ।"
+
+#. translators: 1: count; 2: rule label
+#: inc/AgenticFixesPage.php:366
+#, php-format
+msgid "Bulk approve %1$s %2$s fixes"
+msgstr "%1$s %2$s ਸੁਧਾਰ ਇਕੱਠੇ ਮਨਜ਼ੂਰ ਕਰੋ"
+
+#. translators: %s: count of fixes
+#: inc/AgenticFixesPage.php:373
+#, php-format
+msgid "Bulk approve all %s"
+msgstr "ਸਾਰੇ %s ਨੂੰ ਇਕੱਠੇ ਮਨਜ਼ੂਰ ਕਰੋ"
+
+#. translators: %s: WCAG success criterion number (e.g., "1.1.1")
+#: inc/AgenticFixesPage.php:426
+#, php-format
+msgid "WCAG %s"
+msgstr "WCAG %s"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:439
+#, php-format
+msgid "confidence: %s percent"
+msgstr "ਭਰੋਸਾ: %s ਪ੍ਰਤੀਸ਼ਤ"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:445
+#, php-format
+msgid "%s%% confidence"
+msgstr "%s%% cਭਰੋਸਾ"
+
+#: inc/AgenticFixesPage.php:463
+msgid "What's wrong"
+msgstr "ਕੀ ਗਲਤ ਹੈ"
+
+#. translators: 1: rationale phrase (e.g., "Suggested alt text for image"); 2: selector
+#: inc/AgenticFixesPage.php:469
+#, php-format
+msgid "%1$s on element %2$s"
+msgstr "%2$s ਤੱਤ ‘ਤੇ %1$s"
+
+#: inc/AgenticFixesPage.php:481
+msgid "Proposed fix"
+msgstr "ਸੁਝਾਇਆ ਗਿਆ ਸੁਧਾਰ"
+
+#: inc/AgenticFixesPage.php:487
+msgid "Edit proposed fix value"
+msgstr "ਪ੍ਰਸਤਾਵਿਤ ਸੁਧਾਰ ਮੁੱਲ ਸੋਧੋ"
+
+#: inc/AgenticFixesPage.php:500
+msgid "page affected"
+msgid_plural "pages affected"
+msgstr[0] "ਪ੍ਰਭਾਵਿਤ ਪੇਜ"
+msgstr[1] "ਪ੍ਰਭਾਵਿਤ ਪੰਨੇ"
+
+#. translators: %s: formatted date (e.g., "2026-05-23")
+#: inc/AgenticFixesPage.php:509
+#, php-format
+msgid "Applied on %s"
+msgstr "%s 'ਤੇ ਲਾਗੂ ਕੀਤਾ"
+
+#. translators: %s: count of pages where this fix appears
+#: inc/AgenticFixesPage.php:525
+#, php-format
+msgid "Where it appears (%s)"
+msgstr "ਜਿੱਥੇ ਇਹ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ (%s)"
+
+#: inc/AgenticFixesPage.php:544
+msgid "Open this page with the affected element scrolled into view and highlighted"
+msgstr "ਇਸ ਪੰਨੇ ਨੂੰ ਇਸ ਤਰ੍ਹਾਂ ਖੋਲ੍ਹੋ ਕਿ ਪ੍ਰਭਾਵਿਤ ਤੱਤ ਸਕ੍ਰੋਲ ਹੋ ਕੇ ਦਿੱਖ ਵਿੱਚ ਆ ਜਾਵੇ ਅਤੇ ਹਾਈਲਾਈਟ ਹੋਵੇ"
+
+#: inc/AgenticFixesPage.php:545
+msgid "View on site"
+msgstr "ਸਾਈਟ ‘ਤੇ ਵੇਖੋ"
+
+#: inc/AgenticFixesPage.php:552 inc/ImageManagerPage.php:347
+msgid "Edit"
+msgstr "ਸੰਪਾਦਿਤ ਕਰੋ"
+
+#. translators: %s: count of additional pages not listed
+#: inc/AgenticFixesPage.php:562
+#, php-format
+msgid "+%s more"
+msgstr "+%s ਹੋਰ"
+
+#: inc/AgenticFixesPage.php:579
+msgid "Skip"
+msgstr "ਛੱਡੋ"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:587
+#, php-format
+msgid "Save edit and apply to %2$s pages for %1$s"
+msgstr "ਸੋਧ ਸੇਵ ਕਰੋ ਅਤੇ %1$s ਲਈ %2$s ਪੰਨਿਆਂ 'ਤੇ ਲਾਗੂ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:591
+msgid "Save edit"
+msgstr "ਸੋਧ ਸੇਵ ਕਰੋ"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:598
+#, php-format
+msgid "Approve %1$s on %2$s pages"
+msgstr "%2$s ਪੰਨਿਆਂ 'ਤੇ %1$s ਮਨਜ਼ੂਰ ਕਰੋ"
+
+#. translators: %s: count of pages
+#: inc/AgenticFixesPage.php:605
+#, php-format
+msgid "Approve on %s page"
+msgid_plural "Approve on %s pages"
+msgstr[0] "%s ਪੰਨੇ 'ਤੇ ਮਨਜ਼ੂਰ ਕਰੋ"
+msgstr[1] "%s ਪੰਨਿਆਂ 'ਤੇ ਮਨਜ਼ੂਰ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:613
+msgid "Live on your site"
+msgstr "ਤੁਹਾਡੀ ਸਾਈਟ ‘ਤੇ ਲਾਈਵ"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:618
+#, php-format
+msgid "Revert %1$s on %2$s pages"
+msgstr "%2$s ਪੰਨਿਆਂ 'ਤੇ %1$s ਵਾਪਸ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:622 inc/AgenticFixesPage.php:902
+msgid "Revert"
+msgstr "ਵਾਪਸ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:626
+msgid "Not applied"
+msgstr "ਲਾਗੂ ਨਹੀਂ ਕੀਤਾ"
+
+#: inc/AgenticFixesPage.php:668 inc/SettingsPage.php:470
+msgid "Legacy widget"
+msgstr "ਪੁਰਾਣਾ ਵਿਜੈਟ"
+
+#: inc/AgenticFixesPage.php:671
+msgid "Agentic AI remediation is not available on your current plan."
+msgstr "ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਪਲਾਨ 'ਤੇ Agentic AI remediation ਉਪਲਬਧ ਨਹੀਂ ਹੈ।"
+
+#: inc/AgenticFixesPage.php:682 inc/SettingsPage.php:417
+msgid "Upgrade to unlock Agentic Fixes"
+msgstr "Agentic Fixes ਅਨਲੌਕ ਕਰਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:687
+msgid ""
+"Your site runs the legacy AllAccessible widget, which predates agentic AI remediation. The widget "
+"keeps working as-is, but upgrading to the current plan tier unlocks:"
+msgstr ""
+"ਤੁਹਾਡੀ ਸਾਈਟ ਲੈਗੇਸੀ AllAccessible ਵਿਜੈਟ ਚਲਾਉਂਦੀ ਹੈ, ਜੋ ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ ਤੋਂ ਪਹਿਲਾਂ ਦੀ ਹੈ। ਵਿਜੈਟ ਜਿਵੇਂ-ਦਾ-ਤਿਵੇਂ ਕੰਮ "
+"ਕਰਦਾ ਰਹਿੰਦਾ ਹੈ, ਪਰ ਮੌਜੂਦਾ ਪਲਾਨ ਟੀਅਰ ‘ਤੇ ਅੱਪਗ੍ਰੇਡ ਕਰਨ ਨਾਲ ਇਹ ਅਨਲੌਕ ਹੁੰਦਾ ਹੈ:"
+
+#: inc/AgenticFixesPage.php:690
+msgid "Human-in-the-loop agentic AI remediation — agents propose fixes, your team approves."
+msgstr "ਹਿਊਮਨ-ਇਨ-ਦ-ਲੂਪ ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ — ਏਜੰਟ ਸੁਧਾਰ ਸੁਝਾਉਂਦੇ ਹਨ, ਤੁਹਾਡੀ ਟੀਮ ਮਨਜ਼ੂਰੀ ਦਿੰਦੀ ਹੈ।"
+
+#: inc/AgenticFixesPage.php:691
+msgid "Continuous accessibility scoring with site-level coverage tracking."
+msgstr "ਸਾਈਟ-ਪੱਧਰੀ ਕਵਰੇਜ ਟ੍ਰੈਕਿੰਗ ਨਾਲ ਲਗਾਤਾਰ ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰਿੰਗ।"
+
+#: inc/AgenticFixesPage.php:692
+msgid "Higher monthly pageview caps and AllAccessible AI alt text generation."
+msgstr "ਉੱਚੀਆਂ ਮਹੀਨਾਵਾਰ ਪੇਜਵਿਊ ਸੀਮਾਵਾਂ ਅਤੇ AllAccessible AI ਆਲਟ ਟੈਕਸਟ ਜਨਰੇਸ਼ਨ।"
+
+#: inc/AgenticFixesPage.php:693
+msgid ""
+"Image AI manager, per-page audit scores in the WordPress editor, and downloadable WCAG / VPAT "
+"reports."
+msgstr "ਇਮੇਜ AI ਮੈਨੇਜਰ, WordPress ਐਡੀਟਰ ਵਿੱਚ ਪ੍ਰਤੀ-ਪੰਨਾ ਆਡਿਟ ਸਕੋਰ, ਅਤੇ ਡਾਊਨਲੋਡ ਕਰਨਯੋਗ WCAG / VPAT ਰਿਪੋਰਟਾਂ।"
+
+#: inc/AgenticFixesPage.php:696 inc/SettingsPage.php:480
+msgid "See upgrade options"
+msgstr "ਅੱਪਗ੍ਰੇਡ ਵਿਕਲਪ ਵੇਖੋ"
+
+#: inc/AgenticFixesPage.php:716 inc/AgenticFixesPage.php:727
+msgid "You're all caught up"
+msgstr "ਤੁਸੀਂ ਸਭ ਕੁਝ ਅਪ-ਟੂ-ਡੇਟ ਹੋ"
+
+#: inc/AgenticFixesPage.php:717
+msgid ""
+"No fixes are waiting for review. Run a scan and AllAccessible agents will propose any new fixes they "
+"find."
+msgstr ""
+"ਸਮੀਖਿਆ ਲਈ ਕੋਈ ਫਿਕਸ ਉਡੀਕ ਨਹੀਂ ਕਰ ਰਹੇ। ਇੱਕ ਸਕੈਨ ਚਲਾਓ ਅਤੇ AllAccessible ਏਜੈਂਟ ਕੋਈ ਵੀ ਨਵੇਂ ਫਿਕਸ ਜੋ ਉਹ ਲੱਭਣਗੇ, ਪ੍ਰਸਤਾਵਿਤ "
+"ਕਰਨਗੇ।"
+
+#: inc/AgenticFixesPage.php:728
+msgid "No fixes are waiting for review right now."
+msgstr "ਇਸ ਵੇਲੇ ਸਮੀਖਿਆ ਲਈ ਕੋਈ ਵੀ ਫਿਕਸ ਬਾਕੀ ਨਹੀਂ ਹੈ।"
+
+#: inc/AgenticFixesPage.php:738
+msgid "No fixes approved yet"
+msgstr "ਹਾਲੇ ਕੋਈ ਸੁਧਾਰ ਮਨਜ਼ੂਰ ਨਹੀਂ ਹੋਇਆ"
+
+#: inc/AgenticFixesPage.php:741
+msgid "Approved fixes will appear here once you start reviewing the pending queue."
+msgstr "ਜਦੋਂ ਤੁਸੀਂ ਪੈਂਡਿੰਗ ਕਤਾਰ ਦੀ ਸਮੀਖਿਆ ਕਰਨੀ ਸ਼ੁਰੂ ਕਰੋਗੇ, ਤਾਂ ਮਨਜ਼ੂਰਸ਼ੁਦਾ ਸੁਧਾਰ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੇ।"
+
+#: inc/AgenticFixesPage.php:751
+msgid "Nothing has been reverted"
+msgstr "ਕੁਝ ਵੀ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਗਿਆ"
+
+#: inc/AgenticFixesPage.php:754
+msgid "Any approved fix you revert will be tracked here for reference."
+msgstr "ਤੁਸੀਂ ਜੋ ਵੀ ਮਨਜ਼ੂਰਸ਼ੁਦਾ ਸੁਧਾਰ ਵਾਪਸ ਕਰੋਗੇ, ਉਹ ਹਵਾਲੇ ਲਈ ਇੱਥੇ ਟ੍ਰੈਕ ਕੀਤਾ ਜਾਵੇਗਾ।"
+
+#: inc/AgenticFixesPage.php:772 inc/ImageManagerPage.php:403
+msgid "AllAccessible AI · Free preview"
+msgstr "AllAccessible AI · ਮੁਫ਼ਤ ਪ੍ਰੀਵਿਊ"
+
+#: inc/AgenticFixesPage.php:776
+#, php-format
+msgid "You've previewed %1$d of %2$d agentic fix proposals"
+msgstr "ਤੁਸੀਂ %2$d ਵਿੱਚੋਂ %1$d ਏਜੈਂਟਿਕ ਫਿਕਸ ਪ੍ਰਸਤਾਵਾਂ ਦੀ ਝਲਕ ਵੇਖ ਲਈ ਹੈ"
+
+#: inc/AgenticFixesPage.php:781
+msgid ""
+"Real proposals drafted for the real issues found on your site. Upgrade to review, approve, and apply "
+"the rest — human-in-the-loop, every fix."
+msgstr ""
+"ਤੁਹਾਡੀ ਸਾਈਟ ‘ਤੇ ਮਿਲੇ ਅਸਲ ਮੁੱਦਿਆਂ ਲਈ ਅਸਲ ਪ੍ਰਸਤਾਵ ਤਿਆਰ ਕੀਤੇ ਗਏ ਹਨ। ਬਾਕੀ ਦੀ ਸਮੀਖਿਆ ਕਰਨ, ਮਨਜ਼ੂਰ ਕਰਨ ਅਤੇ ਲਾਗੂ ਕਰਨ ਲਈ "
+"ਅੱਪਗ੍ਰੇਡ ਕਰੋ — human-in-the-loop, ਹਰ ਫਿਕਸ।"
+
+#: inc/AgenticFixesPage.php:785 inc/ImageManagerPage.php:416
+msgid "Unlock unlimited"
+msgstr "ਅਸੀਮਿਤ ਅਨਲੌਕ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:798
+msgid "Fix proposal preview"
+msgstr "ਠੀਕ ਕਰਨ ਦੇ ਪ੍ਰਸਤਾਵ ਦਾ ਪ੍ਰੀਵਿਊ"
+
+#: inc/AgenticFixesPage.php:816
+#, php-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] "%d ਪੰਨਾ"
+msgstr[1] "%d ਪੰਨੇ"
+
+#: inc/AgenticFixesPage.php:833
+#, php-format
+msgid "Unlock %d more agentic fix proposals for your site"
+msgstr "ਆਪਣੀ ਸਾਈਟ ਲਈ %d ਹੋਰ ਏਜੈਂਟਿਕ ਫਿਕਸ ਪ੍ਰਸਤਾਵ ਅਨਲੌਕ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:838 inc/ImageManagerPage.php:460
+msgid "Upgrade — starts at $10/month"
+msgstr "ਅੱਪਗ੍ਰੇਡ — $10/ਮਹੀਨਾ ਤੋਂ ਸ਼ੁਰੂ"
+
+#: inc/AgenticFixesPage.php:866 inc/SettingsPage.php:134 inc/SettingsPage.php:424
+#: inc/SettingsPage.php:679 inc/SettingsPage.php:990 inc/TierGate.php:105 inc/UsageDashboard.php:42
+#: inc/UsageDashboard.php:234
+msgid "Upgrade plan"
+msgstr "ਯੋਜਨਾ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:882
+msgid "Edit fix"
+msgstr "ਸੁਧਾਰ ਸੋਧੋ"
+
+#: inc/AgenticFixesPage.php:884
+msgid "Update the suggested value before approving. Max 500 characters."
+msgstr "ਮਨਜ਼ੂਰੀ ਤੋਂ ਪਹਿਲਾਂ ਸੁਝਾਈ ਗਈ ਕੀਮਤ ਅੱਪਡੇਟ ਕਰੋ। ਵੱਧ ਤੋਂ ਵੱਧ 500 ਅੱਖਰ।"
+
+#: inc/AgenticFixesPage.php:888 inc/ImageManagerPage.php:584
+msgid "Save"
+msgstr "ਸੰਭਾਲੋ"
+
+#: inc/AgenticFixesPage.php:889 inc/AgenticFixesPage.php:903 inc/DeactivationSurvey.php:189
+#: inc/ImageManagerPage.php:581
+msgid "Cancel"
+msgstr "ਰੱਦ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:896
+msgid "Revert manifest"
+msgstr "ਮੈਨੀਫੈਸਟ ਵਾਪਸ ਕਰੋ"
+
+#: inc/AgenticFixesPage.php:898
+msgid "Why are you reverting? This helps us improve fix quality. Max 500 characters."
+msgstr "ਤੁਸੀਂ ਵਾਪਸ ਕਿਉਂ ਕਰ ਰਹੇ ਹੋ? ਇਹ ਸਾਨੂੰ ਫਿਕਸ ਦੀ ਗੁਣਵੱਤਾ ਸੁਧਾਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਵੱਧ ਤੋਂ ਵੱਧ 500 ਅੱਖਰ।"
+
+#: inc/AgenticFixesPage.php:952
+msgid "Action failed"
+msgstr "ਕਾਰਵਾਈ ਅਸਫਲ ਰਹੀ"
+
+#: inc/AgenticFixesPage.php:977
+msgid "Server returned no data"
+msgstr "ਸਰਵਰ ਨੇ ਕੋਈ ਡਾਟਾ ਵਾਪਸ ਨਹੀਂ ਭੇਜਿਆ"
+
+#: inc/AgenticFixesPage.php:1024
+msgid "Approve this fix on every page where it appears?"
+msgstr "ਜਿੱਥੇ ਵੀ ਇਹ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ, ਕੀ ਤੁਸੀਂ ਇਸ ਫਿਕਸ ਨੂੰ ਹਰ ਪੰਨੇ ‘ਤੇ ਮਨਜ਼ੂਰ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: inc/AgenticFixesPage.php:1034
+msgid "Revert reason (max 500 chars):"
+msgstr "ਵਾਪਸ ਕਰਨ ਦਾ ਕਾਰਨ (ਵੱਧ ਤੋਂ ਵੱਧ 500 ਅੱਖਰ):"
+
+#: inc/AgenticFixesPage.php:1046 inc/AgenticFixesPage.php:1136
+msgid "Value cannot be empty"
+msgstr "ਕੀਮਤ ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦੀ"
+
+#: inc/AgenticFixesPage.php:1047
+msgid "Apply this value to every page in the group?"
+msgstr "ਇਸ ਗਰੁੱਪ ਦੇ ਹਰ ਪੰਨੇ ‘ਤੇ ਇਹ ਕੀਮਤ ਲਾਗੂ ਕਰਨੀ ਹੈ?"
+
+#: inc/AgenticFixesPage.php:1069
+msgid "Nothing to approve."
+msgstr "ਮਨਜ਼ੂਰ ਕਰਨ ਲਈ ਕੁਝ ਨਹੀਂ।"
+
+#: inc/AgenticFixesPage.php:1070
+msgid "Approve every pending fix of this type?"
+msgstr "ਇਸ ਕਿਸਮ ਦੇ ਹਰ ਬਕਾਇਆ ਫਿਕਸ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰਨਾ ਹੈ?"
+
+#: inc/AgenticFixesPage.php:1087
+msgid "Bulk approve failed"
+msgstr "ਬਲਕ ਮਨਜ਼ੂਰੀ ਅਸਫਲ ਰਹੀ"
+
+#: inc/AgenticFixesPage.php:1112
+msgid "Approve this manifest? Fixes will go live immediately."
+msgstr "ਕੀ ਇਸ ਮੈਨਿਫੈਸਟ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰਨਾ ਹੈ? ਫਿਕਸ ਤੁਰੰਤ ਲਾਈਵ ਹੋ ਜਾਣਗੇ।"
+
+#: inc/ConnectionStatusCard.php:56
+msgid "Connection status"
+msgstr "ਕਨੈਕਸ਼ਨ ਸਥਿਤੀ"
+
+#: inc/ConnectionStatusCard.php:58
+msgid "Confirm this WordPress install is linked to the correct AllAccessible site."
+msgstr "ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ WordPress ਇੰਸਟਾਲੇਸ਼ਨ ਸਹੀ AllAccessible ਸਾਈਟ ਨਾਲ ਲਿੰਕ ਹੈ।"
+
+#: inc/ConnectionStatusCard.php:64
+msgid "Re-verify"
+msgstr "ਮੁੜ-ਤਸਦੀਕ ਕਰੋ"
+
+#: inc/ConnectionStatusCard.php:79
+msgid "WordPress URL"
+msgstr "WordPress URL"
+
+#: inc/ConnectionStatusCard.php:80 inc/SettingsPage.php:922
+msgid "Account ID"
+msgstr "ਖਾਤਾ ID"
+
+#: inc/ConnectionStatusCard.php:81
+msgid "Connected to"
+msgstr "ਨਾਲ ਕਨੈਕਟ ਕੀਤਾ ਹੋਇਆ ਹੈ"
+
+#: inc/ConnectionStatusCard.php:82
+msgid "Subdomain ID"
+msgstr "ਸਬਡੋਮੇਨ ID"
+
+#: inc/ConnectionStatusCard.php:84
+msgid "Plan tier"
+msgstr "ਪਲਾਨ ਟੀਅਰ"
+
+#: inc/ConnectionStatusCard.php:93
+msgid "WordPress URL matches the connected AllAccessible site."
+msgstr "WordPress URL ਜੁੜੀ ਹੋਈ AllAccessible ਸਾਈਟ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੈ।"
+
+#: inc/ConnectionStatusCard.php:98
+msgid "Mismatch detected"
+msgstr "ਅਣਮਿਲਾਪ ਮਿਲਿਆ"
+
+#. translators: 1: WP URL host, 2: server host
+#: inc/ConnectionStatusCard.php:103
+#, php-format
+msgid ""
+"WordPress is configured for %1$s but this plugin is linked to %2$s on your AllAccessible account. "
+"The Agentic Fixes page will show fixes for the connected site, not this WordPress install."
+msgstr ""
+"WordPress %1$s ਲਈ ਕਨਫਿਗਰ ਕੀਤਾ ਗਿਆ ਹੈ ਪਰ ਇਹ ਪਲੱਗਇਨ ਤੁਹਾਡੇ AllAccessible ਖਾਤੇ ‘ਤੇ %2$s ਨਾਲ ਲਿੰਕ ਹੈ। Agentic "
+"Fixes ਪੇਜ ਜੁੜੀ ਹੋਈ ਸਾਈਟ ਲਈ ਫਿਕਸ ਦਿਖਾਵੇਗਾ, ਇਸ WordPress ਇੰਸਟਾਲ ਲਈ ਨਹੀਂ।"
+
+#: inc/ConnectionStatusCard.php:110
+msgid ""
+"Click \"Re-verify\" to refresh, or contact support if this site needs to be added to your account."
+msgstr ""
+"ਰਿਫ੍ਰੈਸ਼ ਕਰਨ ਲਈ \"Re-verify\" 'ਤੇ ਕਲਿੱਕ ਕਰੋ, ਜਾਂ ਜੇ ਇਸ ਸਾਈਟ ਨੂੰ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਜੋੜਨ ਦੀ ਲੋੜ ਹੈ ਤਾਂ ਸਹਾਇਤਾ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।"
+
+#: inc/ConnectionStatusCard.php:116
+msgid ""
+"This site has not been registered with AllAccessible yet. Visit your WordPress homepage to trigger "
+"registration, then click \"Re-verify\"."
+msgstr ""
+"ਇਹ ਸਾਈਟ ਹਾਲੇ AllAccessible ਨਾਲ ਰਜਿਸਟਰ ਨਹੀਂ ਕੀਤੀ ਗਈ। ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਟ੍ਰਿਗਰ ਕਰਨ ਲਈ ਆਪਣੀ WordPress ਹੋਮਪੇਜ 'ਤੇ ਜਾਓ, "
+"ਫਿਰ \"Re-verify\" 'ਤੇ ਕਲਿੱਕ ਕਰੋ।"
+
+#: inc/ConnectionStatusCard.php:189 inc/FeatureComparison.php:40 inc/SettingsPage.php:1945
+#: inc/SettingsPage.php:1946
+msgid "Free"
+msgstr "ਮੁਫ਼ਤ"
+
+#: inc/ConnectionStatusCard.php:190 inc/FeatureComparison.php:43 inc/SettingsPage.php:1927
+#: inc/SettingsPage.php:1928
+msgid "Starter"
+msgstr "ਸਟਾਰਟਰ"
+
+#: inc/ConnectionStatusCard.php:191 inc/FeatureComparison.php:46 inc/SettingsPage.php:1933
+#: inc/SettingsPage.php:1934
+msgid "Enterprise"
+msgstr "ਐਂਟਰਪ੍ਰਾਈਜ਼"
+
+#: inc/ConnectionStatusCard.php:192 inc/SettingsPage.php:1939
+msgid "Legacy"
+msgstr "ਲੇਗੇਸੀ"
+
+#: inc/ConnectionStatusCard.php:193 inc/SettingsPage.php:1921
+msgid "Trial"
+msgstr "ਟ੍ਰਾਇਲ"
+
+#: inc/ConnectionStatusCard.php:208
+msgid "Verifying…"
+msgstr "ਤਸਦੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…"
+
+#: inc/ConversionCTA.php:40
+msgid "Upgrade Now"
+msgstr "ਹੁਣੇ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/ConversionCTA.php:46
+msgid "Usage Limit Exceeded!"
+msgstr "ਵਰਤੋਂ ਸੀਮਾ ਤੋਂ ਵੱਧ ਗਈ!"
+
+#: inc/ConversionCTA.php:48
+#, php-format
+msgid ""
+"Your widget is currently using free features only. Upgrade to %s to restore premium functionality "
+"and increase your limits."
+msgstr ""
+"ਤੁਹਾਡਾ ਵਿਜੈਟ ਇਸ ਵੇਲੇ ਸਿਰਫ਼ ਮੁਫ਼ਤ ਫੀਚਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰ ਰਿਹਾ ਹੈ। ਪ੍ਰੀਮੀਅਮ ਕਾਰਗੁਜ਼ਾਰੀ ਮੁੜ ਬਹਾਲ ਕਰਨ ਅਤੇ ਆਪਣੀਆਂ ਸੀਮਾਵਾਂ ਵਧਾਉਣ "
+"ਲਈ %s 'ਤੇ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Starter"
+msgstr "Starter ‘ਤੇ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Enterprise"
+msgstr "Enterprise ‘ਤੇ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/ConversionCTA.php:68
+msgid "Approaching Your Limit"
+msgstr "ਤੁਸੀਂ ਆਪਣੀ ਸੀਮਾ ਦੇ ਨੇੜੇ ਹੋ"
+
+#: inc/ConversionCTA.php:70
+#, php-format
+msgid ""
+"You're using over 80%% of your %s. Upgrade before you hit the limit to avoid service interruption."
+msgstr "ਤੁਸੀਂ ਆਪਣੇ %s ਦਾ 80%% ਤੋਂ ਵੱਧ ਵਰਤ ਰਹੇ ਹੋ। ਸੇਵਾ ਵਿੱਚ ਰੁਕਾਵਟ ਤੋਂ ਬਚਣ ਲਈ ਸੀਮਾ ਤੱਕ ਪਹੁੰਚਣ ਤੋਂ ਪਹਿਲਾਂ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#: inc/ConversionCTA.php:73
+msgid "Upgrade Before Limit"
+msgstr "ਸੀਮਾ ਤੋਂ ਪਹਿਲਾਂ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/ConversionCTA.php:78
+msgid "Unlock Premium Features"
+msgstr "ਪ੍ਰੀਮੀਅਮ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ"
+
+#: inc/ConversionCTA.php:79
+msgid ""
+"Get AI-powered accessibility fixes, monthly compliance audits, custom widget styling, and priority "
+"support."
+msgstr ""
+"AI-ਸੰਚਾਲਿਤ ਐਕਸੈਸਿਬਿਲਟੀ ਫਿਕਸਾਂ, ਮਹੀਨਾਵਾਰ ਕੰਪਲਾਇਅੰਸ ਆਡਿਟ, ਕਸਟਮ ਵਿਜੈਟ ਸਟਾਈਲਿੰਗ, ਅਤੇ ਪ੍ਰਾਇਓਰਟੀ ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਕਰੋ।"
+
+#: inc/ConversionCTA.php:80
+msgid "Start 7-Day Trial"
+msgstr "7-ਦਿਨਾਂ ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: inc/ConversionCTA.php:85
+msgid "Scale with Add-Ons"
+msgstr "ਐਡ-ਆਨਜ਼ ਨਾਲ ਸਕੇਲ ਕਰੋ"
+
+#: inc/ConversionCTA.php:86
+msgid ""
+"Need more pageviews, AI fixes, or audits? Add custom limits to your plan or upgrade to Enterprise "
+"for unlimited access."
+msgstr ""
+"ਹੋਰ ਪੇਜਵਿਊਜ਼, AI ਫਿਕਸਾਂ ਜਾਂ ਆਡਿਟਾਂ ਦੀ ਲੋੜ ਹੈ? ਆਪਣੇ ਪਲਾਨ ਵਿੱਚ ਕਸਟਮ ਸੀਮਾਵਾਂ ਸ਼ਾਮਲ ਕਰੋ ਜਾਂ ਅਣਲਿਮਿਟਡ ਐਕਸੈੱਸ ਲਈ "
+"Enterprise ਵਿੱਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#: inc/ConversionCTA.php:87
+msgid "Explore Add-Ons"
+msgstr "ਐਡ-ਆਨਜ਼ ਦੀ ਖੋਜ ਕਰੋ"
+
+#: inc/DashboardBanner.php:66
+msgid "Get the Most Out of AllAccessible! 🚀"
+msgstr "AllAccessible ਤੋਂ ਪੂਰਾ ਲਾਭ ਲਵੋ! 🚀"
+
+#: inc/DashboardBanner.php:69
+msgid ""
+"Complete the quick 2-minute setup to activate your accessibility widget and unlock premium features."
+msgstr "ਆਪਣਾ ਐਕਸੈਸਿਬਿਲਿਟੀ ਵਿਜੈਟ ਸਰਗਰਮ ਕਰਨ ਅਤੇ ਪ੍ਰੀਮੀਅਮ ਫੀਚਰ ਅਨਲੌਕ ਕਰਨ ਲਈ 2 ਮਿੰਟ ਦੀ ਤੇਜ਼ ਸੈਟਅੱਪ ਪੂਰੀ ਕਰੋ।"
+
+#: inc/DashboardBanner.php:76
+msgid "Start Setup"
+msgstr "ਸੈਟਅੱਪ ਸ਼ੁਰੂ ਕਰੋ"
+
+#. translators: %s: accessibility score 0-100 or em-dash
+#: inc/DashboardLayout.php:75
+#, php-format
+msgid "Accessibility score %s out of 100"
+msgstr "ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰ 100 ਵਿੱਚੋਂ %s"
+
+#: inc/DashboardLayout.php:152
+msgid "Daily"
+msgstr "ਰੋਜ਼ਾਨਾ"
+
+#: inc/DashboardLayout.php:153 inc/FeatureComparison.php:75
+msgid "Weekly"
+msgstr "ਹਫਤਾਵਾਰੀ"
+
+#: inc/DashboardLayout.php:154 inc/FeatureComparison.php:74
+msgid "Monthly"
+msgstr "ਮਾਸਿਕ"
+
+#: inc/DashboardLayout.php:155
+msgid "On-demand"
+msgstr "ਮੰਗ ਅਨੁਸਾਰ"
+
+#. translators: %s: number of days between scans
+#: inc/DashboardLayout.php:162
+#, php-format
+msgid "Every %s days"
+msgstr "ਹਰ %s ਦਿਨਾਂ ਬਾਅਦ"
+
+#: inc/DashboardLayout.php:170
+msgid "Scans"
+msgstr "ਸਕੈਨ"
+
+#: inc/DashboardLayout.php:171
+msgid "Scheduled scans"
+msgstr "ਤਹਿ ਕੀਤੇ ਸਕੈਨ"
+
+#. translators: %s: human time diff, e.g. "2 hours"
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/DashboardLayout.php:176 inc/EditorMetaBox.php:199
+#, php-format
+msgid "%s ago"
+msgstr "%s ਪਹਿਲਾਂ"
+
+#: inc/DashboardLayout.php:180 inc/ScanTriggerPanel.php:91
+msgid "No scans yet"
+msgstr "ਹਾਲੇ ਤੱਕ ਕੋਈ ਸਕੈਨ ਨਹੀਂ"
+
+#. translators: %s: human time diff
+#: inc/DashboardLayout.php:184
+#, php-format
+msgid "in %s"
+msgstr "%s ਵਿੱਚ"
+
+#: inc/DashboardLayout.php:185
+msgid "due now"
+msgstr "ਹੁਣ ਦੇਣਯੋਗ"
+
+#: inc/DashboardLayout.php:193 inc/OnboardingWizard.php:451 inc/ScanTriggerPanel.php:29
+msgid "Run your first scan"
+msgstr "ਆਪਣਾ ਪਹਿਲਾ ਸਕੈਨ ਚਲਾਓ"
+
+#: inc/DashboardLayout.php:197
+msgid "Excellent — strong accessibility coverage."
+msgstr "ਸ਼ਾਨਦਾਰ — ਪਹੁੰਚਯੋਗਤਾ ਦੀ ਮਜ਼ਬੂਤ ਕਵਰੇਜ।"
+
+#: inc/DashboardLayout.php:199
+msgid "Good — a few fixes to go."
+msgstr "ਚੰਗਾ — ਕੁਝ ਫਿਕਸ ਹਾਲੇ ਬਾਕੀ ਹਨ।"
+
+#: inc/DashboardLayout.php:201
+msgid "Needs attention."
+msgstr "ਧਿਆਨ ਦੀ ਲੋੜ ਹੈ।"
+
+#: inc/DashboardLayout.php:203
+msgid "Needs work — start with the top issues."
+msgstr "ਹੋਰ ਕੰਮ ਦੀ ਲੋੜ ਹੈ — ਸਭ ਤੋਂ ਵੱਡੀਆਂ ਸਮੱਸਿਆਵਾਂ ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ।"
+
+#: inc/DashboardLayout.php:209
+msgid "Run a scan and AllAccessible agents will check every page for accessibility issues."
+msgstr "ਇੱਕ ਸਕੈਨ ਚਲਾਓ ਅਤੇ AllAccessible ਏਜੰਟ ਹਰ ਪੰਨੇ ਨੂੰ ਪਹੁੰਚਯੋਗਤਾ ਸਮੱਸਿਆਵਾਂ ਲਈ ਜਾਂਚਣਗੇ।"
+
+#. translators: %s: percentage with <b> wrapper
+#: inc/DashboardLayout.php:215
+#, php-format
+msgid "%s%% of issues remediated"
+msgstr "%s%% of ਮੁੱਦੇ ਠੀਕ ਕੀਤੇ ਗਏ"
+
+#: inc/DashboardLayout.php:221
+#, php-format
+msgid "%s page audited"
+msgid_plural "%s pages audited"
+msgstr[0] "%s ਪੇਜ ਆਡਿਟ ਕੀਤਾ ਗਿਆ"
+msgstr[1] "%s ਪੇਜ ਆਡਿਟ ਕੀਤੇ ਗਏ"
+
+#: inc/DashboardLayout.php:227
+msgid "View pages"
+msgstr "ਪੰਨੇ ਵੇਖੋ"
+
+#: inc/DashboardLayout.php:239
+#, php-format
+msgid "%s fix is ready for your review"
+msgid_plural "%s fixes are ready for your review"
+msgstr[0] "%s ਠੀਕ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਸਮੀਖਿਆ ਲਈ ਤਿਆਰ ਹੈ"
+msgstr[1] "%s ਠੀਕ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਸਮੀਖਿਆ ਲਈ ਤਿਆਰ ਹਨ"
+
+#: inc/DashboardLayout.php:247
+#, php-format
+msgid "%s issue needs a manual fix"
+msgid_plural "%s issues need a manual fix"
+msgstr[0] "%s ਸਮੱਸਿਆ ਲਈ ਹੱਥੋਂ ਠੀਕ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
+msgstr[1] "%s ਸਮੱਸਿਆਵਾਂ ਲਈ ਹੱਥੋਂ ਠੀਕ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
+
+#: inc/DashboardLayout.php:251
+msgid "View issues"
+msgstr "ਮੁੱਦੇ ਵੇਖੋ"
+
+#: inc/DashboardLayout.php:254
+msgid "You're all caught up — AllAccessible agents are monitoring your site."
+msgstr "ਤੁਸੀਂ ਸਭ ਕੁਝ ਪੂਰਾ ਕਰ ਲਿਆ ਹੈ — AllAccessible ਏਜੰਟ ਤੁਹਾਡੀ ਸਾਈਟ ਦੀ ਨਿਗਰਾਨੀ ਕਰ ਰਹੇ ਹਨ।"
+
+#: inc/DashboardLayout.php:257
+msgid "No scan yet — run one to find and fix accessibility issues."
+msgstr "ਹਾਲੇ ਕੋਈ ਸਕੈਨ ਨਹੀਂ — ਪਹੁੰਚਯੋਗਤਾ ਸਮੱਸਿਆਵਾਂ ਲੱਭਣ ਅਤੇ ਠੀਕ ਕਰਨ ਲਈ ਇੱਕ ਚਲਾਓ।"
+
+#: inc/DashboardLayout.php:259 inc/OnboardingWizard.php:106 inc/OnboardingWizard.php:236
+msgid "Get started"
+msgstr "ਸ਼ੁਰੂ ਕਰੋ"
+
+#: inc/DashboardLayout.php:264
+msgid "AI-resolved"
+msgstr "AI ਵੱਲੋਂ ਹੱਲ ਕੀਤਾ ਗਿਆ"
+
+#: inc/DashboardLayout.php:265
+msgid "manual"
+msgstr "ਹੱਥੋਂ"
+
+#: inc/DashboardLayout.php:267
+msgid "images with alt text"
+msgstr "alt ਟੈਕਸਟ ਵਾਲੀਆਂ ਤਸਵੀਰਾਂ"
+
+#: inc/DashboardLayout.php:270
+msgid "pageviews"
+msgstr "ਪੰਨਾ-ਦ੍ਰਿਸ਼"
+
+#: inc/DashboardLayout.php:276
+msgid "Accessibility status"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਸਥਿਤੀ"
+
+#: inc/DashboardLayout.php:282
+msgid "Live · updates nightly"
+msgstr "ਲਾਈਵ · ਅੱਪਡੇਟ ਰਾਤ ਨੂੰ ਹੁੰਦੇ ਹਨ"
+
+#: inc/DashboardLayout.php:287 inc/SettingsPage.php:387 inc/SettingsPage.php:645
+msgid "Preview widget"
+msgstr "ਵਿਜੈਟ ਦੀ ਝਲਕ"
+
+#: inc/DashboardLayout.php:297
+msgid "Scan schedule"
+msgstr "ਸਕੈਨ ਸ਼ਡਿਊਲ"
+
+#: inc/DashboardLayout.php:303
+msgid ""
+"How often AllAccessible automatically scans your whole site behind the scenes for a deep "
+"accessibility analysis. You can also run on-demand scans of individual pages anytime — from the "
+"WordPress page editor, or on the front end while logged in."
+msgstr ""
+"AllAccessible ਕਿੰਨੀ ਵਾਰ ਪਿੱਛੇ-ਪਿੱਛੇ ਤੁਹਾਡੀ ਪੂਰੀ ਸਾਈਟ ਨੂੰ ਡੂੰਘੇ ਪਹੁੰਚਯੋਗਤਾ ਵਿਸ਼ਲੇਸ਼ਣ ਲਈ ਆਪਣੇ ਆਪ ਸਕੈਨ ਕਰਦਾ ਹੈ। ਤੁਸੀਂ ਕਿਸੇ ਵੀ "
+"ਵੇਲੇ ਵੱਖ-ਵੱਖ ਪੰਨਿਆਂ ਦੇ ਆਨ-ਡਿਮਾਂਡ ਸਕੈਨ ਵੀ ਚਲਾ ਸਕਦੇ ਹੋ — WordPress ਪੇਜ ਐਡੀਟਰ ਤੋਂ, ਜਾਂ ਲੌਗ ਇਨ ਹੋਣ ਦੌਰਾਨ ਫਰੰਟ ਐਂਡ ਤੋਂ।"
+
+#: inc/DashboardLayout.php:306
+msgid "Frequency"
+msgstr "ਆਵ੍ਰਿਤੀ"
+
+#: inc/DashboardLayout.php:309
+msgid "Last"
+msgstr "ਆਖਰੀ"
+
+#: inc/DashboardLayout.php:312 inc/ImageManagerPage.php:523
+msgid "Next"
+msgstr "ਅਗਲਾ"
+
+#: inc/DashboardLayout.php:326
+msgid "Remediation activity"
+msgstr "ਸੁਧਾਰ ਗਤੀਵਿਧੀ"
+
+#: inc/DeactivationSurvey.php:92
+msgid "Quick Feedback"
+msgstr "ਤੁਰੰਤ ਫੀਡਬੈਕ"
+
+#: inc/DeactivationSurvey.php:95
+msgid "Help us improve AllAccessible"
+msgstr "AllAccessible ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਸਾਡੀ ਮਦਦ ਕਰੋ"
+
+#: inc/DeactivationSurvey.php:100
+msgid ""
+"If you have a moment, please let us know why you're deactivating AllAccessible. All submissions are "
+"anonymous and help us improve."
+msgstr ""
+"ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਇੱਕ ਪਲ ਹੈ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ AllAccessible ਨੂੰ ਨਿਸ਼ਕ੍ਰਿਆ ਕਿਉਂ ਕਰ ਰਹੇ ਹੋ। ਸਾਰੀਆਂ ਭੇਜੀਆਂ "
+"ਜਾਣਕਾਰੀਆਂ ਗੁਮਨਾਮ ਹਨ ਅਤੇ ਸਾਨੂੰ ਸੁਧਾਰ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀਆਂ ਹਨ।"
+
+#: inc/DeactivationSurvey.php:113
+msgid "The plugin stopped working"
+msgstr "ਪਲੱਗਇਨ ਨੇ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਦਿੱਤਾ"
+
+#: inc/DeactivationSurvey.php:116
+#, php-format
+msgid "We're sorry! Please %scontact support%s or describe the issue:"
+msgstr "ਸਾਨੂੰ ਅਫ਼ਸੋਸ ਹੈ! ਕਿਰਪਾ ਕਰਕੇ %sਸਹਾਇਤਾ ਨਾਲ ਸੰਪਰਕ ਕਰੋ%s ਜਾਂ ਸਮੱਸਿਆ ਦਾ ਵੇਰਵਾ ਦਿਓ:"
+
+#: inc/DeactivationSurvey.php:127
+msgid "Missing features I need"
+msgstr "ਮੈਨੂੰ ਲੋੜੀਂੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨਹੀਂ ਹਨ"
+
+#: inc/DeactivationSurvey.php:130
+msgid "What features would make you stay?"
+msgstr "ਕਿਹੜੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਤੁਹਾਨੂੰ ਰਹਿਣ ਲਈ ਪ੍ਰੇਰਿਤ ਕਰ ਸਕਦੀਆਂ ਹਨ?"
+
+#: inc/DeactivationSurvey.php:141
+msgid "Found a better plugin"
+msgstr "ਇੱਕ ਹੋਰ ਵਧੀਆ ਪਲੱਗਇਨ ਮਿਲਿਆ"
+
+#: inc/DeactivationSurvey.php:144
+msgid "Which plugin are you switching to?"
+msgstr "ਤੁਸੀਂ ਕਿਹੜੇ ਪਲੱਗਇਨ ‘ਤੇ ਸਵਿੱਚ ਕਰ ਰਹੇ ਹੋ?"
+
+#: inc/DeactivationSurvey.php:155
+msgid "Temporary - troubleshooting an issue"
+msgstr "ਅਸਥਾਈ - ਕਿਸੇ ਸਮੱਸਿਆ ਦਾ ਹੱਲ ਲੱਭ ਰਹੇ ਹਾਂ"
+
+#: inc/DeactivationSurvey.php:163
+msgid "I don't need accessibility features anymore"
+msgstr "ਮੈਨੂੰ ਹੁਣ ਪਹੁੰਚਯੋਗਤਾ ਵਾਲੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦੀ ਲੋੜ ਨਹੀਂ ਰਹੀ"
+
+#: inc/DeactivationSurvey.php:171
+msgid "Other"
+msgstr "ਹੋਰ"
+
+#: inc/DeactivationSurvey.php:173
+msgid "Please tell us more..."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਾਨੂੰ ਹੋਰ ਦੱਸੋ..."
+
+#: inc/DeactivationSurvey.php:185
+msgid "Skip & Deactivate"
+msgstr "ਛੱਡੋ ਅਤੇ ਡੀਐਕਟੀਵੇਟ ਕਰੋ"
+
+#: inc/DeactivationSurvey.php:192
+msgid "Submit & Deactivate"
+msgstr "ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਨਿਸ਼ਕ੍ਰਿਆ ਕਰੋ"
+
+#: inc/DeactivationSurvey.php:238
+msgid "Please select a reason"
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਕਾਰਨ ਚੁਣੋ"
+
+#: inc/DeactivationSurvey.php:253
+msgid "Submitting..."
+msgstr "ਜਮ੍ਹਾਂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#: inc/EditorMetaBox.php:52 inc/EditorMetaBox.php:63
+msgid "Accessibility Score"
+msgstr "ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰ"
+
+#: inc/EditorMetaBox.php:98
+msgid "Loading score..."
+msgstr "ਸਕੋਰ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
+
+#: inc/EditorMetaBox.php:99
+msgid "Error loading score"
+msgstr "ਸਕੋਰ ਲੋਡ ਕਰਨ ਵਿੱਚ ਗਲਤੀ"
+
+#: inc/EditorMetaBox.php:100
+msgid "Rescan initiated successfully"
+msgstr "ਰੀਸਕੈਨ ਸਫਲਤਾਪੂਰਵਕ ਸ਼ੁਰੂ ਕੀਤਾ ਗਿਆ"
+
+#: inc/EditorMetaBox.php:101
+msgid "Error initiating rescan"
+msgstr "ਰੀਸਕੈਨ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਗਲਤੀ"
+
+#: inc/EditorMetaBox.php:118
+msgid "Publish this page to see its accessibility score."
+msgstr "ਇਸ ਪੰਨੇ ਦਾ ਐਕਸੈਸਬਿਲਿਟੀ ਸਕੋਰ ਵੇਖਣ ਲਈ ਇਸਨੂੰ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੋ।"
+
+#: inc/EditorMetaBox.php:151
+msgid "Score unavailable"
+msgstr "ਸਕੋਰ ਉਪਲਬਧ ਨਹੀਂ"
+
+#: inc/EditorMetaBox.php:153
+msgid "Could not load this page's accessibility score. Try refreshing the editor."
+msgstr "ਇਸ ਪੰਨੇ ਦਾ ਐਕਸੈਸਬਿਲਿਟੀ ਸਕੋਰ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਐਡੀਟਰ ਨੂੰ ਰਿਫ੍ਰੈਸ਼ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/EditorMetaBox.php:177
+msgid "Needs attention"
+msgstr "ਧਿਆਨ ਦੀ ਲੋੜ ਹੈ"
+
+#: inc/EditorMetaBox.php:180 inc/PostListColumn.php:447
+msgid "Awaiting scan"
+msgstr "ਸਕੈਨ ਦੀ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: inc/EditorMetaBox.php:183
+msgid "Excellent"
+msgstr "ਸ਼ਾਨਦਾਰ"
+
+#: inc/EditorMetaBox.php:186
+msgid "Good"
+msgstr "ਚੰਗਾ"
+
+#: inc/EditorMetaBox.php:189
+msgid "Needs review"
+msgstr "ਸਮੀਖਿਆ ਦੀ ਲੋੜ ਹੈ"
+
+#: inc/EditorMetaBox.php:235
+#, php-format
+msgid "Accessibility score %1$d out of 100, %2$s. Open full audit."
+msgstr "ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰ 100 ਵਿੱਚੋਂ %1$d, %2$s। ਪੂਰਾ ਆਡਿਟ ਖੋਲ੍ਹੋ।"
+
+#: inc/EditorMetaBox.php:236
+msgid "Accessibility score not available yet."
+msgstr "ਐਕਸੈਸਬਿਲਿਟੀ ਸਕੋਰ ਹਾਲੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।"
+
+#. translators: 1: raw, 2: current, 3: lift delta
+#: inc/EditorMetaBox.php:265
+#, php-format
+msgid "Score lifted from %1$d to %2$d by AllAccessible AI, a gain of %3$d points."
+msgstr "AllAccessible AI ਵੱਲੋਂ ਸਕੋਰ %1$d ਤੋਂ %2$d ਤੱਕ ਵਧਾਇਆ ਗਿਆ, %3$d ਅੰਕਾਂ ਦਾ ਵਾਧਾ।"
+
+#. translators: %s: count of issues AllAccessible auto-resolves at runtime
+#: inc/EditorMetaBox.php:286
+#, php-format
+msgid "%s issue resolved by AllAccessible"
+msgid_plural "%s issues resolved by AllAccessible"
+msgstr[0] "%s ਸਮੱਸਿਆ AllAccessible ਵੱਲੋਂ ਹੱਲ ਕੀਤੀ ਗਈ"
+msgstr[1] "%s ਸਮੱਸਿਆਵਾਂ AllAccessible ਵੱਲੋਂ ਹੱਲ ਕੀਤੀਆਂ ਗਈਆਂ"
+
+#. translators: %s: count of live agentic AI fixes
+#: inc/EditorMetaBox.php:293
+#, php-format
+msgid "%s agentic AI fix live"
+msgid_plural "%s agentic AI fixes live"
+msgstr[0] "%s ਏਜੈਂਟਿਕ AI ਫਿਕਸ ਲਾਈਵ"
+msgstr[1] "%s ਏਜੈਂਟਿਕ AI ਫਿਕਸ ਲਾਈਵ"
+
+#: inc/EditorMetaBox.php:307
+#, php-format
+msgid "Review %1$d pending agentic AI fix; approve to reach %2$d%% accessibility score"
+msgid_plural "Review %1$d pending agentic AI fixes; approve to reach %2$d%% accessibility score"
+msgstr[0] "ਬਾਕੀ ਏਜੈਂਟਿਕ AI ਫਿਕਸ %1$d ਦੀ ਸਮੀਖਿਆ ਕਰੋ; %2$d%% ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰ ਤੱਕ ਪਹੁੰਚਣ ਲਈ ਮਨਜ਼ੂਰੀ ਦਿਓ"
+msgstr[1] "ਬਾਕੀ ਏਜੈਂਟਿਕ AI ਫਿਕਸਾਂ %1$d ਦੀ ਸਮੀਖਿਆ ਕਰੋ; %2$d%% ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰ ਤੱਕ ਪਹੁੰਚਣ ਲਈ ਮਨਜ਼ੂਰੀ ਦਿਓ"
+
+#. translators: %s: count of pending fixes
+#: inc/EditorMetaBox.php:323
+#, php-format
+msgid "%s fix ready to review"
+msgid_plural "%s fixes ready to review"
+msgstr[0] "%s ਫਿਕਸ ਸਮੀਖਿਆ ਲਈ ਤਿਆਰ"
+msgstr[1] "%s ਫਿਕਸ ਸਮੀਖਿਆ ਲਈ ਤਿਆਰ"
+
+#. translators: %s: potential score
+#: inc/EditorMetaBox.php:330
+#, php-format
+msgid "Approve to reach %s%%"
+msgstr "%s%% ਤੱਕ ਪਹੁੰਚਣ ਲਈ ਮਨਜ਼ੂਰੀ ਦਿਓ"
+
+#. translators: %s: total issues
+#: inc/EditorMetaBox.php:344
+#, php-format
+msgid "Issues (%s)"
+msgstr "ਸਮੱਸਿਆਵਾਂ (%s)"
+
+#: inc/EditorMetaBox.php:351
+msgid "Critical"
+msgstr "ਗੰਭੀਰ"
+
+#: inc/EditorMetaBox.php:352
+msgid "Serious"
+msgstr "ਬਹੁਤ ਗੰਭੀਰ"
+
+#: inc/EditorMetaBox.php:353
+msgid "Moderate"
+msgstr "ਦਰਮਿਆਨੀ"
+
+# GPT: “Minor” can mean “underage person” or “less important/small”; I chose “ਨਾਬਾਲਿਗ” (underage) as the most common label in forms.
+#: inc/EditorMetaBox.php:354
+msgid "Minor"
+msgstr "ਨਾਬਾਲਿਗ"
+
+#. translators: %s: human-readable time ago
+#: inc/EditorMetaBox.php:378
+#, php-format
+msgid "Last scanned %s"
+msgstr "ਆਖਰੀ ਵਾਰ ਸਕੈਨ ਕੀਤਾ %s"
+
+#: inc/EditorMetaBox.php:392
+msgid "View full report"
+msgstr "ਪੂਰੀ ਰਿਪੋਰਟ ਵੇਖੋ"
+
+#: inc/EditorMetaBox.php:400
+msgid "Rescan this page"
+msgstr "ਇਸ ਪੰਨੇ ਨੂੰ ਮੁੜ ਸਕੈਨ ਕਰੋ"
+
+#: inc/EditorMetaBox.php:441
+msgid "Scan complete. Refreshing…"
+msgstr "ਸਕੈਨ ਪੂਰਾ ਹੋਇਆ। ਰਿਫ੍ਰੈਸ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/EditorMetaBox.php:442
+msgid "Scan complete. Save or reload to see the updated score."
+msgstr "ਸਕੈਨ ਪੂਰਾ ਹੋ ਗਿਆ। ਅਪਡੇਟ ਕੀਤਾ ਸਕੋਰ ਵੇਖਣ ਲਈ ਸੇਵ ਕਰੋ ਜਾਂ ਮੁੜ ਲੋਡ ਕਰੋ।"
+
+#: inc/EditorMetaBox.php:443
+msgid "Reload now"
+msgstr "ਹੁਣੇ ਮੁੜ ਲੋਡ ਕਰੋ"
+
+#: inc/EditorMetaBox.php:445
+msgid "Still running — refresh the page in a minute."
+msgstr "ਹਾਲੇ ਵੀ ਚੱਲ ਰਿਹਾ ਹੈ — ਇੱਕ ਮਿੰਟ ਵਿੱਚ ਪੰਨਾ ਰਿਫ੍ਰੈਸ਼ ਕਰੋ।"
+
+#: inc/EditorMetaBox.php:447
+msgid "Could not start scan."
+msgstr "ਸਕੈਨ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: inc/EditorMetaBox.php:448
+msgid "Network error. Check your connection and try again."
+msgstr "ਨੈੱਟਵਰਕ ਗਲਤੀ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਚੈੱਕ ਕਰੋ ਅਤੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/EditorMetaBox.php:587
+msgid "Page-level score"
+msgstr "ਪੰਨਾ-ਪੱਧਰ ਸਕੋਰ"
+
+#: inc/EditorMetaBox.php:590
+msgid "Site-level score (page not yet crawled)"
+msgstr "ਸਾਈਟ-ਪੱਧਰ ਸਕੋਰ (ਪੰਨਾ ਹਾਲੇ ਕ੍ਰਾਲ ਨਹੀਂ ਹੋਇਆ)"
+
+#: inc/EditorMetaBox.php:593 inc/SettingsPage.php:575
+msgid "Awaiting first scan"
+msgstr "ਪਹਿਲੇ ਸਕੈਨ ਦੀ ਉਡੀਕ ਹੈ"
+
+#: inc/EditorMetaBox.php:821
+msgid "Premium Feature"
+msgstr "ਪ੍ਰੀਮੀਅਮ ਫੀਚਰ"
+
+#: inc/EditorMetaBox.php:824
+msgid "See accessibility scores for each page/post with a premium account."
+msgstr "ਪ੍ਰੀਮੀਅਮ ਖਾਤੇ ਨਾਲ ਹਰ ਪੇਜ/ਪੋਸਟ ਲਈ ਐਕਸੈਸਿਬਿਲਿਟੀ ਸਕੋਰ ਵੇਖੋ।"
+
+#: inc/EditorMetaBox.php:827
+msgid "Upgrade to Premium"
+msgstr "ਪ੍ਰੀਮੀਅਮ ਵਿੱਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/EditorMetaBox.php:830
+msgid "7-day free trial available"
+msgstr "7-ਦਿਨਾਂ ਦਾ ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ ਉਪਲਬਧ ਹੈ"
+
+#: inc/FeatureComparison.php:28
+msgid "Compare Plans"
+msgstr "ਯੋਜਨਾਵਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ"
+
+#: inc/FeatureComparison.php:37
+msgid "Feature"
+msgstr "ਵਿਸ਼ੇਸ਼ਤਾ"
+
+#: inc/FeatureComparison.php:52
+msgid "Accessibility Widget"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਵਿਜੈਟ"
+
+#: inc/FeatureComparison.php:53 inc/FeatureComparison.php:54 inc/FeatureComparison.php:55
+#: inc/FeatureComparison.php:80 inc/FeatureComparison.php:81 inc/FeatureComparison.php:87
+#: inc/FeatureComparison.php:92
+msgid "Included"
+msgstr "ਸ਼ਾਮਲ ਹੈ"
+
+#: inc/FeatureComparison.php:58
+msgid "Monthly Pageviews"
+msgstr "ਮਹੀਨਾਵਾਰ ਪੇਜਵਿਊਜ਼"
+
+#: inc/FeatureComparison.php:61 inc/FeatureComparison.php:68 inc/FeatureComparison.php:69
+msgid "Unlimited"
+msgstr "ਅਸੀਮਿਤ"
+
+#: inc/FeatureComparison.php:65
+msgid "AI Image Alt Text"
+msgstr "AI ਚਿੱਤਰ Alt ਟੈਕਸਟ"
+
+#: inc/FeatureComparison.php:67
+msgid "10 preview"
+msgstr "10 ਝਲਕ"
+
+#: inc/FeatureComparison.php:72
+msgid "Compliance Audits"
+msgstr "ਅਨੁਕੂਲਤਾ ਆਡਿਟ"
+
+#: inc/FeatureComparison.php:73 inc/FeatureComparison.php:79 inc/FeatureComparison.php:85
+#: inc/FeatureComparison.php:86 inc/FeatureComparison.php:91
+msgid "Not included"
+msgstr "ਸ਼ਾਮਲ ਨਹੀਂ"
+
+#: inc/FeatureComparison.php:78
+msgid "Widget Customization"
+msgstr "ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ੇਸ਼ਨ"
+
+#: inc/FeatureComparison.php:84
+msgid "VPAT Reports"
+msgstr "VPAT ਰਿਪੋਰਟਾਂ"
+
+#: inc/FeatureComparison.php:90
+msgid "Priority Support"
+msgstr "ਤਰਜੀਹੀ ਸਹਾਇਤਾ"
+
+#: inc/FeatureComparison.php:93
+msgid "Dedicated"
+msgstr "ਸਮਰਪਿਤ"
+
+#: inc/FeatureComparison.php:103
+msgid "Upgrade Plan"
+msgstr "ਪਲਾਨ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/ImageManagerPage.php:28 inc/ImageManagerPage.php:29 inc/SettingsPage.php:608
+msgid "Image AI"
+msgstr "ਚਿੱਤਰ AI"
+
+#: inc/ImageManagerPage.php:101
+msgid "Image alt text is available on paid plans"
+msgstr "ਚਿੱਤਰ ਦਾ alt ਟੈਕਸਟ ਭੁਗਤਾਨ ਵਾਲੀਆਂ ਯੋਜਨਾਵਾਂ ਵਿੱਚ ਉਪਲਬਧ ਹੈ"
+
+#: inc/ImageManagerPage.php:102
+msgid ""
+"Upgrade to review, refine, and approve every alt text on your site. Includes inline editing, manual "
+"overrides, and full media library coverage."
+msgstr ""
+"ਆਪਣੀ ਸਾਈਟ ਉੱਤੇ ਹਰ alt ਟੈਕਸਟ ਦੀ ਸਮੀਖਿਆ, ਸੁਧਾਰ ਅਤੇ ਮਨਜ਼ੂਰੀ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ। ਇਸ ਵਿੱਚ ਇਨਲਾਈਨ ਸੰਪਾਦਨ, ਮੈਨੁਅਲ ਓਵਰਰਾਈਡ, ਅਤੇ "
+"ਪੂਰੀ ਮੀਡੀਆ ਲਾਇਬ੍ਰੇਰੀ ਕਵਰੇਜ ਸ਼ਾਮਲ ਹੈ।"
+
+#: inc/ImageManagerPage.php:116
+msgid "Could not load image data right now."
+msgstr "ਇਸ ਵੇਲੇ ਚਿੱਤਰ ਡਾਟਾ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ।"
+
+#. translators: %d = number of images on this page
+#: inc/ImageManagerPage.php:132
+#, php-format
+msgid "%d image on this page."
+msgid_plural "%d images on this page."
+msgstr[0] "ਇਸ ਪੰਨੇ ‘ਤੇ %d ਚਿੱਤਰ।"
+msgstr[1] "ਇਸ ਪੰਨੇ ‘ਤੇ %d ਚਿੱਤਰ।"
+
+#: inc/ImageManagerPage.php:157 inc/PostListColumn.php:264 inc/PostListColumn.php:270
+#: inc/constants.php:19
+msgid "Accessibility"
+msgstr "ਐਕਸੈਸਿਬਿਲਟੀ"
+
+#: inc/ImageManagerPage.php:159
+msgid "Image alt text"
+msgstr "ਚਿੱਤਰ ਦਾ alt ਟੈਕਸਟ"
+
+#: inc/ImageManagerPage.php:163
+msgid ""
+"AllAccessible AI suggests descriptive alt text for every image on your site. Review and approve, or "
+"edit before it goes live."
+msgstr ""
+"AllAccessible AI ਤੁਹਾਡੀ ਸਾਈਟ ਉੱਤੇ ਹਰ ਤਸਵੀਰ ਲਈ ਵਰਣਨਾਤਮਕ alt ਟੈਕਸਟ ਸੁਝਾਉਂਦਾ ਹੈ। ਲਾਈਵ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸਮੀਖਿਆ ਕਰੋ ਅਤੇ "
+"ਮਨਜ਼ੂਰ ਕਰੋ, ਜਾਂ ਸੰਪਾਦਿਤ ਕਰੋ।"
+
+#: inc/ImageManagerPage.php:167 inc/SettingsPage.php:836
+msgid "Open full dashboard"
+msgstr "ਪੂਰਾ ਡੈਸ਼ਬੋਰਡ ਖੋਲ੍ਹੋ"
+
+#: inc/ImageManagerPage.php:189
+msgid "images"
+msgstr "ਚਿੱਤਰ"
+
+#: inc/ImageManagerPage.php:193
+msgid "with alt text"
+msgstr "ਵਿਕਲਪਿਕ ਲਿਖਤ ਨਾਲ"
+
+#. translators: %d = percentage
+#: inc/ImageManagerPage.php:194
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#: inc/ImageManagerPage.php:200
+msgid "AI-authored"
+msgstr "AI-ਦੁਆਰਾ ਲਿਖਿਆ"
+
+#: inc/ImageManagerPage.php:212
+msgid "All images"
+msgstr "ਸਾਰੀਆਂ ਤਸਵੀਰਾਂ"
+
+#: inc/ImageManagerPage.php:213
+msgid "Missing alt"
+msgstr "Alt ਗੁੰਮ ਹੈ"
+
+#: inc/ImageManagerPage.php:214
+msgid "AI-suggested"
+msgstr "AI-ਸੁਝਾਇਆ"
+
+#: inc/ImageManagerPage.php:215 inc/SettingsPage.php:450
+msgid "Manual"
+msgstr "ਮੈਨੁਅਲ"
+
+#: inc/ImageManagerPage.php:226
+msgid "Show"
+msgstr "ਦਿਖਾਓ"
+
+#: inc/ImageManagerPage.php:237
+msgid "Search filename or alt text"
+msgstr "ਫਾਈਲਨਾਮ ਜਾਂ alt ਟੈਕਸਟ ਖੋਜੋ"
+
+#: inc/ImageManagerPage.php:240
+msgid "Type to filter visible images…"
+msgstr "ਦਿੱਖ ਰਹੀਆਂ ਤਸਵੀਰਾਂ ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਲਈ ਟਾਈਪ ਕਰੋ…"
+
+#: inc/ImageManagerPage.php:245
+msgid "Apply"
+msgstr "ਲਾਗੂ ਕਰੋ"
+
+#: inc/ImageManagerPage.php:294
+msgid "AI suggestion"
+msgstr "AI ਸੁਝਾਅ"
+
+#: inc/ImageManagerPage.php:320
+msgid "No alt text yet."
+msgstr "ਹਾਲੇ ਕੋਈ alt ਟੈਕਸਟ ਨਹੀਂ।"
+
+#: inc/ImageManagerPage.php:332
+msgid "Found on:"
+msgstr "ਇੱਥੋਂ ਮਿਲਿਆ:"
+
+#: inc/ImageManagerPage.php:361
+msgid "Needs alt"
+msgstr "Alt ਦੀ ਲੋੜ ਹੈ"
+
+#: inc/ImageManagerPage.php:364
+msgid "Set"
+msgstr "ਸੈੱਟ ਕਰੋ"
+
+#. translators: %d = image ID
+#: inc/ImageManagerPage.php:371 inc/ImageManagerPage.php:379
+#, php-format
+msgid "Image #%d"
+msgstr "ਚਿੱਤਰ #%d"
+
+#: inc/ImageManagerPage.php:407
+#, php-format
+msgid "You've used %1$d of %2$d preview alt-texts on this site"
+msgstr "ਤੁਸੀਂ ਇਸ ਸਾਈਟ ‘ਤੇ %2$d ਵਿੱਚੋਂ %1$d ਪ੍ਰੀਵਿਊ alt-ਟੈਕਸਟ ਵਰਤੇ ਹਨ"
+
+#: inc/ImageManagerPage.php:412
+msgid ""
+"Real AI output, drafted for your real images. Upgrade to unlock unlimited alt-text generation for "
+"every image on your site."
+msgstr ""
+"ਅਸਲੀ AI ਆਉਟਪੁੱਟ, ਤੁਹਾਡੀਆਂ ਅਸਲੀ ਤਸਵੀਰਾਂ ਲਈ ਮਸੌਦੇ ਵਜੋਂ ਤਿਆਰ ਕੀਤਾ ਗਿਆ। ਅੱਪਗ੍ਰੇਡ ਕਰੋ ਤਾਂ ਜੋ ਤੁਹਾਡੀ ਸਾਈਟ ਦੀ ਹਰ ਤਸਵੀਰ ਲਈ "
+"ਅਸੀਮਿਤ alt-ਟੈਕਸਟ ਜਨਰੇਸ਼ਨ ਅਨਲੌਕ ਹੋ ਜਾਵੇ।"
+
+#: inc/ImageManagerPage.php:455
+#, php-format
+msgid "Unlock AI alt text for all %d images on your site"
+msgstr "ਆਪਣੀ ਸਾਈਟ ‘ਤੇ ਸਾਰੀਆਂ %d ਤਸਵੀਰਾਂ ਲਈ AI alt ਟੈਕਸਟ ਅਨਲੌਕ ਕਰੋ"
+
+#: inc/ImageManagerPage.php:478
+msgid "No images discovered yet"
+msgstr "ਹਾਲੇ ਤੱਕ ਕੋਈ ਤਸਵੀਰ ਨਹੀਂ ਮਿਲੀ"
+
+#: inc/ImageManagerPage.php:480
+msgid ""
+"Scan your site to discover images. AllAccessible AI writes alt text for each one automatically. You "
+"can review or override any entry from this page."
+msgstr ""
+"ਚਿੱਤਰ ਲੱਭਣ ਲਈ ਆਪਣੀ ਸਾਈਟ ਸਕੈਨ ਕਰੋ। AllAccessible AI ਹਰ ਇੱਕ ਲਈ ਆਪਣੇ ਆਪ alt ਟੈਕਸਟ ਲਿਖਦਾ ਹੈ। ਤੁਸੀਂ ਇਸ ਪੰਨੇ ਤੋਂ ਕਿਸੇ ਵੀ "
+"ਐਂਟਰੀ ਦੀ ਸਮੀਖਿਆ ਕਰ ਸਕਦੇ ਹੋ ਜਾਂ ਉਸਨੂੰ ਓਵਰਰਾਈਡ ਕਰ ਸਕਦੇ ਹੋ।"
+
+#: inc/ImageManagerPage.php:483
+msgid "Scan your site to discover images"
+msgstr "ਤਸਵੀਰਾਂ ਲੱਭਣ ਲਈ ਆਪਣੀ ਸਾਈਟ ਸਕੈਨ ਕਰੋ"
+
+#: inc/ImageManagerPage.php:504
+msgid "Image pagination"
+msgstr "ਤਸਵੀਰ ਪੇਜੀਨੇਸ਼ਨ"
+
+#. translators: 1: current page, 2: total pages, 3: total items
+#: inc/ImageManagerPage.php:508
+#, php-format
+msgid "Page %1$d of %2$d (%3$s images)"
+msgstr "ਪੰਨਾ %1$d ਵਿੱਚੋਂ %2$d (%3$s ਚਿੱਤਰ)"
+
+#: inc/ImageManagerPage.php:518
+msgid "Previous"
+msgstr "ਪਿਛਲਾ"
+
+#: inc/ImageManagerPage.php:540
+msgid "Edit alt text"
+msgstr "Alt ਟੈਕਸਟ ਸੰਪਾਦਿਤ ਕਰੋ"
+
+#: inc/ImageManagerPage.php:541
+msgid "Close"
+msgstr "ਬੰਦ ਕਰੋ"
+
+#: inc/ImageManagerPage.php:553
+msgid "AllAccessible AI suggests"
+msgstr "AllAccessible AI ਸੁਝਾਉਂਦਾ ਹੈ"
+
+#: inc/ImageManagerPage.php:559
+msgid "Use this suggestion"
+msgstr "ਇਹ ਸੁਝਾਅ ਵਰਤੋ"
+
+#: inc/ImageManagerPage.php:564
+msgid "Alt text"
+msgstr "Alt ਟੈਕਸਟ"
+
+#: inc/ImageManagerPage.php:570
+msgid "Aim for 1–2 sentences describing the image's purpose, not its appearance."
+msgstr "ਚਿੱਤਰ ਦੇ ਦਿੱਖ ਦੀ ਨਹੀਂ, ਉਸਦੇ ਮਕਸਦ ਦੀ ਵਰਣਨਾ ਕਰਨ ਵਾਲੇ 1–2 ਵਾਕ ਲਿਖੋ।"
+
+#: inc/ImageManagerPage.php:670
+msgid ""
+"Saved. Updates may take up to a minute to appear after refresh as the change propagates through our "
+"system."
+msgstr ""
+"ਸੰਭਾਲਿਆ ਗਿਆ। ਰਿਫ੍ਰੈਸ਼ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਸਾਡੀ ਸਿਸਟਮ ਵਿੱਚ ਬਦਲਾਅ ਫੈਲਣ ਕਰਕੇ ਅੱਪਡੇਟ ਦਿਖਾਈ ਦੇਣ ਵਿੱਚ ਇੱਕ ਮਿੰਟ ਤੱਕ ਲੱਗ ਸਕਦਾ ਹੈ।"
+
+#: inc/ImageManagerPage.php:707
+msgid "Alt text is required."
+msgstr "Alt ਟੈਕਸਟ ਲਾਜ਼ਮੀ ਹੈ।"
+
+#: inc/ImageManagerPage.php:711
+msgid "Alt text must be 500 characters or fewer."
+msgstr "Alt ਟੈਕਸਟ 500 ਅੱਖਰਾਂ ਜਾਂ ਇਸ ਤੋਂ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।"
+
+#: inc/ImageManagerPage.php:716 inc/SettingsPage.php:1218
+msgid "Saving…"
+msgstr "ਸੇਵ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/ImageManagerPage.php:726 inc/SettingsPage.php:1785
+msgid "Save failed"
+msgstr "ਸੇਵ ਕਰਨਾ ਅਸਫਲ ਰਿਹਾ"
+
+#: inc/ImageManagerPage.php:745
+msgid "Save failed. Please try again."
+msgstr "ਸੇਵ ਕਰਨਾ ਅਸਫਲ ਰਿਹਾ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/ImageManagerPage.php:766
+msgid "Showing all images on this page."
+msgstr "ਇਸ ਪੰਨੇ ਉੱਤੇ ਸਾਰੇ ਚਿੱਤਰ ਦਿਖਾਏ ਜਾ ਰਹੇ ਹਨ।"
+
+#: inc/ImageManagerPage.php:768
+#, php-format
+msgid "Showing %d images matching your search."
+msgstr "ਤੁਹਾਡੀ ਖੋਜ ਨਾਲ ਮਿਲਦੇ %d ਚਿੱਤਰ ਦਿਖਾਏ ਜਾ ਰਹੇ ਹਨ।"
+
+#: inc/ImageManagerPage.php:787
+msgid "Insufficient permissions"
+msgstr "ਅਧਿਕਾਰ ਅਪਰਿਆਪਤ ਹਨ"
+
+#: inc/ImageManagerPage.php:796 inc/api/ApiClient.php:901
+msgid "Invalid image ID"
+msgstr "ਅਵੈਧ ਚਿੱਤਰ ID"
+
+#: inc/ImageManagerPage.php:799 inc/api/ApiClient.php:905
+msgid "Alt text must be 1–500 characters"
+msgstr "Alt ਟੈਕਸਟ 1–500 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+
+#: inc/OnboardingWizard.php:43
+msgid "AllAccessible Setup"
+msgstr "AllAccessible ਸੈਟਅੱਪ"
+
+#: inc/OnboardingWizard.php:44
+msgid "Setup"
+msgstr "ਸੈਟਅੱਪ"
+
+#: inc/OnboardingWizard.php:107
+msgid "First scan"
+msgstr "ਪਹਿਲਾ ਸਕੈਨ"
+
+#: inc/OnboardingWizard.php:112
+msgid "AllAccessible setup"
+msgstr "AllAccessible ਸੈਟਅੱਪ"
+
+#: inc/OnboardingWizard.php:119
+msgid "Setup progress"
+msgstr "ਸੈਟਅੱਪ ਦੀ ਪ੍ਰਗਤੀ"
+
+#: inc/OnboardingWizard.php:144
+msgid "Step 1 of 2"
+msgstr "2 ਵਿੱਚੋਂ ਕਦਮ 1"
+
+#: inc/OnboardingWizard.php:146 inc/OnboardingWizard.php:808
+msgid "Welcome to AllAccessible"
+msgstr "AllAccessible ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ"
+
+#: inc/OnboardingWizard.php:149
+msgid ""
+"Make this WordPress site usable for every visitor. Enter your email and pick a plan to get started."
+msgstr "ਇਸ WordPress ਸਾਈਟ ਨੂੰ ਹਰ ਵਿਜ਼ਟਰ ਲਈ ਵਰਤਣਯੋਗ ਬਣਾਓ। ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ ਅਤੇ ਇੱਕ ਪਲਾਨ ਚੁਣੋ।"
+
+#: inc/OnboardingWizard.php:155
+msgid "See what an account does for you"
+msgstr "ਵੇਖੋ ਕਿ ਖਾਤਾ ਤੁਹਾਡੇ ਲਈ ਕੀ ਕਰਦਾ ਹੈ"
+
+#: inc/OnboardingWizard.php:165
+msgid "Accessibility scans"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਸਕੈਨ"
+
+#: inc/OnboardingWizard.php:168
+msgid "Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged."
+msgstr "ਹਰ ਪ੍ਰਕਾਸ਼ਿਤ ਪੰਨਾ WCAG 2.2, ADA, ਅਤੇ EAA ਦੇ ਮੁਕਾਬਲੇ ਜਾਂਚਿਆ ਜਾਂਦਾ ਹੈ। ਗੰਭੀਰਤਾ-ਟੈਗ ਕੀਤਾ ਹੋਇਆ।"
+
+#: inc/OnboardingWizard.php:179
+msgid "24 fixed"
+msgstr "24 ਠੀਕ ਕੀਤੇ"
+
+#: inc/OnboardingWizard.php:180
+msgid "3 to review"
+msgstr "3 ਸਮੀਖਿਆ ਲਈ"
+
+#: inc/OnboardingWizard.php:190
+msgid "Agentic AI fixes"
+msgstr "ਏਜੈਂਟਿਕ AI ਸੁਧਾਰ"
+
+#: inc/OnboardingWizard.php:193
+msgid "AI drafts the fix; your team approves before anything ships."
+msgstr "AI ਸੁਧਾਰ ਦਾ ਮਸੌਦਾ ਤਿਆਰ ਕਰਦਾ ਹੈ; ਤੁਹਾਡੀ ਟੀਮ ਕੁਝ ਵੀ ਜਾਰੀ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਮਨਜ਼ੂਰੀ ਦਿੰਦੀ ਹੈ।"
+
+#: inc/OnboardingWizard.php:196
+msgid "Issue: button missing accessible name"
+msgstr "ਮੁੱਦਾ: ਬਟਨ ਲਈ ਪਹੁੰਚਯੋਗ ਨਾਮ ਗੁੰਮ ਹੈ"
+
+#: inc/OnboardingWizard.php:198
+msgid "AI fix"
+msgstr "AI ਸੁਧਾਰ"
+
+#: inc/OnboardingWizard.php:207
+msgid "Smart alt text"
+msgstr "ਸਮਾਰਟ alt ਟੈਕਸਟ"
+
+#: inc/OnboardingWizard.php:210
+msgid "Missing alt generated for every image, in the language your visitors use."
+msgstr "ਹਰ ਚਿੱਤਰ ਲਈ ਗੁੰਮ alt ਤੁਹਾਡੇ ਵਿਜ਼ਟਰਾਂ ਦੀ ਵਰਤੀ ਭਾਸ਼ਾ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
+
+#: inc/OnboardingWizard.php:218
+msgid "AI generated"
+msgstr "AI ਦੁਆਰਾ ਤਿਆਰ ਕੀਤਾ ਗਿਆ"
+
+#: inc/OnboardingWizard.php:220
+msgid "A golden retriever sitting in a sunlit park, wearing a pink bandana."
+msgstr "ਧੁੱਪ ਨਾਲ ਰੌਸ਼ਨ ਪਾਰਕ ਵਿੱਚ ਬੈਠਿਆ ਇੱਕ ਗੋਲਡਨ ਰੀਟਰੀਵਰ, ਗੁਲਾਬੀ ਬੈਂਡਾਨਾ ਪਹਿਨਿਆ ਹੋਇਆ।"
+
+#: inc/OnboardingWizard.php:246
+msgid "Email address"
+msgstr "ਈਮੇਲ ਪਤਾ"
+
+#: inc/OnboardingWizard.php:258 inc/OnboardingWizard.php:811
+msgid "We'll create a new account or link your existing one — same email, either way."
+msgstr "ਅਸੀਂ ਨਵਾਂ ਖਾਤਾ ਬਣਾਵਾਂਗੇ ਜਾਂ ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਖਾਤੇ ਨੂੰ ਲਿੰਕ ਕਰਾਂਗੇ — ਦੋਵੇਂ ਹਾਲਤਾਂ ਵਿੱਚ ਉਹੀ ਈਮੇਲ।"
+
+#: inc/OnboardingWizard.php:265
+msgid "Plan"
+msgstr "ਯੋਜਨਾ"
+
+#: inc/OnboardingWizard.php:271
+msgid "Free forever"
+msgstr "ਹਮੇਸ਼ਾ ਲਈ ਮੁਫ਼ਤ"
+
+#: inc/OnboardingWizard.php:277
+msgid "Widget, contrast + sizing controls, essential accessibility tools."
+msgstr "ਵਿਜੈਟ, ਕਾਂਟ੍ਰਾਸਟ + ਸਾਈਜ਼ਿੰਗ ਕੰਟਰੋਲ, ਜ਼ਰੂਰੀ ਐਕਸੈਸਿਬਿਲਟੀ ਟੂਲ।"
+
+#: inc/OnboardingWizard.php:285
+msgid "Most popular"
+msgstr "ਸਭ ਤੋਂ ਲੋਕਪ੍ਰਿਯ"
+
+#: inc/OnboardingWizard.php:291
+msgid "7 days free"
+msgstr "7 ਦਿਨ ਮੁਫ਼ਤ"
+
+#: inc/OnboardingWizard.php:291
+msgid "then $10/mo"
+msgstr "ਫਿਰ $10/ਮਹੀਨਾ"
+
+#: inc/OnboardingWizard.php:294
+msgid "Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits."
+msgstr "ਏਜੈਂਟਿਕ AI ਫਿਕਸ, ਸਮਾਰਟ alt ਟੈਕਸਟ, WCAG/ADA/EAA ਆਡਿਟ।"
+
+#: inc/OnboardingWizard.php:307
+msgid "Ready to reconnect"
+msgstr "ਮੁੜ ਜੁੜਨ ਲਈ ਤਿਆਰ"
+
+#: inc/OnboardingWizard.php:321
+msgid "Heads up:"
+msgstr "ਧਿਆਨ ਦਿਓ:"
+
+#: inc/OnboardingWizard.php:322
+msgid ""
+"This site is on another AllAccessible account. The plugin will work right away, but the site only "
+"appears in your dashboard once the existing admin approves your access — they'll get an email "
+"automatically."
+msgstr ""
+"ਇਹ ਸਾਈਟ ਕਿਸੇ ਹੋਰ AllAccessible ਖਾਤੇ ‘ਤੇ ਹੈ। ਪਲੱਗਇਨ ਤੁਰੰਤ ਕੰਮ ਕਰੇਗਾ, ਪਰ ਸਾਈਟ ਤੁਹਾਡੇ ਡੈਸ਼ਬੋਰਡ ਵਿੱਚ ਤਦੋਂ ਹੀ ਦਿਖਾਈ ਦੇਵੇਗੀ ਜਦੋਂ "
+"ਮੌਜੂਦਾ ਐਡਮਿਨ ਤੁਹਾਡੀ ਪਹੁੰਚ ਮਨਜ਼ੂਰ ਕਰੇਗਾ — ਉਹਨਾਂ ਨੂੰ ਆਪਣੇ ਆਪ ਇੱਕ ਈਮੇਲ ਮਿਲੇਗੀ।"
+
+#: inc/OnboardingWizard.php:332 inc/OnboardingWizard.php:670 inc/OnboardingWizard.php:682
+#: inc/OnboardingWizard.php:703 inc/OnboardingWizard.php:734 inc/OnboardingWizard.php:816
+msgid "Continue"
+msgstr "ਜਾਰੀ ਰੱਖੋ"
+
+#. translators: 1: Terms link, 2: Privacy Policy link
+#: inc/OnboardingWizard.php:340
+#, php-format
+msgid "By continuing you agree to our %1$s and %2$s."
+msgstr "ਜਾਰੀ ਰੱਖ ਕੇ ਤੁਸੀਂ ਸਾਡੇ %1$s ਅਤੇ %2$s ਨਾਲ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ।"
+
+#: inc/OnboardingWizard.php:341 inc/SettingsPage.php:1445
+msgid "Terms & Conditions"
+msgstr "ਨਿਯਮ ਅਤੇ ਹਾਲਾਤ"
+
+#: inc/OnboardingWizard.php:342 inc/SettingsPage.php:1446
+msgid "Privacy Policy"
+msgstr "ਪਰਾਈਵੇਟ ਨੀਤੀ"
+
+#: inc/OnboardingWizard.php:351
+msgid "Skip and use just the free widget"
+msgstr "ਛੱਡੋ ਅਤੇ ਸਿਰਫ਼ ਮੁਫ਼ਤ ਵਿਜਿਟ ਹੀ ਵਰਤੋ"
+
+#: inc/OnboardingWizard.php:377
+msgid "Interactions / month"
+msgstr "ਇੰਟਰੈਕਸ਼ਨ / ਮਹੀਨਾ"
+
+#: inc/OnboardingWizard.php:385
+msgid "Visitors served / month"
+msgstr "ਸੇਵਾ ਪ੍ਰਾਪਤ ਵਿਜ਼ਟਰ / ਮਹੀਨਾ"
+
+#: inc/OnboardingWizard.php:393
+msgid "Protecting WordPress"
+msgstr "WordPress ਦੀ ਸੁਰੱਖਿਆ"
+
+#: inc/OnboardingWizard.php:398
+msgid "WCAG 2.2"
+msgstr "WCAG 2.2"
+
+#: inc/OnboardingWizard.php:399
+msgid "ADA"
+msgstr "ADA"
+
+#: inc/OnboardingWizard.php:400
+msgid "Section 508"
+msgstr "ਸੈਕਸ਼ਨ 508"
+
+#: inc/OnboardingWizard.php:401
+msgid "EAA 2025"
+msgstr "EAA 2025"
+
+#: inc/OnboardingWizard.php:422
+msgid "Free to start"
+msgstr "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਮੁਫ਼ਤ"
+
+#: inc/OnboardingWizard.php:426
+msgid "No credit card required"
+msgstr "ਕ੍ਰੈਡਿਟ ਕਾਰਡ ਦੀ ਲੋੜ ਨਹੀਂ"
+
+#: inc/OnboardingWizard.php:430
+msgid "Privacy-first — GDPR / CCPA"
+msgstr "ਪਰਦੇਦਾਰੀ-ਪਹਿਲਾਂ — GDPR / CCPA"
+
+#: inc/OnboardingWizard.php:434
+msgid "Cancel any time on paid plans"
+msgstr "ਭੁਗਤਾਨ ਵਾਲੀਆਂ ਯੋਜਨਾਵਾਂ 'ਤੇ ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ"
+
+#: inc/OnboardingWizard.php:438
+msgid "Trusted on thousands of WordPress sites worldwide."
+msgstr "ਦੁਨੀਆ ਭਰ ਵਿੱਚ ਹਜ਼ਾਰਾਂ WordPress ਸਾਈਟਾਂ ਵੱਲੋਂ ਭਰੋਸੇਯੋਗ।"
+
+#: inc/OnboardingWizard.php:450
+msgid "Step 2 of 2"
+msgstr "ਕਦਮ 2 ਵਿੱਚੋਂ 2"
+
+#: inc/OnboardingWizard.php:453
+msgid "Account ready"
+msgstr "ਖਾਤਾ ਤਿਆਰ ਹੈ"
+
+#: inc/OnboardingWizard.php:462
+msgid "Your account is set up."
+msgstr "ਤੁਹਾਡਾ ਖਾਤਾ ਸੈੱਟ ਅੱਪ ਹੋ ਗਿਆ ਹੈ।"
+
+#: inc/OnboardingWizard.php:464
+msgid "The AllAccessible agents are ready to scan this site for accessibility issues."
+msgstr "AllAccessible ਏਜੰਟ ਇਸ ਸਾਈਟ ਨੂੰ ਪਹੁੰਚਯੋਗਤਾ ਸੰਬੰਧੀ ਸਮੱਸਿਆਵਾਂ ਲਈ ਸਕੈਨ ਕਰਨ ਲਈ ਤਿਆਰ ਹਨ।"
+
+#: inc/OnboardingWizard.php:474
+msgid ""
+"AllAccessible automatically finds every published page on your site — no sitemap needed. Start your "
+"first scan below; you can re-run it any time from the Agentic Fixes page."
+msgstr ""
+"AllAccessible ਤੁਹਾਡੀ ਸਾਈਟ ਉੱਤੇ ਹਰ ਪ੍ਰਕਾਸ਼ਿਤ ਪੇਜ ਆਪਣੇ ਆਪ ਲੱਭ ਲੈਂਦਾ ਹੈ — ਸਾਈਟਮੈਪ ਦੀ ਲੋੜ ਨਹੀਂ। ਹੇਠਾਂ ਆਪਣਾ ਪਹਿਲਾ ਸਕੈਨ ਸ਼ੁਰੂ "
+"ਕਰੋ; ਤੁਸੀਂ Agentic Fixes ਪੇਜ ਤੋਂ ਕਿਸੇ ਵੀ ਵੇਲੇ ਇਸਨੂੰ ਮੁੜ ਚਲਾ ਸਕਦੇ ਹੋ।"
+
+#: inc/OnboardingWizard.php:483
+msgid "Skip for now"
+msgstr "ਹੁਣ ਲਈ ਛੱਡੋ"
+
+#: inc/OnboardingWizard.php:486
+msgid "Go to dashboard"
+msgstr "ਡੈਸ਼ਬੋਰਡ 'ਤੇ ਜਾਓ"
+
+#: inc/OnboardingWizard.php:587
+msgid "Skip setup for now? You can finish any time from the settings page."
+msgstr "ਹੁਣ ਲਈ ਸੈਟਅੱਪ ਛੱਡਣਾ ਹੈ? ਤੁਸੀਂ ਸੈਟਿੰਗਜ਼ ਪੇਜ ਤੋਂ ਕਿਸੇ ਵੀ ਵੇਲੇ ਪੂਰਾ ਕਰ ਸਕਦੇ ਹੋ।"
+
+#: inc/OnboardingWizard.php:619
+msgid "Account created. Provisioning your site…"
+msgstr "ਖਾਤਾ ਬਣ ਗਿਆ। ਤੁਹਾਡੀ ਸਾਈਟ ਪ੍ਰੋਵਿਜ਼ਨ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…"
+
+#: inc/OnboardingWizard.php:622
+msgid "Welcome back. We linked this WordPress site to your account."
+msgstr "ਵਾਪਸੀ ਤੇ ਸੁਆਗਤ ਹੈ। ਅਸੀਂ ਇਸ WordPress ਸਾਈਟ ਨੂੰ ਤੁਹਾਡੇ ਖਾਤੇ ਨਾਲ ਲਿੰਕ ਕਰ ਦਿੱਤਾ ਹੈ।"
+
+#: inc/OnboardingWizard.php:625
+msgid "Welcome back. This site was already on your account."
+msgstr "ਵਾਪਸੀ ਤੇ ਸੁਆਗਤ ਹੈ। ਇਹ ਸਾਈਟ ਪਹਿਲਾਂ ਹੀ ਤੁਹਾਡੇ ਖਾਤੇ ‘ਤੇ ਸੀ।"
+
+#: inc/OnboardingWizard.php:627
+msgid "Connected."
+msgstr "ਜੁੜ ਗਿਆ।"
+
+#: inc/OnboardingWizard.php:639
+msgid "Please enter your email address."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ।"
+
+#: inc/OnboardingWizard.php:644
+msgid "Setting things up…"
+msgstr "ਸੈਟਅੱਪ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/OnboardingWizard.php:645
+msgid "Connecting to AllAccessible…"
+msgstr "AllAccessible ਨਾਲ ਜੁੜ ਰਿਹਾ ਹੈ…"
+
+#: inc/OnboardingWizard.php:668
+msgid "Something went wrong. Please try again."
+msgstr "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/OnboardingWizard.php:680
+msgid "We received an unexpected response. Please try again."
+msgstr "ਸਾਨੂੰ ਇੱਕ ਅਣਉਮੀਦ ਜਵਾਬ ਮਿਲਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/OnboardingWizard.php:701 inc/OnboardingWizard.php:883
+msgid "We could not save your settings. Please try again."
+msgstr "ਅਸੀਂ ਤੁਹਾਡੀਆਂ ਸੈਟਿੰਗਾਂ ਸੇਵ ਨਹੀਂ ਕਰ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/OnboardingWizard.php:728
+msgid "We could not reach AllAccessible. Please try again."
+msgstr "ਅਸੀਂ AllAccessible ਤੱਕ ਨਹੀਂ ਪਹੁੰਚ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/OnboardingWizard.php:753 inc/OnboardingWizard.php:781
+msgid "Welcome back"
+msgstr "ਵਾਪਸੀ ਤੇ ਸੁਆਗਤ ਹੈ"
+
+#: inc/OnboardingWizard.php:763
+msgid "Linking"
+msgstr "ਲਿੰਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: inc/OnboardingWizard.php:764
+msgid "to"
+msgstr "ਤੋਂ"
+
+#: inc/OnboardingWizard.php:768
+msgid "Reconnect this site"
+msgstr "ਇਸ ਸਾਈਟ ਨੂੰ ਮੁੜ ਕਨੈਕਟ ਕਰੋ"
+
+#: inc/OnboardingWizard.php:783
+msgid "We will link this WordPress site to your existing AllAccessible account."
+msgstr "ਅਸੀਂ ਇਸ WordPress ਸਾਈਟ ਨੂੰ ਤੁਹਾਡੇ ਮੌਜੂਦਾ AllAccessible ਖਾਤੇ ਨਾਲ ਲਿੰਕ ਕਰਾਂਗੇ।"
+
+#: inc/OnboardingWizard.php:788
+msgid "Connect this site"
+msgstr "ਇਸ ਸਾਈਟ ਨੂੰ ਕਨੈਕਟ ਕਰੋ"
+
+#: inc/OnboardingWizard.php:795
+msgid "Request access to this site"
+msgstr "ਇਸ ਸਾਈਟ ਲਈ ਪਹੁੰਚ ਦੀ ਬੇਨਤੀ ਕਰੋ"
+
+#: inc/OnboardingWizard.php:797
+msgid "This site is on another AllAccessible account. Enter your email to request access."
+msgstr "ਇਹ ਸਾਈਟ ਕਿਸੇ ਹੋਰ AllAccessible ਖਾਤੇ ‘ਤੇ ਹੈ। ਪਹੁੰਚ ਦੀ ਬੇਨਤੀ ਕਰਨ ਲਈ ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ।"
+
+#: inc/OnboardingWizard.php:802
+msgid "Request access"
+msgstr "ਪਹੁੰਚ ਦੀ ਬੇਨਤੀ ਕਰੋ"
+
+#: inc/OnboardingWizard.php:868
+msgid "Reconnecting…"
+msgstr "ਮੁੜ ਕਨੈਕਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/OnboardingWizard.php:879
+msgid "Reconnected. Provisioning…"
+msgstr "ਮੁੜ ਕਨੈਕਟ ਹੋ ਗਿਆ। ਪ੍ਰੋਵਿਜ਼ਨਿੰਗ…"
+
+#: inc/OnboardingWizard.php:906
+msgid "Permission denied"
+msgstr "ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ"
+
+#: inc/PostListColumn.php:306
+msgid "Loading accessibility score"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਸਕੋਰ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ"
+
+#: inc/PostListColumn.php:307
+msgid "Loading"
+msgstr "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ"
+
+#: inc/PostListColumn.php:308
+msgid "Loading…"
+msgstr "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…"
+
+#: inc/PostListColumn.php:434
+msgid "Will scan on publish"
+msgstr "ਪਬਲਿਸ਼ ਕਰਨ ‘ਤੇ ਸਕੈਨ ਕਰੇਗਾ"
+
+#: inc/PostListColumn.php:435
+msgid ""
+"Drafts are not reachable by the public crawler. Publish to scan automatically, or preview to scan "
+"now."
+msgstr "ਡ੍ਰਾਫਟ ਪਬਲਿਕ ਕ੍ਰਾਲਰ ਲਈ ਪਹੁੰਚਯੋਗ ਨਹੀਂ ਹੁੰਦੇ। ਆਪਣੇ ਆਪ ਸਕੈਨ ਕਰਨ ਲਈ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੋ, ਜਾਂ ਹੁਣੇ ਸਕੈਨ ਕਰਨ ਲਈ ਪ੍ਰੀਵਿਊ ਕਰੋ।"
+
+#: inc/PostListColumn.php:440
+msgid "Preview & scan"
+msgstr "ਪ੍ਰੀਵਿਊ ਅਤੇ ਸਕੈਨ ਕਰੋ"
+
+#: inc/PostListColumn.php:445
+msgid "Awaiting scan — AllAccessible will populate this on the next crawl"
+msgstr "ਸਕੈਨ ਦੀ ਉਡੀਕ — AllAccessible ਅਗਲੀ ਕ੍ਰਾਲ 'ਤੇ ਇਹ ਭਰ ਦੇਵੇਗਾ"
+
+#: inc/PostListColumn.php:456
+msgid "Score is stale — page hasn't been scanned recently"
+msgstr "ਸਕੋਰ ਪੁਰਾਣਾ ਹੈ — ਪੰਨਾ ਹਾਲ ਹੀ ਵਿੱਚ ਸਕੈਨ ਨਹੀਂ ਕੀਤਾ ਗਿਆ"
+
+#: inc/PostListColumn.php:457
+msgid "Last scan failed"
+msgstr "ਆਖਰੀ ਸਕੈਨ ਅਸਫਲ ਰਿਹਾ"
+
+#: inc/PostListColumn.php:458
+msgid "Accessibility score"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਸਕੋਰ"
+
+#: inc/PostListColumn.php:468
+msgid "Approve pending fixes to reach this score"
+msgstr "ਇਸ ਸਕੋਰ ਤੱਕ ਪਹੁੰਚਣ ਲਈ ਬਾਕੀ ਮਨਜ਼ੂਰੀ ਵਾਲੀਆਂ ਸੁਧਾਰਾਂ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰੋ"
+
+#: inc/ReviewNudge.php:73
+msgid "How's your experience with AllAccessible so far?"
+msgstr "ਹੁਣ ਤੱਕ AllAccessible ਨਾਲ ਤੁਹਾਡਾ ਤਜਰਬਾ ਕਿਵੇਂ ਰਿਹਾ ਹੈ?"
+
+#: inc/ReviewNudge.php:77
+msgid "Great 😊"
+msgstr "ਵਧੀਆ 😊"
+
+#: inc/ReviewNudge.php:80
+msgid "Could be better"
+msgstr "ਹੋਰ ਵਧੀਆ ਹੋ ਸਕਦਾ ਸੀ"
+
+#: inc/ReviewNudge.php:83
+msgid "Maybe later"
+msgstr "ਸ਼ਾਇਦ ਬਾਅਦ ਵਿੱਚ"
+
+#: inc/ReviewNudge.php:91
+msgid "That's wonderful to hear!"
+msgstr "ਇਹ ਸੁਣ ਕੇ ਬਹੁਤ ਖੁਸ਼ੀ ਹੋਈ!"
+
+#: inc/ReviewNudge.php:92
+msgid ""
+"A quick review on WordPress.org helps other site owners find us — it takes about 30 seconds and "
+"means a lot."
+msgstr ""
+"WordPress.org ‘ਤੇ ਇੱਕ ਛੋਟੀ ਸਮੀਖਿਆ ਹੋਰ ਸਾਈਟ ਮਾਲਕਾਂ ਨੂੰ ਸਾਨੂੰ ਲੱਭਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ — ਇਸ ਵਿੱਚ ਲਗਭਗ 30 ਸਕਿੰਟ ਲੱਗਦੇ ਹਨ "
+"ਅਤੇ ਇਹ ਸਾਡੇ ਲਈ ਬਹੁਤ ਮਾਇਨੇ ਰੱਖਦੀ ਹੈ।"
+
+#: inc/ReviewNudge.php:97
+msgid "Leave a review"
+msgstr "ਇੱਕ ਸਮੀਖਿਆ ਛੱਡੋ"
+
+#: inc/ReviewNudge.php:100
+msgid "I already did"
+msgstr "ਮੈਂ ਪਹਿਲਾਂ ਹੀ ਕਰ ਦਿੱਤਾ ਹੈ"
+
+#: inc/ReviewNudge.php:108
+msgid "Sorry to hear that — we'd like to make it right."
+msgstr "ਇਹ ਸੁਣ ਕੇ ਅਫ਼ਸੋਸ ਹੋਇਆ — ਅਸੀਂ ਇਸਨੂੰ ਠੀਕ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਾਂ।"
+
+#: inc/ReviewNudge.php:109
+msgid "Tell us what's not working and we'll follow up. This goes straight to our team."
+msgstr "ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਕੀ ਕੰਮ ਨਹੀਂ ਕਰ ਰਿਹਾ ਅਤੇ ਅਸੀਂ ਫਾਲੋ ਅੱਪ ਕਰਾਂਗੇ। ਇਹ ਸਿੱਧਾ ਸਾਡੀ ਟੀਮ ਤੱਕ ਜਾਂਦਾ ਹੈ।"
+
+#: inc/ReviewNudge.php:113
+msgid "What could be better?"
+msgstr "ਕੀ ਹੋਰ ਬਿਹਤਰ ਹੋ ਸਕਦਾ ਹੈ?"
+
+#: inc/ReviewNudge.php:117
+msgid "Send feedback"
+msgstr "ਫੀਡਬੈਕ ਭੇਜੋ"
+
+#: inc/ReviewNudge.php:121 inc/SettingsPage.php:1428
+msgid "Contact support"
+msgstr "ਸਹਾਇਤਾ ਨਾਲ ਸੰਪਰਕ ਕਰੋ"
+
+#: inc/ReviewNudge.php:129
+msgid "Thank you — we appreciate you."
+msgstr "ਧੰਨਵਾਦ — ਅਸੀਂ ਤੁਹਾਡੀ ਕਦਰ ਕਰਦੇ ਹਾਂ।"
+
+#: inc/ScanTriggerPanel.php:30
+msgid ""
+"AllAccessible automatically finds every published page on your site — no sitemap needed. Start your "
+"first scan below; future scans then run automatically based on your plan."
+msgstr ""
+"AllAccessible ਤੁਹਾਡੀ ਸਾਈਟ ਉੱਤੇ ਹਰ ਪ੍ਰਕਾਸ਼ਿਤ ਪੰਨਾ ਆਪਣੇ ਆਪ ਲੱਭ ਲੈਂਦਾ ਹੈ — ਸਾਈਟਮੈਪ ਦੀ ਲੋੜ ਨਹੀਂ। ਹੇਠਾਂ ਆਪਣਾ ਪਹਿਲਾ ਸਕੈਨ ਸ਼ੁਰੂ "
+"ਕਰੋ; ਫਿਰ ਅਗਲੇ ਸਕੈਨ ਤੁਹਾਡੇ ਪਲਾਨ ਅਨੁਸਾਰ ਆਪਣੇ ਆਪ ਚੱਲਣਗੇ।"
+
+#: inc/ScanTriggerPanel.php:43
+msgid "Scan now"
+msgstr "ਹੁਣੇ ਸਕੈਨ ਕਰੋ"
+
+#: inc/ScanTriggerPanel.php:44 inc/ScanTriggerPanel.php:257 inc/ScanTriggerPanel.php:311
+msgid "Run scan again"
+msgstr "ਸਕੈਨ ਮੁੜ ਚਲਾਓ"
+
+#. translators: %s: human-readable time until
+#: inc/ScanTriggerPanel.php:101
+#, php-format
+msgid "Next scan in %s"
+msgstr "ਅਗਲਾ ਸਕੈਨ %s ਵਿੱਚ"
+
+#: inc/ScanTriggerPanel.php:105
+msgid "Next scan due now"
+msgstr "ਅਗਲਾ ਸਕੈਨ ਹੁਣ ਦੇਣਯੋਗ ਹੈ"
+
+#. translators: %s: human-readable time difference
+#: inc/ScanTriggerPanel.php:117
+#, php-format
+msgid "Last scan triggered %s ago"
+msgstr "ਆਖਰੀ ਸਕੈਨ %s ਪਹਿਲਾਂ ਟ੍ਰਿਗਰ ਹੋਇਆ ਸੀ"
+
+#: inc/ScanTriggerPanel.php:131
+#, php-format
+msgid "%d published page will be scanned. This can take a minute or two."
+msgid_plural "%d published pages and posts will be scanned. This can take a minute or two."
+msgstr[0] "%d ਪ੍ਰਕਾਸ਼ਿਤ ਪੇਜ ਸਕੈਨ ਕੀਤਾ ਜਾਵੇਗਾ। ਇਸ ਵਿੱਚ ਇੱਕ-ਦੋ ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ।"
+msgstr[1] "%d ਪ੍ਰਕਾਸ਼ਿਤ ਪੰਨੇ ਅਤੇ ਪੋਸਟਾਂ ਸਕੈਨ ਕੀਤੀਆਂ ਜਾਣਗੀਆਂ। ਇਸ ਵਿੱਚ ਇੱਕ-ਦੋ ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ।"
+
+#: inc/ScanTriggerPanel.php:157
+msgid "pages scanned"
+msgstr "ਸਕੈਨ ਕੀਤੇ ਪੇਜ"
+
+#: inc/ScanTriggerPanel.php:166
+msgid ""
+"pages scanned. Accessibility scores appear in your Pages list within a minute or two as the AI "
+"finishes reviewing."
+msgstr ""
+"ਪੰਨੇ ਸਕੈਨ ਕੀਤੇ ਗਏ। AI ਵੱਲੋਂ ਸਮੀਖਿਆ ਪੂਰੀ ਕਰਨ ਦੇ ਨਾਲ ਹੀ ਇੱਕ-ਦੋ ਮਿੰਟਾਂ ਵਿੱਚ ਤੁਹਾਡੀ Pages ਸੂਚੀ ਵਿੱਚ ਪਹੁੰਚਯੋਗਤਾ ਸਕੋਰ ਦਿਖਾਈ ਦੇਣ "
+"ਲੱਗਣਗੇ।"
+
+#: inc/ScanTriggerPanel.php:168
+msgid "Open Pages list"
+msgstr "Pages ਲਿਸਟ ਖੋਲ੍ਹੋ"
+
+#: inc/ScanTriggerPanel.php:182
+msgid "Scan a specific sitemap instead (advanced)"
+msgstr "ਇਸ ਦੀ ਬਜਾਏ ਕਿਸੇ ਖਾਸ ਸਾਈਟਮੈਪ ਨੂੰ ਸਕੈਨ ਕਰੋ (ਉੱਨਤ)"
+
+#: inc/ScanTriggerPanel.php:186
+msgid ""
+"Leave this closed to let AllAccessible auto-discover your pages (recommended). Open only to point "
+"the scan at a specific sitemap."
+msgstr ""
+"AllAccessible ਨੂੰ ਤੁਹਾਡੇ ਪੰਨੇ ਆਪਣੇ ਆਪ ਖੋਜਣ ਦੇਣ ਲਈ ਇਸਨੂੰ ਬੰਦ ਹੀ ਰੱਖੋ (ਸਿਫ਼ਾਰਸ਼ੀ)। ਸਿਰਫ਼ ਤਦ ਹੀ ਖੋਲ੍ਹੋ ਜਦੋਂ ਸਕੈਨ ਨੂੰ ਕਿਸੇ ਖਾਸ "
+"ਸਾਈਟਮੈਪ ਵੱਲ ਦਿਸ਼ਾ ਦੇਣੀ ਹੋਵੇ।"
+
+#: inc/ScanTriggerPanel.php:189 inc/ScanTriggerPanel.php:345
+msgid "Looking for sitemaps…"
+msgstr "ਸਾਈਟਮੈਪ ਲੱਭ ਰਹੇ ਹਾਂ…"
+
+#: inc/ScanTriggerPanel.php:221
+msgid "Enter your sitemap URL, or close Advanced to auto-discover."
+msgstr "ਆਪਣਾ ਸਾਈਟਮੈਪ URL ਦਰਜ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਆਪ ਖੋਜ ਲਈ ਉੱਨਤ ਨੂੰ ਬੰਦ ਕਰੋ।"
+
+#: inc/ScanTriggerPanel.php:232
+msgid "Starting…"
+msgstr "ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/ScanTriggerPanel.php:244
+msgid "Scan failed to start."
+msgstr "ਸਕੈਨ ਸ਼ੁਰੂ ਨਹੀਂ ਹੋ ਸਕਿਆ।"
+
+#: inc/ScanTriggerPanel.php:245 inc/ScanTriggerPanel.php:265 inc/ScanTriggerPanel.php:290
+msgid "Start first scan"
+msgstr "ਪਹਿਲਾ ਸਕੈਨ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: inc/ScanTriggerPanel.php:255
+msgid "Scan started. Results appear on the Agentic Fixes page in 2-5 minutes."
+msgstr "ਸਕੈਨ ਸ਼ੁਰੂ ਹੋ ਗਿਆ। ਨਤੀਜੇ 2-5 ਮਿੰਟਾਂ ਵਿੱਚ Agentic Fixes ਪੰਨੇ ‘ਤੇ ਦਿਖਾਈ ਦੇਣਗੇ।"
+
+#: inc/ScanTriggerPanel.php:256
+msgid "Scan triggered just now"
+msgstr "ਸਕੈਨ ਹੁਣੇ ਹੀ ਟ੍ਰਿਗਰ ਹੋਇਆ"
+
+#: inc/ScanTriggerPanel.php:264
+msgid "Server did not return a job ID."
+msgstr "ਸਰਵਰ ਨੇ ਜੌਬ ID ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ।"
+
+#: inc/ScanTriggerPanel.php:274
+msgid "Finishing setup…"
+msgstr "ਸੈਟਅੱਪ ਪੂਰਾ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/ScanTriggerPanel.php:279
+msgid "Network error"
+msgstr "ਨੈੱਟਵਰਕ ਗਲਤੀ"
+
+#: inc/ScanTriggerPanel.php:285
+msgid "Server timeout while queuing scan. Try again."
+msgstr "ਸਕੈਨ ਕਤਾਰ ਵਿੱਚ ਲਗਾਉਂਦੇ ਸਮੇਂ ਸਰਵਰ ਟਾਈਮਆਉਟ ਹੋ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/ScanTriggerPanel.php:287
+#, php-format
+msgid "Request failed (HTTP %s)"
+msgstr "ਬੇਨਤੀ ਅਸਫਲ ਰਹੀ (HTTP %s)"
+
+#: inc/ScanTriggerPanel.php:316
+msgid "Scan failed. Try again."
+msgstr "ਸਕੈਨ ਅਸਫਲ ਰਿਹਾ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/ScanTriggerPanel.php:318
+msgid "Retry scan"
+msgstr "ਸਕੈਨ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+
+#: inc/ScanTriggerPanel.php:334 inc/ScanTriggerPanel.php:354
+msgid "Detected"
+msgstr "ਪਤਾ ਲੱਗਿਆ"
+
+#: inc/ScanTriggerPanel.php:361
+msgid "Open & verify"
+msgstr "ਖੋਲ੍ਹੋ ਅਤੇ ਤਸਦੀਕ ਕਰੋ"
+
+#: inc/ScanTriggerPanel.php:365
+msgid "No reachable sitemap found. Enter one below, or close Advanced to auto-discover."
+msgstr "ਕੋਈ ਪਹੁੰਚਯੋਗ ਸਾਈਟਮੈਪ ਨਹੀਂ ਮਿਲਿਆ। ਹੇਠਾਂ ਇੱਕ ਦਰਜ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਆਪ ਖੋਜ ਲਈ Advanced ਬੰਦ ਕਰੋ।"
+
+#: inc/ScanTriggerPanel.php:370
+msgid "Enter my own sitemap URL"
+msgstr "ਆਪਣਾ ਸਾਈਟਮੈਪ URL ਦਰਜ ਕਰੋ"
+
+#: inc/ScanTriggerPanel.php:376
+msgid "Could not check for sitemaps. Close Advanced to auto-discover instead."
+msgstr "ਸਾਈਟਮੈਪਾਂ ਦੀ ਜਾਂਚ ਨਹੀਂ ਹੋ ਸਕੀ। ਇਸ ਦੀ ਬਜਾਏ ਆਪਣੇ ਆਪ ਖੋਜ ਲਈ ਉੱਨਤ ਨੂੰ ਬੰਦ ਕਰੋ।"
+
+#. Plugin Name of the plugin/theme
+#: inc/SettingsPage.php:36 inc/SettingsPage.php:37 inc/SettingsPage.php:373 inc/SettingsPage.php:820
+msgid "AllAccessible"
+msgstr "AllAccessible"
+
+#: inc/SettingsPage.php:59 inc/SettingsPage.php:822
+msgid "Account & Settings"
+msgstr "ਖਾਤਾ ਅਤੇ ਸੈਟਿੰਗਾਂ"
+
+#: inc/SettingsPage.php:60
+msgid "Account"
+msgstr "ਖਾਤਾ"
+
+#: inc/SettingsPage.php:70 inc/SettingsPage.php:71 inc/SettingsPage.php:108
+msgid "Widget Customizer"
+msgstr "ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ਰ"
+
+#: inc/SettingsPage.php:107 inc/SettingsPage.php:881
+msgid "Widget"
+msgstr "ਵਿਜੈਟ"
+
+#: inc/SettingsPage.php:109
+msgid ""
+"Customize the AllAccessible widget that visitors see on your site. Changes save instantly and clear "
+"the visitor cache."
+msgstr ""
+"AllAccessible ਵਿਜੈਟ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ ਜੋ ਵਿਜ਼ਟਰ ਤੁਹਾਡੀ ਸਾਈਟ 'ਤੇ ਵੇਖਦੇ ਹਨ। ਬਦਲਾਅ ਤੁਰੰਤ ਸੇਵ ਹੋ ਜਾਂਦੇ ਹਨ ਅਤੇ ਵਿਜ਼ਟਰ ਕੈਸ਼ "
+"ਕਲੀਅਰ ਕਰਦੇ ਹਨ।"
+
+#: inc/SettingsPage.php:119
+msgid "Connect your AllAccessible account"
+msgstr "ਆਪਣਾ AllAccessible ਖਾਤਾ ਕਨੈਕਟ ਕਰੋ"
+
+#: inc/SettingsPage.php:120
+msgid "Finish setup to customize your widget."
+msgstr "ਆਪਣਾ ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ ਕਰਨ ਲਈ ਸੈਟਅੱਪ ਪੂਰਾ ਕਰੋ।"
+
+#: inc/SettingsPage.php:122 inc/SettingsPage.php:850
+msgid "Start setup"
+msgstr "ਸੈਟਅੱਪ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: inc/SettingsPage.php:131
+msgid "Widget customization is a paid feature"
+msgstr "ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ੇਸ਼ਨ ਇੱਕ ਭੁਗਤਾਨੀ ਫੀਚਰ ਹੈ"
+
+#: inc/SettingsPage.php:132
+msgid ""
+"Upgrade your AllAccessible plan to customize the widget color, position, icon, and shape — plus "
+"enable agentic AI remediation."
+msgstr ""
+"ਵਿਜੈਟ ਦਾ ਰੰਗ, ਸਥਿਤੀ, ਆਇਕਨ ਅਤੇ ਆਕਾਰ ਕਸਟਮਾਈਜ਼ ਕਰਨ ਲਈ ਆਪਣਾ AllAccessible ਪਲਾਨ ਅੱਪਗ੍ਰੇਡ ਕਰੋ — ਨਾਲ ਹੀ agentic AI "
+"ਰੀਮੀਡੀਏਸ਼ਨ ਐਨੇਬਲ ਕਰੋ।"
+
+#: inc/SettingsPage.php:333 inc/SettingsPage.php:345 inc/UsageDashboard.php:69
+msgid "Pageviews"
+msgstr "ਪੇਜਵਿਊਜ਼"
+
+#: inc/SettingsPage.php:371 inc/SettingsPage.php:627
+msgid "Site overview"
+msgstr "ਸਾਈਟ ਓਵਰਵਿਊ"
+
+#: inc/SettingsPage.php:380
+msgid "Widget connected"
+msgstr "ਵਿਜੈਟ ਕਨੈਕਟ ਹੋ ਗਿਆ"
+
+#: inc/SettingsPage.php:384
+msgid "Accessibility widget and human-in-the-loop agentic AI remediation for your site."
+msgstr "ਤੁਹਾਡੀ ਸਾਈਟ ਲਈ ਐਕਸੈਸਿਬਿਲਿਟੀ ਵਿਜੈਟ ਅਤੇ ਹਿਊਮਨ-ਇਨ-ਦ-ਲੂਪ agentic AI ਰੀਮੀਡੀਏਸ਼ਨ।"
+
+#: inc/SettingsPage.php:420
+msgid ""
+"Your current plan uses the legacy AllAccessible widget, which predates agentic AI remediation. "
+"Upgrade to the current plan tier to unlock auto-suggested fixes, larger pageview caps, and the full "
+"AllAccessible AI feature set."
+msgstr ""
+"ਤੁਹਾਡੀ ਮੌਜੂਦਾ ਯੋਜਨਾ ਲੈਗੇਸੀ AllAccessible ਵਿਜੈਟ ਵਰਤਦੀ ਹੈ, ਜੋ ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ ਤੋਂ ਪਹਿਲਾਂ ਦੀ ਹੈ। ਆਟੋ-ਸੁਝਾਏ ਗਏ ਫਿਕਸ, "
+"ਵੱਡੀਆਂ ਪੇਜਵਿਊ ਸੀਮਾਵਾਂ, ਅਤੇ AllAccessible AI ਫੀਚਰਾਂ ਦਾ ਪੂਰਾ ਸੈੱਟ ਅਨਲੌਕ ਕਰਨ ਲਈ ਮੌਜੂਦਾ ਯੋਜਨਾ ਟੀਅਰ 'ਤੇ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#: inc/SettingsPage.php:449
+msgid "AI Resolved"
+msgstr "AI ਵੱਲੋਂ ਹੱਲ ਕੀਤਾ ਗਿਆ"
+
+#: inc/SettingsPage.php:451
+msgid "Completed"
+msgstr "ਪੂਰਾ ਹੋਇਆ"
+
+#: inc/SettingsPage.php:452
+msgid "Reopened"
+msgstr "ਮੁੜ ਖੋਲ੍ਹਿਆ ਗਿਆ"
+
+#: inc/SettingsPage.php:453
+msgid "Ignored"
+msgstr "ਅਣਡਿੱਠਾ ਕੀਤਾ"
+
+#: inc/SettingsPage.php:462
+msgid "Activity and quick actions"
+msgstr "ਗਤੀਵਿਧੀ ਅਤੇ ਤੁਰੰਤ ਕਾਰਵਾਈਆਂ"
+
+#: inc/SettingsPage.php:472
+msgid "Agentic Fixes not available on your plan"
+msgstr "ਤੁਹਾਡੇ ਪਲਾਨ ਵਿੱਚ Agentic Fixes ਉਪਲਬਧ ਨਹੀਂ ਹਨ"
+
+#: inc/SettingsPage.php:477
+msgid ""
+"The legacy AllAccessible widget keeps running, but the agentic AI remediation pipeline requires a "
+"current plan tier. Upgrade to bring auto-suggested fixes, larger pageview caps, and continuous "
+"accessibility scoring to this site."
+msgstr ""
+"ਪੁਰਾਣਾ AllAccessible ਵਿਜੈਟ ਚੱਲਦਾ ਰਹਿੰਦਾ ਹੈ, ਪਰ ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ ਪਾਈਪਲਾਈਨ ਲਈ ਮੌਜੂਦਾ ਪਲਾਨ ਟੀਅਰ ਦੀ ਲੋੜ ਹੈ। ਇਸ "
+"ਸਾਈਟ ਲਈ ਆਟੋ-ਸੁਝਾਏ ਫਿਕਸ, ਵੱਡੀਆਂ ਪੇਜਵਿਊ ਸੀਮਾਵਾਂ, ਅਤੇ ਲਗਾਤਾਰ ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰਿੰਗ ਲਿਆਉਣ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#: inc/SettingsPage.php:492
+msgid "Issues from your latest scan"
+msgstr "ਤੁਹਾਡੇ ਤਾਜ਼ਾ ਸਕੈਨ ਤੋਂ ਸਮੱਸਿਆਵਾਂ"
+
+#: inc/SettingsPage.php:494
+msgid "Grouped by rule, newest scan first."
+msgstr "ਨਿਯਮ ਅਨੁਸਾਰ ਸਮੂਹਬੱਧ, ਸਭ ਤੋਂ ਨਵਾਂ ਸਕੈਨ ਪਹਿਲਾਂ।"
+
+#: inc/SettingsPage.php:503
+msgid "View all"
+msgstr "ਸਭ ਵੇਖੋ"
+
+#: inc/SettingsPage.php:512
+msgid "Severity"
+msgstr "ਗੰਭੀਰਤਾ"
+
+#: inc/SettingsPage.php:513
+msgid "Rule"
+msgstr "ਨਿਯਮ"
+
+#: inc/SettingsPage.php:514
+msgid "Issues"
+msgstr "ਸਮੱਸਿਆਵਾਂ"
+
+#: inc/SettingsPage.php:515
+msgid "WCAG"
+msgstr "WCAG"
+
+#: inc/SettingsPage.php:516
+msgid "Status"
+msgstr "ਸਥਿਤੀ"
+
+#: inc/SettingsPage.php:559
+#, php-format
+msgid "%s fix manifest ready for your review."
+msgid_plural "%s fix manifests ready for your review."
+msgstr[0] "%s ਫਿਕਸ ਮੈਨਿਫੈਸਟ ਤੁਹਾਡੀ ਸਮੀਖਿਆ ਲਈ ਤਿਆਰ ਹੈ।"
+msgstr[1] "%s ਫਿਕਸ ਮੈਨਿਫੈਸਟ ਤੁਹਾਡੀ ਸਮੀਖਿਆ ਲਈ ਤਿਆਰ ਹਨ।"
+
+#: inc/SettingsPage.php:563
+msgid "Review manifests"
+msgstr "ਮੈਨਿਫੈਸਟ ਦੀ ਸਮੀਖਿਆ ਕਰੋ"
+
+#: inc/SettingsPage.php:580
+msgid ""
+"AllAccessible agents are getting ready to scan your site. Detected accessibility issues will appear "
+"here grouped by rule once your first crawl completes."
+msgstr ""
+"AllAccessible ਏਜੰਟ ਤੁਹਾਡੀ ਸਾਈਟ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ ਤਿਆਰ ਹੋ ਰਹੇ ਹਨ। ਤੁਹਾਡੀ ਪਹਿਲੀ ਕ੍ਰਾਲ ਪੂਰੀ ਹੋਣ ਤੋਂ ਬਾਅਦ, ਪਤਾ ਲੱਗੀਆਂ "
+"ਐਕਸੈਸਿਬਿਲਿਟੀ ਸਮੱਸਿਆਵਾਂ ਇੱਥੇ ਨਿਯਮ ਅਨੁਸਾਰ ਸਮੂਹਬੱਧ ਹੋ ਕੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।"
+
+#: inc/SettingsPage.php:583
+msgid "Open coverage"
+msgstr "ਕਵਰੇਜ ਖੋਲ੍ਹੋ"
+
+#: inc/SettingsPage.php:593
+msgid "Quick actions"
+msgstr "ਤੁਰੰਤ ਕਾਰਵਾਈਆਂ"
+
+#: inc/SettingsPage.php:599
+msgid "In WordPress"
+msgstr "WordPress ਵਿੱਚ"
+
+#: inc/SettingsPage.php:612
+msgid "Widget customizer"
+msgstr "ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ਰ"
+
+#: inc/SettingsPage.php:616
+msgid "Account & settings"
+msgstr "ਖਾਤਾ ਅਤੇ ਸੈਟਿੰਗਾਂ"
+
+#: inc/SettingsPage.php:624
+msgid "On AllAccessible"
+msgstr "AllAccessible ‘ਤੇ"
+
+#: inc/SettingsPage.php:631
+msgid "Audit history"
+msgstr "ਆਡਿਟ ਇਤਿਹਾਸ"
+
+#: inc/SettingsPage.php:635
+msgid "Tasks"
+msgstr "ਟਾਸਕ"
+
+#: inc/SettingsPage.php:640
+msgid "Reports"
+msgstr "ਰਿਪੋਰਟਾਂ"
+
+#: inc/SettingsPage.php:661
+msgid "Usage limit exceeded"
+msgstr "ਵਰਤੋਂ ਸੀਮਾ ਤੋਂ ਵੱਧ ਗਈ"
+
+#: inc/SettingsPage.php:669
+#, php-format
+msgid ""
+"You have exceeded your %s limit. Your widget has been temporarily downgraded to free features. "
+"Upgrade your plan to restore premium functionality."
+msgid_plural ""
+"You have exceeded the following limits: %s. Your widget has been temporarily downgraded to free "
+"features. Upgrade your plan to restore premium functionality."
+msgstr[0] ""
+"ਤੁਸੀਂ ਆਪਣੀ %s ਸੀਮਾ ਤੋਂ ਵੱਧ ਗਏ ਹੋ। ਤੁਹਾਡਾ ਵਿਜੈਟ ਅਸਥਾਈ ਤੌਰ ‘ਤੇ ਮੁਫ਼ਤ ਫੀਚਰਾਂ ‘ਤੇ ਡਾਊਨਗ੍ਰੇਡ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪ੍ਰੀਮੀਅਮ "
+"ਕਾਰਗੁਜ਼ਾਰੀ ਮੁੜ ਬਹਾਲ ਕਰਨ ਲਈ ਆਪਣਾ ਪਲਾਨ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+msgstr[1] ""
+"ਤੁਸੀਂ ਹੇਠ ਲਿਖੀਆਂ ਸੀਮਾਵਾਂ ਤੋਂ ਵੱਧ ਗਏ ਹੋ: %s। ਤੁਹਾਡਾ ਵਿਜੈਟ ਅਸਥਾਈ ਤੌਰ ‘ਤੇ ਮੁਫ਼ਤ ਫੀਚਰਾਂ ‘ਤੇ ਡਾਊਨਗ੍ਰੇਡ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ। "
+"ਪ੍ਰੀਮੀਅਮ ਕਾਰਗੁਜ਼ਾਰੀ ਮੁੜ ਬਹਾਲ ਕਰਨ ਲਈ ਆਪਣਾ ਪਲਾਨ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#: inc/SettingsPage.php:697
+msgid "Complete setup to get started"
+msgstr "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸੈਟਅੱਪ ਪੂਰਾ ਕਰੋ"
+
+#: inc/SettingsPage.php:698
+msgid ""
+"Your accessibility widget is ready to go. Complete the quick setup wizard to activate your widget."
+msgstr "ਤੁਹਾਡਾ ਐਕਸੈਸਿਬਿਲਿਟੀ ਵਿਜੈਟ ਵਰਤੋਂ ਲਈ ਤਿਆਰ ਹੈ। ਆਪਣਾ ਵਿਜੈਟ ਸਰਗਰਮ ਕਰਨ ਲਈ ਤੇਜ਼ ਸੈਟਅੱਪ ਵਿਜ਼ਾਰਡ ਪੂਰਾ ਕਰੋ।"
+
+#: inc/SettingsPage.php:700
+msgid "Start setup wizard"
+msgstr "ਸੈਟਅੱਪ ਵਿਜ਼ਾਰਡ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: inc/SettingsPage.php:830
+msgid "Manage your AllAccessible account, plan, widget settings, and integrations."
+msgstr "ਆਪਣਾ AllAccessible ਖਾਤਾ, ਪਲਾਨ, ਵਿਜੈਟ ਸੈਟਿੰਗਾਂ, ਅਤੇ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਪ੍ਰਬੰਧਿਤ ਕਰੋ।"
+
+#: inc/SettingsPage.php:845
+msgid "No AllAccessible account linked"
+msgstr "ਕੋਈ AllAccessible ਖਾਤਾ ਲਿੰਕ ਨਹੀਂ ਹੈ"
+
+#: inc/SettingsPage.php:846
+msgid "Complete the setup wizard to activate your accessibility widget."
+msgstr "ਆਪਣਾ ਐਕਸੈਸਿਬਿਲਿਟੀ ਵਿਜੈਟ ਸਰਗਰਮ ਕਰਨ ਲਈ ਸੈਟਅੱਪ ਵਿਜ਼ਾਰਡ ਪੂਰਾ ਕਰੋ।"
+
+#: inc/SettingsPage.php:864
+msgid "Usage limit reached"
+msgstr "ਵਰਤੋਂ ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ"
+
+#: inc/SettingsPage.php:866
+msgid "Your widget is running in free mode until usage resets or your plan is upgraded."
+msgstr "ਤੁਹਾਡਾ ਵਿਜੈਟ ਮੁਫ਼ਤ ਮੋਡ ਵਿੱਚ ਚੱਲ ਰਿਹਾ ਹੈ ਜਦ ਤੱਕ ਵਰਤੋਂ ਰੀਸੈੱਟ ਨਹੀਂ ਹੁੰਦੀ ਜਾਂ ਤੁਹਾਡਾ ਪਲਾਨ ਅੱਪਗ੍ਰੇਡ ਨਹੀਂ ਹੁੰਦਾ।"
+
+#: inc/SettingsPage.php:871
+msgid "Manage plan"
+msgstr "ਯੋਜਨਾ ਪ੍ਰਬੰਧਿਤ ਕਰੋ"
+
+#: inc/SettingsPage.php:876
+msgid "Account settings sections"
+msgstr "ਖਾਤਾ ਸੈਟਿੰਗਾਂ ਦੇ ਭਾਗ"
+
+#: inc/SettingsPage.php:879 inc/SettingsPage.php:909
+msgid "Connection"
+msgstr "ਕਨੈਕਸ਼ਨ"
+
+#: inc/SettingsPage.php:880
+msgid "Plan & Usage"
+msgstr "ਯੋਜਨਾ ਅਤੇ ਵਰਤੋਂ"
+
+#: inc/SettingsPage.php:882
+msgid "Advanced"
+msgstr "ਉੱਨਤ"
+
+#: inc/SettingsPage.php:911
+msgid "How this site links to your AllAccessible account."
+msgstr "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ AllAccessible ਖਾਤੇ ਨਾਲ ਕਿਵੇਂ ਲਿੰਕ ਹੁੰਦੀ ਹੈ।"
+
+#: inc/SettingsPage.php:915
+msgid "Connected"
+msgstr "ਜੁੜਿਆ ਹੋਇਆ"
+
+#: inc/SettingsPage.php:917
+msgid "Action required"
+msgstr "ਕਾਰਵਾਈ ਲੋੜੀਂਦੀ ਹੈ"
+
+#: inc/SettingsPage.php:930
+msgid "Copy account ID"
+msgstr "ਖਾਤਾ ID ਕਾਪੀ ਕਰੋ"
+
+#: inc/SettingsPage.php:931 inc/SettingsPage.php:950
+msgid "Copy"
+msgstr "ਕਾਪੀ"
+
+#: inc/SettingsPage.php:935
+msgid "Identifies your AllAccessible account across every site you own."
+msgstr "ਤੁਹਾਡੇ ਮਾਲਕਾਨੇ ਹੇਠ ਆਉਣ ਵਾਲੀ ਹਰ ਸਾਈਟ ‘ਤੇ ਤੁਹਾਡੇ AllAccessible ਖਾਤੇ ਦੀ ਪਛਾਣ ਕਰਦਾ ਹੈ।"
+
+#: inc/SettingsPage.php:941
+msgid "Site ID"
+msgstr "ਸਾਈਟ ID"
+
+#: inc/SettingsPage.php:949
+msgid "Copy site ID"
+msgstr "ਸਾਈਟ ID ਕਾਪੀ ਕਰੋ"
+
+#: inc/SettingsPage.php:954
+msgid "Identifies this specific WordPress site within your account."
+msgstr "ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਇਸ ਖਾਸ WordPress ਸਾਈਟ ਦੀ ਪਛਾਣ ਕਰਦਾ ਹੈ।"
+
+#: inc/SettingsPage.php:960
+msgid "Site URL"
+msgstr "ਸਾਈਟ URL"
+
+#: inc/SettingsPage.php:989
+msgid "Manage subscription"
+msgstr "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਪ੍ਰਬੰਧਿਤ ਕਰੋ"
+
+#: inc/SettingsPage.php:997
+msgid "Current plan"
+msgstr "ਮੌਜੂਦਾ ਪਲਾਨ"
+
+#: inc/SettingsPage.php:1019
+msgid "Plan changes update immediately across every site on this account."
+msgstr "ਪਲਾਨ ਵਿੱਚ ਤਬਦੀਲੀਆਂ ਇਸ ਖਾਤੇ ਦੀ ਹਰ ਸਾਈਟ ‘ਤੇ ਤੁਰੰਤ ਅੱਪਡੇਟ ਹੋ ਜਾਂਦੀਆਂ ਹਨ।"
+
+#: inc/SettingsPage.php:1033
+msgid "Pageview usage"
+msgstr "ਪੇਜਵਿਊ ਵਰਤੋਂ"
+
+#: inc/SettingsPage.php:1035
+msgid "Resets at the start of each billing cycle."
+msgstr "ਹਰ ਬਿਲਿੰਗ ਚੱਕਰ ਦੀ ਸ਼ੁਰੂਆਤ ‘ਤੇ ਰੀਸੈੱਟ ਹੁੰਦਾ ਹੈ।"
+
+#: inc/SettingsPage.php:1055
+msgid "Pageviews used this cycle"
+msgstr "ਇਸ ਚੱਕਰ ਵਿੱਚ ਵਰਤੇ ਗਏ ਪੇਜਵਿਊਜ਼"
+
+#. translators: 1: used pageviews, 2: limit
+#: inc/SettingsPage.php:1063
+#, php-format
+msgid "%1$s of %2$s pageviews this cycle."
+msgstr "ਇਸ ਚੱਕਰ ਵਿੱਚ %2$s ਵਿੱਚੋਂ %1$s ਪੇਜਵਿਊਜ਼।"
+
+#: inc/SettingsPage.php:1073
+msgid "You are close to your monthly limit. Add a pageview pack to keep premium features active."
+msgstr "ਤੁਸੀਂ ਆਪਣੀ ਮਹੀਨਾਵਾਰ ਸੀਮਾ ਦੇ ਨੇੜੇ ਹੋ। ਪ੍ਰੀਮੀਅਮ ਫੀਚਰ ਸਰਗਰਮ ਰੱਖਣ ਲਈ ਇੱਕ ਪੇਜਵਿਊ ਪੈਕ ਸ਼ਾਮਲ ਕਰੋ।"
+
+#: inc/SettingsPage.php:1075
+msgid "Heads up — you are above 75% of your monthly pageviews."
+msgstr "ਧਿਆਨ ਦਿਓ — ਤੁਸੀਂ ਆਪਣੇ ਮਹੀਨਾਵਾਰ ਪੇਜਵਿਊਜ਼ ਦੇ 75% of ਤੋਂ ਉੱਪਰ ਹੋ।"
+
+#: inc/SettingsPage.php:1082
+msgid "Pageview tracking is active. Detailed numbers appear after the first billing cycle."
+msgstr "ਪੇਜਵਿਊ ਟ੍ਰੈਕਿੰਗ ਸਰਗਰਮ ਹੈ। ਪਹਿਲੇ ਬਿਲਿੰਗ ਚੱਕਰ ਤੋਂ ਬਾਅਦ ਵਿਸਥਾਰਿਤ ਅੰਕ ਦਿਖਾਈ ਦੇਣਗੇ।"
+
+#: inc/SettingsPage.php:1099
+msgid "Widget appearance"
+msgstr "ਵਿਜੈਟ ਦੀ ਦਿੱਖ"
+
+#: inc/SettingsPage.php:1101
+msgid "Color, position, icon, and label live in the Widget Customizer."
+msgstr "ਰੰਗ, ਸਥਿਤੀ, ਆਇਕਨ ਅਤੇ ਲੇਬਲ Widget Customizer ਵਿੱਚ ਹਨ।"
+
+#: inc/SettingsPage.php:1106
+msgid "Open customizer"
+msgstr "ਕਸਟਮਾਈਜ਼ਰ ਖੋਲ੍ਹੋ"
+
+#: inc/SettingsPage.php:1119
+msgid "Preview your live widget on the front-end to confirm placement and styling."
+msgstr "ਪਲੇਸਮੈਂਟ ਅਤੇ ਸਟਾਈਲਿੰਗ ਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ ਫਰੰਟ-ਐਂਡ ‘ਤੇ ਆਪਣੇ ਲਾਈਵ ਵਿਜੈਟ ਦਾ ਪ੍ਰੀਵਿਊ ਕਰੋ।"
+
+#: inc/SettingsPage.php:1125
+msgid "Preview on site"
+msgstr "ਸਾਈਟ ‘ਤੇ ਪ੍ਰੀਵਿਊ ਕਰੋ"
+
+#: inc/SettingsPage.php:1130
+msgid "Advanced settings"
+msgstr "ਤਕਨੀਕੀ ਸੈਟਿੰਗਾਂ"
+
+#: inc/SettingsPage.php:1141
+msgid "Quick toggles"
+msgstr "ਤੁਰੰਤ ਟੌਗਲ"
+
+#: inc/SettingsPage.php:1143
+msgid "Local overrides applied before the widget renders."
+msgstr "ਵਿਜੈਟ ਰੈਂਡਰ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਲੋਕਲ ਓਵਰਰਾਈਡ ਲਾਗੂ ਹੁੰਦੇ ਹਨ।"
+
+#: inc/SettingsPage.php:1153
+msgid "Headless mode"
+msgstr "ਹੈੱਡਲੈੱਸ ਮੋਡ"
+
+#: inc/SettingsPage.php:1159
+msgid ""
+"Skip the floating button and trigger the panel from your own UI. Recommended for custom theme "
+"integrations."
+msgstr "ਫਲੋਟਿੰਗ ਬਟਨ ਨੂੰ ਛੱਡੋ ਅਤੇ ਆਪਣੇ UI ਤੋਂ ਪੈਨਲ ਟ੍ਰਿਗਰ ਕਰੋ। ਕਸਟਮ ਥੀਮ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਲਈ ਸਿਫਾਰਸ਼ੀ।"
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1175
+#, php-format
+msgid "Available on Enterprise. <a href=\"%s\" target=\"_blank\" rel=\"noopener\">See plans</a>."
+msgstr "Enterprise ‘ਤੇ ਉਪਲਬਧ। <a href=\"%s\" target=\"_blank\" rel=\"noopener\">ਪਲਾਨ ਵੇਖੋ</a>।"
+
+#: inc/SettingsPage.php:1186 inc/SettingsPage.php:1998
+msgid "Hide widget branding"
+msgstr "ਵਿਜੈਟ ਬ੍ਰਾਂਡਿੰਗ ਲੁਕਾਓ"
+
+#: inc/SettingsPage.php:1188
+msgid "Remove the \"Powered by\" footer link inside the widget panel."
+msgstr "ਵਿਜੈਟ ਪੈਨਲ ਦੇ ਅੰਦਰ \"Powered by\" ਫੁੱਟਰ ਲਿੰਕ ਹਟਾਓ।"
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1204
+#, php-format
+msgid "Included with paid plans. <a href=\"%s\" target=\"_blank\" rel=\"noopener\">See plans</a>."
+msgstr "ਭੁਗਤਾਨ ਵਾਲੀਆਂ ਯੋਜਨਾਵਾਂ ਨਾਲ ਸ਼ਾਮਲ। <a href=\"%s\" target=\"_blank\" rel=\"noopener\">ਯੋਜਨਾਵਾਂ ਵੇਖੋ</a>।"
+
+#: inc/SettingsPage.php:1217 inc/SettingsPage.php:1220
+msgid "Save changes"
+msgstr "ਤਬਦੀਲੀਆਂ ਸੰਭਾਲੋ"
+
+#: inc/SettingsPage.php:1219
+msgid "Saved"
+msgstr "ਸੇਵ ਹੋ ਗਿਆ"
+
+#: inc/SettingsPage.php:1237
+msgid "Diagnostics"
+msgstr "ਡਾਇਗਨੋਸਟਿਕਸ"
+
+#: inc/SettingsPage.php:1239
+msgid "Local identifiers and tools for troubleshooting."
+msgstr "ਟ੍ਰਬਲਸ਼ੂਟਿੰਗ ਲਈ ਲੋਕਲ ਪਛਾਣਕਰਤਾ ਅਤੇ ਟੂਲ।"
+
+#: inc/SettingsPage.php:1246
+msgid "Plugin version"
+msgstr "ਪਲੱਗਇਨ ਵਰਜਨ"
+
+#: inc/SettingsPage.php:1255
+msgid "Debug logging"
+msgstr "ਡੀਬੱਗ ਲੌਗਿੰਗ"
+
+#: inc/SettingsPage.php:1257
+msgid "Write extra diagnostics to the WordPress debug log."
+msgstr "WordPress ਡੀਬੱਗ ਲੌਗ ਵਿੱਚ ਵਾਧੂ ਡਾਇਗਨੋਸਟਿਕਸ ਲਿਖੋ।"
+
+#: inc/SettingsPage.php:1280
+msgid "Disable error reporting to AllAccessible"
+msgstr "AllAccessible ਨੂੰ ਗਲਤੀ ਰਿਪੋਰਟਿੰਗ ਅਯੋਗ ਕਰੋ"
+
+#: inc/SettingsPage.php:1282
+msgid ""
+"AllAccessible records plugin errors (with your account ID + plugin version) so the team can spot "
+"issues affecting your install. Toggle on to stop sending. No personal data is collected."
+msgstr ""
+"AllAccessible ਪਲੱਗਇਨ ਦੀਆਂ ਗਲਤੀਆਂ (ਤੁਹਾਡੇ ਖਾਤਾ ID + ਪਲੱਗਇਨ ਵਰਜਨ ਸਮੇਤ) ਰਿਕਾਰਡ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਟੀਮ ਤੁਹਾਡੇ ਇੰਸਟਾਲ ਨੂੰ "
+"ਪ੍ਰਭਾਵਿਤ ਕਰਨ ਵਾਲੀਆਂ ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਪਛਾਣ ਸਕੇ। ਭੇਜਣਾ ਰੋਕਣ ਲਈ ਟੌਗਲ ਆਨ ਕਰੋ। ਕੋਈ ਨਿੱਜੀ ਡਾਟਾ ਇਕੱਠਾ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ।"
+
+#: inc/SettingsPage.php:1298
+msgid "Developer tools"
+msgstr "ਡਿਵੈਲਪਰ ਟੂਲ"
+
+#: inc/SettingsPage.php:1299
+msgid "Diagnose lookup · Sync · Flush caches"
+msgstr "ਲੁੱਕਅੱਪ ਦੀ ਜਾਂਚ ਕਰੋ · ਸਿੰਕ · ਕੈਸ਼ ਫਲਸ਼ ਕਰੋ"
+
+#: inc/SettingsPage.php:1304
+msgid "Diagnose page lookup"
+msgstr "ਪੇਜ ਲੁੱਕਅੱਪ ਦੀ ਜਾਂਚ ਕਰੋ"
+
+#: inc/SettingsPage.php:1306
+msgid ""
+"Pick a published page or post to inspect the exact URL canonicalization and API response. Useful "
+"when a row shows \"Not scanned\" but you expect a score."
+msgstr ""
+"ਸਹੀ URL ਕੈਨੋਨਿਕਲਾਈਜ਼ੇਸ਼ਨ ਅਤੇ API ਜਵਾਬ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ ਕੋਈ ਪ੍ਰਕਾਸ਼ਿਤ ਪੇਜ ਜਾਂ ਪੋਸਟ ਚੁਣੋ। ਜਦੋਂ ਕਿਸੇ ਕਤਾਰ ਵਿੱਚ \"ਸਕੈਨ ਨਹੀਂ "
+"ਕੀਤਾ\" ਦਿਖਾਈ ਦੇਵੇ ਪਰ ਤੁਸੀਂ ਸਕੋਰ ਦੀ ਉਮੀਦ ਕਰਦੇ ਹੋ, ਤਾਂ ਇਹ ਲਾਭਦਾਇਕ ਹੈ।"
+
+#: inc/SettingsPage.php:1312
+msgid "Post / page ID"
+msgstr "ਪੋਸਟ / ਪੇਜ ID"
+
+#: inc/SettingsPage.php:1320 inc/SettingsPage.php:1322
+msgid "Run diagnosis"
+msgstr "ਜਾਂਚ ਚਲਾਓ"
+
+#: inc/SettingsPage.php:1321
+msgid "Looking up…"
+msgstr "ਲੱਭਿਆ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/SettingsPage.php:1331
+msgid "Sync post audit links"
+msgstr "ਪੋਸਟ ਆਡਿਟ ਲਿੰਕ ਸਿੰਕ ਕਰੋ"
+
+#: inc/SettingsPage.php:1333
+msgid ""
+"Manually run the post → audit linker. The background job runs about once a week (paid plans only, "
+"and only when your site receives traffic). Trigger here if the All Posts column or Editor box shows "
+"missing scores and you don't want to wait."
+msgstr ""
+"ਪੋਸਟ → ਆਡਿਟ ਲਿੰਕਰ ਨੂੰ ਹੱਥੋਂ ਚਲਾਓ। ਬੈਕਗ੍ਰਾਊਂਡ ਜੌਬ ਲਗਭਗ ਹਫ਼ਤੇ ਵਿੱਚ ਇੱਕ ਵਾਰ ਚਲਦੀ ਹੈ (ਸਿਰਫ਼ ਭੁਗਤਾਨੀ ਯੋਜਨਾਵਾਂ ਲਈ, ਅਤੇ ਸਿਰਫ਼ ਜਦੋਂ "
+"ਤੁਹਾਡੀ ਸਾਈਟ ਨੂੰ ਟ੍ਰੈਫਿਕ ਮਿਲਦਾ ਹੈ)। ਜੇ All Posts ਕਾਲਮ ਜਾਂ Editor ਬਾਕਸ ਵਿੱਚ ਸਕੋਰ ਗੁੰਮ ਦਿਖ ਰਹੇ ਹਨ ਅਤੇ ਤੁਸੀਂ ਉਡੀਕ ਨਹੀਂ "
+"ਕਰਨਾ ਚਾਹੁੰਦੇ, ਤਾਂ ਇੱਥੇ ਟ੍ਰਿਗਰ ਕਰੋ।"
+
+#: inc/SettingsPage.php:1341 inc/SettingsPage.php:1343
+msgid "Sync now"
+msgstr "ਹੁਣੇ ਸਿੰਕ ਕਰੋ"
+
+#: inc/SettingsPage.php:1342
+msgid "Syncing…"
+msgstr "ਸਿੰਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/SettingsPage.php:1350
+msgid "Flush plugin caches"
+msgstr "ਪਲੱਗਇਨ ਕੈਸ਼ ਫਲਸ਼ ਕਰੋ"
+
+#: inc/SettingsPage.php:1352
+msgid ""
+"Wipes every plugin-side API transient (page scores, manifest, validate, images). Use when the API "
+"has been updated and the 2–10 min cache is still showing old data."
+msgstr ""
+"ਹਰ ਪਲੱਗਇਨ-ਸਾਈਡ API ਟ੍ਰਾਂਜ਼ੀਅੰਟ (ਪੇਜ ਸਕੋਰ, ਮੈਨੀਫੈਸਟ, ਵੈਲੀਡੇਟ, ਚਿੱਤਰ) ਨੂੰ ਮਿਟਾ ਦਿੰਦਾ ਹੈ। ਜਦੋਂ API ਅੱਪਡੇਟ ਹੋ ਚੁੱਕੀ ਹੋਵੇ ਅਤੇ 2–10 "
+"ਮਿੰਟ ਦਾ ਕੈਸ਼ ਹਾਲੇ ਵੀ ਪੁਰਾਣਾ ਡਾਟਾ ਦਿਖਾ ਰਿਹਾ ਹੋਵੇ, ਤਦ ਵਰਤੋ।"
+
+#: inc/SettingsPage.php:1360 inc/SettingsPage.php:1362
+msgid "Flush caches"
+msgstr "ਕੈਸ਼ ਫਲਸ਼ ਕਰੋ"
+
+#: inc/SettingsPage.php:1361
+msgid "Flushing…"
+msgstr "ਫਲਸ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/SettingsPage.php:1372 inc/SettingsPage.php:1380 inc/SettingsPage.php:1383
+msgid "Clear widget caches"
+msgstr "ਵਿਜੈਟ ਕੈਸ਼ ਸਾਫ਼ ਕਰੋ"
+
+#: inc/SettingsPage.php:1374
+msgid ""
+"Flush local browser storage and server response cache so the widget reloads fresh on the next page "
+"view."
+msgstr "ਲੋਕਲ ਬ੍ਰਾਊਜ਼ਰ ਸਟੋਰੇਜ ਅਤੇ ਸਰਵਰ ਰਿਸਪਾਂਸ ਕੈਸ਼ ਨੂੰ ਫਲਸ਼ ਕਰੋ ਤਾਂ ਜੋ ਅਗਲੀ ਪੇਜ ਵਿਊ 'ਤੇ ਵਿਜੈਟ ਤਾਜ਼ਾ ਲੋਡ ਹੋਵੇ।"
+
+#: inc/SettingsPage.php:1381
+msgid "Clearing…"
+msgstr "ਸਾਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/SettingsPage.php:1382
+msgid "Caches cleared"
+msgstr "ਕੈਸ਼ ਸਾਫ਼ ਹੋ ਗਏ"
+
+#: inc/SettingsPage.php:1393 inc/SettingsPage.php:1409
+msgid "Reset plugin data"
+msgstr "ਪਲੱਗਇਨ ਡਾਟਾ ਰੀਸੈੱਟ ਕਰੋ"
+
+#: inc/SettingsPage.php:1395
+msgid "Disconnect this site and clear local options. Cannot be undone."
+msgstr "ਇਸ ਸਾਈਟ ਨੂੰ ਡਿਸਕਨੈਕਟ ਕਰੋ ਅਤੇ ਲੋਕਲ ਵਿਕਲਪ ਸਾਫ਼ ਕਰੋ। ਇਹ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"
+
+#: inc/SettingsPage.php:1401
+msgid ""
+"Use this if you are moving the plugin to a different account or starting over from the setup wizard. "
+"Uninstalling the plugin also removes these options automatically."
+msgstr ""
+"ਜੇ ਤੁਸੀਂ ਪਲੱਗਇਨ ਨੂੰ ਕਿਸੇ ਹੋਰ ਖਾਤੇ ਵਿੱਚ ਲਿਜਾ ਰਹੇ ਹੋ ਜਾਂ ਸੈਟਅੱਪ ਵਿਜ਼ਾਰਡ ਤੋਂ ਮੁੜ ਸ਼ੁਰੂ ਕਰ ਰਹੇ ਹੋ ਤਾਂ ਇਹ ਵਰਤੋ। ਪਲੱਗਇਨ ਅਨਇੰਸਟਾਲ ਕਰਨ "
+"ਨਾਲ ਇਹ ਵਿਕਲਪ ਵੀ ਆਪਣੇ ਆਪ ਹਟ ਜਾਂਦੇ ਹਨ।"
+
+#: inc/SettingsPage.php:1421
+msgid "Need help?"
+msgstr "ਮਦਦ ਚਾਹੀਦੀ ਹੈ?"
+
+#: inc/SettingsPage.php:1423
+msgid "Our team is here for you — get answers fast."
+msgstr "ਸਾਡੀ ਟੀਮ ਤੁਹਾਡੇ ਲਈ ਇੱਥੇ ਹੈ — ਤੇਜ਼ੀ ਨਾਲ ਜਵਾਬ ਪ੍ਰਾਪਤ ਕਰੋ।"
+
+#: inc/SettingsPage.php:1432
+msgid "Knowledge base"
+msgstr "ਗਿਆਨ ਅਧਾਰ"
+
+#: inc/SettingsPage.php:1444
+msgid "Legal & Trust:"
+msgstr "ਕਾਨੂੰਨੀ ਅਤੇ ਭਰੋਸਾ:"
+
+#: inc/SettingsPage.php:1447
+msgid "GDPR"
+msgstr "GDPR"
+
+#: inc/SettingsPage.php:1448
+msgid "Cookies"
+msgstr "ਕੁਕੀਜ਼"
+
+#: inc/SettingsPage.php:1449
+msgid "Trust Center"
+msgstr "ਟਰਸਟ ਸੈਂਟਰ"
+
+#: inc/SettingsPage.php:1450
+msgid "Partner Agreement"
+msgstr "ਭਾਗੀਦਾਰ ਸਮਝੌਤਾ"
+
+#: inc/SettingsPage.php:1721 inc/SettingsPage.php:1724
+msgid "Copied"
+msgstr "ਕਾਪੀ ਕੀਤਾ ਗਿਆ"
+
+#: inc/SettingsPage.php:1725
+msgid "copied to clipboard"
+msgstr "ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਹੋ ਗਿਆ"
+
+#: inc/SettingsPage.php:1730 inc/SettingsPage.php:1733
+msgid "Copy:"
+msgstr "ਕਾਪੀ ਕਰੋ:"
+
+#: inc/SettingsPage.php:1784
+msgid "Could not save. Try again."
+msgstr "ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/SettingsPage.php:1791 inc/SettingsPage.php:1877
+msgid "Network error. Try again."
+msgstr "ਨੈੱਟਵਰਕ ਗਲਤੀ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/SettingsPage.php:1847
+msgid "Reset all plugin data? This disconnects this site and cannot be undone."
+msgstr "ਸਾਰਾ ਪਲੱਗਇਨ ਡਾਟਾ ਰੀਸੈੱਟ ਕਰਨਾ ਹੈ? ਇਸ ਨਾਲ ਇਹ ਸਾਈਟ ਡਿਸਕਨੈਕਟ ਹੋ ਜਾਵੇਗੀ ਅਤੇ ਇਹ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"
+
+#: inc/SettingsPage.php:1852
+msgid "Resetting…"
+msgstr "ਰੀਸੈੱਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/SettingsPage.php:1853
+msgid "Resetting plugin data"
+msgstr "ਪਲੱਗਇਨ ਡਾਟਾ ਰੀਸੈੱਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: inc/SettingsPage.php:1863
+msgid "Plugin data cleared. Reloading…"
+msgstr "ਪਲੱਗਇਨ ਡਾਟਾ ਸਾਫ਼ ਕਰ ਦਿੱਤਾ ਗਿਆ। ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#: inc/SettingsPage.php:1864
+msgid "Plugin data reset. Reloading."
+msgstr "ਪਲੱਗਇਨ ਡਾਟਾ ਰੀਸੈੱਟ ਹੋ ਗਿਆ। ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।"
+
+#: inc/SettingsPage.php:1871
+msgid "Could not reset plugin data. Try again."
+msgstr "ਪਲੱਗਇਨ ਡਾਟਾ ਰੀਸੈੱਟ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/SettingsPage.php:1908
+msgid "Settings saved"
+msgstr "ਸੈਟਿੰਗਾਂ ਸੇਵ ਹੋ ਗਈਆਂ"
+
+#: inc/SettingsPage.php:1922
+msgid "Premium Trial — 7 days free"
+msgstr "ਪ੍ਰੀਮੀਅਮ ਟ੍ਰਾਇਲ — 7 ਦਿਨ ਮੁਫ਼ਤ"
+
+#: inc/SettingsPage.php:1940
+msgid "Legacy Premium"
+msgstr "ਲੇਗੇਸੀ ਪ੍ਰੀਮੀਅਮ"
+
+#. translators: %s: tier name (e.g., "Enterprise")
+#: inc/SettingsPage.php:1954
+#, php-format
+msgid "%s account"
+msgstr "%s ਖਾਤਾ"
+
+#. translators: %s: monthly pageview limit (e.g. "10,000")
+#: inc/SettingsPage.php:1974
+#, php-format
+msgid "Up to %s pageviews per month"
+msgstr "ਮਹੀਨੇ ਵਿੱਚ %s ਤੱਕ ਪੇਜਵਿਊਜ਼"
+
+#: inc/SettingsPage.php:1977
+msgid "Pageview cap based on your plan"
+msgstr "ਤੁਹਾਡੇ ਪਲਾਨ ਦੇ ਅਧਾਰ 'ਤੇ ਪੇਜਵਿਊ ਸੀਮਾ"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1980
+#, php-format
+msgid "Unlimited %s interactions — alt text and agentic fix proposals, no monthly cap"
+msgstr "ਅਸੀਮਿਤ %s ਇੰਟਰੈਕਸ਼ਨ — alt ਟੈਕਸਟ ਅਤੇ ਏਜੈਂਟਿਕ ਫਿਕਸ ਪ੍ਰਸਤਾਵ, ਕੋਈ ਮਹੀਨਾਵਾਰ ਸੀਮਾ ਨਹੀਂ"
+
+#: inc/SettingsPage.php:1987
+msgid "Unlimited pageviews and sites"
+msgstr "ਅਸੀਮਿਤ ਪੇਜਵਿਊਜ਼ ਅਤੇ ਸਾਈਟਾਂ"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1988
+#, php-format
+msgid "Human-in-the-loop agentic remediation powered by %s"
+msgstr "%s ਦੁਆਰਾ ਸੰਚਾਲਿਤ ਹਿਊਮਨ-ਇਨ-ਦ-ਲੂਪ ਏਜੈਂਟਿਕ ਰੀਮੀਡੀਏਸ਼ਨ"
+
+#: inc/SettingsPage.php:1989
+msgid "Priority support and dedicated success manager"
+msgstr "ਤਰਜੀਹੀ ਸਹਾਇਤਾ ਅਤੇ ਸਮਰਪਿਤ ਸਫਲਤਾ ਮੈਨੇਜਰ"
+
+#: inc/SettingsPage.php:1990
+msgid "Custom branding and white-label widget"
+msgstr "ਕਸਟਮ ਬ੍ਰਾਂਡਿੰਗ ਅਤੇ ਵ੍ਹਾਈਟ-ਲੇਬਲ ਵਿਜੈਟ"
+
+#: inc/SettingsPage.php:1991
+msgid "Single sign-on (SSO) and audit log export"
+msgstr "ਸਿੰਗਲ ਸਾਈਨ-ਆਨ (SSO) ਅਤੇ ਆਡਿਟ ਲੌਗ ਐਕਸਪੋਰਟ"
+
+#: inc/SettingsPage.php:1997
+msgid "Continuous site scans and accessibility scoring"
+msgstr "ਲਗਾਤਾਰ ਸਾਈਟ ਸਕੈਨ ਅਤੇ ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰਿੰਗ"
+
+#: inc/SettingsPage.php:1999
+msgid "Email support"
+msgstr "ਈਮੇਲ ਸਹਾਇਤਾ"
+
+#: inc/SettingsPage.php:2003
+msgid "Full premium widget for 7 days"
+msgstr "7 ਦਿਨਾਂ ਲਈ ਪੂਰਾ ਪ੍ਰੀਮੀਅਮ ਵਿਜੈਟ"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2004
+#, php-format
+msgid "Try %s agents on your real site"
+msgstr "ਆਪਣੀ ਅਸਲੀ ਸਾਈਟ 'ਤੇ %s ਏਜੈਂਟ ਅਜ਼ਮਾਓ"
+
+#: inc/SettingsPage.php:2005
+msgid "Cancel any time — no card hold"
+msgstr "ਕਦੇ ਵੀ ਰੱਦ ਕਰੋ — ਕਾਰਡ ਦੀ ਲੋੜ ਨਹੀਂ"
+
+#: inc/SettingsPage.php:2009
+msgid "Premium widget on the legacy plan"
+msgstr "ਲੇਗੇਸੀ ਪਲਾਨ 'ਤੇ ਪ੍ਰੀਮੀਅਮ ਵਿਜੈਟ"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2010
+#, php-format
+msgid "Includes %s agent features"
+msgstr "%s ਏਜੈਂਟ ਫੀਚਰ ਸ਼ਾਮਲ ਹਨ"
+
+#: inc/SettingsPage.php:2011
+msgid "Continuous accessibility scoring"
+msgstr "ਲਗਾਤਾਰ ਐਕਸੈਸਿਬਿਲਟੀ ਸਕੋਰਿੰਗ"
+
+#: inc/SettingsPage.php:2016
+msgid "Accessibility widget on every page"
+msgstr "ਹਰ ਪੇਜ 'ਤੇ ਐਕਸੈਸਿਬਿਲਟੀ ਵਿਜੈਟ"
+
+#: inc/SettingsPage.php:2017
+msgid "Keyboard navigation and screen reader helpers"
+msgstr "ਕੀਬੋਰਡ ਨੇਵੀਗੇਸ਼ਨ ਅਤੇ ਸਕ੍ਰੀਨ ਰੀਡਰ ਹੈਲਪਰ"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2018
+#, php-format
+msgid "Upgrade for agentic remediation with %s"
+msgstr "%s ਨਾਲ ਏਜੈਂਟਿਕ ਰੀਮੀਡੀਏਸ਼ਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/TierGate.php:26
+msgid "Approve, edit, and revert agentic fixes"
+msgstr "ਏਜੈਂਟਿਕ ਫਿਕਸਾਂ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰੋ, ਸੋਧੋ ਅਤੇ ਵਾਪਸ ਕਰੋ"
+
+#: inc/TierGate.php:27
+msgid "Image Descriptions"
+msgstr "ਚਿੱਤਰ ਵਰਣਨ"
+
+#: inc/TierGate.php:28
+msgid "Reports & Statement deep-links"
+msgstr "ਰਿਪੋਰਟਾਂ ਅਤੇ ਸਟੇਟਮੈਂਟ ਡੀਪ-ਲਿੰਕ"
+
+#: inc/TierGate.php:29
+msgid "Per-page accessibility breakdown in editor"
+msgstr "ਐਡੀਟਰ ਵਿੱਚ ਪ੍ਰਤੀ-ਪੰਨਾ ਐਕਸੈਸਿਬਿਲਟੀ ਵਿਸਥਾਰ"
+
+#: inc/TierGate.php:30
+msgid "Notification center"
+msgstr "ਸੂਚਨਾ ਕੇਂਦਰ"
+
+#: inc/TierGate.php:31
+msgid "CSV export of fixes"
+msgstr "ਫਿਕਸਾਂ ਦਾ CSV ਐਕਸਪੋਰਟ"
+
+#: inc/TierGate.php:32
+msgid "PDF report export"
+msgstr "PDF ਰਿਪੋਰਟ ਐਕਸਪੋਰਟ"
+
+#: inc/TierGate.php:33
+msgid "White-label branding"
+msgstr "ਵ੍ਹਾਈਟ-ਲੇਬਲ ਬ੍ਰਾਂਡਿੰਗ"
+
+#: inc/TierGate.php:34
+msgid "Weekly automatic scans"
+msgstr "ਹਫ਼ਤਾਵਾਰ ਆਟੋਮੈਟਿਕ ਸਕੈਨ"
+
+#: inc/TierGate.php:35
+msgid "Page change detection"
+msgstr "ਪੰਨਾ ਬਦਲਾਅ ਪਛਾਣ"
+
+#: inc/TierGate.php:36
+msgid "Accommodation request widget"
+msgstr "ਅਕਾਮੋਡੇਸ਼ਨ ਬੇਨਤੀ ਵਿਜੈਟ"
+
+#. translators: %s: feature label
+#: inc/TierGate.php:84
+#, php-format
+msgid "%s is available on paid plans"
+msgstr "%s ਭੁਗਤਾਨ ਵਾਲੇ ਪਲਾਨਾਂ ‘ਤੇ ਉਪਲਬਧ ਹੈ"
+
+#: inc/TierGate.php:87
+msgid "Upgrade to unlock this feature plus everything else included in the AllAccessible AI suite."
+msgstr "ਇਸ ਫੀਚਰ ਨੂੰ ਅਨਲੌਕ ਕਰਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ, ਨਾਲ ਹੀ AllAccessible AI ਸੂਟ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਰ ਸਭ ਕੁਝ ਵੀ।"
+
+#: inc/TierGate.php:98
+msgid "Upgrade required"
+msgstr "ਅੱਪਗ੍ਰੇਡ ਲਾਜ਼ਮੀ ਹੈ"
+
+#: inc/UsageDashboard.php:31
+msgid "Usage overview"
+msgstr "ਵਰਤੋਂ ਦਾ ਸਰਵੇਖਣ"
+
+#: inc/UsageDashboard.php:34
+msgid "Usage this month"
+msgstr "ਇਸ ਮਹੀਨੇ ਦੀ ਵਰਤੋਂ"
+
+#: inc/UsageDashboard.php:36
+msgid "Tracks pageviews and AllAccessible AI activity against your plan."
+msgstr "ਤੁਹਾਡੇ ਪਲਾਨ ਦੇ ਮੁਕਾਬਲੇ ਪੇਜਵਿਊਜ਼ ਅਤੇ AllAccessible AI ਗਤੀਵਿਧੀ ਨੂੰ ਟ੍ਰੈਕ ਕਰਦਾ ਹੈ।"
+
+#: inc/UsageDashboard.php:55
+msgid "No usage to show yet"
+msgstr "ਹਾਲੇ ਦਿਖਾਉਣ ਲਈ ਕੋਈ ਵਰਤੋਂ ਨਹੀਂ"
+
+#: inc/UsageDashboard.php:57
+msgid "Usage appears here once your widget starts serving pageviews."
+msgstr "ਜਦੋਂ ਤੁਹਾਡਾ ਵਿਜੈਟ ਪੇਜਵਿਊਜ਼ ਸਰਵ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੇਗਾ, ਤਾਂ ਵਰਤੋਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਵੇਗੀ।"
+
+#: inc/UsageDashboard.php:61
+msgid "Preview your widget"
+msgstr "ਆਪਣਾ ਵਿਜੈਟ ਪ੍ਰੀਵਿਊ ਕਰੋ"
+
+#: inc/UsageDashboard.php:70
+msgid "Active visits served by your widget this month."
+msgstr "ਇਸ ਮਹੀਨੇ ਤੁਹਾਡੇ ਵਿਜੈਟ ਵੱਲੋਂ ਸਰਵ ਕੀਤੀਆਂ ਸਰਗਰਮ ਵਿਜ਼ਿਟਾਂ।"
+
+#: inc/UsageDashboard.php:74
+msgid "AI image alt text"
+msgstr "AI ਚਿੱਤਰ alt ਟੈਕਸਟ"
+
+#: inc/UsageDashboard.php:75
+msgid "Alt text generated by AllAccessible AI for images on your site."
+msgstr "ਤੁਹਾਡੀ ਸਾਈਟ ਉੱਤੇ ਚਿੱਤਰਾਂ ਲਈ AllAccessible AI ਵੱਲੋਂ ਤਿਆਰ ਕੀਤਾ ਗਿਆ Alt ਟੈਕਸਟ।"
+
+#: inc/UsageDashboard.php:79
+msgid "Accessibility audits"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਆਡਿਟ"
+
+#: inc/UsageDashboard.php:80
+msgid "Automated scans run by AllAccessible agents."
+msgstr "AllAccessible ਏਜੰਟਾਂ ਵੱਲੋਂ ਚਲਾਏ ਗਏ ਆਟੋਮੇਟਡ ਸਕੈਨ।"
+
+#: inc/UsageDashboard.php:84
+msgid "Compliance reports"
+msgstr "ਪਾਲਣਾ ਰਿਪੋਰਟਾਂ"
+
+#: inc/UsageDashboard.php:85
+msgid "VPAT and accessibility statement PDFs generated."
+msgstr "VPAT ਅਤੇ ਪਹੁੰਚਯੋਗਤਾ ਬਿਆਨ ਵਾਲੀਆਂ PDF ਫਾਈਲਾਂ ਤਿਆਰ ਹੋ ਗਈਆਂ ਹਨ।"
+
+#: inc/UsageDashboard.php:133
+#, php-format
+msgid "%1$s usage: %2$d percent"
+msgstr "%1$s ਵਰਤੋਂ: %2$d ਪ੍ਰਤੀਸ਼ਤ"
+
+#: inc/UsageDashboard.php:150
+msgid "Upgrade to unlock"
+msgstr "ਅਨਲੌਕ ਕਰਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/UsageDashboard.php:175
+#, php-format
+msgid "%s percent used"
+msgstr "%s ਪ੍ਰਤੀਸ਼ਤ ਵਰਤਿਆ ਗਿਆ"
+
+#: inc/UsageDashboard.php:183
+msgid "Limit reached — widget temporarily on free features."
+msgstr "ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ — ਵਿਜੈਟ ਅਸਥਾਈ ਤੌਰ 'ਤੇ ਮੁਫ਼ਤ ਫੀਚਰਾਂ 'ਤੇ ਹੈ।"
+
+#. translators: %s: count of remaining units this month
+#: inc/UsageDashboard.php:188
+#, php-format
+msgid "%s remaining this month"
+msgstr "ਇਸ ਮਹੀਨੇ %s ਬਾਕੀ"
+
+#: inc/UsageDashboard.php:195
+msgid "Manage"
+msgstr "ਪ੍ਰਬੰਧਿਤ ਕਰੋ"
+
+#: inc/UsageDashboard.php:203
+msgid "Upgrade your plan"
+msgstr "ਆਪਣਾ ਪਲਾਨ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#: inc/UsageDashboard.php:209
+msgid "Manage in dashboard"
+msgstr "ਡੈਸ਼ਬੋਰਡ ਵਿੱਚ ਪ੍ਰਬੰਧਿਤ ਕਰੋ"
+
+#: inc/UsageDashboard.php:220
+msgid "No metered features on your plan yet"
+msgstr "ਤੁਹਾਡੇ ਪਲਾਨ ਵਿੱਚ ਹਾਲੇ ਕੋਈ ਮੀਟਰ ਕੀਤੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨਹੀਂ ਹਨ"
+
+#: inc/UsageDashboard.php:221
+msgid "Usage will appear here once your widget starts serving pages."
+msgstr "ਜਦੋਂ ਤੁਹਾਡਾ ਵਿਜੈਟ ਪੇਜ ਸਰਵ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੇਗਾ, ਵਰਤੋਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਵੇਗੀ।"
+
+#: inc/UsageDashboard.php:230
+msgid "Need more pageviews or AllAccessible AI capacity?"
+msgstr "ਹੋਰ ਪੇਜਵਿਊਜ਼ ਜਾਂ AllAccessible AI ਸਮਰੱਥਾ ਚਾਹੀਦੀ ਹੈ?"
+
+#: inc/WidgetCustomizer.php:104
+msgid "Quick Widget Settings"
+msgstr "ਤੁਰੰਤ ਵਿਜੈਟ ਸੈਟਿੰਗਾਂ"
+
+#: inc/WidgetCustomizer.php:105
+msgid "Customize your widget appearance"
+msgstr "ਆਪਣੇ ਵਿਜੈਟ ਦੀ ਦਿੱਖ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ"
+
+#: inc/WidgetCustomizer.php:109
+msgid "Advanced Settings"
+msgstr "ਉੱਨਤ ਸੈਟਿੰਗਾਂ"
+
+#: inc/WidgetCustomizer.php:122
+msgid "Pro Tip:"
+msgstr "ਪ੍ਰੋ ਟਿਪ:"
+
+#: inc/WidgetCustomizer.php:123
+msgid "For more options including accessibility profiles, custom CSS, and advanced features, visit"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਪ੍ਰੋਫ਼ਾਈਲਾਂ, ਕਸਟਮ CSS, ਅਤੇ ਉੱਨਤ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਸਮੇਤ ਹੋਰ ਵਿਕਲਪਾਂ ਲਈ, ਵੇਖੋ"
+
+#: inc/WidgetCustomizer.php:124
+msgid "Advanced Widget Settings"
+msgstr "ਉੱਨਤ ਵਿਜੈਟ ਸੈਟਿੰਗਾਂ"
+
+#: inc/WidgetCustomizer.php:142
+msgid "Widget Color"
+msgstr "ਵਿਜੈਟ ਦਾ ਰੰਗ"
+
+#: inc/WidgetCustomizer.php:147
+msgid "Choose the color for your accessibility widget button."
+msgstr "ਆਪਣੇ ਪਹੁੰਚਯੋਗਤਾ ਵਿਜੈਟ ਬਟਨ ਲਈ ਰੰਗ ਚੁਣੋ।"
+
+#: inc/WidgetCustomizer.php:150
+msgid "Widget Position"
+msgstr "ਵਿਜੈਟ ਦੀ ਸਥਿਤੀ"
+
+#: inc/WidgetCustomizer.php:152
+msgid "Bottom Right"
+msgstr "ਹੇਠਾਂ ਸੱਜੇ"
+
+#: inc/WidgetCustomizer.php:153
+msgid "Bottom Left"
+msgstr "ਹੇਠਾਂ ਖੱਬੇ"
+
+#: inc/WidgetCustomizer.php:154
+msgid "Bottom Center"
+msgstr "ਹੇਠਾਂ ਵਿਚਕਾਰ"
+
+#: inc/WidgetCustomizer.php:155
+msgid "Middle Right"
+msgstr "ਵਿਚਕਾਰ ਸੱਜੇ"
+
+#: inc/WidgetCustomizer.php:156
+msgid "Middle Left"
+msgstr "ਵਿਚਕਾਰ ਖੱਬੇ"
+
+#: inc/WidgetCustomizer.php:157
+msgid "Top Right"
+msgstr "ਉੱਪਰ ਸੱਜੇ"
+
+#: inc/WidgetCustomizer.php:158
+msgid "Top Left"
+msgstr "ਉੱਪਰ ਖੱਬੇ"
+
+#: inc/WidgetCustomizer.php:160
+msgid "Where the widget button appears on your site."
+msgstr "ਤੁਹਾਡੀ ਸਾਈਟ 'ਤੇ ਵਿਜੈਟ ਬਟਨ ਕਿੱਥੇ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ।"
+
+#: inc/WidgetCustomizer.php:167
+msgid "Widget Size"
+msgstr "ਵਿਜੈਟ ਦਾ ਆਕਾਰ"
+
+#: inc/WidgetCustomizer.php:169
+msgid "Small"
+msgstr "ਛੋਟਾ"
+
+#: inc/WidgetCustomizer.php:170
+msgid "Medium (Default)"
+msgstr "ਦਰਮਿਆਨਾ (ਡਿਫਾਲਟ)"
+
+#: inc/WidgetCustomizer.php:171
+msgid "Large"
+msgstr "ਵੱਡਾ"
+
+#: inc/WidgetCustomizer.php:173
+msgid "Size of the widget button in pixels."
+msgstr "ਪਿਕਸਲਾਂ ਵਿੱਚ ਵਿਜੈਟ ਬਟਨ ਦਾ ਆਕਾਰ।"
+
+#: inc/WidgetCustomizer.php:176
+msgid "Widget Icon"
+msgstr "ਵਿਜੈਟ ਆਇਕਨ"
+
+#: inc/WidgetCustomizer.php:179
+msgid "Default"
+msgstr "ਡਿਫਾਲਟ"
+
+#: inc/WidgetCustomizer.php:180
+msgid "Accessibility Person"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਵਿਅਕਤੀ"
+
+#: inc/WidgetCustomizer.php:181
+msgid "Accessibility Settings"
+msgstr "ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ"
+
+# GPT: “Adjust” can mean fine-tune/change settings or physically fit/align; I chose the common UI label meaning “fine-tune/change settings.”
+#: inc/WidgetCustomizer.php:182
+msgid "Adjust"
+msgstr "ਸਮਾਂਜਸ ਕਰੋ"
+
+#: inc/WidgetCustomizer.php:183
+msgid "Wheelchair 1"
+msgstr "ਵ੍ਹੀਲਚੇਅਰ 1"
+
+#: inc/WidgetCustomizer.php:184
+msgid "Heart"
+msgstr "ਦਿਲ"
+
+#: inc/WidgetCustomizer.php:185
+msgid "Braille"
+msgstr "ਬ੍ਰੇਲ"
+
+#: inc/WidgetCustomizer.php:186
+msgid "Blind/Cane"
+msgstr "ਅੰਨ੍ਹਾ/ਛੜੀ"
+
+#: inc/WidgetCustomizer.php:187
+msgid "Eye"
+msgstr "ਅੱਖ"
+
+#: inc/WidgetCustomizer.php:188
+msgid "Globe"
+msgstr "ਗਲੋਬ"
+
+#: inc/WidgetCustomizer.php:189
+msgid "Universal Access"
+msgstr "ਸਾਰਵਭੌਮ ਪਹੁੰਚ"
+
+#: inc/WidgetCustomizer.php:191
+msgid "Walking Cane"
+msgstr "ਚੱਲਣ ਵਾਲੀ ਛੜੀ"
+
+#: inc/WidgetCustomizer.php:195
+msgid "Icon displayed in the widget button."
+msgstr "ਵਿਜੈਟ ਬਟਨ ਵਿੱਚ ਦਿਖਾਇਆ ਜਾਣ ਵਾਲਾ ਆਇਕਨ।"
+
+#: inc/WidgetCustomizer.php:202
+msgid "Widget Shape"
+msgstr "ਵਿਜੈਟ ਦਾ ਆਕਾਰ"
+
+#: inc/WidgetCustomizer.php:204
+msgid "Circle"
+msgstr "ਗੋਲ"
+
+#: inc/WidgetCustomizer.php:205
+msgid "Square"
+msgstr "ਚੌਰਸ"
+
+#: inc/WidgetCustomizer.php:207
+msgid "Shape of the widget button."
+msgstr "ਵਿਜੈਟ ਬਟਨ ਦਾ ਆਕਾਰ।"
+
+#: inc/WidgetCustomizer.php:212
+msgid "Run without the bubble"
+msgstr "ਬੁਲਬੁਲੇ ਤੋਂ ਬਿਨਾਂ ਚਲਾਓ"
+
+#: inc/WidgetCustomizer.php:216
+msgid "Hide widget, keep agentic AI remediation running."
+msgstr "ਵਿਜੈਟ ਲੁਕਾਓ, ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ ਚੱਲਦੀ ਰਹਿਣ ਦਿਓ।"
+
+#: inc/WidgetCustomizer.php:218
+msgid ""
+"Visitors won't see the accessibility toolbar. AllAccessible agents continue scanning and applying "
+"approved fixes in the background."
+msgstr ""
+"ਵਿਜ਼ਟਰਾਂ ਨੂੰ ਐਕਸੈਸਿਬਿਲਿਟੀ ਟੂਲਬਾਰ ਨਹੀਂ ਦਿੱਸੇਗੀ। AllAccessible ਏਜੰਟ ਪਿੱਛੇ ਚੱਲਦੇ ਹੋਏ ਸਕੈਨ ਕਰਦੇ ਰਹਿੰਦੇ ਹਨ ਅਤੇ ਮਨਜ਼ੂਰਸ਼ੁਦਾ ਫਿਕਸ "
+"ਲਾਗੂ ਕਰਦੇ ਰਹਿੰਦੇ ਹਨ।"
+
+#: inc/WidgetCustomizer.php:230
+msgid "Save Settings"
+msgstr "ਸੈਟਿੰਗਾਂ ਸੇਵ ਕਰੋ"
+
+#: inc/WidgetCustomizer.php:234
+msgid "Having trouble viewing updates?"
+msgstr "ਅੱਪਡੇਟ ਵੇਖਣ ਵਿੱਚ ਸਮੱਸਿਆ ਆ ਰਹੀ ਹੈ?"
+
+#: inc/WidgetCustomizer.php:238
+msgid "Clear all caches: browser, cookies, and server (full reset)"
+msgstr "ਸਾਰੇ ਕੈਸ਼ ਸਾਫ਼ ਕਰੋ: ਬ੍ਰਾਊਜ਼ਰ, ਕੁਕੀਜ਼, ਅਤੇ ਸਰਵਰ (ਪੂਰਾ ਰੀਸੈੱਟ)"
+
+#: inc/WidgetCustomizer.php:239
+msgid "Clear All Caches"
+msgstr "ਸਾਰੇ ਕੈਸ਼ ਸਾਫ਼ ਕਰੋ"
+
+#: inc/WidgetCustomizer.php:249
+msgid "Saving..."
+msgstr "ਸੇਵ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#: inc/WidgetCustomizer.php:253
+msgid "Settings saved!"
+msgstr "ਸੈਟਿੰਗਾਂ ਸੇਵ ਹੋ ਗਈਆਂ!"
+
+#: inc/WidgetCustomizer.php:259
+msgid "Cache cleared! Refresh your site to see changes."
+msgstr "ਕੈਸ਼ ਸਾਫ਼ ਹੋ ਗਿਆ! ਤਬਦੀਲੀਆਂ ਵੇਖਣ ਲਈ ਆਪਣੀ ਸਾਈਟ ਰਿਫ੍ਰੈਸ਼ ਕਰੋ।"
+
+#: inc/WidgetCustomizer.php:267
+msgid "Clearing all caches..."
+msgstr "ਸਾਰੇ ਕੈਸ਼ ਸਾਫ਼ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ..."
+
+#: inc/WidgetCustomizer.php:271
+msgid "All caches cleared! Refresh your site to see changes."
+msgstr "ਸਾਰੇ ਕੈਸ਼ ਸਾਫ਼ ਹੋ ਗਏ! ਤਬਦੀਲੀਆਂ ਵੇਖਣ ਲਈ ਆਪਣੀ ਸਾਈਟ ਰਿਫ੍ਰੈਸ਼ ਕਰੋ।"
+
+#: inc/WidgetCustomizer.php:284
+msgid "Live Preview"
+msgstr "ਲਾਈਵ ਪ੍ਰੀਵਿਊ"
+
+#: inc/WidgetCustomizer.php:297
+msgid "See how your widget will look on your site."
+msgstr "ਵੇਖੋ ਕਿ ਤੁਹਾਡਾ ਵਿਜੈਟ ਤੁਹਾਡੀ ਸਾਈਟ 'ਤੇ ਕਿਵੇਂ ਦਿੱਸੇਗਾ।"
+
+#: inc/WidgetCustomizer.php:576
+msgid "Failed to save settings. Please try again."
+msgstr "ਸੈਟਿੰਗਾਂ ਸੇਵ ਕਰਨ ਵਿੱਚ ਅਸਫਲ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: inc/WidgetCustomizer.php:623
+msgid "Error clearing cache. Please check browser console."
+msgstr "ਕੈਸ਼ ਸਾਫ਼ ਕਰਨ ਵਿੱਚ ਗਲਤੀ। ਕਿਰਪਾ ਕਰਕੇ ਬ੍ਰਾਊਜ਼ਰ ਕਨਸੋਲ ਚੈੱਕ ਕਰੋ।"
+
+#: inc/WidgetCustomizer.php:677
+msgid "Server cache invalidation failed. Browser cache was cleared."
+msgstr "ਸਰਵਰ ਕੈਸ਼ ਇਨਵੈਲੀਡੇਸ਼ਨ ਅਸਫਲ ਰਹੀ। ਬ੍ਰਾਊਜ਼ਰ ਕੈਸ਼ ਸਾਫ਼ ਕਰ ਦਿੱਤਾ ਗਿਆ ਸੀ।"
+
+#: inc/WidgetCustomizer.php:699
+msgid "Error clearing caches. Please check browser console."
+msgstr "ਕੈਸ਼ੇ ਸਾਫ਼ ਕਰਨ ਵਿੱਚ ਗਲਤੀ। ਕਿਰਪਾ ਕਰਕੇ ਬ੍ਰਾਊਜ਼ਰ ਕਨਸੋਲ ਚੈੱਕ ਕਰੋ।"
+
+#: inc/api/ApiClient.php:82
+msgid "Account ID not found"
+msgstr "ਖਾਤਾ ID ਨਹੀਂ ਮਿਲਿਆ"
+
+#: inc/api/ApiClient.php:125
+msgid "Invalid API response"
+msgstr "ਅਵੈਧ API ਜਵਾਬ"
+
+#: inc/api/ApiClient.php:371
+msgid "A page URL is required to trigger a scan."
+msgstr "ਸਕੈਨ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਪੇਜ URL ਲਾਜ਼ਮੀ ਹੈ।"
+
+#: inc/api/ApiClient.php:473
+msgid "post_id or page_url required"
+msgstr "post_id ਜਾਂ page_url ਲਾਜ਼ਮੀ ਹੈ"
+
+#: inc/api/ApiClient.php:568
+msgid "post_id and page_url required"
+msgstr "post_id ਅਤੇ page_url ਲਾਜ਼ਮੀ ਹਨ"
+
+#: inc/api/ApiClient.php:589
+msgid "pairs required"
+msgstr "ਜੋੜੇ ਲੋੜੀਂਦੇ ਹਨ"
+
+#: inc/api/ApiClient.php:592
+msgid "batch limited to 100 pairs"
+msgstr "ਬੈਚ 100 ਜੋੜਿਆਂ ਤੱਕ ਸੀਮਿਤ ਹੈ"
+
+#: inc/api/ApiClient.php:641 inc/api/ApiClient.php:700 inc/api/ApiClient.php:967
+msgid "Account not configured"
+msgstr "ਖਾਤਾ ਸੰਰਚਿਤ ਨਹੀਂ ਹੈ"
+
+#: inc/api/ApiClient.php:753 inc/api/ApiClient.php:768 inc/api/ApiClient.php:788
+msgid "Invalid manifest ID"
+msgstr "ਅਵੈਧ ਮੈਨਿਫੈਸਟ ID"
+
+#: inc/api/ApiClient.php:814
+msgid "Invalid manifest or fix index"
+msgstr "ਅਵੈਧ ਮੈਨਿਫੈਸਟ ਜਾਂ ਫਿਕਸ ਇੰਡੈਕਸ"
+
+#: inc/api/ApiClient.php:818
+msgid "Value is required"
+msgstr "ਮੁੱਲ ਲਾਜ਼ਮੀ ਹੈ"
+
+#: inc/api/ApiClient.php:821
+msgid "Value too long (max 500 characters)"
+msgstr "ਮੁੱਲ ਬਹੁਤ ਲੰਮਾ ਹੈ (ਅਧਿਕਤਮ 500 ਅੱਖਰ)"
+
+#: inc/api/ApiClient.php:841
+msgid "Invalid site ID"
+msgstr "ਅਵੈਧ ਸਾਈਟ ID"
+
+#: inc/api/ApiClient.php:845
+msgid "No manifest IDs supplied"
+msgstr "ਕੋਈ ਮੈਨਿਫੈਸਟ ID ਨਹੀਂ ਦਿੱਤੇ ਗਏ"
+
+#: inc/api/ApiClient.php:988
+msgid "Server returned invalid plugin secret payload"
+msgstr "ਸਰਵਰ ਨੇ ਅਵੈਧ ਪਲੱਗਇਨ ਸੀਕ੍ਰੇਟ ਪੇਲੋਡ ਵਾਪਸ ਕੀਤਾ"
+
+#: inc/api/ApiClient.php:1017
+msgid ""
+"No site associated with this account yet. Visit your WordPress homepage once to register this site, "
+"then return here."
+msgstr ""
+"ਹਾਲੇ ਤੱਕ ਇਸ ਖਾਤੇ ਨਾਲ ਕੋਈ ਸਾਈਟ ਸੰਬੰਧਿਤ ਨਹੀਂ ਹੈ। ਇਸ ਸਾਈਟ ਨੂੰ ਰਜਿਸਟਰ ਕਰਨ ਲਈ ਇੱਕ ਵਾਰ ਆਪਣੀ WordPress ਹੋਮਪੇਜ 'ਤੇ ਜਾਓ, "
+"ਫਿਰ ਇੱਥੇ ਵਾਪਸ ਆਓ।"
+
+#: inc/api/ApiClient.php:1151
+msgid "Invalid scan job ID"
+msgstr "ਅਵੈਧ ਸਕੈਨ ਜੌਬ ID"
+
+#: inc/api/ApiClient.php:1170
+msgid "Plugin secret unavailable. Re-validate license to refresh credentials."
+msgstr "ਪਲੱਗਇਨ ਸੀਕ੍ਰੇਟ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕ੍ਰੈਡੈਂਸ਼ਲ ਤਾਜ਼ਾ ਕਰਨ ਲਈ ਲਾਇਸੈਂਸ ਨੂੰ ਮੁੜ-ਵੈਧ ਕਰੋ।"
+
+#. translators: %s: error message
+#: inc/api/ApiClient.php:1226
+#, php-format
+msgid "API request failed: %s"
+msgstr "API ਬੇਨਤੀ ਅਸਫਲ: %s"
+
+#: inc/api/ApiClient.php:1249
+msgid "Failed to decode API response"
+msgstr "API ਜਵਾਬ ਨੂੰ ਡੀਕੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.allaccessible.org/platform/wordpress/"
+msgstr "https://www.allaccessible.org/platform/wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your "
+"website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility "
+"widget, plus agentic AI remediation that auto-suggests fixes for your team to approve."
+msgstr ""
+"AllAccessible ਨਾਲ ਅਸਲੀ ਡਿਜ਼ਿਟਲ ਪਹੁੰਚਯੋਗਤਾ ਅਨਲੌਕ ਕਰੋ — ਇੱਕ ਵਿਸਤ੍ਰਿਤ WordPress ਪਲੱਗਇਨ ਜੋ ਤੁਹਾਡੀ ਵੈੱਬਸਾਈਟ ਨੂੰ WCAG/ADA "
+"ਅਨੁਕੂਲਤਾ ਵੱਲ ਲੈ ਜਾਂਦਾ ਹੈ। ਆਪਣੇ ਯੂਜ਼ਰਾਂ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਕਸਟਮਾਈਜ਼ ਹੋਣ ਵਾਲੇ ਐਕਸੈਸਿਬਿਲਟੀ ਵਿਜੈਟ ਨਾਲ ਸਮਰੱਥ ਬਣਾਓ, ਨਾਲ ਹੀ ਏਜੈਂਟਿਕ "
+"AI ਰੀਮੀਡੀਏਸ਼ਨ ਜੋ ਤੁਹਾਡੀ ਟੀਮ ਵੱਲੋਂ ਮਨਜ਼ੂਰੀ ਲਈ ਫਿਕਸ ਆਪਣੇ ਆਪ ਸੁਝਾਉਂਦੀ ਹੈ।"
+
+#. Author of the plugin/theme
+msgid "AllAccessible Team"
+msgstr "AllAccessible ਟੀਮ"
+
+#. Author URI of the plugin/theme
+msgid "https://www.allaccessible.org/"
+msgstr "https://www.allaccessible.org/"
+
+#~ msgid ""
+#~ "Could not start scan — plugin credentials not yet provisioned. Visit Settings → Re-verify to "
+#~ "refresh, then retry."
+#~ msgstr ""
+#~ "ਸਕੈਨ ਸ਼ੁਰੂ ਨਹੀਂ ਹੋ ਸਕਿਆ — ਪਲੱਗਇਨ ਦੀਆਂ ਪ੍ਰਮਾਣਿਕਤਾਵਾਂ ਹਾਲੇ ਪ੍ਰੋਵਿਜ਼ਨ ਨਹੀਂ ਹੋਈਆਂ। ਰਿਫ੍ਰੈਸ਼ ਕਰਨ ਲਈ ਸੈਟਿੰਗਾਂ → ਮੁੜ-ਤਸਦੀਕ 'ਤੇ "
+#~ "ਜਾਓ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#~ msgid "AI alt text · this month"
+#~ msgstr "AI alt ਟੈਕਸਟ · ਇਸ ਮਹੀਨੇ"
+
+#~ msgid "Pages crawled"
+#~ msgstr "ਕ੍ਰਾਲ ਕੀਤੇ ਪੰਨੇ"
+
+#, php-format
+#~ msgid "Grouped by rule. %1$s AI-resolvable · %2$s need manual review."
+#~ msgstr "ਨਿਯਮ ਅਨੁਸਾਰ ਸਮੂਹਬੱਧ। %1$s AI ਨਾਲ ਹੱਲਯੋਗ · %2$s ਨੂੰ ਹੱਥੋਂ ਸਮੀਖਿਆ ਦੀ ਲੋੜ ਹੈ।"
+
+#, php-format
+#~ msgid "Agentic alt text by %1$s — up to %2$s images/month"
+#~ msgstr "%1$s ਵੱਲੋਂ ਏਜੈਂਟਿਕ ਆਲਟ ਟੈਕਸਟ — ਮਹੀਨੇ ਵਿੱਚ %2$s ਤਸਵੀਰਾਂ ਤੱਕ"
+
+#, php-format
+#~ msgid "Agentic alt text and label generation by %s"
+#~ msgstr "%s ਵੱਲੋਂ ਏਜੈਂਟਿਕ alt ਟੈਕਸਟ ਅਤੇ ਲੇਬਲ ਜਨਰੇਸ਼ਨ"
+
+#~ msgid "Scan started — watching for results…"
+#~ msgstr "ਸਕੈਨ ਸ਼ੁਰੂ ਹੋਇਆ — ਨਤੀਜਿਆਂ ਲਈ ਦੇਖਿਆ ਜਾ ਰਿਹਾ ਹੈ…"
+
+#~ msgid "Scan failed. Try again from the dashboard."
+#~ msgstr "ਸਕੈਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਡੈਸ਼ਬੋਰਡ ਤੋਂ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#~ msgid "Enjoying AllAccessible?"
+#~ msgstr "AllAccessible ਦਾ ਆਨੰਦ ਲੈ ਰਹੇ ਹੋ?"
+
+#~ msgid "No data yet"
+#~ msgstr "ਹਾਲੇ ਕੋਈ ਡਾਟਾ ਨਹੀਂ"
+
+#~ msgid "Limit reached"
+#~ msgstr "ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ"
+
+#~ msgid "Approaching limit"
+#~ msgstr "ਸੀਮਾ ਦੇ ਨੇੜੇ"
+
+#~ msgid "On track"
+#~ msgstr "ਟਰੈਕ ‘ਤੇ"
+
+#~ msgid "Healthy"
+#~ msgstr "ਠੀਕ-ਠਾਕ"
+
+#~ msgid "Site overview at a glance"
+#~ msgstr "ਸਾਈਟ ਓਵਰਵਿਊ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ"
+
+#~ msgid "Accessibility Score: not yet measured"
+#~ msgstr "ਐਕਸੈਸਿਬਿਲਿਟੀ ਸਕੋਰ: ਹਾਲੇ ਮਾਪਿਆ ਨਹੀਂ ਗਿਆ"
+
+#, php-format
+#~ msgid "%1$s of %2$s pages audited"
+#~ msgstr "%2$s ਵਿੱਚੋਂ %1$s ਪੰਨੇ ਆਡਿਟ ਕੀਤੇ"
+
+#~ msgid "Pages audited: none yet"
+#~ msgstr "ਆਡਿਟ ਕੀਤੇ ਪੰਨੇ: ਹਾਲੇ ਕੋਈ ਨਹੀਂ"
+
+#~ msgid "Across your site"
+#~ msgstr "ਤੁਹਾਡੀ ਸਾਈਟ ‘ਤੇ"
+
+#, php-format
+#~ msgid "%s fix awaiting review"
+#~ msgid_plural "%s fixes awaiting review"
+#~ msgstr[0] "%s ਠੀਕ-ਠਾਕ ਸਮੀਖਿਆ ਦੀ ਉਡੀਕ ਵਿੱਚ ਹੈ"
+#~ msgstr[1] "%s ਠੀਕ-ਠਾਕਾਂ ਸਮੀਖਿਆ ਦੀ ਉਡੀਕ ਵਿੱਚ ਹਨ"
+
+#~ msgid "Pending Fixes"
+#~ msgstr "ਬਾਕੀ ਰਹਿੰਦੀਆਂ ਠੀਕ-ਠਾਕਾਂ"
+
+#, php-format
+#~ msgid "%s active on your site"
+#~ msgstr "ਤੁਹਾਡੀ ਸਾਈਟ ‘ਤੇ %s ਸਰਗਰਮ"
+
+#~ msgid "Plan usage breakdown"
+#~ msgstr "ਪਲਾਨ ਵਰਤੋਂ ਦਾ ਵੇਰਵਾ"
+
+#~ msgid "Site Stats"
+#~ msgstr "ਸਾਈਟ ਅੰਕੜੇ"
+
+#, php-format
+#~ msgid "%s w/ AI alt"
+#~ msgstr "%s AI alt ਨਾਲ"
+
+#, php-format
+#~ msgid "%1$s — %2$d%% used"
+#~ msgstr "%1$s — %2$d%% ਵਰਤੇ ਗਏ"
+
+#~ msgid "Limit reached — upgrade capacity"
+#~ msgstr "ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ — ਸਮਰੱਥਾ ਅੱਪਗ੍ਰੇਡ ਕਰੋ"
+
+#~ msgid "Total images"
+#~ msgstr "ਕੁੱਲ ਚਿੱਤਰ"
+
+#~ msgid "across all scanned pages"
+#~ msgstr "ਸਭ ਸਕੈਨ ਕੀਤੇ ਪੰਨਿਆਂ ‘ਤੇ"
+
+#, php-format
+#~ msgid "%d%% of total"
+#~ msgstr "ਕੁੱਲ %d%% of"
+
+#~ msgid "Authored by AllAccessible AI"
+#~ msgstr "AllAccessible AI ਵੱਲੋਂ ਲਿਖਿਆ"
+
+#~ msgid "Get this site ready for everyone"
+#~ msgstr "ਇਸ ਸਾਈਟ ਨੂੰ ਸਭ ਲਈ ਤਿਆਰ ਕਰੋ"
+
+#~ msgid "Create a new AllAccessible account"
+#~ msgstr "ਨਵਾਂ AllAccessible ਖਾਤਾ ਬਣਾਓ"
+
+#~ msgid "Recommended"
+#~ msgstr "ਸਿਫ਼ਾਰਸ਼ੀ"
+
+#~ msgid "Create a new account"
+#~ msgstr "ਨਵਾਂ ਖਾਤਾ ਬਣਾਓ"
+
+#~ msgid ""
+#~ "Spin up a fresh AllAccessible account with the dashboard, reporting, and the full agentic AI "
+#~ "toolkit."
+#~ msgstr "ਡੈਸ਼ਬੋਰਡ, ਰਿਪੋਰਟਿੰਗ, ਅਤੇ ਪੂਰੇ ਏਜੈਂਟਿਕ AI ਟੂਲਕਿਟ ਨਾਲ ਇੱਕ ਨਵਾਂ AllAccessible ਖਾਤਾ ਬਣਾਓ।"
+
+#~ msgid "Existing customer"
+#~ msgstr "ਮੌਜੂਦਾ ਗਾਹਕ"
+
+#~ msgid "Link an existing account"
+#~ msgstr "ਮੌਜੂਦਾ ਖਾਤਾ ਲਿੰਕ ਕਰੋ"
+
+#~ msgid "Link account"
+#~ msgstr "ਖਾਤਾ ਲਿੰਕ ਕਰੋ"
+
+#~ msgid "Just the widget"
+#~ msgstr "ਸਿਰਫ਼ ਵਿਜੈੱਟ"
+
+#~ msgid ""
+#~ "The free accessibility widget keeps running on this site. Finish setup any time to unlock the "
+#~ "dashboard and AI fixes."
+#~ msgstr ""
+#~ "ਮੁਫ਼ਤ ਐਕਸੈਸਿਬਿਲਿਟੀ ਵਿਜੈਟ ਇਸ ਸਾਈਟ ‘ਤੇ ਚੱਲਦਾ ਰਹਿੰਦਾ ਹੈ। ਡੈਸ਼ਬੋਰਡ ਅਤੇ AI ਫਿਕਸਜ਼ ਅਨਲੌਕ ਕਰਨ ਲਈ ਕਿਸੇ ਵੀ ਵੇਲੇ ਸੈਟਅੱਪ ਪੂਰਾ ਕਰੋ।"
+
+#~ msgid "Skip setup"
+#~ msgstr "ਸੈਟਅੱਪ ਛੱਡੋ"
+
+#~ msgid "Choose a plan"
+#~ msgstr "ਇੱਕ ਯੋਜਨਾ ਚੁਣੋ"
+
+#~ msgid ""
+#~ "Start free and upgrade later, or try the full feature set free for seven days. No credit card "
+#~ "required either way."
+#~ msgstr ""
+#~ "ਮੁਫ਼ਤ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਬਾਅਦ ਵਿੱਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ, ਜਾਂ ਸੱਤ ਦਿਨਾਂ ਲਈ ਪੂਰਾ ਫੀਚਰ ਸੈੱਟ ਮੁਫ਼ਤ ਅਜ਼ਮਾਓ। ਦੋਵੇਂ ਤਰੀਕਿਆਂ ਵਿੱਚ ਕਰੈਡਿਟ ਕਾਰਡ "
+#~ "ਦੀ ਲੋੜ ਨਹੀਂ।"
+
+#~ msgid "month"
+#~ msgstr "ਮਹੀਨਾ"
+
+#~ msgid "Accessibility widget"
+#~ msgstr "ਐਕਸੈਸਿਬਿਲਿਟੀ ਵਿਜੈਟ"
+
+#~ msgid "Color and contrast controls"
+#~ msgstr "ਰੰਗ ਅਤੇ ਕਾਂਟ੍ਰਾਸਟ ਕੰਟਰੋਲ"
+
+#~ msgid "Choose Free"
+#~ msgstr "ਮੁਫ਼ਤ ਚੁਣੋ"
+
+#~ msgid "Premium trial"
+#~ msgstr "ਪ੍ਰੀਮੀਅਮ ਟ੍ਰਾਇਲ"
+
+#~ msgid "Everything in Free"
+#~ msgstr "ਫ੍ਰੀ ਵਿੱਚ ਸਭ ਕੁਝ"
+
+#~ msgid "AI"
+#~ msgstr "AI"
+
+#~ msgid "Human-in-the-loop agentic AI remediation"
+#~ msgstr "ਹਿਊਮਨ-ਇਨ-ਦ-ਲੂਪ ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ"
+
+#~ msgid "Automatic alt text from AllAccessible agents"
+#~ msgstr "AllAccessible ਏਜੈਂਟਾਂ ਵੱਲੋਂ ਆਟੋਮੈਟਿਕ ਆਲਟ ਟੈਕਸਟ"
+
+#~ msgid "WCAG and ADA audits"
+#~ msgstr "WCAG ਅਤੇ ADA ਆਡਿਟ"
+
+#~ msgid "Widget customization"
+#~ msgstr "ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ੇਸ਼ਨ"
+
+#~ msgid "Cancel any time"
+#~ msgstr "ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ"
+
+#~ msgid "Start trial"
+#~ msgstr "ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgid "Agentic AI handles the heavy lifting."
+#~ msgstr "ਏਜੈਂਟਿਕ AI ਭਾਰੀ ਕੰਮ ਸੰਭਾਲ ਲੈਂਦਾ ਹੈ।"
+
+#~ msgid ""
+#~ "AllAccessible agents draft alt text, propose code fixes, and suggest remediations. Your team "
+#~ "reviews and approves before anything ships."
+#~ msgstr ""
+#~ "AllAccessible ਏਜੰਟ alt ਟੈਕਸਟ ਤਿਆਰ ਕਰਦੇ ਹਨ, ਕੋਡ ਫਿਕਸਾਂ ਦਾ ਸੁਝਾਅ ਦਿੰਦੇ ਹਨ, ਅਤੇ ਸੁਧਾਰ ਲਈ ਸਿਫ਼ਾਰਸ਼ਾਂ ਕਰਦੇ ਹਨ। ਤੁਹਾਡੀ "
+#~ "ਟੀਮ ਕੁਝ ਵੀ ਜਾਰੀ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਸਮੀਖਿਆ ਕਰਦੀ ਹੈ ਅਤੇ ਮਨਜ਼ੂਰੀ ਦਿੰਦੀ ਹੈ।"
+
+#~ msgid "Back"
+#~ msgstr "ਪਿੱਛੇ"
+
+#~ msgid "I already have an account"
+#~ msgstr "ਮੇਰੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਖਾਤਾ ਹੈ"
+
+#~ msgid "Step 3 of 4"
+#~ msgstr "4 ਵਿੱਚੋਂ ਕਦਮ 3"
+
+#~ msgid "Create your account"
+#~ msgstr "ਆਪਣਾ ਖਾਤਾ ਬਣਾਓ"
+
+#~ msgid "We use this to provision your account and send setup confirmations."
+#~ msgstr "ਅਸੀਂ ਇਸਦਾ ਇਸਤੇਮਾਲ ਤੁਹਾਡਾ ਖਾਤਾ ਪ੍ਰੋਵਿਜ਼ਨ ਕਰਨ ਅਤੇ ਸੈਟਅੱਪ ਪੁਸ਼ਟੀਕਰਨ ਭੇਜਣ ਲਈ ਕਰਦੇ ਹਾਂ।"
+
+#~ msgid "Create account"
+#~ msgstr "ਖਾਤਾ ਬਣਾਓ"
+
+#~ msgid "Free forever plan"
+#~ msgstr "ਹਮੇਸ਼ਾਂ ਲਈ ਮੁਫ਼ਤ ਯੋਜਨਾ"
+
+#~ msgid "No credit card. Upgrade any time."
+#~ msgstr "ਕੋਈ ਕਰੈਡਿਟ ਕਾਰਡ ਨਹੀਂ। ਕਿਸੇ ਵੀ ਵੇਲੇ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।"
+
+#~ msgid "Includes the accessibility widget and core controls."
+#~ msgstr "ਇਸ ਵਿੱਚ ਐਕਸੈਸਿਬਿਲਟੀ ਵਿਜੈਟ ਅਤੇ ਮੁੱਖ ਕੰਟਰੋਲ ਸ਼ਾਮਲ ਹਨ।"
+
+#~ msgid "Up to 10k pageviews / month covered."
+#~ msgstr "ਮਹੀਨੇ ਵਿੱਚ 10k ਤੱਕ ਪੇਜਵਿਊਜ਼ ਕਵਰ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।"
+
+#~ msgid "Seven-day premium trial"
+#~ msgstr "ਸੱਤ ਦਿਨਾਂ ਦੀ ਪ੍ਰੀਮੀਅਮ ਟ੍ਰਾਇਲ"
+
+#~ msgid "No credit card. Cancel any time."
+#~ msgstr "ਕੋਈ ਕਰੈਡਿਟ ਕਾਰਡ ਨਹੀਂ। ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ।"
+
+#~ msgid "Full access to agentic AI remediation."
+#~ msgstr "ਏਜੈਂਟਿਕ AI ਰੀਮੀਡੀਏਸ਼ਨ ਲਈ ਪੂਰੀ ਪਹੁੰਚ।"
+
+#~ msgid "Continuous audits + per-page scoring."
+#~ msgstr "ਲਗਾਤਾਰ ਆਡਿਟ + ਪ੍ਰਤੀ-ਪੰਨਾ ਸਕੋਰਿੰਗ।"
+
+#~ msgid "Widget customization, Image AI, VPAT exports."
+#~ msgstr "ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ੇਸ਼ਨ, ਇਮੇਜ AI, VPAT ਐਕਸਪੋਰਟਸ।"
+
+#~ msgid "We never share your email."
+#~ msgstr "ਅਸੀਂ ਤੁਹਾਡਾ ਈਮੇਲ ਕਦੇ ਵੀ ਸਾਂਝਾ ਨਹੀਂ ਕਰਦੇ।"
+
+#~ msgid "Link your account"
+#~ msgstr "ਆਪਣਾ ਖਾਤਾ ਲਿੰਕ ਕਰੋ"
+
+#~ msgid ""
+#~ "Enter the email associated with your AllAccessible account and we will connect this site to it."
+#~ msgstr "ਆਪਣੇ AllAccessible ਖਾਤੇ ਨਾਲ ਸੰਬੰਧਿਤ ਈਮੇਲ ਦਰਜ ਕਰੋ ਅਤੇ ਅਸੀਂ ਇਸ ਸਾਈਟ ਨੂੰ ਉਸ ਨਾਲ ਜੋੜ ਦੇਵਾਂਗੇ।"
+
+#~ msgid "Use the email tied to your AllAccessible login."
+#~ msgstr "ਉਹੀ ਈਮੇਲ ਵਰਤੋ ਜੋ ਤੁਹਾਡੇ AllAccessible ਲੌਗਿਨ ਨਾਲ ਜੁੜੀ ਹੋਈ ਹੈ।"
+
+#~ msgid "Linking your account..."
+#~ msgstr "ਤੁਹਾਡਾ ਖਾਤਾ ਲਿੰਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#~ msgid "What happens next"
+#~ msgstr "ਅਗਲਾ ਕੀ ਹੁੰਦਾ ਹੈ"
+
+#~ msgid "This WordPress site is added to your existing account."
+#~ msgstr "ਇਹ WordPress ਸਾਈਟ ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਖਾਤੇ ਵਿੱਚ ਜੋੜੀ ਜਾਂਦੀ ਹੈ।"
+
+#~ msgid "Your current plan and settings stay in place."
+#~ msgstr "ਤੁਹਾਡੀ ਮੌਜੂਦਾ ਯੋਜਨਾ ਅਤੇ ਸੈਟਿੰਗਾਂ ਜਿਵੇਂ ਦੀਆਂ ਤਿਵੇਂ ਰਹਿੰਦੀਆਂ ਹਨ।"
+
+#~ msgid "The widget activates with your saved configuration."
+#~ msgstr "ਵਿਜੈਟ ਤੁਹਾਡੀ ਸੇਵ ਕੀਤੀ ਸੰਰਚਨਾ ਨਾਲ ਸਰਗਰਮ ਹੋ ਜਾਂਦਾ ਹੈ।"
+
+#~ msgid "Step 4 of 4"
+#~ msgstr "ਕਦਮ 4 ਵਿੱਚੋਂ 4"
+
+#~ msgid "We found your sitemap"
+#~ msgstr "ਅਸੀਂ ਤੁਹਾਡਾ ਸਾਈਟਮੈਪ ਲੱਭ ਲਿਆ ਹੈ"
+
+#~ msgid "Start free forever"
+#~ msgstr "ਹਮੇਸ਼ਾਂ ਲਈ ਮੁਫ਼ਤ ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgid "Activate free account"
+#~ msgstr "ਮੁਫ਼ਤ ਖਾਤਾ ਸਰਗਰਮ ਕਰੋ"
+
+#~ msgid "Start your seven-day trial"
+#~ msgstr "ਆਪਣਾ ਸੱਤ-ਦਿਨਾਂ ਦਾ ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgid "Activate free trial"
+#~ msgstr "ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ ਸਰਗਰਮ ਕਰੋ"
+
+#~ msgid "Please fill in all required fields."
+#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸਾਰੇ ਲੋੜੀਂਦੇ ਖੇਤਰ ਭਰੋ।"
+
+#~ msgid "We could not find an account with that email. Please check and try again."
+#~ msgstr "ਸਾਨੂੰ ਉਸ ਈਮੇਲ ਨਾਲ ਕੋਈ ਖਾਤਾ ਨਹੀਂ ਮਿਲਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚ ਕਰੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#~ msgid "Generate fixes now"
+#~ msgstr "ਹੁਣੇ ਸੁਧਾਰ ਤਿਆਰ ਕਰੋ"
+
+#~ msgid "Open in app"
+#~ msgstr "ਐਪ ਵਿੱਚ ਖੋਲ੍ਹੋ"
+
+#~ msgid "Submit your sitemap"
+#~ msgstr "ਆਪਣਾ ਸਾਈਟਮੈਪ ਜਮ੍ਹਾਂ ਕਰੋ"
+
+#~ msgid ""
+#~ "Your sitemap tells AllAccessible which pages to check. Once submitted, scans run automatically "
+#~ "based on your plan."
+#~ msgstr ""
+#~ "ਤੁਹਾਡਾ ਸਾਈਟਮੈਪ AllAccessible ਨੂੰ ਦੱਸਦਾ ਹੈ ਕਿ ਕਿਹੜੇ ਪੰਨੇ ਚੈੱਕ ਕਰਨੇ ਹਨ। ਇੱਕ ਵਾਰ ਸਬਮਿਟ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਤੁਹਾਡੇ ਪਲਾਨ ਦੇ "
+#~ "ਅਨੁਸਾਰ ਸਕੈਨ ਆਪਣੇ ਆਪ ਚੱਲਦੇ ਹਨ।"
+
+#~ msgid "Submit sitemap"
+#~ msgstr "ਸਾਈਟਮੈਪ ਜਮ੍ਹਾਂ ਕਰੋ"
+
+#~ msgid "Update sitemap"
+#~ msgstr "ਸਾਈਟਮੈਪ ਅਪਡੇਟ ਕਰੋ"
+
+#~ msgid ""
+#~ "No sitemap detected on this site. Install an SEO plugin (Yoast, RankMath, All in One SEO) or "
+#~ "enable the WordPress core sitemap, then refresh this page."
+#~ msgstr ""
+#~ "ਇਸ ਸਾਈਟ ‘ਤੇ ਕੋਈ ਸਾਈਟਮੈਪ ਨਹੀਂ ਮਿਲਿਆ। ਇੱਕ SEO ਪਲੱਗਇਨ (Yoast, RankMath, All in One SEO) ਇੰਸਟਾਲ ਕਰੋ ਜਾਂ "
+#~ "WordPress ਕੋਰ ਸਾਈਟਮੈਪ ਐਨੇਬਲ ਕਰੋ, ਫਿਰ ਇਸ ਪੰਨੇ ਨੂੰ ਰਿਫ੍ਰੈਸ਼ ਕਰੋ।"
+
+#~ msgid "Sitemap URL"
+#~ msgstr "ਸਾਈਟਮੈਪ URL"
+
+#, php-format
+#~ msgid "%d candidate found"
+#~ msgid_plural "%d candidates found"
+#~ msgstr[0] "%d ਉਮੀਦਵਾਰ ਮਿਲਿਆ"
+#~ msgstr[1] "%d ਉਮੀਦਵਾਰ ਮਿਲੇ"
+
+#~ msgid "pages scanned. Agentic Fixes ready to review."
+#~ msgstr "ਪੰਨੇ ਸਕੈਨ ਕੀਤੇ ਗਏ। Agentic Fixes ਸਮੀਖਿਆ ਲਈ ਤਿਆਰ ਹਨ।"
+
+#~ msgid "Pick a sitemap URL first."
+#~ msgstr "ਪਹਿਲਾਂ ਇੱਕ ਸਾਈਟਮੈਪ URL ਚੁਣੋ।"
+
+#~ msgid "Yoast SEO"
+#~ msgstr "Yoast SEO"
+
+#~ msgid "Rank Math"
+#~ msgstr "Rank Math"
+
+#~ msgid "All in One SEO"
+#~ msgstr "All in One SEO"
+
+#~ msgid "SEOPress"
+#~ msgstr "SEOPress"
+
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
+
+#~ msgid "—"
+#~ msgstr "—"
+
+#~ msgid "Accessibility resolution overview"
+#~ msgstr "ਪਹੁੰਚਯੋਗਤਾ ਹੱਲ ਦਾ ਸਰਵੇਖਣ"
+
+#~ msgid "Overall score"
+#~ msgstr "ਕੁੱਲ ਸਕੋਰ"
+
+#, php-format
+#~ msgid "WCAG %s aligned"
+#~ msgstr "WCAG %s ਨਾਲ ਅਨੁਕੂਲ"
+
+#~ msgid "Resolution"
+#~ msgstr "ਹੱਲ"
+
+#~ msgid "remaining"
+#~ msgstr "ਬਾਕੀ"
+
+#, php-format
+#~ msgid "%s%% resolved by AllAccessible agents"
+#~ msgstr "%s%% resolved AllAccessible ਏਜੰਟਾਂ ਵੱਲੋਂ"
+
+#, php-format
+#~ msgid "%1$s auto-applied · %2$s approved by your team"
+#~ msgstr "%1$s ਆਪਣੇ ਆਪ ਲਾਗੂ ਕੀਤਾ · %2$s ਤੁਹਾਡੀ ਟੀਮ ਵੱਲੋਂ ਮਨਜ਼ੂਰ ਕੀਤਾ"
+
+#~ msgid ""
+#~ "Resolution numbers will appear after your first scan completes and AllAccessible agents process "
+#~ "your manifest."
+#~ msgstr ""
+#~ "ਤੁਹਾਡਾ ਪਹਿਲਾ ਸਕੈਨ ਪੂਰਾ ਹੋਣ ਅਤੇ AllAccessible ਏਜੰਟ ਤੁਹਾਡਾ ਮੈਨੀਫੈਸਟ ਪ੍ਰੋਸੈਸ ਕਰਨ ਤੋਂ ਬਾਅਦ ਰਿਜ਼ੋਲੂਸ਼ਨ ਨੰਬਰ ਦਿਖਾਈ ਦੇਣਗੇ।"
+
+#~ msgid "Coverage"
+#~ msgstr "ਕਵਰੇਜ"
+
+#, php-format
+#~ msgid "%s%% of estimated site coverage"
+#~ msgstr "%s%% of ਅੰਦਾਜ਼ਿਤ ਸਾਈਟ ਕਵਰੇਜ"
+
+#~ msgid "No pages scanned yet."
+#~ msgstr "ਹਾਲੇ ਤੱਕ ਕੋਈ ਪੰਨੇ ਸਕੈਨ ਨਹੀਂ ਹੋਏ।"
+
+#, php-format
+#~ msgid "Last scan %s"
+#~ msgstr "ਆਖਰੀ ਸਕੈਨ %s"
+
+#, php-format
+#~ msgid "Overall accessibility score %s out of 100"
+#~ msgstr "ਕੁੱਲ ਪਹੁੰਚਯੋਗਤਾ ਸਕੋਰ 100 ਵਿੱਚੋਂ %s"
+
+#~ msgid "Run a scan to compute your first score."
+#~ msgstr "ਆਪਣਾ ਪਹਿਲਾ ਸਕੋਰ ਗਿਣਣ ਲਈ ਸਕੈਨ ਚਲਾਓ।"
+
+#~ msgid "Trending up since your last scan."
+#~ msgstr "ਤੁਹਾਡੇ ਆਖਰੀ ਸਕੈਨ ਤੋਂ ਬਾਅਦ ਵਧ ਰਿਹਾ ਹੈ।"
+
+#~ msgid "Down from your last scan — review pending fixes."
+#~ msgstr "ਤੁਹਾਡੇ ਆਖਰੀ ਸਕੈਨ ਤੋਂ ਘੱਟ — ਬਾਕੀ ਰਹਿੰਦੀਆਂ ਫਿਕਸਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰੋ।"
+
+#~ msgid "Good. A few high-impact fixes will push you to excellent."
+#~ msgstr "ਚੰਗਾ। ਕੁਝ ਉੱਚ-ਅਸਰ ਵਾਲੀਆਂ ਫਿਕਸਾਂ ਤੁਹਾਨੂੰ ਸ਼ਾਨਦਾਰ ਤੱਕ ਲੈ ਜਾਣਗੀਆਂ।"
+
+#~ msgid "Needs work. Approve the recommended fixes to climb fast."
+#~ msgstr "ਹੋਰ ਕੰਮ ਦੀ ਲੋੜ ਹੈ। ਤੇਜ਼ੀ ਨਾਲ ਅੱਗੇ ਵਧਣ ਲਈ ਸਿਫ਼ਾਰਸ਼ੀ ਸੁਧਾਰਾਂ ਨੂੰ ਮਨਜ਼ੂਰੀ ਦਿਓ।"
+
+#~ msgid "Critical issues detected. Start with the queue below."
+#~ msgstr "ਗੰਭੀਰ ਸਮੱਸਿਆਵਾਂ ਮਿਲੀਆਂ ਹਨ। ਹੇਠਾਂ ਦਿੱਤੀ ਕਤਾਰ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ।"
+
+#~ msgid "Post not found"
+#~ msgstr "ਪੋਸਟ ਨਹੀਂ ਮਿਲੀ"
+
+#~ msgid "Could not generate permalink for this post"
+#~ msgstr "ਇਸ ਪੋਸਟ ਲਈ ਪਰਮਾਲਿੰਕ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"
+
+#~ msgid "Page scan initiated. Results will be available shortly."
+#~ msgstr "ਪੇਜ ਸਕੈਨ ਸ਼ੁਰੂ ਕੀਤਾ ਗਿਆ। ਨਤੀਜੇ ਜਲਦੀ ਹੀ ਉਪਲਬਧ ਹੋਣਗੇ।"
+
+#, php-format
+#~ msgid "API returned status code %d"
+#~ msgstr "API ਨੇ ਸਟੇਟਸ ਕੋਡ %d ਵਾਪਸ ਕੀਤਾ"
+
+#~ msgid "Failed to parse API response"
+#~ msgstr "API ਜਵਾਬ ਨੂੰ ਪਾਰਸ ਕਰਨ ਵਿੱਚ ਅਸਫਲ"
+
+#~ msgid ""
+#~ "Agentic AI accessibility remediation and the AllAccessible widget. Connect your AllAccessible "
+#~ "account to enable compliance scans, widget customization, and human-in-the-loop remediation."
+#~ msgstr ""
+#~ "Agentic AI ਐਕਸੈਸਿਬਿਲਟੀ ਰੀਮੀਡੀਏਸ਼ਨ ਅਤੇ AllAccessible ਵਿਜੈਟ। ਕੰਪਲਾਇਅੰਸ ਸਕੈਨ, ਵਿਜੈਟ ਕਸਟਮਾਈਜ਼ੇਸ਼ਨ, ਅਤੇ ਹਿਊਮਨ-ਇਨ-ਦ-"
+#~ "ਲੂਪ ਰੀਮੀਡੀਏਸ਼ਨ ਨੂੰ ਯੋਗ ਕਰਨ ਲਈ ਆਪਣੇ AllAccessible ਖਾਤੇ ਨੂੰ ਕਨੈਕਟ ਕਰੋ।"
+
+#~ msgid "Site not connected to AllAccessible account."
+#~ msgstr "ਸਾਈਟ AllAccessible ਖਾਤੇ ਨਾਲ ਕਨੈਕਟ ਨਹੀਂ ਹੈ।"
+
+#~ msgid "Unknown API error"
+#~ msgstr "ਅਣਜਾਣ API ਗਲਤੀ"
+
+#, php-format
+#~ msgid "API error (%1$d): %2$s"
+#~ msgstr "API ਗਲਤੀ (%1$d): %2$s"
+
+#~ msgid "Not Available"
+#~ msgstr "ਉਪਲਬਧ ਨਹੀਂ"
+
+#~ msgid "Needs Work"
+#~ msgstr "ਹੋਰ ਕੰਮ ਦੀ ਲੋੜ ਹੈ"
+
+#, php-format
+#~ msgid "WCAG %s Compliant"
+#~ msgstr "WCAG %s ਅਨੁਕੂਲ"
+
+#, php-format
+#~ msgid "WCAG %s Non-Compliant"
+#~ msgstr "WCAG %s ਅਨੁਕੂਲ ਨਹੀਂ"
+
+#~ msgid "Sitemap URL is required"
+#~ msgstr "ਸਾਈਟਮੈਪ URL ਲਾਜ਼ਮੀ ਹੈ"

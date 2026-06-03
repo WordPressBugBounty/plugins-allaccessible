@@ -15,87 +15,93 @@ if (!defined('ABSPATH')) {
 /**
  * Render feature comparison table
  *
+ * Parent screen (SettingsPage.php) already opens an `.aacx-v2` namespace
+ * wrapper, so this partial renders inside that context.
+ *
  * @param string $addon_url URL to addon/billing page
  */
 function aacb_render_feature_comparison($addon_url) {
     ?>
-    <div class="aacx-bg-white aacx-rounded-lg aacx-shadow-sm aacx-border aacx-border-aacx-gray-200 aacx-overflow-hidden aacx-mb-6">
-        <div class="aacx-p-8">
-            <h2 class="aacx-text-2xl aacx-font-bold aacx-text-aacx-slate-900 aacx-mb-6 aacx-text-center">
+    <div class="aacx-v2__card aacx-v2__card--elevated aacx-v2__card--featured" style="margin-bottom: var(--aacx-space-6);">
+        <div class="aacx-v2__card-header" style="justify-content: center;">
+            <h2 style="text-align: center;">
                 <?php _e('Compare Plans', 'allaccessible'); ?>
             </h2>
-
-            <div class="aacx-overflow-x-auto">
-                <table class="aacx-w-full">
+        </div>
+        <div class="aacx-v2__card-body">
+            <div style="overflow-x: auto;">
+                <table class="aacx-v2__table">
                     <thead>
-                        <tr class="aacx-border-b aacx-border-aacx-gray-200">
-                            <th class="aacx-text-left aacx-py-3 aacx-px-4 aacx-font-bold aacx-text-aacx-slate-900">
+                        <tr>
+                            <th>
                                 <?php _e('Feature', 'allaccessible'); ?>
                             </th>
-                            <th class="aacx-text-center aacx-py-3 aacx-px-4 aacx-font-bold aacx-text-aacx-slate-700">
+                            <th style="text-align: center;">
                                 <?php _e('Free', 'allaccessible'); ?>
                             </th>
-                            <th class="aacx-text-center aacx-py-3 aacx-px-4 aacx-font-bold aacx-text-aacx-primary-900 aacx-bg-aacx-primary-50">
+                            <th style="text-align: center; background: var(--aacx-primary-50); color: var(--aacx-primary-700);">
                                 <?php _e('Starter', 'allaccessible'); ?>
                             </th>
-                            <th class="aacx-text-center aacx-py-3 aacx-px-4 aacx-font-bold aacx-text-aacx-secondary-900 aacx-bg-aacx-secondary-50">
+                            <th style="text-align: center; background: var(--aacx-ai-50); color: var(--aacx-ai-700);">
                                 <?php _e('Enterprise', 'allaccessible'); ?>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="aacx-border-b aacx-border-aacx-gray-100">
-                            <td class="aacx-py-3 aacx-px-4 aacx-text-aacx-slate-700"><?php _e('Accessibility Widget', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4"><span class="aacx-text-aacx-secondary-600 aacx-text-xl">✓</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-primary-50"><span class="aacx-text-aacx-secondary-600 aacx-text-xl">✓</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-secondary-50"><span class="aacx-text-aacx-secondary-600 aacx-text-xl">✓</span></td>
-                        </tr>
-                        <tr class="aacx-border-b aacx-border-aacx-gray-100">
-                            <td class="aacx-py-3 aacx-px-4 aacx-text-aacx-slate-700"><?php _e('Monthly Pageviews', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-text-aacx-slate-600 aacx-font-semibold">1,000</td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-primary-50 aacx-text-aacx-primary-900 aacx-font-bold">10,000</td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-secondary-50 aacx-text-aacx-secondary-900 aacx-font-bold">50,000</td>
-                        </tr>
-                        <tr class="aacx-border-b aacx-border-aacx-gray-100">
-                            <td class="aacx-py-3 aacx-px-4 aacx-text-aacx-slate-700"><?php _e('AI Image Alt Text', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4"><span class="aacx-text-aacx-slate-400">✗</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-primary-50 aacx-text-aacx-primary-900 aacx-font-bold">250/mo</td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-secondary-50 aacx-text-aacx-secondary-900 aacx-font-bold">1,000/mo</td>
-                        </tr>
-                        <tr class="aacx-border-b aacx-border-aacx-gray-100">
-                            <td class="aacx-py-3 aacx-px-4 aacx-text-aacx-slate-700"><?php _e('Compliance Audits', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4"><span class="aacx-text-aacx-slate-400">✗</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-primary-50 aacx-text-aacx-primary-900"><?php _e('Monthly', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-secondary-50 aacx-text-aacx-secondary-900 aacx-font-bold"><?php _e('Weekly', 'allaccessible'); ?></td>
-                        </tr>
-                        <tr class="aacx-border-b aacx-border-aacx-gray-100">
-                            <td class="aacx-py-3 aacx-px-4 aacx-text-aacx-slate-700"><?php _e('Widget Customization', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4"><span class="aacx-text-aacx-slate-400">✗</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-primary-50"><span class="aacx-text-aacx-secondary-600 aacx-text-xl">✓</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-secondary-50"><span class="aacx-text-aacx-secondary-600 aacx-text-xl">✓</span></td>
-                        </tr>
-                        <tr class="aacx-border-b aacx-border-aacx-gray-100">
-                            <td class="aacx-py-3 aacx-px-4 aacx-text-aacx-slate-700"><?php _e('VPAT Reports', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4"><span class="aacx-text-aacx-slate-400">✗</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-primary-50"><span class="aacx-text-aacx-slate-400">✗</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-secondary-50"><span class="aacx-text-aacx-secondary-600 aacx-text-xl">✓</span></td>
+                        <tr>
+                            <td><?php _e('Accessibility Widget', 'allaccessible'); ?></td>
+                            <td style="text-align: center;"><span style="color: var(--aacx-ok-600); font-size: var(--aacx-text-xl);" aria-label="<?php esc_attr_e('Included', 'allaccessible'); ?>">✓</span></td>
+                            <td style="text-align: center; background: var(--aacx-primary-50);"><span style="color: var(--aacx-ok-600); font-size: var(--aacx-text-xl);" aria-label="<?php esc_attr_e('Included', 'allaccessible'); ?>">✓</span></td>
+                            <td style="text-align: center; background: var(--aacx-ai-50);"><span style="color: var(--aacx-ok-600); font-size: var(--aacx-text-xl);" aria-label="<?php esc_attr_e('Included', 'allaccessible'); ?>">✓</span></td>
                         </tr>
                         <tr>
-                            <td class="aacx-py-3 aacx-px-4 aacx-text-aacx-slate-700"><?php _e('Priority Support', 'allaccessible'); ?></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4"><span class="aacx-text-aacx-slate-400">✗</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-primary-50"><span class="aacx-text-aacx-secondary-600 aacx-text-xl">✓</span></td>
-                            <td class="aacx-text-center aacx-py-3 aacx-px-4 aacx-bg-aacx-secondary-50 aacx-text-aacx-secondary-900 aacx-font-bold"><?php _e('Dedicated', 'allaccessible'); ?></td>
+                            <td><?php _e('Monthly Pageviews', 'allaccessible'); ?></td>
+                            <td style="text-align: center; color: var(--aacx-text-muted); font-weight: var(--aacx-weight-semibold);">1,000</td>
+                            <td style="text-align: center; background: var(--aacx-primary-50); color: var(--aacx-primary-700); font-weight: var(--aacx-weight-bold);">10,000</td>
+                            <td style="text-align: center; background: var(--aacx-ai-50); color: var(--aacx-ai-700); font-weight: var(--aacx-weight-bold);"><?php esc_html_e('Unlimited', 'allaccessible'); ?></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="aacx-v2__ai-badge"><?php _e('AI Image Alt Text', 'allaccessible'); ?></span>
+                            </td>
+                            <td style="text-align: center;"><?php esc_html_e('10 preview', 'allaccessible'); ?></td>
+                            <td style="text-align: center; background: var(--aacx-primary-50); color: var(--aacx-primary-700); font-weight: var(--aacx-weight-bold);"><?php esc_html_e('Unlimited', 'allaccessible'); ?></td>
+                            <td style="text-align: center; background: var(--aacx-ai-50); color: var(--aacx-ai-700); font-weight: var(--aacx-weight-bold);"><?php esc_html_e('Unlimited', 'allaccessible'); ?></td>
+                        </tr>
+                        <tr>
+                            <td><?php _e('Compliance Audits', 'allaccessible'); ?></td>
+                            <td style="text-align: center;"><span style="color: var(--aacx-slate-400);" aria-label="<?php esc_attr_e('Not included', 'allaccessible'); ?>">✗</span></td>
+                            <td style="text-align: center; background: var(--aacx-primary-50); color: var(--aacx-primary-700);"><?php _e('Monthly', 'allaccessible'); ?></td>
+                            <td style="text-align: center; background: var(--aacx-ai-50); color: var(--aacx-ai-700); font-weight: var(--aacx-weight-bold);"><?php _e('Weekly', 'allaccessible'); ?></td>
+                        </tr>
+                        <tr>
+                            <td><?php _e('Widget Customization', 'allaccessible'); ?></td>
+                            <td style="text-align: center;"><span style="color: var(--aacx-slate-400);" aria-label="<?php esc_attr_e('Not included', 'allaccessible'); ?>">✗</span></td>
+                            <td style="text-align: center; background: var(--aacx-primary-50);"><span style="color: var(--aacx-ok-600); font-size: var(--aacx-text-xl);" aria-label="<?php esc_attr_e('Included', 'allaccessible'); ?>">✓</span></td>
+                            <td style="text-align: center; background: var(--aacx-ai-50);"><span style="color: var(--aacx-ok-600); font-size: var(--aacx-text-xl);" aria-label="<?php esc_attr_e('Included', 'allaccessible'); ?>">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td><?php _e('VPAT Reports', 'allaccessible'); ?></td>
+                            <td style="text-align: center;"><span style="color: var(--aacx-slate-400);" aria-label="<?php esc_attr_e('Not included', 'allaccessible'); ?>">✗</span></td>
+                            <td style="text-align: center; background: var(--aacx-primary-50);"><span style="color: var(--aacx-slate-400);" aria-label="<?php esc_attr_e('Not included', 'allaccessible'); ?>">✗</span></td>
+                            <td style="text-align: center; background: var(--aacx-ai-50);"><span style="color: var(--aacx-ok-600); font-size: var(--aacx-text-xl);" aria-label="<?php esc_attr_e('Included', 'allaccessible'); ?>">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td><?php _e('Priority Support', 'allaccessible'); ?></td>
+                            <td style="text-align: center;"><span style="color: var(--aacx-slate-400);" aria-label="<?php esc_attr_e('Not included', 'allaccessible'); ?>">✗</span></td>
+                            <td style="text-align: center; background: var(--aacx-primary-50);"><span style="color: var(--aacx-ok-600); font-size: var(--aacx-text-xl);" aria-label="<?php esc_attr_e('Included', 'allaccessible'); ?>">✓</span></td>
+                            <td style="text-align: center; background: var(--aacx-ai-50); color: var(--aacx-ai-700); font-weight: var(--aacx-weight-bold);"><?php _e('Dedicated', 'allaccessible'); ?></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <div class="aacx-mt-6 aacx-text-center">
+            <div style="margin-top: var(--aacx-space-6); text-align: center;">
                 <a href="<?php echo esc_url($addon_url); ?>"
                    target="_blank"
-                   class="aacx-inline-flex aacx-items-center aacx-px-8 aacx-py-4 aacx-bg-aacx-primary-600 aacx-text-white aacx-rounded-xl aacx-font-bold aacx-text-lg aacx-shadow-xl hover:aacx-bg-aacx-primary-700 hover:aacx-shadow-2xl hover:-aacx-translate-y-1 aacx-transition-all aacx-duration-200">
+                   class="aacx-v2__btn aacx-v2__btn--primary aacx-v2__btn--lg">
                     <?php _e('Upgrade Plan', 'allaccessible'); ?>
-                    <svg class="aacx-w-5 aacx-h-5 aacx-ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                     </svg>
                 </a>

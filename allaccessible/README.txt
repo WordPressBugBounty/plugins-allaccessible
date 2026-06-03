@@ -1,26 +1,44 @@
-=== Accessibility by AllAccessible ===
+=== WP Accessibility by AllAccessible, CMS Level WCAG & ADA Compliance with Agentic AI Remediation ===
 Author: AllAccessible
 Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
-Tags: accessibility, wcag, ada, section 508, accessible, wp accessibility, eaa, wcag compliance, ada compliance, accessibility widget
-Requires at least: 6.0
+Tags: accessibility, wcag, ada, accessibility widget, eaa
+Requires at least: 5.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.0.6
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Unlock true digital accessibility with AllAccessible — a comprehensive plugin driving your website towards WCAG/ADA compliance, powered by human-in-the-loop agentic AI remediation.
+Accessibility widget + WordPress-native WCAG/ADA tools: per-page scores, unlimited AI interactions (alt text + agentic fixes) on paid plans, free 10+5 preview.
 
 == Description ==
 
-AllAccessible is a powerful WordPress accessibility plugin engineered to augment your website's accessibility for all users. The free version is a breeze to install and offers a fully customizable accessibility widget, enabling content, orientation, and design control to all visitors. Premium plans add AllAccessible AI — agentic AI remediation that auto-suggests accessibility fixes for your team to review and approve. We ensure the plugin's compatibility with the latest WordPress versions and regularly introduce new features to stay abreast of evolving accessibility standards.
+**AllAccessible is the WordPress-native accessibility plugin.** Unlike overlay-only widgets, AllAccessible brings accessibility right into your WordPress workflow: a per-page accessibility score in the post editor, an accessibility column on your Posts and Pages lists, unlimited AI-written alt text and agentic AI fixes on every paid plan, and human-in-the-loop approval before anything goes live.
+
+Built over 5+ years and trusted on thousands of websites, AllAccessible powers **220 million+ accessibility interactions every month** — robust, scalable infrastructure behind a simple WordPress experience.
+
+The free version installs in seconds and adds a fully customizable accessibility widget — letting every visitor control content, color, orientation, and design. Premium plans unlock **AllAccessible AI**: human-in-the-loop agentic remediation that checks your pages against WCAG success criteria, drafts suggested fixes, and applies them only after your approval. No black-box overlay. You stay in control.
+
+= Why AllAccessible is different =
+
+* **Native WordPress UI** — accessibility scores in the editor, in your page list, and in the admin bar. Not just a frontend widget.
+* **Agentic AI remediation, human-approved** — AI suggests fixes; your team approves. Nothing changes your site without sign-off.
+* **Unlimited AI interactions** — descriptive alt text and agentic fix proposals for every image and accessibility issue on paid plans. Free plans include a 10 alt-text + 5 fix preview so you can feel the value before upgrading.
+* **Real audits, real scores** — per-page and site-wide scoring against WCAG success criteria, not a badge with nothing behind it.
+* **Scan any page on demand** — trigger a fresh accessibility check from the editor or admin bar.
+
+= Proven at scale =
+
+* **5+ years** building accessibility tooling for the web
+* **Thousands of websites** running AllAccessible today
+* **220 million+ accessibility interactions every month** across the sites we serve
 
 Boost your website's accessibility with AllAccessible's extensive features:
 
-== Compliance Standards ==
+== Accessibility Standards ==
 
-AllAccessible helps your website meet international accessibility standards including:
+AllAccessible helps you work toward the accessibility guidelines referenced by major standards, including:
 
 • ADA (Americans with Disabilities Act)
 • WCAG 2.0, 2.1, & 2.2 (Level AA/AAA)
@@ -31,7 +49,7 @@ AllAccessible helps your website meet international accessibility standards incl
 • Australian DDA
 • California Unruh Act
 
-By implementing AllAccessible, you're not only enhancing user experience but also reducing the risk of accessibility-related legal issues.
+AllAccessible improves and monitors your site's accessibility against these guidelines. How fully any standard applies depends on your content, so AllAccessible is a tool to help you get there — not a guarantee of legal outcomes.
 
 == ♿ Accessibility Widget ♿ ==
 Empower all visitors to personalize their browsing experience on your website, with our dynamic Accessibility Widget that includes:
@@ -42,7 +60,7 @@ Orientation Control Features
 
 == AllAccessible Premium: Unlock a New Dimension in Accessibility ==
 
-The AllAccessible Premium subscription unleashes a plethora of additional features to optimize your website for individuals with disabilities, such as visual impairment, hearing loss, or mobility difficulties. AllAccessible strictly adheres to WCAG, Section 508, ADA, and ACT compliance rules and best practices. With AllAccessible Premium, you amplify your website's accessibility, reduce legal risk, enhance your brand image, extend your outreach, and foster innovation.
+The AllAccessible Premium subscription unleashes a plethora of additional features to optimize your website for individuals with disabilities, such as visual impairment, hearing loss, or mobility difficulties. AllAccessible's checks follow WCAG, Section 508, and ADA guidelines and accessibility best practices. With AllAccessible Premium, you amplify your website's accessibility, enhance your brand image, extend your outreach, and foster innovation.
 
 Benefit from a user-friendly interface that allows swift plugin configuration to meet your unique needs.
 
@@ -66,7 +84,7 @@ AllAccessible Premium includes AllAccessible AI — agentic AI that continuously
 
 AllAccessible agents handle the heavy lifting:
 
-*	Auto-suggest missing image alt text descriptions
+*	Auto-suggest missing image alt text descriptions (unlimited on every paid plan)
 *	Validate Page Structure and Role definitions
 *	Validate and correct Link Names
 *	Generate ARIA Labels for screen reader optimization
@@ -136,13 +154,39 @@ No! This plugin will allow your visitors to adjust their viewing experience on t
 
 We allow for unlimited subdomains, so one license can be applied to all of your Multisite websites.
 
+= Does AllAccessible help with WCAG and ADA accessibility? =
+
+Yes. AllAccessible checks your pages against a broad set of WCAG 2.0, 2.1, and 2.2 success criteria (Level AA/AAA) and surfaces a per-page accessibility score right inside the WordPress editor and on your Posts/Pages lists. Premium plans add agentic AI remediation that drafts suggested fixes for detected issues — you review and approve each one before it goes live. AllAccessible's checks also align with ADA, Section 508, and European Accessibility Act (EAA / EN 301 549) guidance. Accessibility depends on your content and how the standards apply to your site, so AllAccessible is a tool to help you improve and monitor it — not a one-click guarantee.
+
+= Does the AI write image alt text automatically? =
+
+Yes. AllAccessible AI scans the images on your site and drafts descriptive alt text for each one. You can review, edit, or override any suggestion from the Image Manager inside wp-admin before it publishes. This helps address WCAG 1.1.1 (Non-text Content) without writing alt text by hand. Free plans include a 10-image preview so you can see real AI output drafted for your real images; every paid plan unlocks unlimited AI interactions across alt text and agentic fix proposals.
+
+= Is this an accessibility overlay? =
+
+No. Most accessibility plugins are frontend-only overlay widgets. AllAccessible is WordPress-native: accessibility scores live in your editor, in your page list, and in the admin bar, and our agentic AI remediation only changes your site after you approve each fix. The frontend widget is one feature, not the whole product.
+
+= How do I run an accessibility scan? =
+
+Connect your site, and AllAccessible automatically checks your pages. You can also trigger a fresh check on demand — from the post editor's accessibility panel, or from the "Scan this page" option in the WordPress admin bar on any frontend page.
+
+= What is the European Accessibility Act (EAA)? =
+
+The EAA (EN 301 549) is the EU accessibility standard taking effect for many businesses. AllAccessible helps you work toward EAA accessibility the same way it does WCAG and ADA — automated checks against success criteria, per-page scoring, unlimited AI interactions on paid plans, and human-approved remediation.
+
+= Does AllAccessible send any data externally? =
+
+License-bound features (scanning, AI remediation, image descriptions) connect to AllAccessible's service, which requires an account. Creating an account means agreeing to our Terms and Privacy Policy, which govern all data handling. The free accessibility widget runs entirely in the visitor's browser. See the "Privacy & External Services" section below for full detail.
+
 == Screenshots ==
 
-1. Frontend accessibility widget allows users to modify their view of the website.
-2. The widget is customizable in the WordPress Admin area.
-3. Access to complete website accessibility audits in the AllAccessible dashboard.
-4. Widget and Accessibility engagement stats available in the AllAccessible dashboard.
-5. Manage Ai Remediation elements in the AllAccessible dashboard.
+1. Accessibility dashboard inside WordPress — live WCAG score, pages audited, pending fixes, and per-rule issues, all without leaving wp-admin.
+2. Per-page accessibility score in the post/page editor — see issues and rescan the page while you edit.
+3. Accessibility score column on your Posts and Pages lists — spot problem pages at a glance.
+4. Agentic AI fixes — AllAccessible AI proposes WCAG remediations; you review and approve before anything goes live.
+5. AI interactions — alt text and agentic fixes drafted automatically (unlimited on paid plans; 10+5 preview on free).
+6. Widget Customizer — control the frontend accessibility widget's color, size, position, icon, and shape.
+7. Frontend accessibility widget — visitors personalize content, color, orientation, and design for their needs.
 
 == Support ==
 
@@ -167,7 +211,41 @@ Our goal is to simplify content management between both platforms. Please share 
 
 6. Verify the plugin is working on the homepage of the website.
 
+== Privacy & External Services ==
+
+AllAccessible is a connected service plugin. To deliver accessibility scanning, agentic AI remediation, and the accessibility widget, the plugin communicates with AllAccessible's servers. This section discloses what data is sent and where, per WordPress.org guidelines.
+
+= What the plugin connects to =
+
+* **AllAccessible API** (app.allaccessible.org) — validates your license, retrieves widget settings, serves accessibility audit scores, and accepts manual edits (alt text, fix approvals). Requests are authenticated and only made when you use the plugin's admin screens or when the widget loads on your site.
+
+= Data sent =
+
+* **License & account identification** — your AllAccessible account ID and site URL, so the service knows which account a request belongs to.
+* **Accessibility audit data** — when the widget scans a page, detected accessibility issues are sent so the service can compute scores and generate remediation suggestions.
+* **Error & diagnostic information** — if the plugin encounters an error, anonymized diagnostic details (error message, plugin version, WordPress/PHP version, your account ID) are sent to our error-monitoring service (Sentry) so we can detect and fix problems. **This is disclosed in our Privacy Policy and can be disabled** under Account → Advanced → "Disable error reporting to AllAccessible."
+
+= No data is sent without an account =
+
+The free accessibility widget runs entirely in the visitor's browser and adjusts their viewing experience only. License-bound features (AI remediation, scanning, image descriptions) require an AllAccessible account; creating one means agreeing to our Terms and Privacy Policy, which govern all data handling.
+
+= Legal =
+
+* Terms & Conditions: https://www.allaccessible.org/terms-conditions
+* Privacy Policy: https://www.allaccessible.org/privacy-policy
+* GDPR: https://www.allaccessible.org/gdpr
+* Trust Center: https://www.allaccessible.org/trust-center
+
 == Changelog ==
+
+= 2.1.0 =
+* New: Unlimited AI interactions on every paid plan — alt text drafts, agentic fix proposals, no monthly cap.
+* New: WordPress admin bar entry — quick access to Dashboard, Audits & Fixes, Settings, plus "Scan this page" from any frontend page.
+* New: "Rescan this page" button in the post/page editor accessibility panel.
+* New: Per-page accessibility score column on All Posts / All Pages, with score badges.
+* New: Image Descriptions manager — review and override AI-authored alt text.
+* New: Optional error reporting to help us detect and fix issues faster (disclosed in Privacy Policy; disable under Account → Advanced).
+* Design system v2 rollout across every admin screen (Dashboard, Account, Widget Customizer, Agentic Fixes, Image Manager, Onboarding) — high-contrast dark mode, accessible button colors, brand-aligned cards.
 
 = 2.0.6 =
 * Compatibility: tested up to WordPress 7.0.

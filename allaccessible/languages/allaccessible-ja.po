@@ -1,0 +1,4483 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: support@allaccessible.org\n"
+"POT-Creation-Date: 2026-06-03 13:39-0400\n"
+"PO-Revision-Date: 2026-06-03 13:45-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: .\n"
+
+#: allaccessible.php:166
+msgid "Account settings saved successfully"
+msgstr "アカウント設定が正常に保存されました"
+
+#: allaccessible.php:200
+msgid "Unauthorized access"
+msgstr "不正アクセス"
+
+#: allaccessible.php:221
+msgid "Plugin data has been reset successfully"
+msgstr "プラグインデータは正常にリセットされました"
+
+#: allaccessible.php:235 allaccessible.php:323 allaccessible.php:404
+#: inc/SettingsPage.php:1894
+msgid "Unauthorized"
+msgstr "無許可"
+
+#: allaccessible.php:363
+msgid "Still finishing setup — wait a few seconds and try again."
+msgstr "セットアップをまだ完了中です。数秒待ってからもう一度お試しください。"
+
+#: allaccessible.php:368
+msgid "Scan queued. Results appear in 2-5 minutes."
+msgstr "スキャンをキューに追加しました。結果は2～5分で表示されます。"
+
+#: inc/AdminBar.php:64
+msgid "Scan this page now"
+msgstr "今すぐこのページをスキャン"
+
+#: inc/AdminBar.php:77
+msgid "View page report"
+msgstr "ページレポートを表示"
+
+#: inc/AdminBar.php:97 inc/SettingsPage.php:48 inc/SettingsPage.php:49
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+#: inc/AdminBar.php:103
+msgid "Audits & Fixes"
+msgstr "監査と修正"
+
+#: inc/AdminBar.php:109 inc/WidgetCustomizer.php:190
+msgid "Settings"
+msgstr "設定"
+
+#: inc/AdminBar.php:116 inc/AgenticFixesPage.php:162
+#: inc/DashboardLayout.php:290 inc/SettingsPage.php:389
+msgid "Open dashboard"
+msgstr "ダッシュボードを開く"
+
+#: inc/AdminBar.php:172 inc/EditorMetaBox.php:440
+msgid "Scanning page…"
+msgstr "ページをスキャン中…"
+
+#: inc/AdminBar.php:173
+#, php-format
+msgid "Scan complete. Score: %d%%"
+msgstr "スキャン完了。スコア：%d%%"
+
+#: inc/AdminBar.php:174
+msgid "Scan complete. Refresh to see updated score."
+msgstr "スキャン完了。更新されたスコアを確認するには再読み込みしてください。"
+
+#: inc/AdminBar.php:175 inc/EditorMetaBox.php:444
+msgid "Scan failed. Try again or check the dashboard."
+msgstr ""
+"スキャンに失敗しました。もう一度試すか、ダッシュボードを確認してください。"
+
+#: inc/AdminBar.php:176
+msgid "Scan is still running — check back in a minute."
+msgstr "スキャンはまだ実行中です — 1分後にもう一度確認してください。"
+
+#: inc/AdminBar.php:177
+msgid "Could not start scan: "
+msgstr "スキャンを開始できませんでした: "
+
+#: inc/AdminBar.php:178 inc/EditorMetaBox.php:446
+msgid "Scan rate limit reached. Try again later."
+msgstr ""
+"スキャンのレート制限に達しました。しばらくしてからもう一度お試しください。"
+
+#: inc/AdminBar.php:341 inc/AdminBar.php:375
+msgid "Permission denied."
+msgstr "アクセス拒否されました。"
+
+#: inc/AdminBar.php:347
+msgid "Missing page URL."
+msgstr "ページURLがありません。"
+
+#: inc/AdminBar.php:382
+msgid "Missing job ID."
+msgstr "ジョブIDがありません。"
+
+#: inc/AgenticFixes/Labels.php:23
+msgid "Missing image description"
+msgstr "画像の説明がありません"
+
+#: inc/AgenticFixes/Labels.php:24
+msgid "Button without label"
+msgstr "ラベルのないボタン"
+
+#: inc/AgenticFixes/Labels.php:25
+msgid "Form field without label"
+msgstr "ラベルのないフォームフィールド"
+
+#: inc/AgenticFixes/Labels.php:26
+msgid "Missing page language"
+msgstr "ページ言語が設定されていません"
+
+#: inc/AgenticFixes/Labels.php:27
+msgid "Link without text"
+msgstr "テキストのないリンク"
+
+#: inc/AgenticFixes/Labels.php:28
+msgid "ARIA labeling issue"
+msgstr "ARIA ラベリングの問題"
+
+#: inc/AgenticFixes/Labels.php:29
+msgid "Heading hierarchy issue"
+msgstr "見出し階層の問題"
+
+#: inc/AgenticFixes/Labels.php:30 inc/AgenticFixes/Labels.php:33
+msgid "Other accessibility issue"
+msgstr "その他のアクセシビリティの問題"
+
+#: inc/AgenticFixes/Labels.php:44 inc/AgenticFixesPage.php:241
+msgid "Pending review"
+msgstr "レビュー待ち"
+
+#: inc/AgenticFixes/Labels.php:45
+msgid "Approved"
+msgstr "承認済み"
+
+#: inc/AgenticFixes/Labels.php:46
+msgid "Active"
+msgstr "有効"
+
+#: inc/AgenticFixes/Labels.php:47 inc/AgenticFixesPage.php:249
+msgid "Reverted"
+msgstr "元に戻しました"
+
+#: inc/AgenticFixes/Labels.php:61 inc/AgenticFixes/Labels.php:67
+#: inc/AgenticFixesPage.php:347 inc/AgenticFixesPage.php:452
+msgid "AllAccessible agents"
+msgstr "AllAccessible エージェント"
+
+#: inc/AgenticFixes/Labels.php:62
+msgid "Automated rule check"
+msgstr "自動ルールチェック"
+
+#: inc/AgenticFixes/Labels.php:63
+msgid "Compliance scanner"
+msgstr "コンプライアンススキャナー"
+
+#: inc/AgenticFixes/Labels.php:64
+msgid "Manual review"
+msgstr "手動レビュー"
+
+#: inc/AgenticFixes/Labels.php:80
+msgid "Suggested alt text for image"
+msgstr "画像用の推奨代替テキスト"
+
+#: inc/AgenticFixes/Labels.php:81
+msgid "Suggested label for button"
+msgstr "ボタン用の推奨ラベル"
+
+#: inc/AgenticFixes/Labels.php:82
+msgid "Suggested label for form field"
+msgstr "フォームフィールド用の推奨ラベル"
+
+#: inc/AgenticFixes/Labels.php:83
+msgid "Set page language attribute"
+msgstr "ページの言語属性を設定する"
+
+#: inc/AgenticFixes/Labels.php:84
+msgid "Suggested text for link"
+msgstr "リンク用の推奨テキスト"
+
+#: inc/AgenticFixes/Labels.php:85
+msgid "Correct ARIA role assignment"
+msgstr "ARIA ロールの正しい割り当て"
+
+#: inc/AgenticFixes/Labels.php:86
+msgid "Fix heading order"
+msgstr "見出しの順序を修正する"
+
+#: inc/AgenticFixes/Labels.php:87 inc/AgenticFixes/Labels.php:90
+msgid "Accessibility fix suggested"
+msgstr "アクセシビリティ修正の提案"
+
+#: inc/AgenticFixes/Labels.php:122
+msgid "Non-text Content"
+msgstr "非テキストコンテンツ"
+
+#: inc/AgenticFixes/Labels.php:123
+msgid "Audio-only and Video-only (Prerecorded)"
+msgstr "音声のみおよび映像のみ（収録済み）"
+
+#: inc/AgenticFixes/Labels.php:124
+msgid "Captions (Prerecorded)"
+msgstr "キャプション（事前収録）"
+
+#: inc/AgenticFixes/Labels.php:125
+msgid "Audio Description or Media Alternative (Prerecorded)"
+msgstr "音声解説またはメディア代替（収録済み）"
+
+#: inc/AgenticFixes/Labels.php:126
+msgid "Captions (Live)"
+msgstr "キャプション（ライブ）"
+
+#: inc/AgenticFixes/Labels.php:127
+msgid "Audio Description (Prerecorded)"
+msgstr "音声解説（事前収録）"
+
+#: inc/AgenticFixes/Labels.php:128
+msgid "Sign Language (Prerecorded)"
+msgstr "手話（事前収録）"
+
+#: inc/AgenticFixes/Labels.php:129
+msgid "Extended Audio Description (Prerecorded)"
+msgstr "拡張音声解説（事前収録）"
+
+#: inc/AgenticFixes/Labels.php:130
+msgid "Media Alternative (Prerecorded)"
+msgstr "メディアに対する代替（事前収録）"
+
+#: inc/AgenticFixes/Labels.php:131
+msgid "Audio-only (Live)"
+msgstr "音声のみ（ライブ）"
+
+#: inc/AgenticFixes/Labels.php:132
+msgid "Info and Relationships"
+msgstr "情報および関係性"
+
+#: inc/AgenticFixes/Labels.php:133
+msgid "Meaningful Sequence"
+msgstr "意味のある順序"
+
+#: inc/AgenticFixes/Labels.php:134
+msgid "Sensory Characteristics"
+msgstr "感覚的な特徴"
+
+#: inc/AgenticFixes/Labels.php:135
+msgid "Orientation"
+msgstr "画面の向き"
+
+#: inc/AgenticFixes/Labels.php:136
+msgid "Identify Input Purpose"
+msgstr "入力目的の特定"
+
+#: inc/AgenticFixes/Labels.php:137
+msgid "Identify Purpose"
+msgstr "目的の特定"
+
+#: inc/AgenticFixes/Labels.php:138
+msgid "Use of Color"
+msgstr "色の使用"
+
+#: inc/AgenticFixes/Labels.php:139
+msgid "Audio Control"
+msgstr "音声コントロール"
+
+#: inc/AgenticFixes/Labels.php:140
+msgid "Contrast (Minimum)"
+msgstr "コントラスト（最低限）"
+
+#: inc/AgenticFixes/Labels.php:141
+msgid "Resize Text"
+msgstr "テキストのサイズ変更"
+
+#: inc/AgenticFixes/Labels.php:142
+msgid "Images of Text"
+msgstr "テキスト画像"
+
+#: inc/AgenticFixes/Labels.php:143
+msgid "Contrast (Enhanced)"
+msgstr "コントラスト（強化）"
+
+#: inc/AgenticFixes/Labels.php:144
+msgid "Low or No Background Audio"
+msgstr "背景音声が少ない、またはない"
+
+#: inc/AgenticFixes/Labels.php:145
+msgid "Visual Presentation"
+msgstr "視覚的提示"
+
+#: inc/AgenticFixes/Labels.php:146
+msgid "Images of Text (No Exception)"
+msgstr "テキスト画像（例外なし）"
+
+#: inc/AgenticFixes/Labels.php:147
+msgid "Reflow"
+msgstr "リフロー"
+
+#: inc/AgenticFixes/Labels.php:148
+msgid "Non-text Contrast"
+msgstr "非テキストのコントラスト"
+
+#: inc/AgenticFixes/Labels.php:149
+msgid "Text Spacing"
+msgstr "テキストの間隔"
+
+#: inc/AgenticFixes/Labels.php:150
+msgid "Content on Hover or Focus"
+msgstr "ホバーまたはフォーカス時のコンテンツ"
+
+#: inc/AgenticFixes/Labels.php:152
+msgid "Keyboard"
+msgstr "キーボード"
+
+#: inc/AgenticFixes/Labels.php:153
+msgid "No Keyboard Trap"
+msgstr "キーボードトラップなし"
+
+#: inc/AgenticFixes/Labels.php:154
+msgid "Keyboard (No Exception)"
+msgstr "キーボード（例外なし）"
+
+#: inc/AgenticFixes/Labels.php:155
+msgid "Character Key Shortcuts"
+msgstr "文字キーのショートカット"
+
+#: inc/AgenticFixes/Labels.php:156
+msgid "Timing Adjustable"
+msgstr "タイミングを調整可能"
+
+#: inc/AgenticFixes/Labels.php:157
+msgid "Pause, Stop, Hide"
+msgstr "一時停止、停止、非表示"
+
+#: inc/AgenticFixes/Labels.php:158
+msgid "No Timing"
+msgstr "時間制限なし"
+
+#: inc/AgenticFixes/Labels.php:159
+msgid "Interruptions"
+msgstr "中断"
+
+#: inc/AgenticFixes/Labels.php:160
+msgid "Re-authenticating"
+msgstr "再認証中"
+
+#: inc/AgenticFixes/Labels.php:161
+msgid "Timeouts"
+msgstr "タイムアウト"
+
+#: inc/AgenticFixes/Labels.php:162
+msgid "Three Flashes or Below Threshold"
+msgstr "3回の閃光以下またはしきい値未満"
+
+#: inc/AgenticFixes/Labels.php:163
+msgid "Three Flashes"
+msgstr "3回の点滅"
+
+#: inc/AgenticFixes/Labels.php:164
+msgid "Animation from Interactions"
+msgstr "インタラクションによるアニメーション"
+
+#: inc/AgenticFixes/Labels.php:165
+msgid "Bypass Blocks"
+msgstr "ブロックの回避"
+
+#: inc/AgenticFixes/Labels.php:166
+msgid "Page Titled"
+msgstr "ページにタイトルがある"
+
+#: inc/AgenticFixes/Labels.php:167
+msgid "Focus Order"
+msgstr "フォーカス順序"
+
+#: inc/AgenticFixes/Labels.php:168
+msgid "Link Purpose (In Context)"
+msgstr "リンクの目的（文脈内）"
+
+#: inc/AgenticFixes/Labels.php:169
+msgid "Multiple Ways"
+msgstr "複数の方法"
+
+#: inc/AgenticFixes/Labels.php:170
+msgid "Headings and Labels"
+msgstr "見出しとラベル"
+
+#: inc/AgenticFixes/Labels.php:171
+msgid "Focus Visible"
+msgstr "フォーカスの可視化"
+
+#: inc/AgenticFixes/Labels.php:172
+msgid "Location"
+msgstr "場所"
+
+#: inc/AgenticFixes/Labels.php:173
+msgid "Link Purpose (Link Only)"
+msgstr "リンクの目的（リンクのみ）"
+
+#: inc/AgenticFixes/Labels.php:174
+msgid "Section Headings"
+msgstr "セクション見出し"
+
+#: inc/AgenticFixes/Labels.php:175
+msgid "Focus Not Obscured (Minimum)"
+msgstr "フォーカスが隠れない（最小）"
+
+#: inc/AgenticFixes/Labels.php:176
+msgid "Focus Not Obscured (Enhanced)"
+msgstr "フォーカスが隠れない（強化）"
+
+#: inc/AgenticFixes/Labels.php:177
+msgid "Focus Appearance"
+msgstr "フォーカスの外観"
+
+#: inc/AgenticFixes/Labels.php:178
+msgid "Pointer Gestures"
+msgstr "ポインターのジェスチャー"
+
+#: inc/AgenticFixes/Labels.php:179
+msgid "Pointer Cancellation"
+msgstr "ポインターのキャンセル"
+
+#: inc/AgenticFixes/Labels.php:180
+msgid "Label in Name"
+msgstr "名前に含まれるラベル"
+
+#: inc/AgenticFixes/Labels.php:181
+msgid "Motion Actuation"
+msgstr "動作による起動"
+
+#: inc/AgenticFixes/Labels.php:182
+msgid "Target Size (Enhanced)"
+msgstr "ターゲットサイズ（強化）"
+
+#: inc/AgenticFixes/Labels.php:183
+msgid "Concurrent Input Mechanisms"
+msgstr "同時入力メカニズム"
+
+#: inc/AgenticFixes/Labels.php:184
+msgid "Dragging Movements"
+msgstr "ドラッグ操作"
+
+#: inc/AgenticFixes/Labels.php:185
+msgid "Target Size (Minimum)"
+msgstr "ターゲットサイズ（最小）"
+
+#: inc/AgenticFixes/Labels.php:187
+msgid "Language of Page"
+msgstr "ページの言語"
+
+#: inc/AgenticFixes/Labels.php:188
+msgid "Language of Parts"
+msgstr "部分の言語"
+
+#: inc/AgenticFixes/Labels.php:189
+msgid "Unusual Words"
+msgstr "一般的でない単語"
+
+#: inc/AgenticFixes/Labels.php:190
+msgid "Abbreviations"
+msgstr "略語"
+
+#: inc/AgenticFixes/Labels.php:191
+msgid "Reading Level"
+msgstr "読みやすさのレベル"
+
+#: inc/AgenticFixes/Labels.php:192
+msgid "Pronunciation"
+msgstr "発音"
+
+#: inc/AgenticFixes/Labels.php:193
+msgid "On Focus"
+msgstr "フォーカス時"
+
+#: inc/AgenticFixes/Labels.php:194
+msgid "On Input"
+msgstr "入力時"
+
+#: inc/AgenticFixes/Labels.php:195
+msgid "Consistent Navigation"
+msgstr "一貫したナビゲーション"
+
+#: inc/AgenticFixes/Labels.php:196
+msgid "Consistent Identification"
+msgstr "一貫した識別"
+
+#: inc/AgenticFixes/Labels.php:197
+msgid "Change on Request"
+msgstr "要求に応じた変更"
+
+#: inc/AgenticFixes/Labels.php:198
+msgid "Consistent Help"
+msgstr "一貫したヘルプ"
+
+#: inc/AgenticFixes/Labels.php:199
+msgid "Error Identification"
+msgstr "エラーの特定"
+
+#: inc/AgenticFixes/Labels.php:200
+msgid "Labels or Instructions"
+msgstr "ラベルまたは説明"
+
+#: inc/AgenticFixes/Labels.php:201
+msgid "Error Suggestion"
+msgstr "エラーの提案"
+
+#: inc/AgenticFixes/Labels.php:202
+msgid "Error Prevention (Legal, Financial, Data)"
+msgstr "エラー防止（法的、財務、データ）"
+
+#: inc/AgenticFixes/Labels.php:203
+msgid "Help"
+msgstr "ヘルプ"
+
+#: inc/AgenticFixes/Labels.php:204
+msgid "Error Prevention (All)"
+msgstr "エラー防止（すべて）"
+
+#: inc/AgenticFixes/Labels.php:205
+msgid "Redundant Entry"
+msgstr "重複入力"
+
+#: inc/AgenticFixes/Labels.php:206
+msgid "Accessible Authentication (Minimum)"
+msgstr "アクセシブルな認証（最低限）"
+
+#: inc/AgenticFixes/Labels.php:207
+msgid "Accessible Authentication (Enhanced)"
+msgstr "アクセシブルな認証（強化）"
+
+#: inc/AgenticFixes/Labels.php:209
+msgid "Parsing"
+msgstr "解析"
+
+#: inc/AgenticFixes/Labels.php:210
+msgid "Name, Role, Value"
+msgstr "名前、役割、値"
+
+#: inc/AgenticFixes/Labels.php:211
+msgid "Status Messages"
+msgstr "ステータスメッセージ"
+
+#: inc/AgenticFixes/Labels.php:224
+msgid "Let AllAccessible agents fix these for you"
+msgstr "AllAccessible エージェントにこれらの修正を任せましょう"
+
+#: inc/AgenticFixes/Labels.php:225
+msgid ""
+"Premium plans include human-in-the-loop agentic AI remediation. Your team "
+"approves, agents do the work."
+msgstr ""
+"プレミアムプランには、人間が介在するエージェント型 AI による修復が含まれま"
+"す。チームが承認し、エージェントが作業します。"
+
+#: inc/AgenticFixesDashboardWidget.php:27
+msgid "AllAccessible — Agentic Fixes"
+msgstr "AllAccessible — エージェントによる修正"
+
+#: inc/AgenticFixesDashboardWidget.php:34
+msgid "Plugin not fully initialized. Please reload."
+msgstr "プラグインが完全に初期化されていません。再読み込みしてください。"
+
+#: inc/AgenticFixesDashboardWidget.php:63
+msgid "Upgrade to apply fixes"
+msgstr "アップグレードして修正を適用"
+
+#: inc/AgenticFixesDashboardWidget.php:64 inc/DashboardLayout.php:243
+msgid "Review fixes"
+msgstr "修正内容を確認"
+
+#: inc/AgenticFixesDashboardWidget.php:70
+msgid "No scans yet. Submit your sitemap from the AllAccessible page to start."
+msgstr ""
+"まだスキャンがありません。AllAccessible ページからサイトマップを送信して開始"
+"してください。"
+
+#: inc/AgenticFixesDashboardWidget.php:74
+msgid "Go to AllAccessible"
+msgstr "AllAccessibleへ移動"
+
+#: inc/AgenticFixesDashboardWidget.php:87
+msgid "accessibility issue detected"
+msgid_plural "accessibility issues detected"
+msgstr[0] "アクセシビリティの問題を検出"
+
+#. translators: %s: count of pages scanned
+#: inc/AgenticFixesDashboardWidget.php:97
+#, php-format
+msgid "%s page scanned"
+msgid_plural "%s pages scanned"
+msgstr[0] "%sページをスキャンしました"
+
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/AgenticFixesDashboardWidget.php:105
+#, php-format
+msgid "last scan %s ago"
+msgstr "前回のスキャンから%s経過"
+
+#. translators: %s: count of manifests waiting on approval
+#: inc/AgenticFixesDashboardWidget.php:118
+#, php-format
+msgid "%s manifest pending your approval"
+msgid_plural "%s manifests pending your approval"
+msgstr[0] "%s 件のマニフェストが承認待ちです"
+
+#: inc/AgenticFixesDashboardWidget.php:127
+msgid ""
+"AllAccessible agents can auto-fix these. Upgrade to enable agentic AI "
+"remediation."
+msgstr ""
+"AllAccessible エージェントがこれらを自動修正できます。アップグレードして、"
+"エージェント型 AI による修復を有効にしてください。"
+
+#: inc/AgenticFixesDashboardWidget.php:145
+msgid "Could not load fixes summary right now."
+msgstr "現在、修正内容の概要を読み込めませんでした。"
+
+#: inc/AgenticFixesPage.php:27 inc/AgenticFixesPage.php:28
+#: inc/AgenticFixesPage.php:140 inc/AgenticFixesPage.php:667
+#: inc/SettingsPage.php:499 inc/SettingsPage.php:603
+msgid "Agentic Fixes"
+msgstr "エージェント型修正"
+
+#: inc/AgenticFixesPage.php:137 inc/AgenticFixesPage.php:142
+#: inc/AgenticFixesPage.php:665 inc/AgenticFixesPage.php:680
+#: inc/AgenticFixesPage.php:857 inc/ConversionCTA.php:119
+#: inc/EditorMetaBox.php:271 inc/ImageManagerPage.php:160
+#: inc/OnboardingWizard.php:288 inc/SettingsPage.php:416
+#: inc/SettingsPage.php:490 inc/SettingsPage.php:574 inc/SettingsPage.php:1969
+#: inc/UsageDashboard.php:142 inc/WidgetCustomizer.php:211
+msgid "AllAccessible AI"
+msgstr "AllAccessible AI"
+
+#: inc/AgenticFixesPage.php:146
+msgid "Beta feature"
+msgstr "ベータ機能"
+
+#: inc/AgenticFixesPage.php:147 inc/SettingsPage.php:1155
+msgid "Beta"
+msgstr "ベータ"
+
+#: inc/AgenticFixesPage.php:152
+msgid ""
+"AllAccessible agents propose accessibility fixes. You review and approve "
+"before anything goes live on your site."
+msgstr ""
+"AllAccessible のエージェントがアクセシビリティ修正を提案します。サイトに反映"
+"される前に、あなたが確認して承認します。"
+
+#: inc/AgenticFixesPage.php:169 inc/ConnectionStatusCard.php:71
+msgid "Could not reach AllAccessible right now."
+msgstr "現在AllAccessibleに接続できません。"
+
+#: inc/AgenticFixesPage.php:182
+msgid "score"
+msgstr "スコア"
+
+#: inc/AgenticFixesPage.php:186
+msgid "pages audited"
+msgstr "監査済みページ数"
+
+#. translators: %s: human-readable time difference (e.g. "2 hours")
+#. translators: %s: human-readable time diff
+#: inc/AgenticFixesPage.php:194 inc/ScanTriggerPanel.php:86
+#, php-format
+msgid "Last scan %s ago"
+msgstr "前回のスキャンは%s前"
+
+#: inc/AgenticFixesPage.php:245
+msgid "Approved & applied"
+msgstr "承認して適用しました"
+
+#: inc/AgenticFixesPage.php:254
+msgid "Filter Agentic Fixes by status"
+msgstr "ステータスで Agentic Fixes を絞り込む"
+
+#: inc/AgenticFixesPage.php:330
+msgid "How this works"
+msgstr "仕組み"
+
+#: inc/AgenticFixesPage.php:332
+msgid ""
+"AllAccessible agents review your site and propose fixes for accessibility "
+"issues. Nothing changes on your site until you approve. You can edit any "
+"suggestion before approving, and you can revert any approved fix at any time."
+msgstr ""
+"AllAccessible エージェントがサイトを確認し、アクセシビリティの問題に対する修"
+"正案を提案します。承認するまでサイト上の内容は変更されません。承認前にどの提"
+"案も編集でき、承認済みの修正はいつでも元に戻せます。"
+
+#. translators: 1: count of fixes; 2: rule type label (e.g., "Missing image description")
+#: inc/AgenticFixesPage.php:353
+#, php-format
+msgid "%1$s pending fixes for \"%2$s\". Approve them all in one click."
+msgstr ""
+"\"%2$s\" の修正が %1$s 件保留中です。ワンクリックですべて承認できます。"
+
+#. translators: 1: count; 2: rule label
+#: inc/AgenticFixesPage.php:366
+#, php-format
+msgid "Bulk approve %1$s %2$s fixes"
+msgstr "%1$s %2$s 件の修正を一括承認"
+
+#. translators: %s: count of fixes
+#: inc/AgenticFixesPage.php:373
+#, php-format
+msgid "Bulk approve all %s"
+msgstr "%s をすべて一括承認"
+
+#. translators: %s: WCAG success criterion number (e.g., "1.1.1")
+#: inc/AgenticFixesPage.php:426
+#, php-format
+msgid "WCAG %s"
+msgstr "WCAG %s"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:439
+#, php-format
+msgid "confidence: %s percent"
+msgstr "信頼度: %s パーセント"
+
+#. translators: %s: confidence percentage 0-100
+#: inc/AgenticFixesPage.php:445
+#, php-format
+msgid "%s%% confidence"
+msgstr "%s%% c信頼度"
+
+#: inc/AgenticFixesPage.php:463
+msgid "What's wrong"
+msgstr "問題点"
+
+#. translators: 1: rationale phrase (e.g., "Suggested alt text for image"); 2: selector
+#: inc/AgenticFixesPage.php:469
+#, php-format
+msgid "%1$s on element %2$s"
+msgstr "要素 %2$s の %1$s"
+
+#: inc/AgenticFixesPage.php:481
+msgid "Proposed fix"
+msgstr "提案された修正"
+
+#: inc/AgenticFixesPage.php:487
+msgid "Edit proposed fix value"
+msgstr "提案された修正値を編集"
+
+#: inc/AgenticFixesPage.php:500
+msgid "page affected"
+msgid_plural "pages affected"
+msgstr[0] "影響を受けるページ"
+
+#. translators: %s: formatted date (e.g., "2026-05-23")
+#: inc/AgenticFixesPage.php:509
+#, php-format
+msgid "Applied on %s"
+msgstr "%s に適用済み"
+
+#. translators: %s: count of pages where this fix appears
+#: inc/AgenticFixesPage.php:525
+#, php-format
+msgid "Where it appears (%s)"
+msgstr "表示箇所（%s）"
+
+#: inc/AgenticFixesPage.php:544
+msgid ""
+"Open this page with the affected element scrolled into view and highlighted"
+msgstr "影響を受ける要素が表示され、ハイライトされた状態でこのページを開く"
+
+#: inc/AgenticFixesPage.php:545
+msgid "View on site"
+msgstr "サイトで表示"
+
+#: inc/AgenticFixesPage.php:552 inc/ImageManagerPage.php:347
+msgid "Edit"
+msgstr "編集"
+
+#. translators: %s: count of additional pages not listed
+#: inc/AgenticFixesPage.php:562
+#, php-format
+msgid "+%s more"
+msgstr "＋%s"
+
+#: inc/AgenticFixesPage.php:579
+msgid "Skip"
+msgstr "スキップ"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:587
+#, php-format
+msgid "Save edit and apply to %2$s pages for %1$s"
+msgstr "編集を保存して、%1$s の %2$s ページに適用"
+
+#: inc/AgenticFixesPage.php:591
+msgid "Save edit"
+msgstr "編集を保存"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:598
+#, php-format
+msgid "Approve %1$s on %2$s pages"
+msgstr "%2$s ページで %1$s を承認"
+
+#. translators: %s: count of pages
+#: inc/AgenticFixesPage.php:605
+#, php-format
+msgid "Approve on %s page"
+msgid_plural "Approve on %s pages"
+msgstr[0] "%s ページで承認"
+
+#: inc/AgenticFixesPage.php:613
+msgid "Live on your site"
+msgstr "サイトで公開中"
+
+#. translators: 1: rule label; 2: page count
+#: inc/AgenticFixesPage.php:618
+#, php-format
+msgid "Revert %1$s on %2$s pages"
+msgstr "%2$s ページで %1$s を元に戻す"
+
+#: inc/AgenticFixesPage.php:622 inc/AgenticFixesPage.php:902
+msgid "Revert"
+msgstr "元に戻す"
+
+#: inc/AgenticFixesPage.php:626
+msgid "Not applied"
+msgstr "未適用"
+
+#: inc/AgenticFixesPage.php:668 inc/SettingsPage.php:470
+msgid "Legacy widget"
+msgstr "レガシーウィジェット"
+
+#: inc/AgenticFixesPage.php:671
+msgid "Agentic AI remediation is not available on your current plan."
+msgstr "エージェント型AIによる修正は、現在のプランではご利用いただけません。"
+
+#: inc/AgenticFixesPage.php:682 inc/SettingsPage.php:417
+msgid "Upgrade to unlock Agentic Fixes"
+msgstr "アップグレードしてエージェント型修正を利用する"
+
+#: inc/AgenticFixesPage.php:687
+msgid ""
+"Your site runs the legacy AllAccessible widget, which predates agentic AI "
+"remediation. The widget keeps working as-is, but upgrading to the current "
+"plan tier unlocks:"
+msgstr ""
+"このサイトでは、エージェント型AIによる修復より前のレガシー AllAccessible ウィ"
+"ジェットが動作しています。ウィジェットは現状のまま動作しますが、現在のプラン"
+"階層にアップグレードすると、次の機能が利用可能になります："
+
+#: inc/AgenticFixesPage.php:690
+msgid ""
+"Human-in-the-loop agentic AI remediation — agents propose fixes, your team "
+"approves."
+msgstr ""
+"人間が関与するエージェント型AIによる修正 — エージェントが修正を提案し、あなた"
+"のチームが承認します。"
+
+#: inc/AgenticFixesPage.php:691
+msgid "Continuous accessibility scoring with site-level coverage tracking."
+msgstr "サイト全体のカバレッジ追跡付きの継続的なアクセシビリティスコアリング。"
+
+#: inc/AgenticFixesPage.php:692
+msgid "Higher monthly pageview caps and AllAccessible AI alt text generation."
+msgstr ""
+"月間ページビュー上限の引き上げと、AllAccessible AI による代替テキスト生成。"
+
+#: inc/AgenticFixesPage.php:693
+msgid ""
+"Image AI manager, per-page audit scores in the WordPress editor, and "
+"downloadable WCAG / VPAT reports."
+msgstr ""
+"画像AIマネージャー、WordPress エディターでのページ別監査スコア、ダウンロード"
+"可能な WCAG / VPAT レポート。"
+
+#: inc/AgenticFixesPage.php:696 inc/SettingsPage.php:480
+msgid "See upgrade options"
+msgstr "アップグレードオプションを見る"
+
+#: inc/AgenticFixesPage.php:716 inc/AgenticFixesPage.php:727
+msgid "You're all caught up"
+msgstr "すべて完了しました"
+
+#: inc/AgenticFixesPage.php:717
+msgid ""
+"No fixes are waiting for review. Run a scan and AllAccessible agents will "
+"propose any new fixes they find."
+msgstr ""
+"レビュー待ちの修正はありません。スキャンを実行すると、AllAccessible エージェ"
+"ントが見つかった新しい修正を提案します。"
+
+#: inc/AgenticFixesPage.php:728
+msgid "No fixes are waiting for review right now."
+msgstr "現在、レビュー待ちの修正はありません。"
+
+#: inc/AgenticFixesPage.php:738
+msgid "No fixes approved yet"
+msgstr "承認済みの修正はまだありません"
+
+#: inc/AgenticFixesPage.php:741
+msgid ""
+"Approved fixes will appear here once you start reviewing the pending queue."
+msgstr "保留キューのレビューを開始すると、承認済みの修正がここに表示されます。"
+
+#: inc/AgenticFixesPage.php:751
+msgid "Nothing has been reverted"
+msgstr "元に戻されたものはありません"
+
+#: inc/AgenticFixesPage.php:754
+msgid "Any approved fix you revert will be tracked here for reference."
+msgstr "元に戻した承認済みの修正は、参照用にここで追跡されます。"
+
+#: inc/AgenticFixesPage.php:772 inc/ImageManagerPage.php:403
+msgid "AllAccessible AI · Free preview"
+msgstr "AllAccessible AI · 無料プレビュー"
+
+#: inc/AgenticFixesPage.php:776
+#, php-format
+msgid "You've previewed %1$d of %2$d agentic fix proposals"
+msgstr "%2$d件のエージェント型修正提案のうち%1$d件をプレビューしました"
+
+#: inc/AgenticFixesPage.php:781
+msgid ""
+"Real proposals drafted for the real issues found on your site. Upgrade to "
+"review, approve, and apply the rest — human-in-the-loop, every fix."
+msgstr ""
+"サイトで見つかった実際の問題に対して、実際の提案を作成しました。アップグレー"
+"ドすると、残りを確認・承認・適用できます — 人が介在する運用で、すべての修正"
+"を。"
+
+#: inc/AgenticFixesPage.php:785 inc/ImageManagerPage.php:416
+msgid "Unlock unlimited"
+msgstr "無制限をアンロック"
+
+#: inc/AgenticFixesPage.php:798
+msgid "Fix proposal preview"
+msgstr "修正提案のプレビュー"
+
+#: inc/AgenticFixesPage.php:816
+#, php-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] "%d ページ"
+
+#: inc/AgenticFixesPage.php:833
+#, php-format
+msgid "Unlock %d more agentic fix proposals for your site"
+msgstr "サイト向けのエージェント型修正提案をあと%d件アンロック"
+
+#: inc/AgenticFixesPage.php:838 inc/ImageManagerPage.php:460
+msgid "Upgrade — starts at $10/month"
+msgstr "アップグレード — 月額$10から"
+
+#: inc/AgenticFixesPage.php:866 inc/SettingsPage.php:134
+#: inc/SettingsPage.php:424 inc/SettingsPage.php:679 inc/SettingsPage.php:990
+#: inc/TierGate.php:105 inc/UsageDashboard.php:42 inc/UsageDashboard.php:234
+msgid "Upgrade plan"
+msgstr "プランのアップグレード"
+
+#: inc/AgenticFixesPage.php:882
+msgid "Edit fix"
+msgstr "修正を編集"
+
+#: inc/AgenticFixesPage.php:884
+msgid "Update the suggested value before approving. Max 500 characters."
+msgstr "承認する前に提案された値を更新してください。最大500文字。"
+
+#: inc/AgenticFixesPage.php:888 inc/ImageManagerPage.php:584
+msgid "Save"
+msgstr "保存"
+
+#: inc/AgenticFixesPage.php:889 inc/AgenticFixesPage.php:903
+#: inc/DeactivationSurvey.php:189 inc/ImageManagerPage.php:581
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: inc/AgenticFixesPage.php:896
+msgid "Revert manifest"
+msgstr "マニフェストを元に戻す"
+
+#: inc/AgenticFixesPage.php:898
+msgid ""
+"Why are you reverting? This helps us improve fix quality. Max 500 characters."
+msgstr "なぜ差し戻すのですか？これは修正品質の向上に役立ちます。最大500文字。"
+
+#: inc/AgenticFixesPage.php:952
+msgid "Action failed"
+msgstr "操作に失敗しました"
+
+#: inc/AgenticFixesPage.php:977
+msgid "Server returned no data"
+msgstr "サーバーからデータが返されませんでした"
+
+#: inc/AgenticFixesPage.php:1024
+msgid "Approve this fix on every page where it appears?"
+msgstr "この修正を、表示されるすべてのページで承認しますか？"
+
+#: inc/AgenticFixesPage.php:1034
+msgid "Revert reason (max 500 chars):"
+msgstr "差し戻し理由（最大500文字）："
+
+#: inc/AgenticFixesPage.php:1046 inc/AgenticFixesPage.php:1136
+msgid "Value cannot be empty"
+msgstr "値を設定してください"
+
+#: inc/AgenticFixesPage.php:1047
+msgid "Apply this value to every page in the group?"
+msgstr "この値をグループ内のすべてのページに適用しますか？"
+
+#: inc/AgenticFixesPage.php:1069
+msgid "Nothing to approve."
+msgstr "承認するものはありません。"
+
+#: inc/AgenticFixesPage.php:1070
+msgid "Approve every pending fix of this type?"
+msgstr "この種類の保留中の修正をすべて承認しますか？"
+
+#: inc/AgenticFixesPage.php:1087
+msgid "Bulk approve failed"
+msgstr "一括承認に失敗しました"
+
+#: inc/AgenticFixesPage.php:1112
+msgid "Approve this manifest? Fixes will go live immediately."
+msgstr "このマニフェストを承認しますか？修正は直ちに公開されます。"
+
+#: inc/ConnectionStatusCard.php:56
+msgid "Connection status"
+msgstr "接続状況"
+
+#: inc/ConnectionStatusCard.php:58
+msgid ""
+"Confirm this WordPress install is linked to the correct AllAccessible site."
+msgstr ""
+"このWordPressのインストールが正しいAllAccessibleサイトにリンクされていること"
+"を確認してください。"
+
+#: inc/ConnectionStatusCard.php:64
+msgid "Re-verify"
+msgstr "再確認"
+
+#: inc/ConnectionStatusCard.php:79
+msgid "WordPress URL"
+msgstr "WordPress URL"
+
+#: inc/ConnectionStatusCard.php:80 inc/SettingsPage.php:922
+msgid "Account ID"
+msgstr "アカウントID"
+
+#: inc/ConnectionStatusCard.php:81
+msgid "Connected to"
+msgstr "接続先："
+
+#: inc/ConnectionStatusCard.php:82
+msgid "Subdomain ID"
+msgstr "サブドメインID"
+
+#: inc/ConnectionStatusCard.php:84
+msgid "Plan tier"
+msgstr "プランのティア"
+
+#: inc/ConnectionStatusCard.php:93
+msgid "WordPress URL matches the connected AllAccessible site."
+msgstr "WordPressのURLは、接続されているAllAccessibleサイトと一致しています。"
+
+#: inc/ConnectionStatusCard.php:98
+msgid "Mismatch detected"
+msgstr "不一致が検出されました"
+
+#. translators: 1: WP URL host, 2: server host
+#: inc/ConnectionStatusCard.php:103
+#, php-format
+msgid ""
+"WordPress is configured for %1$s but this plugin is linked to %2$s on your "
+"AllAccessible account. The Agentic Fixes page will show fixes for the "
+"connected site, not this WordPress install."
+msgstr ""
+"WordPress は %1$s 用に設定されていますが、このプラグインは AllAccessible アカ"
+"ウント上の %2$s にリンクされています。Agentic Fixes ページには、この "
+"WordPress インストールではなく、接続されているサイトの修正が表示されます。"
+
+#: inc/ConnectionStatusCard.php:110
+msgid ""
+"Click \"Re-verify\" to refresh, or contact support if this site needs to be "
+"added to your account."
+msgstr ""
+"更新するには「再確認」をクリックするか、このサイトをアカウントに追加する必要"
+"がある場合はサポートにお問い合わせください。"
+
+#: inc/ConnectionStatusCard.php:116
+msgid ""
+"This site has not been registered with AllAccessible yet. Visit your "
+"WordPress homepage to trigger registration, then click \"Re-verify\"."
+msgstr ""
+"このサイトはまだ AllAccessible に登録されていません。WordPress のホームページ"
+"にアクセスして登録をトリガーし、その後「再確認」をクリックしてください。"
+
+#: inc/ConnectionStatusCard.php:189 inc/FeatureComparison.php:40
+#: inc/SettingsPage.php:1945 inc/SettingsPage.php:1946
+msgid "Free"
+msgstr "無料"
+
+#: inc/ConnectionStatusCard.php:190 inc/FeatureComparison.php:43
+#: inc/SettingsPage.php:1927 inc/SettingsPage.php:1928
+msgid "Starter"
+msgstr "スターター"
+
+#: inc/ConnectionStatusCard.php:191 inc/FeatureComparison.php:46
+#: inc/SettingsPage.php:1933 inc/SettingsPage.php:1934
+msgid "Enterprise"
+msgstr "エンタープライズ"
+
+#: inc/ConnectionStatusCard.php:192 inc/SettingsPage.php:1939
+msgid "Legacy"
+msgstr "レガシー"
+
+#: inc/ConnectionStatusCard.php:193 inc/SettingsPage.php:1921
+msgid "Trial"
+msgstr "トライアル"
+
+#: inc/ConnectionStatusCard.php:208
+msgid "Verifying…"
+msgstr "検証中…"
+
+#: inc/ConversionCTA.php:40
+msgid "Upgrade Now"
+msgstr "今すぐアップグレード"
+
+#: inc/ConversionCTA.php:46
+msgid "Usage Limit Exceeded!"
+msgstr "使用上限を超えました！"
+
+#: inc/ConversionCTA.php:48
+#, php-format
+msgid ""
+"Your widget is currently using free features only. Upgrade to %s to restore "
+"premium functionality and increase your limits."
+msgstr ""
+"現在、ウィジェットは無料機能のみを使用しています。%s にアップグレードして、プ"
+"レミアム機能を復元し、上限を引き上げましょう。"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Starter"
+msgstr "Starter にアップグレード"
+
+#: inc/ConversionCTA.php:51
+msgid "Upgrade to Enterprise"
+msgstr "Enterprise にアップグレード"
+
+#: inc/ConversionCTA.php:68
+msgid "Approaching Your Limit"
+msgstr "上限に近づいています"
+
+#: inc/ConversionCTA.php:70
+#, php-format
+msgid ""
+"You're using over 80%% of your %s. Upgrade before you hit the limit to avoid "
+"service interruption."
+msgstr ""
+"%s の80%%以上を使用しています。上限に達する前にアップグレードして、サービスの"
+"中断を回避してください。"
+
+#: inc/ConversionCTA.php:73
+msgid "Upgrade Before Limit"
+msgstr "上限に達する前にアップグレード"
+
+#: inc/ConversionCTA.php:78
+msgid "Unlock Premium Features"
+msgstr "プレミアム機能のロックを解除する"
+
+#: inc/ConversionCTA.php:79
+msgid ""
+"Get AI-powered accessibility fixes, monthly compliance audits, custom widget "
+"styling, and priority support."
+msgstr ""
+"AIによるアクセシビリティ修正、月次コンプライアンス監査、ウィジェットのカスタ"
+"ムスタイル設定、優先サポートをご利用いただけます。"
+
+#: inc/ConversionCTA.php:80
+msgid "Start 7-Day Trial"
+msgstr "7日間のトライアルを開始"
+
+#: inc/ConversionCTA.php:85
+msgid "Scale with Add-Ons"
+msgstr "アドオンで拡張"
+
+#: inc/ConversionCTA.php:86
+msgid ""
+"Need more pageviews, AI fixes, or audits? Add custom limits to your plan or "
+"upgrade to Enterprise for unlimited access."
+msgstr ""
+"ページビュー、AI修正、監査をもっと増やしたいですか？プランにカスタム上限を追"
+"加するか、Enterprise にアップグレードして無制限アクセスをご利用ください。"
+
+#: inc/ConversionCTA.php:87
+msgid "Explore Add-Ons"
+msgstr "アドオンを見る"
+
+#: inc/DashboardBanner.php:66
+msgid "Get the Most Out of AllAccessible! 🚀"
+msgstr "AllAccessibleを最大限に活用しましょう！ 🚀"
+
+#: inc/DashboardBanner.php:69
+msgid ""
+"Complete the quick 2-minute setup to activate your accessibility widget and "
+"unlock premium features."
+msgstr ""
+"2分で完了する簡単なセットアップを完了して、アクセシビリティウィジェットを有効"
+"化し、プレミアム機能を利用できるようにしましょう。"
+
+#: inc/DashboardBanner.php:76
+msgid "Start Setup"
+msgstr "セットアップを開始"
+
+#. translators: %s: accessibility score 0-100 or em-dash
+#: inc/DashboardLayout.php:75
+#, php-format
+msgid "Accessibility score %s out of 100"
+msgstr "アクセシビリティスコア %s / 100"
+
+#: inc/DashboardLayout.php:152
+msgid "Daily"
+msgstr "毎日"
+
+#: inc/DashboardLayout.php:153 inc/FeatureComparison.php:75
+msgid "Weekly"
+msgstr "毎週"
+
+#: inc/DashboardLayout.php:154 inc/FeatureComparison.php:74
+msgid "Monthly"
+msgstr "毎月"
+
+#: inc/DashboardLayout.php:155
+msgid "On-demand"
+msgstr "オンデマンド"
+
+#. translators: %s: number of days between scans
+#: inc/DashboardLayout.php:162
+#, php-format
+msgid "Every %s days"
+msgstr "%s日ごと"
+
+#: inc/DashboardLayout.php:170
+msgid "Scans"
+msgstr "スキャン"
+
+#: inc/DashboardLayout.php:171
+msgid "Scheduled scans"
+msgstr "スケジュールされたスキャン"
+
+#. translators: %s: human time diff, e.g. "2 hours"
+#. translators: %s: human-readable time diff (e.g., "2 hours")
+#: inc/DashboardLayout.php:176 inc/EditorMetaBox.php:199
+#, php-format
+msgid "%s ago"
+msgstr "%s前"
+
+#: inc/DashboardLayout.php:180 inc/ScanTriggerPanel.php:91
+msgid "No scans yet"
+msgstr "まだスキャンはありません"
+
+#. translators: %s: human time diff
+#: inc/DashboardLayout.php:184
+#, php-format
+msgid "in %s"
+msgstr "%s後"
+
+#: inc/DashboardLayout.php:185
+msgid "due now"
+msgstr "今すぐ支払い"
+
+#: inc/DashboardLayout.php:193 inc/OnboardingWizard.php:451
+#: inc/ScanTriggerPanel.php:29
+msgid "Run your first scan"
+msgstr "最初のスキャンを実行"
+
+#: inc/DashboardLayout.php:197
+msgid "Excellent — strong accessibility coverage."
+msgstr "素晴らしい — アクセシビリティのカバー範囲は十分です。"
+
+#: inc/DashboardLayout.php:199
+msgid "Good — a few fixes to go."
+msgstr "良好 — あと少し修正が必要です。"
+
+#: inc/DashboardLayout.php:201
+msgid "Needs attention."
+msgstr "要対応。"
+
+#: inc/DashboardLayout.php:203
+msgid "Needs work — start with the top issues."
+msgstr "要改善 — まずは重要な問題から始めましょう。"
+
+#: inc/DashboardLayout.php:209
+msgid ""
+"Run a scan and AllAccessible agents will check every page for accessibility "
+"issues."
+msgstr ""
+"スキャンを実行すると、AllAccessible エージェントがすべてのページをチェックし"
+"てアクセシビリティの問題を確認します。"
+
+#. translators: %s: percentage with <b> wrapper
+#: inc/DashboardLayout.php:215
+#, php-format
+msgid "%s%% of issues remediated"
+msgstr "%s%% of 件の問題を修正済み"
+
+#: inc/DashboardLayout.php:221
+#, php-format
+msgid "%s page audited"
+msgid_plural "%s pages audited"
+msgstr[0] "監査済みページ数: %s"
+
+#: inc/DashboardLayout.php:227
+msgid "View pages"
+msgstr "ページを見る"
+
+#: inc/DashboardLayout.php:239
+#, php-format
+msgid "%s fix is ready for your review"
+msgid_plural "%s fixes are ready for your review"
+msgstr[0] "%s の修正がレビュー待ちです"
+
+#: inc/DashboardLayout.php:247
+#, php-format
+msgid "%s issue needs a manual fix"
+msgid_plural "%s issues need a manual fix"
+msgstr[0] "%s の問題は手動での修正が必要です"
+
+#: inc/DashboardLayout.php:251
+msgid "View issues"
+msgstr "問題を見る"
+
+#: inc/DashboardLayout.php:254
+msgid "You're all caught up — AllAccessible agents are monitoring your site."
+msgstr ""
+"すべて対応済みです — AllAccessible エージェントがサイトを監視しています。"
+
+#: inc/DashboardLayout.php:257
+msgid "No scan yet — run one to find and fix accessibility issues."
+msgstr ""
+"まだスキャンがありません — 実行してアクセシビリティの問題を見つけて修正しま"
+"しょう。"
+
+#: inc/DashboardLayout.php:259 inc/OnboardingWizard.php:106
+#: inc/OnboardingWizard.php:236
+msgid "Get started"
+msgstr "開始する"
+
+#: inc/DashboardLayout.php:264
+msgid "AI-resolved"
+msgstr "AIで解決済み"
+
+#: inc/DashboardLayout.php:265
+msgid "manual"
+msgstr "手動"
+
+#: inc/DashboardLayout.php:267
+msgid "images with alt text"
+msgstr "代替テキスト付きの画像"
+
+#: inc/DashboardLayout.php:270
+msgid "pageviews"
+msgstr "ページビュー"
+
+#: inc/DashboardLayout.php:276
+msgid "Accessibility status"
+msgstr "アクセシビリティのステータス"
+
+#: inc/DashboardLayout.php:282
+msgid "Live · updates nightly"
+msgstr "ライブ · 更新は毎晩"
+
+#: inc/DashboardLayout.php:287 inc/SettingsPage.php:387
+#: inc/SettingsPage.php:645
+msgid "Preview widget"
+msgstr "ウィジェットをプレビュー"
+
+#: inc/DashboardLayout.php:297
+msgid "Scan schedule"
+msgstr "スキャンスケジュール"
+
+#: inc/DashboardLayout.php:303
+msgid ""
+"How often AllAccessible automatically scans your whole site behind the "
+"scenes for a deep accessibility analysis. You can also run on-demand scans "
+"of individual pages anytime — from the WordPress page editor, or on the "
+"front end while logged in."
+msgstr ""
+"AllAccessibleが、詳細なアクセシビリティ分析のためにバックグラウンドでサイト全"
+"体を自動スキャンする頻度です。個別ページのオンデマンドスキャンも、WordPressの"
+"ページエディターから、またはログインした状態でフロントエンドから、いつでも実"
+"行できます。"
+
+#: inc/DashboardLayout.php:306
+msgid "Frequency"
+msgstr "頻度"
+
+#: inc/DashboardLayout.php:309
+msgid "Last"
+msgstr "最終"
+
+#: inc/DashboardLayout.php:312 inc/ImageManagerPage.php:523
+msgid "Next"
+msgstr "次へ"
+
+#: inc/DashboardLayout.php:326
+msgid "Remediation activity"
+msgstr "修正対応のアクティビティ"
+
+#: inc/DeactivationSurvey.php:92
+msgid "Quick Feedback"
+msgstr "クイックフィードバック"
+
+#: inc/DeactivationSurvey.php:95
+msgid "Help us improve AllAccessible"
+msgstr "AllAccessible の改善にご協力ください"
+
+#: inc/DeactivationSurvey.php:100
+msgid ""
+"If you have a moment, please let us know why you're deactivating "
+"AllAccessible. All submissions are anonymous and help us improve."
+msgstr ""
+"お時間がありましたら、AllAccessible を無効化する理由をお聞かせください。回答"
+"はすべて匿名で、改善に役立てさせていただきます。"
+
+#: inc/DeactivationSurvey.php:113
+msgid "The plugin stopped working"
+msgstr "プラグインが動作を停止しました"
+
+#: inc/DeactivationSurvey.php:116
+#, php-format
+msgid "We're sorry! Please %scontact support%s or describe the issue:"
+msgstr ""
+"申し訳ありません！%sサポートにお問い合わせ%sいただくか、問題の内容を記入して"
+"ください："
+
+#: inc/DeactivationSurvey.php:127
+msgid "Missing features I need"
+msgstr "必要な機能がありません"
+
+#: inc/DeactivationSurvey.php:130
+msgid "What features would make you stay?"
+msgstr "どのような機能があれば継続したいと思いますか？"
+
+#: inc/DeactivationSurvey.php:141
+msgid "Found a better plugin"
+msgstr "良いプラグインを発見しました。"
+
+#: inc/DeactivationSurvey.php:144
+msgid "Which plugin are you switching to?"
+msgstr "どのプラグインに切り替えますか？"
+
+#: inc/DeactivationSurvey.php:155
+msgid "Temporary - troubleshooting an issue"
+msgstr "一時的 - 問題のトラブルシューティング中"
+
+#: inc/DeactivationSurvey.php:163
+msgid "I don't need accessibility features anymore"
+msgstr "アクセシビリティ機能はもう必要ありません"
+
+#: inc/DeactivationSurvey.php:171
+msgid "Other"
+msgstr "その他"
+
+#: inc/DeactivationSurvey.php:173
+msgid "Please tell us more..."
+msgstr "詳しく教えてください..."
+
+#: inc/DeactivationSurvey.php:185
+msgid "Skip & Deactivate"
+msgstr "スキップ & 非アクティブ化"
+
+#: inc/DeactivationSurvey.php:192
+msgid "Submit & Deactivate"
+msgstr "送信＆無効化"
+
+#: inc/DeactivationSurvey.php:238
+msgid "Please select a reason"
+msgstr "理由を選択してください"
+
+#: inc/DeactivationSurvey.php:253
+msgid "Submitting..."
+msgstr "送信しています…"
+
+#: inc/EditorMetaBox.php:52 inc/EditorMetaBox.php:63
+msgid "Accessibility Score"
+msgstr "アクセシビリティスコア"
+
+#: inc/EditorMetaBox.php:98
+msgid "Loading score..."
+msgstr "スコアを読み込み中..."
+
+#: inc/EditorMetaBox.php:99
+msgid "Error loading score"
+msgstr "スコアの読み込みエラー"
+
+#: inc/EditorMetaBox.php:100
+msgid "Rescan initiated successfully"
+msgstr "再スキャンを正常に開始しました"
+
+#: inc/EditorMetaBox.php:101
+msgid "Error initiating rescan"
+msgstr "再スキャンの開始エラー"
+
+#: inc/EditorMetaBox.php:118
+msgid "Publish this page to see its accessibility score."
+msgstr "このページを公開して、アクセシビリティスコアを確認してください。"
+
+#: inc/EditorMetaBox.php:151
+msgid "Score unavailable"
+msgstr "スコアを利用できません"
+
+#: inc/EditorMetaBox.php:153
+msgid ""
+"Could not load this page's accessibility score. Try refreshing the editor."
+msgstr ""
+"このページのアクセシビリティスコアを読み込めませんでした。エディターを更新し"
+"てみてください。"
+
+#: inc/EditorMetaBox.php:177
+msgid "Needs attention"
+msgstr "要対応"
+
+#: inc/EditorMetaBox.php:180 inc/PostListColumn.php:447
+msgid "Awaiting scan"
+msgstr "スキャン待機中"
+
+#: inc/EditorMetaBox.php:183
+msgid "Excellent"
+msgstr "優れている"
+
+#: inc/EditorMetaBox.php:186
+msgid "Good"
+msgstr "良い"
+
+#: inc/EditorMetaBox.php:189
+msgid "Needs review"
+msgstr "要レビュー"
+
+#: inc/EditorMetaBox.php:235
+#, php-format
+msgid "Accessibility score %1$d out of 100, %2$s. Open full audit."
+msgstr "アクセシビリティスコアは100点中%1$d点、%2$s。完全な監査を開く。"
+
+#: inc/EditorMetaBox.php:236
+msgid "Accessibility score not available yet."
+msgstr "アクセシビリティスコアはまだ利用できません。"
+
+#. translators: 1: raw, 2: current, 3: lift delta
+#: inc/EditorMetaBox.php:265
+#, php-format
+msgid ""
+"Score lifted from %1$d to %2$d by AllAccessible AI, a gain of %3$d points."
+msgstr ""
+"AllAccessible AI によりスコアが%1$dから%2$dに上がり、%3$dポイント向上しまし"
+"た。"
+
+#. translators: %s: count of issues AllAccessible auto-resolves at runtime
+#: inc/EditorMetaBox.php:286
+#, php-format
+msgid "%s issue resolved by AllAccessible"
+msgid_plural "%s issues resolved by AllAccessible"
+msgstr[0] "AllAccessible により%s件の問題が解決されました"
+
+#. translators: %s: count of live agentic AI fixes
+#: inc/EditorMetaBox.php:293
+#, php-format
+msgid "%s agentic AI fix live"
+msgid_plural "%s agentic AI fixes live"
+msgstr[0] "%s エージェント型AI修正をライブで実行"
+
+#: inc/EditorMetaBox.php:307
+#, php-format
+msgid ""
+"Review %1$d pending agentic AI fix; approve to reach %2$d%% accessibility "
+"score"
+msgid_plural ""
+"Review %1$d pending agentic AI fixes; approve to reach %2$d%% accessibility "
+"score"
+msgstr[0] ""
+"保留中のエージェント型AI修正%1$d件を確認し、承認してアクセシビリティスコ"
+"ア%2$d%%に到達"
+
+#. translators: %s: count of pending fixes
+#: inc/EditorMetaBox.php:323
+#, php-format
+msgid "%s fix ready to review"
+msgid_plural "%s fixes ready to review"
+msgstr[0] "確認待ちの修正が %s 件あります"
+
+#. translators: %s: potential score
+#: inc/EditorMetaBox.php:330
+#, php-format
+msgid "Approve to reach %s%%"
+msgstr "承認して %s%% に到達"
+
+#. translators: %s: total issues
+#: inc/EditorMetaBox.php:344
+#, php-format
+msgid "Issues (%s)"
+msgstr "問題 (%s)"
+
+#: inc/EditorMetaBox.php:351
+msgid "Critical"
+msgstr "深刻"
+
+#: inc/EditorMetaBox.php:352
+msgid "Serious"
+msgstr "重篤"
+
+#: inc/EditorMetaBox.php:353
+msgid "Moderate"
+msgstr "モデレート"
+
+#: inc/EditorMetaBox.php:354
+msgid "Minor"
+msgstr "軽微"
+
+#. translators: %s: human-readable time ago
+#: inc/EditorMetaBox.php:378
+#, php-format
+msgid "Last scanned %s"
+msgstr "最終スキャン %s"
+
+#: inc/EditorMetaBox.php:392
+msgid "View full report"
+msgstr "全レポートを見る"
+
+#: inc/EditorMetaBox.php:400
+msgid "Rescan this page"
+msgstr "このページを再スキャン"
+
+#: inc/EditorMetaBox.php:441
+msgid "Scan complete. Refreshing…"
+msgstr "スキャン完了。更新中…"
+
+#: inc/EditorMetaBox.php:442
+msgid "Scan complete. Save or reload to see the updated score."
+msgstr ""
+"スキャンが完了しました。更新されたスコアを確認するには、保存するか再読み込み"
+"してください。"
+
+#: inc/EditorMetaBox.php:443
+msgid "Reload now"
+msgstr "今すぐ再読み込み"
+
+#: inc/EditorMetaBox.php:445
+msgid "Still running — refresh the page in a minute."
+msgstr "まだ実行中です — 1 分後にページを更新してください。"
+
+#: inc/EditorMetaBox.php:447
+msgid "Could not start scan."
+msgstr "スキャンを開始できませんでした。"
+
+#: inc/EditorMetaBox.php:448
+msgid "Network error. Check your connection and try again."
+msgstr "ネットワーク エラー。接続を確認して、もう一度お試しください。"
+
+#: inc/EditorMetaBox.php:587
+msgid "Page-level score"
+msgstr "ページ単位のスコア"
+
+#: inc/EditorMetaBox.php:590
+msgid "Site-level score (page not yet crawled)"
+msgstr "サイト単位のスコア（ページはまだクロールされていません）"
+
+#: inc/EditorMetaBox.php:593 inc/SettingsPage.php:575
+msgid "Awaiting first scan"
+msgstr "初回スキャン待ち"
+
+#: inc/EditorMetaBox.php:821
+msgid "Premium Feature"
+msgstr "プレミアム機能"
+
+#: inc/EditorMetaBox.php:824
+msgid "See accessibility scores for each page/post with a premium account."
+msgstr ""
+"プレミアムアカウントで、各ページ／投稿のアクセシビリティスコアを確認できま"
+"す。"
+
+#: inc/EditorMetaBox.php:827
+msgid "Upgrade to Premium"
+msgstr "プレミアムバージョンにアップグレード"
+
+#: inc/EditorMetaBox.php:830
+msgid "7-day free trial available"
+msgstr "7日間の無料トライアルをご利用いただけます"
+
+#: inc/FeatureComparison.php:28
+msgid "Compare Plans"
+msgstr "プランを比較する"
+
+#: inc/FeatureComparison.php:37
+msgid "Feature"
+msgstr "機能"
+
+#: inc/FeatureComparison.php:52
+msgid "Accessibility Widget"
+msgstr "アクセシビリティウィジェット"
+
+#: inc/FeatureComparison.php:53 inc/FeatureComparison.php:54
+#: inc/FeatureComparison.php:55 inc/FeatureComparison.php:80
+#: inc/FeatureComparison.php:81 inc/FeatureComparison.php:87
+#: inc/FeatureComparison.php:92
+msgid "Included"
+msgstr "含まれている"
+
+#: inc/FeatureComparison.php:58
+msgid "Monthly Pageviews"
+msgstr "月間ページビュー数"
+
+#: inc/FeatureComparison.php:61 inc/FeatureComparison.php:68
+#: inc/FeatureComparison.php:69
+msgid "Unlimited"
+msgstr "無制限"
+
+#: inc/FeatureComparison.php:65
+msgid "AI Image Alt Text"
+msgstr "AI による画像の代替テキスト"
+
+#: inc/FeatureComparison.php:67
+msgid "10 preview"
+msgstr "10 件のプレビュー"
+
+#: inc/FeatureComparison.php:72
+msgid "Compliance Audits"
+msgstr "コンプライアンス監査"
+
+#: inc/FeatureComparison.php:73 inc/FeatureComparison.php:79
+#: inc/FeatureComparison.php:85 inc/FeatureComparison.php:86
+#: inc/FeatureComparison.php:91
+msgid "Not included"
+msgstr "含まれていません"
+
+#: inc/FeatureComparison.php:78
+msgid "Widget Customization"
+msgstr "ウィジェットのカスタマイズ"
+
+#: inc/FeatureComparison.php:84
+msgid "VPAT Reports"
+msgstr "VPAT レポート"
+
+#: inc/FeatureComparison.php:90
+msgid "Priority Support"
+msgstr "優先サポート"
+
+#: inc/FeatureComparison.php:93
+msgid "Dedicated"
+msgstr "専用"
+
+#: inc/FeatureComparison.php:103
+msgid "Upgrade Plan"
+msgstr "プランをアップグレードする"
+
+#: inc/ImageManagerPage.php:28 inc/ImageManagerPage.php:29
+#: inc/SettingsPage.php:608
+msgid "Image AI"
+msgstr "画像AI"
+
+#: inc/ImageManagerPage.php:101
+msgid "Image alt text is available on paid plans"
+msgstr "画像の代替テキストは有料プランで利用できます"
+
+#: inc/ImageManagerPage.php:102
+msgid ""
+"Upgrade to review, refine, and approve every alt text on your site. Includes "
+"inline editing, manual overrides, and full media library coverage."
+msgstr ""
+"アップグレードして、サイト上のすべての代替テキストを確認・調整・承認しましょ"
+"う。インライン編集、手動での上書き、メディアライブラリ全体のカバーが含まれま"
+"す。"
+
+#: inc/ImageManagerPage.php:116
+msgid "Could not load image data right now."
+msgstr "現在、画像データを読み込めません。"
+
+#. translators: %d = number of images on this page
+#: inc/ImageManagerPage.php:132
+#, php-format
+msgid "%d image on this page."
+msgid_plural "%d images on this page."
+msgstr[0] "このページの画像 %d 件。"
+
+#: inc/ImageManagerPage.php:157 inc/PostListColumn.php:264
+#: inc/PostListColumn.php:270 inc/constants.php:19
+msgid "Accessibility"
+msgstr "アクセシビリティ"
+
+#: inc/ImageManagerPage.php:159
+msgid "Image alt text"
+msgstr "画像の代替テキスト"
+
+#: inc/ImageManagerPage.php:163
+msgid ""
+"AllAccessible AI suggests descriptive alt text for every image on your site. "
+"Review and approve, or edit before it goes live."
+msgstr ""
+"AllAccessible AI は、サイト上のすべての画像に対して説明的な代替テキストを提案"
+"します。公開前に確認して承認するか、編集できます。"
+
+#: inc/ImageManagerPage.php:167 inc/SettingsPage.php:836
+msgid "Open full dashboard"
+msgstr "完全なダッシュボードを開く"
+
+#: inc/ImageManagerPage.php:189
+msgid "images"
+msgstr "画像"
+
+#: inc/ImageManagerPage.php:193
+msgid "with alt text"
+msgstr "代替テキスト付き"
+
+#. translators: %d = percentage
+#: inc/ImageManagerPage.php:194
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#: inc/ImageManagerPage.php:200
+msgid "AI-authored"
+msgstr "AI によって作成"
+
+#: inc/ImageManagerPage.php:212
+msgid "All images"
+msgstr "すべての画像"
+
+#: inc/ImageManagerPage.php:213
+msgid "Missing alt"
+msgstr "代替テキストなし"
+
+#: inc/ImageManagerPage.php:214
+msgid "AI-suggested"
+msgstr "AI の提案"
+
+#: inc/ImageManagerPage.php:215 inc/SettingsPage.php:450
+msgid "Manual"
+msgstr "手動"
+
+#: inc/ImageManagerPage.php:226
+msgid "Show"
+msgstr "表示"
+
+#: inc/ImageManagerPage.php:237
+msgid "Search filename or alt text"
+msgstr "ファイル名または代替テキストを検索"
+
+#: inc/ImageManagerPage.php:240
+msgid "Type to filter visible images…"
+msgstr "入力して表示中の画像を絞り込み…"
+
+#: inc/ImageManagerPage.php:245
+msgid "Apply"
+msgstr "適用"
+
+#: inc/ImageManagerPage.php:294
+msgid "AI suggestion"
+msgstr "AI の提案"
+
+#: inc/ImageManagerPage.php:320
+msgid "No alt text yet."
+msgstr "代替テキストはまだありません。"
+
+#: inc/ImageManagerPage.php:332
+msgid "Found on:"
+msgstr "見つかった場所:"
+
+#: inc/ImageManagerPage.php:361
+msgid "Needs alt"
+msgstr "代替テキストが必要"
+
+#: inc/ImageManagerPage.php:364
+msgid "Set"
+msgstr "セット"
+
+#. translators: %d = image ID
+#: inc/ImageManagerPage.php:371 inc/ImageManagerPage.php:379
+#, php-format
+msgid "Image #%d"
+msgstr "画像 #%d"
+
+#: inc/ImageManagerPage.php:407
+#, php-format
+msgid "You've used %1$d of %2$d preview alt-texts on this site"
+msgstr "このサイトでは、プレビュー用代替テキストを%2$d件中%1$d件使用しました"
+
+#: inc/ImageManagerPage.php:412
+msgid ""
+"Real AI output, drafted for your real images. Upgrade to unlock unlimited "
+"alt-text generation for every image on your site."
+msgstr ""
+"実際の画像に合わせて作成された、本物のAI出力です。アップグレードすると、サイ"
+"ト内のすべての画像で代替テキストを無制限に生成できます。"
+
+#: inc/ImageManagerPage.php:455
+#, php-format
+msgid "Unlock AI alt text for all %d images on your site"
+msgstr "サイト内の%d枚すべての画像でAI代替テキストを利用可能にする"
+
+#: inc/ImageManagerPage.php:478
+msgid "No images discovered yet"
+msgstr "まだ画像が見つかっていません"
+
+#: inc/ImageManagerPage.php:480
+msgid ""
+"Scan your site to discover images. AllAccessible AI writes alt text for each "
+"one automatically. You can review or override any entry from this page."
+msgstr ""
+"サイトをスキャンして画像を検出します。AllAccessible AI が各画像の alt テキス"
+"トを自動で作成します。このページから、各項目を確認したり上書きしたりできま"
+"す。"
+
+#: inc/ImageManagerPage.php:483
+msgid "Scan your site to discover images"
+msgstr "サイトをスキャンして画像を検出"
+
+#: inc/ImageManagerPage.php:504
+msgid "Image pagination"
+msgstr "画像のページ番号を有効にする："
+
+#. translators: 1: current page, 2: total pages, 3: total items
+#: inc/ImageManagerPage.php:508
+#, php-format
+msgid "Page %1$d of %2$d (%3$s images)"
+msgstr "%2$d ページ中 %1$d ページ（%3$s 枚の画像）"
+
+#: inc/ImageManagerPage.php:518
+msgid "Previous"
+msgstr "前へ"
+
+#: inc/ImageManagerPage.php:540
+msgid "Edit alt text"
+msgstr "代替テキストを編集"
+
+#: inc/ImageManagerPage.php:541
+msgid "Close"
+msgstr "閉じる"
+
+#: inc/ImageManagerPage.php:553
+msgid "AllAccessible AI suggests"
+msgstr "AllAccessible AI の提案"
+
+#: inc/ImageManagerPage.php:559
+msgid "Use this suggestion"
+msgstr "この提案を使用"
+
+#: inc/ImageManagerPage.php:564
+msgid "Alt text"
+msgstr "代替テキスト"
+
+#: inc/ImageManagerPage.php:570
+msgid ""
+"Aim for 1–2 sentences describing the image's purpose, not its appearance."
+msgstr "画像の見た目ではなく目的を説明する1～2文を目安にしてください。"
+
+#: inc/ImageManagerPage.php:670
+msgid ""
+"Saved. Updates may take up to a minute to appear after refresh as the change "
+"propagates through our system."
+msgstr ""
+"保存しました。変更がシステム全体に反映されるまで時間がかかるため、更新後に表"
+"示されるまで最大1分かかる場合があります。"
+
+#: inc/ImageManagerPage.php:707
+msgid "Alt text is required."
+msgstr "代替テキストは必須です。"
+
+#: inc/ImageManagerPage.php:711
+msgid "Alt text must be 500 characters or fewer."
+msgstr "代替テキストは500文字以内である必要があります。"
+
+#: inc/ImageManagerPage.php:716 inc/SettingsPage.php:1218
+msgid "Saving…"
+msgstr "保存中…"
+
+#: inc/ImageManagerPage.php:726 inc/SettingsPage.php:1785
+msgid "Save failed"
+msgstr "保存失敗"
+
+#: inc/ImageManagerPage.php:745
+msgid "Save failed. Please try again."
+msgstr "保存に失敗しました。もう一度お試しください。"
+
+#: inc/ImageManagerPage.php:766
+msgid "Showing all images on this page."
+msgstr "このページのすべての画像を表示しています。"
+
+#: inc/ImageManagerPage.php:768
+#, php-format
+msgid "Showing %d images matching your search."
+msgstr "検索に一致する画像を%d件表示しています。"
+
+#: inc/ImageManagerPage.php:787
+msgid "Insufficient permissions"
+msgstr "権限が不十分です"
+
+#: inc/ImageManagerPage.php:796 inc/api/ApiClient.php:901
+msgid "Invalid image ID"
+msgstr "画像IDが無効です。"
+
+#: inc/ImageManagerPage.php:799 inc/api/ApiClient.php:905
+msgid "Alt text must be 1–500 characters"
+msgstr "代替テキストは1～500文字である必要があります"
+
+#: inc/OnboardingWizard.php:43
+msgid "AllAccessible Setup"
+msgstr "AllAccessible セットアップ"
+
+#: inc/OnboardingWizard.php:44
+msgid "Setup"
+msgstr "セットアップ"
+
+#: inc/OnboardingWizard.php:107
+msgid "First scan"
+msgstr "初回スキャン"
+
+#: inc/OnboardingWizard.php:112
+msgid "AllAccessible setup"
+msgstr "AllAccessible セットアップ"
+
+#: inc/OnboardingWizard.php:119
+msgid "Setup progress"
+msgstr "セットアップの進捗"
+
+#: inc/OnboardingWizard.php:144
+msgid "Step 1 of 2"
+msgstr "ステップ 1/2"
+
+#: inc/OnboardingWizard.php:146 inc/OnboardingWizard.php:808
+msgid "Welcome to AllAccessible"
+msgstr "AllAccessible へようこそ"
+
+#: inc/OnboardingWizard.php:149
+msgid ""
+"Make this WordPress site usable for every visitor. Enter your email and pick "
+"a plan to get started."
+msgstr ""
+"このWordPressサイトを、すべての訪問者にとって使いやすく。メールアドレスを入力"
+"してプランを選び、始めましょう。"
+
+#: inc/OnboardingWizard.php:155
+msgid "See what an account does for you"
+msgstr "アカウントでできることを見る"
+
+#: inc/OnboardingWizard.php:165
+msgid "Accessibility scans"
+msgstr "アクセシビリティ スキャン"
+
+#: inc/OnboardingWizard.php:168
+msgid ""
+"Every published page checked against WCAG 2.2, ADA, and EAA. Severity-tagged."
+msgstr ""
+"公開済みの各ページをWCAG 2.2、ADA、EAAに照らしてチェック。重大度タグ付き。"
+
+#: inc/OnboardingWizard.php:179
+msgid "24 fixed"
+msgstr "24 件修正済み"
+
+#: inc/OnboardingWizard.php:180
+msgid "3 to review"
+msgstr "レビュー待ち 3件"
+
+#: inc/OnboardingWizard.php:190
+msgid "Agentic AI fixes"
+msgstr "エージェント型AIによる修正"
+
+#: inc/OnboardingWizard.php:193
+msgid "AI drafts the fix; your team approves before anything ships."
+msgstr "AIが修正案を作成し、公開前にチームが承認します。"
+
+#: inc/OnboardingWizard.php:196
+msgid "Issue: button missing accessible name"
+msgstr "問題: ボタンにアクセシブルな名前がありません"
+
+#: inc/OnboardingWizard.php:198
+msgid "AI fix"
+msgstr "AIで修正"
+
+#: inc/OnboardingWizard.php:207
+msgid "Smart alt text"
+msgstr "スマートな代替テキスト"
+
+#: inc/OnboardingWizard.php:210
+msgid ""
+"Missing alt generated for every image, in the language your visitors use."
+msgstr "不足しているaltを、訪問者が使用する言語で各画像ごとに生成します。"
+
+#: inc/OnboardingWizard.php:218
+msgid "AI generated"
+msgstr "AI生成"
+
+#: inc/OnboardingWizard.php:220
+msgid "A golden retriever sitting in a sunlit park, wearing a pink bandana."
+msgstr ""
+"日当たりの良い公園で座っているゴールデンレトリバー。ピンクのバンダナを着けて"
+"いる。"
+
+#: inc/OnboardingWizard.php:246
+msgid "Email address"
+msgstr "メールアドレス"
+
+#: inc/OnboardingWizard.php:258 inc/OnboardingWizard.php:811
+msgid ""
+"We'll create a new account or link your existing one — same email, either "
+"way."
+msgstr ""
+"新しいアカウントを作成するか、既存のアカウントをリンクします。どちらの場合も"
+"メールアドレスは同じです。"
+
+#: inc/OnboardingWizard.php:265
+msgid "Plan"
+msgstr "プラン"
+
+#: inc/OnboardingWizard.php:271
+msgid "Free forever"
+msgstr "永久に無料"
+
+#: inc/OnboardingWizard.php:277
+msgid "Widget, contrast + sizing controls, essential accessibility tools."
+msgstr ""
+"ウィジェット、コントラスト＋サイズ調整コントロール、必須のアクセシビリティ"
+"ツール。"
+
+#: inc/OnboardingWizard.php:285
+msgid "Most popular"
+msgstr "一番人気"
+
+#: inc/OnboardingWizard.php:291
+msgid "7 days free"
+msgstr "7日間無料"
+
+#: inc/OnboardingWizard.php:291
+msgid "then $10/mo"
+msgstr "その後は月額10ドル"
+
+#: inc/OnboardingWizard.php:294
+msgid "Agentic AI fixes, smart alt text, WCAG/ADA/EAA audits."
+msgstr "エージェント型AIによる修正、スマートな代替テキスト、WCAG/ADA/EAA監査。"
+
+#: inc/OnboardingWizard.php:307
+msgid "Ready to reconnect"
+msgstr "再接続の準備完了"
+
+#: inc/OnboardingWizard.php:321
+msgid "Heads up:"
+msgstr "ご注意:"
+
+#: inc/OnboardingWizard.php:322
+msgid ""
+"This site is on another AllAccessible account. The plugin will work right "
+"away, but the site only appears in your dashboard once the existing admin "
+"approves your access — they'll get an email automatically."
+msgstr ""
+"このサイトは別のAllAccessibleアカウントに紐づいています。プラグインはすぐに動"
+"作しますが、既存の管理者があなたのアクセスを承認するまで、このサイトはダッ"
+"シュボードに表示されません — 管理者には自動的にメールが送信されます。"
+
+#: inc/OnboardingWizard.php:332 inc/OnboardingWizard.php:670
+#: inc/OnboardingWizard.php:682 inc/OnboardingWizard.php:703
+#: inc/OnboardingWizard.php:734 inc/OnboardingWizard.php:816
+msgid "Continue"
+msgstr "続ける"
+
+#. translators: 1: Terms link, 2: Privacy Policy link
+#: inc/OnboardingWizard.php:340
+#, php-format
+msgid "By continuing you agree to our %1$s and %2$s."
+msgstr "続行すると、%1$sおよび%2$sに同意したものとみなされます。"
+
+#: inc/OnboardingWizard.php:341 inc/SettingsPage.php:1445
+msgid "Terms & Conditions"
+msgstr "利用規約"
+
+#: inc/OnboardingWizard.php:342 inc/SettingsPage.php:1446
+msgid "Privacy Policy"
+msgstr "プライバシーポリシー"
+
+#: inc/OnboardingWizard.php:351
+msgid "Skip and use just the free widget"
+msgstr "スキップして無料ウィジェットだけを使う"
+
+#: inc/OnboardingWizard.php:377
+msgid "Interactions / month"
+msgstr "インタラクション／月"
+
+#: inc/OnboardingWizard.php:385
+msgid "Visitors served / month"
+msgstr "月間提供訪問者数"
+
+#: inc/OnboardingWizard.php:393
+msgid "Protecting WordPress"
+msgstr "WordPressの保護"
+
+#: inc/OnboardingWizard.php:398
+msgid "WCAG 2.2"
+msgstr "WCAG 2.2"
+
+#: inc/OnboardingWizard.php:399
+msgid "ADA"
+msgstr "ADA"
+
+#: inc/OnboardingWizard.php:400
+msgid "Section 508"
+msgstr "セクション508"
+
+#: inc/OnboardingWizard.php:401
+msgid "EAA 2025"
+msgstr "EAA 2025"
+
+#: inc/OnboardingWizard.php:422
+msgid "Free to start"
+msgstr "無料で始められます"
+
+#: inc/OnboardingWizard.php:426
+msgid "No credit card required"
+msgstr "クレジットカード不要"
+
+#: inc/OnboardingWizard.php:430
+msgid "Privacy-first — GDPR / CCPA"
+msgstr "プライバシー最優先 — GDPR / CCPA"
+
+#: inc/OnboardingWizard.php:434
+msgid "Cancel any time on paid plans"
+msgstr "有料プランはいつでもキャンセルできます"
+
+#: inc/OnboardingWizard.php:438
+msgid "Trusted on thousands of WordPress sites worldwide."
+msgstr "世界中の数千のWordPressサイトで信頼されています。"
+
+#: inc/OnboardingWizard.php:450
+msgid "Step 2 of 2"
+msgstr "ステップ 2/2"
+
+#: inc/OnboardingWizard.php:453
+msgid "Account ready"
+msgstr "アカウントの準備ができました"
+
+#: inc/OnboardingWizard.php:462
+msgid "Your account is set up."
+msgstr "アカウントの設定が完了しました。"
+
+#: inc/OnboardingWizard.php:464
+msgid ""
+"The AllAccessible agents are ready to scan this site for accessibility "
+"issues."
+msgstr ""
+"AllAccessible エージェントは、このサイトのアクセシビリティの問題をスキャンす"
+"る準備ができています。"
+
+#: inc/OnboardingWizard.php:474
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; you can re-run it any time from "
+"the Agentic Fixes page."
+msgstr ""
+"AllAccessible はサイト上の公開済みページをすべて自動で見つけます — サイトマッ"
+"プは不要です。下で最初のスキャンを開始してください。Agentic Fixes ページから"
+"いつでも再実行できます。"
+
+#: inc/OnboardingWizard.php:483
+msgid "Skip for now"
+msgstr "今はスキップ"
+
+#: inc/OnboardingWizard.php:486
+msgid "Go to dashboard"
+msgstr "ダッシュボードへ"
+
+#: inc/OnboardingWizard.php:587
+msgid "Skip setup for now? You can finish any time from the settings page."
+msgstr ""
+"今はセットアップをスキップしますか？設定ページからいつでも完了できます。"
+
+#: inc/OnboardingWizard.php:619
+msgid "Account created. Provisioning your site…"
+msgstr "アカウントを作成しました。サイトをプロビジョニングしています…"
+
+#: inc/OnboardingWizard.php:622
+msgid "Welcome back. We linked this WordPress site to your account."
+msgstr ""
+"お帰りなさい。このWordPressサイトをあなたのアカウントにリンクしました。"
+
+#: inc/OnboardingWizard.php:625
+msgid "Welcome back. This site was already on your account."
+msgstr ""
+"おかえりなさい。このサイトはすでにあなたのアカウントに登録されています。"
+
+#: inc/OnboardingWizard.php:627
+msgid "Connected."
+msgstr "接続しました。"
+
+#: inc/OnboardingWizard.php:639
+msgid "Please enter your email address."
+msgstr "メールアドレスを入力してください。"
+
+#: inc/OnboardingWizard.php:644
+msgid "Setting things up…"
+msgstr "設定しています…"
+
+#: inc/OnboardingWizard.php:645
+msgid "Connecting to AllAccessible…"
+msgstr "AllAccessibleに接続しています…"
+
+#: inc/OnboardingWizard.php:668
+msgid "Something went wrong. Please try again."
+msgstr "原因不明のエラー発生。もう一度お試し下さい."
+
+#: inc/OnboardingWizard.php:680
+msgid "We received an unexpected response. Please try again."
+msgstr "予期しない応答を受信しました。もう一度お試しください。"
+
+#: inc/OnboardingWizard.php:701 inc/OnboardingWizard.php:883
+msgid "We could not save your settings. Please try again."
+msgstr "設定を保存できませんでした。もう一度お試しください。"
+
+#: inc/OnboardingWizard.php:728
+msgid "We could not reach AllAccessible. Please try again."
+msgstr "AllAccessible に接続できませんでした。もう一度お試しください。"
+
+#: inc/OnboardingWizard.php:753 inc/OnboardingWizard.php:781
+msgid "Welcome back"
+msgstr "おかえりなさい"
+
+#: inc/OnboardingWizard.php:763
+msgid "Linking"
+msgstr "リンクしています"
+
+#: inc/OnboardingWizard.php:764
+msgid "to"
+msgstr "～"
+
+#: inc/OnboardingWizard.php:768
+msgid "Reconnect this site"
+msgstr "このサイトを再接続する"
+
+#: inc/OnboardingWizard.php:783
+msgid ""
+"We will link this WordPress site to your existing AllAccessible account."
+msgstr "このWordPressサイトを既存のAllAccessibleアカウントにリンクします。"
+
+#: inc/OnboardingWizard.php:788
+msgid "Connect this site"
+msgstr "このサイトを接続"
+
+#: inc/OnboardingWizard.php:795
+msgid "Request access to this site"
+msgstr "このサイトへのアクセスをリクエスト"
+
+#: inc/OnboardingWizard.php:797
+msgid ""
+"This site is on another AllAccessible account. Enter your email to request "
+"access."
+msgstr ""
+"このサイトは別の AllAccessible アカウントに紐づいています。アクセスをリクエス"
+"トするにはメールアドレスを入力してください。"
+
+#: inc/OnboardingWizard.php:802
+msgid "Request access"
+msgstr "アクセスをリクエスト"
+
+#: inc/OnboardingWizard.php:868
+msgid "Reconnecting…"
+msgstr "再接続中…"
+
+#: inc/OnboardingWizard.php:879
+msgid "Reconnected. Provisioning…"
+msgstr "再接続しました。プロビジョニング中…"
+
+#: inc/OnboardingWizard.php:906
+msgid "Permission denied"
+msgstr "アクセス拒否"
+
+#: inc/PostListColumn.php:306
+msgid "Loading accessibility score"
+msgstr "アクセシビリティスコアを読み込み中"
+
+#: inc/PostListColumn.php:307
+msgid "Loading"
+msgstr "読み込み中"
+
+#: inc/PostListColumn.php:308
+msgid "Loading…"
+msgstr "読込中…"
+
+#: inc/PostListColumn.php:434
+msgid "Will scan on publish"
+msgstr "公開時にスキャンします"
+
+#: inc/PostListColumn.php:435
+msgid ""
+"Drafts are not reachable by the public crawler. Publish to scan "
+"automatically, or preview to scan now."
+msgstr ""
+"下書きは公開クローラーからアクセスできません。公開して自動スキャンするか、プ"
+"レビューして今すぐスキャンしてください。"
+
+#: inc/PostListColumn.php:440
+msgid "Preview & scan"
+msgstr "プレビュー＆スキャン"
+
+#: inc/PostListColumn.php:445
+msgid "Awaiting scan — AllAccessible will populate this on the next crawl"
+msgstr "スキャン待ち — AllAccessible は次回のクロールでこれを反映します"
+
+#: inc/PostListColumn.php:456
+msgid "Score is stale — page hasn't been scanned recently"
+msgstr "スコアが古くなっています — ページは最近スキャンされていません"
+
+#: inc/PostListColumn.php:457
+msgid "Last scan failed"
+msgstr "前回のスキャンに失敗しました"
+
+#: inc/PostListColumn.php:458
+msgid "Accessibility score"
+msgstr "アクセシビリティスコア"
+
+#: inc/PostListColumn.php:468
+msgid "Approve pending fixes to reach this score"
+msgstr "このスコアに到達するために、保留中の修正を承認する"
+
+#: inc/ReviewNudge.php:73
+msgid "How's your experience with AllAccessible so far?"
+msgstr "これまでのAllAccessibleのご利用体験はいかがですか？"
+
+#: inc/ReviewNudge.php:77
+msgid "Great 😊"
+msgstr "最高 😊"
+
+#: inc/ReviewNudge.php:80
+msgid "Could be better"
+msgstr "改善の余地あり"
+
+#: inc/ReviewNudge.php:83
+msgid "Maybe later"
+msgstr "たぶん後で"
+
+#: inc/ReviewNudge.php:91
+msgid "That's wonderful to hear!"
+msgstr "それは素晴らしいですね！"
+
+#: inc/ReviewNudge.php:92
+msgid ""
+"A quick review on WordPress.org helps other site owners find us — it takes "
+"about 30 seconds and means a lot."
+msgstr ""
+"WordPress.org での簡単なレビューは、他のサイト運営者が私たちを見つける助けに"
+"なります — 約30秒で終わり、とても励みになります。"
+
+#: inc/ReviewNudge.php:97
+msgid "Leave a review"
+msgstr "レビューを残します"
+
+#: inc/ReviewNudge.php:100
+msgid "I already did"
+msgstr "私はすでにやった"
+
+#: inc/ReviewNudge.php:108
+msgid "Sorry to hear that — we'd like to make it right."
+msgstr "それは残念です — 私たちはきちんと解決したいと思っています。"
+
+#: inc/ReviewNudge.php:109
+msgid ""
+"Tell us what's not working and we'll follow up. This goes straight to our "
+"team."
+msgstr ""
+"何がうまく動いていないか教えてください。こちらからフォローアップします。内容"
+"は直接チームに届きます。"
+
+#: inc/ReviewNudge.php:113
+msgid "What could be better?"
+msgstr "これ以上何が必要でしょうか？"
+
+#: inc/ReviewNudge.php:117
+msgid "Send feedback"
+msgstr "フィードバックを送信"
+
+#: inc/ReviewNudge.php:121 inc/SettingsPage.php:1428
+msgid "Contact support"
+msgstr "サポートに連絡"
+
+#: inc/ReviewNudge.php:129
+msgid "Thank you — we appreciate you."
+msgstr "ありがとうございます — 感謝しています。"
+
+#: inc/ScanTriggerPanel.php:30
+msgid ""
+"AllAccessible automatically finds every published page on your site — no "
+"sitemap needed. Start your first scan below; future scans then run "
+"automatically based on your plan."
+msgstr ""
+"AllAccessible はサイト上の公開済みページをすべて自動で見つけます — サイトマッ"
+"プは不要です。下から最初のスキャンを開始してください。以降のスキャンはプラン"
+"に基づいて自動的に実行されます。"
+
+#: inc/ScanTriggerPanel.php:43
+msgid "Scan now"
+msgstr "今すぐスキャン"
+
+#: inc/ScanTriggerPanel.php:44 inc/ScanTriggerPanel.php:257
+#: inc/ScanTriggerPanel.php:311
+msgid "Run scan again"
+msgstr "スキャンを再実行"
+
+#. translators: %s: human-readable time until
+#: inc/ScanTriggerPanel.php:101
+#, php-format
+msgid "Next scan in %s"
+msgstr "次回のスキャンまで%s"
+
+#: inc/ScanTriggerPanel.php:105
+msgid "Next scan due now"
+msgstr "次回のスキャンは今すぐ実行予定"
+
+#. translators: %s: human-readable time difference
+#: inc/ScanTriggerPanel.php:117
+#, php-format
+msgid "Last scan triggered %s ago"
+msgstr "前回のスキャン開始は%s前"
+
+#: inc/ScanTriggerPanel.php:131
+#, php-format
+msgid "%d published page will be scanned. This can take a minute or two."
+msgid_plural ""
+"%d published pages and posts will be scanned. This can take a minute or two."
+msgstr[0] ""
+"公開済みページ %d 件をスキャンします。1〜2分ほどかかる場合があります。"
+
+#: inc/ScanTriggerPanel.php:157
+msgid "pages scanned"
+msgstr "スキャンしたページ数"
+
+#: inc/ScanTriggerPanel.php:166
+msgid ""
+"pages scanned. Accessibility scores appear in your Pages list within a "
+"minute or two as the AI finishes reviewing."
+msgstr ""
+"ページをスキャンしました。AIによるレビューが完了すると、1〜2分以内に［ペー"
+"ジ］リストにアクセシビリティスコアが表示されます。"
+
+#: inc/ScanTriggerPanel.php:168
+msgid "Open Pages list"
+msgstr "ページ一覧を開く"
+
+#: inc/ScanTriggerPanel.php:182
+msgid "Scan a specific sitemap instead (advanced)"
+msgstr "代わりに特定のサイトマップをスキャン（上級者向け）"
+
+#: inc/ScanTriggerPanel.php:186
+msgid ""
+"Leave this closed to let AllAccessible auto-discover your pages "
+"(recommended). Open only to point the scan at a specific sitemap."
+msgstr ""
+"閉じたままにすると、AllAccessible がページを自動検出します（推奨）。特定のサ"
+"イトマップを指定してスキャンする場合のみ開いてください。"
+
+#: inc/ScanTriggerPanel.php:189 inc/ScanTriggerPanel.php:345
+msgid "Looking for sitemaps…"
+msgstr "サイトマップを探しています…"
+
+#: inc/ScanTriggerPanel.php:221
+msgid "Enter your sitemap URL, or close Advanced to auto-discover."
+msgstr ""
+"サイトマップのURLを入力するか、［詳細設定］を閉じて自動検出してください。"
+
+#: inc/ScanTriggerPanel.php:232
+msgid "Starting…"
+msgstr "開始中…"
+
+#: inc/ScanTriggerPanel.php:244
+msgid "Scan failed to start."
+msgstr "スキャンを開始できませんでした。"
+
+#: inc/ScanTriggerPanel.php:245 inc/ScanTriggerPanel.php:265
+#: inc/ScanTriggerPanel.php:290
+msgid "Start first scan"
+msgstr "最初のスキャンを開始"
+
+#: inc/ScanTriggerPanel.php:255
+msgid "Scan started. Results appear on the Agentic Fixes page in 2-5 minutes."
+msgstr ""
+"スキャンを開始しました。結果は2～5分後に「Agentic Fixes」ページに表示されま"
+"す。"
+
+#: inc/ScanTriggerPanel.php:256
+msgid "Scan triggered just now"
+msgstr "スキャンをたった今開始しました"
+
+#: inc/ScanTriggerPanel.php:264
+msgid "Server did not return a job ID."
+msgstr "サーバーからジョブIDが返されませんでした。"
+
+#: inc/ScanTriggerPanel.php:274
+msgid "Finishing setup…"
+msgstr "セットアップを完了しています…"
+
+#: inc/ScanTriggerPanel.php:279
+msgid "Network error"
+msgstr "ネットワークエラー   "
+
+#: inc/ScanTriggerPanel.php:285
+msgid "Server timeout while queuing scan. Try again."
+msgstr ""
+"スキャンのキュー登録中にサーバーがタイムアウトしました。もう一度お試しくださ"
+"い。"
+
+#: inc/ScanTriggerPanel.php:287
+#, php-format
+msgid "Request failed (HTTP %s)"
+msgstr "リクエストに失敗しました（HTTP %s）"
+
+#: inc/ScanTriggerPanel.php:316
+msgid "Scan failed. Try again."
+msgstr "スキャンに失敗しました。もう一度お試しください。"
+
+#: inc/ScanTriggerPanel.php:318
+msgid "Retry scan"
+msgstr "スキャンを再試行"
+
+#: inc/ScanTriggerPanel.php:334 inc/ScanTriggerPanel.php:354
+msgid "Detected"
+msgstr "検出されました"
+
+#: inc/ScanTriggerPanel.php:361
+msgid "Open & verify"
+msgstr "開いて確認"
+
+#: inc/ScanTriggerPanel.php:365
+msgid ""
+"No reachable sitemap found. Enter one below, or close Advanced to auto-"
+"discover."
+msgstr ""
+"アクセス可能なサイトマップが見つかりませんでした。下に入力するか、［詳細設"
+"定］を閉じて自動検出してください。"
+
+#: inc/ScanTriggerPanel.php:370
+msgid "Enter my own sitemap URL"
+msgstr "自分のサイトマップURLを入力する"
+
+#: inc/ScanTriggerPanel.php:376
+msgid "Could not check for sitemaps. Close Advanced to auto-discover instead."
+msgstr ""
+"サイトマップを確認できませんでした。代わりに［詳細設定］を閉じて自動検出して"
+"ください。"
+
+#. Plugin Name of the plugin/theme
+#: inc/SettingsPage.php:36 inc/SettingsPage.php:37 inc/SettingsPage.php:373
+#: inc/SettingsPage.php:820
+msgid "AllAccessible"
+msgstr "AllAccessible"
+
+#: inc/SettingsPage.php:59 inc/SettingsPage.php:822
+msgid "Account & Settings"
+msgstr "アカウントと設定"
+
+#: inc/SettingsPage.php:60
+msgid "Account"
+msgstr "アカウント"
+
+#: inc/SettingsPage.php:70 inc/SettingsPage.php:71 inc/SettingsPage.php:108
+msgid "Widget Customizer"
+msgstr "ウィジェットカスタマイザー"
+
+#: inc/SettingsPage.php:107 inc/SettingsPage.php:881
+msgid "Widget"
+msgstr "ウィジェット"
+
+#: inc/SettingsPage.php:109
+msgid ""
+"Customize the AllAccessible widget that visitors see on your site. Changes "
+"save instantly and clear the visitor cache."
+msgstr ""
+"サイト訪問者に表示されるAllAccessibleウィジェットをカスタマイズします。変更は"
+"即時に保存され、訪問者のキャッシュがクリアされます。"
+
+#: inc/SettingsPage.php:119
+msgid "Connect your AllAccessible account"
+msgstr "AllAccessible アカウントを接続"
+
+#: inc/SettingsPage.php:120
+msgid "Finish setup to customize your widget."
+msgstr "セットアップを完了してウィジェットをカスタマイズしましょう。"
+
+#: inc/SettingsPage.php:122 inc/SettingsPage.php:850
+msgid "Start setup"
+msgstr "セットアップを開始"
+
+#: inc/SettingsPage.php:131
+msgid "Widget customization is a paid feature"
+msgstr "ウィジェットのカスタマイズは有料機能です"
+
+#: inc/SettingsPage.php:132
+msgid ""
+"Upgrade your AllAccessible plan to customize the widget color, position, "
+"icon, and shape — plus enable agentic AI remediation."
+msgstr ""
+"AllAccessibleプランをアップグレードして、ウィジェットの色、位置、アイコン、形"
+"状をカスタマイズし、さらにエージェント型AIによる修復を有効にしましょう。"
+
+#: inc/SettingsPage.php:333 inc/SettingsPage.php:345 inc/UsageDashboard.php:69
+msgid "Pageviews"
+msgstr "ページビュー"
+
+#: inc/SettingsPage.php:371 inc/SettingsPage.php:627
+msgid "Site overview"
+msgstr "サイト概要"
+
+#: inc/SettingsPage.php:380
+msgid "Widget connected"
+msgstr "ウィジェットが接続されました"
+
+#: inc/SettingsPage.php:384
+msgid ""
+"Accessibility widget and human-in-the-loop agentic AI remediation for your "
+"site."
+msgstr ""
+"サイト向けのアクセシビリティウィジェットと、人間が介在するエージェント型AIに"
+"よる修復。"
+
+#: inc/SettingsPage.php:420
+msgid ""
+"Your current plan uses the legacy AllAccessible widget, which predates "
+"agentic AI remediation. Upgrade to the current plan tier to unlock auto-"
+"suggested fixes, larger pageview caps, and the full AllAccessible AI feature "
+"set."
+msgstr ""
+"現在のプランは、エージェント型AIによる修復より前の従来の AllAccessible ウィ"
+"ジェットを使用しています。現行のプラン階層にアップグレードして、自動提案の修"
+"正、より大きなページビュー上限、AllAccessible AI の全機能を利用できるようにし"
+"てください。"
+
+#: inc/SettingsPage.php:449
+msgid "AI Resolved"
+msgstr "AIで解決済み"
+
+#: inc/SettingsPage.php:451
+msgid "Completed"
+msgstr "完了"
+
+#: inc/SettingsPage.php:452
+msgid "Reopened"
+msgstr "再オープン"
+
+#: inc/SettingsPage.php:453
+msgid "Ignored"
+msgstr "無視"
+
+#: inc/SettingsPage.php:462
+msgid "Activity and quick actions"
+msgstr "アクティビティとクイックアクション"
+
+#: inc/SettingsPage.php:472
+msgid "Agentic Fixes not available on your plan"
+msgstr "ご利用のプランではエージェント型修正は利用できません"
+
+#: inc/SettingsPage.php:477
+msgid ""
+"The legacy AllAccessible widget keeps running, but the agentic AI "
+"remediation pipeline requires a current plan tier. Upgrade to bring auto-"
+"suggested fixes, larger pageview caps, and continuous accessibility scoring "
+"to this site."
+msgstr ""
+"従来の AllAccessible ウィジェットは引き続き動作しますが、エージェント型AIによ"
+"る修復パイプラインには現行のプラン階層が必要です。アップグレードすると、この"
+"サイトで自動提案の修正、より大きなページビュー上限、継続的なアクセシビリティ"
+"スコアリングを利用できます。"
+
+#: inc/SettingsPage.php:492
+msgid "Issues from your latest scan"
+msgstr "最新のスキャンで検出された問題"
+
+#: inc/SettingsPage.php:494
+msgid "Grouped by rule, newest scan first."
+msgstr "ルール別にグループ化（最新のスキャンが先頭）。"
+
+#: inc/SettingsPage.php:503
+msgid "View all"
+msgstr "全て表示"
+
+#: inc/SettingsPage.php:512
+msgid "Severity"
+msgstr "深刻度"
+
+#: inc/SettingsPage.php:513
+msgid "Rule"
+msgstr "ルール"
+
+#: inc/SettingsPage.php:514
+msgid "Issues"
+msgstr "問題"
+
+#: inc/SettingsPage.php:515
+msgid "WCAG"
+msgstr "WCAG"
+
+#: inc/SettingsPage.php:516
+msgid "Status"
+msgstr "ステータス"
+
+#: inc/SettingsPage.php:559
+#, php-format
+msgid "%s fix manifest ready for your review."
+msgid_plural "%s fix manifests ready for your review."
+msgstr[0] "%s 件の修正マニフェストのレビュー準備ができました。"
+
+#: inc/SettingsPage.php:563
+msgid "Review manifests"
+msgstr "マニフェストを確認"
+
+#: inc/SettingsPage.php:580
+msgid ""
+"AllAccessible agents are getting ready to scan your site. Detected "
+"accessibility issues will appear here grouped by rule once your first crawl "
+"completes."
+msgstr ""
+"AllAccessible エージェントがサイトのスキャン準備をしています。最初のクロール"
+"が完了すると、検出されたアクセシビリティの問題がルール別にグループ化されてこ"
+"こに表示されます。"
+
+#: inc/SettingsPage.php:583
+msgid "Open coverage"
+msgstr "カバレッジを開く"
+
+#: inc/SettingsPage.php:593
+msgid "Quick actions"
+msgstr "クイックアクション"
+
+#: inc/SettingsPage.php:599
+msgid "In WordPress"
+msgstr "WordPress 内"
+
+#: inc/SettingsPage.php:612
+msgid "Widget customizer"
+msgstr "ウィジェットカスタマイザー"
+
+#: inc/SettingsPage.php:616
+msgid "Account & settings"
+msgstr "アカウントと設定"
+
+#: inc/SettingsPage.php:624
+msgid "On AllAccessible"
+msgstr "AllAccessible 上"
+
+#: inc/SettingsPage.php:631
+msgid "Audit history"
+msgstr "監査履歴"
+
+#: inc/SettingsPage.php:635
+msgid "Tasks"
+msgstr "タスク"
+
+#: inc/SettingsPage.php:640
+msgid "Reports"
+msgstr "レポート"
+
+#: inc/SettingsPage.php:661
+msgid "Usage limit exceeded"
+msgstr "使用上限を超えました"
+
+#: inc/SettingsPage.php:669
+#, php-format
+msgid ""
+"You have exceeded your %s limit. Your widget has been temporarily downgraded "
+"to free features. Upgrade your plan to restore premium functionality."
+msgid_plural ""
+"You have exceeded the following limits: %s. Your widget has been temporarily "
+"downgraded to free features. Upgrade your plan to restore premium "
+"functionality."
+msgstr[0] ""
+"%s の上限を超えました。ウィジェットは一時的に無料機能にダウングレードされてい"
+"ます。プレミアム機能を復元するには、プランをアップグレードしてください。"
+
+#: inc/SettingsPage.php:697
+msgid "Complete setup to get started"
+msgstr "セットアップを完了して開始"
+
+#: inc/SettingsPage.php:698
+msgid ""
+"Your accessibility widget is ready to go. Complete the quick setup wizard to "
+"activate your widget."
+msgstr ""
+"アクセシビリティウィジェットの準備ができました。クイックセットアップウィザー"
+"ドを完了して、ウィジェットを有効化してください。"
+
+#: inc/SettingsPage.php:700
+msgid "Start setup wizard"
+msgstr "セットアップウィザードを開始"
+
+#: inc/SettingsPage.php:830
+msgid ""
+"Manage your AllAccessible account, plan, widget settings, and integrations."
+msgstr "AllAccessible アカウント、プラン、ウィジェット設定、連携を管理します。"
+
+#: inc/SettingsPage.php:845
+msgid "No AllAccessible account linked"
+msgstr "AllAccessible アカウントがリンクされていません"
+
+#: inc/SettingsPage.php:846
+msgid "Complete the setup wizard to activate your accessibility widget."
+msgstr ""
+"セットアップウィザードを完了して、アクセシビリティウィジェットを有効化してく"
+"ださい。"
+
+#: inc/SettingsPage.php:864
+msgid "Usage limit reached"
+msgstr "使用上限に達しました"
+
+#: inc/SettingsPage.php:866
+msgid ""
+"Your widget is running in free mode until usage resets or your plan is "
+"upgraded."
+msgstr ""
+"使用状況がリセットされるかプランがアップグレードされるまで、ウィジェットは無"
+"料モードで動作します。"
+
+#: inc/SettingsPage.php:871
+msgid "Manage plan"
+msgstr "プランを管理"
+
+#: inc/SettingsPage.php:876
+msgid "Account settings sections"
+msgstr "アカウント設定セクション"
+
+#: inc/SettingsPage.php:879 inc/SettingsPage.php:909
+msgid "Connection"
+msgstr "接続"
+
+#: inc/SettingsPage.php:880
+msgid "Plan & Usage"
+msgstr "プランと使用状況"
+
+#: inc/SettingsPage.php:882
+msgid "Advanced"
+msgstr "高度な設定"
+
+#: inc/SettingsPage.php:911
+msgid "How this site links to your AllAccessible account."
+msgstr "このサイトが AllAccessible アカウントにどのようにリンクされているか。"
+
+#: inc/SettingsPage.php:915
+msgid "Connected"
+msgstr "接続済み"
+
+#: inc/SettingsPage.php:917
+msgid "Action required"
+msgstr "必要なアクション"
+
+#: inc/SettingsPage.php:930
+msgid "Copy account ID"
+msgstr "アカウント ID をコピー"
+
+#: inc/SettingsPage.php:931 inc/SettingsPage.php:950
+msgid "Copy"
+msgstr "コピー"
+
+#: inc/SettingsPage.php:935
+msgid "Identifies your AllAccessible account across every site you own."
+msgstr ""
+"所有するすべてのサイトにわたって AllAccessible アカウントを識別します。"
+
+#: inc/SettingsPage.php:941
+msgid "Site ID"
+msgstr "サイトID"
+
+#: inc/SettingsPage.php:949
+msgid "Copy site ID"
+msgstr "サイト ID をコピー"
+
+#: inc/SettingsPage.php:954
+msgid "Identifies this specific WordPress site within your account."
+msgstr "アカウント内でこの特定の WordPress サイトを識別します。"
+
+#: inc/SettingsPage.php:960
+msgid "Site URL"
+msgstr "サイト URL"
+
+#: inc/SettingsPage.php:989
+msgid "Manage subscription"
+msgstr "購読を管理する"
+
+#: inc/SettingsPage.php:997
+msgid "Current plan"
+msgstr "現在のプラン"
+
+#: inc/SettingsPage.php:1019
+msgid "Plan changes update immediately across every site on this account."
+msgstr "プラン変更は、このアカウントのすべてのサイトに即時反映されます。"
+
+#: inc/SettingsPage.php:1033
+msgid "Pageview usage"
+msgstr "ページビュー使用量"
+
+#: inc/SettingsPage.php:1035
+msgid "Resets at the start of each billing cycle."
+msgstr "各請求サイクルの開始時にリセットされます。"
+
+#: inc/SettingsPage.php:1055
+msgid "Pageviews used this cycle"
+msgstr "このサイクルで使用したページビュー数"
+
+#. translators: 1: used pageviews, 2: limit
+#: inc/SettingsPage.php:1063
+#, php-format
+msgid "%1$s of %2$s pageviews this cycle."
+msgstr "このサイクルのページビュー %2$s 件中 %1$s 件。"
+
+#: inc/SettingsPage.php:1073
+msgid ""
+"You are close to your monthly limit. Add a pageview pack to keep premium "
+"features active."
+msgstr ""
+"月間上限に近づいています。プレミアム機能を有効のままにするには、ページビュー"
+"パックを追加してください。"
+
+#: inc/SettingsPage.php:1075
+msgid "Heads up — you are above 75% of your monthly pageviews."
+msgstr "注意 — 月間ページビューの 75% o を超えています。"
+
+#: inc/SettingsPage.php:1082
+msgid ""
+"Pageview tracking is active. Detailed numbers appear after the first billing "
+"cycle."
+msgstr ""
+"ページビューのトラッキングは有効です。詳細な数値は最初の請求サイクル後に表示"
+"されます。"
+
+#: inc/SettingsPage.php:1099
+msgid "Widget appearance"
+msgstr "ウィジェットの外観"
+
+#: inc/SettingsPage.php:1101
+msgid "Color, position, icon, and label live in the Widget Customizer."
+msgstr "色、位置、アイコン、ラベルはウィジェットカスタマイザーで設定できます。"
+
+#: inc/SettingsPage.php:1106
+msgid "Open customizer"
+msgstr "カスタマイザーを開く"
+
+#: inc/SettingsPage.php:1119
+msgid ""
+"Preview your live widget on the front-end to confirm placement and styling."
+msgstr ""
+"フロントエンドでライブウィジェットをプレビューして、配置とスタイルを確認して"
+"ください。"
+
+#: inc/SettingsPage.php:1125
+msgid "Preview on site"
+msgstr "サイトでプレビュー"
+
+#: inc/SettingsPage.php:1130
+msgid "Advanced settings"
+msgstr "高度な設定"
+
+#: inc/SettingsPage.php:1141
+msgid "Quick toggles"
+msgstr "クイック切り替え"
+
+#: inc/SettingsPage.php:1143
+msgid "Local overrides applied before the widget renders."
+msgstr "ウィジェットのレンダリング前にローカル上書きが適用されます。"
+
+#: inc/SettingsPage.php:1153
+msgid "Headless mode"
+msgstr "ヘッドレスモード"
+
+#: inc/SettingsPage.php:1159
+msgid ""
+"Skip the floating button and trigger the panel from your own UI. Recommended "
+"for custom theme integrations."
+msgstr ""
+"フローティングボタンを使わず、独自のUIからパネルを起動します。カスタムテーマ"
+"統合におすすめです。"
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1175
+#, php-format
+msgid ""
+"Available on Enterprise. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"Enterpriseで利用可能です。<a href=\"%s\" target=\"_blank\" rel=\"noopener\">"
+"プランを見る</a>。"
+
+#: inc/SettingsPage.php:1186 inc/SettingsPage.php:1998
+msgid "Hide widget branding"
+msgstr "ウィジェットのブランディングを非表示"
+
+#: inc/SettingsPage.php:1188
+msgid "Remove the \"Powered by\" footer link inside the widget panel."
+msgstr "ウィジェットパネル内の「Powered by」フッターリンクを削除します。"
+
+#. translators: %s: link to upgrade
+#: inc/SettingsPage.php:1204
+#, php-format
+msgid ""
+"Included with paid plans. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">See plans</a>."
+msgstr ""
+"有料プランに含まれます。<a href=\"%s\" target=\"_blank\" rel=\"noopener\">プ"
+"ランを見る</a>。"
+
+#: inc/SettingsPage.php:1217 inc/SettingsPage.php:1220
+msgid "Save changes"
+msgstr "変更を保存"
+
+#: inc/SettingsPage.php:1219
+msgid "Saved"
+msgstr "保存しました"
+
+#: inc/SettingsPage.php:1237
+msgid "Diagnostics"
+msgstr "診断"
+
+#: inc/SettingsPage.php:1239
+msgid "Local identifiers and tools for troubleshooting."
+msgstr "トラブルシューティング用のローカル識別子とツール。"
+
+#: inc/SettingsPage.php:1246
+msgid "Plugin version"
+msgstr "プラグインバージョン"
+
+#: inc/SettingsPage.php:1255
+msgid "Debug logging"
+msgstr "デバッグログ"
+
+#: inc/SettingsPage.php:1257
+msgid "Write extra diagnostics to the WordPress debug log."
+msgstr "追加の診断情報を WordPress のデバッグログに書き込みます。"
+
+#: inc/SettingsPage.php:1280
+msgid "Disable error reporting to AllAccessible"
+msgstr "AllAccessible へのエラー報告を無効にする"
+
+#: inc/SettingsPage.php:1282
+msgid ""
+"AllAccessible records plugin errors (with your account ID + plugin version) "
+"so the team can spot issues affecting your install. Toggle on to stop "
+"sending. No personal data is collected."
+msgstr ""
+"AllAccessible は、チームがあなたのインストールに影響する問題を特定できるよ"
+"う、プラグインのエラー（あなたのアカウント ID とプラグインのバージョンを含"
+"む）を記録します。送信を停止するにはオンに切り替えてください。個人データは収"
+"集されません。"
+
+#: inc/SettingsPage.php:1298
+msgid "Developer tools"
+msgstr "開発者ツール"
+
+#: inc/SettingsPage.php:1299
+msgid "Diagnose lookup · Sync · Flush caches"
+msgstr "検索を診断 · 同期 · キャッシュをフラッシュ"
+
+#: inc/SettingsPage.php:1304
+msgid "Diagnose page lookup"
+msgstr "ページ検索を診断"
+
+#: inc/SettingsPage.php:1306
+msgid ""
+"Pick a published page or post to inspect the exact URL canonicalization and "
+"API response. Useful when a row shows \"Not scanned\" but you expect a score."
+msgstr ""
+"公開済みの固定ページまたは投稿を選択して、正確な URL のカノニカル化と API 応"
+"答を確認します。行に「未スキャン」と表示されているのにスコアがあるはずだと思"
+"う場合に便利です。"
+
+#: inc/SettingsPage.php:1312
+msgid "Post / page ID"
+msgstr "投稿 / 固定ページ ID"
+
+#: inc/SettingsPage.php:1320 inc/SettingsPage.php:1322
+msgid "Run diagnosis"
+msgstr "診断を実行"
+
+#: inc/SettingsPage.php:1321
+msgid "Looking up…"
+msgstr "検索中…"
+
+#: inc/SettingsPage.php:1331
+msgid "Sync post audit links"
+msgstr "投稿の監査リンクを同期"
+
+#: inc/SettingsPage.php:1333
+msgid ""
+"Manually run the post → audit linker. The background job runs about once a "
+"week (paid plans only, and only when your site receives traffic). Trigger "
+"here if the All Posts column or Editor box shows missing scores and you "
+"don't want to wait."
+msgstr ""
+"投稿 → 監査リンカーを手動で実行します。バックグラウンドジョブは週に約1回実行"
+"されます（有料プランのみ。さらに、サイトにトラフィックがある場合のみ）。「す"
+"べての投稿」列またはエディターのボックスにスコアの欠落が表示され、待ちたくな"
+"い場合は、ここでトリガーしてください。"
+
+#: inc/SettingsPage.php:1341 inc/SettingsPage.php:1343
+msgid "Sync now"
+msgstr "今すぐ同期"
+
+#: inc/SettingsPage.php:1342
+msgid "Syncing…"
+msgstr "同期中…"
+
+#: inc/SettingsPage.php:1350
+msgid "Flush plugin caches"
+msgstr "プラグインのキャッシュをフラッシュ"
+
+#: inc/SettingsPage.php:1352
+msgid ""
+"Wipes every plugin-side API transient (page scores, manifest, validate, "
+"images). Use when the API has been updated and the 2–10 min cache is still "
+"showing old data."
+msgstr ""
+"プラグイン側のAPIトランジェント（ページスコア、マニフェスト、検証、画像）をす"
+"べて消去します。APIが更新されたのに、2～10分のキャッシュが古いデータを表示し"
+"続けている場合に使用してください。"
+
+#: inc/SettingsPage.php:1360 inc/SettingsPage.php:1362
+msgid "Flush caches"
+msgstr "キャッシュをフラッシュ"
+
+#: inc/SettingsPage.php:1361
+msgid "Flushing…"
+msgstr "フラッシュ中…"
+
+#: inc/SettingsPage.php:1372 inc/SettingsPage.php:1380
+#: inc/SettingsPage.php:1383
+msgid "Clear widget caches"
+msgstr "ウィジェットのキャッシュをクリア"
+
+#: inc/SettingsPage.php:1374
+msgid ""
+"Flush local browser storage and server response cache so the widget reloads "
+"fresh on the next page view."
+msgstr ""
+"ローカルのブラウザストレージとサーバー応答キャッシュを消去し、次回のページ表"
+"示時にウィジェットを最新の状態で再読み込みします。"
+
+#: inc/SettingsPage.php:1381
+msgid "Clearing…"
+msgstr "クリア中…"
+
+#: inc/SettingsPage.php:1382
+msgid "Caches cleared"
+msgstr "キャッシュをクリアしました"
+
+#: inc/SettingsPage.php:1393 inc/SettingsPage.php:1409
+msgid "Reset plugin data"
+msgstr "プラグインデータをリセット"
+
+#: inc/SettingsPage.php:1395
+msgid "Disconnect this site and clear local options. Cannot be undone."
+msgstr ""
+"このサイトの接続を解除し、ローカルオプションをクリアします。元に戻せません。"
+
+#: inc/SettingsPage.php:1401
+msgid ""
+"Use this if you are moving the plugin to a different account or starting "
+"over from the setup wizard. Uninstalling the plugin also removes these "
+"options automatically."
+msgstr ""
+"プラグインを別のアカウントに移行する場合や、セットアップウィザードからやり直"
+"す場合に使用してください。プラグインをアンインストールすると、これらのオプ"
+"ションも自動的に削除されます。"
+
+#: inc/SettingsPage.php:1421
+msgid "Need help?"
+msgstr "お困りですか？"
+
+#: inc/SettingsPage.php:1423
+msgid "Our team is here for you — get answers fast."
+msgstr "私たちのチームがサポートします — すぐに回答が得られます。"
+
+#: inc/SettingsPage.php:1432
+msgid "Knowledge base"
+msgstr "ナレッジベース"
+
+#: inc/SettingsPage.php:1444
+msgid "Legal & Trust:"
+msgstr "法務・信頼:"
+
+#: inc/SettingsPage.php:1447
+msgid "GDPR"
+msgstr "GDPR"
+
+#: inc/SettingsPage.php:1448
+msgid "Cookies"
+msgstr "クッキー"
+
+#: inc/SettingsPage.php:1449
+msgid "Trust Center"
+msgstr "トラストセンター"
+
+#: inc/SettingsPage.php:1450
+msgid "Partner Agreement"
+msgstr "パートナー契約"
+
+#: inc/SettingsPage.php:1721 inc/SettingsPage.php:1724
+msgid "Copied"
+msgstr "コピーしました"
+
+#: inc/SettingsPage.php:1725
+msgid "copied to clipboard"
+msgstr "クリップボードにコピーしました"
+
+#: inc/SettingsPage.php:1730 inc/SettingsPage.php:1733
+msgid "Copy:"
+msgstr "写し："
+
+#: inc/SettingsPage.php:1784
+msgid "Could not save. Try again."
+msgstr "保存できませんでした。もう一度お試しください。"
+
+#: inc/SettingsPage.php:1791 inc/SettingsPage.php:1877
+msgid "Network error. Try again."
+msgstr "ネットワークエラーです。もう一度お試しください。"
+
+#: inc/SettingsPage.php:1847
+msgid "Reset all plugin data? This disconnects this site and cannot be undone."
+msgstr ""
+"すべてのプラグインデータをリセットしますか？ これによりこのサイトは切断され、"
+"元に戻せません。"
+
+#: inc/SettingsPage.php:1852
+msgid "Resetting…"
+msgstr "リセット中…"
+
+#: inc/SettingsPage.php:1853
+msgid "Resetting plugin data"
+msgstr "プラグインデータをリセットしています"
+
+#: inc/SettingsPage.php:1863
+msgid "Plugin data cleared. Reloading…"
+msgstr "プラグインデータを消去しました。再読み込み中…"
+
+#: inc/SettingsPage.php:1864
+msgid "Plugin data reset. Reloading."
+msgstr "プラグインデータをリセットしました。再読み込みしています。"
+
+#: inc/SettingsPage.php:1871
+msgid "Could not reset plugin data. Try again."
+msgstr "プラグインデータをリセットできませんでした。もう一度お試しください。"
+
+#: inc/SettingsPage.php:1908
+msgid "Settings saved"
+msgstr "設定が保存されました"
+
+#: inc/SettingsPage.php:1922
+msgid "Premium Trial — 7 days free"
+msgstr "プレミアムトライアル — 7日間無料"
+
+#: inc/SettingsPage.php:1940
+msgid "Legacy Premium"
+msgstr "レガシー Premium"
+
+#. translators: %s: tier name (e.g., "Enterprise")
+#: inc/SettingsPage.php:1954
+#, php-format
+msgid "%s account"
+msgstr "%s アカウント"
+
+#. translators: %s: monthly pageview limit (e.g. "10,000")
+#: inc/SettingsPage.php:1974
+#, php-format
+msgid "Up to %s pageviews per month"
+msgstr "月あたり最大%sページビュー"
+
+#: inc/SettingsPage.php:1977
+msgid "Pageview cap based on your plan"
+msgstr "プランに基づくページビュー上限"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1980
+#, php-format
+msgid ""
+"Unlimited %s interactions — alt text and agentic fix proposals, no monthly "
+"cap"
+msgstr ""
+"%s のやり取りが無制限 — 代替テキストとエージェント型の修正提案、月間上限なし"
+
+#: inc/SettingsPage.php:1987
+msgid "Unlimited pageviews and sites"
+msgstr "ページビュー数とサイト数は無制限"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:1988
+#, php-format
+msgid "Human-in-the-loop agentic remediation powered by %s"
+msgstr "%s を活用した、人間が介在するエージェント型の修正"
+
+#: inc/SettingsPage.php:1989
+msgid "Priority support and dedicated success manager"
+msgstr "優先サポートと専任のサクセスマネージャー"
+
+#: inc/SettingsPage.php:1990
+msgid "Custom branding and white-label widget"
+msgstr "カスタムブランディングとホワイトラベルウィジェット"
+
+#: inc/SettingsPage.php:1991
+msgid "Single sign-on (SSO) and audit log export"
+msgstr "シングルサインオン（SSO）と監査ログのエクスポート"
+
+#: inc/SettingsPage.php:1997
+msgid "Continuous site scans and accessibility scoring"
+msgstr "継続的なサイトスキャンとアクセシビリティスコアリング"
+
+#: inc/SettingsPage.php:1999
+msgid "Email support"
+msgstr "Emailサポート"
+
+#: inc/SettingsPage.php:2003
+msgid "Full premium widget for 7 days"
+msgstr "7日間のフルプレミアムウィジェット"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2004
+#, php-format
+msgid "Try %s agents on your real site"
+msgstr "実際のサイトで %s エージェントを試す"
+
+#: inc/SettingsPage.php:2005
+msgid "Cancel any time — no card hold"
+msgstr "いつでもキャンセル可能 — カード情報の仮押さえなし"
+
+#: inc/SettingsPage.php:2009
+msgid "Premium widget on the legacy plan"
+msgstr "レガシープランのプレミアムウィジェット"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2010
+#, php-format
+msgid "Includes %s agent features"
+msgstr "%s のエージェント機能を含む"
+
+#: inc/SettingsPage.php:2011
+msgid "Continuous accessibility scoring"
+msgstr "継続的なアクセシビリティスコアリング"
+
+#: inc/SettingsPage.php:2016
+msgid "Accessibility widget on every page"
+msgstr "すべてのページにアクセシビリティウィジェット"
+
+#: inc/SettingsPage.php:2017
+msgid "Keyboard navigation and screen reader helpers"
+msgstr "キーボードナビゲーションとスクリーンリーダー支援"
+
+#. translators: %s: AI badge
+#: inc/SettingsPage.php:2018
+#, php-format
+msgid "Upgrade for agentic remediation with %s"
+msgstr "%s によるエージェント型の修正のためにアップグレード"
+
+#: inc/TierGate.php:26
+msgid "Approve, edit, and revert agentic fixes"
+msgstr "エージェント型修正の承認、編集、取り消し"
+
+#: inc/TierGate.php:27
+msgid "Image Descriptions"
+msgstr "画像の説明"
+
+#: inc/TierGate.php:28
+msgid "Reports & Statement deep-links"
+msgstr "レポート＆明細へのディープリンク"
+
+#: inc/TierGate.php:29
+msgid "Per-page accessibility breakdown in editor"
+msgstr "エディターでページごとのアクセシビリティ内訳"
+
+#: inc/TierGate.php:30
+msgid "Notification center"
+msgstr "通知センター"
+
+#: inc/TierGate.php:31
+msgid "CSV export of fixes"
+msgstr "修正内容のCSVエクスポート"
+
+#: inc/TierGate.php:32
+msgid "PDF report export"
+msgstr "PDFレポートのエクスポート"
+
+#: inc/TierGate.php:33
+msgid "White-label branding"
+msgstr "ホワイトラベルのブランディング"
+
+#: inc/TierGate.php:34
+msgid "Weekly automatic scans"
+msgstr "週次の自動スキャン"
+
+#: inc/TierGate.php:35
+msgid "Page change detection"
+msgstr "ページ変更の検出"
+
+#: inc/TierGate.php:36
+msgid "Accommodation request widget"
+msgstr "合理的配慮申請ウィジェット"
+
+#. translators: %s: feature label
+#: inc/TierGate.php:84
+#, php-format
+msgid "%s is available on paid plans"
+msgstr "%s は有料プランでご利用いただけます"
+
+#: inc/TierGate.php:87
+msgid ""
+"Upgrade to unlock this feature plus everything else included in the "
+"AllAccessible AI suite."
+msgstr ""
+"アップグレードして、この機能と AllAccessible AI スイートに含まれるその他すべ"
+"ての機能を利用できるようにしましょう。"
+
+#: inc/TierGate.php:98
+msgid "Upgrade required"
+msgstr "アップグレードが必要"
+
+#: inc/UsageDashboard.php:31
+msgid "Usage overview"
+msgstr "利用状況の概要"
+
+#: inc/UsageDashboard.php:34
+msgid "Usage this month"
+msgstr "今月の利用状況"
+
+#: inc/UsageDashboard.php:36
+msgid "Tracks pageviews and AllAccessible AI activity against your plan."
+msgstr ""
+"プランに対するページビューと AllAccessible AI のアクティビティを追跡します。"
+
+#: inc/UsageDashboard.php:55
+msgid "No usage to show yet"
+msgstr "表示できる使用状況はまだありません"
+
+#: inc/UsageDashboard.php:57
+msgid "Usage appears here once your widget starts serving pageviews."
+msgstr ""
+"ウィジェットがページビューの提供を開始すると、使用状況がここに表示されます。"
+
+#: inc/UsageDashboard.php:61
+msgid "Preview your widget"
+msgstr "ウィジェットをプレビュー"
+
+#: inc/UsageDashboard.php:70
+msgid "Active visits served by your widget this month."
+msgstr "今月、ウィジェットによって提供されたアクティブ訪問数。"
+
+#: inc/UsageDashboard.php:74
+msgid "AI image alt text"
+msgstr "AI画像代替テキスト"
+
+#: inc/UsageDashboard.php:75
+msgid "Alt text generated by AllAccessible AI for images on your site."
+msgstr "サイト上の画像に対して AllAccessible AI が生成した代替テキスト。"
+
+#: inc/UsageDashboard.php:79
+msgid "Accessibility audits"
+msgstr "アクセシビリティ監査"
+
+#: inc/UsageDashboard.php:80
+msgid "Automated scans run by AllAccessible agents."
+msgstr "AllAccessible エージェントによって実行される自動スキャン。"
+
+#: inc/UsageDashboard.php:84
+msgid "Compliance reports"
+msgstr "コンプライアンスレポート"
+
+#: inc/UsageDashboard.php:85
+msgid "VPAT and accessibility statement PDFs generated."
+msgstr "生成された VPAT およびアクセシビリティ声明の PDF。"
+
+#: inc/UsageDashboard.php:133
+#, php-format
+msgid "%1$s usage: %2$d percent"
+msgstr "%1$s の使用量: %2$d パーセント"
+
+#: inc/UsageDashboard.php:150
+msgid "Upgrade to unlock"
+msgstr "アップグレードしてロックを解除する"
+
+#: inc/UsageDashboard.php:175
+#, php-format
+msgid "%s percent used"
+msgstr "%s％使用済み"
+
+#: inc/UsageDashboard.php:183
+msgid "Limit reached — widget temporarily on free features."
+msgstr "上限に達しました — ウィジェットは一時的に無料機能で動作しています。"
+
+#. translators: %s: count of remaining units this month
+#: inc/UsageDashboard.php:188
+#, php-format
+msgid "%s remaining this month"
+msgstr "今月の残り %s"
+
+#: inc/UsageDashboard.php:195
+msgid "Manage"
+msgstr "管理"
+
+#: inc/UsageDashboard.php:203
+msgid "Upgrade your plan"
+msgstr "プランをアップグレード"
+
+#: inc/UsageDashboard.php:209
+msgid "Manage in dashboard"
+msgstr "ダッシュボードで管理"
+
+#: inc/UsageDashboard.php:220
+msgid "No metered features on your plan yet"
+msgstr "現在のプランには従量課金機能がまだありません"
+
+#: inc/UsageDashboard.php:221
+msgid "Usage will appear here once your widget starts serving pages."
+msgstr "ウィジェットがページの配信を開始すると、ここに使用量が表示されます。"
+
+#: inc/UsageDashboard.php:230
+msgid "Need more pageviews or AllAccessible AI capacity?"
+msgstr "ページビュー数や AllAccessible AI の容量を増やしますか？"
+
+#: inc/WidgetCustomizer.php:104
+msgid "Quick Widget Settings"
+msgstr "ウィジェットのクイック設定"
+
+#: inc/WidgetCustomizer.php:105
+msgid "Customize your widget appearance"
+msgstr "ウィジェットの外観をカスタマイズ"
+
+#: inc/WidgetCustomizer.php:109
+msgid "Advanced Settings"
+msgstr "高度な設定"
+
+#: inc/WidgetCustomizer.php:122
+msgid "Pro Tip:"
+msgstr "プロのヒント"
+
+#: inc/WidgetCustomizer.php:123
+msgid ""
+"For more options including accessibility profiles, custom CSS, and advanced "
+"features, visit"
+msgstr ""
+"アクセシビリティプロファイル、カスタムCSS、高度な機能など、さらに多くのオプ"
+"ションについては、こちらをご覧ください"
+
+#: inc/WidgetCustomizer.php:124
+msgid "Advanced Widget Settings"
+msgstr "ウィジェットの詳細設定"
+
+#: inc/WidgetCustomizer.php:142
+msgid "Widget Color"
+msgstr "ウィジェットの色"
+
+#: inc/WidgetCustomizer.php:147
+msgid "Choose the color for your accessibility widget button."
+msgstr "アクセシビリティウィジェットのボタンの色を選択してください。"
+
+#: inc/WidgetCustomizer.php:150
+msgid "Widget Position"
+msgstr "ウィジェットの位置"
+
+#: inc/WidgetCustomizer.php:152
+msgid "Bottom Right"
+msgstr "右下"
+
+#: inc/WidgetCustomizer.php:153
+msgid "Bottom Left"
+msgstr "左下"
+
+#: inc/WidgetCustomizer.php:154
+msgid "Bottom Center"
+msgstr "下部中央"
+
+#: inc/WidgetCustomizer.php:155
+msgid "Middle Right"
+msgstr "中央右"
+
+#: inc/WidgetCustomizer.php:156
+msgid "Middle Left"
+msgstr "中央左"
+
+#: inc/WidgetCustomizer.php:157
+msgid "Top Right"
+msgstr "右上"
+
+#: inc/WidgetCustomizer.php:158
+msgid "Top Left"
+msgstr "左上"
+
+#: inc/WidgetCustomizer.php:160
+msgid "Where the widget button appears on your site."
+msgstr "サイト上でウィジェットボタンが表示される場所。"
+
+#: inc/WidgetCustomizer.php:167
+msgid "Widget Size"
+msgstr "ウィジェットのサイズ"
+
+#: inc/WidgetCustomizer.php:169
+msgid "Small"
+msgstr "小"
+
+#: inc/WidgetCustomizer.php:170
+msgid "Medium (Default)"
+msgstr "デフォルト"
+
+#: inc/WidgetCustomizer.php:171
+msgid "Large"
+msgstr "大"
+
+#: inc/WidgetCustomizer.php:173
+msgid "Size of the widget button in pixels."
+msgstr "ウィジェットボタンのサイズ（ピクセル単位）。"
+
+#: inc/WidgetCustomizer.php:176
+msgid "Widget Icon"
+msgstr "ウィジェット配置"
+
+#: inc/WidgetCustomizer.php:179
+msgid "Default"
+msgstr "デフォルト"
+
+#: inc/WidgetCustomizer.php:180
+msgid "Accessibility Person"
+msgstr "アクセシビリティ担当者"
+
+#: inc/WidgetCustomizer.php:181
+msgid "Accessibility Settings"
+msgstr "アクセシビリティ設定"
+
+#: inc/WidgetCustomizer.php:182
+msgid "Adjust"
+msgstr "調整"
+
+#: inc/WidgetCustomizer.php:183
+msgid "Wheelchair 1"
+msgstr "車いす 1"
+
+#: inc/WidgetCustomizer.php:184
+msgid "Heart"
+msgstr "ハート"
+
+#: inc/WidgetCustomizer.php:185
+msgid "Braille"
+msgstr "点字"
+
+#: inc/WidgetCustomizer.php:186
+msgid "Blind/Cane"
+msgstr "視覚障害者／白杖"
+
+#: inc/WidgetCustomizer.php:187
+msgid "Eye"
+msgstr "目"
+
+#: inc/WidgetCustomizer.php:188
+msgid "Globe"
+msgstr "地球"
+
+#: inc/WidgetCustomizer.php:189
+msgid "Universal Access"
+msgstr "ユニバーサルアクセス"
+
+#: inc/WidgetCustomizer.php:191
+msgid "Walking Cane"
+msgstr "杖"
+
+#: inc/WidgetCustomizer.php:195
+msgid "Icon displayed in the widget button."
+msgstr "ウィジェットボタンに表示されるアイコン。"
+
+#: inc/WidgetCustomizer.php:202
+msgid "Widget Shape"
+msgstr "ウィジェットの形状"
+
+#: inc/WidgetCustomizer.php:204
+msgid "Circle"
+msgstr "円形"
+
+#: inc/WidgetCustomizer.php:205
+msgid "Square"
+msgstr "正方形"
+
+#: inc/WidgetCustomizer.php:207
+msgid "Shape of the widget button."
+msgstr "ウィジェットボタンの形状。"
+
+#: inc/WidgetCustomizer.php:212
+msgid "Run without the bubble"
+msgstr "バブルなしで実行"
+
+#: inc/WidgetCustomizer.php:216
+msgid "Hide widget, keep agentic AI remediation running."
+msgstr "ウィジェットを非表示にし、エージェント型AIによる修復を実行し続けます。"
+
+#: inc/WidgetCustomizer.php:218
+msgid ""
+"Visitors won't see the accessibility toolbar. AllAccessible agents continue "
+"scanning and applying approved fixes in the background."
+msgstr ""
+"訪問者にはアクセシビリティツールバーは表示されません。AllAccessible エージェ"
+"ントはバックグラウンドでスキャンを継続し、承認済みの修正を適用します。"
+
+#: inc/WidgetCustomizer.php:230
+msgid "Save Settings"
+msgstr "設定を保存"
+
+#: inc/WidgetCustomizer.php:234
+msgid "Having trouble viewing updates?"
+msgstr "更新が表示されませんか？"
+
+#: inc/WidgetCustomizer.php:238
+msgid "Clear all caches: browser, cookies, and server (full reset)"
+msgstr "すべてのキャッシュをクリア：ブラウザ、Cookie、サーバー（完全リセット）"
+
+#: inc/WidgetCustomizer.php:239
+msgid "Clear All Caches"
+msgstr "すべてのキャッシュをクリア"
+
+#: inc/WidgetCustomizer.php:249
+msgid "Saving..."
+msgstr "保存中…"
+
+#: inc/WidgetCustomizer.php:253
+msgid "Settings saved!"
+msgstr "設定が保存されました"
+
+#: inc/WidgetCustomizer.php:259
+msgid "Cache cleared! Refresh your site to see changes."
+msgstr ""
+"キャッシュをクリアしました！変更を確認するにはサイトを更新してください。"
+
+#: inc/WidgetCustomizer.php:267
+msgid "Clearing all caches..."
+msgstr "すべてのキャッシュをクリアしています..."
+
+#: inc/WidgetCustomizer.php:271
+msgid "All caches cleared! Refresh your site to see changes."
+msgstr ""
+"すべてのキャッシュをクリアしました！変更を確認するにはサイトを更新してくださ"
+"い。"
+
+#: inc/WidgetCustomizer.php:284
+msgid "Live Preview"
+msgstr "ライブ・プレビュー"
+
+#: inc/WidgetCustomizer.php:297
+msgid "See how your widget will look on your site."
+msgstr "ウィジェットがサイト上でどのように表示されるかを確認します。"
+
+#: inc/WidgetCustomizer.php:576
+msgid "Failed to save settings. Please try again."
+msgstr "設定の保存に失敗しました。もう一度お試しください。"
+
+#: inc/WidgetCustomizer.php:623
+msgid "Error clearing cache. Please check browser console."
+msgstr ""
+"キャッシュのクリア中にエラーが発生しました。ブラウザのコンソールを確認してく"
+"ださい。"
+
+#: inc/WidgetCustomizer.php:677
+msgid "Server cache invalidation failed. Browser cache was cleared."
+msgstr ""
+"サーバーキャッシュの無効化に失敗しました。ブラウザキャッシュはクリアされまし"
+"た。"
+
+#: inc/WidgetCustomizer.php:699
+msgid "Error clearing caches. Please check browser console."
+msgstr ""
+"キャッシュのクリア中にエラーが発生しました。ブラウザのコンソールを確認してく"
+"ださい。"
+
+#: inc/api/ApiClient.php:82
+msgid "Account ID not found"
+msgstr "アカウントIDが見つかりません"
+
+#: inc/api/ApiClient.php:125
+msgid "Invalid API response"
+msgstr "無効なAPIレスポンス"
+
+#: inc/api/ApiClient.php:371
+msgid "A page URL is required to trigger a scan."
+msgstr "スキャンを実行するにはページURLが必要です。"
+
+#: inc/api/ApiClient.php:473
+msgid "post_id or page_url required"
+msgstr "post_id または page_url が必要です"
+
+#: inc/api/ApiClient.php:568
+msgid "post_id and page_url required"
+msgstr "post_id と page_url が必要です"
+
+#: inc/api/ApiClient.php:589
+msgid "pairs required"
+msgstr "pairs が必要です"
+
+#: inc/api/ApiClient.php:592
+msgid "batch limited to 100 pairs"
+msgstr "バッチは100ペアまでに制限されています"
+
+#: inc/api/ApiClient.php:641 inc/api/ApiClient.php:700
+#: inc/api/ApiClient.php:967
+msgid "Account not configured"
+msgstr "アカウントが設定されていません"
+
+#: inc/api/ApiClient.php:753 inc/api/ApiClient.php:768
+#: inc/api/ApiClient.php:788
+msgid "Invalid manifest ID"
+msgstr "無効なマニフェストID"
+
+#: inc/api/ApiClient.php:814
+msgid "Invalid manifest or fix index"
+msgstr "無効なマニフェストまたは修正インデックス"
+
+#: inc/api/ApiClient.php:818
+msgid "Value is required"
+msgstr "値が必要です"
+
+#: inc/api/ApiClient.php:821
+msgid "Value too long (max 500 characters)"
+msgstr "値が長すぎます（最大500文字）"
+
+#: inc/api/ApiClient.php:841
+msgid "Invalid site ID"
+msgstr "無効なサイトID"
+
+#: inc/api/ApiClient.php:845
+msgid "No manifest IDs supplied"
+msgstr "マニフェストIDが指定されていません"
+
+#: inc/api/ApiClient.php:988
+msgid "Server returned invalid plugin secret payload"
+msgstr "サーバーが無効なプラグインシークレットのペイロードを返しました"
+
+#: inc/api/ApiClient.php:1017
+msgid ""
+"No site associated with this account yet. Visit your WordPress homepage once "
+"to register this site, then return here."
+msgstr ""
+"このアカウントにはまだサイトが関連付けられていません。このサイトを登録するた"
+"めに一度WordPressのホームページにアクセスしてから、ここに戻ってください。"
+
+#: inc/api/ApiClient.php:1151
+msgid "Invalid scan job ID"
+msgstr "無効なスキャンジョブID"
+
+#: inc/api/ApiClient.php:1170
+msgid "Plugin secret unavailable. Re-validate license to refresh credentials."
+msgstr ""
+"プラグインシークレットを利用できません。ライセンスを再検証して認証情報を更新"
+"してください。"
+
+#. translators: %s: error message
+#: inc/api/ApiClient.php:1226
+#, php-format
+msgid "API request failed: %s"
+msgstr "API リクエストに失敗しました: %s"
+
+#: inc/api/ApiClient.php:1249
+msgid "Failed to decode API response"
+msgstr "APIレスポンスのデコードに失敗しました"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.allaccessible.org/platform/wordpress/"
+msgstr "https://www.allaccessible.org/platform/wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Unlock true digital accessibility with AllAccessible - a comprehensive "
+"WordPress plugin driving your website towards WCAG/ADA compliance. Empower "
+"your users with a fully customizable accessibility widget, plus agentic AI "
+"remediation that auto-suggests fixes for your team to approve."
+msgstr ""
+"AllAccessibleで真のデジタルアクセシビリティを実現。WCAG/ADA準拠に向けてサイト"
+"を推進する包括的なWordPressプラグインです。完全にカスタマイズ可能なアクセシビ"
+"リティウィジェットに加え、エージェント型AIによるリメディエーションで修正案を"
+"自動提案し、チームが承認できます。"
+
+#. Author of the plugin/theme
+msgid "AllAccessible Team"
+msgstr "AllAccessible Team"
+
+#. Author URI of the plugin/theme
+msgid "https://www.allaccessible.org/"
+msgstr "https://www.allaccessible.org/"
+
+#~ msgid ""
+#~ "Could not start scan — plugin credentials not yet provisioned. Visit "
+#~ "Settings → Re-verify to refresh, then retry."
+#~ msgstr ""
+#~ "スキャンを開始できません — プラグインの認証情報がまだプロビジョニングされ"
+#~ "ていません。［設定］→［再確認］に移動して更新し、その後もう一度お試しくだ"
+#~ "さい。"
+
+#~ msgid "AI alt text · this month"
+#~ msgstr "AI 代替テキスト · 今月"
+
+#~ msgid "Pages crawled"
+#~ msgstr "クロールされたページ"
+
+#, php-format
+#~ msgid "Grouped by rule. %1$s AI-resolvable · %2$s need manual review."
+#~ msgstr ""
+#~ "ルール別にグループ化。AIで解決可能 %1$s 件 · 手動レビューが必要 %2$s 件。"
+
+#, php-format
+#~ msgid "Agentic alt text by %1$s — up to %2$s images/month"
+#~ msgstr ""
+#~ "%1$s によるエージェント型の代替テキスト — 月あたり最大 %2$s 枚の画像"
+
+#, php-format
+#~ msgid "Agentic alt text and label generation by %s"
+#~ msgstr "%s によるエージェント型の代替テキストとラベル生成"
+
+#~ msgid "Scan started — watching for results…"
+#~ msgstr "スキャンを開始しました — 結果を監視中…"
+
+#~ msgid "Scan failed. Try again from the dashboard."
+#~ msgstr "スキャンに失敗しました。ダッシュボードからもう一度お試しください。"
+
+#~ msgid "Enjoying AllAccessible?"
+#~ msgstr "AllAccessible を気に入っていますか？"
+
+#~ msgid "No data yet"
+#~ msgstr "まだデータがありません"
+
+#~ msgid "Limit reached"
+#~ msgstr "上限に達しました"
+
+#~ msgid "Approaching limit"
+#~ msgstr "上限に近づいています"
+
+#~ msgid "On track"
+#~ msgstr "順調です"
+
+#~ msgid "Healthy"
+#~ msgstr "健全"
+
+#~ msgid "Site overview at a glance"
+#~ msgstr "サイト概要をひと目で確認"
+
+#~ msgid "Accessibility Score: not yet measured"
+#~ msgstr "アクセシビリティスコア: 未測定"
+
+#, php-format
+#~ msgid "%1$s of %2$s pages audited"
+#~ msgstr "%2$s ページ中 %1$s ページを監査済み"
+
+#~ msgid "Pages audited: none yet"
+#~ msgstr "監査済みページ数: まだありません"
+
+#~ msgid "Across your site"
+#~ msgstr "サイト全体"
+
+#, php-format
+#~ msgid "%s fix awaiting review"
+#~ msgid_plural "%s fixes awaiting review"
+#~ msgstr[0] "レビュー待ちの修正 %s 件"
+
+#~ msgid "Pending Fixes"
+#~ msgstr "未対応の修正"
+
+#, php-format
+#~ msgid "%s active on your site"
+#~ msgstr "サイトで有効な %s"
+
+#~ msgid "Plan usage breakdown"
+#~ msgstr "プラン使用状況の内訳"
+
+#~ msgid "Site Stats"
+#~ msgstr "サイト統計"
+
+#, php-format
+#~ msgid "%s w/ AI alt"
+#~ msgstr "AI 生成の代替テキスト付き %s"
+
+#, php-format
+#~ msgid "%1$s — %2$d%% used"
+#~ msgstr "%1$s — %2$d%% 使用済み"
+
+#~ msgid "Limit reached — upgrade capacity"
+#~ msgstr "上限に達しました — 容量をアップグレード"
+
+#~ msgid "Total images"
+#~ msgstr "すべての画像："
+
+#~ msgid "across all scanned pages"
+#~ msgstr "スキャンしたすべてのページにわたって"
+
+#, php-format
+#~ msgid "%d%% of total"
+#~ msgstr "合計 %d%% of"
+
+#~ msgid "Authored by AllAccessible AI"
+#~ msgstr "AllAccessible AI により作成"
+
+#~ msgid "Get this site ready for everyone"
+#~ msgstr "このサイトを誰にとっても使いやすく準備しましょう"
+
+#~ msgid "Create a new AllAccessible account"
+#~ msgstr "新しい AllAccessible アカウントを作成"
+
+#~ msgid "Recommended"
+#~ msgstr "推奨"
+
+#~ msgid "Create a new account"
+#~ msgstr "開業者登録(無料)をする"
+
+#~ msgid ""
+#~ "Spin up a fresh AllAccessible account with the dashboard, reporting, and "
+#~ "the full agentic AI toolkit."
+#~ msgstr ""
+#~ "ダッシュボード、レポート機能、そしてフルのエージェント型AIツールキットを備"
+#~ "えた新しいAllAccessibleアカウントを作成します。"
+
+#~ msgid "Existing customer"
+#~ msgstr "既存のお客様"
+
+#~ msgid "Link an existing account"
+#~ msgstr "既存のアカウントをリンクする"
+
+#~ msgid "Link account"
+#~ msgstr "リンクアカウント"
+
+#~ msgid "Just the widget"
+#~ msgstr "ウィジェットのみ"
+
+#~ msgid ""
+#~ "The free accessibility widget keeps running on this site. Finish setup "
+#~ "any time to unlock the dashboard and AI fixes."
+#~ msgstr ""
+#~ "無料のアクセシビリティ・ウィジェットはこのサイトで引き続き動作します。いつ"
+#~ "でもセットアップを完了して、ダッシュボードとAI修正を利用できるようにしま"
+#~ "しょう。"
+
+#~ msgid "Skip setup"
+#~ msgstr "設定をスキップ"
+
+#~ msgid "Choose a plan"
+#~ msgstr "プランの選択"
+
+#~ msgid ""
+#~ "Start free and upgrade later, or try the full feature set free for seven "
+#~ "days. No credit card required either way."
+#~ msgstr ""
+#~ "無料で始めて後でアップグレードするか、全機能を7日間無料でお試しください。"
+#~ "どちらの場合もクレジットカードは不要です。"
+
+#~ msgid "month"
+#~ msgstr "月"
+
+#~ msgid "Accessibility widget"
+#~ msgstr "アクセシビリティウィジェット"
+
+#~ msgid "Color and contrast controls"
+#~ msgstr "色とコントラストの調整"
+
+#~ msgid "Choose Free"
+#~ msgstr "無料を選ぶ"
+
+#~ msgid "Premium trial"
+#~ msgstr "プレミアムトライアル"
+
+#~ msgid "Everything in Free"
+#~ msgstr "無料プランのすべての機能"
+
+#~ msgid "AI"
+#~ msgstr "エーアイ"
+
+#~ msgid "Human-in-the-loop agentic AI remediation"
+#~ msgstr "人間が関与するエージェント型AIによる修正対応"
+
+#~ msgid "Automatic alt text from AllAccessible agents"
+#~ msgstr "AllAccessibleエージェントによる自動代替テキスト"
+
+#~ msgid "WCAG and ADA audits"
+#~ msgstr "WCAGおよびADA監査"
+
+#~ msgid "Widget customization"
+#~ msgstr "ウィジェットのカスタマイズ"
+
+#~ msgid "Cancel any time"
+#~ msgstr "いつでもキャンセル可能"
+
+#~ msgid "Start trial"
+#~ msgstr "トライアルを開始"
+
+#~ msgid "Agentic AI handles the heavy lifting."
+#~ msgstr "エージェント型AIが面倒な作業を引き受けます。"
+
+#~ msgid ""
+#~ "AllAccessible agents draft alt text, propose code fixes, and suggest "
+#~ "remediations. Your team reviews and approves before anything ships."
+#~ msgstr ""
+#~ "AllAccessibleのエージェントが代替テキストを下書きし、コード修正案を提示"
+#~ "し、リメディエーション案を提案します。公開前に、チームが内容を確認して承認"
+#~ "します。"
+
+#~ msgid "Back"
+#~ msgstr "戻る"
+
+#~ msgid "I already have an account"
+#~ msgstr "既にアカウントを持っています"
+
+#~ msgid "Step 3 of 4"
+#~ msgstr "ステップ 3/4"
+
+#~ msgid "Create your account"
+#~ msgstr "アカウントを作成"
+
+#~ msgid "We use this to provision your account and send setup confirmations."
+#~ msgstr "アカウントを作成し、セットアップ確認を送信するために使用します。"
+
+#~ msgid "Create account"
+#~ msgstr "アカウントを作成する"
+
+#~ msgid "Free forever plan"
+#~ msgstr "永久無料プラン"
+
+#~ msgid "No credit card. Upgrade any time."
+#~ msgstr "クレジットカード不要。いつでもアップグレードできます。"
+
+#~ msgid "Includes the accessibility widget and core controls."
+#~ msgstr "アクセシビリティ・ウィジェットと基本コントロールが含まれます。"
+
+#~ msgid "Up to 10k pageviews / month covered."
+#~ msgstr "月間最大1万ページビューまで対象。"
+
+#~ msgid "Seven-day premium trial"
+#~ msgstr "7日間のプレミアムトライアル"
+
+#~ msgid "No credit card. Cancel any time."
+#~ msgstr "クレジットカード不要。いつでもキャンセルできます。"
+
+#~ msgid "Full access to agentic AI remediation."
+#~ msgstr ""
+#~ "エージェント型AIによる修正（リメディエーション）をフルアクセスで利用可能。"
+
+#~ msgid "Continuous audits + per-page scoring."
+#~ msgstr "継続的な監査 + ページごとのスコアリング。"
+
+#~ msgid "Widget customization, Image AI, VPAT exports."
+#~ msgstr "ウィジェットのカスタマイズ、画像AI、VPATエクスポート。"
+
+#~ msgid "We never share your email."
+#~ msgstr "メールアドレスを共有することはありません。"
+
+#~ msgid "Link your account"
+#~ msgstr "アカウントを連携"
+
+#~ msgid ""
+#~ "Enter the email associated with your AllAccessible account and we will "
+#~ "connect this site to it."
+#~ msgstr ""
+#~ "AllAccessibleアカウントに関連付けられているメールアドレスを入力すると、こ"
+#~ "のサイトをそのアカウントに接続します。"
+
+#~ msgid "Use the email tied to your AllAccessible login."
+#~ msgstr "AllAccessibleのログインに紐づくメールアドレスを使用してください。"
+
+#~ msgid "Linking your account..."
+#~ msgstr "アカウントをリンクしています..."
+
+#~ msgid "What happens next"
+#~ msgstr "次に起こること"
+
+#~ msgid "This WordPress site is added to your existing account."
+#~ msgstr "このWordPressサイトは既存のアカウントに追加されます。"
+
+#~ msgid "Your current plan and settings stay in place."
+#~ msgstr "現在のプランと設定はそのまま維持されます。"
+
+#~ msgid "The widget activates with your saved configuration."
+#~ msgstr "ウィジェットは保存済みの設定で有効化されます。"
+
+#~ msgid "Step 4 of 4"
+#~ msgstr "ステップ 4/4"
+
+#~ msgid "We found your sitemap"
+#~ msgstr "サイトマップが見つかりました"
+
+#~ msgid "Start free forever"
+#~ msgstr "永久無料で開始"
+
+#~ msgid "Activate free account"
+#~ msgstr "無料アカウントを有効化"
+
+#~ msgid "Start your seven-day trial"
+#~ msgstr "7日間のトライアルを開始"
+
+#~ msgid "Activate free trial"
+#~ msgstr "無料トライアルを有効化"
+
+#~ msgid "Please fill in all required fields."
+#~ msgstr "すべての項目を入力してください。"
+
+#~ msgid ""
+#~ "We could not find an account with that email. Please check and try again."
+#~ msgstr ""
+#~ "そのメールアドレスのアカウントが見つかりませんでした。確認してもう一度お試"
+#~ "しください。"
+
+#~ msgid "Generate fixes now"
+#~ msgstr "今すぐ修正案を生成"
+
+#~ msgid "Open in app"
+#~ msgstr "アプリで開く"
+
+#~ msgid "Submit your sitemap"
+#~ msgstr "サイトマップを送信"
+
+#~ msgid ""
+#~ "Your sitemap tells AllAccessible which pages to check. Once submitted, "
+#~ "scans run automatically based on your plan."
+#~ msgstr ""
+#~ "サイトマップは、AllAccessible にチェックするページを伝えます。送信すると、"
+#~ "プランに基づいてスキャンが自動的に実行されます。"
+
+#~ msgid "Submit sitemap"
+#~ msgstr "サイトマップを送信"
+
+#~ msgid "Update sitemap"
+#~ msgstr "サイトマップを更新"
+
+#~ msgid ""
+#~ "No sitemap detected on this site. Install an SEO plugin (Yoast, RankMath, "
+#~ "All in One SEO) or enable the WordPress core sitemap, then refresh this "
+#~ "page."
+#~ msgstr ""
+#~ "このサイトでサイトマップが検出されませんでした。SEOプラグイン（Yoast、"
+#~ "RankMath、All in One SEO）をインストールするか、WordPressのコアサイトマッ"
+#~ "プを有効にしてから、このページを更新してください。"
+
+#~ msgid "Sitemap URL"
+#~ msgstr "サイトマップURL"
+
+#, php-format
+#~ msgid "%d candidate found"
+#~ msgid_plural "%d candidates found"
+#~ msgstr[0] "候補が%d件見つかりました"
+
+#~ msgid "pages scanned. Agentic Fixes ready to review."
+#~ msgstr ""
+#~ "スキャンしたページ数。Agentic Fixes をレビューする準備ができました。"
+
+#~ msgid "Pick a sitemap URL first."
+#~ msgstr "まずサイトマップURLを選択してください。"
+
+#~ msgid "Yoast SEO"
+#~ msgstr "Yoast SEO"
+
+#~ msgid "Rank Math"
+#~ msgstr "Rank Math"
+
+#~ msgid "All in One SEO"
+#~ msgstr "All in One SEO"
+
+#~ msgid "SEOPress"
+#~ msgstr "SEOPress"
+
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
+
+#~ msgid "—"
+#~ msgstr "—"
+
+#~ msgid "Accessibility resolution overview"
+#~ msgstr "アクセシビリティ解決状況の概要"
+
+#~ msgid "Overall score"
+#~ msgstr "総合スコア"
+
+#, php-format
+#~ msgid "WCAG %s aligned"
+#~ msgstr "WCAG %s に準拠"
+
+#~ msgid "Resolution"
+#~ msgstr "解像度"
+
+#~ msgid "remaining"
+#~ msgstr "残り"
+
+# GPT: The source text has "esolved" (likely missing the leading "R"); I translated it as the intended "Resolved".
+#, fuzzy, php-format
+#~ msgid "%s%% resolved by AllAccessible agents"
+#~ msgstr "%s%% rAllAccessibleのエージェントによって解決済み"
+
+#, php-format
+#~ msgid "%1$s auto-applied · %2$s approved by your team"
+#~ msgstr "%1$s 件を自動適用 · %2$s 件をチームが承認"
+
+#~ msgid ""
+#~ "Resolution numbers will appear after your first scan completes and "
+#~ "AllAccessible agents process your manifest."
+#~ msgstr ""
+#~ "解決数は、最初のスキャンが完了し、AllAccessible エージェントがマニフェスト"
+#~ "を処理した後に表示されます。"
+
+#~ msgid "Coverage"
+#~ msgstr "保障範囲"
+
+#, php-format
+#~ msgid "%s%% of estimated site coverage"
+#~ msgstr "推定サイトカバレッジの%s%% o"
+
+#~ msgid "No pages scanned yet."
+#~ msgstr "まだページがスキャンされていません。"
+
+#, php-format
+#~ msgid "Last scan %s"
+#~ msgstr "最終スキャン %s"
+
+#, php-format
+#~ msgid "Overall accessibility score %s out of 100"
+#~ msgstr "総合アクセシビリティスコア：100 点中 %s 点"
+
+#~ msgid "Run a scan to compute your first score."
+#~ msgstr "スキャンを実行して、最初のスコアを算出しましょう。"
+
+#~ msgid "Trending up since your last scan."
+#~ msgstr "前回のスキャン以降、上昇傾向です。"
+
+#~ msgid "Down from your last scan — review pending fixes."
+#~ msgstr "前回のスキャンより低下 — 保留中の修正を確認してください。"
+
+#~ msgid "Good. A few high-impact fixes will push you to excellent."
+#~ msgstr "良好です。影響の大きい修正をいくつか行えば、優秀に到達できます。"
+
+#~ msgid "Needs work. Approve the recommended fixes to climb fast."
+#~ msgstr "要改善です。推奨される修正を承認して、素早く改善しましょう。"
+
+#~ msgid "Critical issues detected. Start with the queue below."
+#~ msgstr ""
+#~ "重大な問題が検出されました。まずは以下のキューから着手してください。"
+
+#~ msgid "Post not found"
+#~ msgstr "投稿が見つかりません"
+
+#~ msgid "Could not generate permalink for this post"
+#~ msgstr "この投稿のパーマリンクを生成できませんでした"
+
+#~ msgid "Page scan initiated. Results will be available shortly."
+#~ msgstr "ページスキャンを開始しました。結果はまもなく利用可能になります。"
+
+#, php-format
+#~ msgid "API returned status code %d"
+#~ msgstr "API がステータスコード %d を返しました"
+
+#~ msgid "Failed to parse API response"
+#~ msgstr "API 応答の解析に失敗しました"
+
+#~ msgid ""
+#~ "Agentic AI accessibility remediation and the AllAccessible widget. "
+#~ "Connect your AllAccessible account to enable compliance scans, widget "
+#~ "customization, and human-in-the-loop remediation."
+#~ msgstr ""
+#~ "エージェント型AIによるアクセシビリティ改善とAllAccessibleウィジェット。"
+#~ "AllAccessibleアカウントを接続すると、準拠性スキャン、ウィジェットのカスタ"
+#~ "マイズ、ヒューマン・イン・ザ・ループによる改善を有効にできます。"
+
+#~ msgid "Site not connected to AllAccessible account."
+#~ msgstr "サイトがAllAccessibleアカウントに接続されていません。"
+
+#~ msgid "Unknown API error"
+#~ msgstr "不明な API エラー"
+
+#, php-format
+#~ msgid "API error (%1$d): %2$s"
+#~ msgstr "APIエラー（%1$d）：%2$s"
+
+#~ msgid "Not Available"
+#~ msgstr "使用不可"
+
+#~ msgid "Needs Work"
+#~ msgstr "改善が必要"
+
+#, php-format
+#~ msgid "WCAG %s Compliant"
+#~ msgstr "WCAG %s 準拠"
+
+#, php-format
+#~ msgid "WCAG %s Non-Compliant"
+#~ msgstr "WCAG %s 非準拠"
+
+#~ msgid "Sitemap URL is required"
+#~ msgstr "サイトマップURLは必須です"
