@@ -1,4 +1,4 @@
-=== WP Accessibility by AllAccessible, CMS Level WCAG & ADA Compliance with Agentic AI Remediation ===
+=== Accessibility by AllAccessible, CMS Level WCAG & ADA Remediation with Agentic AI ===
 Author: AllAccessible
 Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
@@ -6,7 +6,7 @@ Tags: accessibility, wcag, ada, accessibility widget, eaa
 Requires at least: 5.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 

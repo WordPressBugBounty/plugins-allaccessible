@@ -84,7 +84,7 @@ class AllAccessible_ApiClient {
         }
 
         // Call the validation endpoint with comprehensive data
-        $response = wp_remote_post('https://api.allaccessible.org/validate', array(
+        $response = $this->remote_with_retry('https://api.allaccessible.org/validate', array(
             'method' => 'POST',
             'sslverify' => false,
             'headers' => array('Content-Type' => 'application/json'),
@@ -145,7 +145,11 @@ class AllAccessible_ApiClient {
             return $site_options->tier;
         }
 
-        AllAccessible_Debug::warn('ApiClient::get_subscription_tier', 'API response missing tier — defaulted to free');
+        // Free accounts legitimately come back with no pricingTier/tier field,
+        // so a missing tier is the EXPECTED free-tier path, not an anomaly.
+        // Log locally for debugging but do NOT report — warn() would send this
+        // to error reporting and flood it with normal free-tier traffic.
+        AllAccessible_Debug::info('ApiClient::get_subscription_tier', 'No tier in response — defaulting to free');
         return 'free';
     }
 
@@ -1195,7 +1199,7 @@ class AllAccessible_ApiClient {
             $args['body'] = $body_string;
         }
 
-        $response = wp_remote_request(self::APP_BASE_URL . $path, $args);
+        $response = $this->remote_with_retry(self::APP_BASE_URL . $path, $args);
 
         if (!$_retry && !is_wp_error($response) && wp_remote_retrieve_response_code($response) === 401) {
             $refetched = $this->fetch_plugin_secret();
@@ -1213,6 +1217,55 @@ class AllAccessible_ApiClient {
     private function wp_locale() {
         $locale = function_exists('get_locale') ? get_locale() : 'en_US';
         return sanitize_text_field($locale);
+    }
+
+    /**
+     * Issue an HTTP request with one retry on TRANSIENT failures (connection
+     * timeouts, 502/503/504). A single blip is logged non-reporting (info) and
+     * retried after a short backoff; only a persistent failure falls through to
+     * the caller's error reporting. Cuts Sentry noise from one-off cURL 28 /
+     * 5xx against slow upstreams (WORDPRESS-PLUGIN-6/7/8) without hiding real
+     * outages (two consecutive failures still report).
+     */
+    private function remote_with_retry($url, $args) {
+        $attempts = 2;
+        $delay_ms = 300;
+        $response = null;
+        for ($i = 1; $i <= $attempts; $i++) {
+            $response = wp_remote_request($url, $args);
+            if (!$this->is_transient_failure($response) || $i === $attempts) {
+                return $response;
+            }
+            AllAccessible_Debug::info('ApiClient::retry', 'Transient API failure — retrying', array(
+                'attempt' => $i,
+                'reason'  => $this->failure_reason($response),
+            ));
+            usleep($delay_ms * 1000);
+            $delay_ms *= 2;
+        }
+        return $response;
+    }
+
+    /**
+     * Is this response a transient failure worth one retry?
+     * cURL 28 (timeout), cURL 7 (connect failed), connection reset, or 502/503/504.
+     */
+    private function is_transient_failure($response) {
+        if (is_wp_error($response)) {
+            $msg = $response->get_error_message();
+            return strpos($msg, 'cURL error 28') !== false
+                || stripos($msg, 'timed out') !== false
+                || strpos($msg, 'cURL error 7') !== false
+                || stripos($msg, 'connection reset') !== false;
+        }
+        $code = (int) wp_remote_retrieve_response_code($response);
+        return in_array($code, array(502, 503, 504), true);
+    }
+
+    private function failure_reason($response) {
+        return is_wp_error($response)
+            ? $response->get_error_message()
+            : ('HTTP ' . wp_remote_retrieve_response_code($response));
     }
 
     /**
