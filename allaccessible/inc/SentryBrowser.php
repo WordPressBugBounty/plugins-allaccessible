@@ -136,8 +136,14 @@ final class AllAccessible_SentryBrowser {
                                     || f.filename.indexOf('aacb-') !== -1
                                     || f.filename.indexOf('AACB_') !== -1);
                         });
-                        // Manual captures (no stacktrace) always pass.
-                        if (frames.length === 0) return event;
+                        // No stack frames: keep only our own manual messages
+                        // (captureMessage has a `message` and no exception). Drop
+                        // frameless AUTO errors — opaque cross-origin failures,
+                        // other plugins' Gutenberg "Transition" aborts, and
+                        // browser-extension errors — they aren't ours, just noise.
+                        if (frames.length === 0) {
+                            return (event.message && !event.exception) ? event : null;
+                        }
                         return ours ? event : null;
                     } catch (e) { return event; }
                 }

@@ -1273,7 +1273,22 @@ class AllAccessible_ApiClient {
      */
     private function decode_json_response($response) {
         if (is_wp_error($response)) {
-            AllAccessible_Debug::error('ApiClient::transport', $response);
+            // Transient connectivity (timeout / cURL 28 / connection reset) is
+            // expected background noise on a hot path — log at warn for rate
+            // visibility, not error. Genuinely unexpected transport failures
+            // still go to error.
+            $err_code = $response->get_error_code();
+            $err_msg  = $response->get_error_message();
+            $transient = ($err_code === 'http_request_failed')
+                || strpos($err_msg, 'Operation timed out') !== false
+                || strpos($err_msg, 'timed out') !== false
+                || strpos($err_msg, 'Connection reset') !== false
+                || strpos($err_msg, 'Could not resolve host') !== false;
+            if ($transient) {
+                AllAccessible_Debug::warn('ApiClient::transport', $err_msg);
+            } else {
+                AllAccessible_Debug::error('ApiClient::transport', $response);
+            }
             return new WP_Error('api_request_failed', sprintf(
                 /* translators: %s: error message */
                 __('API request failed: %s', 'allaccessible'),

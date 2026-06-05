@@ -85,9 +85,9 @@ class AllAccessible_EditorMetaBox {
 
         wp_enqueue_script(
             'allaccessible-editor-metabox',
-            AACB_URL . '/src/admin/js/editor-metabox.js',
+            AACB_JS . 'js/editor-metabox.js',
             array('jquery'),
-            AACB_VERSION,
+            aacb_asset_ver('js/editor-metabox.js'),
             true
         );
 
