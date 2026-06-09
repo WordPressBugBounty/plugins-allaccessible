@@ -83,11 +83,15 @@
                 scoreCircle.addClass('score-poor');
             }
 
-            // Update issues counts
-            $('#aacb-issues-critical').text(data.issues.critical);
-            $('#aacb-issues-serious').text(data.issues.serious);
-            $('#aacb-issues-moderate').text(data.issues.moderate);
-            $('#aacb-issues-minor').text(data.issues.minor);
+            // Update issues counts. Guard: the API can return a partial payload
+            // (e.g. a page that was never scanned, or an error-shaped response on
+            // an HTTP 200) where `issues` is absent — default to zeros instead of
+            // throwing "Cannot read properties of undefined (reading 'critical')".
+            var issues = data.issues || {};
+            $('#aacb-issues-critical').text(issues.critical || 0);
+            $('#aacb-issues-serious').text(issues.serious || 0);
+            $('#aacb-issues-moderate').text(issues.moderate || 0);
+            $('#aacb-issues-minor').text(issues.minor || 0);
 
             // Update last scan time
             if (data.last_scan) {

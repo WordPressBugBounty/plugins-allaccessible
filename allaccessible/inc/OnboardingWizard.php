@@ -640,6 +640,13 @@ class AllAccessible_OnboardingWizard {
                     return;
                 }
 
+                // Basic email-format guard. Without this a stray value (e.g. a
+                // username) reaches /api/add-site and 500s server-side.
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    setStatus('<?php echo esc_js(__('Please enter a valid email address.', 'allaccessible')); ?>', 'error');
+                    return;
+                }
+
                 $('#wizard-submit-btn').prop('disabled', true);
                 $('#wizard-submit-text').text('<?php echo esc_js(__('Setting things up…', 'allaccessible')); ?>');
                 setStatus('<?php echo esc_js(__('Connecting to AllAccessible…', 'allaccessible')); ?>', 'info');

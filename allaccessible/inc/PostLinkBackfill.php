@@ -100,6 +100,8 @@ final class AllAccessible_PostLinkBackfill {
         if (is_wp_error($result)) {
             if (self::is_benign_provisioning_error($result)) {
                 AllAccessible_Debug::info('PostLinkBackfill::link_single', 'skipped — site not provisioned yet (will retry)', array('post_id' => $post_id));
+            } elseif (self::is_transient_api_error($result)) {
+                AllAccessible_Debug::warn('PostLinkBackfill::link_single', 'transient API failure: ' . $result->get_error_message(), array('post_id' => $post_id));
             } else {
                 AllAccessible_Debug::error('PostLinkBackfill::link_single', $result, array('post_id' => $post_id));
             }
@@ -118,6 +120,30 @@ final class AllAccessible_PostLinkBackfill {
         if (is_array($data) && (int) ($data['status'] ?? 0) === 404) return true;
         // Belt-and-suspenders: match the message even if status drifts.
         return stripos((string) $wp_error->get_error_message(), 'no subdomain registered') !== false;
+    }
+
+    /**
+     * Is this WP_Error a transient connectivity / upstream blip rather than a
+     * real backfill bug? cURL 28 (timeout), connection reset, DNS, or a
+     * gateway 5xx (502/503/504). These are expected background noise on a
+     * weekly batch — the transport layer already warns on the timeout class
+     * (see ApiClient::decode_json_response), so re-logging here at error
+     * level just double-counts the same blip. Log at warn for rate
+     * visibility instead. Mirror of AllAccessible_ApiClient::is_transient_failure.
+     */
+    private static function is_transient_api_error($wp_error) {
+        if (!is_wp_error($wp_error)) return false;
+        $code = (string) $wp_error->get_error_code();
+        // HTTP 5xx gateway errors surface as api_error_502 / _503 / _504.
+        if ($code === 'api_error_502' || $code === 'api_error_503' || $code === 'api_error_504') {
+            return true;
+        }
+        $msg = (string) $wp_error->get_error_message();
+        return strpos($msg, 'cURL error 28') !== false
+            || stripos($msg, 'timed out') !== false
+            || strpos($msg, 'cURL error 7') !== false
+            || stripos($msg, 'connection reset') !== false
+            || stripos($msg, 'could not resolve host') !== false;
     }
 
     /**
@@ -183,6 +209,13 @@ final class AllAccessible_PostLinkBackfill {
                     if (self::is_benign_provisioning_error($result)) {
                         AllAccessible_Debug::info('PostLinkBackfill::run', 'skipped — site not provisioned yet (will retry)', array(
                             'offset' => $offset,
+                        ));
+                    } elseif (self::is_transient_api_error($result)) {
+                        // Transient timeout / gateway 5xx — the run just stops
+                        // and resumes from this offset next week. Not a bug.
+                        AllAccessible_Debug::warn('PostLinkBackfill::run', 'transient API failure — will resume next run: ' . $result->get_error_message(), array(
+                            'offset'     => $offset,
+                            'batch_size' => count($pairs),
                         ));
                     } else {
                         AllAccessible_Debug::error('PostLinkBackfill::run', $result, array(
