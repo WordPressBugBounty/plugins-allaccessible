@@ -16,6 +16,13 @@ final class AllAccessible_ContextInjector {
     const PLATFORM        = 'wordpress';
     const MAX_ATTACHMENTS = 200;
 
+    /**
+     * Post-meta key caching the attachment map. Building the map costs a
+     * get_children query plus one postmeta lookup per inline image — too
+     * expensive to repeat on every page view for every visitor.
+     */
+    const MAP_META_KEY = '_aacb_context_map';
+
     private static $instance = null;
 
     public static function get_instance() {
@@ -27,6 +34,23 @@ final class AllAccessible_ContextInjector {
 
     private function __construct() {
         add_action('wp_head', array($this, 'emit_context'), 2);
+
+        // Invalidate the cached map when the post or its media change.
+        add_action('save_post',         array($this, 'flush_map'));
+        add_action('add_attachment',    array($this, 'flush_parent_map'));
+        add_action('edit_attachment',   array($this, 'flush_parent_map'));
+        add_action('delete_attachment', array($this, 'flush_parent_map'));
+    }
+
+    public function flush_map($post_id) {
+        delete_post_meta($post_id, self::MAP_META_KEY);
+    }
+
+    public function flush_parent_map($attachment_id) {
+        $parent = (int) get_post_field('post_parent', $attachment_id);
+        if ($parent) {
+            delete_post_meta($parent, self::MAP_META_KEY);
+        }
     }
 
     /**
@@ -37,10 +61,18 @@ final class AllAccessible_ContextInjector {
             return;
         }
 
+        // The context map only feeds account-bound features (agentic image
+        // fixes). No connected account → nothing consumes it; skip the work
+        // entirely instead of taxing every visitor on unconfigured installs.
+        if (!get_option('aacb_accountID')) {
+            return;
+        }
+
         $context = $this->build_context();
 
-        // wp_json_encode is unicode-safe + handles slashing for HTML embed.
-        $json = wp_json_encode($context, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+        // JSON_HEX_TAG/JSON_HEX_AMP keep encoded values from ever forming
+        // a </script> or HTML-significant sequence inside the inline block.
+        $json = wp_json_encode($context, JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
         if (!is_string($json)) {
             return; // Encoding failed — silently bail rather than emit junk.
         }
@@ -89,6 +121,14 @@ window.AllAccessibleContext = <?php echo $json; ?>;
             return array();
         }
 
+        $cached = get_post_meta($post_id, self::MAP_META_KEY, true);
+        if (is_array($cached)
+            && isset($cached['v'], $cached['map'])
+            && $cached['v'] === self::CONTEXT_VERSION
+            && is_array($cached['map'])) {
+            return $cached['map'];
+        }
+
         $map = array();
 
         // Pass 1: attachments attached to this post.
@@ -117,11 +157,23 @@ window.AllAccessibleContext = <?php echo $json; ?>;
                 // Cheap regex: pull src URLs from img tags. Bounded by
                 // MAX_ATTACHMENTS cap, won't run away on huge content.
                 if (preg_match_all('/<img[^>]+src=["\']([^"\']+)["\']/i', $post->post_content, $matches)) {
+                    $site_host = wp_parse_url(home_url(), PHP_URL_HOST);
                     foreach ($matches[1] as $src) {
                         if (count($map) >= self::MAX_ATTACHMENTS) break;
                         $normalized = $this->normalize_url($src);
-                        if (isset($map[$normalized])) continue;
-                        $att_id = attachment_url_to_postid($src);
+                        if ($normalized === '' || isset($map[$normalized])) continue;
+
+                        // External/CDN hosts can never resolve to a local
+                        // attachment — skip the postmeta query outright.
+                        $src_host = wp_parse_url($normalized, PHP_URL_HOST);
+                        if ($src_host && $site_host && strcasecmp($src_host, $site_host) !== 0) {
+                            continue;
+                        }
+
+                        // Look up the NORMALIZED url (size suffix stripped):
+                        // attachment_url_to_postid only matches the original
+                        // file, so foo-300x200.jpg would always miss.
+                        $att_id = attachment_url_to_postid($normalized);
                         if ($att_id) {
                             $map[$normalized] = (int) $att_id;
                         }
@@ -141,6 +193,11 @@ window.AllAccessibleContext = <?php echo $json; ?>;
                 }
             }
         }
+
+        update_post_meta($post_id, self::MAP_META_KEY, array(
+            'v'   => self::CONTEXT_VERSION,
+            'map' => $map,
+        ));
 
         return $map;
     }

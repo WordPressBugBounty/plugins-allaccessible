@@ -71,6 +71,15 @@ class AllAccessible_VersionManager {
             self::upgrade_to_2_1_0();
         }
 
+        // 2.1.4 — flip the plugin signing secret off autoload. New fetches
+        // already store it with autoload=off, but rows created by earlier
+        // versions stay autoloaded (WP autoloads small values), so the
+        // secret rides every request until the next re-fetch. Flip the
+        // installed base immediately on upgrade.
+        if (version_compare($from_version, '2.1.4', '<')) {
+            self::upgrade_to_2_1_4();
+        }
+
         // Always run this to ensure database is up to date
         self::update_db_check();
     }
@@ -157,6 +166,24 @@ class AllAccessible_VersionManager {
         delete_option('aacb_conversion_events');
         delete_option('aacb_email_capture_shown');
         delete_option('aacb_email_capture_count');
+    }
+
+    /**
+     * Upgrade routine for version 2.1.4 — move the signing secret off
+     * autoload on existing installs. Re-add each row with autoload='no'
+     * (delete+add, since update_option won't change an existing row's
+     * autoload flag). Idempotent and safe if the rows are absent.
+     */
+    private static function upgrade_to_2_1_4() {
+        $keys = array('aacb_plugin_secret', 'aacb_plugin_secret_canon', 'aacb_plugin_secret_version');
+        foreach ($keys as $key) {
+            $val = get_option($key, null);
+            if ($val === null) {
+                continue;
+            }
+            delete_option($key);
+            add_option($key, $val, '', 'no');
+        }
     }
 
     /**

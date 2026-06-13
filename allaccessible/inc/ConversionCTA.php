@@ -68,7 +68,7 @@ function aacb_render_smart_cta($site_options, $account_tier, $addon_url) {
             $cta_title = __('Approaching Your Limit', 'allaccessible');
             $cta_message = sprintf(
                 __('You\'re using over 80%% of your %s. Upgrade before you hit the limit to avoid service interruption.', 'allaccessible'),
-                '<strong>' . $approaching_metric . '</strong>'
+                '<strong>' . esc_html($approaching_metric) . '</strong>'
             );
             $cta_button = __('Upgrade Before Limit', 'allaccessible');
 
@@ -125,7 +125,7 @@ function aacb_render_smart_cta($site_options, $account_tier, $addon_url) {
             <?php endif; ?>
 
             <p style="font-size: var(--aacx-text-lg); margin-bottom: var(--aacx-space-6); max-width: 60ch;">
-                <?php echo $cta_message; ?>
+                <?php echo wp_kses($cta_message, array('strong' => array())); ?>
             </p>
 
             <a href="<?php echo esc_url($cta_url); ?>"

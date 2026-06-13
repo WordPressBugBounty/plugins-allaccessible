@@ -98,7 +98,6 @@ final class AllAccessible_SitemapDetector {
         $response = wp_remote_get($url, array(
             'timeout'     => 5,
             'redirection' => 3,   // follow e.g. /sitemap.xml → /sitemap_index.xml
-            'sslverify'   => false,
             'headers'     => array('Accept' => 'application/xml,text/xml,*/*'),
         ));
         if (is_wp_error($response)) return false;

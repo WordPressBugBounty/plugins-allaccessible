@@ -33,6 +33,10 @@ class AllAccessible_ApiClient {
     const CACHE_AUDIT_SCORES = 'aacb_cache_audit_scores';
     const CACHE_SITE_STATUS = 'aacb_cache_site_status';
     const CACHE_DURATION = 1800; // 30 minutes
+    // Negative-cache sentinel: set after a failed /validate so concurrent
+    // consumers fail fast instead of each paying the full timeout+retry.
+    const ERROR_SENTINEL_TRANSIENT = 'aacb_site_options_error';
+    const ERROR_SENTINEL_TTL = 90;
 
     /**
      * Get singleton instance
@@ -57,6 +61,7 @@ class AllAccessible_ApiClient {
     public function clear_cache() {
         delete_transient(self::CACHE_AUDIT_SCORES);
         delete_transient(self::CACHE_SITE_STATUS);
+        delete_transient(self::ERROR_SENTINEL_TRANSIENT);
     }
 
     /**
@@ -66,17 +71,38 @@ class AllAccessible_ApiClient {
      * @return object|WP_Error Site validation data or error
      */
     public function get_site_options($force_refresh = false) {
+        // Per-request memo — multiple consumers (TierGate, Sentry, columns,
+        // settings) call this within a single request; only the first may
+        // touch the network.
+        static $memo = null;
+        if (!$force_refresh && $memo !== null) {
+            return $memo;
+        }
+
         // Check cache first unless force refresh
         if (!$force_refresh) {
             $cached = get_transient('aacb_site_options_cache');
             if ($cached !== false) {
+                $memo = $cached;
                 return $cached;
+            }
+            // Negative cache: a recent failure means the API is unreachable —
+            // fail fast rather than re-running the timeout+retry stack for
+            // every caller on every admin render while it's down.
+            if (get_transient(self::ERROR_SENTINEL_TRANSIENT)) {
+                $memo = new WP_Error(
+                    'api_unreachable',
+                    __('AllAccessible API temporarily unreachable', 'allaccessible')
+                );
+                return $memo;
             }
         }
 
         $account_id = get_option('aacb_accountID');
 
         if (!$account_id) {
+            // Not memoized: the wizard saves the account ID mid-request and
+            // expects the next call to fetch fresh.
             return new WP_Error(
                 'no_account_id',
                 __('Account ID not found', 'allaccessible')
@@ -86,7 +112,6 @@ class AllAccessible_ApiClient {
         // Call the validation endpoint with comprehensive data
         $response = $this->remote_with_retry('https://api.allaccessible.org/validate', array(
             'method' => 'POST',
-            'sslverify' => false,
             'headers' => array('Content-Type' => 'application/json'),
             'body' => json_encode(array(
                 'accountID' => $account_id,
@@ -100,6 +125,8 @@ class AllAccessible_ApiClient {
         ));
 
         if (is_wp_error($response)) {
+            set_transient(self::ERROR_SENTINEL_TRANSIENT, 1, self::ERROR_SENTINEL_TTL);
+            $memo = $response;
             return $response;
         }
 
@@ -119,10 +146,14 @@ class AllAccessible_ApiClient {
             }
 
             set_transient('aacb_site_options_cache', $data, self::CACHE_DURATION);
+            delete_transient(self::ERROR_SENTINEL_TRANSIENT);
+            $memo = $data;
             return $data;
         }
 
-        return new WP_Error('invalid_response', __('Invalid API response', 'allaccessible'));
+        set_transient(self::ERROR_SENTINEL_TRANSIENT, 1, self::ERROR_SENTINEL_TTL);
+        $memo = new WP_Error('invalid_response', __('Invalid API response', 'allaccessible'));
+        return $memo;
     }
 
     /**
@@ -574,7 +605,9 @@ class AllAccessible_ApiClient {
         return $this->signed_app_request(
             'POST',
             self::PLUGIN_API_PREFIX . '/audits/link-post',
-            array('post_id' => (int) $post_id, 'page_url' => (string) $page_url)
+            array('post_id' => (int) $post_id, 'page_url' => (string) $page_url),
+            false,
+            array('blocking' => false)
         );
     }
 
@@ -992,11 +1025,23 @@ class AllAccessible_ApiClient {
             return new WP_Error('bad_secret_response', __('Server returned invalid plugin secret payload', 'allaccessible'));
         }
 
-        update_option(self::PLUGIN_SECRET_OPTION,    $decoded['pluginSecret']);
-        update_option(self::PLUGIN_SECRET_CANON_OPT, $decoded['canonicalSiteUrl']);
-        update_option('aacb_plugin_secret_version',  AACB_VERSION);
+        // Stored WITHOUT autoload — the signing secret must not ride
+        // wp_load_alloptions() into every frontend request. delete+add
+        // (rather than update_option's third arg) also flips autoload
+        // on rows that existing installs already created as 'yes'.
+        $this->save_option_no_autoload(self::PLUGIN_SECRET_OPTION,    $decoded['pluginSecret']);
+        $this->save_option_no_autoload(self::PLUGIN_SECRET_CANON_OPT, $decoded['canonicalSiteUrl']);
+        $this->save_option_no_autoload('aacb_plugin_secret_version',  AACB_VERSION);
 
         return $decoded['pluginSecret'];
+    }
+
+    /**
+     * Persist an option with autoload=no on every WP version we support.
+     */
+    private function save_option_no_autoload($name, $value) {
+        delete_option($name);
+        add_option($name, $value, '', 'no');
     }
 
     /* ─── Scan trigger ───────────────────────── */
@@ -1166,9 +1211,12 @@ class AllAccessible_ApiClient {
      * @param string            $method  GET / POST / PATCH
      * @param string            $path    Absolute path (begins with /)
      * @param array|object|null $body    Body to send as JSON. Pass null for GET.
+     * @param bool              $_retry  Internal — set on the post-401 retry.
+     * @param array             $opts    ['blocking' => false] dispatches
+     *                                   fire-and-forget: no retry, no response.
      * @return array|WP_Error
      */
-    private function signed_app_request($method, $path, $body, $_retry = false) {
+    private function signed_app_request($method, $path, $body, $_retry = false, $opts = array()) {
         $secret = $this->get_plugin_secret();
         if (empty($secret)) {
             return new WP_Error('no_plugin_secret', __('Plugin secret unavailable. Re-validate license to refresh credentials.', 'allaccessible'));
@@ -1197,6 +1245,13 @@ class AllAccessible_ApiClient {
         );
         if ($body !== null) {
             $args['body'] = $body_string;
+        }
+
+        if (isset($opts['blocking']) && $opts['blocking'] === false) {
+            $args['blocking'] = false;
+            $args['timeout']  = 5; // connection setup window only
+            wp_remote_request(self::APP_BASE_URL . $path, $args);
+            return array('dispatched' => true);
         }
 
         $response = $this->remote_with_retry(self::APP_BASE_URL . $path, $args);

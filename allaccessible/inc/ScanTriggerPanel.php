@@ -292,7 +292,7 @@ final class AllAccessible_ScanTriggerPanel {
             }
 
             function poll($p, nonce, jobId, redirect) {
-                $.post(ajaxurl, { action: 'aacb_scan_status', _wpnonce: nonce, job_id: jobId })
+                $.post(ajaxurl, { action: 'aacb_scan_progress', _wpnonce: nonce, job_id: jobId })
                     .done(function(resp) {
                         if (!resp || !resp.success) { setTimeout(function() { poll($p, nonce, jobId, redirect); }, POLL_MS); return; }
                         const d = resp.data || {};

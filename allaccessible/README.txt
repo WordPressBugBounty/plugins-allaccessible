@@ -1,4 +1,4 @@
-=== Accessibility by AllAccessible, CMS Level WCAG & ADA Remediation with Agentic AI ===
+=== Accessibility by AllAccessible ===
 Author: AllAccessible
 Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
@@ -6,7 +6,7 @@ Tags: accessibility, wcag, ada, accessibility widget, eaa
 Requires at least: 5.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.1.3
+Stable tag: 2.1.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -237,6 +237,24 @@ The free accessibility widget runs entirely in the visitor's browser and adjusts
 * Trust Center: https://www.allaccessible.org/trust-center
 
 == Changelog ==
+
+= 2.1.4 =
+* Fixed: admin pages no longer hang when our service is briefly slow or unreachable — checks now fail fast instead of stalling the page.
+* Fixed: scan progress now updates correctly in the scan panel (previously could appear stuck).
+* Security: hardened credential storage.
+* Privacy: uninstalling, or resetting plugin data, now fully removes all stored plugin data including credentials.
+
+= 2.1.3 =
+* Fixed: onboarding no longer rejects valid account details during sign-up.
+* Fixed: resolved an editor accessibility-panel error on some posts.
+* Improved: more reliable background linking of posts to their scanned pages.
+
+= 2.1.2 =
+* Fixed: editor accessibility panel reliability improvements.
+
+= 2.1.1 =
+* New: posts are automatically linked to their scanned pages so scores and fixes line up correctly.
+* Fixed: stability improvements and minor bug fixes.
 
 = 2.1.0 =
 * New: Unlimited AI interactions on every paid plan — alt text drafts, agentic fix proposals, no monthly cap.

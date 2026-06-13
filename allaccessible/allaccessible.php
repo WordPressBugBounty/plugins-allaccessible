@@ -3,7 +3,7 @@
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
 Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, plus agentic AI remediation that auto-suggests fixes for your team to approve.
-Version: 2.1.3
+Version: 2.1.4
 Requires at least: 5.5
 Tested up to: 7.0
 Requires PHP: 7.4
@@ -47,43 +47,79 @@ require_once plugin_dir_path(__FILE__) . 'inc/SentryClient.php';
 require_once plugin_dir_path(__FILE__) . 'inc/SentryBrowser.php';      
 AllAccessible_Sentry::init();
 AllAccessible_SentryBrowser::register();
-require_once plugin_dir_path(__FILE__) . 'inc/VersionManager.php';
-require_once plugin_dir_path(__FILE__) . 'inc/UrlCanonicalizer.php';   
+/**
+ * Guarded require: load a plugin file only if it exists.
+ *
+ * A partial/failed plugin update (some files copied, others not) previously
+ * fataled the ENTIRE site, because an unguarded `require_once` on a missing
+ * file is a fatal error during plugin load — white-screening wp-admin and the
+ * front end (Sentry WORDPRESS-PLUGIN-R/S: missing inc/PostLinkBackfill.php).
+ *
+ * Now a missing non-core file is reported to Sentry once and skipped, so the
+ * rest of the plugin still loads. Sentry is already initialised above, so
+ * reporting is safe here. The four bootstrap files (constants, Debug,
+ * SentryClient, SentryBrowser) above intentionally stay unguarded — without
+ * them nothing, including this reporter, can function.
+ *
+ * @return bool true if the file was loaded.
+ */
+function aacb_require_if_exists($relative_path) {
+    $full = plugin_dir_path(__FILE__) . $relative_path;
+    if (file_exists($full)) {
+        require_once $full;
+        return true;
+    }
+    if (class_exists('AllAccessible_Sentry')) {
+        AllAccessible_Sentry::capture_message(
+            'Plugin file missing (likely partial/failed update): ' . $relative_path,
+            'error',
+            array('version' => defined('AACB_VERSION') ? AACB_VERSION : 'unknown')
+        );
+    }
+    error_log('[AllAccessible] Missing plugin file, skipped: ' . $relative_path);
+    return false;
+}
+
+aacb_require_if_exists('inc/VersionManager.php');
+aacb_require_if_exists('inc/UrlCanonicalizer.php');
 
 // Widget & Frontend
-require_once plugin_dir_path(__FILE__) . 'inc/WidgetLoader.php';
+aacb_require_if_exists('inc/WidgetLoader.php');
 
 // Admin Interface
-require_once plugin_dir_path(__FILE__) . 'inc/OnboardingWizard.php';
-require_once plugin_dir_path(__FILE__) . 'inc/SettingsPage.php';
-require_once plugin_dir_path(__FILE__) . 'inc/WidgetCustomizer.php';
-require_once plugin_dir_path(__FILE__) . 'inc/UsageDashboard.php';
-require_once plugin_dir_path(__FILE__) . 'inc/ConversionCTA.php';
-require_once plugin_dir_path(__FILE__) . 'inc/FeatureComparison.php';
-require_once plugin_dir_path(__FILE__) . 'inc/DashboardBanner.php';
-require_once plugin_dir_path(__FILE__) . 'inc/DeactivationSurvey.php';
-require_once plugin_dir_path(__FILE__) . 'inc/DashboardLayout.php';
+aacb_require_if_exists('inc/OnboardingWizard.php');
+aacb_require_if_exists('inc/SettingsPage.php');
+aacb_require_if_exists('inc/WidgetCustomizer.php');
+aacb_require_if_exists('inc/UsageDashboard.php');
+aacb_require_if_exists('inc/ConversionCTA.php');
+aacb_require_if_exists('inc/FeatureComparison.php');
+aacb_require_if_exists('inc/DashboardBanner.php');
+aacb_require_if_exists('inc/DeactivationSurvey.php');
+aacb_require_if_exists('inc/DashboardLayout.php');
 
 // API Integration (Premium Features)
-require_once plugin_dir_path(__FILE__) . 'inc/api/ApiClient.php';
-require_once plugin_dir_path(__FILE__) . 'inc/TierGate.php';                    
-require_once plugin_dir_path(__FILE__) . 'inc/ContextInjector.php';             
-require_once plugin_dir_path(__FILE__) . 'inc/AgenticFixes/Labels.php';          
-require_once plugin_dir_path(__FILE__) . 'inc/AgenticFixesDashboardWidget.php';  
-require_once plugin_dir_path(__FILE__) . 'inc/AgenticFixesPage.php';             
-require_once plugin_dir_path(__FILE__) . 'inc/ImageManagerPage.php';             
-require_once plugin_dir_path(__FILE__) . 'inc/SitemapDetector.php';             
-require_once plugin_dir_path(__FILE__) . 'inc/ScanTriggerPanel.php';           
-require_once plugin_dir_path(__FILE__) . 'inc/ConnectionStatusCard.php';       
-require_once plugin_dir_path(__FILE__) . 'inc/EditorMetaBox.php';    
-require_once plugin_dir_path(__FILE__) . 'inc/PostListColumn.php';   
-require_once plugin_dir_path(__FILE__) . 'inc/PostLinkBackfill.php'; 
-require_once plugin_dir_path(__FILE__) . 'inc/AdminBar.php';         
-require_once plugin_dir_path(__FILE__) . 'inc/ReviewNudge.php';      
-AllAccessible_PostListColumn::register();
-AllAccessible_PostLinkBackfill::register();
-AllAccessible_AdminBar::register();
-AllAccessible_ReviewNudge::register();
+aacb_require_if_exists('inc/api/ApiClient.php');
+aacb_require_if_exists('inc/TierGate.php');
+aacb_require_if_exists('inc/ContextInjector.php');
+aacb_require_if_exists('inc/AgenticFixes/Labels.php');
+aacb_require_if_exists('inc/AgenticFixesDashboardWidget.php');
+aacb_require_if_exists('inc/AgenticFixesPage.php');
+aacb_require_if_exists('inc/ImageManagerPage.php');
+aacb_require_if_exists('inc/SitemapDetector.php');
+aacb_require_if_exists('inc/ScanTriggerPanel.php');
+aacb_require_if_exists('inc/ConnectionStatusCard.php');
+aacb_require_if_exists('inc/EditorMetaBox.php');
+aacb_require_if_exists('inc/PostListColumn.php');
+aacb_require_if_exists('inc/PostLinkBackfill.php');
+aacb_require_if_exists('inc/AdminBar.php');
+aacb_require_if_exists('inc/ReviewNudge.php');
+
+// Guard registrations: a skipped file above means its class is absent, so
+// class_exists prevents a fatal here too.
+if (class_exists('AllAccessible_PostListColumn'))   { AllAccessible_PostListColumn::register(); }
+if (class_exists('AllAccessible_PostLinkBackfill')) { AllAccessible_PostLinkBackfill::register(); }
+if (class_exists('AllAccessible_AdminBar'))         { AllAccessible_AdminBar::register(); }
+if (class_exists('AllAccessible_ReviewNudge'))      { AllAccessible_ReviewNudge::register(); }
 
 
 /**
@@ -135,8 +171,12 @@ add_action('admin_init', 'aacb_maybe_redirect_after_activation');
  * Plugin deactivation
  */
 function AllAccessible_Deactivation() {
-    // Clean up scheduled events
-    wp_clear_scheduled_hook('aacb_daily_analytics_calculation');
+    // Clean up scheduled events (wp_unschedule_hook also clears single
+    // events scheduled with args, which wp_clear_scheduled_hook misses).
+    wp_unschedule_hook('aacb_post_link_backfill_run');
+    wp_unschedule_hook('aacb_post_link_single');
+    wp_unschedule_hook('aacb_fetch_plugin_secret_event');
+    wp_unschedule_hook('aacb_daily_analytics_calculation'); // pre-2.1 legacy
 }
 register_deactivation_hook(__FILE__, 'AllAccessible_Deactivation');
 
@@ -200,18 +240,25 @@ function aacb_reset_plugin_data() {
         wp_send_json_error(__('Unauthorized access', 'allaccessible'));
     }
 
-    // Delete all plugin options
-    delete_option('aacb_options');
-    delete_option('aacb_installed');
-    delete_option('aacb_siteID');
-    delete_option('aacb_accountID');
-    delete_option('aacb_hide_premium_notice');
-    delete_option('aacb_version');
-    delete_option('aacb_wizard_completed');
+    // Delete ALL plugin options — including the HMAC plugin secret and
+    // tier/scan state. A reset that keeps the old secret leaves a
+    // half-zombie identity: the next account connect signs with stale
+    // credentials. Wildcard sweep mirrors uninstall.php.
+    global $wpdb;
+    $wpdb->query(
+        "DELETE FROM {$wpdb->options}
+          WHERE option_name LIKE 'aacb\\_%'
+             OR option_name LIKE '\\_transient\\_aacb\\_%'
+             OR option_name LIKE '\\_transient\\_timeout\\_aacb\\_%'"
+    );
+    wp_cache_flush();
 
-    // Clear all transients
-    delete_transient('aacb_site_options_cache');
-    delete_transient('aacb_validation_cache');
+    AllAccessible_ApiClient::get_instance()->flush_all_caches();
+
+    // Clear scheduled events tied to the old identity
+    wp_unschedule_hook('aacb_post_link_backfill_run');
+    wp_unschedule_hook('aacb_post_link_single');
+    wp_unschedule_hook('aacb_fetch_plugin_secret_event');
 
     // Re-initialize with default options
     $opt = array('aacb_installed' => 1);
@@ -373,18 +420,25 @@ function aacb_start_scan_ajax() {
 add_action('wp_ajax_aacb_start_scan', 'aacb_start_scan_ajax');
 
 /**
- * Poll scan progress.
+ * Poll scan progress (ScanTriggerPanel).
+ *
+ * Action is aacb_scan_progress, NOT aacb_scan_status — that action belongs
+ * to AdminBar::ajax_scan_status (different nonce, richer response). The two
+ * were briefly registered on the same action, which made AdminBar's nonce
+ * check kill the panel's polling with a 403.
  */
-function aacb_scan_status_ajax() {
+function aacb_scan_progress_ajax() {
     aacb_assert_scan_caller();
     $job_id = isset($_POST['job_id']) ? (int) $_POST['job_id'] : 0;
     $result = AllAccessible_ApiClient::get_instance()->get_scan_status($job_id);
     if (is_wp_error($result)) {
         wp_send_json_error($result->get_error_message(), 400);
     }
-    wp_send_json_success($result);
+    // The panel JS reads status/pagesDone/totalPages flat — unwrap the
+    // job envelope the API returns.
+    wp_send_json_success(isset($result['job']) && is_array($result['job']) ? $result['job'] : $result);
 }
-add_action('wp_ajax_aacb_scan_status', 'aacb_scan_status_ajax');
+add_action('wp_ajax_aacb_scan_progress', 'aacb_scan_progress_ajax');
 
 /**
  * Background fetch of the plugin secret.

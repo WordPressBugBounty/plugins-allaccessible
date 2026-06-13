@@ -282,6 +282,9 @@ class AllAccessible_DeactivationSurvey {
      */
     public function submit_feedback() {
         check_ajax_referer('aacb_deactivation', 'nonce');
+        if (!current_user_can('activate_plugins')) {
+            wp_send_json_error(__('Unauthorized', 'allaccessible'), 403);
+        }
 
         $reason = sanitize_text_field($_POST['reason'] ?? '');
         $comment = sanitize_textarea_field($_POST['comment'] ?? '');
