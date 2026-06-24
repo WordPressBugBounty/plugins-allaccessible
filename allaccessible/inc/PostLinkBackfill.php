@@ -116,6 +116,12 @@ final class AllAccessible_PostLinkBackfill {
         if (!is_wp_error($wp_error)) return false;
         $code = (string) $wp_error->get_error_code();
         if ($code === 'api_error_404') return true;
+        // Credential-fetch race: the signing secret hasn't been retrieved yet
+        // (account configured but /secret not fetched, or a transient blip the
+        // transport layer already logged). get_plugin_secret() swallows the
+        // underlying error to '', so error-reporting here just double-counts a
+        // self-healing state — the secret re-fetches on the next run.
+        if ($code === 'no_plugin_secret' || $code === 'no_account_id' || $code === 'bad_secret_response') return true;
         $data = $wp_error->get_error_data();
         if (is_array($data) && (int) ($data['status'] ?? 0) === 404) return true;
         // Belt-and-suspenders: match the message even if status drifts.

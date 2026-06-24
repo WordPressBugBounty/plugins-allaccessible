@@ -274,7 +274,13 @@ class AllAccessible_SettingsPage {
             : 'https://app.allaccessible.org';
         // Legacy V1 → migration offer. Centralized in ApiClient so every
         // legacy upgrade CTA across the plugin points at the same URL.
-        $migration_url = $api_client->get_migration_url();
+        // $api_client only exists inside the $has_account block above; guard so
+        // an unconfigured/deauthorized site doesn't fatal here (the migration
+        // CTAs that read $migration_url only render for legacy accounts anyway).
+        $migration_url = '';
+        if ($has_account && isset($api_client)) {
+            $migration_url = $api_client->get_migration_url();
+        }
 
         $show_success = isset($_GET['wizard']) && $_GET['wizard'] === 'complete';
         ?>

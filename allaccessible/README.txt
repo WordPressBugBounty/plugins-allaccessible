@@ -6,11 +6,11 @@ Tags: accessibility, wcag, ada, accessibility widget, eaa
 Requires at least: 5.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.1.4
+Stable tag: 2.1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Accessibility widget + WordPress-native WCAG/ADA tools: per-page scores, unlimited AI interactions (alt text + agentic fixes) on paid plans, free 10+5 preview.
+Agentic AI accessibility tools for WordPress: auto-fix alt text, ARIA & HTML for WCAG/ADA. Per-page & site scores, TTS, disability profiles.
 
 == Description ==
 
@@ -237,6 +237,9 @@ The free accessibility widget runs entirely in the visitor's browser and adjusts
 * Trust Center: https://www.allaccessible.org/trust-center
 
 == Changelog ==
+
+= 2.1.5 =
+* Fixed: the settings page could fail to load on sites where the AllAccessible account wasn't connected — it now loads reliably and points you to reconnect.
 
 = 2.1.4 =
 * Fixed: admin pages no longer hang when our service is briefly slow or unreachable — checks now fail fast instead of stalling the page.
