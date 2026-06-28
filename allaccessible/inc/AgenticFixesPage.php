@@ -55,6 +55,14 @@ final class AllAccessible_AgenticFixes_Page {
         $client  = AllAccessible_ApiClient::get_instance();
         $summary = $client->get_manifest_summary(false, $status);
         $err     = is_wp_error($summary) ? $summary->get_error_message() : null;
+        // Normalize to an array immediately: on API failure get_manifest_summary
+        // returns a WP_Error, and the array subscripts below (e.g. line ~118
+        // $summary['countsByStatus']) FATAL on "object of type WP_Error as array"
+        // before any is_array() check on the subscript result can run. Mirror the
+        // $agg guard. Empty array → page renders the empty/first-run state.
+        if (!is_array($summary)) {
+            $summary = array();
+        }
 
         $tier    = (string) $client->get_subscription_tier();
         if ($tier === '') $tier = 'free';

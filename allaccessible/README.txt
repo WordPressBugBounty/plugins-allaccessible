@@ -240,6 +240,7 @@ The free accessibility widget runs entirely in the visitor's browser and adjusts
 
 = 2.1.5 =
 * Fixed: the settings page could fail to load on sites where the AllAccessible account wasn't connected — it now loads reliably and points you to reconnect.
+* Fixed: the Agentic Fixes page could fail to load when our service was briefly unreachable — it now degrades gracefully instead of erroring.
 
 = 2.1.4 =
 * Fixed: admin pages no longer hang when our service is briefly slow or unreachable — checks now fail fast instead of stalling the page.
