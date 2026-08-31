@@ -373,7 +373,7 @@ final class AllAccessible_PostListColumn {
                         'audit_status'  => $row['audit_status']        ?? null,
                         'last_scan'     => $row['last_scan']           ?? null,
                         'audit_id'      => $row['last_audit_id']       ?? null,
-                        // KAN-28: pass breakdown so JS can render
+                        
                         // "+N potential" subline when applicable.
                         'potential'     => $breakdown['potential']         ?? null,
                         'raw'           => $breakdown['raw']               ?? null,

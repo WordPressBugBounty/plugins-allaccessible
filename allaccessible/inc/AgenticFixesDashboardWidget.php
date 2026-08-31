@@ -20,13 +20,82 @@ final class AllAccessible_AgenticFixes_DashboardWidget {
 
     public static function register_widget() {
         if (!current_user_can('manage_options')) return;
-        if (!get_option('aacb_accountID'))        return;
+
+        // Unlinked installs get a local-data variant: the missing-alt-text
+        // counter needs no account and no API, and hands the wizard a
+        // concrete reason to exist.
+        if (!get_option('aacb_accountID')) {
+            wp_add_dashboard_widget(
+                self::WIDGET_ID,
+                __('AllAccessible — Accessibility', 'allaccessible'),
+                array(__CLASS__, 'render_unlinked')
+            );
+            return;
+        }
 
         wp_add_dashboard_widget(
             self::WIDGET_ID,
             __('AllAccessible — Agentic Fixes', 'allaccessible'),
             array(__CLASS__, 'render')
         );
+    }
+
+    /**
+     * Unlinked variant — counts media-library images with no alt text
+     * straight from the local database. Cached for a day; the count only
+     * moves when media is uploaded or alt text is edited.
+     */
+    public static function render_unlinked() {
+        $missing = get_transient('aacb_missing_alt_count');
+        if (false === $missing) {
+            global $wpdb;
+            $missing = (int) $wpdb->get_var(
+                "SELECT COUNT(p.ID)
+                 FROM {$wpdb->posts} p
+                 LEFT JOIN {$wpdb->postmeta} m
+                   ON m.post_id = p.ID AND m.meta_key = '_wp_attachment_image_alt'
+                 WHERE p.post_type = 'attachment'
+                   AND p.post_mime_type LIKE 'image/%'
+                   AND (m.meta_value IS NULL OR m.meta_value = '')"
+            );
+            set_transient('aacb_missing_alt_count', $missing, DAY_IN_SECONDS);
+        }
+
+        $wizard_url = admin_url('admin.php?page=allaccessible-wizard');
+        ?>
+        <div class="aacb-dashboard-tile" style="font-size:13px; line-height:1.5;">
+            <?php if ($missing > 0) : ?>
+                <div style="display:flex; align-items:baseline; gap:10px; margin:0 0 4px 0;">
+                    <span style="font:700 28px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color:#0f172a;">
+                        <?php echo esc_html(number_format_i18n($missing)); ?>
+                    </span>
+                    <span style="font-size:12px; color:#64748b;">
+                        <?php echo esc_html(_n('image is missing alt text', 'images are missing alt text', $missing, 'allaccessible')); ?>
+                    </span>
+                </div>
+                <p style="margin:0 0 12px 0; color:#64748b; font-size:12px;">
+                    <?php esc_html_e('Missing alt text is the most common accessibility issue (WCAG 1.1.1) — screen readers skip these images entirely.', 'allaccessible'); ?>
+                </p>
+                <p style="margin:0 0 12px 0; padding:8px 10px; background:#fef3e7; border-left:3px solid #f59e0b; border-radius:2px; color:#854603; font-size:12px;">
+                    <?php esc_html_e('AllAccessible AI can draft descriptive alt text for these images — free preview, no credit card.', 'allaccessible'); ?>
+                </p>
+                <p style="margin:0;">
+                    <a href="<?php echo esc_url($wizard_url); ?>" style="font-weight:600; color:#1d4ed8;">
+                        <?php esc_html_e('Fix alt text with AI', 'allaccessible'); ?> →
+                    </a>
+                </p>
+            <?php else : ?>
+                <p style="margin:0 0 8px 0; color:#475569;">
+                    <?php esc_html_e('All your images have alt text — nice work. Alt text is only one of the accessibility checks your pages need.', 'allaccessible'); ?>
+                </p>
+                <p style="margin:0;">
+                    <a href="<?php echo esc_url($wizard_url); ?>" style="font-weight:600; color:#1d4ed8;">
+                        <?php esc_html_e('Scan your site free', 'allaccessible'); ?> →
+                    </a>
+                </p>
+            <?php endif; ?>
+        </div>
+        <?php
     }
 
     public static function render() {

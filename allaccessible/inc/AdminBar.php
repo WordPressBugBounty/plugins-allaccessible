@@ -48,6 +48,15 @@ final class AllAccessible_AdminBar {
                    . '</span>';
         }
 
+        if ($is_frontend && class_exists('AllAccessible_ContextGuard')) {
+            $skip_reason = AllAccessible_ContextGuard::skip_reason();
+            if ($skip_reason !== '') {
+                $title .= ' <span class="aacb-bar-note">'
+                       . esc_html(sprintf(__('widget not loaded (%s)', 'allaccessible'), $skip_reason))
+                       . '</span>';
+            }
+        }
+
         $bar->add_node(array(
             'id'    => 'allaccessible',
             'title' => $title,
@@ -101,13 +110,13 @@ final class AllAccessible_AdminBar {
             'id'     => 'allaccessible-fixes',
             'parent' => $shortcuts_parent,
             'title'  => esc_html__('Audits & Fixes', 'allaccessible'),
-            'href'   => admin_url('admin.php?page=allaccessible-agentic-fixes'),
+            'href'   => admin_url('admin.php?page=aacb-agentic-fixes'),
         ));
         $bar->add_node(array(
             'id'     => 'allaccessible-settings',
             'parent' => $shortcuts_parent,
             'title'  => esc_html__('Settings', 'allaccessible'),
-            'href'   => admin_url('admin.php?page=allaccessible-settings'),
+            'href'   => admin_url('admin.php?page=allaccessible-account'),
         ));
 
         $bar->add_node(array(
@@ -156,7 +165,7 @@ final class AllAccessible_AdminBar {
             return;
         }
 
-        // JS — bind click on the scan trigger, POST to admin-ajax, toast.
+        
         $handle = 'aacb-admin-bar-js';
         wp_register_script($handle, false, array(), AACB_VERSION, true);
         wp_enqueue_script($handle);

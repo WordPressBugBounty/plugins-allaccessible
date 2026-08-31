@@ -71,7 +71,7 @@ class AllAccessible_ApiClient {
      * @return object|WP_Error Site validation data or error
      */
     public function get_site_options($force_refresh = false) {
-        // Per-request memo — multiple consumers (TierGate, Sentry, columns,
+        
         // settings) call this within a single request; only the first may
         // touch the network.
         static $memo = null;
@@ -306,9 +306,7 @@ class AllAccessible_ApiClient {
         return $this->get_billing_url();
     }
 
-    /**
-     * Legacy V1 → current-tier migration landing page.
-     */
+    
     public function get_migration_url() {
         $site_id = $this->get_site_id();
         if ($site_id) {
@@ -698,7 +696,7 @@ class AllAccessible_ApiClient {
         }
 
         $url = self::API_BASE_URL . self::PLUGIN_API_PREFIX . '/manifest/summary?' . http_build_query($args);
-        $response = wp_remote_get($url, array(
+        $response = $this->remote_with_retry($url, array(
             'timeout' => 10,
             'headers' => array(
                 'Accept'     => 'application/json',
@@ -706,7 +704,7 @@ class AllAccessible_ApiClient {
             ),
         ));
 
-        $decoded = $this->decode_json_response($response);
+        $decoded = $this->decode_json_response($response, '/manifest/summary');
         if (is_wp_error($decoded)) {
             return $decoded;
         }
@@ -718,19 +716,7 @@ class AllAccessible_ApiClient {
     /** Per-call status filter — set by get_manifest_summary, read by URL builder. */
     private $_summary_status_filter = null;
 
-    /**
-     * Paginated alt-text grid for the Image Description Manager (KAN-19).
-     * Read endpoint — simple query-string auth. Server validates account/site
-     * ownership before returning rows.
-     * See docs/plugin-architecture-internals.md (internal) for the response shape.
-     *
-     * @param array $args {
-     *   @type int    $page    1-based page number (default 1)
-     *   @type int    $perPage Items per page, max 100 (default 24)
-     *   @type string $filter  'all' | 'missing' | 'ai' | 'manual'
-     * }
-     * @return array|WP_Error
-     */
+    
     public function get_plugin_images($args = array()) {
         $account_id = get_option('aacb_accountID');
         if (!$account_id) {
@@ -767,14 +753,14 @@ class AllAccessible_ApiClient {
 
         $url = self::API_BASE_URL . self::PLUGIN_API_PREFIX . '/images?' . http_build_query($query);
 
-        $response = wp_remote_get($url, array(
+        $response = $this->remote_with_retry($url, array(
             'timeout' => 10,
             'headers' => array(
                 'Accept'     => 'application/json',
                 'User-Agent' => 'AllAccessible-WordPress/' . AACB_VERSION,
             ),
         ));
-        $decoded = $this->decode_json_response($response);
+        $decoded = $this->decode_json_response($response, '/images');
         if (!is_wp_error($decoded)) {
             set_transient($cache_key, $decoded, MINUTE_IN_SECONDS);
         }
@@ -923,15 +909,7 @@ class AllAccessible_ApiClient {
         delete_transient('aacb_cache_audit_aggregation_v1');
     }
 
-    /**
-     * Override alt text on a single image row (KAN-19). Signed mutation sent
-     * to the App service. Caller must validate input length (1-500 chars)
-     * before this is called; server enforces the same bounds defensively.
-     *
-     * @param int    $image_id  Image row id.
-     * @param string $text      New alt text. Trimmed by server.
-     * @return array|WP_Error   Updated row projection on success.
-     */
+    
     public function override_image_alt_text($image_id, $text) {
         $image_id = (int) $image_id;
         if ($image_id <= 0) {
@@ -1009,7 +987,7 @@ class AllAccessible_ApiClient {
             'accountID' => $account_id,
             'siteUrl'   => $site_url,
         ));
-        $response = wp_remote_get($url, array(
+        $response = $this->remote_with_retry($url, array(
             'timeout' => 10,
             'headers' => array(
                 'Accept'     => 'application/json',
@@ -1017,7 +995,7 @@ class AllAccessible_ApiClient {
             ),
         ));
 
-        $decoded = $this->decode_json_response($response);
+        $decoded = $this->decode_json_response($response, '/secret');
         if (is_wp_error($decoded)) {
             return $decoded;
         }
@@ -1178,14 +1156,14 @@ class AllAccessible_ApiClient {
         $url = self::API_BASE_URL . '/api/crawler/eligibility?' . http_build_query(array(
             'subdomainId' => $site_id,
         ));
-        $response = wp_remote_get($url, array(
+        $response = $this->remote_with_retry($url, array(
             'timeout' => 10,
             'headers' => array(
                 'Accept'     => 'application/json',
                 'User-Agent' => 'AllAccessible-WordPress/' . AACB_VERSION,
             ),
         ));
-        return $this->decode_json_response($response);
+        return $this->decode_json_response($response, '/api/crawler/eligibility');
     }
 
     /**
@@ -1229,6 +1207,21 @@ class AllAccessible_ApiClient {
         $payload      = $method . "\n" . $sign_path . "\n" . $timestamp . "\n" . $body_string;
         $signature    = hash_hmac('sha256', $payload, $secret);
 
+        // Signs a fresh timestamp into an existing $args. remote_with_retry()
+        // calls this before a retry so attempt 2 never replays a stale
+        // X-AAcb-Timestamp (which the server rejects as 401, triggering a
+        // needless credential refetch after what was only a network blip).
+        $resign = function ($retry_args) use ($method, $sign_path, $body_string, $secret) {
+            $ts = (string) time();
+            $retry_args['headers']['X-AAcb-Timestamp'] = $ts;
+            $retry_args['headers']['X-AAcb-Signature'] = hash_hmac(
+                'sha256',
+                $method . "\n" . $sign_path . "\n" . $ts . "\n" . $body_string,
+                $secret
+            );
+            return $retry_args;
+        };
+
         $args = array(
             'method'  => $method,
             'timeout' => 15,
@@ -1254,7 +1247,7 @@ class AllAccessible_ApiClient {
             return array('dispatched' => true);
         }
 
-        $response = $this->remote_with_retry(self::APP_BASE_URL . $path, $args);
+        $response = $this->remote_with_retry(self::APP_BASE_URL . $path, $args, $resign);
 
         if (!$_retry && !is_wp_error($response) && wp_remote_retrieve_response_code($response) === 401) {
             $refetched = $this->fetch_plugin_secret();
@@ -1263,7 +1256,7 @@ class AllAccessible_ApiClient {
             }
         }
 
-        return $this->decode_json_response($response);
+        return $this->decode_json_response($response, $sign_path);
     }
 
     /**
@@ -1274,21 +1267,38 @@ class AllAccessible_ApiClient {
         return sanitize_text_field($locale);
     }
 
-    /**
-     * Issue an HTTP request with one retry on TRANSIENT failures (connection
-     * timeouts, 502/503/504). A single blip is logged non-reporting (info) and
-     * retried after a short backoff; only a persistent failure falls through to
-     * the caller's error reporting. Cuts Sentry noise from one-off cURL 28 /
-     * 5xx against slow upstreams (WORDPRESS-PLUGIN-6/7/8) without hiding real
-     * outages (two consecutive failures still report).
-     */
-    private function remote_with_retry($url, $args) {
+    
+    private function remote_with_retry($url, $args, $resign = null) {
         $attempts = 2;
         $delay_ms = 300;
         $response = null;
+
+        // Total wall-clock budget. Without this a 15s-timeout call became a
+        // 30.3s call the moment retry was added, and admin pages that make
+        
+        // return a 502 instead of degrading gracefully. The retry gets whatever
+        // is left of the budget, never a second full timeout.
+        $budget    = (float) ($args['timeout'] ?? 15);
+        $started   = microtime(true);
+
         for ($i = 1; $i <= $attempts; $i++) {
+            if ($i > 1) {
+                $remaining = $budget - (microtime(true) - $started);
+                if ($remaining < 2) {
+                    return $response; // no time left; return the first failure
+                }
+                $args['timeout'] = (int) max(2, floor($remaining));
+
+                // Re-sign: the HMAC timestamp from attempt 1 is now seconds old
+                // and can fall outside the server's freshness window, turning a
+                // network blip into a 401 and an unnecessary credential refetch.
+                if (is_callable($resign)) {
+                    $args = call_user_func($resign, $args);
+                }
+            }
+
             $response = wp_remote_request($url, $args);
-            if (!$this->is_transient_failure($response) || $i === $attempts) {
+            if (!$this->is_transient_failure($response, $args) || $i === $attempts) {
                 return $response;
             }
             AllAccessible_Debug::info('ApiClient::retry', 'Transient API failure — retrying', array(
@@ -1302,16 +1312,35 @@ class AllAccessible_ApiClient {
     }
 
     /**
+     * Is this HTTP method safe to replay?
+     *
+     * A 502/503/504 can come back from a gateway AFTER the origin already
+     * processed the request, so replaying a write can start a second scan
+     * (burning metered quota) or double-apply an approve/revert. Only replay
+     * reads; a write is retried solely when the failure proves the request
+     * never landed (connection timeout / reset).
+     */
+    private function is_idempotent_method($args) {
+        $method = strtoupper((string) ($args['method'] ?? 'GET'));
+        return in_array($method, array('GET', 'HEAD', 'OPTIONS'), true);
+    }
+
+    /**
      * Is this response a transient failure worth one retry?
      * cURL 28 (timeout), cURL 7 (connect failed), connection reset, or 502/503/504.
      */
-    private function is_transient_failure($response) {
+    private function is_transient_failure($response, $args = array()) {
         if (is_wp_error($response)) {
             $msg = $response->get_error_message();
             return strpos($msg, 'cURL error 28') !== false
                 || stripos($msg, 'timed out') !== false
                 || strpos($msg, 'cURL error 7') !== false
                 || stripos($msg, 'connection reset') !== false;
+        }
+        // A gateway 5xx may mean the write already succeeded upstream — only
+        // replay it for reads. See is_idempotent_method().
+        if (!empty($args) && !$this->is_idempotent_method($args)) {
+            return false;
         }
         $code = (int) wp_remote_retrieve_response_code($response);
         return in_array($code, array(502, 503, 504), true);
@@ -1326,12 +1355,13 @@ class AllAccessible_ApiClient {
     /**
      * Shared response decoder.
      */
-    private function decode_json_response($response) {
+    private function decode_json_response($response, $endpoint = '') {
         if (is_wp_error($response)) {
             // Transient connectivity (timeout / cURL 28 / connection reset) is
             // expected background noise on a hot path — log at warn for rate
             // visibility, not error. Genuinely unexpected transport failures
-            // still go to error.
+            
+            // API path timed out (WORDPRESS-PLUGIN-N was unattributable without it).
             $err_code = $response->get_error_code();
             $err_msg  = $response->get_error_message();
             $transient = ($err_code === 'http_request_failed')
@@ -1340,9 +1370,9 @@ class AllAccessible_ApiClient {
                 || strpos($err_msg, 'Connection reset') !== false
                 || strpos($err_msg, 'Could not resolve host') !== false;
             if ($transient) {
-                AllAccessible_Debug::warn('ApiClient::transport', $err_msg);
+                AllAccessible_Debug::warn('ApiClient::transport', $err_msg, array('endpoint' => $endpoint));
             } else {
-                AllAccessible_Debug::error('ApiClient::transport', $response);
+                AllAccessible_Debug::error('ApiClient::transport', $response, array('endpoint' => $endpoint));
             }
             return new WP_Error('api_request_failed', sprintf(
                 /* translators: %s: error message */
@@ -1357,7 +1387,7 @@ class AllAccessible_ApiClient {
         if ($code !== 200) {
             $msg = is_array($decoded) && isset($decoded['error']) ? $decoded['error'] : ('HTTP ' . $code);
             $surface = 'ApiClient::http_' . $code;
-            $payload = array('http_status' => $code, 'body' => $decoded);
+            $payload = array('http_status' => $code, 'body' => $decoded, 'endpoint' => $endpoint);
             if ($code >= 500) {
                 AllAccessible_Debug::error($surface, $msg, $payload);
             } elseif ($code === 401 || $code === 429) {

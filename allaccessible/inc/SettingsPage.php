@@ -272,10 +272,10 @@ class AllAccessible_SettingsPage {
         $deeplink_base = ($deeplink_token && $deeplink_sub)
             ? sprintf('https://app.allaccessible.org/site/%s/%d', rawurlencode($deeplink_token), $deeplink_sub)
             : 'https://app.allaccessible.org';
-        // Legacy V1 → migration offer. Centralized in ApiClient so every
+        
         // legacy upgrade CTA across the plugin points at the same URL.
         // $api_client only exists inside the $has_account block above; guard so
-        // an unconfigured/deauthorized site doesn't fatal here (the migration
+        
         // CTAs that read $migration_url only render for legacy accounts anyway).
         $migration_url = '';
         if ($has_account && isset($api_client)) {
@@ -1274,7 +1274,7 @@ class AllAccessible_SettingsPage {
                             </div>
 
                             <?php
-                            // Sentry opt-out — default OFF (sentry enabled).
+                            
                             // Toggle is named `sentry_disabled` so the
                             // stored value mirrors the runtime check in
                             // AllAccessible_Sentry::init().

@@ -32,6 +32,8 @@ class AllAccessible_OnboardingWizard {
         add_action('admin_enqueue_scripts', array($this, 'enqueue_assets'));
         add_action('wp_ajax_aacb_complete_wizard', array($this, 'ajax_complete_wizard'));
         add_action('wp_ajax_aacb_skip_wizard', array($this, 'ajax_skip_wizard'));
+        add_action('wp_ajax_aacb_wizard_add_site', array($this, 'ajax_add_site'));
+        add_action('wp_ajax_aacb_wizard_precheck', array($this, 'ajax_precheck'));
     }
 
     /**
@@ -651,95 +653,43 @@ class AllAccessible_OnboardingWizard {
                 $('#wizard-submit-text').text('<?php echo esc_js(__('Setting things up…', 'allaccessible')); ?>');
                 setStatus('<?php echo esc_js(__('Connecting to AllAccessible…', 'allaccessible')); ?>', 'info');
 
-                $.ajax({
-                    url: 'https://app.allaccessible.org/api/add-site',
-                    method: 'POST',
-                    contentType: 'application/json',
-                    dataType: 'text',
-                    headers: { 'Accept': 'application/json' },
-                    data: JSON.stringify({
-                        email:  email,
-                        url:    siteUrl,
-                        tier:   tier,
-                        source: 'wordpress-v2-unified'
-                    }),
-                    success: function(responseText, _status, xhr) {
-                        var response = null;
-                        try { response = JSON.parse(responseText); } catch (err) { response = null; }
-
-                        // Normalize older responses that return a bare string.
-                        var accountID = null;
-                        var action = 'created';
-                        if (response && typeof response === 'object') {
-                            if (response.error) {
-                                setStatus(response.error || '<?php echo esc_js(__('Something went wrong. Please try again.', 'allaccessible')); ?>', 'error');
-                                $('#wizard-submit-btn').prop('disabled', false);
-                                $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
-                                return;
-                            }
-                            accountID = response.accountID || response.account || response.id;
-                            action = response.action || (response.created ? 'created' : 'linked-existing-account');
-                        } else if (typeof responseText === 'string' && responseText.length > 4) {
-                            accountID = responseText.replace(/^"+|"+$/g, '').trim();
-                        }
-
-                        if (!accountID) {
-                            setStatus('<?php echo esc_js(__('We received an unexpected response. Please try again.', 'allaccessible')); ?>', 'error');
-                            $('#wizard-submit-btn').prop('disabled', false);
-                            $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
-                            return;
-                        }
-
-                        setStatus(actionCopy(action), 'ok');
-
-                        // Save accountID + mark wizard complete + advance.
-                        $.post(ajaxurl, {
-                            action: 'AllAccessible_save_settings',
-                            aacb_accountID: accountID,
-                            _wpnonce: '<?php echo wp_create_nonce('allaccessible_save_settings'); ?>'
-                        }).done(function() {
-                            $.post(ajaxurl, {
-                                action: 'aacb_complete_wizard',
-                                nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
-                            }).done(function() {
-                                setTimeout(function() { showStep(2); }, 600);
-                            });
-                        }).fail(function() {
-                            setStatus('<?php echo esc_js(__('We could not save your settings. Please try again.', 'allaccessible')); ?>', 'error');
-                            $('#wizard-submit-btn').prop('disabled', false);
-                            $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
-                        });
-                    },
-                    error: function(xhr) {
-                        // Some browser/server combinations land here even with
-                        // a 200 body. Replay the success-path parse.
-                        if (xhr.responseText) {
-                            try {
-                                var response = JSON.parse(xhr.responseText);
-                                var accountID = response.accountID || response.account || response.id;
-                                if (accountID && (accountID + '').length > 4) {
-                                    $.post(ajaxurl, {
-                                        action: 'AllAccessible_save_settings',
-                                        aacb_accountID: accountID,
-                                        _wpnonce: '<?php echo wp_create_nonce('allaccessible_save_settings'); ?>'
-                                    }).done(function() {
-                                        $.post(ajaxurl, {
-                                            action: 'aacb_complete_wizard',
-                                            nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
-                                        }).done(function() { setTimeout(function() { showStep(2); }, 600); });
-                                    });
-                                    return;
-                                }
-                            } catch (err) { /* fall through */ }
-                        }
-                        var msg = '<?php echo esc_js(__('We could not reach AllAccessible. Please try again.', 'allaccessible')); ?>';
-                        if (xhr.responseJSON && xhr.responseJSON.error) {
-                            msg = xhr.responseJSON.error;
-                        }
+                // Same-origin relay — PHP forwards to the AllAccessible API
+                // server-to-server, so ad blockers / security plugins / CORS
+                // quirks in the admin browser can't kill the signup.
+                function resetSubmit() {
+                    $('#wizard-submit-btn').prop('disabled', false);
+                    $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
+                }
+                $.post(ajaxurl, {
+                    action: 'aacb_wizard_add_site',
+                    nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>',
+                    email: email,
+                    tier:  tier
+                }).done(function(resp) {
+                    if (!resp || !resp.success || !resp.data || !resp.data.accountID) {
+                        var msg = (resp && resp.data && resp.data.message)
+                            ? resp.data.message
+                            : '<?php echo esc_js(__('Something went wrong. Please try again.', 'allaccessible')); ?>';
                         setStatus(msg, 'error');
-                        $('#wizard-submit-btn').prop('disabled', false);
-                        $('#wizard-submit-text').text('<?php echo esc_js(__('Continue', 'allaccessible')); ?> →');
+                        resetSubmit();
+                        return;
                     }
+
+                    setStatus(actionCopy(resp.data.action), 'ok');
+
+                    // accountID already saved server-side; mark wizard complete + advance.
+                    $.post(ajaxurl, {
+                        action: 'aacb_complete_wizard',
+                        nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>'
+                    }).done(function() {
+                        setTimeout(function() { showStep(2); }, 600);
+                    }).fail(function() {
+                        setStatus('<?php echo esc_js(__('We could not save your settings. Please try again.', 'allaccessible')); ?>', 'error');
+                        resetSubmit();
+                    });
+                }).fail(function() {
+                    setStatus('<?php echo esc_js(__('We could not reach AllAccessible. Please try again.', 'allaccessible')); ?>', 'error');
+                    resetSubmit();
                 });
             });
 
@@ -832,15 +782,13 @@ class AllAccessible_OnboardingWizard {
                 if (cacheKey === _precheckLastKey) return;
                 _precheckLastKey = cacheKey;
 
-                $.ajax({
-                    url: 'https://app.allaccessible.org/api/check-site-account',
-                    method: 'POST',
-                    contentType: 'application/json',
-                    dataType: 'json',
-                    data: JSON.stringify({ url: _siteUrl, email: email }),
-                    timeout: 3000
-                }).done(function(resp) {
-                    if (!resp || resp.error) { setState('create'); return; }
+                $.post(ajaxurl, {
+                    action: 'aacb_wizard_precheck',
+                    nonce: '<?php echo wp_create_nonce('aacb_wizard_nonce'); ?>',
+                    email: email
+                }).done(function(r) {
+                    if (!r || !r.success || !r.data || r.data.error) { setState('create'); return; }
+                    var resp = r.data;
                     if (resp.site_exists && resp.user_matches && resp.account_id) {
                         setState('auto', { accountID: resp.account_id });
                     } else if (resp.site_exists && !resp.user_matches) {
@@ -941,6 +889,116 @@ class AllAccessible_OnboardingWizard {
         }
 
         wp_send_json_success();
+    }
+
+    
+    public function ajax_add_site() {
+        check_ajax_referer('aacb_wizard_nonce', 'nonce');
+
+        if (!current_user_can('manage_options')) {
+            wp_send_json_error(array('message' => __('Permission denied', 'allaccessible')), 403);
+        }
+
+        $email = sanitize_email(wp_unslash($_POST['email'] ?? ''));
+        $tier  = sanitize_key(wp_unslash($_POST['tier'] ?? 'trial'));
+        if (!is_email($email)) {
+            wp_send_json_error(array('message' => __('Please enter a valid email address.', 'allaccessible')));
+        }
+
+        $response = wp_remote_post('https://app.allaccessible.org/api/add-site', array(
+            'timeout' => 20,
+            'headers' => array(
+                'Content-Type' => 'application/json',
+                'Accept'       => 'application/json',
+            ),
+            'body' => wp_json_encode(array(
+                'email'  => $email,
+                // MUST be get_site_url() (== get_bloginfo('wpurl'), what the
+                // wizard posted before this handler existed, and what
+                // ApiClient::fetch_plugin_secret() looks the site up with).
+                // Registering under home_url() breaks every install where Site
+                // Address differs from WordPress Address (WP in its own
+                // directory, www/non-www split): the site provisions under one
+                // URL, /secret is queried for the other, and every signed
+                // feature silently returns empty forever.
+                'url'    => get_site_url(),
+                'tier'   => $tier,
+                'source' => 'wordpress-v2-unified',
+            )),
+        ));
+
+        if (is_wp_error($response)) {
+            wp_send_json_error(array('message' => __('We could not reach AllAccessible. Please try again.', 'allaccessible')));
+        }
+
+        $body = (string) wp_remote_retrieve_body($response);
+        $data = json_decode($body, true);
+
+        $account_id = '';
+        $action     = 'created';
+        if (is_array($data)) {
+            if (!empty($data['error'])) {
+                wp_send_json_error(array('message' => sanitize_text_field((string) $data['error'])));
+            }
+            $account_id = (string) ($data['accountID'] ?? $data['account'] ?? $data['id'] ?? '');
+            $action     = (string) ($data['action'] ?? (!empty($data['created']) ? 'created' : 'linked-existing-account'));
+        } elseif (strlen(trim($body, "\" \t\r\n")) > 4) {
+            // Legacy bare-string accountID response.
+            $account_id = trim($body, "\" \t\r\n");
+        }
+
+        if ($account_id === '') {
+            wp_send_json_error(array('message' => __('We received an unexpected response. Please try again.', 'allaccessible')));
+        }
+
+        update_option('aacb_accountID', sanitize_text_field($account_id));
+
+        wp_send_json_success(array(
+            'accountID' => $account_id,
+            'action'    => $action,
+        ));
+    }
+
+    /**
+     * AJAX relay: email/site precheck (create vs link vs reconnect UX).
+     */
+    public function ajax_precheck() {
+        check_ajax_referer('aacb_wizard_nonce', 'nonce');
+
+        if (!current_user_can('manage_options')) {
+            wp_send_json_error(array(), 403);
+        }
+
+        $email = sanitize_email(wp_unslash($_POST['email'] ?? ''));
+        if (!is_email($email)) {
+            wp_send_json_error();
+        }
+
+        $response = wp_remote_post('https://app.allaccessible.org/api/check-site-account', array(
+            'timeout' => 5,
+            'headers' => array('Content-Type' => 'application/json'),
+            // get_site_url() to match the add-site payload above and the
+            // secret lookup; home_url() would make returning customers on
+            // split-URL installs look like brand-new accounts.
+            'body'    => wp_json_encode(array('url' => get_site_url(), 'email' => $email)),
+        ));
+
+        if (is_wp_error($response)) {
+            wp_send_json_error();
+        }
+
+        $data = json_decode((string) wp_remote_retrieve_body($response), true);
+        if (!is_array($data)) {
+            wp_send_json_error();
+        }
+
+        wp_send_json_success(array(
+            'site_exists'  => !empty($data['site_exists']),
+            'user_matches' => !empty($data['user_matches']),
+            'user_exists'  => !empty($data['user_exists']),
+            'account_id'   => sanitize_text_field((string) ($data['account_id'] ?? '')),
+            'error'        => !empty($data['error']),
+        ));
     }
 }
 

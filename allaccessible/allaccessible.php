@@ -3,9 +3,9 @@
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
 Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, plus agentic AI remediation that auto-suggests fixes for your team to approve.
-Version: 2.1.5
+Version: 2.1.6
 Requires at least: 5.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
 Author: AllAccessible Team
 Author URI: https://www.allaccessible.org/
@@ -40,6 +40,21 @@ if (!defined('ABSPATH')) {
     die('You are not allowed to call this page directly.');
 }
 
+// Duplicate-copy guard: if another copy of this plugin already loaded (e.g. a
+// second plugin folder from a mis-named zip upload, or an old copy left behind
+// during an update), bail out silently instead of fataling the whole site with
+// "Cannot redeclare aacb_require_if_exists()" / duplicate class errors.
+// NOTE: check ONLY runtime state (a constant defined by a require at runtime).
+// Do NOT test function_exists() here — PHP hoists top-level function
+// declarations at compile time, so every function in this file already exists
+// before line 1 runs, and the guard would abort the plugin's own first load.
+if (defined('AACB_VERSION')) {
+    if (function_exists('error_log')) {
+        error_log('[AllAccessible] Duplicate plugin copy detected at ' . __FILE__ . ' — skipped. Remove the extra copy in wp-content/plugins/.');
+    }
+    return;
+}
+
 // Core Components
 require_once plugin_dir_path(__FILE__) . 'inc/constants.php';
 require_once plugin_dir_path(__FILE__) . 'inc/Debug.php';              
@@ -47,22 +62,7 @@ require_once plugin_dir_path(__FILE__) . 'inc/SentryClient.php';
 require_once plugin_dir_path(__FILE__) . 'inc/SentryBrowser.php';      
 AllAccessible_Sentry::init();
 AllAccessible_SentryBrowser::register();
-/**
- * Guarded require: load a plugin file only if it exists.
- *
- * A partial/failed plugin update (some files copied, others not) previously
- * fataled the ENTIRE site, because an unguarded `require_once` on a missing
- * file is a fatal error during plugin load — white-screening wp-admin and the
- * front end (Sentry WORDPRESS-PLUGIN-R/S: missing inc/PostLinkBackfill.php).
- *
- * Now a missing non-core file is reported to Sentry once and skipped, so the
- * rest of the plugin still loads. Sentry is already initialised above, so
- * reporting is safe here. The four bootstrap files (constants, Debug,
- * SentryClient, SentryBrowser) above intentionally stay unguarded — without
- * them nothing, including this reporter, can function.
- *
- * @return bool true if the file was loaded.
- */
+
 function aacb_require_if_exists($relative_path) {
     $full = plugin_dir_path(__FILE__) . $relative_path;
     if (file_exists($full)) {
@@ -84,6 +84,7 @@ aacb_require_if_exists('inc/VersionManager.php');
 aacb_require_if_exists('inc/UrlCanonicalizer.php');
 
 // Widget & Frontend
+aacb_require_if_exists('inc/ContextGuard.php');
 aacb_require_if_exists('inc/WidgetLoader.php');
 
 // Admin Interface

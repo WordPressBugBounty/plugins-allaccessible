@@ -1,44 +1,14 @@
 <?php
-/**
- * AllAccessible — minimal Sentry client.
- *
- * What it captures:
- *   - Uncaught exceptions (set_exception_handler chain)
- *   - Fatal errors (register_shutdown_function)
- *   - Catchable errors above warning severity (set_error_handler chain)
- *   - Explicit AllAccessible_Sentry::capture_exception() calls inside
- *     AJAX handlers + ApiClient HTTP failures
- *
- * What it does NOT do:
- *   - Performance / tracing — fire-and-forget single events only
- *   - Release health sessions — start/exit signals not modeled
- *   - Source-context attachments — pre-/post-context lines around the
- *     throw site (Sentry shows the function + line which is enough)
- *
- * Opt-out: aacb_options.sentry_disabled === true → init() no-ops.
- * Toggle wired on Settings → Account → Advanced.
- *
- */
+
 
 if (!defined('ABSPATH')) { exit; }
 
 final class AllAccessible_Sentry {
 
-    /**
-     * Hardcoded DSN. Project-level credential, intentionally not secret
-     * — Sentry DSN keys are designed to be embedded in client code (web
-     * browsers, mobile apps) and rely on origin + project-level rate
-     * limits, not key secrecy. Filter `aacb_sentry_dsn` available for
-     * white-label installs that want to point at their own Sentry.
-     */
+    
     const DEFAULT_DSN = 'https://09483018ddcc1c2ce3afa01acd5f0318@o4509626671759361.ingest.us.sentry.io/4511461234704384';
 
-    /**
-     * SDK identifier sent in the X-Sentry-Auth header. Lets us split
-     * issues by plugin-source in the Sentry UI when other AllAccessible
-     * services start reporting (widget, lambda) — they each set their
-     * own sentry_client value.
-     */
+    
     const CLIENT_NAME = 'allaccessible-wp';
 
     /**
@@ -83,7 +53,7 @@ final class AllAccessible_Sentry {
         // CONSENT GATE: only report errors when an AllAccessible account
         // is linked. The consent chain for error/diagnostic collection
         // runs through account signup → Terms → Privacy Policy (which
-        // discloses Sentry). A free-widget-only user who never created
+        
         // an account has agreed to nothing, so we send NOTHING — this
         // keeps the README's "no data without an account" promise true
         // and satisfies WP.org Guideline #7 (no external data
@@ -123,11 +93,7 @@ final class AllAccessible_Sentry {
     private static $prev_exception_handler = null;
     private static $prev_error_handler     = null;
 
-    /**
-     * Sentry-able DSN format:
-     *   https://<public_key>@<host>/<project_id>
-     * Returns true on success, false if malformed (we silently no-op).
-     */
+    
     private static function parse_dsn(string $dsn): bool {
         $parts = parse_url($dsn);
         if (!$parts || empty($parts['scheme']) || empty($parts['user']) || empty($parts['host']) || empty($parts['path'])) {
@@ -141,11 +107,7 @@ final class AllAccessible_Sentry {
         return true;
     }
 
-    /**
-     * Public API — record a breadcrumb (something interesting that
-     * happened but wasn't an error). Surfaces in Sentry's UI as the
-     * trail leading up to a captured event.
-     */
+    
     public static function add_breadcrumb(string $category, string $message, array $data = array()) {
         if (!self::$initialized) self::init();
         if (!self::$dsn_parsed) return;
@@ -229,9 +191,7 @@ final class AllAccessible_Sentry {
         return $event;
     }
 
-    /**
-     * Identity + environment tags Sentry uses for grouping / filtering.
-     */
+    
     private static function default_tags(): array {
         $account_id = (string) get_option('aacb_accountID', '');
         $site_url   = function_exists('get_site_url') ? (string) get_site_url() : '';
@@ -258,10 +218,7 @@ final class AllAccessible_Sentry {
         return $tags;
     }
 
-    /**
-     * Contexts (richer than tags — render as collapsible cards in
-     * Sentry UI). user context lets the dashboard search by accountID.
-     */
+    
     private static function default_contexts(): array {
         return array(
             'runtime' => array(
@@ -278,11 +235,7 @@ final class AllAccessible_Sentry {
         );
     }
 
-    /**
-     * Convert PHP stacktrace into Sentry's frames format. Innermost
-     * frame goes last (Sentry convention). Includes the throw site
-     * itself as the topmost (last) frame.
-     */
+    
     private static function frames_to_stacktrace(array $trace, string $throw_file, int $throw_line): array {
         $frames = array();
         foreach (array_reverse($trace) as $f) {
@@ -309,9 +262,7 @@ final class AllAccessible_Sentry {
         return $fn;
     }
 
-    /**
-     * POST to Sentry. Non-blocking — the user's request never waits.
-     */
+    
     private static function send_event(array $event) {
         if (!function_exists('wp_remote_post')) return;
         $payload = wp_json_encode($event);
@@ -342,12 +293,7 @@ final class AllAccessible_Sentry {
         set_transient(self::HOURLY_CAP_TRANSIENT, $count + 1, HOUR_IN_SECONDS);
     }
 
-    /**
-     * Cap how many events a single install can emit per hour. Protects
-     * the Sentry project quota when one customer has a broken setup
-     * generating errors on every pageload. Reads the counter only —
-     * write happens after a successful send.
-     */
+    
     private static function within_hourly_cap(): bool {
         $count = (int) get_transient(self::HOURLY_CAP_TRANSIENT);
         return $count < self::HOURLY_CAP;
@@ -360,7 +306,7 @@ final class AllAccessible_Sentry {
         // Plugin-dir scope gate — same rule as handle_php_error and
         // handle_shutdown. Without this, ANY uncaught exception from
         // any other WP plugin (Give, Yoast, WooCommerce, etc.) gets
-        // captured to OUR Sentry project because we registered last
+        
         // in the chain. Verified leak: Give plugin's "Target class
         // [...Harbor\Consent\Provider] does not exist" landed in our
         // project before this gate.
@@ -440,10 +386,7 @@ final class AllAccessible_Sentry {
         );
     }
 
-    /**
-     * RFC 4122 v4 UUID — Sentry event_id must be 32 hex chars (no
-     * hyphens). PHP doesn't have a built-in.
-     */
+    
     private static function uuid4(): string {
         $data = random_bytes(16);
         $data[6] = chr((ord($data[6]) & 0x0f) | 0x40);

@@ -33,8 +33,14 @@ class AllAccessible_WidgetLoader {
      * Load accessibility widget on frontend
      */
     public function load_widget() {
-        // Don't load in admin or Divi/Elementor builders
-        if (is_admin() || !empty($_GET['et_fb'])) {
+        // Don't load in admin, on 404s/feeds/previews, or inside page-builder
+        // editors (Oxygen, Divi, Elementor, ...). See AllAccessible_ContextGuard.
+        // Falls back to the legacy is_admin() check if the guard file is missing
+        // (partial update) so the widget keeps loading rather than vanishing.
+        $skip = class_exists('AllAccessible_ContextGuard')
+            ? AllAccessible_ContextGuard::should_skip_widget()
+            : is_admin();
+        if ($skip) {
             return;
         }
 

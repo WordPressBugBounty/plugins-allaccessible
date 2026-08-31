@@ -4,9 +4,9 @@ Author URI: https://www.allaccessible.org/
 Contributors: allaccessible
 Tags: accessibility, wcag, ada, accessibility widget, eaa
 Requires at least: 5.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -170,6 +170,18 @@ No. Most accessibility plugins are frontend-only overlay widgets. AllAccessible 
 
 Connect your site, and AllAccessible automatically checks your pages. You can also trigger a fresh check on demand — from the post editor's accessibility panel, or from the "Scan this page" option in the WordPress admin bar on any frontend page.
 
+= Can AllAccessible generate an accessibility statement for my website? =
+
+Yes. Your AllAccessible dashboard can generate an accessibility statement for your website — a public page describing your accessibility efforts and how visitors can request accommodations. Many accessibility standards, including the EAA, expect one. Publish it on your site and keep it linked from your footer.
+
+= Will the accessibility widget slow down my site? =
+
+No. The widget is a single script that loads deferred — after your page content — from a global edge network, so it does not block rendering or affect your Core Web Vitals. Your pages, images, and styles are untouched.
+
+= Does AllAccessible work with Elementor, Divi, WooCommerce, and other page builders? =
+
+Yes. The accessibility widget works with any theme or page builder because it runs alongside your rendered pages rather than modifying them. Accessibility scans check the final rendered page — exactly what your visitors and assistive technologies experience — so builder-generated content is fully covered.
+
 = What is the European Accessibility Act (EAA)? =
 
 The EAA (EN 301 549) is the EU accessibility standard taking effect for many businesses. AllAccessible helps you work toward EAA accessibility the same way it does WCAG and ADA — automated checks against success criteria, per-page scoring, unlimited AI interactions on paid plans, and human-approved remediation.
@@ -237,6 +249,14 @@ The free accessibility widget runs entirely in the visitor's browser and adjusts
 * Trust Center: https://www.allaccessible.org/trust-center
 
 == Changelog ==
+
+= 2.1.6 =
+* Tested with WordPress 7.1.
+* The accessibility widget no longer loads where it shouldn't: 404 pages, feeds, previews, and page-builder editing sessions (Elementor, Divi, WPBakery, Beaver Builder, Bricks, Oxygen, and others). Your builder canvas stays clean.
+* Redirected URLs are no longer counted as monitored pages, so your page list and scores reflect real content only.
+* More reliable connection to your AllAccessible account: brief network interruptions are retried automatically instead of failing the request.
+* Site owners can now exclude the widget from specific requests with the `allaccessible_skip_widget` filter.
+* Fixed a rare conflict that could occur when a duplicate copy of the plugin was present on a site.
 
 = 2.1.5 =
 * Fixed: the settings page could fail to load on sites where the AllAccessible account wasn't connected — it now loads reliably and points you to reconnect.

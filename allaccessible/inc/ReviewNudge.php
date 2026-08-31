@@ -33,9 +33,6 @@ final class AllAccessible_ReviewNudge {
     private static function should_show(): bool {
         if (!current_user_can('manage_options')) return false;
 
-        // Engaged user only — account linked.
-        if (empty(get_option('aacb_accountID'))) return false;
-
         // State check: done forever, or snoozed into the future.
         $state = get_option(self::OPTION, array());
         if (!empty($state['done'])) return false;

@@ -18,6 +18,10 @@ final class AllAccessible_PostLinkBackfill {
     const BATCH_SIZE        = 100;        // backend cap
     const MAX_POSTS_PER_RUN = 5000;       // per-run safety
     const COOLDOWN_SECONDS  = 7 * DAY_IN_SECONDS; // weekly
+    const TIME_BUDGET_SECONDS = 20;              // stay under a 30s PHP limit
+    const BATCH_RESERVE_SECONDS = 8;             // headroom for the in-flight API call
+    const RESUME_SECONDS      = HOUR_IN_SECONDS; // retry gap after a truncated run
+    const RESUME_TRANSIENT    = 'aacb_link_backfill_resume'; // set while a walk is unfinished
 
     /**
      * Async per-post link hook.
@@ -153,6 +157,17 @@ final class AllAccessible_PostLinkBackfill {
     }
 
     /**
+     * Published posts/pages that 301 elsewhere are not real pages on this site
+     * and must not be reported as monitored pages. Recognises the
+     * page-links-to plugin (`_links_to`) and the common `_redirect_url` meta.
+     */
+    private static function is_redirect_post($post_id) {
+        if (!function_exists('get_post_meta')) return false;
+        return get_post_meta($post_id, '_links_to', true) !== ''
+            || get_post_meta($post_id, '_redirect_url', true) !== '';
+    }
+
+    /**
      * One backfill run.
      */
     public static function run($force = false) {
@@ -170,9 +185,20 @@ final class AllAccessible_PostLinkBackfill {
         }
         $client = AllAccessible_ApiClient::get_instance();
         if ($force) {
-            delete_option(self::OFFSET_OPTION);
+            // Only restart from zero when a previous run actually FINISHED
+            // (offset cleared on completion). Resetting mid-walk made "Run now"
+            // re-process the same first N posts on every click, so a site large
+            // enough to hit the time budget could never reach its tail.
+            if (!get_transient(self::RESUME_TRANSIENT)) {
+                delete_option(self::OFFSET_OPTION);
+            }
         }
         $offset           = (int) get_option(self::OFFSET_OPTION, 0);
+        // Time budget (WORDPRESS-PLUGIN-Y): WP-Cron runs inside a web request
+        // on most hosts (30s max_execution_time). Stop early and let the next
+        // cron resume from the persisted offset instead of fataling mid-batch.
+        $started          = microtime(true);
+        $truncated        = false;
         $processed        = 0;
         $total_linked     = 0;
         $total_skipped    = 0;
@@ -181,6 +207,17 @@ final class AllAccessible_PostLinkBackfill {
         $last_error       = null;
 
         while ($processed < self::MAX_POSTS_PER_RUN) {
+            // Reserve headroom for the API call this iteration is about to
+            // make: the budget is checked BETWEEN batches, so entering a batch
+            // with 1s left still costs a full signed request. Without the
+            // reserve the run can overshoot the PHP limit it exists to respect.
+            if ((microtime(true) - $started) > (self::TIME_BUDGET_SECONDS - self::BATCH_RESERVE_SECONDS)) {
+                update_option(self::OFFSET_OPTION, $offset, false);
+                set_transient(self::RESUME_TRANSIENT, $offset, self::COOLDOWN_SECONDS);
+                $truncated = true;
+                AllAccessible_Debug::info('PostLinkBackfill::run', sprintf('time budget reached after %d posts; resuming at offset %d next run', $processed, $offset));
+                break;
+            }
             $q = new WP_Query(array(
                 'post_type'      => array('post', 'page'),
                 'post_status'    => 'publish',
@@ -199,6 +236,7 @@ final class AllAccessible_PostLinkBackfill {
 
             $pairs = array();
             foreach ($q->posts as $post_id) {
+                if (self::is_redirect_post((int) $post_id)) continue;
                 $page_url = AllAccessible_UrlCanonicalizer::for_post((int) $post_id);
                 if ($page_url === '') continue;
                 $pairs[] = array(
@@ -262,12 +300,21 @@ final class AllAccessible_PostLinkBackfill {
                 // Reset offset so the next weekly run starts fresh —
                 // catches any posts published in between.
                 delete_option(self::OFFSET_OPTION);
+                delete_transient(self::RESUME_TRANSIENT);
                 break;
             }
         }
 
         if ($last_error === null) {
-            set_transient(self::LAST_RUN_TRANSIENT, time(), self::COOLDOWN_SECONDS);
+            // A run cut short by the time budget has NOT finished the site, so
+            // it must not take the full weekly cooldown — that would make a
+            // large site wait a week to advance one budget window, and it would
+            // never reach the tail. Resume on the next cron instead.
+            set_transient(
+                self::LAST_RUN_TRANSIENT,
+                time(),
+                $truncated ? self::RESUME_SECONDS : self::COOLDOWN_SECONDS
+            );
         }
 
         return array(

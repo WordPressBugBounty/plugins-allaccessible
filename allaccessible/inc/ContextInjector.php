@@ -57,7 +57,14 @@ final class AllAccessible_ContextInjector {
      * Emit the context block on the frontend only.
      */
     public function emit_context() {
-        if (is_admin()) {
+        // Same request contexts the widget itself skips (admin, 404, feed,
+        // preview, page-builder editor) — no widget, no context block.
+        // Falls back to the legacy is_admin() check if the guard file is missing
+        // (partial update) so the widget keeps loading rather than vanishing.
+        $skip = class_exists('AllAccessible_ContextGuard')
+            ? AllAccessible_ContextGuard::should_skip_widget()
+            : is_admin();
+        if ($skip) {
             return;
         }
 

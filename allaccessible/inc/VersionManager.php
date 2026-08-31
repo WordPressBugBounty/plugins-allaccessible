@@ -57,12 +57,12 @@ class AllAccessible_VersionManager {
             self::upgrade_to_1_3_7();
         }
 
-        // Upgrade to 2.0.0 - Handle wizard migration
+        
         if (version_compare($from_version, '2.0.0', '<')) {
             self::upgrade_to_2_0_0();
         }
 
-        // 2.1.0 — consolidated migration for everything between 2.0.x
+        
         // and the public 2.1.0 release.
 
         // All four actions are idempotent + cheap. No-op for fresh
@@ -141,10 +141,7 @@ class AllAccessible_VersionManager {
         }
     }
 
-    /**
-     * Upgrade routine for version 2.0.0
-     * Handles migration from 1.x to 2.0 - new wizard system
-     */
+    
     private static function upgrade_to_2_0_0() {
         $account_id = get_option('aacb_accountID');
 

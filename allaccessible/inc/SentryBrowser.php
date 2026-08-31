@@ -1,32 +1,14 @@
 <?php
-/**
- * AllAccessible — browser-side Sentry shim.
- *
- * Enqueues @sentry/browser CDN on every plugin admin page so JS errors
- * in AgenticFixesPage / AdminBar / ImageManager / EditorMetaBox /
- * SettingsPage inline scripts get aggregated to the same Sentry
- * project as PHP errors.
- *
- * Opt-out: same `aacb_options.sentry_disabled` toggle as PHP side.
- * Init no-ops cleanly when set.
- *
- */
+
 
 if (!defined('ABSPATH')) { exit; }
 
 final class AllAccessible_SentryBrowser {
 
-    /**
-     * Same DSN as PHP-side. Sentry treats events as one project
-     * regardless of platform; tags discriminate.
-     */
+    
     const DEFAULT_DSN = 'https://09483018ddcc1c2ce3afa01acd5f0318@o4509626671759361.ingest.us.sentry.io/4511461234704384';
 
-    /**
-     * Browser SDK version + CDN URL. Pinned major to avoid surprise
-     * upgrades. Sentry's CDN supports both ESM + UMD builds; we use
-     * the UMD bundle for broadest WP-admin browser compatibility.
-     */
+    
     const SDK_VERSION = '8';
     const SDK_CDN_URL = 'https://browser.sentry-cdn.com/8.55.0/bundle.tracing.min.js';
     const SDK_INTEGRITY = 'sha384-WK4u/k5/i9LJOFbHddPdJrPe5UrCQ4i/jJrBOX0aLrxKgOdkS1JFTzS4r5e3sqMA';
@@ -35,12 +17,7 @@ final class AllAccessible_SentryBrowser {
         add_action('admin_enqueue_scripts', array(__CLASS__, 'enqueue'));
     }
 
-    /**
-     * Decide whether to load Sentry on this admin screen. Loads on any
-     * AllAccessible plugin screen + WP post-editor (where the metabox
-     * runs). Skips everything else to keep core WP and other plugin
-     * pages out of our error stream.
-     */
+    
     private static function should_load(string $hook): bool {
         if (strpos($hook, 'allaccessible') !== false) return true;
         if (strpos($hook, 'aacb-') !== false)         return true;
@@ -69,7 +46,7 @@ final class AllAccessible_SentryBrowser {
         if ($dsn === '') return;
 
         // CDN script — SRI checksum locked to this exact version. If
-        // Sentry bumps minor releases their CDN URL changes anyway, so
+        
         // we don't need an auto-update story; we just bump SDK_VERSION
         // constants intentionally.
         wp_enqueue_script(
@@ -81,7 +58,7 @@ final class AllAccessible_SentryBrowser {
         );
 
         // Tag context — same shape as PHP side so events from both
-        // platforms cross-reference cleanly in the Sentry UI.
+        
         $account_id    = (string) get_option('aacb_accountID', '');
         $site_host     = wp_parse_url((string) get_site_url(), PHP_URL_HOST) ?: '';
         $tier          = '';
@@ -107,8 +84,8 @@ final class AllAccessible_SentryBrowser {
         ));
 
         // Inline init. Runs immediately on script load. Defensive about
-        // Sentry's loader timing — if `window.Sentry` isn't there yet,
-        // wait for it once. SDK exposes `Sentry` global from the UMD bundle.
+        
+        
         $init_js = <<<JS
 (function(){
     function init() {

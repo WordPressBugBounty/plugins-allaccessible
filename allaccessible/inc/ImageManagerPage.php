@@ -434,7 +434,10 @@ final class AllAccessible_ImageManager_Page {
         $max = (int) ($ai_quota->altTextMax ?? 10);
         $idx = 0;
         ?>
-        <div class="aacb-image-grid">
+        <?php // Must carry the same grid classes as render_grid(); `aacb-image-grid`
+              // alone has no CSS rule, so the tiles fell back to block layout and
+              // rendered one full-width image per row. ?>
+        <div class="aacx-v2__grid aacx-v2__grid--3 aacb-image-grid">
             <?php foreach ($items as $item) :
                 $is_locked = $idx >= $max;
                 if ($is_locked) {

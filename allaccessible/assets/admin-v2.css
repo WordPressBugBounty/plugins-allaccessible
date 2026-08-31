@@ -925,12 +925,20 @@
   }
 }
 
-/* ──────────────────────────────────────────────────────────────────
- * 2026-06-01: Free-tier AI preview blur teaser (Aikido pattern).
- * Real cards render normally for the first N items, the rest get
- * `.aacb-locked-card` wrapper which blurs caption text and disables
- * interaction. Single upgrade CTA appears below the grid.
- * ────────────────────────────────────────────────────────────────── */
+
+/* Safety net: `.aacb-image-grid` had no rule of its own, so markup that
+   carried only that class (the free-tier preview grid) fell back to block
+   layout and rendered one full-width image per row. Grid here too, so the
+   class is self-sufficient regardless of which wrapper uses it. */
+.aacb-image-grid {
+  display: grid;
+  gap: var(--aacx-space-6);
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 900px) {
+  .aacb-image-grid { grid-template-columns: 1fr; }
+}
+
 .aacb-locked-card {
   position: relative;
   filter: blur(4px);

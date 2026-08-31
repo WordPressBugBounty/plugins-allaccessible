@@ -513,7 +513,7 @@ final class AllAccessible_AgenticFixes_Page {
                             <span style="font-size:var(--aacx-text-sm);color:var(--aacx-text-muted);">
                                 <?php
                                 printf(
-                                    /* translators: %s: formatted date (e.g., "2026-05-23") */
+                                    
                                     esc_html__('Applied on %s', 'allaccessible'),
                                     esc_html(date_i18n('Y-m-d', $applied_ts))
                                 );
