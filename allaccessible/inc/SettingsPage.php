@@ -110,6 +110,11 @@ class AllAccessible_SettingsPage {
                         </div>
                     </header>
 
+                    <?php if ($has_account && $site_options && !is_wp_error($site_options) && function_exists('aacb_render_widget_language_card')) : ?>
+                        <?php // Widget Language: every tier (matches the dashboard), so it sits above the paid-only customizer. ?>
+                        <?php aacb_render_widget_language_card($site_options, $widget_settings_url); ?>
+                    <?php endif; ?>
+
                     <?php if ($has_account && $is_paid_tier && $site_options && !is_wp_error($site_options)) : ?>
                         <?php aacb_render_widget_customizer($site_options, $widget_settings_url); ?>
                     <?php elseif (!$has_account) : ?>

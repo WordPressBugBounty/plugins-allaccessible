@@ -3,7 +3,7 @@
 Plugin Name: AllAccessible
 Plugin URI: https://www.allaccessible.org/platform/wordpress/
 Description: Unlock true digital accessibility with AllAccessible - a comprehensive WordPress plugin driving your website towards WCAG/ADA compliance. Empower your users with a fully customizable accessibility widget, plus agentic AI remediation that auto-suggests fixes for your team to approve.
-Version: 2.1.6
+Version: 2.1.7
 Requires at least: 5.5
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -90,6 +90,8 @@ aacb_require_if_exists('inc/WidgetLoader.php');
 // Admin Interface
 aacb_require_if_exists('inc/OnboardingWizard.php');
 aacb_require_if_exists('inc/SettingsPage.php');
+aacb_require_if_exists('inc/WidgetLanguages.php');
+aacb_require_if_exists('inc/WidgetLanguageCard.php');
 aacb_require_if_exists('inc/WidgetCustomizer.php');
 aacb_require_if_exists('inc/UsageDashboard.php');
 aacb_require_if_exists('inc/ConversionCTA.php');

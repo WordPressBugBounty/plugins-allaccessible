@@ -6,7 +6,7 @@ Tags: accessibility, wcag, ada, accessibility widget, eaa
 Requires at least: 5.5
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.1.6
+Stable tag: 2.1.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -249,6 +249,9 @@ The free accessibility widget runs entirely in the visitor's browser and adjusts
 * Trust Center: https://www.allaccessible.org/trust-center
 
 == Changelog ==
+
+= 2.1.7 =
+* New Widget Language card in Widget Customizer: choose the language the widget opens in for your visitors, or leave it on Auto to follow each visitor's browser. Available on every plan. One click applies your WordPress site language.
 
 = 2.1.6 =
 * Tested with WordPress 7.1.
