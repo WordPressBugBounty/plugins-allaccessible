@@ -251,6 +251,7 @@ The free accessibility widget runs entirely in the visitor's browser and adjusts
 == Changelog ==
 
 = 2.1.7 =
+* The Agentic Fixes summary on your WordPress dashboard no longer stalls page loads when our service is slow to respond. The plugin shows the last known numbers and retries in the background.
 * New Widget Language card in Widget Customizer: choose the language the widget opens in for your visitors, or leave it on Auto to follow each visitor's browser. Available on every plan. One click applies your WordPress site language.
 
 = 2.1.6 =

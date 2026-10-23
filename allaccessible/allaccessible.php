@@ -101,6 +101,7 @@ aacb_require_if_exists('inc/DeactivationSurvey.php');
 aacb_require_if_exists('inc/DashboardLayout.php');
 
 // API Integration (Premium Features)
+aacb_require_if_exists('inc/api/SummaryCache.php');
 aacb_require_if_exists('inc/api/ApiClient.php');
 aacb_require_if_exists('inc/TierGate.php');
 aacb_require_if_exists('inc/ContextInjector.php');

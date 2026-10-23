@@ -652,6 +652,16 @@ class AllAccessible_ApiClient {
     }
 
     /**
+     * Drop every cached manifest summary (all status tabs, fresh + last-good +
+     * failure sentinel). Called after approve/revert so counts refresh.
+     */
+    private function forget_manifest_summary_cache() {
+        foreach (array('', '_draft', '_approved', '_reverted') as $suffix) {
+            AllAccessible_SummaryCache::forget(self::CACHE_MANIFEST_SUMMARY . $suffix);
+        }
+    }
+
+    /**
      * Site-wide manifest aggregate. Hits the AllAccessible API. Cached as
      * a transient for 30 min so the dashboard widget can render without
      * hammering the API.
@@ -665,9 +675,19 @@ class AllAccessible_ApiClient {
         // Cache key includes status so each tab keeps a separate transient.
         $cache_key = self::CACHE_MANIFEST_SUMMARY . ($valid_status ? ('_' . $valid_status) : '');
         if (!$force_refresh) {
-            $cached = get_transient($cache_key);
+            $cached = AllAccessible_SummaryCache::fresh($cache_key);
             if ($cached !== false) {
                 return $cached;
+            }
+            // A recent fetch failed (the summary service can take 10s+ on a cold
+            // start for large sites). Do not block this admin render on another
+            // attempt: serve the last good copy if we have one, else fail fast.
+            // WORDPRESS-PLUGIN-N: 2,006 timeouts across 15 sites before 2.1.7.
+            if (AllAccessible_SummaryCache::should_skip_network($cache_key)) {
+                $stale = AllAccessible_SummaryCache::last_good($cache_key);
+                return $stale !== false
+                    ? $stale
+                    : new WP_Error('api_request_failed', __('AllAccessible API temporarily unreachable', 'allaccessible'));
             }
         }
 
@@ -706,10 +726,12 @@ class AllAccessible_ApiClient {
 
         $decoded = $this->decode_json_response($response, '/manifest/summary');
         if (is_wp_error($decoded)) {
-            return $decoded;
+            AllAccessible_SummaryCache::remember_failure($cache_key);
+            $stale = AllAccessible_SummaryCache::last_good($cache_key);
+            return $stale !== false ? $stale : $decoded;
         }
 
-        set_transient($cache_key, $decoded, self::CACHE_DURATION);
+        AllAccessible_SummaryCache::remember_success($cache_key, $decoded);
         return $decoded;
     }
 
@@ -797,7 +819,7 @@ class AllAccessible_ApiClient {
         );
         if (!is_wp_error($result)) {
             $this->clear_cache();
-            delete_transient(self::CACHE_MANIFEST_SUMMARY);
+            $this->forget_manifest_summary_cache();
         }
         return $result;
     }
@@ -821,7 +843,7 @@ class AllAccessible_ApiClient {
         );
         if (!is_wp_error($result)) {
             $this->clear_cache();
-            delete_transient(self::CACHE_MANIFEST_SUMMARY);
+            $this->forget_manifest_summary_cache();
         }
         return $result;
     }
@@ -850,7 +872,7 @@ class AllAccessible_ApiClient {
         );
         if (!is_wp_error($result)) {
             $this->clear_cache();
-            delete_transient(self::CACHE_MANIFEST_SUMMARY);
+            $this->forget_manifest_summary_cache();
         }
         return $result;
     }
@@ -896,7 +918,7 @@ class AllAccessible_ApiClient {
     public function bust_manifest_caches() {
         global $wpdb;
         // Per-status manifest summary transients (draft/approved/reverted).
-        delete_transient(self::CACHE_MANIFEST_SUMMARY);
+        $this->forget_manifest_summary_cache();
         if (isset($wpdb)) {
             $wpdb->query(
                 "DELETE FROM {$wpdb->options}
